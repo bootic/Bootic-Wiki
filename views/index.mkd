@@ -1,5 +1,4 @@
-# Administrando tu tienda Bootic
+# Bootic docs
 
-Ver información sobre:
-
-* [Plantillas](/themes)
+* [Castellano](/es)
+* [English](/en)

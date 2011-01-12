@@ -1,0 +1,5 @@
+# Administrando tu tienda Bootic
+
+Ver información sobre:
+
+* [Plantillas](/es/themes)

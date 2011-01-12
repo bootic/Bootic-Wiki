@@ -59,7 +59,7 @@ body, #wrapper {height: 100%;}
 }
 .nested_menu {margin-left: 1.5em;}
 
-.nested_menu .current {
+.nested_menu a.current {
   font-weight: bold;
   color: black;
 }

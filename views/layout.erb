@@ -17,16 +17,16 @@
     <div id="main" class="box clearfix">
       
       <div id="sidebar">
+        <% if menu %>
         <div class="section">
-          <h3>Index</h3>
+          <h3><a href="/<%= params[:lang] %>">Index</a></h3>
           <ul class="nested_menu">
-            <li><%= menu_item 'Portada', '/' %></li>
-            <li>
-              <%= menu_item 'Plantillas', '/themes' %>
-              <%= sub_menu %>
-            </li>
+            <% menu.each do |page| %>
+              <%= build_menu page %>
+            <% end %>
           </ul>
         </div>
+        <% end %>
       </div><!-- /sidebar -->
       
       <div id="content">
