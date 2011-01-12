@@ -4,18 +4,14 @@ module Helpers
   end
   
   def mkd(page)
-    @current_path = page
     path = File.join(options.root, 'views', "#{page}.mkd")
-    if !File.exists?(path)
-      @content = RDiscount.new(File.read(File.join(options.root, 'views', '404.mkd'))).to_html
-      halt 404, erb(:layout)
-    else
-      root_segment = page.split('/').first # themes, docs, etc.
-      menu_name = File.join(options.root, 'views', root_segment, 'menu.erb')
-      @sub_menu = File.exists?(menu_name) ? File.join(root_segment, 'menu') : nil
-      @content = RDiscount.new(File.read(path)).to_html
-      erb :layout
-    end
+    @content = RDiscount.new(page.body).to_html
+    erb :layout
+  end
+  
+  def render_404
+    @content = RDiscount.new(File.read(File.join(options.root, 'views', '404.mkd'))).to_html
+    halt 404, erb(:layout)
   end
   
   def partial(page, options={})
@@ -23,13 +19,21 @@ module Helpers
   end
   
   def menu
-    @menu ||= Menu.new(options.root + '/views/' + params[:lang], ['404.mkd']) if params[:lang]
+    @menu ||= Page.root
+  end
+  
+  def load_page(url)
+    if @page = Page.find('/'+url)
+      mkd @page
+    else
+      render_404
+    end
   end
   
   def build_menu(page)
-    klass = 'current' if page.url == '/'+@current_path
+    klass = 'current' if page.url == @page.url
     str = %(<li class="page">)
-    str << %(<a href="#{page.url}" class="#{klass}">#{page.name}</a>)
+    str << %(<a href="#{page.url}" class="#{klass}">#{page.title}</a>)
     if page.size > 0
       page.each do |child|
         str << %(<ul>)

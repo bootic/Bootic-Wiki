@@ -6,7 +6,6 @@ require "rdiscount"
 
 $LOAD_PATH.unshift(File.dirname(__FILE__) + '/lib')
 
-require 'menu'
 require 'page'
 require 'helpers'
 
@@ -14,10 +13,13 @@ class App < Sinatra::Base
   
   set :public, File.dirname(__FILE__) + '/public'
   set :root, File.dirname(__FILE__)
-  #set :markdown, :layout => true
   
   helpers do
     include Helpers
+  end
+  
+  configure do
+    Page.load(options.root + '/views', ['404.mkd'])
   end
   
   before do
@@ -25,14 +27,14 @@ class App < Sinatra::Base
   end
   
   get '/?' do
-    mkd 'index'
+    load_page 'index'
   end
   
   get '/:lang' do
-    mkd params[:lang]
+    load_page params[:lang]
   end
   
   get '/:lang/*' do
-    mkd File.join(params[:lang], params[:splat].first)
+    load_page File.join(params[:lang], params[:splat].first)
   end
 end
