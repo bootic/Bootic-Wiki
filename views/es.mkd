@@ -1,3 +1,8 @@
+---
+:title: Castellano
+:description: Documentación Bootic
+:keywords: Bootic, documentacion, liquid, e-commerce
+---
 # Administrando tu tienda Bootic
 
 Ver información sobre:

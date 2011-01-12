@@ -43,7 +43,7 @@ class Page
   
   include Enumerable
   
-  attr_reader :path, :title, :description, :body
+  attr_reader :path, :title, :description, :body, :keywords
   
   EXPR = /---\s(.+)?\s---/m
   
@@ -89,6 +89,7 @@ class Page
       @title = @info[:title]
       @description = @info[:description]
       @body.gsub!(EXPR, '')
+      @keywords = @info[:keywords]
     else
       @title = File.basename(@path, File.extname(@path))
     end
