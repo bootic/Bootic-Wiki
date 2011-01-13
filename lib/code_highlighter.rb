@@ -3,15 +3,8 @@ require 'rack/utils'
 class Codehighlighter
   include Rack::Utils
   
-  def initialize(app, opts = {})
+  def initialize(app)
     @app = app
-    @opts = {
-      :element => "pre",
-      :pattern => /\A:::([-_\w]+)\s*(\n|&#x000A;)/i,  # &#x000A; == line feed
-      :reason => "[[--  ugly code removed  --]]", #8-)
-      :markdown => false  
-    }
-    @opts.merge! opts
   end
 
   def call(env)

@@ -30,11 +30,7 @@ class App < Sinatra::Base
     load_page 'index'
   end
   
-  get '/:lang' do
-    load_page params[:lang]
-  end
-  
-  get '/:lang/*' do
-    load_page File.join(params[:lang], params[:splat].first)
+  get '/*' do
+    load_page params[:splat].first
   end
 end
