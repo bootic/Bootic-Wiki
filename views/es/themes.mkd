@@ -36,7 +36,7 @@ Por ejemplo, para generar una lista de productos en la plantilla *products.html*
 </ul>
 </pre>
 
-Esta sintaxis define dos tipos de contenido dinámico: variables y etiquetas.
+Esta sintaxis define tres tipos de operaciones: variables, filtros y etiquetas.
   
 ### [Variables](#variables)
 
@@ -46,6 +46,27 @@ Una variable está rodeada por {{}} e inserta texto directamente en tu plantilla
 <pre>:::HTML
   {{ product.url }}
 </pre>
+</div>
+
+### [Filtros](#filtros)
+
+<div class="section" id="filtros">
+Un filtro modifica o agrega al valor de una variable o expresión. La sintáxis de un filtro es <code>expresión | filtro</code>. La barra vertical quiere decir "toma el valor de la expresión y pásalo a través del filtro".
+
+Por ejemplo, el filtro <code>asset_url</code> agrega la URL completa del servidor de archivos. El ejemplo
+
+<pre>:::html
+'estilos.css' | asset_url  
+</pre>
+
+... Genera la ruta absoluta a una imagen subida a través del editor de plantillas Bootic, como esta:
+
+<pre>:::html
+http://static.bootic.net/themes/110/estilos.css
+</pre>
+
+<a href="/es/themes/filters">Este link</a> lista todos los filtros disponibles en Bootic y detalla sus formas de uso.
+
 </div>
 
 ### [Etiquetas](#etiquetas)
