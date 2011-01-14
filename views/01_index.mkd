@@ -1,0 +1,10 @@
+---
+:title: Portada
+:description: Portada documentacion Bootic
+:keywords: bootic, documentacion, ecommerce
+---
+
+# Bootic docs
+
+* [Castellano](/es)
+* [English](/en)

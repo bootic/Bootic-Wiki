@@ -27,7 +27,7 @@ class App < Sinatra::Base
   end
   
   get '/?' do
-    load_page 'index'
+    load_page ''
   end
   
   get '/*' do

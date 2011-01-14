@@ -1,4 +1,0 @@
-# Bootic docs
-
-* [Castellano](/es)
-* [English](/en)

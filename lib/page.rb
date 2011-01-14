@@ -43,14 +43,16 @@ class Page
   
   include Enumerable
   
-  attr_reader :path, :title, :description, :body, :keywords
+  attr_reader :path, :title, :description, :body, :keywords, :position, :url
   
   EXPR = /---\s(.+)?\s---/m
+  POSITION_EXPR = /^\/(\d+)?_.+/
   
   def initialize(path)
     @path = path
     @children = []
-    process!
+    load_info
+    parse_position_and_url
     Page.add(self)
   end
   
@@ -59,7 +61,7 @@ class Page
   end
   
   def each(&block)
-    @children.each &block
+    @children.sort.each &block
   end
   
   def size
@@ -67,20 +69,24 @@ class Page
   end
   
   def subdir
-    @subdir ||= @path.sub(File.extname(@path), '')
+    @subdir ||= File.join(File.dirname(@path), basename.sub(/^\d+_/, ''))
+  end
+  
+  def basename
+    @base ||= File.basename(@path).sub(File.extname(@path), '')
   end
   
   def has_subdir?
     File.directory? subdir
   end
   
-  def url
-    @url ||= @path.split('views').last.sub(File.extname(@path), '')
+  def <=>(other)
+    other.position <=> position
   end
   
   protected
   
-  def process!
+  def load_info
     @body = File.read(@path).to_s
     @body =~ EXPR
     content = $1
@@ -91,7 +97,18 @@ class Page
       @body.gsub!(EXPR, '')
       @keywords = @info[:keywords]
     else
-      @title = File.basename(@path, File.extname(@path))
+      @title = File.basename(subdir)
     end
+  end
+  
+  def parse_position_and_url
+    basename =~ POSITION_EXPR
+    if $1
+      @position = $1.to_i
+    else
+      @position = 0
+    end
+    @url = subdir.split('views').last
+    @url = '/' if @url == '/index'
   end
 end

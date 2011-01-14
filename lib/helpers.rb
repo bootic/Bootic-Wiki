@@ -31,7 +31,7 @@ module Helpers
   end
   
   def build_menu(page)
-    klass = 'current' if page.url == @page.url
+    klass = 'current' if @page && page.url == @page.url
     str = %(<li class="page">)
     str << %(<a href="#{page.url}" class="#{klass}">#{page.title}</a>)
     if page.size > 0
