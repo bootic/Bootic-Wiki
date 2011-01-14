@@ -48,6 +48,12 @@ body, #wrapper {height: 100%;}
 #content h2 {
   margin: 20px 0;
 }
+#content h3 {
+  margin: 0 0 14px 0;
+}
+.section {
+  margin-bottom: 1.5em;
+}
 /* Sidebar (menus)
 ----------------------------------*/
 #sidebar {
@@ -62,6 +68,26 @@ body, #wrapper {height: 100%;}
 .nested_menu a.current {
   font-weight: bold;
   color: black;
+}
+/* tables
+----------------------------------*/
+.list {
+  width: 100%;
+}
+.list th,
+.list td {
+  padding : .2em 1em;
+  border-bottom: solid silver 1px;
+}
+/* images
+----------------------------------*/
+img.left {
+  float: left;
+  margin: 1em 1em 0 0;
+}
+img.right {
+  float: right;
+  margin: 1em 0 0 1em;
 }
 /* hacks */
 .clearfix:after {

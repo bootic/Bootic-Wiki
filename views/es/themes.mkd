@@ -37,17 +37,20 @@ Por ejemplo, para generar una lista de productos en la plantilla *products.html*
 </pre>
 
 Esta sintaxis define dos tipos de contenido dinámico: variables y etiquetas.
+  
+### [Variables](#variables)
 
-### Variables
-
+<div class="section" id="variables">  
 Una variable está rodeada por {{}} e inserta texto directamente en tu plantilla.
 
 <pre>:::HTML
   {{ product.url }}
 </pre>
+</div>
 
-### Etiquetas
+### [Etiquetas](#etiquetas)
 
+<div class="section" id="variables">
 Una etiqueta esta rodeada por {% %} y no retorna texto directamente, sino que modifica el contenido que rodea. Este ejemplo itera una lista de 3 productos y genera HTML para cada producto en la lista.
 
 <pre>:::html
@@ -57,48 +60,126 @@ Una etiqueta esta rodeada por {% %} y no retorna texto directamente, sino que mo
 </pre>
 
 El resultado es 3 links HTML, uno para cada producto.
+</div>
 
 ## Variables y etiquetas disponibles
 
 Estas son algunas de las variables y etiquetas disponibles en cualquier plantilla Bootic.
 
-### Tienda
+### [Tienda](#tienda)
 
-* {{ template }} Plantilla actual ("home", "products", "page", etc.)
-* {{ shop.name }} nombre de la tienda.
-* {{ shop.description }} descripción de la tienda, modificable en el panel de administración.
-* {{ shop.url }} URL de la portada.
+<table class="list section" cellpadding="0" cellspacing="0" id="tienda">
+  <tr>
+    <th>{{ template }}</th>
+    <td>Plantilla actual ("home", "products", "page", etc.)</td>
+  </tr>
+  <tr>
+    <th>{{ shop.name }}</th>
+    <td>Nombre de la tienda</td>
+  </tr>
+  <tr>
+    <th>{{ shop.description }}</th>
+    <td>descripción de la tienda, modificable en el panel de administración.</td>
+  </tr>
+  <tr>
+    <th>{{ shop.url }}</th>
+    <td>URL de la portada.</td>
+  </tr>
+</table>
 
-### Producto
+### [Producto](#producto)
 
-* {{ product.model }}
-* {{ product.description }}
-* {{ product.price }}
-* {{ product.url }}
-* {{ product.first_image }}
+<table class="list section" cellpadding="0" cellspacing="0" id="producto">
+  <tr>
+    <th>{{ product.model }}</th>
+    <td>Modelo o título de un producto</td>
+  </tr>
+  <tr>
+    <th>{{ product.description }}</th>
+    <td>Descripción de un producto</td>
+  </tr>
+  <tr>
+    <th>{{ product.price }}</th>
+    <td>Precio de un producto, en centavos.</br>{{ product.price.format }} para formatear.</td>
+  </tr>
+  <tr>
+    <th>{{ product.url }}</th>
+    <td>URL a la ficha de producto</td>
+  </tr>
+  <tr>
+    <th>{{ product.first_image }}</th>
+    <td>Primera imagen de un producto</td>
+  </tr>
+  <tr>
+    <th>{% for image in product.images %}</br>...</br>{% endfor %}</th>
+    <td>Iterar imagenes de un producto</td>
+  </tr>
+</table>
 
-* {% for image in product.images %} ... {% endfor %}
+### [Página](#pagina)
 
-### Página
+<table class="list section" cellpadding="0" cellspacing="0" id="pagina">
+  <tr>
+    <th>{{ page.title }}</th>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <th>{{ page.body }}</th>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <th>{{ page.url }}</th>
+    <td>&nbsp;</td>
+  </tr>
+  
+</table>
 
-* {{ page.title }}
-* {{ page.body }}
-* {{ page.url }}
+### [Colección](#coleccion)
 
-### Colección
+<table class="list section" cellpadding="0" cellspacing="0" id="coleccion">
+  <tr>
+    <th>{{ collection.title }}</th>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <th>{{ collection.body }}</th>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <th>{{ collection.url }}</th>
+    <td>&nbsp;</td>
+  </tr>
+  
+</table>
 
-* {{ collection.title }}
-* {{ collection.body }}
-* {{ collection.url }}
+### [Formulario](#form)
 
-### Formulario
+<table class="list section" cellpadding="0" cellspacing="0" id="form">
+  <tr>
+    <th>{{ form.title }}</th>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <th>{{ form.body }}</th>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <th>{{ form.url }}</th>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <th>{%&nbsp;contact_form_field&nbsp;%}</th>
+    <td>Etiqueta especial que muestra los campos definidos para el formulario actual.</td>
+  </tr>
+  
+</table>
 
-* {{ form.title }}
-* {{ form.body }}
-* {{ form.url }}
+### [Carro de compras](#cart)
 
-* {% contact_form_field %} Etiqueta especial que muestra los campos definidos para el formulario actual.
-
-### Carro de compras
-
-* {{ cart }} Inserta el HTML necesario para el carro de compras con todos sus productos.
+<table class="list section" cellpadding="0" cellspacing="0" id="cart">
+  <tr>
+    <th>{% cart %}</th>
+    <td>Inserta el HTML necesario para el carro de compras con todos sus productos.</td>
+  </tr>
+  
+</table>
