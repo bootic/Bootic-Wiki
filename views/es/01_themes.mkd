@@ -8,16 +8,67 @@ Las plantillas HTML de cada página de tu tienda Bootic pueden ser editadas en e
 
 Para esto, Bootic define una serie de plantillas presentes en todas las tiendas.
 
-* [**layout.html**](/es/themes/layout) es la plantilla HTML principal. Todas las otras páginas se despliegan aquí dentro.
-* [**home.html**](/es/themes/home) es la página que ves cuando visitas la portada de tu tienda.
-* [**products.html**](/es/themes/products) despliega todos los productos de tu tienda cuando visitas la URL /products.
-* [**product.html**](/es/themes/product) es la ficha o detalle de cada producto. 
-* [**collection.html**](/es/themes/collection) es e detalle de una colección de productos. Aquí muestras la descripción de la colección y la lista de productos asociados a ella.
-* [**page.html**](/es/themes/page) muestra el detalle de cada página de contenido que hayas creado para tu tienda.
-* [**form.html**](/es/themes/form) muestra el contenido y campos de cada formulario de contacto de tu tienda.
-* [**cart.html**](/es/themes/cart) muestra a tus clientes el contenido de sus carros de compra en tu tienda.
-* [**blog.html**](/es/themes/blog) lista de artículos en el blog.
-* [**post.html**](/es/themes/blog) detalle de un artículo del blog.
+<table class="list" cellpadding="0" cellspacing="0">
+  <thead>
+    <tr>
+      <th>plantilla</th>
+      <th>usada en URLs</th>
+      <th>&nbsp;</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th><a href="/es/themes/layout">layout.html</a></th>
+      <td>Todas</td>
+      <td>es la plantilla HTML principal. Todas las otras páginas se despliegan aquí dentro.</td>
+    </tr>
+    <tr>
+      <th><a href="/es/themes/home">home.html</a></th>
+      <td>/</td>
+      <td>es la página que ves cuando visitas la portada de tu tienda.</td>
+    </tr>
+    <tr>
+      <th><a href="/es/themes/products">products.html</a></th>
+      <td><code>/products</code>, <code>/types/mp3s</code>, <code>/types/mp3s/tags/apple</code></td>
+      <td>despliega todos los productos de tu tienda.</td>
+    </tr>
+    <tr>
+      <th><a href="/es/themes/product">product.html</a></th>
+      <td><code>/product/ipod-nano</code></td>
+      <td>es la ficha o detalle de cada producto.</td>
+    </tr>
+    <tr>
+      <th><a href="/es/themes/collection">collection.html</a></th>
+      <td><code>/collections/destacados</code>, y colecciones filtradas por tipo o etiquetas</td>
+      <td>detalle de una colección de productos. Aquí muestras la descripción de la colección y la lista de productos asociados a ella.</td>
+    </tr>
+    <tr>
+      <th><a href="/es/themes/page">page.html</a></th>
+      <td><code>/pages/about-us</code></td>
+      <td>detalle de cada página de contenido que hayas creado para tu tienda.</td>
+    </tr>
+    <tr>
+      <th><a href="/es/themes/form">form.html</a></th>
+      <td><code>/forms/contacto</code></td>
+      <td>contenido y campos de cada formulario de contacto de tu tienda.</td>
+    </tr>
+    <tr>
+      <th><a href="/es/themes/cart">cart.html</a></th>
+      <td><code>/cart</code></td>
+      <td>muestra a tus clientes el contenido de sus carros de compra en tu tienda.</td>
+    </tr>
+    <tr>
+      <th><a href="/es/themes/blog">blog.html</a></th>
+      <td><code>/blog</code></td>
+      <td>lista de artículos en el blog.</td>
+    </tr>
+    <tr>
+      <th><a href="/es/themes/post">post.html</a></th>
+      <td><code>/blog/2011/01/13/hola-mundo</code></td>
+      <td>detalle de un artículo del blog.</td>
+    </tr>
+  </tbody>
+</table>
 
 ## Contenido dinámico
 
