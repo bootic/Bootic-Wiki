@@ -21,7 +21,7 @@ body, #wrapper {height: 100%;}
 /* Header
 ----------------------------------*/
 #logo {
-  
+  float: left;
 }
 #header {
   padding: 10px 0 0 0;
@@ -35,6 +35,26 @@ body, #wrapper {height: 100%;}
   width: 900px;
   text-align: left;
   margin: 0 auto;
+}
+/* nav
+----------------------------------*/
+#nav {
+  float: right;
+  list-style-type: none;
+  margin: 40px 0 0 0;
+}
+#nav li {
+  float: left;
+  margin: 0 1em;
+}
+#nav a {
+  color: #fff;
+  text-shadow: 1px 1px 1px black;
+  text-decoration: none;
+  font-size: 16px;
+}
+#nav .current a {
+  text-decoration: underline;
 }
 /* Content
 ----------------------------------*/
