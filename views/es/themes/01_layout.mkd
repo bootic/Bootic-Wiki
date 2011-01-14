@@ -1,6 +1,6 @@
 # Layout.html
 
-Esta es la plantilla principal de tu tienda. Cada página que visitas se despliega dentro de layout.html usando la variable {{ content_for_layout }}. Este es un *layout* simplificado:
+Esta es la plantilla principal de tu tienda. Cada página que visitas se despliega dentro de layout.html usando la variable <code>{{ content_for_layout }}</code>. Este es un *layout* simplificado:
 
 <pre>:::html
 <html>
@@ -20,7 +20,7 @@ Si tenemos una plantilla [home.html](/es/themes/home) con el siguiente contenido
 <h1>Hola, estas en la portada de mi sitio!</h1>
 </pre>
 
-... Y visitamos la portada, el la variable {{ content_for_layout }} es reemplazada por el contenido de home.html y el HTML resultante es:
+... Y visitamos la portada, la variable <code>{{ content_for_layout }}</code> es reemplazada autom&aacute;ticamente por el contenido de home.html. El HTML resultante es:
 
 <pre>:::html
   <html>

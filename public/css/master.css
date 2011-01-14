@@ -18,6 +18,12 @@ body, #wrapper {height: 100%;}
 	height: 80px;
 	clear:both;
 }
+
+code {
+  background: #D6D6D6;
+  text-shadow: 1px 1px 1px white;
+  padding: 1px;
+}
 /* Header
 ----------------------------------*/
 #logo {
