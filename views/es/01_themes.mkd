@@ -250,6 +250,10 @@ Estas son algunas de las variables y etiquetas disponibles en cualquier plantill
 
 <table class="list section" cellpadding="0" cellspacing="0" id="cart">
   <tr>
+    <th>{% add_to_cart %}</th>
+    <td>Página de producto. HTML para selector de variantes y botón "agregar al carro".</td>
+  </tr>
+  <tr>
     <th>{% cart %}</th>
     <td>Inserta el HTML necesario para el carro de compras con todos sus productos.</td>
   </tr>
