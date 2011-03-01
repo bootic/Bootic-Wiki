@@ -1,7 +1,0 @@
----
-:title: Filtros
-:description: Filtros de plantillas de diseño Bootic
-:keywords: liquid, filtros, diseno
----
-
-# Filtros
