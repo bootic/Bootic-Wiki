@@ -1,0 +1,57 @@
+---
+:title: Blog y noticias
+:description: Variables y etiquetas Liquid para el blog y noticias en una tienda Bootic
+:keywords: liquid, tags, variables, blog, posts, noticias, artículos
+---
+# Blog y noticias
+
+El objeto <code>blog</code> contiene los artículos de noticias de tu tienda. Normalmente lo usas en la plantilla blog.html
+
+<img src="/img/themes/blog-admin.png" alt="Administración de blog y noticias en Bootic" />
+
+## Paginando artículos
+
+<pre>:::html
+{% paginate blog.posts by:30 %}
+ {% for post in paginated_list %}
+  <div class="post">
+   <h3>
+    <a href="{{post.url}}" title="{{post.title}}">
+     {{ post.title }}
+    </a>
+   </h3>
+   <p class="texto">
+    {{ post.body | strip_html | truncate: 512 }}
+   </p><!-- /texto -->
+ 
+   <small class="date">
+    Publicado el {{ post.published_on | date:'%d/%m/%Y' }} 
+   </small>
+  </div><!-- /post -->
+ {% endfor %}
+ {{ paginated_list | pagination }}
+{% endpaginate %}
+</pre>
+
+En este ejemplo usamos los *helpers* <code>strip_html</code> para remover etiquetas HTML y <code>truncate</code> para limitar el texto a 512 caractéres.
+
+Además usamos <code>date</code> para formatear la fecha de cada artículo.
+
+## Calendario de artículos
+
+Con el objeto <code>blog.calendar</code> y una combinación de trucos *Liquid* podemos generar una lista de meses, cada uno con la cuenta de artículos para cada més. Por último generamos un link a cada mes para ver el archivo de artículos.
+
+<pre>:::html
+<ul id="archivo">
+  {% for date in blog.calendar %}
+  <li>
+  {% capture localized_month %}datetime.month_names.month_{{date.month_num}}{% endcapture %}
+  <a href="{{ date.url }}" title="{{ localized_month | t }}">
+    {{ localized_month | t }} {{ date.year}} ({{ date.post_count }})
+  </a>
+  </li>
+  {% endfor %}
+</ul>
+</pre>
+
+El método <code>capture</code> es parte de Liquid y permite "capturar" el valor de un bloque de código y asignarlo a una variable, en este caso *localized_months*. ([ver documentación Liquid](http://wiki.shopify.com/UsingLiquid))

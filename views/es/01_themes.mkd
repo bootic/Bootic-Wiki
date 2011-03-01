@@ -138,11 +138,9 @@ El resultado es 3 links HTML, uno para cada producto.
 
 Estas son algunas de las variables y etiquetas disponibles en cualquier plantilla Bootic.
 
-### [Tienda](#tienda)
-
 <table class="list section" cellpadding="0" cellspacing="0" id="tienda">
   <tr>
-    <th>{{ template }}</th>
+    <th width="30%">{{ template }}</th>
     <td>Plantilla actual ("home", "products", "page", etc.)</td>
   </tr>
   <tr>
@@ -157,9 +155,51 @@ Estas son algunas de las variables y etiquetas disponibles en cualquier plantill
     <th>{{ shop.url }}</th>
     <td>URL de la portada.</td>
   </tr>
+  <tr>
+    <th>{% all_products %}</th>
+    <td>Objeto iterable que contiene todos los productos en la tienda <a href="/es/themes/globales#all_products">Ver más</a></td>
+  </tr>
+  <tr>
+    <th>{% collections %}</th>
+    <td>Objeto iterable que contiene todas las colecciones en la tienda <a href="/es/themes/globales#collections">Ver más</a></td>
+  </tr>
+  <tr>
+    <th>{% pages %}</th>
+    <td>Objeto iterable que contiene todas las páginas en la tienda <a href="/es/themes/globales#pages">Ver más</a></td>
+  </tr>
+  <tr>
+    <th>{% forms %}</th>
+    <td>Objeto iterable que contiene todos los formularios en la tienda <a href="/es/themes/globales#forms">Ver más</a></td>
+  </tr>
+  <tr>
+    <th>{% menus %}</th>
+    <td>Objeto iterable que contiene todos los menús de navegación en la tienda <a href="/es/themes/menus">Ver más</a></td>
+  </tr>
+  <tr>
+    <th>{% blog %}</th>
+    <td>Objeto iterable que contiene todos los artículos del blog de la tienda <a href="/es/themes/blog">Ver más</a></td>
+  </tr>
+  <tr>
+    <th>{% tags %}</th>
+    <td>Objeto iterable que contiene todas las etiquetas en la tienda <a href="/es/themes/globales#tags">Ver más</a></td>
+  </tr>
+  <tr>
+    <th>{% product_types %}</th>
+    <td>Objeto iterable que contiene todos los tipos de productos en la tienda <a href="/es/themes/globales#product_types">Ver más</a></td>
+  </tr>
+  <tr>
+    <th>{% vendors %}</th>
+    <td>Objeto iterable que contiene todas las marcas de productos en la tienda <a href="/es/themes/globales#vendors">Ver más</a></td>
+  </tr>
+  <tr>
+    <th>{% resource %}</th>
+    <td>Alias que apunta al objeto principal en una plantilla. Puede ser collection, page, form, product, etc. <a href="/es/themes/globales#resource">Ver más</a></td>
+  </tr>
 </table>
 
 ### [Producto](#producto)
+
+Disponible en product.html o dentro de un *loop* de productos.
 
 <table class="list section" cellpadding="0" cellspacing="0" id="producto">
   <tr>
@@ -190,6 +230,8 @@ Estas son algunas de las variables y etiquetas disponibles en cualquier plantill
 
 ### [Página](#pagina)
 
+Disponible en page.html o dentro de un loop de páginas.
+
 <table class="list section" cellpadding="0" cellspacing="0" id="pagina">
   <tr>
     <th>{{ page.title }}</th>
@@ -208,6 +250,8 @@ Estas son algunas de las variables y etiquetas disponibles en cualquier plantill
 
 ### [Colección](#coleccion)
 
+Disponible en collection.html o dentro de un loop de colecciones.
+
 <table class="list section" cellpadding="0" cellspacing="0" id="coleccion">
   <tr>
     <th>{{ collection.title }}</th>
@@ -225,6 +269,8 @@ Estas son algunas de las variables y etiquetas disponibles en cualquier plantill
 </table>
 
 ### [Formulario](#form)
+
+Disponible en form.html o dentro de un loop de formularios.
 
 <table class="list section" cellpadding="0" cellspacing="0" id="form">
   <tr>
@@ -251,7 +297,7 @@ Estas son algunas de las variables y etiquetas disponibles en cualquier plantill
 <table class="list section" cellpadding="0" cellspacing="0" id="cart">
   <tr>
     <th>{%&nbsp;add_to_cart&nbsp;%}</th>
-    <td>Página de producto. HTML para selector de variantes y botón "agregar al carro".</td>
+    <td>Página de producto (product.html). HTML para selector de variantes y botón "agregar al carro".</td>
   </tr>
   <tr>
     <th>{% cart %}</th>
