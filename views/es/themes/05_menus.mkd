@@ -1,0 +1,30 @@
+---
+:title: Menús de navegación
+:description: Creando menús de navegación en tu tienda Bootic
+:keywords: navigation, ux, design, links
+---
+# Menús de navegación
+
+En Bootic, la estructura de navegación de tu sitio puede ser creada enteramente desde el área "Navegación" del administrador de tu tienda.
+
+Primero, crea un menú de navegación y agregar un par de links dentro de él. Bootic generará una "<abbr title="'Handle', o nombre normalizado">manilla</abbr>" que puedes usar para manipular el menú en el editor de plantillas.
+
+<img src="/img/themes/menus.png" alt="Administración de menus y links de navegación en Bootic" />
+
+Usa la manilla para obtener el menú desde la variable <code>menus</code> e iterar sus links.
+
+<pre>:::html
+  <ul class="navegacion">
+  {% for link in menus.navegacion-footer.links %}
+    <li class="{{ link.slug }}{{ ' current' | print_if_equal: resource, link }}">
+      <a href="{{ link.url }}">{{ link.title }}</a>
+    </li>
+  {% endfor %}
+  </ul>
+</pre>
+
+El atributo <code>slug</code> en cada link es el valor de su propia manilla. En este caso lo usamos para asignar classes CSS a cada item del menu.
+
+Además usamos el helper <code>print_if_equal</code> para agregar la clase "current" si un link es igual a la página actual (<em>resource</em>).
+
+De esta forma puedes crear y mostrar distintos menús de navegación en tus páginas.

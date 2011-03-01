@@ -24,6 +24,10 @@ code {
   text-shadow: 1px 1px 1px white;
   padding: 1px;
 }
+abbr {
+  border-bottom: dashed silver 1px;
+  cursor: help;
+}
 /* Header
 ----------------------------------*/
 #logo {
