@@ -46,7 +46,7 @@ class Page
   attr_reader :path, :title, :description, :body, :keywords, :position, :url
   
   EXPR = /---\s(.+)?\s---/m
-  POSITION_EXPR = /^\/(\d+)?_.+/
+  POSITION_EXPR = /^(\d+)?_.+/
   
   def initialize(path)
     @path = path
@@ -81,7 +81,7 @@ class Page
   end
   
   def <=>(other)
-    other.position <=> position
+    position <=> other.position
   end
   
   protected
