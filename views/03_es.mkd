@@ -5,6 +5,10 @@
 ---
 # Administrando tu tienda Bootic
 
+Este video muestra la principal funcionalidad de una tienda Bootic.
+
+<iframe src="http://player.vimeo.com/video/12716140" width="630" height="394" frameborder="0"></iframe><p><a href="http://vimeo.com/12716140">Bootic overview</a> from <a href="http://vimeo.com/user287451">Ismael Celis</a> on <a href="http://vimeo.com">Vimeo</a>.</p>
+
 Ver información sobre:
 
 * [Plantillas](/es/themes)
