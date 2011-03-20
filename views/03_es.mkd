@@ -5,13 +5,23 @@
 ---
 # Administrando tu tienda Bootic
 
-Este video muestra la principal funcionalidad de una tienda Bootic.
-
-<iframe src="http://player.vimeo.com/video/12716140" width="630" height="394" frameborder="0"></iframe>
+<div class="clearfix section">  
+  <div class="grid_thumb column">
+    <a href="http://vimeo.com/12716140" class="js_fancy_box_vimeo">
+      <img src="http://b.vimeocdn.com/ts/718/660/71866071_200.jpg" alt="Bootic intro" />
+      <strong>Introducción a Bootic</strong>
+    </a>
+  </div>
+  <div class="column info_column">
+    <p>Aprende cómo administrar y sacarle el mejor provecho a tu tienda Bootic.</p>
+    <p>Este video muestra la principal funcionalidad de una tienda Bootic.</p>
+    <p><a href="/es/screencasts">Ver más videos</a></p>
+  </div>
+</div>
 
 ## Ver información sobre:
 
-* [Plantillas](/es/themes)
+* [Plantillas y diseño](/es/themes)
 * [Promociones de descuento](http://www.bootic.net/blog/2010/12/13/promociones-de-descuento-configurables)
 * [Variantes de productos](http://www.bootic.net/blog/2010/6/27/administracion-de-variantes-de-productos)
 * [Tipos de productos personalizados](http://www.bootic.net/blog/2010/6/27/definiendo-tipos-de-productos-en-bootic)
