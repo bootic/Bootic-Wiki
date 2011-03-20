@@ -1,1 +1,9 @@
+---
+:title: Home.html
+:description: Plantilla HTML de portada
+:keywords: home, portada, html, plantilla, template, diseno
+---
+
 # home.html
+
+En construcción
