@@ -28,6 +28,11 @@ abbr {
   border-bottom: dashed silver 1px;
   cursor: help;
 }
+h1 {
+  margin-bottom: 1em;
+}
+.column {float:left;}
+.info_column {margin: 0 0 0 1em;width: 300px;}
 /* Header
 ----------------------------------*/
 #logo {
@@ -119,6 +124,38 @@ img.right {
   float: right;
   margin: 1em 0 0 1em;
 }
+/* Sreencasts
+----------------------------------*/
+ul.grid {list-style-type: none;margin:0;padding:0;margin-top: 1em;}
+.grid .grid_thumb {
+  float: left;
+  margin: 0 2em 2em 0;
+}
+.grid_thumb {
+  padding: 1em;
+  border: solid silver 1px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  box-shadow: 2px 2px 3px rgba(0,0,0,0.2);
+}
+.grid_thumb:hover {
+  box-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+.grid_thumb img {
+  border: solid silver 1px;
+  padding: 2px;
+}
+.grid_thumb a {
+  text-decoration: none;
+  color: #134B99;
+}
+.grid_thumb strong {
+  display: block;
+  width: 206px;
+  height: 33px;
+}
+.single_thumb {display: inline-block;}
+
 /* hacks */
 .clearfix:after {
 	content: ".";

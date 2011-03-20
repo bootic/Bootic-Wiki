@@ -1,0 +1,52 @@
+---
+:title: "Videos y ejemplos"
+:description: "Videos, screencasts y ejemplos sobre cómo usar Bootic"
+---
+# Videos y ejemplos
+
+Haz click en las fotos para ver cada video.
+
+<ul class="grid clearfix">
+  <li class="grid_thumb">
+    <a href="http://vimeo.com/12716140" class="js_fancy_box_vimeo">
+      <img src="http://b.vimeocdn.com/ts/718/660/71866071_200.jpg" alt="Bootic intro" />
+      <strong>Introducción a Bootic</strong>
+    </a>
+  </li>
+  <li class="grid_thumb">
+    <a href="http://vimeo.com/12892571" class="js_fancy_box_vimeo">
+      <img src="http://b.vimeocdn.com/ts/731/102/73110267_200.jpg" alt="Flujo de órdenes de compra" />
+      <strong>Flujo de órdenes de compra</strong>
+    </a>
+  </li>
+  <li class="grid_thumb">
+    <a href="http://vimeo.com/17785199" class="js_fancy_box_vimeo">
+      <img src="http://b.vimeocdn.com/ts/111/023/111023967_200.jpg" alt="Códigos de descuento" />
+      <strong>Códigos de descuento</strong>
+    </a>
+  </li>
+  <li class="grid_thumb">
+    <a href="http://vimeo.com/12897471" class="js_fancy_box_vimeo">
+      <img src="http://b.vimeocdn.com/ts/731/420/73142081_200.jpg" alt="Variantes de productos" />
+      <strong>Variantes de productos</strong>
+    </a>
+  </li>
+  <li class="grid_thumb">
+    <a href="http://vimeo.com/12897275" class="js_fancy_box_vimeo">
+      <img src="http://b.vimeocdn.com/ts/731/408/73140804_200.jpg" alt="Productos personalizados" />
+      <strong>Productos personalizados</strong>
+    </a>
+  </li>
+  <li class="grid_thumb">
+    <a href="http://vimeo.com/12177448" class="js_fancy_box_vimeo">
+      <img src="http://b.vimeocdn.com/ts/678/771/67877144_200.jpg" alt="Destinatarios de email" />
+      <strong>Formularios y Destinatarios de email</strong>
+    </a>
+  </li>
+  <li class="grid_thumb">
+    <a href="http://vimeo.com/10560562" class="js_fancy_box_vimeo">
+      <img src="http://b.vimeocdn.com/ts/556/057/55605723_200.jpg" alt="Creando Newsletters con Mailchimp" />
+      <strong>Creando Newsletters con Bootic y Mailchimp.com</strong>
+    </a>
+  </li>
+</ul>
