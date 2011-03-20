@@ -7,8 +7,18 @@
 
 Este video muestra la principal funcionalidad de una tienda Bootic.
 
-<iframe src="http://player.vimeo.com/video/12716140" width="630" height="394" frameborder="0"></iframe><p><a href="http://vimeo.com/12716140">Bootic overview</a> from <a href="http://vimeo.com/user287451">Ismael Celis</a> on <a href="http://vimeo.com">Vimeo</a>.</p>
+<iframe src="http://player.vimeo.com/video/12716140" width="630" height="394" frameborder="0"></iframe>
 
-Ver información sobre:
+## Ver información sobre:
 
 * [Plantillas](/es/themes)
+* [Promociones de descuento](http://www.bootic.net/blog/2010/12/13/promociones-de-descuento-configurables)
+* [Variantes de productos](http://www.bootic.net/blog/2010/6/27/administracion-de-variantes-de-productos)
+* [Tipos de productos personalizados](http://www.bootic.net/blog/2010/6/27/definiendo-tipos-de-productos-en-bootic)
+* [Flujo de órdenes de compra](http://www.bootic.net/blog/2010/6/27/flujo-de-ordenes-de-compra)
+* [Formularios y destinatarios de correo](http://www.bootic.net/blog/2010/5/31/configurando-destinatarios-de-correo-en-bootic)
+* [Creación de Newsletters con Mailchimp.com](http://www.bootic.net/blog/2010/3/30/administracion-de-listas-de-correo-con-mailchimp)
+* [Base de datos de clientes con Highrise CRM](http://www.bootic.net/blog/2010/3/18/integracion-con-highrise-crm)
+* [Filtrar órdenes de compra por estado](http://www.bootic.net/blog/2010/2/25/ordenes-de-compra-exitosas)
+* [Exportación de datos para Excel](http://www.bootic.net/blog/2010/2/25/exportacion-de-datos-para-excel)
+* [Administración de stock de productos](http://www.bootic.net/blog/2009/12/14/gestion-de-stock-y-disponibilidad-de-productos)
