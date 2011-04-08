@@ -4,6 +4,8 @@
 ---
 # Plantillas de diseño Bootic
 
+<img src="/img/themes/editor_cover.png" alt="Bootic code editor" />
+
 Las plantillas HTML de cada página de tu tienda Bootic pueden ser editadas en el área de diseño de tu panel de administración.
 
 Para esto, Bootic define una serie de plantillas presentes en todas las tiendas.
