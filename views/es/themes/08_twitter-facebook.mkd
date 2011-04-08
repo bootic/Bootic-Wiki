@@ -1,0 +1,52 @@
+---
+:title: Botones de Twitter y Facebook
+:description: Integración de botones Twitter y Facebook en plantillas Bootic
+:keywords: liquid, facebook, twitter, button, embed, html
+---
+# Botones de redes sociales en páginas de productos
+
+Redes sociales como Twitter y Facebook ofrecen botones en formato HTML que puedes pegar en tu propio sitio. Esta página muestra el procedimiento básico para usar los botones de Twitter y Facebook en las plantillas HTML de tu sitio. Necesitarás conocimientos básicos de HTML y también algo de CSS si quieres ajustar el diseño y posición de los botones.
+
+En Bootic, puedes pegar estos botones en la plantilla HTML de cada producto. Esta plantilla, llamada <code>product.html</code>, la encuentras en el editor en línea de la interfaz de administración de tu tienda.
+
+<img src="/img/themes/product_template_menu.png" alt="Template de producto" />
+
+## Botón Twitter
+
+El código del botón de Twitter lo encuentras en esta dirección: [http://twitter.com/about/resources/tweetbutton](http://twitter.com/about/resources/tweetbutton). 
+
+Ahí puedes personalizar el diseño y texto y generar el código HTML. 
+
+<img src="/img/themes/twitter_button.jpg" alt="Twitter button" />
+
+A continuación debes copiar el código y pegarlo en el lugar apropiado de tu plantilla product.html en el editor Bootic. En este ejemplo, usando la plantilla "base" de Bootic, lo situaré a la derecha del botón para agregar al carro de compra.
+
+<img src="/img/themes/editor_twitter.png" alt="Twitter code in editor" />
+
+Salvamos los cambios en el editor y vamos a cualquier página de producto en nuestro sitio.
+
+<img src="/img/themes/twitter_button_example.png" alt="Twitter example" />
+
+## Botón "like" de Facebook
+
+El botón "Like" de Facebook requiere algo de configuración. Facebook también tiene una página donde puedes cambiar aspectos del botón y generar el código HTML.
+
+[http://developers.facebook.com/docs/reference/plugins/like/](http://developers.facebook.com/docs/reference/plugins/like/)
+
+El único campo necesario es la "URL" que quieres que tus usuarios compartan con sus amigos. En este ejemplo queremos que los usuarios compartan la dirección de cada producto. Para esto tenemos que usar una etiqueta especial de Bootic en la plantilla product.html. Por ahora pondré el texto "URL-PRODUCTO" en Facebook y lo reemplazaré con la etiqueta <code>{{ product.url }}</code> en el editor de Bootic.
+
+<img src="/img/themes/twitter_button.png" alt="Facebook like button" />
+
+Presiona "get the code" y copia el código de tu botón Facebook de la opción "iframe".
+
+<img src="/img/themes/fb_getcode.png" alt="Facebook get the code" />
+
+Ahora pegamos el código en la plantilla "product.html", igual que en el ejemplo anterior junto al botón del carro de compra.
+
+Una vez en el editor reemplazo el texto "URL-PRODUCTO" que puse antes por la etiqueta especial de Bootic que genera la URL de cada producto, <code>{{ product.url }}</code>.
+
+<img src="/img/themes/fb_editor.png" alt="Facebook editor" />
+
+Finalmente guardamos los cambios y nos aseguramos de que las páginas de producto muestran el botón adecuadamente.
+
+<img src="/img/themes/fb_example.png" alt="Facebook Like button" />
