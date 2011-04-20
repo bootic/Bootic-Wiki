@@ -6,7 +6,8 @@ module Helpers
   def mkd(page)
     path = File.join(options.root, 'views', "#{page}.mkd")
     @content = RDiscount.new(page.body).to_html
-    erb :layout
+    
+    pjax? ? @content : erb(:layout)
   end
   
   def render_404
@@ -20,6 +21,10 @@ module Helpers
   
   def menu
     @menu ||= Page.root
+  end
+  
+  def pjax?
+    !!request.env['HTTP_X_PJAX']
   end
   
   def load_page(url)
