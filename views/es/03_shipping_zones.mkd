@@ -7,6 +7,8 @@
 
 En Bootic las zonas de envío están asociadas internamente a áreas geográficas, lo que significa que cuando el usuario ingresa la dirección de envío de su pedido, Bootic automáticamente encuentra las zonas que coincidan con su área geográfica. Esto significa que puedes ofrecer diversas formas de envío a tus clientes, ya que éstas se presentan como opciones luego de conocer la dirección de envío ingresada por el cliente.
 
+<a href="http://localhost:4000/es/screencasts#shipping_zones" title="Nuevas zonas de envío Bootic">Aquí puedes ver un video</a>.
+
 # Cómo configurarlas
 
 <img src="/img/shipping_zones/editing.png" alt="Editing Bootic shipping zone" />
