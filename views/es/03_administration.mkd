@@ -1,0 +1,14 @@
+---
+:title: "Administrando tu tienda"
+:description: "Administración y configuración de una tienda Bootic"
+:keywords: administración, configuración, panel, backend, login
+---
+# Administración y configuración de tu tienda
+
+## El panel de administración
+
+En esta sección encontrarás sugerencias y ejemplos sobre cómo usar el panel de administración de tu tienda Bootic.
+
+<ul>
+  <li><a href="/es/administration/shipping_zones">Configuración de zonas de envío</a></li>
+</ul>

@@ -3,11 +3,24 @@
 :description: "Información sobre cómo configurar las zonas y costos de envío en tu tienda Bootic"
 :keywords: costos, zonas, envío, despacho, despachos, órdenes, pedidos, productos
 ---
-# Descripción
+# Zonas de envío para pedidos de compra
 
 En Bootic las zonas de envío están asociadas internamente a áreas geográficas, lo que significa que cuando el usuario ingresa la dirección de envío de su pedido, Bootic automáticamente encuentra las zonas que coincidan con su área geográfica. Esto significa que puedes ofrecer diversas formas de envío a tus clientes, ya que éstas se presentan como opciones luego de conocer la dirección de envío ingresada por el cliente.
 
-<a href="http://localhost:4000/es/screencasts#shipping_zones" title="Nuevas zonas de envío Bootic">Aquí puedes ver un video</a>.
+<ul class="grid clearfix">
+  <li class="grid_thumb">
+    <a href="#screnr_zonas" class="js_fancy_box_screenr" rel="fancybox" id="shipping_zones">
+      <img src="http://cdn.screenr.com/images/53176410-4771-4fa9-947a-7f9267bae225_thumb.jpg" alt="Zonas de envío de órdenes" />
+      <strong>Video: configuración de zonas de envío</strong>
+    </a>
+  </li>
+</ul>
+
+<div class="hidden">
+  <div id="screnr_zonas">    
+    <iframe src="http://www.screenr.com/embed/A33" width="650" height="396" frameborder="0"></iframe>
+  </div>
+</div>
 
 # Cómo configurarlas
 

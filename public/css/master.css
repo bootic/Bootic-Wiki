@@ -155,6 +155,7 @@ h1 {
 	border-bottom: 1px solid #eee;
 	padding: 4px;
 	list-style: circle inside;
+	font-size: 12px;
 }
 
 .nested_menu li ul {
