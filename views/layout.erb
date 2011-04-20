@@ -5,7 +5,7 @@
 	<title>Bootic Docs - <%= @page.title if @page %></title>
   <meta name="description" content="<%= @page.description if @page %>" />
   <meta name="keywords" content="<%= @page.keywords if @page %>" />
-	<link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" /> 
+	<link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
 	<link rel="stylesheet" href="/css/master.css" type="text/css" media="screen" title="no title" charset="utf-8">
 	<link rel="stylesheet" href="/css/coderay.css" type="text/css" media="screen" charset="utf-8">
 	<!-- Fancy box -->
@@ -25,11 +25,10 @@
       </div>
     </div>
     <div id="main" class="box clearfix">
-      
+
       <div id="sidebar">
         <% if menu %>
         <div class="section">
-          <h3>Contenidos</h3>
           <ul class="nested_menu">
             <% menu.each do |page| %>
               <%= build_menu page %>
@@ -38,19 +37,19 @@
         </div>
         <% end %>
       </div><!-- /sidebar -->
-      
+
       <div id="content">
         <%= @content  %>
       </div><!-- /content -->
-      
+
     </div><!-- /main -->
-    
+
   </div><!-- /wrapper -->
-  
+
   <div id="footer">
     &copy;Bootic <%= Time.now.year %>
   </div><!-- /footer -->
-  
+
   <script type="text/javascript" charset="utf-8" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
   <!-- Fancy box -->
 	<script type="text/javascript" src="/fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
