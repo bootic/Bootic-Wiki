@@ -1,6 +1,7 @@
 ---
 :title: "Zonas y costos de envío"
 :description: "Información sobre cómo configurar las zonas y costos de envío en tu tienda Bootic"
+:keywords: costos, zonas, envío, despacho, despachos, órdenes, pedidos, productos
 ---
 # Descripción
 

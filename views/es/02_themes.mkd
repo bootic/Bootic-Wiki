@@ -1,6 +1,7 @@
 ---
 :title: "Diseño de plantillas"
 :description: "Diseño de plantillas en tu tienda Bootic"
+:keywords: diseño, plantillas, customización, personalización
 ---
 # Plantillas de diseño Bootic
 
@@ -90,10 +91,10 @@ Por ejemplo, para generar una lista de productos en la plantilla *products.html*
 </pre>
 
 Esta sintaxis define tres tipos de operaciones: variables, filtros y etiquetas.
-  
+
 ### [Variables](#variables)
 
-<div class="section" id="variables">  
+<div class="section" id="variables">
 Una variable está rodeada por {{}} e inserta texto directamente en tu plantilla.
 
 <pre>:::HTML
@@ -109,7 +110,7 @@ Un filtro modifica o agrega al valor de una variable o expresión. La sintáxis 
 Por ejemplo, el filtro <code>asset_url</code> agrega la URL completa del servidor de archivos. El ejemplo
 
 <pre>:::html
-'estilos.css' | asset_url  
+'estilos.css' | asset_url
 </pre>
 
 ... Genera la ruta absoluta a una imagen subida a través del editor de plantillas Bootic, como esta:
@@ -247,7 +248,7 @@ Disponible en page.html o dentro de un loop de páginas.
     <th>{{ page.url }}</th>
     <td>&nbsp;</td>
   </tr>
-  
+
 </table>
 
 ### [Colección](#coleccion)
@@ -267,7 +268,7 @@ Disponible en collection.html o dentro de un loop de colecciones.
     <th>{{ collection.url }}</th>
     <td>&nbsp;</td>
   </tr>
-  
+
 </table>
 
 ### [Formulario](#form)
@@ -291,7 +292,7 @@ Disponible en form.html o dentro de un loop de formularios.
     <th>{%&nbsp;contact_form_field&nbsp;%}</th>
     <td>Etiqueta especial que muestra los campos definidos para el formulario actual.</td>
   </tr>
-  
+
 </table>
 
 ### [Carro de compras](#cart)
@@ -305,5 +306,5 @@ Disponible en form.html o dentro de un loop de formularios.
     <th>{% cart %}</th>
     <td>Inserta el HTML necesario para el carro de compras con todos sus productos.</td>
   </tr>
-  
+
 </table>
