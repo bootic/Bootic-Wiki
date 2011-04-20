@@ -1,0 +1,8 @@
+# Install
+
+    git pull
+    bundle install
+    
+## Run
+
+    shotgun -p 3000
