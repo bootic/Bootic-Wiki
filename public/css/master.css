@@ -5,6 +5,7 @@ body {
   line-height: 1.4;
   text-align: center;
 }
+.hidden {display: none;}
 /* Sticky footer */
 body, #wrapper {height: 100%;}
 #wrapper {min-height: 100%;}
@@ -148,6 +149,7 @@ ul.grid {list-style-type: none;margin:0;padding:0;margin-top: 1em;}
 .grid_thumb a {
   text-decoration: none;
   color: #134B99;
+  display: block;
 }
 .grid_thumb strong {
   display: block;

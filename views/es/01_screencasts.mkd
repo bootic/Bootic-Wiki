@@ -19,6 +19,12 @@ Haz click en las fotos para ver cada video.
       <strong>Flujo de órdenes de compra</strong>
     </a>
   </li>
+  <li class="grid_thumb" style="height: 194px">
+    <a href="#screnr_zonas" class="js_fancy_box_screenr" rel="fancybox">
+      <img src="http://cdn.screenr.com/images/53176410-4771-4fa9-947a-7f9267bae225_thumb.jpg" alt="Zonas de envío de órdenes" />
+      <strong>Configuración de zonas de envío</strong>
+    </a>
+  </li>
   <li class="grid_thumb">
     <a href="http://vimeo.com/17785199" class="js_fancy_box_vimeo">
       <img src="http://b.vimeocdn.com/ts/111/023/111023967_200.jpg" alt="Códigos de descuento" />
@@ -50,3 +56,9 @@ Haz click en las fotos para ver cada video.
     </a>
   </li>
 </ul>
+
+<div class="hidden">
+  <div id="screnr_zonas">    
+    <iframe src="http://www.screenr.com/embed/A33" width="650" height="396" frameborder="0"></iframe>
+  </div>
+</div>
