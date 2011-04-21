@@ -257,6 +257,13 @@ ul.grid {
 	display: inline-block;
 }
 
+/* disqus comments
+---------------------------------------*/
+#comments {
+  margin-top: 2em;
+  border-top: solid gray 3px;
+  padding-top: 2em;
+}
 /* hacks */
 .clearfix:after {
 	content: ".";

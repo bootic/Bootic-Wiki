@@ -48,4 +48,12 @@ module Helpers
     end
     str << %(</li>)
   end
+  
+  def current_url
+    "http://#{request.env['HTTP_HOST']}#{@page.url}"
+  end
+  
+  def development?
+    ENV['RACK_ENV'] == 'development'
+  end
 end
