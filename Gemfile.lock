@@ -2,6 +2,8 @@ GEM
   remote: http://rubygems.org/
   specs:
     coderay (0.9.6)
+    dragonfly (0.8.2)
+      rack
     rack (1.2.1)
     rdiscount (1.6.5)
     sinatra (1.1.2)
@@ -14,5 +16,6 @@ PLATFORMS
 
 DEPENDENCIES
   coderay
+  dragonfly
   rdiscount
   sinatra
