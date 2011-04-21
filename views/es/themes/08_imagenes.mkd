@@ -1,0 +1,47 @@
+---
+:title: Trabajando con imágenes
+:description: Trabajando con imágenes en plantillas HTML y CSS Bootic
+:keywords: liquid, html, images, css, assets, static
+---
+# Insertando imágenes en en editor de plantillas
+
+Las plantillas Bootic manejan dos tipos de imágenes. Las imágenes que subes a traves del editor, por ejemplo el logo de tu tienda o elementos de diseño, y la imágenes de productos. 
+
+## Subiendo imágenes en el editor
+
+<img src="/img/themes/asset_upload.png" alt="Subir imágenes" class="left" />
+
+Abajo a la derecha en el editor de plantillas puedes subir archivos de tipo .gif, .png y .jpg. Bootic te muestra los archivos subidos con su nombre completo.
+
+Estas imágenes puedes ser usadas tanto en tus plantillas CSS como HTML.
+
+### Insertando imágenes en plantillas HTML
+
+Abre la plantilla que quieras (por ejemplo <code>layout.html</code>) y agrega una etiqueta de image <code>&lt;img&gt;</code>. En el atributo <code>src</code> debes insertar el nombre del archivo que subiste, tal cual aparece en la lista de archivos subidos, usando el filtro <code>asset_url</code>, así:
+
+<pre>:::html
+<img src="{{ 'logo.png' | asset_url }}" alt="Logo de mi tienda" />
+</pre>
+
+El filtro <code>asset_url</code> genera la URL al directorio donde Bootic guarda tus archivos. Una vez que guardas la plantilla, Bootic genera dinámicamentte la ruta completa, que se ve más o menos así:
+
+<pre>:::html
+<img src="http://static.bootic.net/uploads/themes/32/logo.png" alt="Logo de mi tienda" />
+</pre>
+
+<div class="tip">
+  <strong>Tip:</strong> si situas el cursor donde quieres insertar la imagen y a continuación haces click en la imagen en la lista de archivos subidos, Bootic inserta el nombre de imagen por ti.
+</div>
+
+### Insertando imágenes en plantillas CSS.
+
+En CSS basta con usar el nombre de la imágen directamente. Bootic guarda las plantillas CSS y las imágenes subidas en el mismo directorio, por lo que no es necesario usar el filtro <code>asset_url</code>.
+
+Este ejemplo situa la imagen "fondo.gif" como imagen de fondo del elemento <code>body</code> (por ejemplo en la plantilla <code>master.css</code>)
+
+<pre>:::css
+body {
+  font-size: 12px;
+  background: url(fondo.gif);
+}
+</pre>
