@@ -5,8 +5,8 @@ module Helpers
   
   def mkd(page)
     path = File.join(options.root, 'views', "#{page}.mkd")
-    @content = RDiscount.new(page.body).to_html
-    
+    erb_content = ERB.new(page.body).result(binding)
+    @content = RDiscount.new(erb_content).to_html
     pjax? ? @content : erb(:layout)
   end
   
