@@ -61,7 +61,7 @@ module Helpers
     if size
       img = ::IMAGES.fetch(path.sub(/^\//, '')).thumb(size)
       sha = img.sha
-      "/i/#{size}#{path}?s=#{sha}"
+      "/i#{img.url}"
     else
       path
     end

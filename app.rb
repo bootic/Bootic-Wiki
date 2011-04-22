@@ -35,10 +35,8 @@ class App < Sinatra::Base
   end
   
   # resizable images with Dragonfly
-  #    /i/100x100/themes/asset_upload.png
-  get '/i/:size/*' do
-    path = params['splat'].first
-    IMAGES.fetch(path).thumb(params[:size]).validate_sha!(params[:s]).to_response(env)
+  get '/i/:path' do |path|
+    Dragonfly::Job.from_path(path, IMAGES).validate_sha!(params[:s]).to_response(env)
   end
   
   get '/?' do
