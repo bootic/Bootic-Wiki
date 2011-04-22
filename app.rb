@@ -22,6 +22,7 @@ class App < Sinatra::Base
   configure do
     Page.load(options.root + '/views', ['404.mkd'])
     ::IMAGES = Dragonfly[:images].configure_with(:imagemagick).configure do |c|
+      c.url_path_prefix = '/i'
       c.protect_from_dos_attacks = true
       c.secret = ENV['DRAGONFLY_SECRET'] || 'f00barsupers3cr3t'
     end

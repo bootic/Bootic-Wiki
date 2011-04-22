@@ -57,14 +57,8 @@ module Helpers
     ENV['RACK_ENV'] == 'development'
   end
   
-  def img_src(path, size = nil)
-    if size
-      img = ::IMAGES.fetch(path.sub(/^\//, '')).thumb(size)
-      sha = img.sha
-      "/i#{img.url}"
-    else
-      path
-    end
+  def img(path, size = nil)
+    ::IMAGES.fetch(path.sub(/^\//, ''))
   end
   
 end
