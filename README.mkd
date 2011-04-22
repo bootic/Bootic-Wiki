@@ -6,3 +6,15 @@
 ## Run
 
     shotgun -p 3000
+
+## Images
+
+Images go in public/img, but there's a helper that allows one to freely resize them:
+
+    <img src="<%= img('/img/themes/pagination1.png').thumb('500x400').url %>" />
+    
+This works thanks to the incredibly awesome Dragonfly Gem : http://markevans.github.com/dragonfly
+
+Another example turning images to greyscale
+
+    <%= img('/img/themes/pagination1.png').process(:greyscale).url %>
