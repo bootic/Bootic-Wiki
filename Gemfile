@@ -5,3 +5,7 @@ gem 'sinatra'
 gem 'rdiscount'
 gem 'coderay'  
 gem 'dragonfly'
+
+group :development do
+	gem 'shotgun'
+end
