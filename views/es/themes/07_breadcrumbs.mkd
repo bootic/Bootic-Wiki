@@ -1,0 +1,57 @@
+---
+:title: Breadcrumbs
+:description: Breadcrumbs o barras de navegación
+:keywords: navigation, ux, design, breadcrumbs
+---
+# "Breadcrumbs" o barras de navegación
+
+Los "breadcrumbs" (migas de pan) son las barras de navegación que muestran la profundidad de la página actual en la estructura de navegación de un sitio.
+
+En Bootic puedes organizar la navegación de muchas maneras. Por ejemplo, puedes mostrar tipos de productos dentro de una colección, o etiquetas dentro de un tipo de producto.
+
+El siguiente fragmento muestra cómo construir varias de estas opciones en el editor de plantillas de tu tienda.
+
+<pre>:::html
+  <!-- breadcrumbs -->
+  <h2>
+    <!-- [colección] / [tipo] / [etiqueta] -->
+    {% if collection and product_type and tag %}
+    <a href="{{collection | typed_collection_path:product_type}}">
+      {{collection.title}} / {{product_type.name}}
+    </a> / {{tag}}
+    <!-- [colección] / [tipo] -->
+    {% elsif collection and product_type %}
+    <a href="{{collection.url}}">
+      {{collection.title}}
+    </a> / {{product_type.name}}
+    <!-- [colección] / [etiqueta] -->
+    {% elsif collection and tag %}
+    <a href="{{collection.url}}">
+      {{collection.title}}
+    </a> / {{tag.name}}
+    <!-- [tipo] / [etiqueta] -->
+    {% elsif product_type and tag %}
+    <a href="{{product_type.url}}">
+      {{product_type.name}}
+    </a> / {{tag.name}}
+    <!-- [tipo] -->
+    {% elsif product_type %}
+    {{ product_type.name }}
+    <!-- [colección, nombre de producto u otros] -->
+    {% elsif resource %}
+    {{ resource.title }}
+    <!-- Todos los productos -->
+    {% else %}
+    productos
+    {% endif %}
+  </h2>
+  <!-- /breadcrumbs -->
+</pre>
+
+Para mostrar esto en más de una plantilla y evitar la duplicación innecesaria de código (por ejemplo en <code>products.html</code> o <code>collection.html</code>), puedes crear una nueva plantilla "breadcrumbs.html" e incluírla en las otras plantillas con:
+
+<pre>:::html
+  {% include 'breadcrumbs' %}
+</pre>
+
+También puedes modificar este fragmento y explorar las distintas posibilidades. Si tienes dudas o descubres algún truco ingenioso lo puedes dejar en los comentarios de esta página para que le sirvan a otros desarrolladores Bootic.
