@@ -50,6 +50,7 @@ module Helpers
   end
   
   def current_url
+    return '' unless @page
     "http://#{request.env['HTTP_HOST']}#{@page.url}"
   end
   
