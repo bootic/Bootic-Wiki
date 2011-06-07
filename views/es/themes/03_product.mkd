@@ -1,0 +1,115 @@
+---
+:title: Product.html
+:description: Editando la plantilla de ficha de producto en Bootic
+:keywords: liquid, producto, plantilla, html, css, imágenes
+---
+
+# Product.html
+
+Esta plantilla representa a la ficha de un sólo producto en tu tienda. Los datos e imágenes de cada producto los editas en la sección "productos" de la interfaz de administración de tu tienda.
+
+En la plantilla <code>product.html</code> tienes un objeto <code>product</code> con atributos que puedes usar, por ejemplo: 
+
+<ul>
+  <li><code>product.title</code> - el título o modelo, sinónimo de <code>product.model</code></li>
+  <li><code>product.description</code> - la descripción</li>
+  <li><code>product.vendor</code> - la marca o fabricante</li>
+  <li><code>product.tags</code> - colección de etiquetas del producto</li>
+  <li><code>product.images</code> - colección de imágenes asociadas al producto</li>
+  <li><code>product.files</code> - colección de archivos (no imágenes) del producto</li>
+  <li><code>product.product_type</code> - tipo de producto con campos personalizados</li>
+  <li><code>product.price</code> - precio del producto</li>
+</ul>
+
+También existe la etiqueta especial <code>add_to_cart</code> que genera el html del botón para agregar al carro de compra.
+
+## Mostrando imágenes de un producto
+
+La colección <code>product.images</code> contiene las imágenes subidas a un producto por los administradores de la tienda.
+
+Cada imagen tiene atributos que puedes usar para construir una galería o simplemente mostrar la primera.
+
+El siguiente ejemplo muestra las 2 primeras imágenes del producto.
+
+<pre>:::html
+{% if product.images | size > 0 %}
+  <div id="ficha-right" class="clearfix">
+    <!-- big images (2) -->
+    <ul id="img-big" class="assets clearfix">
+      {% for image in product.images limit:2 %}
+      <li class="img-big-{{ forloop.index }}">
+        <a href="{{ image.large }}" title="{{product.model}}'s details" rel="lightbox[ficha]">
+          <img src="{{ image.small }}" alt="{{ product.model }}" />
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+    <!-- /big images -->
+</pre>
+
+Cada imagen muestra el tamaño "small" (240x180px) dentro de un link que apunta a la versión "large" (800x600px). Esto es útil para usar librerías JavaScript para galerías de imágenes (como las excelentes <a href="http://www.huddletogether.com/projects/lightbox2/">Lightbox</a> o  <a href="http://fancybox.net/">FancyBox</a>) o simplemente mostra la imagen grande en el navegador.
+
+El fragmento a continuación muestra el resto de las imágenes de un producto (si es que tiene) en un tamaño menor ("thumbnail", de 75x75px).
+
+<pre>:::html
+{% if product.images | size > 2 %}
+<!-- small images -->
+<ul id="img-small" class="assets clearfix">
+  {% for image in product.images offset: 2 %}
+  <li>
+    <a href="{{ image.large }}" title="{{product.model}}'s details" rel="lightbox[ficha]">
+      <img src="{{ image.thumbnail }}" alt="{{ product.model }}" />
+    </a>
+  </li>
+  {% endfor %}
+</ul>
+<!-- /small images -->
+{% endif %}
+</pre>
+
+Cada imagen de producto tiene los siguientes tamaños predefinidos:
+
+<ul>
+  <li><code>thumbnail</code>: 75x75</li>
+  <li><code>small</code>: 240x180</li>
+  <li><code>medium</code>: 500x375</li>
+  <li><code>large</code>: 800x600</li>
+</ul>
+
+Estos ejemplos fueron sacados de la plantilla básica de Bootic. Revisa la plantilla actual de tu tienda para ver más.
+
+## Otros archivos
+
+También puedes subir otro tipo de archivos a cada producto (por ejemplo, una ficha en formato PDF).
+
+Para mostrarlos, escribe un <em>loop</em> que recorra la colección <code>product.files</code>.
+
+<pre>:::html
+<!-- archivos -->
+{% if product.files | size > 0 %}
+  <ul class="files">
+    {% for file in product.files %}
+      <li>
+        <a href="{{ file.url }}" class="file {{ file.extension }}">{{ file.file_name }}</a>
+        </li>
+    {% endfor %}
+  </ul>
+{% endif %}
+<!-- /archivos -->
+</pre>
+
+Cada archivo tiene los siguientes atributos:
+
+<ul>
+  <li><code>url</code>: URL del archivo original</li>
+  <li><code>extension</code>: extensión del archivo, (pdf, xls, etc)</li>
+  <li><code>file_name</code>: nombre original del archivo</li>
+  <li><code>title</code>: título opcional asignado al subir</li>
+  <li><code>description</code>: descripción opcional asignada al subir</li>
+</ul>
+
+## Temas relacionados:
+
+<ul>
+  <li><a href="/es/themes/productos_similares">mostrando productos similares</a></li>
+</ul>
