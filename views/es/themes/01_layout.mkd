@@ -1,3 +1,9 @@
+---
+:title: Layout.html
+:description: Plantilla HTML global
+:keywords: home, html, plantilla, template, diseno, layout
+---
+
 # Layout.html
 
 Esta es la plantilla principal de tu tienda. Cada página que visitas se despliega dentro de layout.html usando la variable <code>{{ content_for_layout }}</code>. Este es un *layout* simplificado:
@@ -82,4 +88,3 @@ Para insertar una imagen de fondo en tu archivo CSS, primero tienes que subir la
 A continuación puedes usar el nombre de la imagen subida en tus reglas CSS.
 
 <img src="/img/themes/css_upload.png" alt="Subir imagenes" class="right" />
-</div>
