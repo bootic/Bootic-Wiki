@@ -9,6 +9,20 @@ Los "breadcrumbs" (migas de pan) son las barras de navegación que muestran la p
 
 En Bootic puedes organizar la navegación de muchas maneras. Por ejemplo, puedes mostrar tipos de productos dentro de una colección, o etiquetas dentro de un tipo de producto.
 
+## Etiqueta {% navigation_path %}
+
+La etiqueta <code>{% navigation_path %}</code> hace lo posible por mostrar breadcrumbs que tengan sentido en el mayor de los casos. Por lo general basta con que uses esta etiqueta en tus plantillas (comunmente <code>layout.html</code>)
+
+<pre>:::html
+<div class="navegacion">
+  {% navigation_path %}
+</div>
+</pre>
+
+## Método manual.
+
+Si necesitas algo más complejo o personalizado puedes construirlo a mano en tus plantillas con un poco de ingenio, HTML y etiquetas Liquid.
+
 El siguiente fragmento muestra cómo construir varias de estas opciones en el editor de plantillas de tu tienda.
 
 <pre>:::html
