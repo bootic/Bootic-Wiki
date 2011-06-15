@@ -52,24 +52,24 @@ Crea un link en un menú apuntando a la colección "catálogo".
 A continuación construimos el HTML para los links del menú "navegacion-principal" de la misma forma que en el ejemplo anterior, pero dentro de cada link revisamos si hay etiquetas asociadas.
 
 <pre>:::html
-  <ul class="navegacion">
-  {% for link in menus.navegacion-principal.links %}
-    <li class="{{ link.slug }}{{ ' current' | print_if_equal: resource, link }}">
-      <a href="{{ link.url }}">{{ link.title }}</a>
-      <!-- este link tiene etiquetas ? -->
-      {% if link.has_tags %}
-        <ul class="submenu">
-        {% for tag in link.tags %}
-          <li>
-            <a href="{{ link | tagged_collection_path: tag }}">{{ tag.name }}</a>
-          </li>
-        {% endfor %}
-      </ul>
-      {% endif %}
-      <!-- /etiquetas -->
-    </li>
-  {% endfor %}
-  </ul>
+<ul class="navegacion">
+{% for link in menus.navegacion-principal.links %}
+  <li class="{{ link.slug }}{{ ' current' | print_if_equal: resource, link }}">
+    <a href="{{ link.url }}">{{ link.title }}</a>
+    <!-- este link tiene etiquetas ? -->
+    {% if link.has_tags %}
+      <ul class="submenu">
+      {% for tag in link.tags %}
+        <li>
+          <a href="{{ link | tagged_collection_path: tag }}">{{ tag.name }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+    <!-- /etiquetas -->
+  </li>
+{% endfor %}
+</ul>
 </pre>
 
 
