@@ -109,7 +109,7 @@ Cada archivo tiene los siguientes atributos:
   <li><code>description</code>: descripción opcional asignada al subir</li>
 </ul>
 
-## Variantes y botón de compra
+<h2 id="variantes">Variantes y botón de compra</h2>
 
 La etiqueta <code>{% add_to_cart %}</code> genera un formulario HTML prediseñado con la lista de variantes del producto, un campo para ingresar la cantidad de unidades y un botón para guardar la variante y cantidad elegida en el carro de compras.
 
