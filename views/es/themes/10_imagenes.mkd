@@ -3,7 +3,7 @@
 :description: Trabajando con imágenes en plantillas HTML y CSS Bootic
 :keywords: liquid, html, images, css, assets, static
 ---
-# Insertando imágenes en en editor de plantillas
+# Insertando imágenes en el editor de plantillas
 
 Las plantillas Bootic manejan dos tipos de imágenes. Las imágenes que subes a traves del editor, por ejemplo el logo de tu tienda o elementos de diseño, y la imágenes de productos. 
 
