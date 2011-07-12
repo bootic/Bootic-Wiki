@@ -46,6 +46,8 @@ El siguiente ejemplo muestra las 2 primeras imágenes del producto.
       {% endfor %}
     </ul>
     <!-- /big images -->
+  </div>
+{% endif %}
 </pre>
 
 Cada imagen muestra el tamaño "small" (240x180px) dentro de un link que apunta a la versión "large" (800x600px). Esto es útil para usar librerías JavaScript para galerías de imágenes (como las excelentes <a href="http://www.huddletogether.com/projects/lightbox2/">Lightbox</a> o  <a href="http://fancybox.net/">FancyBox</a>) o simplemente mostra la imagen grande en el navegador.
