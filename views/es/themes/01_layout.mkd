@@ -82,12 +82,14 @@ Ahora puedes editar la hoja de estilos master.css en tu editor de plantillas Boo
 
 ### Insertando imágenes
 
+<div class="clearfix">
 <img src="/img/themes/upload1.png" alt="Subir imagenes" class="left" />
 Para insertar una imagen de fondo en tu archivo CSS, primero tienes que subir la imagen al servidor mediante el botón "Subir archivos" en tu editor Bootic.
 
 A continuación puedes usar el nombre de la imagen subida en tus reglas CSS.
 
 <img src="/img/themes/css_upload.png" alt="Subir imagenes" class="right" />
+</div>
 
 <h3 id="includes">Incluyendo otras plantillas</h3>
 
