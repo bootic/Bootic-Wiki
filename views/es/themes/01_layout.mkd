@@ -88,3 +88,26 @@ Para insertar una imagen de fondo en tu archivo CSS, primero tienes que subir la
 A continuación puedes usar el nombre de la imagen subida en tus reglas CSS.
 
 <img src="/img/themes/css_upload.png" alt="Subir imagenes" class="right" />
+
+<h3 id="includes">Incluyendo otras plantillas</h3>
+
+A veces es buena idea poner fragmentos de HTML compartidos en sus propias plantillas e incluirlas en otras plantillas.
+Para esto simplemente crea una nueva plantilla .html con tu código e inclúyela en layout.html (u otras) con la etiqueta <code>{% include %}</code>. 
+
+<pre>:::html
+{% include 'mi_plantilla' %}
+</pre>
+
+La plantilla de podefecto de Bootic usa esta técnica para incluir distintas barras laterales dependiendo de en qué página estas.
+
+<pre>:::html
+{% if template == 'collection' %}
+  {% include 'sidebar_pages' %}
+{% elsif template == 'page' %}
+  {% include 'sidebar_pages' %}
+{% elsif template == 'blog' %}
+  {% include 'sidebar_blog' %}
+{% else %}
+  {% include 'sidebar' %}
+{% endif %}
+</pre>
