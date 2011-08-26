@@ -116,7 +116,7 @@ Referencia al blog y noticias en la tienda. <a href="/es/themes/blog">Ver más</
 Referencia a todas las etiquetas en la tienda. Iterable.
 
 <pre>:::html
-{% for tag in tag.all %}
+{% for tag in tags.all %}
   <p>
     <a href="{{ tag.url }}">{{ tag.name }}</a>
   </p>
