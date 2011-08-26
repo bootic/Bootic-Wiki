@@ -8,7 +8,7 @@
 
 Esta plantilla representa a la ficha de un sólo producto en tu tienda. Los datos e imágenes de cada producto los editas en la sección "productos" de la interfaz de administración de tu tienda.
 
-En la plantilla <code>product.html</code> tienes un objeto <code>product</code> con atributos que puedes usar, por ejemplo: 
+En la plantilla <code>product.html</code> tienes un objeto <code>product</code> con atributos que puedes usar, por ejemplo:
 
 <ul>
   <li><code>product.title</code> - el título o modelo, sinónimo de <code>product.model</code></li>
@@ -154,10 +154,10 @@ Asumiendo que nuestros productos tienen variantes llamadas "rojo", "azul", "verd
 .variantes li {
   margin-bottom: 4px;
 }
-.variantes .color { 
-  display: inline-block; 
-  width: 20px; 
-  height: 20px; 
+.variantes .color {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
   box-shadow: 1px 2px 3px #888;
   text-indent: -500px;
   overflow: hidden;
@@ -180,42 +180,45 @@ Otras opciones son usar los nombres de variantes para cargar imágenes, etc.
 El siguiente ejemplo muestra cómo construir una lista de variantes dentro del formulario "agregar al carro" de forma personalizada. Lee los comentarios en el código para entender cada parte.
 
 <pre>:::html
-<!-- +++++++++++ Formulario ++++++++++++++++++++
-  La variable {{ add_to_cart_url }} 
-  general la URL necesaria para agregar productos al carro
-++++++++++++++++++++++++++++++++++++++++++++++ -->
-<form action="{{ add_to_cart_url }}" method="post">
-  <!-- +++++++++++++ ID del producto actual +++++++++
-  Los campos requeridos son: 
-  + cart_item[product_id] ID del producto actual
-  + cart_item[variant_id] ID de variante elegida
-  + cart_item[quantity] cantidad de unidades a agregar
-  ++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+<!-- Formulario para agregar productos al carro. Los campos requeridos son:
+     - cart_item[product_id] ID del producto actual
+     - cart_item[variant_id] ID de variante elegida
+     - cart_item[quantity] cantidad de unidades a agregar -->
+
+<!-- La variable {{ add_to_cart_url }} genera la URL necesaria para agregar productos al carro -->
+<form class="add_to_cart" action="{{ add_to_cart_url }}" method="post">
+
   <input type="hidden" name="cart_item[product_id]" value="{{ product.id }}" />
-  <!-- lista de variantes con radio buttons -->
-  <ul class="variantes">
-  {% for variant in product.variants %}
-    <li class="v-{{ variant.title }}">
-      <span class="color">{{ variant.title }}</span>
-      <!-- ++++ "radio button" para cada variante +++++
-      Usamos el atributo variant.is_available para revisar
-      disponibilidad de la variante.
-      Deshabilitar el campo en caso contrario
-      +++++++++++++++++++++++++++++++++++++++++++++ -->
-      <input type="radio" id="i-{{ variant.id }}" 
-      name="cart_item[variant_id]" value="{{ variant.id }}" 
-      {% unless variant.is_available %}disabled="disabled"{% endunless %} />
-      <!-- Título de cada variante -->
-      <label for="i-{{ variant.id }}">{{ variant.title }}</label>
-    </li>
-  {% endfor %}
-  </ul>
-  <!-- cantidad y botón de compra -->
   <p>
+
+<!-- Solo mostramos las opciones en caso de que haya mas de una variante para elegir -->
+
+    {% if product.variants.size > 1 %}
+    <select name="cart_item[variant_id]">
+
+<!-- variant.is_available nos permite saber si la variante esta disponible.
+     Si no lo esta, deshabilitamos el campo (en vez de simplemente no mostrarlo) -->
+
+    {% for variant in product.variants %}
+      <option value="{{ variant.id }}" id="i-{{ variant.id }}"
+        {% unless variant.is_available %} disabled="disabled"{% endunless %}
+      >{{ variant.title }}</option>
+    {% else %}
+
+<!-- Solo hay una variante disponible, asi que incluimos su ID en un campo oculto -->
+      <input type="hidden" name="cart_item[variant_id]" value="{{ product.variants.first.id }}" />
+
+    {% endfor %}
+
+    </select>
+    {% endif %}
+
     <!-- Cantidad (unidades) -->
-    <input type="text" name="cart_item[quantity]" value="1" />
+    <input type="text" id="cart_item_quantity" name="cart_item[quantity]" value="1" />
     <!-- Botón de envío al carro -->
     <input type="submit" value="Agregar al carro" />
+
   </p>
 </form>
 </pre>
