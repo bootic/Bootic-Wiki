@@ -4,6 +4,7 @@
   font-family: 'Bitstream Vera Sans Mono', Courier, monospace;
   color: #000;
   padding: 1em;
+  overflow-x: scroll;
 }
 .CodeRay pre { margin: 0px }
 
