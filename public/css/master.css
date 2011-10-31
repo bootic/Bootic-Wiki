@@ -133,7 +133,8 @@ h1 {
 	width: 70%;
 }
 
-#content ul {
+#content ul,
+#content ol {
 	margin-left: 1.5em;
 }
 
@@ -196,16 +197,20 @@ h1 {
 	border-bottom: solid silver 1px;
 }
 
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
 /* images
 ----------------------------------*/
 
 img.left {
-	float: left;
 	margin: 1em 1em 0 0;
 }
 
 img.right {
-	float: right;
 	margin: 1em 0 0 1em;
 }
 
@@ -213,6 +218,10 @@ img.framed {
   border: solid silver 1px;
   background: white;
   padding: 2px;
+}
+
+.shadowed {
+  -webkit-box-shadow: 2px 2px 4px rgba(0,0,0,0.3);
 }
 
 /* Sreencasts
