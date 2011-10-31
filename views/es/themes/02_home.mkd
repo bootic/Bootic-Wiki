@@ -38,7 +38,7 @@ Dado que la portada puede contener cosas distintas dependiendo del rubro y estil
 </ul>
 </pre>
 
-## Banners de productos
+## Galería de imágenes de productos
 Los "banners" o imágenes rotativas de productos pueden ser resueltos de forma similar a la lista de productos destacados, pero mostramos una versión más grande de cada imagen y, opcionalmente, podemos usar javaScript para avanzar las ímágenes automáticamente. 
 
 <img src="<%= img('/img/themes/the_stage.png').thumb('640x').url %>" alt="The stage" /> 
@@ -117,4 +117,16 @@ Por último, necesitarás un poco de CSS para que la galería de imágenes se ve
   margin-top: -15%;
   margin-bottom: 15%;
 }
+</pre>
+
+Lo único que falta es inicializar la galería de imágenes usando jQuery Cycle (en <code>home.html</code>):
+
+<pre>:::html
+<script type='text/javascript' charset='utf-8'> 
+  $(function () { 
+    $('#myGallery').cycle({ 
+      fx: 'fade' // choose your transition type, ex: fade, scrollUp, shuffle, etc... 
+    }); 
+  }); 
+</script>
 </pre>
