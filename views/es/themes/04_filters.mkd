@@ -6,4 +6,48 @@
 
 # Filtros
 
-En construcción
+Los "filtros" son operaciones especiales que permiten modificar el valor de un texto o atributo de un objeto en el editor de plantillas de Bootic.
+
+Por ejemplo, el filtro <code>truncate</code> "trunca" o corta un texto en el número indicado de caractéres. Esto es útil si sólo quieres mostrar el comienzo de un texto más largo.
+
+<pre>:::html
+<div class="description">
+  {{ product.description | truncate:100 }}
+</div>
+</pre>
+
+Eso muestra sólo los primeros 100 caractéres de la descripción de un producto, sequidos de "...".
+
+En [Liquid](http://liquidmarkup.org/), el lenguaje de plantillas que usa Bootic, el filtro va siempre después del texto, separado por una barra (|). Si el filtro espera parámetros (como en el caso del número de caractéres en <code>truncate</code>), éstos van luego de 2 puntos justo después del nomnre del filtro.
+
+<pre>
+  <code>texto | filtro:parámetro1, parámetro2</code>
+</pre>
+
+No todos los filtros esperan parámetros. El filtro <code>size</code> retorna la cantidad de elementos en una lista de objetos.
+
+<pre>:::html
+Este producto tiene {{ product.collections | size }} colecciones.
+</pre>
+
+Si el producto tiene 6 colecciones, lo de arriba resulta en 
+
+<pre>:::html
+Este producto tiene 6 colecciones.
+</pre>
+
+## asset_url
+
+Uno de los filtros más utilizados en Bootic es <code>asset_url</code>, que recibe el nombre de un archivo o imagen y retorna la ruta completa a ese archivo en nuestros servidores. Por ejemplo lo siquiente
+
+<pre>:::html
+<img src="{{ 'logo.png' | asset_url }}" />
+</pre>
+
+Resulta en algo así:
+
+<pre>:::html
+<img src="http://static.bootic.net/themes/100/logo.png" />
+</pre>
+
+Puedes leer más sobre el filtro <code>asset_url</code> y cuando usarlo en "[Trabajando con imágenes](/es/themes/imagenes)"
