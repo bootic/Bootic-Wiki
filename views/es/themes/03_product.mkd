@@ -14,7 +14,8 @@ En la plantilla <code>product.html</code> tienes un objeto <code>product</code> 
   <li><code>product.title</code> - el título o modelo, sinónimo de <code>product.model</code></li>
   <li><code>product.description</code> - la descripción</li>
   <li><code>product.vendor</code> - la marca o fabricante</li>
-  <li><code>product.tags</code> - colección de etiquetas del producto</li>
+  <li><code>product.tags</code> - lista de etiquetas del producto</li>
+  <li><code>product.collections</code> - lista de colecciones del producto</li>
   <li><code>product.variants</code> - colección de variantes del producto</li>
   <li><code>product.images</code> - colección de imágenes asociadas al producto</li>
   <li><code>product.files</code> - colección de archivos (no imágenes) del producto</li>
@@ -33,7 +34,7 @@ Cada imagen tiene atributos que puedes usar para construir una galería o simple
 El siguiente ejemplo muestra las 2 primeras imágenes del producto.
 
 <pre>:::html
-{% if product.images | size > 0 %}
+{% if product.has_images %}
   <div id="ficha-right" class="clearfix">
     <!-- big images (2) -->
     <ul id="img-big" class="assets clearfix">
@@ -89,7 +90,7 @@ Para mostrarlos, escribe un <em>loop</em> que recorra la colección <code>produc
 
 <pre>:::html
 <!-- archivos -->
-{% if product.files | size > 0 %}
+{% if product.has_files %}
   <ul class="files">
     {% for file in product.files %}
       <li>
@@ -223,6 +224,63 @@ El siguiente ejemplo muestra cómo construir una lista de variantes dentro del f
 </form>
 </pre>
 
+<h2 id="collections">Colecciones</h2>
+
+Puedes usar <code>product.collections</code> para listar las colecciones a las que el producto pertenece.
+
+<pre>:::html
+{% if product.has_collections %}
+  <h2>Colecciones</h2>
+  <ul class="colecciones">
+    {% for collection in product.collections %}
+    <li>
+      <a href="{{ collection.url }}">{{ collection.title }}</a>
+    </li>
+    {% endfor %}
+  </ul>
+{% endif %}
+</pre>
+
+También puedes acceder a una colección en particular usando su "manilla"* o título normalizado:
+
+<pre>:::html
+{% if product.collections.catalogo %}
+<p>
+ Este producto está en la colección {{ product.collections.catalogo.title }}!
+</p>
+{% endif %}
+</pre>
+
+<div class="tip">
+  <strong>*</strong> Una <em>manilla</em> es la versión sin tildes, mayúsculas ni espacios del título de una colección, producto, página u otro objeto en Bootic. Por ejemplo si el título de una colección es "Catálogo 2011", su manilla es "catalogo-211".
+</div>
+
+<h2 id="tags">Etiquetas</h2>
+
+Al igual que con las colecciones, puedes usar <code>product.tags</code> para listar las etiquetas a las que el producto pertenece.
+
+<pre>:::html
+{% if product.has_tags %}
+  <h2>Etiquetas</h2>
+  <ul class="colecciones">
+    {% for tag in product.tags %}
+    <li>
+      <a href="{{ tag.url }}">{{ tag.name }}</a>
+    </li>
+    {% endfor %}
+  </ul>
+{% endif %}
+</pre>
+
+También puedes acceder a una etiqueta en particular usando su "manilla"* o nombre normalizado:
+
+<pre>:::html
+{% if product.tags.destacados %}
+<p>
+ Este producto tiene la etiqueta {{ product.tags.destacados.name }}!
+</p>
+{% endif %}
+</pre>
 
 ## Temas relacionados:
 
