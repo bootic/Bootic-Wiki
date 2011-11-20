@@ -82,43 +82,6 @@ Cada imagen de producto tiene los siguientes tamaños predefinidos:
 
 Estos ejemplos fueron sacados de la plantilla básica de Bootic. Revisa la plantilla actual de tu tienda para ver más.
 
-<h2 id="resize">Tamaños personalizados de imágenes</h2>
-
-Además de los tamaños predefinidos, puedes asignar dimensiones personalizadas a imágenes de productos usando el filtro <code>resize</code>.
-
-<pre>:::html
-<img src="{{ image | resize: '100x100#c' }}" alt="{{ product.model }}" />
-</pre>
-
-El ejemplo anterior crea un cuadrado de 100x100 px, centrado, a partir de la imagen de un producto.
-
-La lista de geometrías de imagen reconocidas por <code>resize</code> es:
-
-<ul class="tabular">
-  <li><span><code>'400x300'</code></span>: tamaño personalizado, mantiene proporciones.</li>
-  <li><span><code>'400x300!'</code></span>: fuerza tamaño, no mantiene proporciones.</li>
-  <li><span><code>'400x'</code></span>: ancho personalizado, mantiene proporciones.</li>
-  <li><span><code>'x300'</code></span>: alto personalizado, mantiene proporciones.</li>
-  <li><span><code>'400x300>'</code></span>: modifica tamaño sólo si imagen es más grande que esto</li>
-  <li><span><code>'400x300<'</code></span>: modifica tamaño sólo si imagen es más pequeña que esto</li>
-  <li><span><code>'50x50%'</code></span>: modifica alto y ancho al %50</li>
-  <li><span><code>'50x50%'</code></span>: modifica alto y ancho al %50</li>
-  <li><span><code>'400x300^'</code></span>: modifica ancho, alto a mínimo 400x300. Mantiene proporciones.</li>
-  <li><span><code>'2000@'</code></span>: modifica para que area máxima sea 2000 pixeles</li>
-  <li><span><code>'400x300#'</code></span>: modifica, recorta si es necesario para mantener proporciones. Centra.</li>
-  <li><span><code>'400x300#ne'</code></span>: modifica, recorta si es necesario para mantener proporciones. Ajusta arriba, derecha.</li>
-  <li><span><code>'400x300#nw'</code></span>: modifica, recorta si es necesario para mantener proporciones. Ajusta arriba, izquierda.</li>
-  <li><span><code>'400x300#se'</code></span>: modifica, recorta si es necesario para mantener proporciones. Ajusta abajo, derecha.</li>
-  <li><span><code>'400x300#sw'</code></span>: modifica, recorta si es necesario para mantener proporciones. Ajusta abajo, izquierda.</li>
-  <li><span><code>'400x300+50+100'</code></span>: recorta desde el punto 50, 100 con ancho y alto de 400x300</li>
-</ul>
-
-Todas las geometrías aceptan ".bw" para mostrar una versión en blanco y negro de las imágenes. Por ejemplo:
-
-<pre>:::html
-<img src="{{ image | resize: '100x100#c.bw' }}" alt="{{ product.model }}" />
-</pre>
-
 ## Otros archivos
 
 También puedes subir otro tipo de archivos a cada producto (por ejemplo, una ficha en formato PDF).
