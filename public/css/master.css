@@ -137,6 +137,10 @@ h1 {
 #content ol {
 	margin-left: 1.5em;
 }
+ul.tabular span {
+  display: inline-block;
+  width: 22%;
+}
 
 #content h2 {
 	margin: 20px 0;
