@@ -37,6 +37,8 @@ La lista de geometrías de imagen reconocidas por <code>resize</code> es:
   <li><span><code>'400x300+50+100'</code></span>: recorta desde el punto 50, 100 con ancho y alto de 400x300</li>
 </ul>
 
+## Imágenes en tono de grises (blanco y negro)
+
 Todas las geometrías aceptan ".bw" para mostrar una versión en blanco y negro de las imágenes. Por ejemplo:
 
 <pre>:::html
