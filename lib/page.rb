@@ -21,7 +21,9 @@ class Page
     end
 
     def each(&block)
-      root.each &block
+      root.select do |page|
+        !page.draft?
+      end.each &block
     end
 
     def load(path, except = [])
@@ -47,6 +49,7 @@ class Page
   
   EXPR = /---\s(.+)?\s---/m
   POSITION_EXPR = /^(\d+)?_.+/
+  DRAFT_EXPR = /^draft-/
   
   def initialize(path)
     @path = path
@@ -61,7 +64,9 @@ class Page
   end
   
   def each(&block)
-    @children.sort.each &block
+    @children.select do |page|
+      !page.draft?
+    end.sort.each &block
   end
   
   def size
@@ -74,6 +79,10 @@ class Page
   
   def basename
     @base ||= File.basename(@path).sub(File.extname(@path), '')
+  end
+  
+  def draft?
+    @draft ||= !!(basename =~ DRAFT_EXPR)
   end
   
   def has_subdir?

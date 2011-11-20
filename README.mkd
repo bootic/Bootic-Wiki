@@ -18,3 +18,7 @@ This works thanks to the incredibly awesome Dragonfly Gem : http://markevans.git
 Another example turning images to greyscale
 
     <%= img('/img/themes/pagination1.png').process(:greyscale).url %>
+    
+## Drafts
+
+Pages whose names are in the format draft-some-page (no position number) don'r appear in menus but can be linked to directly.
