@@ -91,6 +91,22 @@ A continuación puedes usar el nombre de la imagen subida en tus reglas CSS.
 <img src="/img/themes/css_upload.png" alt="Subir imagenes" class="right" />
 </div>
 
+Puedes leer más cómo trabajar con imágenes en Bootic en [este link](/es/themes/imagenes).
+
+<h3 id="favicon">Favicon</h3>
+
+El "favicon" o ícono del sitio que aparece en la barra de título del navegador, y es simplemente una imagen que puedes insertar en la plantilla <code>layout.html</code>. Los favicons normalmente están optimizados y tienen la extensión ".ico", y los puedes generar a partir de una imagen en otro formato (png, gif, jpg) usando un editor de imágenes como Phothoshop o incluso herramientas gratuitas online (puedes encontrar muchas en Google: [http://www.google.co.uk/search?gcx=c&ix=c1&sourceid=chrome&ie=UTF-8&q=favico+generator](http://www.google.co.uk/search?gcx=c&ix=c1&sourceid=chrome&ie=UTF-8&q=favico+generator))
+
+Sube una imágen de 16x16px a la lista de archivos de tu editor de plantillas Bootic e inserta el siguiente código HTML en la sección <code>HEAD</code> de la plantilla <code>layout.html</code>.
+
+<pre>:::HTML
+<link rel="shortcut icon" href="{{ 'favicon.ico' | asset_url }}" type="image/x-icon" />
+</pre>
+
+"favico.ico" es la convención para estos archivos pero en verdad puedes nombrarlo como quieras.
+
+Recuerda leer la documentación sobre [cómo trabajar con imágenes en Bootic](/es/themes/imagenes).
+
 <h3 id="includes">Incluyendo otras plantillas</h3>
 
 A veces es buena idea poner fragmentos de HTML compartidos en sus propias plantillas e incluirlas en otras plantillas.
