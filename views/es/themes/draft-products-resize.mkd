@@ -39,8 +39,20 @@ La lista de geometrías de imagen reconocidas por <code>resize</code> es:
 
 ## Imágenes en tono de grises (blanco y negro)
 
-Todas las geometrías aceptan ".bw" para mostrar una versión en blanco y negro de las imágenes. Por ejemplo:
+Puedes usar el filtro <code>greyscale</code> para transformar la imagen a blanco y negro.
 
 <pre>:::html
-<img src="{{ image | resize: '100x100#c.bw' }}" alt="{{ product.model }}" />
+<img src="{{ image | resize: '100x100#c' | greyscale }}" alt="{{ product.model }}" />
+</pre>
+
+El orden no importa:
+
+<pre>:::html
+<img src="{{ image | greyscale | resize: '100x100#c' }}" alt="{{ product.model }}" />
+</pre>
+
+Si usas <code>greyscale</code> sin el filtro <code>resize</code>, la imagen retornada tiene dimensiones por defecto de '240x180'.
+
+<pre>:::html
+<img src="{{ image | greyscale }}" alt="{{ product.model }}" />
 </pre>
