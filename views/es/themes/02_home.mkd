@@ -38,7 +38,8 @@ Dado que la portada puede contener cosas distintas dependiendo del rubro y estil
 </ul>
 </pre>
 
-## Galería de imágenes de productos
+<h2 id="galerias">Galería de imágenes de productos</h2>
+
 Los "banners" o imágenes rotativas de productos pueden ser resueltos de forma similar a la lista de productos destacados, pero mostramos una versión más grande de cada imagen y, opcionalmente, podemos usar javaScript para avanzar las ímágenes automáticamente. 
 
 <img src="<%= img('/img/themes/the_stage.png').thumb('640x').url %>" alt="The stage" /> 
@@ -68,6 +69,11 @@ El HTML usa los productos dentro de la colección "destacados"
 </pre>
 
 Analiza el código línea por línea para entender cada elemento.
+
+<div class="tip">
+  La línea <code>collections.destacados.products</code> usa la <em>manilla</em> de la colección ("destacados"), que es una versión sin espacios ni tildes del título. Por ejemplo, una colección con título "Productos destacados" tiene una manilla "productos-destacados".<br />
+  Las manillas son generadas automáticamente a partir del título, pero tu puedes modificarla en elformulario de edición de cada colección.
+</div>
 
 A continuación es necesario incluír las librerías JavaScript jQuery y el plugin Cycle. La primera puede ser incluída directamente desde los repositorios de Google. En <code>layout.html</code>, en la sección <code>head</code>:
 
