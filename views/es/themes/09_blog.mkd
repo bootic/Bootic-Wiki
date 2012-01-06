@@ -37,6 +37,35 @@ En este ejemplo usamos los *helpers* <code>strip_html</code> para remover etique
 
 Además usamos <code>date</code> para formatear la fecha de cada artículo.
 
+<h2 id="leer-mas">"Leer más"</h2>
+
+A veces querrás dividir artículos muy largos en dos y mostrar la primera parte o introducción en las listas de noticias (por ejemplo la portada o la plantilla <code>blog.html</code>). Para esto, primero asegúrate de que el código que muestra la lista de noticias usa el filtro <code>split</code>:
+
+<pre>:::html
+{% paginate blog.posts by:30 %}
+ {% for post in paginated_list %}
+  <div class="post">
+   ...
+   <p class="texto">
+    {{ post | split }}
+   </p><!-- /texto -->
+   ...
+  </div><!-- /post -->
+ {% endfor %}
+ {{ paginated_list | pagination }}
+{% endpaginate %}
+</pre>
+
+El filtro <code>split</code>, aplicado a una noticia, muestra la primera parte del artículo si detecta un símbolo especial insertado en cada noticia. Si la noticia no tiene ese símbolo simplemente se muestra el artículo completo.
+
+Con las plantillas listas, ahora puedes usar el botón de división de cada noticia. Lo encuentras en las herramientas de edición de cada noticia (ver foto).
+
+<img src="/img/themes/post-edit-split.png" alt="dividir artículo" />
+
+Ahora, los artículos que usen esto mostrarán sólo la primera parte en las listas, y un link "Seguir leyendo" que apunta al artículo completo.
+
+<img src="/img/themes/post-split.png" alt="Leer más" />
+
 ## Calendario de artículos
 
 Con el objeto <code>blog.calendar</code> y una combinación de trucos *Liquid* podemos generar una lista de meses, cada uno con la cuenta de artículos para cada més. Por último generamos un link a cada mes para ver el archivo de artículos.
