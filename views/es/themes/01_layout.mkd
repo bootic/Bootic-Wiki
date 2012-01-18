@@ -95,7 +95,7 @@ Puedes leer más cómo trabajar con imágenes en Bootic en [este link](/es/theme
 
 <h3 id="favicon">Favicon</h3>
 
-El "favicon" o ícono del sitio que aparece en la barra de título del navegador, y es simplemente una imagen que puedes insertar en la plantilla <code>layout.html</code>. Los favicons normalmente están optimizados y tienen la extensión ".ico", y los puedes generar a partir de una imagen en otro formato (png, gif, jpg) usando un editor de imágenes como Phothoshop o incluso herramientas gratuitas online (puedes encontrar muchas en Google: [http://www.google.co.uk/search?gcx=c&ix=c1&sourceid=chrome&ie=UTF-8&q=favico+generator](http://www.google.co.uk/search?gcx=c&ix=c1&sourceid=chrome&ie=UTF-8&q=favico+generator))
+El "favicon" es el ícono del sitio que aparece en la barra de título del navegador, y es simplemente una imagen que puedes insertar en la plantilla <code>layout.html</code>. Los favicons normalmente están optimizados y tienen la extensión ".ico", y los puedes generar a partir de una imagen en otro formato (png, gif, jpg) usando un editor de imágenes como Phothoshop o incluso herramientas gratuitas online (puedes encontrar muchas en Google: [http://www.google.co.uk/search?gcx=c&ix=c1&sourceid=chrome&ie=UTF-8&q=favico+generator](http://www.google.co.uk/search?gcx=c&ix=c1&sourceid=chrome&ie=UTF-8&q=favico+generator))
 
 Sube una imágen de 16x16px a la lista de archivos de tu editor de plantillas Bootic e inserta el siguiente código HTML en la sección <code>HEAD</code> de la plantilla <code>layout.html</code>.
 
