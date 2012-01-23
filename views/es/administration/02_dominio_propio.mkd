@@ -19,6 +19,8 @@ Para usar tu propio dominio debes ser dueño del dominio y ser capaz de administ
 
 ## Paso 2: configura los DNS
 
+<img src="/img/admin/dns-flow.png" />
+
 Los DNS (Domain Name Servers) son los servidores encargados de traducir un nombre de dominio (por ejemplo "www.bootic.net") a la dirección IP del servidor donde el sitio está alojado.
 
 Lo que necesitas hacer es "apuntar" un subdominio de tu dominio a los servidores de Bootic. El subdominio más común es "www".
@@ -82,3 +84,27 @@ Sin embargo, si sólo quieres alojar tu tienda Bootic bajo tu dominio y no plane
   </ol>
 
 </div>
+
+## Correos
+
+Bootic no da el servicio de alojamiento de correos, pero desde tu administración de DNS puedes apuntar tu dominio para manejar correo electrónico donde prefieras.
+
+Si tienes tu DNS administrado por un servicio de *hosting*, es posible que éste ya te de alojamiento de correos y no tengas que hacer nada.
+
+Si administras tu DNS en un servicio especializado, puedes buscar información en Internet sobre cómo apuntar tu tráfico de correo al servidor de correos de tu preferencias.
+
+Si alojas tus DNS con nosotros (si configuraste tu dominio para apuntar a nuestros DNS - ver "Opción 2" más arriba), entonces debes solicitarnos que apuntemos el tráfico de correo de tu dominio a tu servicio de correos de preferencia.
+
+### Alojando correos en Google Apps
+
+Google Apps es una serie de servicios de Google, que te permiten usar herramientas Google como GMail, Google Docs, Calendario y otros bao tu dominio. Esto significa que puedes tener correos con tu propio dominio (por ejemplo *ismael@mitienda.com*) administrados por Google y accesibles de la misma forma que una cuenta GMail normal.
+
+Además puedes configurar software de escritorio como Oulook, Apple Mail u otros para sincronizar el correo con tu cuenta Google Apps.
+
+Si quieres usar Google Apps con tu dominio, debes crear registros especiales en tu administrador de DNS para apuntar el tráfico de correo a los servidores de Google. Si administras tus propios DNS peudes buscar información en internet o pedir asistencia de tu webmaster o proveedor de hosting.
+
+Si mantienes DNS con nosotros (ver "Opción 2" más arriba), debes solicitarnos que hagamos el cambio en nuestro DNS. 
+
+Para ambos casos debes primero crear una cuenta en Google Apps. La versión "estandar" es gratuita y soporta hasta 10 usuarios.
+
+[Google Apps Edición Estandar](http://www.google.com/apps/intl/es/group/index.html)
