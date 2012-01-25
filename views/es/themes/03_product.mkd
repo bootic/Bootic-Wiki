@@ -27,6 +27,59 @@ También existe la etiqueta especial <code>add_to_cart</code> que genera el html
 
 ## Mostrando imágenes de un producto
 
+La colección <code>product.images</code> contiene las imágenes subidas a un producto por los administradores de la tienda.
+
+Cada imagen tiene atributos que puedes usar para construir una galería o simplemente mostrar la primera.
+
+El siguiente ejemplo muestra las 2 primeras imágenes del producto.
+
+<pre>:::html
+{% if product.has_images %}
+  <div id="ficha-right" class="clearfix">
+    <!-- big images (2) -->
+    <ul id="img-big" class="assets clearfix">
+      {% for image in product.images limit:2 %}
+      <li class="img-big-{{ forloop.index }}">
+        <a href="{{ image.large }}" title="{{product.model}}'s details" rel="lightbox[ficha]">
+          <img src="{{ image.small }}" alt="{{ product.model }}" />
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+    <!-- /big images -->
+  </div>
+{% endif %}
+</pre>
+
+Cada imagen muestra el tamaño "small" (240x180px) dentro de un link que apunta a la versión "large" (800x600px). Esto es útil para usar librerías JavaScript para galerías de imágenes (como las excelentes <a href="http://www.huddletogether.com/projects/lightbox2/">Lightbox</a> o  <a href="http://fancybox.net/">FancyBox</a>) o simplemente mostra la imagen grande en el navegador.
+
+El fragmento a continuación muestra el resto de las imágenes de un producto (si es que tiene) en un tamaño menor ("thumbnail", de 75x75px).
+
+<pre>:::html
+{% if product.images | size > 2 %}
+<!-- small images -->
+<ul id="img-small" class="assets clearfix">
+  {% for image in product.images offset: 2 %}
+  <li>
+    <a href="{{ image.large }}" title="{{product.model}}'s details" rel="lightbox[ficha]">
+      <img src="{{ image.thumbnail }}" alt="{{ product.model }}" />
+    </a>
+  </li>
+  {% endfor %}
+</ul>
+<!-- /small images -->
+{% endif %}
+</pre>
+
+Cada imagen de producto tiene los siguientes tamaños predefinidos:
+
+<ul>
+  <li><code>thumbnail</code>: 75x75</li>
+  <li><code>small</code>: 240x180</li>
+  <li><code>medium</code>: 500x375</li>
+  <li><code>large</code>: 800x600</li>
+</ul>
+
 Además de los tamaños predefinidos, puedes asignar dimensiones personalizadas a imágenes de productos usando el filtro <code>resize</code>.
 
 <pre>:::html
@@ -36,7 +89,7 @@ Además de los tamaños predefinidos, puedes asignar dimensiones personalizadas 
 El ejemplo anterior crea un cuadrado de 100x100 px, centrado, a partir de la imagen de un producto.
 
 <div class="tip">
-  También puedes crear tamaños personalizados de imágenes de productos; lee la sección en "<a href="/es/themes/imagenes#resize">trabajando con imágenes</a>".
+  Para saber más sobre tamaños personalizados de imágenes de productos, lee la sección en "<a href="/es/themes/imagenes#resize">trabajando con imágenes</a>".
 </div>
 
 ## Otros archivos
