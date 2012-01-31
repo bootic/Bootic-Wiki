@@ -50,3 +50,30 @@ Una vez en el editor reemplazo el texto "URL-PRODUCTO" que puse antes por la eti
 Finalmente guardamos los cambios y nos aseguramos de que las páginas de producto muestran el botón adecuadamente.
 
 <img src="/img/themes/fb_example.png" alt="Facebook Like button" />
+
+## Configurando imagen y título en Facebook.
+
+Por defecto, el "wall" de Facebook mostrará una imagen al azar de la página donde está el producto. 
+
+<img src="/img/themes/fb-random-img.png" alt="Facebook imagen aleatoria" />
+
+Afortunadamente puedes usar código HTML especial para decirle a Facebook qué imagen usar e incluso cuál debiera ser el título del link que tus seguidores ven en Facebook. El ejemplo de abajo muestra como a veces esto no es muy descriptivo.
+
+Pega el código a continuación en la sección `HEAD` de la plantilla `layout.html` (entre `<head>` y `</head>`):
+
+<pre>:::html
+{% if product %}
+  <!-- personaliza los datos e imagen de producto al usar el botón "like" en esta página -->
+  <meta property="og:type" content="product"/> 
+  <meta property="og:title" content="{{ product.title }}"/>
+  {% if product.has_images %}
+  <meta property="og:image" content="{{ product.first_image.small }}"/> 
+  {% endif %}
+{% endif %}
+</pre>
+
+Listo! Ahora, cada vez que alguien apriete el botón "Like" en tus páginas de productos, tus seguidores y sus amigos verán la primera imagen y título del producto en sus "walls".
+
+<img src="/img/themes/fb-like-product.png" alt="Facebook imagen de producto" />
+
+Puedes aprender más sobre todas las posibilidades de configuración del botón de Facebook [en su documentación](http://developers.facebook.com/docs/reference/plugins/like/).
