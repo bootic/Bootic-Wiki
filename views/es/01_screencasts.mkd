@@ -2,7 +2,7 @@
 :title: "Videos y ejemplos"
 :description: "Videos, screencasts y ejemplos sobre cómo usar Bootic"
 ---
-# Videos y ejemplos
+# Videos y ejemplos ilustrativos
 
 Haz click en las fotos para ver cada video.
 
