@@ -66,7 +66,7 @@ If you are a collaborator:
 
 If you are a collaborator on heroku, add the "heroku" remote:
 
-    $ git remote add heroku git@github.com:ismasan/Bootic-Wiki.git
+    $ git remote add heroku git@heroku.com:booticdocs.git 
 
 Deploy to Heroku
 
