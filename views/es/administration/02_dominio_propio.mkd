@@ -69,6 +69,12 @@ Sin embargo, si sólo quieres alojar tu tienda Bootic bajo tu dominio y no plane
 
 7 - Eso es todo. Ahora la dirección "www.mitienda.com" debiera mostrarte tu tienda Bootic.
 
+<h2 id="nic">NIC Chile </h2>
+
+Los pasos de arriba son aplicables para dominios `.cl` registrados en el [NIC](http://nic.cl). El video a continuación muestra la configuración de dominio propio en el NIC para una tienda Bootic.
+
+<iframe src="http://www.screenr.com/embed/AgV" width="650" height="396" frameborder="0"></iframe>
+
 <img src="/img/admin/nic.png" alt="panel NIC" />
 <p><small>Configuración de DNS en NIC.cl</small></p>
 
