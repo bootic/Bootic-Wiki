@@ -1,0 +1,63 @@
+---
+:title: "Google Sitemap para tu tienda Bootic"
+:description: "Como configurar google sitemap para una tienda bootic"
+:keywords: google-sitemap, google, sitemap, seo, xml 
+---
+
+Google Sitemap para tu tienda Bootic
+====================================
+
+Típico, entras a Google, buscas tu tienda aplicando algún patrón de búsqueda y no aparece
+nada, ¿qué puede estar pasando?. Conversan dos amigos:
+
+**Hugo**:
+
+¿Por qué google no me encuentra?
+
+**Paco**:
+
+Quizá no sabe que existes.
+
+**Hugo**:
+
+¿Y cómo puede Google saber que existo?
+
+**Paco**:
+
+Indexando el contenido de la tienda (o página web), con su famoso [Googlebot][bot]
+
+**Hugo**
+
+Entiendo, pero ¿cómo puede google comenzar a indexarme si **absolutamente** nadie conoce mi sitio?, mi tienda es totalmente nueva.
+
+**Paco**:
+
+¿Que tal si le dices a google explícitamente, «hey, señor Google, este es mi
+contenido, indexeme». 
+
+**Paco:**
+
+¿Y puedo hacer eso?
+
+**Paco**:
+
+Claro, genera un XML con los enlaces que tiene tu sitio y dile a google que lo lea periódicamente.
+
+## Google Sitemap
+
+Para esto (o otras razones) es que Google pone
+a disposición de los administradores de sitios (webmasters) una herramienta que
+ayuda a indexar su contenido; es como una **línea directa** con el **señor de las búsquedas**. La herramienta lee periódicamente un archivo XML que el sitio genera.
+
+Nos obstante lo anterior debes saber que generar un xml de tu sitio para google **NO ASEGURA** que tu sitio aparezca primero
+en los resultados de búsqueda, **sí ayuda a mejorar tu ranking**. Aparecer
+primero depende de muchas razones más (edad del sitio, actividad, cantidad de enlaces desde otro sitios web, etc), todo aquello forma parte del llamado SEO (Search Engine Optimization), o [Posicionamiento en buscadores][seo].
+
+## Bootic genera el XML por ti
+
+Así es, desde febrero de 2012 Bootic genera un xml de tu tienda, ¿cual es?:
+
+     http://[nombre_de_tu_tienda].bootic.net/sitemap.xml
+
+[bot]: http://es.wikipedia.org/wiki/Googlebot "Entrada en wikipedia de Googlebot"
+[seo]: http://es.wikipedia.org/wiki/Posicionamiento_en_buscadores "SEO en wikipedia"
