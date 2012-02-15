@@ -154,6 +154,16 @@ ul.tabular span {
 	max-width: 100%;
 }
 
+#content blockquote {
+    border-left:3px solid #ddd;
+    padding-left:10px;
+    font-style:italic;
+}
+#content img.captura { 
+    border:1px solid #ddd;
+    padding:5px;
+}
+
 .section {
 	margin-bottom: 1.5em;
 }
@@ -304,3 +314,12 @@ html[xmlns] .clearfix {
 * html .clearfix {
 	height: 1%;
 }
+
+/** capturas de pantalla 
+ * 2012.02.14 23:02 
+ */
+
+.captura { margin:20px 0;border:1px solid #ddd;padding:5px; 0}
+.captura .c-contenido {text-align:center;}
+.captura .c-contenido img {margin:0 auto;}
+.captura .c-pie {padding:10px;background-color:#eee; color:#333;font-family:normal Georgia, "time new roman";font-style:italic }
