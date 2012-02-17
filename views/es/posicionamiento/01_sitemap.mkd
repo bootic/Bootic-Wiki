@@ -70,13 +70,13 @@ dirección donde reside este archivo es:
 
 Generar el archivo sitemap es la _mitad del trabajo_, la otra parte **la debes hacer tu**. A continuación podrás encontrar los pasos a seguir para registrar y dejar operativo tu sitemap.
 
-1. ### Ingresar a en Google Webmaster y añadir un nuevo sitio
+1. ### Ingresar a Google Webmaster y añadir un nuevo sitio
 
     Usando tu cuenta [usuario]@gmail.com debes ingresar a [Google Webmaster][ggt] y activar el servicio. Una vez autentificado verás un botón muy destacado que dice «AÑADIR UN SITIO» (si tu idioma por defecto es el Español, «ADD A SITE» si fuera en Inglés) 
     <div class="captura"><div class="c-contenido"><a title="Ingresar a en Google Webmaster y añadir un nuevo sitio" href="/img/posicionamiento/sitemap-1.png" rel="fancybox"><img src="/img/posicionamiento/sitemap-th-1.png" /></a></div><div class="c-pie">Figura 1: Añadir sitio a Google Webmaster</div></div>
 
 2. ### Agregar Sitio
-    Digital la URL de la tienda Bootic, por ejemplo: <code>mitienda.bootic.net</code>
+    Digita la URL de la tienda Bootic, por ejemplo: <code>mitienda.bootic.net</code>
     <div class="captura"><div class="c-contenido"><a title="Agregar Sitio" href="/img/posicionamiento/sitemap-2.png" rel="fancybox"><img src="/img/posicionamiento/sitemap-th-2.png" /></a></div><div class="c-pie">Figura 2: Digitar la URL del sitio que se quiere agregar</div></div>
 
 3. ### Verificar la propiedad del sitio
@@ -89,7 +89,7 @@ Generar el archivo sitemap es la _mitad del trabajo_, la otra parte **la debes h
     <div class="captura"><div class="c-contenido"><a title="Copiar metaetiquetar" href="/img/posicionamiento/sitemap-4.png" rel="fancybox"><img src="/img/posicionamiento/sitemap-th-4.png" /></a></div><div class="c-pie">Figura 4: Metaetiqueta de verificación</div></div>
 
 5. ### Pegar la etiqueta en tu plantilla Bootic
-	Ingresar a tu panel de control Bootic y editar la plantilla <code>layout.html</code>  ([¿plantilla layout?][layout]). Pega el contenido copiado anteriormente y pégalo justo debajo del elemento `<head>`. Puede ser en cualquier parte, siempre y cuando quede dentro de `<head>...</head>`
+	Ingresa a tu panel de control Bootic y edita la plantilla <code>layout.html</code>  ([¿plantilla layout?][layout]). Pega el contenido copiado anteriormente y pégalo justo debajo del elemento `<head>`. Puede ser en cualquier parte, siempre y cuando quede dentro de `<head>...</head>`
     <div class="captura"><div class="c-contenido"><a title="Pegar la etiqueta en tu plantilla Bootic" href="/img/posicionamiento/sitemap-5.png" rel="fancybox"><img src="/img/posicionamiento/sitemap-th-5.png" /></a></div><div class="c-pie">Figura 5: Pegando la metaetiqueta de verificación</div></div>
 
 6. ### Verifica la propiedad del sitio
