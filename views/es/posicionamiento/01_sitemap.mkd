@@ -27,6 +27,14 @@ Típico, entras a Google, buscas tu tienda con algunas palabras que sabes aparec
 
 **Hugo**:
 
+> Un momento, ¿qué es eso de «indexar»?
+
+**Paco**:
+
+> «Indexar» es agregar una página web a la base de datos de un buscador, en este caso a Google.
+
+**Hugo**:
+
 > Entiendo, pero ¿cómo puede Google comenzar a indexarme si **absolutamente** nadie conoce mi sitio?, mi tienda es totalmente nueva.
 
 **Paco**:
