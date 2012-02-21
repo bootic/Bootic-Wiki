@@ -76,7 +76,7 @@ Para esto, Bootic define una serie de plantillas presentes en todas las tiendas.
 
 ## Contenido dinámico
 
-Cada una de estas plantillas recibe contenido dinámicamente de acuerdo a lo que estas mostrando en ella. Para esto, Bootic define una sintaxis especial que puedes usar en las plantillas HTML para insertar el contenido dinámico. La tecnología detras de estas variables se llama **Liquid** y puedes leer más en [este link](http://www.liquidmarkup.org/).
+Cada una de estas plantillas recibe contenido dinámicamente de acuerdo a lo que estas mostrando en ella. Para esto, Bootic define una sintaxis especial que puedes usar en las plantillas HTML para insertar el contenido dinámico. La tecnología detras de estas variables se llama **Liquid** y puedes leer más en [este link](https://github.com/Shopify/liquid/wiki/Liquid-for-Designers).
 
 Por ejemplo, para generar una lista de productos en la plantilla *products.html*:
 
@@ -136,6 +136,10 @@ Una etiqueta esta rodeada por {% %} y no retorna texto directamente, sino que mo
 </pre>
 
 El resultado es 3 links HTML, uno para cada producto.
+</div>
+
+<div class="tip">
+  <strong>Liquid</strong> es un motor de plantillas muy completo y este wiki sólo nos enfocamos en los aspectos que tienen relación directa con plantillas de tiendas Bootic. Para uso general te recomendamos que revises <a href="https://github.com/Shopify/liquid/wiki/Liquid-for-Designers" title="Documentación completa de Liquid">la documentación oficial de liquid</a>.
 </div>
 
 ## Variables y etiquetas disponibles
