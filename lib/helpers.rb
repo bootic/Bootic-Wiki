@@ -4,14 +4,14 @@ module Helpers
   end
   
   def mkd(page)
-    path = File.join(options.root, 'views', "#{page}.mkd")
+    path = File.join(settings.root, 'views', "#{page}.mkd")
     erb_content = ERB.new(page.body).result(binding)
     @content = RDiscount.new(erb_content).to_html
     pjax? ? @content : erb(:layout)
   end
   
   def render_404
-    @content = RDiscount.new(File.read(File.join(options.root, 'views', '404.mkd'))).to_html
+    @content = RDiscount.new(File.read(File.join(settings.root, 'views', '404.mkd'))).to_html
     halt 404, erb(:layout)
   end
   
