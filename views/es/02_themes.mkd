@@ -2,6 +2,7 @@
 :title: "Diseño de plantillas"
 :description: "Diseño de plantillas en tu tienda Bootic"
 :keywords: diseño, plantillas, customización, personalización
+:sitemap_priority: 1.0
 ---
 # Plantillas de diseño Bootic
 

@@ -45,7 +45,7 @@ class Page
   
   include Enumerable
   
-  attr_reader :path, :title, :description, :body, :keywords, :position, :url
+  attr_reader :path, :title, :description, :body, :keywords, :position, :url, :sitemap_priority
   
   EXPR = /---\s(.+)?\s---/m
   POSITION_EXPR = /^(\d+)?_.+/
@@ -105,6 +105,7 @@ class Page
       @description = @info[:description]
       @body.gsub!(EXPR, '')
       @keywords = @info[:keywords]
+      @sitemap_priority = @info[:sitemap_priority]
     else
       @title = File.basename(subdir)
     end

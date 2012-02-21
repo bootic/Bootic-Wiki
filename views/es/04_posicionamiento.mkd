@@ -2,8 +2,9 @@
 :title: "Posicionamiento Web"
 :description: "SEO, resultados de búsqueda, marketing, pagerank, pagerank"
 :keywords: seo, posicionamiento, marketing, pagerank, sitemap
+:sitemap_priority: 1.0
 ---
-# Posicionamiento Web
+<h2>Posicionamiento Web (<abbr title="Search Engine Optimization">SEO</abbr>)</h2>
 
 Mejora los resulados de búsqueda de tu tienda Bootic con los siguiente artículos
 

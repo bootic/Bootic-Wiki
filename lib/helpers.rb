@@ -39,7 +39,7 @@ module Helpers
     xml.url do
         xml.loc url(page.url)
         xml.changefreq "weekly"
-        xml.priority level
+        xml.priority (page.sitemap_priority || level)
     end
     
     page.each do |child|
@@ -50,7 +50,7 @@ module Helpers
   def build_menu(page)
     klass = 'current' if @page && page.url == @page.url
     str = %(<li class="page">)
-    str << %(<a href="#{page.url}" class="#{klass}">#{page.title}</a>)
+    str << %(<a href="#{page.url}" class="#{klass}" title="#{page.description}">#{page.title}</a>)
     if page.size > 0
       page.each do |child|
         str << %(<ul>)
