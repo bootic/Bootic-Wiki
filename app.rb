@@ -13,7 +13,7 @@ require 'helpers'
 
 class App < Sinatra::Base
   
-  set :public, File.dirname(__FILE__) + '/public'
+  set :public_folder, File.dirname(__FILE__) + '/public'
   set :root, File.dirname(__FILE__)
   
   helpers do
@@ -21,14 +21,14 @@ class App < Sinatra::Base
   end
   
   configure do
-    Page.load(options.root + '/views', ['404.mkd'])
+    Page.load(settings.root + '/views', ['404.mkd'])
     ::IMAGES = Dragonfly[:images].configure_with(:imagemagick).configure do |c|
-      c.url_path_prefix = '/i'
+      c.url_format = '/i'
       c.protect_from_dos_attacks = true
       c.secret = ENV['DRAGONFLY_SECRET'] || 'f00barsupers3cr3t'
     end
     IMAGES.datastore.configure do |d|
-      d.root_path = options.public
+      d.root_path = settings.public_folder
     end
   end
   
