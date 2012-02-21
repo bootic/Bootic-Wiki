@@ -47,7 +47,6 @@ class App < Sinatra::Base
   
   # resizable images with Dragonfly
   get '/i/:path' do |path|
-    #Dragonfly::Job.from_path(path, IMAGES).validate_sha!(params[:s]).to_response(env)
     Dragonfly::Job.from_path(path, IMAGES).validate_sha!(params[:s]).to_response(env)
   end
   
