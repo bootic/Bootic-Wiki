@@ -40,6 +40,11 @@ class App < Sinatra::Base
     builder :sitemap
   end
   
+  get '/robots.txt' do
+    content_type 'text/plain'
+    erb :robots, :layout => false
+  end
+  
   # resizable images with Dragonfly
   get '/i/:path' do |path|
     Dragonfly::Job.from_path(path, IMAGES).validate_sha!(params[:s]).to_response(env)
