@@ -36,6 +36,10 @@ class App < Sinatra::Base
     cache_long
   end
   
+  get '/sitemap.xml' do
+    builder :sitemap
+  end
+  
   # resizable images with Dragonfly
   get '/i/:path' do |path|
     Dragonfly::Job.from_path(path, IMAGES).validate_sha!(params[:s]).to_response(env)

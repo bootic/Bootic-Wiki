@@ -35,6 +35,18 @@ module Helpers
     end
   end
   
+  def recursive_xml(xml, page, level = 1.0)
+    xml.url do
+        xml.loc url(page.url)
+        xml.changefreq "weekly"
+        xml.priority level
+    end
+    
+    page.each do |child|
+      recursive_xml xml, child, level/2
+    end if page.size > 0
+  end
+  
   def build_menu(page)
     klass = 'current' if @page && page.url == @page.url
     str = %(<li class="page">)
