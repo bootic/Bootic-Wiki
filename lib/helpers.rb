@@ -39,7 +39,7 @@ module Helpers
     xml.url do
         xml.loc url(page.url)
         xml.changefreq "weekly"
-        xml.priority (page.sitemap_priority || level)
+        xml.priority(page.sitemap_priority || level)
     end
     
     page.each do |child|
