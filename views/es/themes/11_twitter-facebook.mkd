@@ -1,7 +1,7 @@
 ---
 :title: Botones de Twitter y Facebook
 :description: Integración de botones Twitter y Facebook en plantillas Bootic
-:keywords: liquid, facebook, twitter, button, embed, html
+:keywords: liquid, facebook, twitter, button, embed, html, social, widget
 ---
 # Botones de redes sociales en páginas de productos
 

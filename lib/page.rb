@@ -113,7 +113,7 @@ class Page
   
   def serializable_hash(host = '', depth = 1)
     @serializable_hash ||= (
-      hash = [:title, :description, :keywords, :position, :url].inject({}) do |mem, key|
+      hash = [:title, :description, :keywords, :position, :url, :headings].inject({}) do |mem, key|
         mem[key] = send(key)
         mem
       end
@@ -121,6 +121,10 @@ class Page
       hash[:depth] = depth
       hash
     )
+  end
+  
+  def headings
+    @headings ||= body.scan(/#+\s*(.+)/).flatten.map{|e| e.gsub(/<\/?[^>]*>/, "")}
   end
   
   protected
