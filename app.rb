@@ -16,6 +16,7 @@ class App < Sinatra::Base
   
   set :public_folder, File.dirname(__FILE__) + '/public'
   set :root, File.dirname(__FILE__)
+  disable :protection # allow jsonp
   
   helpers do
     include Helpers
