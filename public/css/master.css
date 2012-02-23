@@ -196,8 +196,44 @@ ul.tabular span {
 	color: black;
 }
 
-
-
+/* Search
+----------------------------------*/
+#search {
+  width: 100%;
+}
+.search_box {
+  position: relative;
+  z-index: 1;
+}
+#results {
+  z-index: 2;
+  position: absolute;
+  top: 0;left: 0;
+  background: white;
+  width: 99%;
+  list-style-type: none;
+  -webkit-box-shadow: 1px 0 5px rgba(0,0,0,0.3);
+  -moz-box-shadow: 1px 0 5px rgba(0,0,0,0.3);
+}
+#results li {
+  list-style: none;
+}
+#results .link,
+#results .title,
+#results .desc { display: block; }
+#results .link {
+  padding: .25em;
+}
+#results .desc {
+  color: gray;
+  font-style: italic;
+}
+#results .link:hover {
+  text-decoration: none;
+}
+#results .link:hover .title {
+  text-decoration: underline;
+}
 /* tables
 ----------------------------------*/
 

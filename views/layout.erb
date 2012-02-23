@@ -29,6 +29,13 @@
     <div id="main" class="box clearfix">
 
       <div id="sidebar">
+        <!-- lunr search -->
+        <input type="search" placeholder="buscar" id="search" autocomplete="off" />
+        <div class="search_box">
+          <ul id="results"></ul>
+        </div>
+        <hr />
+        <!-- /search -->
         <% if menu %>
         <div class="section">
           <ul class="nested_menu">
@@ -78,64 +85,31 @@
 	<script type="text/javascript" src="/fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
 	<script type="text/javascript" src="/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
 	<script type="text/javascript" src="/js/vendor/lunr.min.js"></script>
+	<script type="text/javascript" src="/js/wiki.js"></script>
 	<script type="text/javascript" charset="utf-8">
-	var Wiki = (function () {
-	  
-	  var index = Lunr('pages', function () {
-      this.field('title', {multiplier: 10})
-      this.field('description')
-      this.field('keywords', {multiplier: 5})
-      this.ref('id')
-    })
-    
-    var pages = {},
-        loaded = false;
-    
-    var load = function (callback) {
-      if(loaded){ callback(); return }
-      
-      $.getJSON('/index.json', function (json) {
-	      console.time("load")
-	      $.each(json, function (i, page) {
-	        pages[page.url] = page
-	        try {
-  	        index.add({
-  	          id: page.url,
-  	          description: (page.description || ''),
-  	          title: page.title,
-  	          keywords: (page.keywords || ''),
-  	        })	          
-	        } catch(e) {
-	          console.log('error', e, page)
-	        }
+	  // Search results view
+	  (function () {
+	    var $template = $('<li><a class="link"><span class="title"></span><span class="desc"></span></a></li>')
+	    $(document).bind('search:results', function (evt, pages) {
+	      $('#results').html('')
+	      $.each(pages, function (i, page) {
+	        $template.clone()
+	          .find('.link').attr('href', page.href).end()
+	          .find('.title').html(page.title).end()
+	          .find('.desc').html(page.description).end()
+	          .appendTo('#results')
 	      })
-	      console.timeEnd("load")
-	      loaded = true
-	      callback()
 	    })
-    }
-    
-    var search = function (term, callback) {
-      load(function () {
-        var hits = [];
-        $.each(index.search(term), function (i, url) {
-          hits.push(pages[url])
-        })
-        callback(hits)
-      })
-    }
-    
-	  return {
-	    load: load,
-	    search: search
-	  }
-	})()
-	
+	  })()
+	  
 	  $(function () {
 	    // Lunr search
-	    
-	    
-	    
+	    function search () {
+	      WikiSearch.search($(this).val())
+	      return false;
+	    }
+	    var term_length = 0;
+	    $('#search').bind('search', search).keyup(search)
 	    
 	    // Fancybox
 	    $(".js_fancy_box_vimeo").live('click', function() {
