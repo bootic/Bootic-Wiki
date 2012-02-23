@@ -77,8 +77,67 @@
   <!-- Fancy box -->
 	<script type="text/javascript" src="/fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
 	<script type="text/javascript" src="/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+	<script type="text/javascript" src="/js/vendor/lunr.min.js"></script>
 	<script type="text/javascript" charset="utf-8">
+	var Wiki = (function () {
+	  
+	  var index = Lunr('pages', function () {
+      this.field('title', {multiplier: 10})
+      this.field('description')
+      this.field('keywords', {multiplier: 5})
+      this.ref('id')
+    })
+    
+    var pages = {},
+        loaded = false;
+    
+    var load = function (callback) {
+      if(loaded){ callback(); return }
+      
+      $.getJSON('/index.json', function (json) {
+	      console.time("load")
+	      $.each(json, function (i, page) {
+	        pages[page.url] = page
+	        try {
+  	        index.add({
+  	          id: page.url,
+  	          description: (page.description || ''),
+  	          title: page.title,
+  	          keywords: (page.keywords || ''),
+  	        })	          
+	        } catch(e) {
+	          console.log('error', e, page)
+	        }
+	      })
+	      console.timeEnd("load")
+	      loaded = true
+	      callback()
+	    })
+    }
+    
+    var search = function (term, callback) {
+      load(function () {
+        var hits = [];
+        $.each(index.search(term), function (i, url) {
+          hits.push(pages[url])
+        })
+        callback(hits)
+      })
+    }
+    
+	  return {
+	    load: load,
+	    search: search
+	  }
+	})()
+	
 	  $(function () {
+	    // Lunr search
+	    
+	    
+	    
+	    
+	    // Fancybox
 	    $(".js_fancy_box_vimeo").live('click', function() {
       		$.fancybox({
       			'padding'		: 0,
