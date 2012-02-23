@@ -3,7 +3,10 @@ USAGE: WikiSearch.search('foo', function (results) {...})
 -----------------------------------------------------------------*/
 (function ($) {
   var Search = function (url, $container) {
-
+    if(!url.match(document.location.host) && !url.match(/\?callback=/)) {// remote host. Add jsonp callback
+      url += '?callback=?'
+    }
+    
     var index = Lunr('pages', function () {
       this.field('title', {multiplier: 10})
       this.field('description')
@@ -11,7 +14,7 @@ USAGE: WikiSearch.search('foo', function (results) {...})
       this.field('headings', {multiplier: 8})
       this.ref('id')
     })
-
+    
     var pages = {},
         loaded = false;
 
