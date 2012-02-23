@@ -80,6 +80,10 @@ a:hover     { text-decoration: underline; }
 	-moz-box-shadow: 2px 0 4px rgba(0,0,0,1);
 }
 
+#header a:focus {
+  border-bottom: dotted silver 1px;
+}
+
 .box {
 	width: 900px;
 	text-align: left;
@@ -201,6 +205,7 @@ ul.tabular span {
 ----------------------------------*/
 #search {
   width: 100%;
+  margin-bottom: 1em;
 }
 .search_box {
   position: relative;
