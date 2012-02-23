@@ -92,10 +92,7 @@
 	  
 	  $(function () {
 	    // Lunr search
-	    $('#search').keyup(function (e) {
-	      if(e.keyCode != 38 && e.keyCode != 40) WikiSearch.search($(this).val())
-	      return false;
-	    })
+	    $('#search').booticDocSearch('/index.json')
 	    
 	    // Fancybox
 	    $(".js_fancy_box_vimeo").live('click', function() {
