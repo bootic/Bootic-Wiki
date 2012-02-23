@@ -5,6 +5,7 @@ require 'bundler/setup'
 require 'sinatra/base'
 require "rdiscount"
 require "dragonfly"
+require "multi_json"
 
 $LOAD_PATH.unshift(File.dirname(__FILE__) + '/lib')
 
@@ -43,6 +44,11 @@ class App < Sinatra::Base
   get '/robots.txt' do
     content_type 'text/plain'
     erb :robots, :layout => false
+  end
+  
+  get '/index.json' do
+    content_type 'application/json'
+    MultiJson.encode Page.flat_list(url(''))
   end
   
   # resizable images with Dragonfly

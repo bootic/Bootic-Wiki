@@ -19,6 +19,24 @@ class Page
     def root
       @root ||= []
     end
+    
+    def flat_list(host = '')
+      @flat_list = (
+        host.gsub!('/', '')
+        list = []
+        root.each do |page|
+          populate_recursive list, page, host
+        end
+        list
+      )
+    end
+    
+    def populate_recursive(list, page, host = '', depth = 1)
+      list << page.serializable_hash(host, depth)
+      page.each do |child|
+        populate_recursive list, child, host, depth+1
+      end if page.size > 0
+    end
 
     def each(&block)
       root.select do |page|
@@ -91,6 +109,18 @@ class Page
   
   def <=>(other)
     position <=> other.position
+  end
+  
+  def serializable_hash(host = '', depth = 1)
+    @serializable_hash ||= (
+      hash = [:title, :description, :keywords, :position, :url].inject({}) do |mem, key|
+        mem[key] = send(key)
+        mem
+      end
+      hash[:href] = host + url
+      hash[:depth] = depth
+      hash
+    )
   end
   
   protected
