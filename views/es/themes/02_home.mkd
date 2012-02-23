@@ -1,7 +1,7 @@
 ---
 :title: Home.html
 :description: Plantilla HTML de portada
-:keywords: home, portada, html, plantilla, template, diseno
+:keywords: home, portada, html, plantilla, template, diseno, galeria, destacados, collections, jquery, javascript
 ---
 
 # home.html

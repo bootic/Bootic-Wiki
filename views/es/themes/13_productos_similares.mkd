@@ -1,7 +1,7 @@
 ---
 :title: Mostrar productos similares
 :description: Mostrando productos relacionados (similares) en la ficha de un producto
-:keywords: html, liquid, bootic, siilares, relacionados, producto, productos
+:keywords: html, liquid, bootic, similares, relacionados, producto, productos, related_products, has_similar_products, similar_products, price format, thumbnail
 ---
 # Mostrando productos similares en la ficha de producto
 

@@ -1,7 +1,7 @@
 ---
 :title: Trabajando con imágenes
 :description: Trabajando con imágenes en plantillas HTML y CSS Bootic
-:keywords: liquid, html, images, css, assets, static, imagen, imagenes
+:keywords: liquid, html, images, css, assets, static, imagen, imagenes, upload, fotos, asset_url, productos, thumbnail, medium, small, large, personalizado, grey
 ---
 # Insertando imágenes en el editor de plantillas
 

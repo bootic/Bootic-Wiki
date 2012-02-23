@@ -1,7 +1,7 @@
 ---
 :title: Blog y noticias
 :description: Variables y etiquetas Liquid para el blog y noticias en una tienda Bootic
-:keywords: liquid, tags, variables, blog, posts, noticias, artículos
+:keywords: liquid, tags, variables, blog, posts, noticias, artículos, paginate, strip_html, published_on, date, truncate, capture
 ---
 # Blog y noticias
 

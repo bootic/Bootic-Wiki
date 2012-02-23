@@ -1,7 +1,7 @@
 ---
 :title: Menús de navegación
 :description: Creando menús de navegación en tu tienda Bootic
-:keywords: navigation, ux, design, links
+:keywords: navigation, ux, design, links, menu, menus, catalogo, manilla, slug, desplegable, tagged_collection_path, css, has_product_types, typed_collection_path
 ---
 # Menús de navegación
 
