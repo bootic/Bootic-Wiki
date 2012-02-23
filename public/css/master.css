@@ -214,7 +214,7 @@ ul.tabular span {
 #results {
   z-index: 2;
   position: absolute;
-  top: 0;left: 0;
+  top: -10px;left: 0;
   background: white;
   width: 99%;
   list-style-type: none;
