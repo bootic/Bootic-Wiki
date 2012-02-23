@@ -177,18 +177,19 @@ ul.tabular span {
 }
 
 #sidebar li{
-	border-bottom: 1px solid #eee;
 	padding: 4px;
 	list-style: circle inside;
 	font-size: 12px;
 }
-
+.nested_menu ul:last-child {
+  border-bottom-width: 0;
+}
 .nested_menu li ul {
 	margin-left: 1em;
 }
 
 .nested_menu {
-	margin-left: 1.5em;
+	margin-left: 0;
 }
 
 .nested_menu a.current {
