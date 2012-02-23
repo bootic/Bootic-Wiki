@@ -22,7 +22,7 @@ class Page
     
     def flat_list(host = '')
       @flat_list = (
-        host.gsub!('/', '')
+        host.gsub!(/\/$/, '')
         list = []
         root.each do |page|
           populate_recursive list, page, host
