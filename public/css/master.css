@@ -218,6 +218,9 @@ ul.tabular span {
 #results li {
   list-style: none;
 }
+#results li.hover {
+  background:#FFFAC6;
+}
 #results .link,
 #results .title,
 #results .desc { display: block; }

@@ -30,7 +30,9 @@
 
       <div id="sidebar">
         <!-- lunr search -->
-        <input type="search" placeholder="buscar" id="search" autocomplete="off" />
+        <form id="search_form">          
+          <input type="search" placeholder="buscar" id="search" autocomplete="off" />
+        </form>
         <div class="search_box">
           <ul id="results"></ul>
         </div>
@@ -87,29 +89,13 @@
 	<script type="text/javascript" src="/js/vendor/lunr.min.js"></script>
 	<script type="text/javascript" src="/js/wiki.js"></script>
 	<script type="text/javascript" charset="utf-8">
-	  // Search results view
-	  (function () {
-	    var $template = $('<li><a class="link"><span class="title"></span><span class="desc"></span></a></li>')
-	    $(document).bind('search:results', function (evt, pages) {
-	      $('#results').html('')
-	      $.each(pages, function (i, page) {
-	        $template.clone()
-	          .find('.link').attr('href', page.href).end()
-	          .find('.title').html(page.title).end()
-	          .find('.desc').html(page.description).end()
-	          .appendTo('#results')
-	      })
-	    })
-	  })()
 	  
 	  $(function () {
 	    // Lunr search
-	    function search () {
-	      WikiSearch.search($(this).val())
+	    $('#search').keyup(function (e) {
+	      if(e.keyCode != 38 && e.keyCode != 40) WikiSearch.search($(this).val())
 	      return false;
-	    }
-	    var term_length = 0;
-	    $('#search').bind('search', search).keyup(search)
+	    })
 	    
 	    // Fancybox
 	    $(".js_fancy_box_vimeo").live('click', function() {
