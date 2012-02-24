@@ -1,7 +1,7 @@
 ---
 :title: Layout.html
 :description: Plantilla HTML global para todas las páginas
-:keywords: home, html, plantilla, template, diseno, layout, content_for_layout, shop, css, master, favicon, include, stylesheet_tag, javascript_tag
+:keywords: home, html, plantilla, template, diseno, layout, content_for_layout, shop, css, master, favicon, include, stylesheet_tag, javascript_tag, current_title
 ---
 
 # Layout.html
@@ -11,7 +11,7 @@ Esta es la plantilla principal de tu tienda. Cada página que visitas se desplie
 <pre>:::html
 <html>
   <head>
-    <title>{{ shop.name }}</title>
+    <title>{% current_title %} - {{ shop.name }}</title>
     <meta name="description" content="{{ shop.description }}">
   </head>
   <body>
@@ -31,7 +31,7 @@ Si tenemos una plantilla [home.html](/es/themes/home) con el siguiente contenido
 <pre>:::html
   <html>
     <head>
-      <title>Mi tienda</title>
+      <title>Descripción de la tienda - Mi tienda</title>
       <meta name="description" content="Descripción de mi tienda">
     </head>
     <body>
@@ -39,6 +39,10 @@ Si tenemos una plantilla [home.html](/es/themes/home) con el siguiente contenido
     </body>
   </html>
 </pre>
+
+<div class="tip">
+  La etiqueta especial <code>{% current_title %}</code> genera automáticamente un título adecuado para la página actual.
+</div>
 
 ## [Hojas de estilo CSS](#css)
 <div class="section" id="css">
