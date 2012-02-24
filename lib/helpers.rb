@@ -4,10 +4,19 @@ module Helpers
   end
   
   def mkd(page)
-    path = File.join(settings.root, 'views', "#{page}.mkd")
-    erb_content = ERB.new(page.body).result(binding)
-    @content = RDiscount.new(erb_content).to_html
+    @content = render_markup(page.body)
     pjax? ? @content : erb(:layout)
+  end
+  
+  def render_markup(markup)
+    erb_content = ERB.new(markup).result(binding)
+    RDiscount.new(erb_content).to_html
+  end
+  
+  def coderay(body)
+    body.gsub!(/<pre>:::(\w+)?\s(.+?)?<\/pre>/im) do |match|
+      "<pre class='CodeRay'>#{::CodeRay.encoder(:html).encode($2, $1)}</pre>"
+    end
   end
   
   def render_404
@@ -27,7 +36,7 @@ module Helpers
     !!request.env['HTTP_X_PJAX']
   end
   
-  def load_page(url)
+  def load_page(url, json = false)
     if @page = Page.find('/'+url)
       mkd @page
     else

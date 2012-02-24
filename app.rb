@@ -61,6 +61,17 @@ class App < Sinatra::Base
     load_page ''
   end
   
+  get '/*.json' do
+    if page = Page.find('/'+params[:splat].first)
+      content_type 'application/json'
+      data = page.serializable_hash(url(''))
+      data[:body] = coderay(render_markup(page.body))
+      MultiJson.encode data
+    else
+      render_404
+    end
+  end
+  
   get '/*' do
     load_page params[:splat].first
   end
