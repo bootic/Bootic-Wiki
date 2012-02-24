@@ -59,7 +59,9 @@ USAGE: WikiSearch.search('foo', function (results) {...})
   
   $.fn.booticDocSearch = function (url) {
     var engine = new Search(url, $(this))
-    return $(this).keyup(function (e) {
+    return $(this).bind('search', function () {
+      if($(this).val().trim() == '') $(this).trigger('search:clear')
+    }).keyup(function (e) {
       if(e.keyCode != 38 && e.keyCode != 40) engine.search($(this).val())
       return false;
     })
@@ -82,6 +84,8 @@ USAGE: WikiSearch.search('foo', function (results) {...})
         .find('.desc').html(page.description).end()
         .appendTo('#results')
     })
+  }).bind('search:clear', function () {
+    $('#results').html('')
   })
   
   var current_idx = -1;
