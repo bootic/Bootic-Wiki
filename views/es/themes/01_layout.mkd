@@ -1,7 +1,7 @@
 ---
 :title: Layout.html
-:description: Plantilla HTML global
-:keywords: home, html, plantilla, template, diseno, layout, content_for_layout, shop, css, master, favicon, include
+:description: Plantilla HTML global para todas las páginas
+:keywords: home, html, plantilla, template, diseno, layout, content_for_layout, shop, css, master, favicon, include, stylesheet_tag, javascript_tag
 ---
 
 # Layout.html
