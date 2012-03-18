@@ -8,7 +8,7 @@
 Es muy probable que quieras usar librerías externas en tu plantilla. Un ejemplo común es incluír y usar jQuery como complemento a tu propio código JavaScript.
 
 
-## Incluyendo una librería como template
+## Incluyendo una librería como plantilla
 
 <img src="<%= img('/img/themes/create_template_1.png').url %>" alt="Creando una plantilla" />
 
@@ -16,11 +16,11 @@ El editor de plantillas de tu tienda permite crear "templates", o plantillas par
 
 <img src="<%= img('/img/themes/create_template_2.png').url %>" alt="Creando una plantilla Javascript" />
 
-Creando un template de tipo <code>js</code> puedes insertar tu propio código JavaScript. También puedes usar un nuevo template JavaScript y copiar el código de otras librerías que quieras usar. El siquiente ejemplo muestra jQuery.
+Creando una plantilla de tipo <code>js</code> puedes insertar tu propio código JavaScript. También puedes usar una nueva plantilla JavaScript y copiar el código de otras librerías que quieras usar. El siquiente ejemplo muestra jQuery.
 
 <img src="<%= img('/img/themes/include_jquery_1.png').url %>" alt="Incluyendo jQuery" />
 
-A continuación tienes que incluír el template jquery.js en las páginas HTML. Por ejemplo en la sección <code>head</code> del template <code>layout.html</code>
+A continuación tienes que incluír la plantilla jquery.js en las páginas HTML. Por ejemplo en la sección <code>head</code> de la plantilla <code>layout.html</code>
 
 <img src="<%= img('/img/themes/include_jquery_2.png').url %>" alt="Incluyendo jQuery" />
 
@@ -28,7 +28,7 @@ A continuación tienes que incluír el template jquery.js en las páginas HTML. 
 
 <div class="clearfix">  
 <img src="<%= img('/img/themes/include_jquery_3.png').url %>" alt="Incluyendo jQuery como archivo" class="left" />
-  Sin embargo, los templates JavaScript de Bootic sólo tienen sentido cuando necesitas editar el código tu mismo. Si quieres usar una librería externa como jQuery, Prototype.js, Mootols u otras donde no vas a meter mano puede ser recomendable subirla como archivo en la sección "subir archivo" del editor.
+  Sin embargo, las plantillas JavaScript de Bootic sólo tienen sentido cuando necesitas editar el código tu mismo. Si quieres usar una librería externa como jQuery, Prototype.js, Mootols u otras donde no vas a meter mano puede ser recomendable subirla como archivo en la sección "subir archivo" del editor.
 </div>
 
 A continuación lo incluyes en <code>layout.html</code> de la misma manera.
