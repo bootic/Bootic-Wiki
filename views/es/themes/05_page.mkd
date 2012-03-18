@@ -1,0 +1,22 @@
+---
+:title: Page.html
+:description: Plantilla para paginas de contenido
+:keywords: liquid, página, plantilla, html, css, body, resource
+---
+
+# Page.html
+
+Esta es una de las plantillas más sencillas de Bootic y su función es mostrar el contenido de una página editable de Bootic. Esta plantilla es usada cuando ves una página en URLs del tipo <code>/pages/sobre-la-empresa</code> o <code>/pages/terminos-y-condiciones</code>
+
+<pre>:::html
+  <h2>{{ page.title }}</h2>
+
+  <div class="entry">
+    {{ page.body }}
+  </div><!-- /entry -->
+</pre>
+
+La variable <code>page</code> es la página que estás viendo en ese momento y tiene sólo 2 atributos:
+
+* title - El título dado a la página en la interfaz de administración.
+* body - el contenido completo de la página, incluyendo links, imágenes y HTML que le hayas agregado en el editor de páginas en la interfaz de administración.
