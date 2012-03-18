@@ -1,7 +1,7 @@
 ---
 :title: Blog y noticias
 :description: Variables y etiquetas Liquid para el blog y noticias en una tienda Bootic
-:keywords: liquid, tags, variables, blog, posts, noticias, artículos, paginate, strip_html, published_on, date, truncate, capture
+:keywords: liquid, tags, variables, blog, posts, noticias, artículos, paginate, strip_html, published_on, date, truncate, capture, blog.html, post.html
 ---
 # Blog y noticias
 
@@ -65,6 +65,27 @@ Con las plantillas listas, ahora puedes usar el botón de división de cada noti
 Ahora, los artículos que usen esto mostrarán sólo la primera parte en las listas, y un link "Seguir leyendo" que apunta al artículo completo.
 
 <img src="/img/themes/post-split.png" alt="Leer más" />
+
+## Post.html
+
+La plantilla <code>post.html</code> muestra el detalle de cada noticia y tiene su propia URL. por ejemplo <code>/blog/2012/03/18/mi-primera-noticia</code>. En esta plantilla puedes mostrar el artículo completo.
+
+<pre>:::html
+  <div class="post">
+
+    <h2>{{ post.title }}</h2>
+
+    <div class="entry">
+    {{ post.body }}
+    </div><!-- /entry -->
+
+    <small class="date" title="{{ post.published_on | date:'%b %d %H:%M:%S %Y' }}">
+    Publicado <span>el {{ post.published_on | date:'%d/%m/%Y' }}</span>
+    por {{ post.user_name }}
+    </small>
+
+  </div><!-- /post -->
+</pre>
 
 ## Calendario de artículos
 
