@@ -1,5 +1,5 @@
 ---
-:title: "Posicionamiento Web"
+:title: "Posicionamiento Web (SEO)"
 :description: "SEO, resultados de búsqueda, marketing, pagerank, pagerank"
 :keywords: seo, posicionamiento, marketing, pagerank, sitemap
 :sitemap_priority: 1.0
