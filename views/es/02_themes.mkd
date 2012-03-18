@@ -67,7 +67,7 @@ Para esto, Bootic define una serie de plantillas presentes en todas las tiendas.
       <td>lista de artículos en el blog.</td>
     </tr>
     <tr>
-      <th><a href="/es/themes/post">post.html</a></th>
+      <th><a href="/es/themes/blog">post.html</a></th>
       <td><code>/blog/2011/01/13/hola-mundo</code></td>
       <td>detalle de un artículo del blog.</td>
     </tr>
