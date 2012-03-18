@@ -1,7 +1,7 @@
 ---
 :title: Breadcrumbs
 :description: Breadcrumbs o barras de navegación
-:keywords: navigation, ux, design, breadcrumbs, migas, navegación, diseño
+:keywords: navigation, ux, design, breadcrumbs, migas, navegación, diseño, navigation_path
 ---
 # "Breadcrumbs" o barras de navegación
 
