@@ -56,14 +56,14 @@ module Helpers
     end if page.size > 0
   end
   
-  def build_menu(page)
+  def build_menu(page, depth = 1)
     klass = 'current' if @page && page.url == @page.url
-    str = %(<li class="page">)
+    str = %(<li class="page depth_#{depth}">)
     str << %(<a href="#{page.url}" class="#{klass}" title="#{page.description}">#{page.title}</a>)
     if page.size > 0
       page.each do |child|
         str << %(<ul>)
-        str << build_menu(child)
+        str << build_menu(child, depth + 1)
         str << %(</ul>)
       end
     end
