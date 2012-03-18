@@ -1,6 +1,6 @@
 ---
 :title: Paginación
-:description: Paginando listas de productos en Bootic
+:description: Paginando listas de productos en products.html, collection.html y otras plantillas
 :keywords: paginación, páginas, listas, productos, ecommerce, paginated_list, paginate, pagination, endpaginate
 ---
 # Paginación de listas productos

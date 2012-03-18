@@ -1,6 +1,6 @@
 ---
 :title: jQuery y librerías externas
-:description: Incluyendo librerías como jQuery u otras en plantillas Bootic
+:description: Usando jQuery u otras librerías JavaScript y CSS
 :keywords: html, jquery, librerías, javascript, css, 3rdparty
 ---
 # Librerías JavaScript y CSS externas

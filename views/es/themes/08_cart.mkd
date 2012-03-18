@@ -1,0 +1,11 @@
+---
+:title: Cart.html
+:description: Plantilla para carro de compras
+:keywords: liquid, cart, carro, carrito, total, precio, checkout, orden, pedido
+---
+
+# Cart.html
+
+Plantilla para el detalle de carro de compra para usuarios de tu tienda.
+
+Pronto más información.

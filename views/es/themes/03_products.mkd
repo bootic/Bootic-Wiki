@@ -53,31 +53,31 @@ Esta es la plantilla usada por Bootic para mostrar listas y colecciones de produ
 la plantilla <code>products.html</code> siempre tiene disponible una lista de productos en el objeto <code>products</code>. Normalmente querras usar [paginación](/es/themes/pagination) para mostrar tus productos en varias páginas, ya que esa lista pudiera tener muchos productos (por ejemplo en el caso de <code>/products</code>, que muestra todos los productos visibles de tu tienda).
 
 <pre>:::html
-  {% paginate products by 5 %}
-    {% for product in paginated_list %}
-      <li class="item-{{ product_item_counter }} clearfix">
-        <!-- shows a 'new' badge if product is tagged with 'new' -->
+{% paginate products by 5 %}
+  {% for product in paginated_list %}
+    <li class="clearfix">
+      <!-- shows a 'new' badge if product is tagged with 'new' -->
 
-        <a href="{{ product.url }}" class="product-image">
-          <img src="{{ product.first_image.small }}" alt="{{ product.title }}" />
-        </a>
+      <a href="{{ product.url }}" class="product-image">
+        <img src="{{ product.first_image.small }}" alt="{{ product.title }}" />
+      </a>
 
-        <h3 class="product-model">
-          <a href="{{ product.url }}" title="{{ product.title }}">{{ product.title | truncate:26 }}</a>
-        </h3>
+      <h3 class="product-model">
+        <a href="{{ product.url }}" title="{{ product.title }}">{{ product.title | truncate:26 }}</a>
+      </h3>
 
-        {% unless product.price.zero %}
-          <small class="product-price">{{ product.price.format }}</small>
-        {% endunless %}
+      {% unless product.price.zero %}
+        <small class="product-price">{{ product.price.format }}</small>
+      {% endunless %}
 
-        {% if product.vendor != shop.name %}
-          <span class="product-vendor">{{ product.vendor }}</span>
-        {% endif %}
+      {% if product.vendor != shop.name %}
+        <span class="product-vendor">{{ product.vendor }}</span>
+      {% endif %}
 
-      </li>
-    {% endfor %}
-    {{ paginated_list | pagination }}
-  {% endpaginate %}
+    </li>
+  {% endfor %}
+  {{ paginated_list | pagination }}
+{% endpaginate %}
 </pre>
 
 En este caso hacemos un *loop* sobre la lista de productos <code>products</code> y generamos HTML para cada producto, mostrando detalles básicos de cada uno como título, imagen pequeña, precio y fabricante.
@@ -92,8 +92,6 @@ A veces el HTML de cada producto en <code>products.html</code> es similar o igua
 
 <pre>:::html
   <li class="item-{{ product_item_counter }} clearfix">
-    <!-- shows a 'new' badge if product is tagged with 'new' -->
-    {{ '<div class="new-product"></div>' | print_if_included: 'new', product_item.tag_list }}
 
     <div class="image-centerer">
       <a href="{{ product_item.url }}" class="product-image">
@@ -118,12 +116,12 @@ A veces el HTML de cada producto en <code>products.html</code> es similar o igua
 A continuación, nuestro *loop* de productos en <code>products.html</code> o <code>collection.html</code> usamos la etiqueta especial *loop* para llamar nuestra plantilla <code>product_item.html</code> con cada producto en la lista:
 
 <pre>:::html
-  {% paginate products by 20 %}
-    <ul class="products clearfix">
-    {% loop paginated_list in 'product_item' %}
-    </ul>
-    {{ paginated_list | pagination }}
-  {% endpaginate %}
+{% paginate products by 20 %}
+  <ul class="products clearfix">
+  {% loop paginated_list in 'product_item' %}
+  </ul>
+  {{ paginated_list | pagination }}
+{% endpaginate %}
 </pre>
 
 De esta manera podemos re-utilizar el mismo HTML para productos desde distintas plantillas. Estas plantillas reutilizables a veces son llamadas "parciales", porque muestran sólo una parte de la información de una página.

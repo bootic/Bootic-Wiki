@@ -1,6 +1,6 @@
 ---
 :title: Product.html
-:description: Editando la plantilla de ficha de producto en Bootic
+:description: Plantilla para ficha de producto en Bootic
 :keywords: liquid, producto, plantilla, html, css, imágenes, add_to_cart, has_images, thumbnail, small, medium, large, tags, files, product_type, variants, price, precio, variantes, archivos, colecciones
 ---
 
