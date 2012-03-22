@@ -854,7 +854,151 @@
           <h2>Template variables </h2>
 
             <hr />
-            <h3>blog.liquid </h3>
+
+            <h3>Shop</h3>
+            <dl>
+              <dt>shop.name</dt>
+              <dd>
+                <em>Returns a string with the shop's name </em>
+              </dd>
+
+              <dt>shop.description <strong class="new">new</strong></dt>
+              <dd>
+                <em>Returns a description of the site</em>
+                <div class="example">
+
+<code>
+  {% if shop.description != blank and template == &quot;index&quot; %}<br />
+  &lt;meta name=&quot;description&quot; content=&quot;{{ shop.description }}&quot;&gt;<br />
+  {% endif %}<br />
+</code>
+
+                </div>
+              </dd>
+
+              <dt>shop.currency</dt>
+              <dd>
+                <em>Returns a string with the name of the currency (usually a 3 letter representation, e.g. USD) this shop uses. </em>
+              </dd>
+
+              <dt>shop.url</dt>
+              <dd>
+                <em>Returns a full url to your shop. Note: This depends on the primary address configured under preferences/DNS Administration </em>
+              </dd>
+
+              <dt>shop.products_count</dt>
+              <dd>
+                <em>Returns the number of products you have online. </em>
+              </dd>
+
+              <dt>shop.collections_count</dt>
+              <dd>
+                <em>Returns the number of collections you have created. </em>
+              </dd>
+
+              <dt>shop.collections </dt>
+              <dd>
+                <em>Returns a list of collections for shop </em>
+                <code>
+&lt;ul&gt;<br/>
+  {% for coll in shop.collections %}<br/>
+  &lt;li class="{{ coll.slug }}"&gt;{{ coll | link_to_collection  }}&lt;/li&gt;<br/>
+  {% endfor %}<br/>
+ &lt;/ul&gt;<br/>
+    </code>
+              </dd>
+
+              <dt>shop.vendors </dt>
+              <dd>
+                <em>Returns a list of unique product vendors </em>
+                <code>
+&lt;ul&gt;<br/>
+  {% for product_vendor in shop.vendors %}<br/>
+  &lt;li class="{{ product_vendor }}"&gt;{{ product_vendor | link_to_vendor  }}&lt;/li&gt;<br/>
+  {% endfor %}<br/>
+ &lt;/ul&gt;<br/>
+    </code>
+              </dd>
+
+              <dt>shop.product_types </dt>
+              <dd>
+                <em>Returns a list of all unique product types in the shop </em>
+                <code>
+&lt;ul&gt;<br/>
+{% for product_type in shop.types %}<br/>
+  &lt;li&gt;<br/>
+    {{ product_type | link_to_type  }}<br/>
+  &lt;/li&gt;<br/>
+{% endfor %}<br/>
+&lt;/ul&gt;
+
+    </code>
+              </dd>
+
+
+            </dl>
+
+            <hr />
+
+            <h3>Menus</h3>
+
+            <dl>
+              <dt>menu.id</dt>
+              <dd>
+                <em>Returns the id of this menu </em>
+              </dd>
+
+              <dt>menu.title</dt>
+              <dd>
+                <em>Returns the title of this menu </em>
+              </dd>
+
+              <dt>menu.handle</dt>
+              <dd>
+                <em>Returns the handle of this menu </em>
+              </dd>
+
+              <dt>menu.links</dt>
+              <dd>
+                <em>Returns a collection of this menu's links.</em>
+              </dd>
+
+
+            </dl>
+            <hr />
+
+            <h3>Links</h3>
+
+          <dl>
+           <dt>link.title </dt>
+           <dd><em>Returns the description of this link</em> </dd>
+           <dt>link.active <strong class="new">new</strong></dt>
+           <dd><em>Returns true or false if the link is active</em>
+           <div class="example">
+           <code>
+           {% for link in menus.main-menu.links %}<br />
+&lt;li&gt;<br />
+   &lt;a {% if link.active %}class=&quot;active&quot;{% endif %}&gt; <br />
+  {{ link.title }}<br />
+   &lt;/a&gt;<br />
+&lt;/li&gt;<br />
+{% endfor %}<br />
+</code>
+           </div>
+
+           </dd>
+
+                      <dt>link.url</dt>
+           <dd><em>Returns the url of this link </em> </dd>
+                      <dt>link.type </dt>
+           <dd><em>Returns the type of the object in link.object, you can usecollection_link, http_link, product_link, relative_link, page_link, blog_link </em></dd>
+                      <dt>link.object </dt>
+           <dd><em>If you're pointing to a collection, then link.object is a collection object. If you're pointing to a product page, then link.object is a product object.</em></dd>
+           </dl>
+
+            <hr />
+
+            <h3>Blog</h3>
             <dl>
 
               <dt>blog.posts</dt>
@@ -900,7 +1044,7 @@
 
             <hr />
 
-            <h3>post.liquid </h3>
+            <h3>Post </h3>
 
             <dl>
               <dt>post.id </dt>
@@ -965,7 +1109,43 @@ Here is the post excerpt<br />
             </dl>
 
             <hr />
-            <h3>collection.liquid </h3>
+            <h3>Pages </h3>
+            <dl>
+              <dt>page.id </dt>
+              <dd>
+                <em>Returns the id of this page. </em>
+              </dd>
+
+              <dt>page.title </dt>
+              <dd>
+                <em>Returns the title of this page </em>
+              </dd>
+
+              <dt>page.body </dt>
+              <dd>
+                <em>Returns the content of this page. </em>
+              </dd>
+
+              <dt>page.url </dt>
+              <dd>
+                <em>Relative url where the page can be found. </em>
+              </dd>
+
+            </dl>
+
+            <hr />
+
+            </div><!-- .block -->
+
+
+          </div><!-- .col-3 -->
+
+          <div class="col-3 last" id='col4'>
+             <div class="block" id='template'>
+            <h2>Template variables</h2>
+
+            <hr />
+            <h3>Collections</h3>
             <dl>
               <dt>collection.id </dt>
               <dd>
@@ -987,13 +1167,13 @@ Here is the post excerpt<br />
                 <em>Returns the description of this collection </em>
               </dd>
 
-              <dt>collection.all_types</dt>
+              <dt>collection.product_types</dt>
               <dd>
                 <em>Returns a list of all unique product types in the collection</em>
                 <code>
                 &lt;ul&gt;<br/>
-{% for product_type in collection.all_types %}<br/>
-  &lt;li class="{{ product_type | handleize }}"&gt;<br/>
+{% for product_type in collection.product_types %}<br/>
+  &lt;li class="{{ product_type.slug }}"&gt;<br/>
     {{ product_type | link_to_type  }}<br/>
   &lt;/li&gt;<br/>
 {% endfor %}<br/>
@@ -1060,44 +1240,40 @@ Here is the post excerpt<br />
                 <em>Returns the url for the specific collection. </em>
               </dd>
 
-
             </dl>
 
-            <hr />
-            <h3>pages.liquid </h3>
+						<hr />
+            <h3>Product types</h3>
+
             <dl>
-              <dt>page.id </dt>
-              <dd>
-                <em>Returns the id of this page. </em>
-              </dd>
 
-              <dt>page.title </dt>
-              <dd>
-                <em>Returns the title of this page </em>
-              </dd>
+              <dt>product_type.id </dt>
+              <dd><em>ID of product type.</em></dd>
 
-              <dt>page.body </dt>
-              <dd>
-                <em>Returns the content of this page. </em>
-              </dd>
+              <dt>product_type.name </dt>
+              <dd><em>Name of product type.</em></dd>
 
-              <dt>page.url </dt>
-              <dd>
-                <em>Relative url where the page can be found. </em>
-              </dd>
+              <dt>product_type.slug </dt>
+              <dd><em>Slug (handle) of product type.</em></dd>
 
             </dl>
-            <ul class="section-options">
-               <li><a class="wiki"href="http://wiki.bootic.net/es/themes#pagina" title="Variable reference - Shopify Wiki" >wiki  &rsaquo;</a></li>
-             </ul>
-                  </div><!-- .block -->
 
+						<hr />
+            <h3>Product tags</h3>
 
-          </div><!-- .col-3 -->
+            <dl>
 
-          <div class="col-3 last" id='col4'>
-             <div class="block" id='template'>
-            <h2>Template variables</h2>
+              <dt>tag.id </dt>
+              <dd><em>ID of tag.</em></dd>
+
+              <dt>tag.name </dt>
+              <dd><em>Name of tag.</em></dd>
+
+              <dt>tag.slug </dt>
+              <dd><em>Slug (handle) of tag.</em></dd>
+
+            </dl>
+
             <hr />
             <h3>Product.liquid </h3>
             <dl>
@@ -1137,6 +1313,16 @@ Here is the post excerpt<br />
                 <em>Returns the price for this product. </em>
               </dd>
 
+              <dt>product.price.zero</dt>
+              <dd>
+                <em>Returns true if the product has a price higher than zero. </em>
+              </dd>
+
+              <dt>product.price.format</dt>
+              <dd>
+                <em>Returns the formatted price for this product. </em>
+              </dd>
+
               <dt>product.weight_in_gr</dt>
               <dd>
                 <em>Returns the weight for this product in grams. </em>
@@ -1145,6 +1331,16 @@ Here is the post excerpt<br />
               <dt>product.weight_in_kg</dt>
               <dd>
                 <em>Returns the weight for this product in grams. </em>
+              </dd>
+
+              <dt>product.attributes</dt>
+              <dd>
+                <em>Returns a list of the product's attributes.</em>
+              </dd>
+
+              <dt>product.meta_fields</dt>
+              <dd>
+                <em>Alias for product.attributes.</em>
               </dd>
 
               <dt>product.url</dt>
@@ -1178,7 +1374,6 @@ Here is the post excerpt<br />
               </dd>
 
 
-
               <dt>product.variants</dt>
               <dd>
                 <em>Returns a collection of all of this product's variants. </em>
@@ -1194,22 +1389,20 @@ Here is the post excerpt<br />
                 <em>Returns a list of collections a product is listed in. </em>
               </dd>
 
-              <dt>product.tags</dt>
+              <dt>product.tag_list</dt>
               <dd>
                 <em>Returns a list of the product's tags (represented by simple strings). </em>
               </dd>
 
-              <dt>product.attributes</dt>
+              <dt>product.tags</dt>
               <dd>
-                <em>Returns a list of the product's attributes.</em>
-              </dd>
-
-              <dt>product.meta_fields</dt>
-              <dd>
-                <em>Alias for product.attributes.</em>
+                <em>Returns an array of the product's tags for iteration. </em>
               </dd>
 
             </dl>
+
+						<hr />
+            <h3>Variants</h3>
 
             <dl>
 
@@ -1255,137 +1448,6 @@ Here is the post excerpt<br />
 
             </dl>
 
-            <hr />
-
-
-            <h3>Menus</h3>
-            <dl>
-              <dt>menu.id</dt>
-              <dd>
-                <em>Returns the id of this menu </em>
-              </dd>
-
-              <dt>menu.title</dt>
-              <dd>
-                <em>Returns the title of this menu </em>
-              </dd>
-
-              <dt>menu.handle</dt>
-              <dd>
-                <em>Returns the handle of this menu </em>
-              </dd>
-
-              <dt>menu.links</dt>
-              <dd>
-                <em>Returns a collection of this menu's links.</em>
-              </dd>
-
-              <dt>menu.object</dt>
-              <dd>
-                <em>The object the link points to. If the link points to a product {{link.product.title}} will, for example, print the name of the product. This is a very powerful feature and can be used for many complex liquid tasks.</em>
-              </dd>
-            </dl>
-
-                       <dl>
-           <dt>link.title </dt>
-           <dd><em>Returns the description of this link</em> </dd>
-           <dt>link.active <strong class="new">new</strong></dt>
-           <dd><em>Returns true or false if the link is active</em>
-           <div class="example">
-           <code>
-           {% for link in menus.main-menu.links %}<br />
-&lt;li&gt;<br />
-   &lt;a {% if link.active %}class=&quot;active&quot;{% endif %}&gt; <br />
-  {{ link.title }}<br />
-   &lt;/a&gt;<br />
-&lt;/li&gt;<br />
-{% endfor %}<br />
-</code>
-           </div> </dd>
-
-                      <dt>link.url</dt>
-           <dd><em>Returns the url of this link </em> </dd>
-                      <dt>link.type </dt>
-           <dd><em>Returns the type of the object in link.object, you can usecollection_link, http_link, product_link, relative_link, page_link, blog_link </em></dd>
-                      <dt>link.object </dt>
-           <dd><em>If you're pointing to a collection, then link.object is a collection object. If you're pointing to a product page, then link.object is a product object.</em></dd>
-           </dl>
-
-            <hr />
-            <h3>Shop</h3>
-            <dl>
-              <dt>shop.name</dt>
-              <dd>
-                <em>Returns a string with the shop's name </em>
-              </dd>
-
-              <dt>shop.description <strong class="new">new</strong></dt>
-              <dd>
-                <em>Returns a description of the site</em>
-                <div class="example">
-
-<code>
-  {% if shop.description != blank and template == &quot;index&quot; %}<br />
-  &lt;meta name=&quot;description&quot; content=&quot;{{ shop.description }}&quot;&gt;<br />
-  {% endif %}<br />
-</code>
-
-                </div>
-              </dd>
-
-              <dt>shop.currency</dt>
-              <dd>
-                <em>Returns a string with the name of the currency (usually a 3 letter representation, e.g. USD) this shop uses. </em>
-              </dd>
-
-              <dt>shop.url</dt>
-              <dd>
-                <em>Returns a full url to your shop. Note: This depends on the primary address configured under preferences/DNS Administration </em>
-              </dd>
-
-              <dt>shop.products_count</dt>
-              <dd>
-                <em>Returns the number of products you have online. </em>
-              </dd>
-
-              <dt>shop.collections_count</dt>
-              <dd>
-                <em>Returns the number of collections you have created. </em>
-              </dd>
-
-              <dt>shop.vendors </dt>
-              <dd>
-                <em>Returns a list of unique product vendors </em>
-                <code>
-&lt;ul&gt;<br/>
-  {% for product_vendor in shop.vendors %}<br/>
-  &lt;li class="{{ product_vendor }}"&gt;{{ product_vendor | link_to_vendor  }}&lt;/li&gt;<br/>
-  {% endfor %}<br/>
- &lt;/ul&gt;<br/>
-    </code>
-              </dd>
-
-              <dt>shop.types </dt>
-              <dd>
-                <em>Returns a list of all unique product types in the shop </em>
-                <code>
-&lt;ul&gt;<br/>
-{% for product_type in shop.types %}<br/>
-  &lt;li&gt;<br/>
-    {{ product_type | link_to_type  }}<br/>
-  &lt;/li&gt;<br/>
-{% endfor %}<br/>
-&lt;/ul&gt;
-
-    </code>
-              </dd>
-
-
-            </dl>
-             <ul class="section-options">
-                 <li><a class="wiki" href="http://wiki.shopify.com/VariableReference" title="Variable reference - Shopify Wiki" >wiki  &rsaquo;</a></li>
-                  <li><a class="move" href="http://everpixel.com"><img src="icn-move.png" width="11" height="11" alt="Icn Move" /></a></li>
-               </ul>
             <hr />
 
             </div><!-- .block -->
