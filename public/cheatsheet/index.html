@@ -319,22 +319,22 @@
 
                     <dt>{% bootic_header %}</dt>
                     <dd>
-                      <em>Shows the title of the current page.</em>
+                      <em>Renders bootic header.</em>
                     </dd>
 
                     <dt>{% bootic_footer %}</dt>
                     <dd>
-                      <em>Shows the title of the current page.</em>
+                      <em>Renders bootic footer.</em>
                     </dd>
 
                     <dt>{% add_to_cart %}</dt>
                     <dd>
-                      <em>Shows the title of the current page.</em>
+                      <em>Shows add to cart button.</em>
                     </dd>
 
                     <dt>{% cart %}</dt>
                     <dd>
-                      <em>Shows the title of the current page.</em>
+                      <em>Renders cart. Only to be used in cart.html.</em>
                     </dd>
 
                     <dt>{% current_title %}</dt>
@@ -344,22 +344,17 @@
 
                     <dt>{% navigation_path %}</dt>
                     <dd>
-                      <em>Shows the title of the current page.</em>
+                      <em>Shows breadcrumbs.</em>
                     </dd>
 
                     <dt>{% loop [objects] in 'template' %}</dt>
                     <dd>
-                      <em>Shows the title of the current page.</em>
+                      <em>Renders collection of objects in template, using template name as name of var.</em>
                     </dd>
 
-                    <dt>{% paginate [objects] in 'template' %}</dt>
+                    <dt>{% find [slug] in [model_list] as [instance_name] %}</dt>
                     <dd>
-                      <em>Shows the title of the current page.</em>
-                    </dd>
-
-                    <dt>{% find 'object_name' in [objects] %}</dt>
-                    <dd>
-                      <em>Shows the title of the current page.</em>
+                      <em>Dunno.</em>
                     </dd>
 
 									</dl>
@@ -569,10 +564,25 @@
                     <div class="example"><code>{{ TODO }}</code></div>
                     </dd>
 
-                    <dt>pagination</dt>
+                    <dt>paginate</dt>
                     <dd>
-                      <em>TODO</em>
-                    <div class="example"><code>{{ TODO }}</code></div>
+                      <em>Generates subset of objects from initial array and stores it as 'paginated_list' var.</em>
+                      <div class="example">
+
+                        <code>
+{% paginate products by 10 %}<br />
+  {% for product in paginated_list %}<br />
+    &lt;li class="clearfix"&gt;<br />
+<br />
+      &lt;a href="{{ product.url }}" class="product-image"&gt;<br />
+        &lt;img src="{{ product.first_image.small }}" alt="{{ product.title }}" /&gt;<br />
+      &lt;/a&gt;<br />
+<br />
+    &lt;/li&gt;<br />
+  {% endfor %}<br />
+  {{ paginated_list | pagination }}<br />
+{% endpaginate %}
+                        </code>
                     </dd>
 
                   </dl>
@@ -1278,7 +1288,7 @@ Here is the post excerpt<br />
 
               <dt>product.price.zero</dt>
               <dd>
-                <em>Returns true if the product has a price higher than zero. </em>
+                <em>Returns false unless the product has a price higher than zero. </em>
               </dd>
 
               <dt>product.price.format</dt>

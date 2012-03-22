@@ -38,7 +38,7 @@ dl dd { display:none;}
 dl em { background: #cae8ff; color:#004e7f; padding:9px 7px;  display:block; }
 dl dd .example {  padding:3%}
 dl dd  { background:#dcf1f8; color:#363636;  -moz-border-radius: 0 0 4px 4px;}
-dl dd  code { display: block; background:#494949; color: #ececec; font-family:courier; padding:10px; margin:5px;-moz-border-radius:4px ;-moz-webkit-radius:4px ; overflow:auto; }
+dl dd code { display: block; background:#494949; color: #ececec; font-family:courier; padding:10px; margin:5px;-moz-border-radius:4px ;-moz-webkit-radius:4px ; overflow-x: scroll; white-space: nowrap; }
 dl dd code.output { background: #2a2a2a url('bg-codeoutput.gif') repeat-x; -moz-border-radius:0 0 4px 4px;-webkit-border-radius:0 0 4px 4px;}
 dl pre { background: #cae8ff; color:#004e7f; padding:9px 7px;  display:block;overflow:auto;}
 dl dd code + code.output  { margin:-10px 5px 15px 5px; border-width:0px 1px 1px 1px;   }
