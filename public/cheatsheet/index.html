@@ -57,6 +57,23 @@
               </ul>
             </div><!-- .block -->
 
+           <div id='images' class="block clearfix" >
+              <h2>Images</h2>
+              <hr />
+              <h3>sizes</h3>
+            <ul class="images">
+               <li>16x16 <em>pico</em></li>
+              <li>32x32 <em>icon</em></li>
+              <li>50x50 <em>thumb</em></li>
+              <li>100x100 <em>small</em></li>
+              <li>160x160 <em>compact</em></li>
+              <li>240x240 <em>medium</em></li>
+              <li>480x480 <em>large</em></li>
+              <li>600x600 <em>grande</em></li>
+              <li>1024x1024 <em>original</em></li>
+             </ul>
+            </div><!-- .block -->
+
             <div class="block" id='liquid'>
               <h2>Liquid </h2>
               <hr />
@@ -290,79 +307,8 @@
 
             </div><!-- .block -->
 
-               <div  id='images' class="block clearfix" >
-                  <h2>Images</h2>
-                  <hr />
-                  <h3>sizes</h3>
-                <ul class="images">
-                   <li>16x16 <em>pico</em></li>
-                  <li>32x32 <em>icon</em></li>
-                  <li>50x50 <em>thumb</em></li>
-                  <li>100x100 <em>small</em></li>
-                  <li>160x160 <em>compact</em></li>
-                  <li>240x240 <em>medium</em></li>
-                  <li>480x480 <em>large</em></li>
-                  <li>600x600 <em>grande</em></li>
-                  <li>1024x1024 <em>original</em></li>
-                 </ul>
-                </div><!-- .block -->
-
-                <div class="block" id='helpers'>
-                  <h2>Helpers</h2>
-
-                  <hr />
-                  <dl>
-                    <dt>
-                      forloop.length
-                    </dt>
-                    <dd>
-                      <em>length of the entire for loop</em>
-                    </dd>
-                    <dt>
-                       forloop.index
-                    </dt>
-                    <dd>
-                      <em>index of the current iteration</em>
-                    </dd>
-                    <dt>
-                       forloop.index0
-                    </dt>
-                    <dd>
-                       <em>index of the current iteration</em>
-                    </dd>
-                    <dt>
-                       forloop.rindex
-                    </dt>
-                    <dd>
-                      <em>how many items are still left?</em>
-                    </dd>
-                    <dt>
-                      forloop.rindex0
-                    </dt>
-                    <dd>
-                      <em>how many items are still left?</em>
-                    </dd>
-                    <dt>
-                      forloop.first
-                    </dt>
-                    <dd>
-                      <em>is this the first iteration?</em>
-                    </dd>
-                    <dt>
-                      forloop.last
-                    </dt>
-                    <dd>
-                      <em>is this the last iteration? </em>
-                    </dd>
-                  </dl>
-                  <ul class="section-options">
-                      <li><a class="wiki" href="http://wiki.shopify.com/Liquid" title="Using liquid - Shopify Wiki" >wiki  &rsaquo;</a></li>
-                      <li><a class="move" href="#"><img src="icn-move.png" width="11" height="11" alt="Icn Move" /></a></li>
-                    </ul>
-                </div><!-- .block -->
-
              <div class="block" id='filter2'>
-                <h2>Tags (aka functions)</h2>
+                <h2>Bootic tags (a.k.a. functions)</h2>
                 <hr />
                   <dl>
 
@@ -420,175 +366,127 @@
 
 								</div>
 
+                <div class="block" id='helpers'>
+                  <h2>Helpers</h2>
+
+                  <hr />
+                  <dl>
+                    <dt>
+                      forloop.length
+                    </dt>
+                    <dd>
+                      <em>length of the entire for loop</em>
+                    </dd>
+                    <dt>
+                       forloop.index
+                    </dt>
+                    <dd>
+                      <em>index of the current iteration</em>
+                    </dd>
+                    <dt>
+                       forloop.index0
+                    </dt>
+                    <dd>
+                       <em>index of the current iteration</em>
+                    </dd>
+                    <dt>
+                       forloop.rindex
+                    </dt>
+                    <dd>
+                      <em>how many items are still left?</em>
+                    </dd>
+                    <dt>
+                      forloop.rindex0
+                    </dt>
+                    <dd>
+                      <em>how many items are still left?</em>
+                    </dd>
+                    <dt>
+                      forloop.first
+                    </dt>
+                    <dd>
+                      <em>is this the first iteration?</em>
+                    </dd>
+                    <dt>
+                      forloop.last
+                    </dt>
+                    <dd>
+                      <em>is this the last iteration? </em>
+                    </dd>
+                  </dl>
+                  <ul class="section-options">
+                      <li><a class="wiki" href="http://wiki.shopify.com/Liquid" title="Using liquid - Shopify Wiki" >wiki  &rsaquo;</a></li>
+                      <li><a class="move" href="#"><img src="icn-move.png" width="11" height="11" alt="Icn Move" /></a></li>
+                    </ul>
+                </div><!-- .block -->
+
 
           </div><!-- . col-3 -->
 
           <div class="col-3" id='col2'>
 
              <div class="block" id='filter2'>
-                <h2>Filters</h2>
+                <h2>Bootic filters</h2>
                 <hr />
+
+                  <h3>Strings</h3>
+
                   <dl>
 
-                    <dt>asset_url</dt>
+                    <dt>t</dt>
                     <dd>
-                      <em>Gives you the url for an asset</em>
-                      <div class="example"><code>{{ 'shop.css' | asset_url }}</code></div>
+                      <em>Provides translated string to shop's locale</em>
+                      <div class="example"><code>{{ 'titles.cart' | t }}</code></div>
                     </dd>
 
-                    <dt>camelize</dt>
+                    <dt>format_text</dt>
                     <dd>
-                      <em>Converts the text into CamelCase</em>
-                      <div class="example">
-                        <code>{{ 'camel case' | camelize }}</code>
-                        <code class="output">CamelCase</code>
-                      </div><!-- .example -->
+                      <em>TODO</em>
+                      <div class="example"><code>{{ 'text' | format_text }}</code></div>
                     </dd>
 
-                    <dt>capitalize</dt>
+                    <dt>print_if_equal</dt>
                     <dd>
-                      <em>Capitalizes the text</em>
-                      <div class="example">
-                        <code>{{ 'capitalize me' | capitalize }}</code>
-                        <code class="output">Capitalize Me</code>
-                      </div><!-- .example -->
+                      <em>TODO</em>
+                      <div class="example"><code>{{ 'test' | print_if_equal }}</code></div>
                     </dd>
 
-                    <dt>default_pagination</dt>
+                    <dt>print_if_matches</dt>
                     <dd>
-                      <em>used in conjunction with the {{ paginate }} liquid tag</em>
+                      <em>TODO</em>
+                      <div class="example"><code>{{ 'test' | print_if_matches }}</code></div>
                     </dd>
 
-                    <dt>global_asset_url</dt>
+                    <dt>print_if_included</dt>
                     <dd>
-                      <em>Returns the url for a global asset (global assets are faster than regular asset_url)</em>
-                      <div class="example">
-                        <code>{{ 'image.png' | global_asset_url }}</code>
-                      </div><!-- .example -->
+                      <em>TODO</em>
+                      <div class="example"><code>{{ 'test' | print_if_included }}</code></div>
                     </dd>
 
-                    <dt>handleize</dt>
-                    <dd>
-                      <em>Strips and converts special characters (%@*$...etc) out of the string, so you can use the text in a url</em>
-                      <div class="example">
-                        <code>{{ '100% M&amp;Ms!!!' | handleize }}</code>
-                        <code class="output">100-m-ms </code>
-                      </div><!-- .example -->
-                    </dd>
+                  </dl>
+                  <hr />
 
-                    <dt>img_tag</dt>
-                    <dd>
-                        <em>Generates an img tag</em>
-                        <div class="example">Basic usage
-                        <code>{{ 'image-name.gif' | asset_url | img_tag }}</code>
-                        <code class="output">&lt;img src=&quot;http://static.shopify.com/s/files/1/0036/9672/assets/image-name.gif?1255697690&quot; alt=&quot;&quot; /&gt;</code>
-                        To add alt text:
-                        <code>{{ 'image-name.gif' | asset_url | img_tag:'whatever alt text' }}</code></div>
-                    </dd>
+                  <h3>URLs</h3>
 
-                  <dt>link_to</dt>
+                  <dl>
+
+                  <dt>url_for</dt>
                   <dd>
-                   <em>Generates a html link</em>
-                   <div class="example">
-                     Simple
-                     <code>{{ 'Click' | link_to: 'http://markdunkley.com' }}</code>
-                     <code class="output">&lt;a href=&quot;http://markdunkley.com&quot; &gt;Click&lt;/a&gt;</code>
-                     Add a title
-                     <code>{{ 'Click' | link_to: 'http://markdunkley.com','Title text' }}</code>
-                     <code class="output">&lt;a href=&quot;http://markdunkley.com&quot; title=&quot;Title text&quot;&gt;Click&lt;/a&gt;</code>
-                   </div><!-- .example -->
+                    <em>TODO</em>
+                    <div class="example"><code>{{ TODO }}</code></div>
                   </dd>
 
-                  <dt>link_to_vendor</dt>
+                  <dt>asset_url</dt>
                   <dd>
-                    <em>Generates a html link to the vendor of the product</em>
-                    <div class="example">
-                      <code>{{ "Pepsi" | link_to_vendor }}</code>
-                      <code class="output">&lt;a title=&quot;Pepsi&quot; href=&quot;/collections/vendors?q=Pepsi&quot;&gt;Pepsi&lt;/a&gt;</code>
-                    </div><!-- .example -->
+                    <em>Gives you the url for an asset</em>
+                    <div class="example"><code>{{ 'shop.css' | asset_url }}</code></div>
                   </dd>
 
-                  <dt>link_to_type</dt>
-                  <dd>
-                    <em>Generates a html link to the type of the product</em>
-                    <div class="example">
-                    <code>{{ "Cola" | link_to_type }}</code>
-                    <code class="output">&lt;a title=&quot;Cola&quot; href=&quot;/collections/vendors?q=Cola&quot;&gt;Cola&lt;/a&gt;</code>
-                     </div><!-- .example -->
-                  </dd>
-
-                  <dt>link_to_tag*</dt>
-                  <dd>
-                      <em>This filter creates a link to all products in a collection that have the given tag. </em>
-                    <div class="example">
-                    <code>{% for tag in collection.tags %}<br />
-                       {{ tag | link_to_tag: tag }}<br />
-                    {% endfor %}<br />
-                    </code>
-                    </div><!-- .example -->
-                  </dd>
-
-                  <dt>money_with_currency</dt>
-                  <dd>
-                    <em>Wraps with the currency symbol and abbreviation</em>
-                    <div class="example">
-                    <code>{{ product.price | money_with_currency }}</code>
-                    <code class="output">$19.00 CAD</code>
-                    </div><!-- .example -->
-                  </dd>
-
-                  <dt>money_without_currency</dt>
-                  <dd>
-                    <em>Formats the price using a decimal</em>
-                    <div class="example">
-                    <code>{{ product.price | money_without_currency }}</code>
-                    <code class="output">19.00</code>
-                    </div><!-- .example -->
-                  </dd>
-
-                  <dt>money</dt>
-                  <dd>
-                    <em>Adds the currency symbol</em>
-                    <div class="example">
-                      <code>{{ product.price | money }}</code>
-                      <code class="output">$19.00</code>
-                    </div><!-- .example -->
-                  </dd>
-
-
-                  <dt>pluralize</dt>
-                  <dd>
-                    <em>Specify the pluralized version of the word you need and if the number is greater than 1 it will pluralize it.</em>
-                    <div class="example">
-                      <code>{{ 1 | pluralize: 'item', 'items' }}</code>
-                      <code class="output">items</code>
-
-                      <code>{{ 4 | pluralize: 'item', 'items' }}</code>
-                      <code class="output">item</code>
-
-                      <code>{{ cart.item_count | pluralize: 'item', 'items' }}</code>
-                      <code class="output">Will output "item" if the number items in the customers cart is 1, if greater/less than 1 it will output "items"</code>
-                    </div><!-- .example -->
-                  </dd>
-
-
-                  <dt>product_img_url</dt>
-                  <dd>
-                    <em>Generates the product img url</em>
-                    <div class="example">
-                      <code>{{ product.featured_image | product_img_url}}</code>
-                      <code class="output">http://static.shopify.com/files/shopify_shirt_small.png?1255</code>
-                      Specify the img size
-                      <code>{{ product.featured_image | product_img_url: 'thumb' }}</code>
-                      <code class="output">http://static.shopify.com/files/shopify_shirt_thumb.png?1255</code>
-                    </div><!-- .example -->
-                  </dd>
-
-                  <dt>script tag</dt>
+                  <dt>javascript_tag</dt>
                   <dd>
                     <em>Generates a script tag</em>
                     <div class="example">
-                      <code>{{ 'shop.js' | asset_url | script_tag }} </code>
+                      <code>{{ 'shop.js' | asset_url | javascript_tag }} </code>
                       <code class="output">&lt;script src=&quot;http://static.shopify.com/files/assets/shop.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;</code>
                     </div><!-- .example -->
                   </dd>
@@ -603,50 +501,115 @@
 
                   </dd>
 
+                  </dl>
+                  <hr />
 
-                  <dt>url_for_type</dt>
-                  <dd>
-                    <em>This filter creates an url for a type name by transforming it to a handle and adding the appropriate directory in front of it to make the url work.</em>
-                    <div class="example"><code>{{ "Used car" | url_for_type }}</code><code class="output">/collections/types?q=Used+car</code></div><!-- .example -->
-                  </dd>
+                  <h3>Product URLs</h3>
 
-                  <dt>url_for_vendor</dt>
-                  <dd>
-                    <em>This filter creates a url for a vendor name by transforming it to a handle and adding the appropriate directory in front of it to make the url work. </em>
-                    <div class="example">
-                      <code>{{ "Armani" | url_for_vendor }}</code>
-                      <code class="output">/collections/vendor?q=Armani</code>
-                    </div><!-- .example -->
-                  </dd>
+                  <dl>
 
-                   <dt>weight_with_unit</dt>
+                    <dt>typed_collection_path</dt>
                     <dd>
-                      Formats the product variant's weight
-                      <div class="example">
-                        <code>{{ product.variants.first.weight | weight_with_unit  }}</code>
-                        <code class="output">44.0 kg</code>
-                      </div><!-- .example -->
+                      <em>TODO</em>
+                    <div class="example"><code>{{ TODO }}</code></div>
                     </dd>
 
-                    <dt>within</dt>
+                    <dt>tagged_typed_collection_path</dt>
                     <dd>
-                      Used to indicate that the filtered url of a passed in object
-                      <div class="example">
-                        <code>{{product.url | within: collection }}</code>
-                      </div><!-- .example -->
+                      <em>TODO</em>
+                    <div class="example"><code>{{ TODO }}</code></div>
+                    </dd>
+
+                    <dt>collection_tags_path</dt>
+                    <dd>
+                      <em>TODO</em>
+                    <div class="example"><code>{{ TODO }}</code></div>
+                    </dd>
+
+                    <dt>tagged_collection_path</dt>
+                    <dd>
+                      <em>TODO</em>
+                    <div class="example"><code>{{ TODO }}</code></div>
+                    </dd>
+
+                    <dt>collection_types_path</dt>
+                    <dd>
+                      <em>TODO</em>
+                    <div class="example"><code>{{ TODO }}</code></div>
+                    </dd>
+
+                    <dt>vendored_collection_path</dt>
+                    <dd>
+                      <em>TODO</em>
+                    <div class="example"><code>{{ TODO }}</code></div>
+                    </dd>
+
+                    <dt>collection_types_path</dt>
+                    <dd>
+                      <em>TODO</em>
+                    <div class="example"><code>{{ TODO }}</code></div>
+                    </dd>
+
+                    <dt>tagged_typed_products_path</dt>
+                    <dd>
+                      <em>TODO</em>
+                    <div class="example"><code>{{ TODO }}</code></div>
+                    </dd>
+
+                  </dl>
+                  <hr />
+
+                  <h3>Paging</h3>
+
+                  <dl>
+
+                    <dt>if_current_page</dt>
+                    <dd>
+                      <em>TODO</em>
+                    <div class="example"><code>{{ TODO }}</code></div>
+                    </dd>
+
+                    <dt>pagination</dt>
+                    <dd>
+                      <em>TODO</em>
+                    <div class="example"><code>{{ TODO }}</code></div>
+                    </dd>
+
+                  </dl>
+                  <hr />
+
+                  <h3>Images</h3>
+
+                  <dl>
+
+		                <dt>product_image_url</dt>
+		                <dd>
+		                  <em>Generates the product img url</em>
+		                  <div class="example">
+		                    <code>{{ product.featured_image | product_image_url}}</code>
+		                    Specify the image size
+		                    <code>{{ product.featured_image | product_image_url: 'thumb' }}</code>
+		                  </div><!-- .example -->
+		                </dd>
+
+                    <dt>resize</dt>
+                    <dd>
+                      <em>TODO</em>
+                    <div class="example"><code>{{ TODO }}</code></div>
+                    </dd>
+
+                    <dt>greyscale</dt>
+                    <dd>
+                      <em>TODO</em>
+                    <div class="example"><code>{{ TODO }}</code></div>
                     </dd>
 
                 </dl>
 
-                <ul class="section-options">
-                  <li><a class="wiki" href="http://wiki.shopify.com/FilterReference" title="FilterReference - Shopify Wiki" >wiki  &rsaquo;</a></li>
-                  <li><a class="move" href="http://everpixel.com"><img src="icn-move.png" width="11" height="11" alt="Icn Move" /></a></li>
-                </ul>
-
               </div><!-- .block -->
 
               <div class="block" id='filters'>
-                <h2>Liquid Filters</h2>
+                <h2>Liquid filters</h2>
                 <hr />
                 <dl>
                   <dt>escape(input) </dt>
