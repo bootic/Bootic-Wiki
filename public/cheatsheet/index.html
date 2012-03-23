@@ -51,10 +51,7 @@
               <em>A <strong>handle</strong> is how we name our elements (collections, products, blogs, etc)</em>
             </dd>
           </dl>
-              <ul class="section-options">
-                <li><a class="wiki" href="http://wiki.shopify.com/UsingLiquid" title="Using liquid - Shopify Wiki" >wiki  &rsaquo;</a></li>
-                <li><a class="move" href="http://everpixel.com"><img src="icn-move.png" width="11" height="11" alt="Icn Move" /></a></li>
-              </ul>
+
             </div><!-- .block -->
 
            <div id='images' class="block clearfix" >
@@ -300,11 +297,6 @@
                 </dd>
               </dl>
 
-                 <ul class="section-options">
-                    <li><a class="wiki" href="http://wiki.shopify.com/UsingLiquid" title="Using liquid - Shopify Wiki" >wiki &rsaquo;</a></li>
-                    <li><a class="move" href="http://everpixel.com"><img src="icn-move.png" width="11" height="11" alt="Icn Move" /></a></li>
-                  </ul>
-
             </div><!-- .block -->
 
              <div class="block" id='filter2'>
@@ -409,10 +401,7 @@
                       <em>is this the last iteration? </em>
                     </dd>
                   </dl>
-                  <ul class="section-options">
-                      <li><a class="wiki" href="http://wiki.shopify.com/Liquid" title="Using liquid - Shopify Wiki" >wiki  &rsaquo;</a></li>
-                      <li><a class="move" href="#"><img src="icn-move.png" width="11" height="11" alt="Icn Move" /></a></li>
-                    </ul>
+
                 </div><!-- .block -->
 
 
@@ -438,6 +427,12 @@
                     <dd>
                       <em>TODO</em>
                       <div class="example"><code>{{ 'text' | format_text }}</code></div>
+                    </dd>
+
+                    <dt>split</dt>
+                    <dd>
+                      <em>TODO</em>
+                      <div class="example"><code>{{ post.body | split }}</code></div>
                     </dd>
 
                     <dt>print_if_equal</dt>
@@ -482,7 +477,7 @@
                     <em>Generates a script tag</em>
                     <div class="example">
                       <code>{{ 'shop.js' | asset_url | javascript_tag }} </code>
-                      <code class="output">&lt;script src=&quot;http://static.shopify.com/files/assets/shop.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;</code>
+                      <code class="output">&lt;script src=&quot;http://static.bootic.net/files/assets/shop.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;</code>
                     </div><!-- .example -->
                   </dd>
 
@@ -491,7 +486,7 @@
                     <em>Generates a stylesheet tag</em>
                     <div class="example">
                       <code>{{ 'shop.css' | asset_url | stylesheet_tag }}</code>
-                      <code class="output">&lt;link href=&quot;http://static.shopify.com/files/assets/shop.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot; media=&quot;all&quot; /&gt;</code>
+                      <code class="output">&lt;link href=&quot;http://static.bootic.net/files/assets/shop.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot; media=&quot;all&quot; /&gt;</code>
                     </div><!-- .example -->
 
                   </dd>
@@ -599,9 +594,9 @@
 		                <dd>
 		                  <em>Generates the product img url</em>
 		                  <div class="example">
-		                    <code>{{ product.featured_image | product_image_url}}</code>
+		                    <code>{{ product.first_image | product_image_url }}</code>
 		                    Specify the image size
-		                    <code>{{ product.featured_image | product_image_url: 'thumb' }}</code>
+		                    <code>{{ product.first_image | product_image_url: 'thumb' }}</code>
 		                  </div><!-- .example -->
 		                </dd>
 
@@ -816,10 +811,6 @@
 
                 </dl>
 
-                <ul class="section-options">
-                  <li><a class="wiki" href="http://wiki.shopify.com/FilterReference" title="FilterReference - Shopify Wiki" >wiki  &rsaquo;</a></li>
-                  <li><a class="move" href="http://everpixel.com"><img src="icn-move.png" width="11" height="11" alt="Icn Move" /></a></li>
-                </ul>
               </div><!-- .block -->
 
           </div><!-- .col-3 -->
@@ -838,7 +829,7 @@
                 <em>Returns a string with the shop's name </em>
               </dd>
 
-              <dt>shop.description <strong class="new">new</strong></dt>
+              <dt>shop.description</dt>
               <dd>
                 <em>Returns a description of the site</em>
                 <div class="example">
@@ -948,6 +939,7 @@
           <dl>
            <dt>link.title </dt>
            <dd><em>Returns the description of this link</em> </dd>
+<!--
            <dt>link.active <strong class="new">new</strong></dt>
            <dd><em>Returns true or false if the link is active</em>
            <div class="example">
@@ -963,6 +955,8 @@
            </div>
 
            </dd>
+
+-->
 
                       <dt>link.url</dt>
            <dd><em>Returns the url of this link </em> </dd>
@@ -1028,7 +1022,7 @@
                 <em>Returns the id of this post. </em>
               </dd>
 
-              <dt> post.title </dt>
+              <dt>post.title </dt>
               <dd>
                 <em>Returns the title of this post. </em>
               </dd>
@@ -1058,6 +1052,8 @@
                 <em>Relative url where the blog can be found. Will append #post-id as anchor so that the page should automatically scroll to the corresponding post.</em>
               </dd>
 
+<!--
+
               <dt>post.excerpt </dt>
               <dd>
                 <em>Renders the post's excerpt</em>
@@ -1076,6 +1072,8 @@ Here is the post excerpt<br />
 {% endfor %}<br />
     </code>
               </dd>
+
+-->
 
              <dt>post.tags </dt>
               <dd>
@@ -1394,8 +1392,10 @@ Here is the post excerpt<br />
               <dt>variant.stock</dt>
               <dd><em>Returns the stock of the variant</em></dd>
 
+<!--
               <dt>variant.sku </dt>
               <dd><em>Returns the variant's SKU</em></dd>
+-->
 
             </dl>
 
