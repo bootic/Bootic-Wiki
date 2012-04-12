@@ -1,5 +1,5 @@
 ---
-:title: "Configurando dominio propio en Bootic"
+:title: "Dominio propio y correos"
 :description: "Cómo configurar nombre de dominio o URL propia en una tienda Bootic"
 :keywords: dns, dominio, domain, url, dirección, nic.cl
 ---
@@ -91,7 +91,7 @@ Los pasos de arriba son aplicables para dominios `.cl` registrados en el [NIC](h
 
 </div>
 
-## Correos
+<h2 id="email">Correos (Email)</h2>
 
 Bootic no da el servicio de alojamiento de correos, pero desde tu administración de DNS puedes apuntar tu dominio para manejar correo electrónico donde prefieras.
 
