@@ -251,7 +251,8 @@ ul.tabular span {
 #results .title,
 #results .desc { display: block; }
 #results .link {
-  padding: .25em;
+  font-size: 12px;
+  padding: .5em;
 }
 #results .desc {
   color: gray;
