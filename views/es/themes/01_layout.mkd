@@ -154,8 +154,7 @@ Tu tienda usa la plantilla <code>layout.html</code> por defecto para todas las p
     </tr>
     <tr>
       <th><code>products_layout.html</code></th>
-      <td><small>/products, /types/[tipo], /collections/[colección]
-</small></td>
+      <td><small>/products, /types/[tipo], /collections/[colección]</small></td>
       <td>Todas las listas de productos</td>
     </tr>
     <tr>
@@ -165,7 +164,7 @@ Tu tienda usa la plantilla <code>layout.html</code> por defecto para todas las p
     </tr>
     <tr>
       <th><code>page_layout.html</code></th>
-      <td><small>/products/[producto]</small></td>
+      <td><small>/pages/[producto]</small></td>
       <td>Fichas individuales de producto</td>
     </tr>
     <tr>
