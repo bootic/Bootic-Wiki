@@ -134,7 +134,7 @@ La plantilla de podefecto de Bootic usa esta técnica para incluir distintas bar
 {% endif %}
 </pre>
 
-## [Layouts especializados](#custom_layouts)
+<h2 id="custom_layouts">Layouts especializados</h2>
 
 Tu tienda usa la plantilla <code>layout.html</code> por defecto para todas las páginas, pero también puedes crear layouts especializados para distintas secciones de tu sitio. Por ejemplo, si creas una plantilla llamada <code>product_layout.html</code>, ésta será usada en lugar de <code>layout.html</code> para todas las fichas individuales de producto. Las opciones son:
 
