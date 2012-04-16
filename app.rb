@@ -13,15 +13,15 @@ require 'page'
 require 'helpers'
 
 class App < Sinatra::Base
-  
+
   set :public_folder, File.dirname(__FILE__) + '/public'
   set :root, File.dirname(__FILE__)
   disable :protection # allow jsonp
-  
+
   helpers do
     include Helpers
   end
-  
+
   configure do
     Page.load(settings.root + '/views', ['404.mkd'])
     ::IMAGES = Dragonfly[:images].configure_with(:imagemagick).configure do |c|
@@ -33,34 +33,34 @@ class App < Sinatra::Base
       d.root_path = settings.public_folder
     end
   end
-  
+
   before do
     cache_long
   end
-  
+
   get '/sitemap.xml' do
     builder :sitemap
   end
-  
+
   get '/robots.txt' do
     content_type 'text/plain'
     erb :robots, :layout => false
   end
-  
+
   get '/index.json' do
     content_type 'application/json'
     MultiJson.encode Page.flat_list(url(''))
   end
-  
+
   # resizable images with Dragonfly
   get '/i/:path' do |path|
     Dragonfly::Job.from_path(path, IMAGES).validate_sha!(params[:s]).to_response(env)
   end
-  
+
   get '/?' do
     load_page ''
   end
-  
+
   get '/*.json' do
     if page = Page.find('/'+params[:splat].first)
       content_type 'application/json'
@@ -71,9 +71,13 @@ class App < Sinatra::Base
       render_404
     end
   end
-  
+
+  get '/cheatsheet' do
+    redirect '/cheatsheet/index.html'
+  end
+
   get '/*' do
     load_page params[:splat].first
   end
-  
+
 end
