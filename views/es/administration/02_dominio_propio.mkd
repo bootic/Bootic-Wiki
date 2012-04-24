@@ -103,14 +103,6 @@ Si alojas tus DNS con nosotros (si configuraste tu dominio para apuntar a nuestr
 
 ### Alojando correos en Google Apps
 
-Google Apps es una serie de servicios de Google, que te permiten usar herramientas Google como GMail, Google Docs, Calendario y otros bao tu dominio. Esto significa que puedes tener correos con tu propio dominio (por ejemplo *ismael@mitienda.com*) administrados por Google y accesibles de la misma forma que una cuenta GMail normal.
+Google Apps es una serie de servicios de Google, que te permiten usar herramientas Google como GMail, Google Docs, Calendario y otros bajo tu dominio. Esto significa que puedes tener correos con tu propio dominio (por ejemplo *ismael@mitienda.com*) administrados por Google y accesibles de la misma forma que una cuenta GMail normal.
 
-Además puedes configurar software de escritorio como Oulook, Apple Mail u otros para sincronizar el correo con tu cuenta Google Apps.
-
-Si quieres usar Google Apps con tu dominio, debes crear registros especiales en tu administrador de DNS para apuntar el tráfico de correo a los servidores de Google. Si administras tus propios DNS peudes buscar información en internet o pedir asistencia de tu webmaster o proveedor de hosting.
-
-Si mantienes DNS con nosotros (ver "Opción 2" más arriba), debes solicitarnos que hagamos el cambio en nuestro DNS. 
-
-Para ambos casos debes primero crear una cuenta en Google Apps. La versión "estandar" es gratuita y soporta hasta 10 usuarios.
-
-[Google Apps Edición Estandar](http://www.google.com/apps/intl/es/group/index.html)
+[Leer más sobre configurar Google Apps para tu dominio](/es/servicios/google-apps)

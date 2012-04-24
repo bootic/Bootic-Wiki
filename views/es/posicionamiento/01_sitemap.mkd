@@ -79,32 +79,18 @@ Generar el archivo sitemap es la _mitad del trabajo_, la otra parte **la debes h
     Digita la URL de la tienda Bootic, por ejemplo: <code>mitienda.bootic.net</code>
     <div class="captura"><div class="c-contenido"><a title="Agregar Sitio" href="/img/posicionamiento/sitemap-2.png" rel="fancybox"><img src="/img/posicionamiento/sitemap-th-2.png" /></a></div><div class="c-pie">Figura 2: Digitar la URL del sitio que se quiere agregar</div></div>
 
-3. ### Verificar la propiedad del sitio
-    Google necesita comprobar que tu eres el dueño del sitio, para ellos genera diversas alternativas, selecciona
-«Métodos Alternativos» y la opción «Añadir metaetiqueta ...» 
-    <div class="captura"><div class="c-contenido"><a title="Verificar la propiedad del sitio" href="/img/posicionamiento/sitemap-3.png" rel="fancybox"><img src="/img/posicionamiento/sitemap-th-3.png" /></a></div><div class="c-pie">Figura 3: Método alternativo de verificar propiedad del sitio</div></div>
+3. ### Verificar propiedad del sitio
+Revisa nuestra sección sobre [cómo verificar tu sitio en Google](/es/servicios/google-apps#verificacion) antes de continuar con ésta guía.
 
-4. ### Copiar metaetiqueta
-    Selecciona y copia la metaetiqueta generada.
-    <div class="captura"><div class="c-contenido"><a title="Copiar metaetiquetar" href="/img/posicionamiento/sitemap-4.png" rel="fancybox"><img src="/img/posicionamiento/sitemap-th-4.png" /></a></div><div class="c-pie">Figura 4: Metaetiqueta de verificación</div></div>
-
-5. ### Pegar la etiqueta en tu plantilla Bootic
-	Ingresa a tu panel de control Bootic y edita la plantilla <code>layout.html</code>  ([¿plantilla layout?][layout]). Pega el contenido copiado anteriormente y pégalo justo debajo del elemento `<head>`. Puede ser en cualquier parte, siempre y cuando quede dentro de `<head>...</head>`
-    <div class="captura"><div class="c-contenido"><a title="Pegar la etiqueta en tu plantilla Bootic" href="/img/posicionamiento/sitemap-5.png" rel="fancybox"><img src="/img/posicionamiento/sitemap-th-5.png" /></a></div><div class="c-pie">Figura 5: Pegando la metaetiqueta de verificación</div></div>
-
-6. ### Verifica la propiedad del sitio
-	Vuelve a Google Webmaster y verifica el sitio dando click en el botón correspondiente.
-    <div class="captura"><div class="c-contenido"><a title="Verifica la propiedad del sitio" href="/img/posicionamiento/sitemap-6.png" rel="fancybox"><img src="/img/posicionamiento/sitemap-th-6.png" /></a></div><div class="c-pie">Figura 6: Verificar sitio</div></div>
-
-7. ### Enviar el archivo sitemap
+4. ### Enviar el archivo sitemap
 	Luego de verificar el sitio recibirás el mensaje «Verificación correcta», ahora que Google Webmaster sabe que tu eres el dueño del sitio puedes enviar el sitemap, al final del panel de la página recién verificada dale click a «Enviar sitemap»
     <div class="captura"><div class="c-contenido"><a title="Enviar el archivo sitemap" href="/img/posicionamiento/sitemap-7.png" rel="fancybox"><img src="/img/posicionamiento/sitemap-th-7.png" /></a></div><div class="c-pie">Figura 7: Enviar sitemap a Google Webmaster</div></div>
 
-8. ### Añadir Sitemap
+5. ### Añadir Sitemap
 	Agrega el sitemap dando click en el enlace correspondiente
     <div class="captura"><div class="c-contenido"><a title="Añadir Sitemap" href="/img/posicionamiento/sitemap-8.png" rel="fancybox"><img src="/img/posicionamiento/sitemap-th-8.png" /></a></div><div class="c-pie">Figura 8: Añadir Sitemap</div></div>
 
-9. ### Agregar el archivo XML
+6. ### Agregar el archivo XML
 	Finalmente, digita la URL de la tienda: `sitemap.xml`, esta se agregará al final de tu sitio verificado. Dale click a «Enviar sitemap», y listo. Ahora Google indexará tu sitio periódicamente.
     <div class="captura"><div class="c-contenido"><img src="/img/posicionamiento/sitemap-9.png" /></div><div class="c-pie">Figura 9: Digital nombre del archivo sitemap</div></div>
 

@@ -1,0 +1,52 @@
+---
+:title: "Google Apps para correos y documentos"
+:description: "Alojando tus correos y documentos en Google Apps"
+:keywords: google apps, correo, email, servidor, servicio, saas
+---
+
+Google Apps para correos y documentos
+====================================
+
+Google Apps es una serie de servicios de Google, que te permiten usar herramientas Google como GMail, Google Docs, Calendario y otros bajo tu dominio. Esto significa que puedes tener correos con tu propio dominio (por ejemplo *ismael@mitienda.com*) administrados por Google y accesibles de la misma forma que una cuenta GMail normal.
+
+Además puedes configurar software de escritorio como Oulook, Apple Mail u otros para sincronizar el correo con tu cuenta Google Apps.
+
+Si quieres usar Google Apps con tu dominio, debes crear registros especiales en tu administrador de DNS para apuntar el tráfico de correo a los servidores de Google. Si administras tus propios DNS puedes buscar información en internet o pedir asistencia de tu webmaster o proveedor de hosting.
+
+Si mantienes DNS con nosotros ([ver explicación](/es/administration/dominio_propio)), debes solicitarnos que hagamos el cambio en nuestro DNS. 
+
+Para ambos casos debes primero crear una cuenta en Google Apps. La versión "estandar" es gratuita y soporta hasta 10 usuarios.
+
+[Google Apps Edición Estandar](http://www.google.com/apps/intl/es/group/index.html)
+
+Una vez creada la cuenta Google te pide activar la cuenta verificando que eres dueño/a del dominio. 
+
+<div class="captura">
+  <div class="c-contenido">
+    <a title="Activar cuenta en Google Apps" href="/img/servicios/verificar.png" rel="fancybox">
+      <img src="/img/servicios/verificar-th.png" />
+    </a>
+  </div>
+  <div class="c-pie">Botón para verificar dominio</div>
+</div>
+
+<div id="verificacion"></div>
+
+## Verificación de dominio
+
+1. ### Verificar la propiedad del sitio
+    Google necesita comprobar que tu eres el dueño del sitio, para ellos ofrece diversas alternativas, selecciona
+«Métodos Alternativos» y la opción «Añadir metaetiqueta ...» 
+    <div class="captura"><div class="c-contenido"><a title="Verificar la propiedad del sitio" href="/img/posicionamiento/sitemap-3.png" rel="fancybox"><img src="/img/posicionamiento/sitemap-th-3.png" /></a></div><div class="c-pie">Figura 3: Método alternativo de verificar propiedad del sitio</div></div>
+
+2. ### Copiar metaetiqueta
+    Selecciona y copia la metaetiqueta generada.
+    <div class="captura"><div class="c-contenido"><a title="Copiar metaetiquetar" href="/img/posicionamiento/sitemap-4.png" rel="fancybox"><img src="/img/posicionamiento/sitemap-th-4.png" /></a></div><div class="c-pie">Figura 4: Metaetiqueta de verificación</div></div>
+
+3. ### Pegar la etiqueta en tu plantilla Bootic
+	Ingresa a tu panel de control Bootic y edita la plantilla <code>layout.html</code>  ([¿plantilla layout?][layout]). Pega el contenido copiado anteriormente y pégalo justo debajo del elemento `<head>`. Puede ser en cualquier parte, siempre y cuando quede dentro de `<head>...</head>`
+    <div class="captura"><div class="c-contenido"><a title="Pegar la etiqueta en tu plantilla Bootic" href="/img/posicionamiento/sitemap-5.png" rel="fancybox"><img src="/img/posicionamiento/sitemap-th-5.png" /></a></div><div class="c-pie">Figura 5: Pegando la metaetiqueta de verificación</div></div>
+
+4. ### Activa la verificación
+	Vuelve a tu panel en Google Webmaster o Google Apps y verifica el sitio dando click en el botón correspondiente.
+    <div class="captura"><div class="c-contenido"><a title="Verifica la propiedad del sitio" href="/img/posicionamiento/sitemap-6.png" rel="fancybox"><img src="/img/posicionamiento/sitemap-th-6.png" /></a></div><div class="c-pie">Figura 6: Verificar sitio</div></div>
