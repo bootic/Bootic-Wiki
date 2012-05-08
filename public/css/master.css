@@ -208,6 +208,9 @@ ul.tabular span {
 .nested_menu li.depth_1 ul {
   margin-left: 0;
 }
+.nested_menu li.depth_3 ul {
+  margin-left: 1em;
+}
 .nested_menu li ul {
   margin-left: 1em;
 }
