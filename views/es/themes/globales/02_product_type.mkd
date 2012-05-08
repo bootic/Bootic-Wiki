@@ -1,0 +1,18 @@
+---
+:title: product_type 
+:description: Descripción de la variable global product_type 
+:keywords: liquid, product, variable, product_type
+---
+# Product_type
+
+## `product.product_type.id`
+Retorna el ID del tipo de producto.
+
+## `product.product_type`
+Retorna el nombre (manilla) del tipo de producto, ejm: `accesorios-cuna`.
+
+## `product.product_type.name`
+Retorna el nombre del tipo  de producto, ejm: `Accesorios Cuna`.
+
+## `product.product_type.url`
+Retorna la url del tipo de producto, ejm: `/types/accesorios-cunas`.

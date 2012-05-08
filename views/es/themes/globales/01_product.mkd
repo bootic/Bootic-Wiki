@@ -1,0 +1,12 @@
+---
+:title: product 
+:description: Descripción de la variable global Producto 
+:keywords: liquid, product, variable
+---
+# Product 
+
+## `product.name`
+Retorna el nombre del producto
+
+## `product.url`
+Retorna lal url del producto
