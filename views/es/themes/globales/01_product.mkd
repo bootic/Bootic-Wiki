@@ -10,3 +10,6 @@ Retorna el nombre del producto
 
 ## `product.url`
 Retorna lal url del producto
+
+## `product.product_type`
+Un objeto [product_type](/es/themes/globales/product_type)

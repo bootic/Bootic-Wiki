@@ -5,9 +5,6 @@
 ---
 # Product_type
 
-## `product.product_type.id`
-Retorna el ID del tipo de producto.
-
 ## `product.product_type`
 Retorna el nombre (manilla) del tipo de producto, ejm: `accesorios-cuna`.
 
@@ -16,3 +13,9 @@ Retorna el nombre del tipo  de producto, ejm: `Accesorios Cuna`.
 
 ## `product.product_type.url`
 Retorna la url del tipo de producto, ejm: `/types/accesorios-cunas`.
+
+## `product_type.products`
+Lista de productos de este tipo. Cada producto es del tipo [product](/es/themes/globales/product)
+
+## `product_type.tags`
+Lista de etiquetas dentro de este tipo.
