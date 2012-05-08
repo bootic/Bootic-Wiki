@@ -1,5 +1,5 @@
 ---
-:title: Variables y etiquetas globales
+:title: Variables y etiquetas
 :description: Variables y etiquetas globales en todas las plantillas Bootic
 :keywords: liquid, tags, variables
 ---
@@ -38,6 +38,8 @@ Referencia a todos los productos visibles en la tienda. Lo puedes usar para iter
 </pre>
 
 </div>
+
+Cada producto es un objeto [product](/es/themes/globales/product)
 
 ## [collections](#collections)
 <div id="collections">
@@ -151,6 +153,8 @@ Este ejemplo itera los productos del tipo "zapatos"
 </pre>
 
 </div>
+
+Cada tipo de producto es un objeto [product_type](/es/themes/globales/product_type)
 
 ## [vendors](#vendors)
 <div id="vendors">
