@@ -57,6 +57,7 @@ module Helpers
   end
   
   def build_menu(page, depth = 1)
+    return '' unless page.in_menus?
     klass = 'current' if @page && page.url == @page.url
     str = %(<li class="page depth_#{depth}">)
     str << %(<a href="#{page.url}" class="#{klass}" title="#{page.description}">#{page.title}</a>)

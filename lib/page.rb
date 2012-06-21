@@ -127,6 +127,10 @@ class Page
     @headings ||= body.scan(/#+\s*(.+)/).flatten.map{|e| e.gsub(/<\/?[^>]*>/, "")}
   end
   
+  def in_menus?
+    @info[:in_menus] != false
+  end
+  
   protected
   
   def load_info
@@ -141,6 +145,7 @@ class Page
       @keywords = @info[:keywords]
       @sitemap_priority = @info[:sitemap_priority]
     else
+      @info = {}
       @title = File.basename(subdir)
     end
   end
