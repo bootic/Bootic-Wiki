@@ -59,7 +59,7 @@ USAGE: WikiSearch.search('foo', function (results) {...})
   
   $.fn.booticDocSearch = function (url) {
     var engine = new Search(url, $(this))
-    return $(this).bind('search', function () {
+    return $(this).bind('search:results', function () {
       if($(this).val().trim() == '') $(this).trigger('search:clear')
     }).keyup(function (e) {
       if(e.keyCode != 38 && e.keyCode != 40) engine.search($(this).val())
@@ -74,9 +74,10 @@ USAGE: WikiSearch.search('foo', function (results) {...})
 ------------------------------------------*/
 // Search results view
 ;(function () {
-  var $template = $('<li><a class="link"><span class="title"></span><span class="desc"></span></a></li>')
+  var $template = $('<li><a class="link"><span class="title"></span></a><p class="desc"></p></li>')
   $('#search').bind('search:results', function (evt, pages) {
     $('#results').html('')
+    $('#content_wrapper').hide()
     $.each(pages, function (i, page) {
       $template.clone()
         .find('.link').attr('href', page.href).end()
@@ -84,8 +85,12 @@ USAGE: WikiSearch.search('foo', function (results) {...})
         .find('.desc').html(page.description).end()
         .appendTo('#results')
     })
+    $('#search_box .term').text($('#search').val())
+    $('#search_box').show()
   }).bind('search:clear', function () {
     $('#results').html('')
+    $('#search_box').hide()
+    $('#content_wrapper').show()
   })
   
   var current_idx = -1;

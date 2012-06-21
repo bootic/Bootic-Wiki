@@ -1,0 +1,12 @@
+---
+:title: "¿Qué son las variantes de producto?"
+:description: "Variantes de productos"
+:keywords: productos, variantes, admin
+---
+# ¿Qué son las variantes de producto?
+
+Nosotros llamamos "variantes" a las variaciones de un producto, y no
+hay un límite con respecto a la cantidad de variantes asociadas a un
+producto. Es decir, si tienes el producto "polera negra" con las
+variantes S, M y L, en el fondo es UN producto con tres variantes. Lo
+que nosotros contamos para los planes son los productos.

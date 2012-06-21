@@ -1,0 +1,10 @@
+---
+:title: "¿Cómo administro costos de envío?"
+:description: "Administración de costos y zonas de envío"
+:keywords: costos, envío, despacho, admin
+---
+# ¿Cómo administro costos de envío?
+
+En Bootic puedes definir tus propios costos de envío por peso, volumen y región geográfica de despacho.
+
+Lee el la sección [Zonas y costos de envío](/es/administration/shipping_zones) para saber más.

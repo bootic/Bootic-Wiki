@@ -4,7 +4,8 @@
 :keywords: bootic, documentacion, ecommerce
 ---
 
-# Bootic docs
+# Preguntas frecuentes
 
-* [Castellano](/es)
-* [English](/en)
+<% Page.find('/es/faq').each_with_index do |p, i| %>
+<h3><%= i + 1 %>. <a href="<%= p.url %>"><%= p.title %></a></h3>
+<% end %>
