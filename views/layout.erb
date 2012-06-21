@@ -26,21 +26,17 @@
         </ul>
       </div>
     </div>
+    
     <div id="main" class="box clearfix">
 
       <div id="sidebar">
-        <!-- lunr search -->
-        <form id="search_form">          
-          <input type="search" placeholder="buscar" id="search" autocomplete="off" tabindex="1" />
-        </form>
-        <div class="search_box">
-          <ul id="results"></ul>
-        </div>
-
-        <!-- /search -->
+        
         <% if menu %>
         <div class="section">
           <ul class="nested_menu">
+            <li class="page depth_2">
+              <a href="/">Preguntas frecuentes</a>
+            </li>
             <% menu.each do |page| %>
               <%= build_menu page %>
             <% end %>
@@ -50,7 +46,21 @@
       </div><!-- /sidebar -->
 
       <div id="content">
-        <%= @content  %>
+        <!-- lunr search -->
+        <form id="search_form">   
+          <h3>Busca en la documentación de Bootic</h3>       
+          <input type="text" placeholder="Busca una pregunta, palabra o tema" id="search" autocomplete="off" tabindex="1" />
+        </form>
+        <div id="search_box">
+          <strong>Resultados para &quot;<span class="term"></span>&quot;</strong>
+          <ul id="results"></ul>
+        </div>
+
+        <!-- /search -->
+        
+        <div id="content_wrapper">
+          <%= @content  %>
+        </div>
         
         <div id="comments">
           <!-- Disqus comments -->
