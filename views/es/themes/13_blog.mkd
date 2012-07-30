@@ -12,7 +12,7 @@ El objeto <code>blog</code> contiene los artículos de noticias de tu tienda. No
 ## Paginando artículos
 
 <pre>:::html
-{% paginate blog.posts by:30 %}
+{% paginate blog.posts by 30 %}
  {% for post in paginated_list %}
   <div class="post">
    <h3>
@@ -42,7 +42,7 @@ Además usamos <code>date</code> para formatear la fecha de cada artículo.
 A veces querrás dividir artículos muy largos en dos y mostrar la primera parte o introducción en las listas de noticias (por ejemplo la portada o la plantilla <code>blog.html</code>). Para esto, primero asegúrate de que el código que muestra la lista de noticias usa el filtro <code>split</code>:
 
 <pre>:::html
-{% paginate blog.posts by:30 %}
+{% paginate blog.posts by 30 %}
  {% for post in paginated_list %}
   <div class="post">
    ...
