@@ -1,11 +1,18 @@
 ---
-:title: Variables y etiquetas globales
+:title: Variables
 :description: Variables y etiquetas globales en todas las plantillas Bootic
 :keywords: liquid, tags, variables
 ---
-# Variables y etiquetas globales
+# Variables
 
 Estas son las variables y etiquetas disponibles en todas las plantillas Bootic y ejemplos de uso.
+
+
+## <a href="globales/product">`product`</a>
+## <a href="globales/product_type">`product_type`</a>
+
+
+<br />
 
 ## [all_products](#all_products)
 <div id="all_products">
