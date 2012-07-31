@@ -1,0 +1,10 @@
+---
+:title: "¿Cómo uso mi propio dominio?"
+:description: "Usar dominio propio"
+:keywords: dominio, host, dns, url, nic, faq
+---
+# ¿Cómo uso mi propio dominio?
+
+Todas las tiendas Bootic tienen una dirección por defecto en el estilo <code>mi-tienda.bootic.net</code>, donde "mi-tienda" es el nombre que tu elijes para tu tienda al momento de crearla.
+
+Si quieres cambiar esa dirección por defecto por tu propio dominio, debes seguir los pasos descritos en la sección [Configurando Dominio propio en Bootic](/es/administration/dominio_propio)
