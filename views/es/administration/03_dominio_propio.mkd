@@ -3,7 +3,7 @@
 :description: "Cómo configurar nombre de dominio o URL propia en una tienda Bootic"
 :keywords: dns, dominio, domain, url, dirección, nic.cl
 :group:
-  :name: Administración
+  :name: Administración y configuración
   :label: ¿Cómo uso mi propio dominio?
 ---
 # Configurando dominio propio en Bootic

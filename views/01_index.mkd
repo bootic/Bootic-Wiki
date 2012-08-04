@@ -9,8 +9,10 @@
 <div class="faq-list">
   <% Page.groups.each do |group_name, pages| %>
   <h2><%= group_name %></h2>
+  <ol>
   <% pages.each_with_index do |p, i| %>
-  <h3><%= i + 1 %>. <a href="<%= p.url %>"><%= p.group_label %></a></h3>
+  <li><h3><a href="<%= p.url %>"><%= p.group_label %></a></h3></li>
   <% end %>
+  </ol>
   <% end %>
 </div>

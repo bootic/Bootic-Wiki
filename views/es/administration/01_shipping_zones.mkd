@@ -3,7 +3,7 @@
 :description: "Información sobre cómo configurar las zonas y costos de envío en tu tienda Bootic"
 :keywords: costos, zonas, envío, despacho, despachos, órdenes, pedidos, productos
 :group:
-  :name: Administración
+  :name: Administración y configuración
   :label: ¿Cómo administro costos de envío?
 ---
 # Zonas de envío para pedidos de compra

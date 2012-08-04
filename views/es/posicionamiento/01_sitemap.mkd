@@ -2,6 +2,9 @@
 :title: "Google Sitemap para tu tienda Bootic"
 :description: "Como configurar google sitemap para una tienda bootic"
 :keywords: google-sitemap, google, sitemap, seo, xml 
+:group:
+  :name: SEO y posicionamiento
+  :label: ¿Cómo mejoro los resultados en Google?
 ---
 
 Google Sitemap para tu tienda Bootic
