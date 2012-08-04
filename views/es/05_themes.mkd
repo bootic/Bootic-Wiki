@@ -3,6 +3,9 @@
 :description: "Diseño de plantillas en tu tienda Bootic"
 :keywords: diseño, plantillas, customización, personalización
 :sitemap_priority: 1.0
+:group:
+  :name: Diseño
+  :label: ¿Cómo modifico el diseño?
 ---
 # Plantillas de diseño Bootic
 

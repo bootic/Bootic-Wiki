@@ -7,8 +7,15 @@ class Page
       (@pages ||= {})
     end
     
+    def groups
+      (@groups ||= {})
+    end
+    
     def add(page)
       pages[page.url] = page
+      if group = page.info[:group]
+        (groups[group[:name]] ||= []) << page
+      end
       page
     end
     
@@ -63,7 +70,7 @@ class Page
   
   include Enumerable
   
-  attr_reader :path, :title, :description, :body, :keywords, :position, :url, :sitemap_priority
+  attr_reader :path, :title, :description, :body, :keywords, :position, :url, :sitemap_priority, :info
   
   EXPR = /---\s(.+)?\s---/m
   POSITION_EXPR = /^(\d+)?_.+/
@@ -129,6 +136,10 @@ class Page
   
   def in_menus?
     @info[:in_menus] != false
+  end
+  
+  def group_label
+    @group_label ||= (info[:group] && info[:group][:label]) ? info[:group][:label] : title
   end
   
   protected

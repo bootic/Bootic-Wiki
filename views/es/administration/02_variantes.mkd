@@ -1,7 +1,10 @@
 ---
-:title: "¿Qué son las variantes de producto?"
+:title: "Variantes de producto"
 :description: "Variantes de productos"
 :keywords: productos, variantes, admin
+:group:
+  :name: Administración
+  :label: ¿Qué son las variantes de producto?
 ---
 # ¿Qué son las variantes de producto?
 

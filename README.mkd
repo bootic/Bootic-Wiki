@@ -29,6 +29,19 @@ You can add page metadata (important for SEO) at the top of every page. Example:
 
 File names are prefixed with numbers (02_themes.mkd). Number prefixes are used for positioning in menus and are stripped off links and URLs.
 
+## Group pages
+
+As well as the directory-tree, pages can be added to groups along with a label 
+
+    ---
+    ...
+    :group:
+      :name: Administración
+      :label: Cómo administro mi sitio?
+    ---
+    
+`:name:` is the group name. `:label:` is an alternative name for the page in the context of that group.
+
 ## Images
 
 Images go in public/img, but there's a helper that allows one to freely resize them:

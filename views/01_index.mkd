@@ -6,6 +6,11 @@
 
 # Preguntas frecuentes
 
-<% Page.find('/es/faq').each_with_index do |p, i| %>
-<h3><%= i + 1 %>. <a href="<%= p.url %>"><%= p.title %></a></h3>
-<% end %>
+<div class="faq-list">
+  <% Page.groups.each do |group_name, pages| %>
+  <h2><%= group_name %></h2>
+  <% pages.each_with_index do |p, i| %>
+  <h3><%= i + 1 %>. <a href="<%= p.url %>"><%= p.group_label %></a></h3>
+  <% end %>
+  <% end %>
+</div>

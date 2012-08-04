@@ -211,6 +211,11 @@ ul.tabular span {
 	margin-bottom: 1.5em;
 }
 
+/* FAQ
+----------------------------------*/
+#content .faq-list h2 {
+  margin: 0 0 .5em 0;
+}
 /* Sidebar (menus)
 ----------------------------------*/
 
