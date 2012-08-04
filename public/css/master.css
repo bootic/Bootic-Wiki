@@ -1,6 +1,7 @@
 body, table, ul, ol, form, h1, h2, h3, h4, h5, h6 {padding: 0; margin: 0;}
 
 body {
+  background: #F0F0F1;
 	font-family: helvetica, arial, verdana, sans-serif;
 	font-size: 14px;
 	line-height: 1.4;
@@ -20,6 +21,7 @@ body, #wrapper {
 #main {
 	overflow:auto;
 	padding-bottom: 80px;
+	margin-top: 50px;
 }  /* must be same height as the footer */
 
 #footer {
@@ -67,52 +69,89 @@ a:hover     { text-decoration: underline; }
 }
 /* Header
 ----------------------------------*/
-
-#logo {
-	float: left;
+.header {
+  font-family:'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+  text-align: left;
+  background: #343433 url(i/concrete_wall.png);
+  color:white;
+  height:30px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+  z-index: 100;
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
 }
 
-#header {
-	padding: 10px 0 0 0;
-	background: url(i/body-pattern.png);
-	margin-bottom: 20px;
-	-webkit-box-shadow: 2px 0 4px rgba(0,0,0,1);
-	-moz-box-shadow: 2px 0 4px rgba(0,0,0,1);
-}
+#mini-logo { margin:5px }
 
-#header a:focus {
-  border-bottom: dotted silver 1px;
-}
-
+.header .span-13 {float: right;}
 .box {
-	width: 900px;
+	width: 950px;
 	text-align: left;
 	margin: 0 auto;
 }
 
 /* nav
 ----------------------------------*/
-
-#nav {
-	float: right;
-	list-style-type: none;
-	margin: 40px 0 0 0;
+.z-main-nav {
+    position:relative;
+}
+.main-nav {
+    margin:0;
+    padding:6px 0 0 0;
+    list-style-type:none;
+    position:absolute;
+    right:0;
+    top: 0;
 }
 
-#nav li {
-	float: left;
-	margin: 0 1em;
+.main-nav li {
+    margin:0;
+    padding:0;
+    float:left;
 }
 
-#nav a {
-	color: #fff;
-	text-shadow: 1px 1px 1px black;
-	text-decoration: none;
-	font-size: 16px;
+.main-nav li:last-child {
+    margin-left:10px;
+}
+.main-nav li:last-child a {
+    border-right:none;
+    margin:0;
+    padding:0 5px 0 0;
 }
 
-#nav .current a {
-	text-decoration: underline;
+.main-nav a {
+    color:#ebeced;
+    text-decoration:none;
+    border-right:1px solid #ccc;
+    padding:0 10px;
+    display: block;
+    font-size: 12px;
+}
+
+.main-nav .current a {
+  font-weight: bold;
+}
+
+.icn-social {
+    width:16px;
+    height:16px;
+    display:inline-block;
+    background: url(i/bootic-sprites.png) no-repeat;
+    margin-right:5px;
+    text-indent:-99999px;
+}
+
+.icn-social-twitter {
+    background-position:-557px -702px;
+}
+.icn-social-facebook {
+    background-position:-557px -557px;
+}
+.icn-social-vimeo {
+    background-position:-557px -414px;
 }
 
 /* headings
@@ -251,7 +290,7 @@ ul.tabular span {
 #content #results {
   z-index: 2;
   margin: 0;
-  background: white;
+  background: #F0F0F1;
   width: 99%;
   list-style-type: none;
 }
@@ -331,6 +370,7 @@ ul.grid {
 .grid .grid_thumb {
 	float: left;
 	margin: 0 2em 2em 0;
+	background: white;
 }
 
 .grid_thumb {
@@ -403,3 +443,32 @@ html[xmlns] .clearfix {
 .captura .c-contenido {text-align:center;}
 .captura .c-contenido img {margin:0 auto;}
 .captura .c-pie {padding:10px;background-color:#eee; color:#333;font-family:normal Georgia, "time new roman";font-style:italic }
+
+/* Grid.css
+---------------------------------------*/
+.span-1, .span-2, .span-3, .span-4, .span-5, .span-6, .span-7, .span-8, .span-9, .span-10, .span-11, .span-12, .span-13, .span-14, .span-15, .span-16, .span-17, .span-18, .span-19, .span-20, .span-21, .span-22, .span-23, .span-24 {float:left;margin-right:10px;}
+.last {margin-right:0;}
+.span-1 {width:30px;}
+.span-2 {width:70px;}
+.span-3 {width:110px;}
+.span-4 {width:150px;}
+.span-5 {width:190px;}
+.span-6 {width:230px;}
+.span-7 {width:270px;}
+.span-8 {width:310px;}
+.span-9 {width:350px;}
+.span-10 {width:390px;}
+.span-11 {width:430px;}
+.span-12 {width:470px;}
+.span-13 {width:510px;}
+.span-14 {width:550px;}
+.span-15 {width:590px;}
+.span-16 {width:630px;}
+.span-17 {width:670px;}
+.span-18 {width:710px;}
+.span-19 {width:750px;}
+.span-20 {width:790px;}
+.span-21 {width:830px;}
+.span-22 {width:870px;}
+.span-23 {width:910px;}
+.span-24 {width:950px;margin-right:0;}
