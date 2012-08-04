@@ -66,9 +66,11 @@
 
       <div id="content">
         <!-- lunr search -->
-        <form id="search_form">   
-          <h3>Busca en la documentación de Bootic</h3>       
-          <input type="text" placeholder="Busca una pregunta, palabra o tema" id="search" autocomplete="off" tabindex="1" />
+        <form id="search_form">
+          <div class="b">
+            <h3>Busca en la documentación de Bootic</h3>       
+            <input type="text" placeholder="Busca una pregunta, palabra o tema" id="search" autocomplete="off" tabindex="1" />
+          </div>
         </form>
         <div id="search_box">
           <strong>Resultados para &quot;<span class="term"></span>&quot;</strong>
@@ -116,10 +118,17 @@
 	<script type="text/javascript" src="/fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
 	<script type="text/javascript" src="/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
 	<script type="text/javascript" src="/js/vendor/lunr.min.js"></script>
+	<script type="text/javascript" src="/js/vendor/jquery.sticky.js"></script>
 	<script type="text/javascript" src="/js/wiki.js"></script>
 	<script type="text/javascript" charset="utf-8">
 	  
 	  $(function () {
+	    // Sticky search bar
+	    $('#search_form').sticky({topSpacing:0}).bind('sticky:on', function () {
+	      $('body').addClass('sticky_search')
+	    }).bind('sticky:off', function () {
+	      $('body').removeClass('sticky_search')
+	    })
 	    // Lunr search
 	    $('#search').booticDocSearch('/index.json')
 	    

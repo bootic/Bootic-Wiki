@@ -272,9 +272,42 @@ ul.tabular span {
   margin-top: 9px;
   margin-bottom: 20px;
 }
+#search_form.is-sticky {
+  width: 100%;
+  left: 0;
+  top: 0;
+  margin-top: 0;
+  color: #eee;
+  z-index: 100;
+}
+#search_form.is-sticky .b {
+  margin: 0 auto;
+  width: 950px;
+  text-align: left;
+}
+#search_form.is-sticky h3 {
+  display: none;
+}
 #search_form h3 {
   margin-bottom: 0;
   color: gray;
+}
+#search_form.is-sticky #search {
+  font-size: 10px;
+  width: 405px;
+  margin-left: 92px;
+  margin-top: 2px;
+  background: #414141;
+  border: solid gray 1px;
+  color: white;
+}
+body.sticky_search #search_box {
+  position: fixed;
+  z-index: 99;
+  top: 31px;
+  width: 667px;
+  background: #F0F0F1;
+  min-height: 100px;
 }
 #search {
   width: 90%;
