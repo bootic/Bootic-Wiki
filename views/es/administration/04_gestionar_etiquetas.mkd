@@ -1,0 +1,23 @@
+---
+:title: "¿Cómo creo/borro una etiqueta?"
+:description: "Gestionar etiquetas"
+:keywords: etiqueta, borrar, crear, gestionar, tag, faq
+:group:
+  :name: Administración y configuración
+  :label: ¿Cómo crea/borro una etiqueta?
+---
+# ¿Cómo creo/borro una etiqueta?
+
+Para una mejor clasificación de tu producto **puedes agregarle una etiqueta**
+(una o varias si así lo prefieres).
+
+## Crear
+
+Anda a tu pandel de control, edita un producto y en el lateral
+derecho abajo, con el título: **«Con las etiquetas»**, puedes agregarle una o varias etiquetas.
+
+## Borrar
+
+Si quieres eliminar una etiqueta primero debes asegurarte que ningún producto la tenga
+asociada y luego simplemente __descheckeas__ la etiqueta y esta desaparecerá. Si no desaparece
+del listado significa que tienes un producto con la misma etiqueta, búscalo y procede de la misma manera.

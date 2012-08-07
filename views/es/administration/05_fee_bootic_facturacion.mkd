@@ -1,0 +1,24 @@
+---
+:title: "¿Cómo se paga el feed mensual de Bootic, se recibe algún comprobante?"
+:description: "Pago por el servicio Bootic y facturacion"
+:keywords: iva, facturacion, feed, pago, servicio, bootic, pagar, mensualidad
+:group:
+  :name: Administración y configuración
+  :label: ¿Cómo se paga el feed mensual de Bootic, se recibe algún comprobante? 
+---
+# ¿Cómo se paga el feed mensual de Bootic, se recibe algún comprobante?
+
+Para el pago del __fee__ (costo) mensual por el uso de Bootic es necesario
+generar una suscripción de pago, donde **mes a mes** se descuenta de tu tarjeta
+de crédito el valor del [plan seleccionado][1].  
+
+Como medio de pago utilizamos [RBS WorldPay][2]. Sus oficinas centrales se
+encuentran en el Reino Unido, por este motivo **no entregamos una factura**, pero
+mes a mes se genera un _Invoice_ (tipo de factura) que llega vía mail. 
+
+Pese a que es del extranjero, es **perfectamente posible ingresarlos** a la
+contabilidad, tal como lo harías con otros servicios por Internet (SalesForce,
+Google Apps, hosting, etc).  De esta forma se puede justificar como un gasto.
+
+ [1]:http://www.bootic.net/pages/planes
+ [2]:http://www.worldpay.com/
