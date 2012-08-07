@@ -1,12 +1,12 @@
 ---
-:title: "¿Cómo se paga el feed mensual de Bootic, se recibe algún comprobante?"
+:title: "¿Cómo se paga el fee mensual de Bootic, se recibe algún comprobante?"
 :description: "Pago por el servicio Bootic y facturacion"
-:keywords: iva, facturacion, feed, pago, servicio, bootic, pagar, mensualidad
+:keywords: iva, facturacion, fee, pago, servicio, bootic, pagar, mensualidad
 :group:
   :name: Administración y configuración
-  :label: ¿Cómo se paga el feed mensual de Bootic, se recibe algún comprobante? 
+  :label: ¿Cómo se paga el fee mensual de Bootic, se recibe algún comprobante? 
 ---
-# ¿Cómo se paga el feed mensual de Bootic, se recibe algún comprobante?
+# ¿Cómo se paga el fee mensual de Bootic, se recibe algún comprobante?
 
 Para el pago del __fee__ (costo) mensual por el uso de Bootic es necesario
 generar una suscripción de pago, donde **mes a mes** se descuenta de tu tarjeta
