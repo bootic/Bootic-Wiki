@@ -47,7 +47,12 @@ Para que te hagas una idea, la imagen a continuación te muestra una tienda que 
 
 Dentro de cada zona puedes crear uno o más "rangos por peso".
 
-<img src="<%= img('/img/shipping_zones/rangos.png').thumb('600x').url %>" />
+<div class="captura">
+  <div class="c-contenido">
+      <img src="<%= img('/img/shipping_zones/rangos.png').thumb('600x').url %>" alt="Rangos por peso en zonas de envío" />
+  </div>
+  <div class="c-pie">Añadir rangos por peso a una zona de envío</div>
+</div>
 
 Es decir dentro de Santiago, por ejemplo, puedes crear varios rangos de peso, cada uno con un precio.
 
