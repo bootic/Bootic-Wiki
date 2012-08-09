@@ -31,6 +31,7 @@ File names are prefixed with numbers (02_themes.mkd). Number prefixes are used f
 
 ## Group pages
 
+
 As well as the directory-tree, pages can be added to groups along with a label 
 
     ---
