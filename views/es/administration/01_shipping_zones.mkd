@@ -43,6 +43,26 @@ Para que te hagas una idea, la imagen a continuación te muestra una tienda que 
 
 **Nota:** si te fijas las zonas aparecen como de "Costo fijo" y eso es porque sólo tienen un rango de peso único definido (es decir, independiente del peso de la orden siempre se aplicará el costo de ese único rango).
 
+## Rangos por peso
+
+Dentro de cada zona puedes crear uno o más "rangos por peso".
+
+<img src="<%= img('/img/shipping_zones/rangos.png').thumb('600x').url %>" />
+
+Es decir dentro de Santiago, por ejemplo, puedes crear varios rangos de peso, cada uno con un precio.
+
+Por ejemplo, un rango puede ser "de 0 a 1000 gramos" con el valor de $500.
+
+Eso significa que si el peso total de la orden es dentro de Santiago y pesa entre 0 y 1KG, se le suman automáticamente $500.
+
+Luego puedes crear otro rango desde 1000gr hasta 2000gr con otro precio, etc.
+
+Al final del proceso de pago, Bootic calcula el peso total de la orden, encuentra la zona de envío según la dirección ingresada por el comprador y busca el rango de peso adecuado para la orden. El precio correspondiente al rango encontrado es sumado al total de la orden.
+
+Así puedes ir segmentando distintos precios dentro de la misma zona de acuerdo al peso de la orden. Depende de tí cuanta plata quieres cobrar por cada rango, y puedes decidir eso de acuerdo a los precios de tu servicio de courier, etc.
+
+Esto significa que puedes crear otra zona (por ejemplo "Sur de Chile") con sus propios rangos de peso de acuerdo a los costos extras del courier u otros factores. Depende de tí.
+
 # Preguntas frecuentes
 
 ## Actualmente tengo una zona que aplica para más de una región. ¿Qué hago?
