@@ -1,10 +1,10 @@
 ---
-:title: "¿Cómo creo/borro una etiqueta?"
-:description: "Gestionar etiquetas"
-:keywords: etiqueta, borrar, crear, gestionar, tag, faq
+:title: Uso y gestión de etiquetas
+:description: "Gestionar etiquetas de productos"
+:keywords: etiqueta, borrar, crear, gestionar, tag, faq, tag, admin
 :group:
   :name: Administración y configuración
-  :label: ¿Cómo crea/borro una etiqueta?
+  :label: ¿Cómo creo/borro una etiqueta?
 ---
 # ¿Cómo creo/borro una etiqueta?
 
