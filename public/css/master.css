@@ -477,7 +477,7 @@ html[xmlns] .clearfix {
  * 2012.02.14 23:02 
  */
 
-.captura { margin:20px 0;border:1px solid #ddd;padding:5px; 0}
+.captura { margin:20px 0;border:1px solid #ddd;padding:5px; background: white;}
 .captura .c-contenido {text-align:center;}
 .captura .c-contenido img {margin:0 auto;}
 .captura .c-pie {padding:10px;background-color:#eee; color:#333;font-family:normal Georgia, "time new roman";font-style:italic }
