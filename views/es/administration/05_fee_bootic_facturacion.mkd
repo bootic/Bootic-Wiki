@@ -1,7 +1,7 @@
 ---
-:title: "¿Cómo se paga el fee mensual de Bootic, se recibe algún comprobante?"
+:title: Pago mensual y contabilidad
 :description: "Pago por el servicio Bootic y facturacion"
-:keywords: iva, facturacion, fee, pago, servicio, bootic, pagar, mensualidad
+:keywords: iva, facturacion, fee, pago, servicio, bootic, pagar, mensualidad, contabilidad
 :group:
   :name: Administración y configuración
   :label: ¿Cómo se paga el fee mensual de Bootic, se recibe algún comprobante? 
