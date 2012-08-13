@@ -13,10 +13,27 @@ Para una mejor clasificación de tu producto **puedes agregarle una etiqueta**
 
 ## Crear
 
+
+<div class="captura">
+  <div class="c-contenido">
+      <img src="/img/admin/etiquetas-crear.png" />
+  </div>
+  <div class="c-pie"><strong>Figura 1</strong>: Crear una etiqueta: clic en "agregar nueva", escriba su
+nombre y luego click en "Agregar"</div>
+</div>
+
 Anda a tu pandel de control, edita un producto y en el lateral
 derecho abajo, con el título: **«Con las etiquetas»**, puedes agregarle una o varias etiquetas.
 
 ## Borrar
+
+<div class="captura">
+  <div class="c-contenido">
+      <img src="/img/admin/etiquetas.png" />
+  </div>
+  <div class="c-pie"><strong>Figura 2</strong>: Darle click a "Sales" para quitarle le
+etiqueta. Si es la única asociada al producto esta desaparecerá del listado</div>
+</div>
 
 Si quieres eliminar una etiqueta primero debes asegurarte que ningún producto la tenga
 asociada y luego simplemente __descheckeas__ la etiqueta y esta desaparecerá. Si no desaparece
