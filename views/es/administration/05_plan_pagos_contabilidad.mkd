@@ -22,3 +22,7 @@ Google Apps, hosting, etc).  De esta forma se puede justificar como un gasto.
 
  [1]:http://www.bootic.net/pages/planes
  [2]:http://www.worldpay.com/
+
+## Temas relacionados:
+
+* [Cómo elegir plan y pagar tu tienda Bootic](/es/administration/plan_pagos_contabilidad/elegir-y-pagar-plan)
