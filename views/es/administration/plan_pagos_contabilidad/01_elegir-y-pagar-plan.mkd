@@ -10,6 +10,8 @@
 
 Tu tienda Bootic es de pago mensual. En tu interfaz de administración eliges el plan que quieres e ingresas los datos de tu tarjeta de crédito pra proceder al pago. Con eso creas una "subscripción" de pago mensual por el monto del plan elegido. **Puedes cambiar de plan o cerrar la tienda y dejar de pagar en cualquier momento sin costo extra asociado**.
 
+No entregamos factura por esta vía de pago, pero los *invoices* (recibos) de pago con tarjeta [pueden ser usados para justificar gastos en tu contabilidad](/es/administration/plan_pagos_contabilidad).
+
 ## Paso 1: elige tu plan.
 
 Si estas en período de prueba, verás un botón "crear suscripción de pago en las págians de tu administrador Bootic". Presiónalo.
