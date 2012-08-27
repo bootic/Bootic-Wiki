@@ -1,0 +1,68 @@
+---
+:title: Elegir y pagar tu plan Bootic
+:description: "Elegir y pagar tu plan mensual Bootic"
+:keywords: fee, pago, servicio, bootic, pagar, mensualidad, rbs, worldpay, tarjeta, crédito, subscripción
+:group:
+  :name: Pagos y contabilidad
+  :label: ¿Cómo contrato y pago Bootic? 
+---
+# Eligiendo plan y pagando tu tienda Bootic.
+
+Tu tienda Bootic es de pago mensual. En tu interfaz de administración eliges el plan que quieres e ingresas los datos de tu tarjeta de crédito pra proceder al pago. Con eso creas una "subscripción" de pago mensual por el monto del plan elegido. **Puedes cambiar de plan o cerrar la tienda y dejar de pagar en cualquier momento sin costo extra asociado**.
+
+## Paso 1: elige tu plan.
+
+Si estas en período de prueba, verás un botón "crear suscripción de pago en las págians de tu administrador Bootic". Presiónalo.
+
+<div class="captura"><div class="c-contenido">
+<img src="<%= img('/img/billing/crear-suscripcion.png').thumb('600x').url %>" alt="Crear suscripción de pago" />
+</div></div>
+
+También pueden hacer lo mismo mediante el link "mi cuenta", en la parte superior, y luego 
+
+<div class="captura"><div class="c-contenido">
+<img src="/img/billing/micuenta.png" alt="Link Mi Cuenta" />
+</div></div>
+
+A continuación verás nuestra oferta de planes. Revísalos con atención y elige el que se adecue a tu tienda presionando el botón "Quiero este plan", bajo el plan elegido.
+
+<div class="captura"><div class="c-contenido">
+<img src="<%= img('/img/billing/plans.png').thumb('600x').url %>" alt="Elige tu plan" />
+</div></div>
+
+Recuerda que en el futuro puedes volver a esta página y cambiar a un plan mayor o menor.
+
+## Paso 2: inicial el pago de tu plan.
+
+Elegido el plan, presiona el botón "Finalizar suscripción" abajo en la misma página.
+
+<div class="captura"><div class="c-contenido">
+<img src="/img/billing/finalizar.png" alt="Finalizar suscripcion" />
+</div></div>
+
+Esto te dirige a un formulario de pago de RBS WorldPay, el servicio de pagos internacionales que usamos para recaudar el costo mensual de cada tienda Bootic.
+
+## Paso 3: selecciona tarjeta de crédito.
+
+Primero, tienes que elegir qué tarjeta quieres usar presionando el logo de la marca adecuada (Visa, Mastercard, etc.)
+
+<img src="/img/billing/rbs-cards.png" alt="Selecciona tarjeta de crédito en RBS WorldPay" />
+
+## Paso 4: ingresa datos de tarjeta.
+
+Ahora RBS te muestra un formulario donde debes ingresar los datos de tu tarjeta y tu dirección.
+
+<img src="/img/billing/rbs-billing.png" alt="Datos de tarjeta" />
+
+Ingresa los datos requeridos y presiona "Make payment" al final del formulario. Recibirás un email de RBS confirmando el pago y otro de Bootic **confirmando que tu tenda está hora activa**.
+
+## Paso 5: guarda la contraseña de RBS.
+
+Al crear una suscripción de pago por medio de RBS WorldPay estás creando una cuenta de usuario en ese sistema, distinta a tu cuenta de usuario en Bootic. Luego de seguir los pasos de arriba RBS te enviará un email de confirmación y un nombre de usuario y contraseña generados aleatoriamente.
+
+<img src="/img/billing/rbs-login.png" alt="RBS email" />
+
+Si no lo encuentras, el email normalmente llega de parte del correo *shopper@rbsworldpay.com*.
+
+Esta contraseña es necesaria si luego necesitas cambiar los datos de tu tarjeta en el panel de administración de RBS WorldPay. Guárdala o memorízala. También puedes ingresar al panel de RBS y cambiar tu contraseña por otra cosa, aquí: [http://www.worldpay.com/shopper/index.php?page=recurring&sub=login&c=UK](http://www.worldpay.com/shopper/index.php?page=recurring&sub=login&c=UK)
+
