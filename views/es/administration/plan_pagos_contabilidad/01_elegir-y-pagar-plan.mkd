@@ -56,7 +56,7 @@ Ahora RBS te muestra un formulario donde debes ingresar los datos de tu tarjeta 
 
 <img src="/img/billing/rbs-billing.png" alt="Datos de tarjeta" />
 
-Ingresa los datos requeridos y presiona "Make payment" al final del formulario. Recibirás un email de RBS confirmando el pago y otro de Bootic **confirmando que tu tenda está hora activa**.
+Ingresa los datos requeridos y presiona "Make payment" al final del formulario. Recibirás un email de RBS confirmando el pago y otro de Bootic **confirmando que tu tenda está ahora activa**.
 
 ## Paso 5: guarda la contraseña de RBS.
 
