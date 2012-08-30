@@ -1,0 +1,49 @@
+---
+:title: DineroMail
+:description: "Configurar DineroMail como medio de pago para Chile y Argentina"
+:keywords: pago, tarjeta, crédito, dineromail, chile, argentina, checkout, carro, carrito, api key
+---
+# Configurando DineroMail
+
+[DineroMail](http://dineromail.com/) es un medio de pago muy popular en Latinoamerica y muy fácil de configurar.
+
+Sus oficina centrales están en Argentina, y tienen oficinas de representación en Brasil, Chile, Colombia y México. Una de sus principales ventajas es que permite, aparte del pago con tarjeta de crédito, el uso de las tarjetas de casas comerciales o servicios como Servipag (en Chile).
+
+No existe ningún tipo de costo por garantía.
+
+* Mantención mensual: $0
+* Comisión por venta con tarjeta presto: 6.49%
+* Comisión por venta con tarjeta ripley : 6.49%
+* Comisión tarjeta de crédito: 6,49%
+* Costo por transacción: $180
+
+La integración de DineroMail con Bootic es muy sencilla. 
+
+## Paso 1: crear cuenta
+
+Ingresar al [sitio de DineroMail de tu país]((http://dineromail.com/)) y crear una cuenta.
+
+## Paso 2: ubicar tu número de cuenta
+
+Dada cuenta DineroMail tiene asignado un número que debes ingresar en en panel de administración de Bootic (campo "API KEY") al configurar DineroMail como medio de pago.
+
+La "Api Key" que debe ingresarse en el panel de administración es el "Número de Cuenta", pero es importante indicar que, por ejemplo, si el Número de Cuenta **en tu panel DineroMail** es 0579035/7, las cifras que debes ingresar como api key son 114683, es decir sin el 0 y hasta el último número antes del /. Mira la foto a continuación para un ejemplo:
+
+<img class="framed" src="/img/payment_methods/dineromail-account-number.png" alt="API key dineromail" />
+
+## Paso 3: configurar código de DineroMail en tu tienda
+
+Entonces, en el panel de configuración de DineroMail en las preferencias de tu Bootic, en el campo "API KEY":
+
+<img class="framed" src="<%= img('/img/payment_methods/dinseomail-config.png').thumb('612x').url %>" alt="DineroMail API key" />
+
+A continuación presionas "activo" y "Guardar".
+
+Desde ahora tus compradores verán la opción de pago DineroMail al finalizar pedidos en tu tienda.
+
+A continucación te dejamos un video con la explicación paso por paso.
+
+<iframe src="http://www.screenr.com/embed/GYa" width="650" height="396" frameborder="0"></iframe>
+
+
+

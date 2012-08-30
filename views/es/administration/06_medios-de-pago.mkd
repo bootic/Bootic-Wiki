@@ -1,0 +1,34 @@
+---
+:title: Configurando medios de pago
+:description: "Configurar medios de pago de productos para los clientes de tu tienda"
+:keywords: pago, tarjeta, crédito, dineromail, webpay, transferencia
+---
+# Configurando medios de pago
+
+<img class="framed" src="<%= img('/img/payment_methods/selector.png').thumb('612x').url %>" alt="Selector de medios de pago" />
+
+Bootic te da la opción de ofrecer varios medios de pago a tus clientes. Para configurar los medios elegidos, en tu administrador Bootic anda a "preferencias" y luego "Pago en línea y órdenes".
+
+Los medios disponibles son:
+
+## [DineroMail (Chile y Argentina)](/es/administration/medios-de-pago/dineromail)
+
+[DineroMail](http://dineromail.com/) es un medio de pago muy popular en Latinoamerica y muy fácil de configurar.
+
+[Ver más](/es/administration/medios-de-pago/dineromail)
+
+## WebPay (Chile)
+
+La plataforma de pago en línea por defecto en Chile. Requiere que [firmes contrato con ellos](https://www.transbank.cl/public/pagina-webpay-plus-personas.html) y que tu tienda pase por un proceso de certificación. Funciona muy bien una vez hecho el trámite inicial.
+
+## PayPal (Internacional)
+
+Acepta tarjetas internacionales y es muy sencillo de configurar.
+
+## Transferencia bancaria
+
+Con esta opción puedes presentarle al usuario los datos de tu cuenta bancaria para que hagan la trasferencia a través de su banco. Requiere que administres el estado de los pedidos de forma manual.
+
+## Medio de pago personalizado
+
+Campo libre de texto para que ofrezcas otra opción, por ejemplo pago contra entrega.
