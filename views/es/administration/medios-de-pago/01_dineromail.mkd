@@ -27,7 +27,7 @@ Ingresar al [sitio de DineroMail de tu país]((http://dineromail.com/)) y crear 
 
 Dada cuenta DineroMail tiene asignado un número que debes ingresar en en panel de administración de Bootic (campo "API KEY") al configurar DineroMail como medio de pago.
 
-La "Api Key" que debe ingresarse en el panel de administración es el "Número de Cuenta", pero es importante indicar que, por ejemplo, si el Número de Cuenta **en tu panel DineroMail** es 0579035/7, las cifras que debes ingresar como api key son 114683, es decir sin el 0 y hasta el último número antes del /. Mira la foto a continuación para un ejemplo:
+La "Api Key" que debe ingresarse en el panel de administración es el "Número de Cuenta", pero es importante indicar que, por ejemplo, si el Número de Cuenta **en tu panel DineroMail** es 0579035/7, las cifras que debes ingresar como api key son 579035, es decir sin el 0 y hasta el último número antes del /. Mira la foto a continuación para un ejemplo:
 
 <img class="framed" src="/img/payment_methods/dineromail-account-number.png" alt="API key dineromail" />
 
