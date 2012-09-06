@@ -179,6 +179,7 @@ h1 {
 #content ul,
 #content ol {
 	margin-left: 1.5em;
+    margin-bottom: 1em;
 }
 ul.tabular span {
   display: inline-block;
