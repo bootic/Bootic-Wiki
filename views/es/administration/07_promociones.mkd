@@ -11,14 +11,14 @@
 
 En el siguiente video tutorial (5:25) podrás aprender a realizar una Promoción. 
 
-Una Promoción —o Código de Descuento— **es una herramienta que te proporciona** Bootic para que puedas incrementar las ventas por medio de convenientes descuentos que tus clientes harán efectivo al momento de comprar.
+Una Promoción —o Código de Descuento— **es una herramienta que te proporciona Bootic** para que puedas incrementar las ventas por medio de convenientes descuentos que tus clientes harán efectivo al momento de comprar.
 
 Tienes la opción de configurar tu Promoción por:
 
-* Un valor o un % del mismo
-* Tiempo de validez (con año, mes, día, hora y minuto) — incluso puedes programar futuras promociones
-* Límite de usos
-* Rango de precios y
+* Un valor o un porcentaje del valor de cada pedido de compra.
+* Tiempo de validez (con año, mes, día, hora y minuto) — incluso puedes programar futuras promociones.
+* Límite de usos.
+* Rango de precios.
 * Cantidad de productos.
 
 
