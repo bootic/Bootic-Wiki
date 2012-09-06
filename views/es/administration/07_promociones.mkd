@@ -4,7 +4,7 @@
 :keywords: promo, promociones, publicidad, campaña, redes sociales, twitter, facebook, blog, screencast, video, video tutorial
 :group:
   :name: Administración y configuración
-  :label: ¿Qués es y como se configuro una Promoción?
+  :label: ¿Qué es y cómo se configura una Promoción?
 ---
 
 # Promociones
