@@ -1,0 +1,13 @@
+---
+:title: Órdenes 
+:description: "Órdenes (compra)"
+:keywords: ordenes, compra, ot, orden compra, pedidos 
+:group:
+  :name: Administración y configuración
+  :label: ¿Cómo se gestionan las órdenes?
+---
+# Órdenes 
+
+Cuanto un cliente realiza una compra en tu tienda Bootic esta se registra en tu
+panel de administración como una Órden, para acceder a dichas Órdenes debes ir
+menú «Órdenes» — Figura 1
