@@ -2,7 +2,7 @@
 :title: Órdenes 
 :description: "Órdenes (compra)"
 :keywords: órdenes, compra, ot, Orden compra, pedidos 
---
+---
 # Órdenes 
 
 Cuanto el cliente realiza una compra en tu tienda Bootic esta se registra en tu
