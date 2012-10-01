@@ -1,0 +1,17 @@
+---
+:title: Preferencias
+:description: referencias de tu tienda Bootic
+:keywords: settings, preferencias, preferences, email, correos, logo
+---
+# Preferencias.
+
+La sección preferencias muestra opciones de configuración de tu tienda. Algunas son:
+
+ - Subir un logo
+ - Configurar Google Analytics
+ - Configurar destinatarios de correo
+ - Órden de productos por defecto en listas
+ - Zonas y costos de envío
+ - Configuración de medios de pago
+ - Configuración de dominio propio
+ 
