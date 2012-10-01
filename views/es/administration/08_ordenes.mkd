@@ -2,6 +2,9 @@
 :title: Órdenes 
 :description: "Órdenes (compra)"
 :keywords: órdenes, compra, ot, Orden compra, pedidos 
+:group:
+  :name: Administración y configuración
+  :label: ¿Cómo se gestionan las Órdenes?
 ---
 # Órdenes 
 
