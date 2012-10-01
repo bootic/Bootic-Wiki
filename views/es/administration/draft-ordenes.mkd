@@ -5,8 +5,8 @@
 ---
 # Órdenes 
 
-Cuanto el cliente realiza una compra en tu tienda Bootic esta se registra en tu
-panel de administración como una Órden, para acceder a dichas Órdenes debes ir
+Cuanto el cliente realiza una compra en tu tienda Bootic, ésta se registra en tu
+panel de administración como una orden (pedido de compra); para acceder a dichas órdenes debes ir al 
 menú «Órdenes» — Figura 1.
 
 <div class="captura">
@@ -16,7 +16,7 @@ menú «Órdenes» — Figura 1.
   <div class="c-pie"><strong>Figura 1</strong>: Menú Órdenes</div>
 </div>
 
-En la sección Órdenes de tu pande de Administración podrás encontrar — Figura 2.
+En la sección Órdenes de tu panel de Administración podrás encontrar — Figura 2.
 
 <div class="captura">
   <div class="c-contenido">
@@ -32,18 +32,18 @@ cada sección</div>
 2. Un listado con las **últimas 30 Órdenes**, si pasan de esa número se generará una
    paginación al final del mismo listado. Respecto a este listado:
 
-    * Haciendo clic en el ID de la Órden podrás **ver el detalle** de la misma. 
+    * Haciendo clic en el ID de la orden podrás **ver el detalle** de la misma. 
     * Haciendo clic en el Nombre del cliente podrás ver el **historial de Órdenes** de ese cliente (basado en su correo).
 
 3. Un menú lateral con enlaces para filtrar según el estado de la Orden:
     * <strong class="label-orden orden-todas">Todas</strong>: listará todos las Órdenes.
     * <strong class="label-orden orden-pendiente">Pendientes</strong>: Locatario está a la espera del pago.
     * <strong class="label-orden orden-anulada">Anuladas</strong>: el Locatario ha anulado la Orden (por no pago, error o carrito abandonado).
-    * <strong class="label-orden orden-exitoda">Exitosas</strong>: Orden cerrada y despachada.
-    * <strong class="label-orden orden-cerrada">Cerradas</strong>: la Orden ha recibido el pago, todo está en regla.
+    * <strong class="label-orden orden-exitoda">Exitosas</strong>: Órdenes cerradas y despachadas.
+    * <strong class="label-orden orden-cerrada">Cerradas</strong>: Órdenes que han recibidos pago; todo está en regla.
     * <strong class="label-orden orden-despachada">Despachadas</strong>: el locatario ha despachado el producto al cliente.
 
-4. Un enlace exportar las Órdenes a un archivo CSV (el cual será enviado a su
+4. Un enlace exportar las Órdenes a un archivo CSV (el cual será enviado a tu
    correo): este formato de archivo se puede abrir usando:
     * [Google Docs](http://docs.google.com/ "Ir al sitio")
     * [OpenOffice.org Calc](http://www.openoffice.org/download/index.html
@@ -92,11 +92,11 @@ producto</div>
 </div>
 
 En el **punto 6** de la gráfica se genera la Órden, tanto el cliente como el
-locatario recibirán un correo electrónico, además de verla en su pandel de
+locatario recibirán un correo electrónico, además de verla en su panel de
 administración.
 
 ## Webpay cierra automáticamente las órdenes
 
 En el caso de que se haya seleccionado como medio de pago Webpay **la Orden pasará
-a estado Cerrada automáticamente** — en los otros medios de pago será el
+a estado Cerrada automáticamente** y un email de notificación será enviado al comprador y al administrador — en los otros medios de pago será el
 Locatario el encargado de cerrar la Orden. 
