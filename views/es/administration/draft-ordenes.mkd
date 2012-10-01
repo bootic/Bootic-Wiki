@@ -84,13 +84,13 @@ comienzan con **CB7**.
 
 Para entender mejor el momento en que se genera la Orden hemos confeccionado la
 siguiente ilustración que refleja el ciclo de compra y despacho de un producto
-— Figura 2: 
+— Figura 3: 
 
 <div class="captura">
   <div class="c-contenido">
       <a rel="fancybox" href="/img/admin/orders-ciclo-big.png"><img src="/img/admin/orders-ciclo-th.png"></a>
   </div>
-  <div class="c-pie"><strong>Figura 2</strong>: Ciclo de compra y despacho de un
+  <div class="c-pie"><strong>Figura 3</strong>: Ciclo de compra y despacho de un
 producto</div>
 </div>
 
