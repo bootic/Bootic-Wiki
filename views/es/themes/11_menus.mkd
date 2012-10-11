@@ -92,7 +92,7 @@ Una segunda opción para generar submenús es usar tipos de productos dentro de 
 <pre>:::html
 ...
 <!-- este link tiene tipos ? -->
-{% if link.has_product_types? %}
+{% if link.has_product_types %}
   <ul class="submenu">
   {% for tipo in link.product_types %}
     <li>
