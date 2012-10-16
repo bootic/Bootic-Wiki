@@ -1,0 +1,97 @@
+---
+:title: Webpay Plus
+:description: "Configurar Webpay Plus como medio de pago para Chile"
+:keywords: pago, tarjeta, crédito, webpay, chile, checkout, carro, carrito, api key, certificacion
+---
+
+# Contratando y configurando Webpay Plus.
+
+¿Estás interesada(o) en ofrecer Webpay Plus en tu tienda Bootic como medio de pago?
+
+En Bootic estamos integrados con Webpay Plus. 
+Pese a esto, Transbank exige a cada nuevo comercio firmar un contrato, y a nivel tecnológico, cada tienda debe pasar por un proceso de certificación. 
+
+## ¿Webpay o webpay plus?
+
+Una primera aclaración. Para el pago en línea (a través de internet), Transbank ofrece dos servicios:
+
+* Webpay.cl: Es un botón de pago, el cual llevará a tus clientes al sitio [webpay.cl][webpay]. Muy similar al servicio de Servipag (Portal de pagos). Esta opción no es óptima para tu tienda en línea dado que saca al usuario completamente del contexto de tu sitio.
+* Webpay Plus: Es una integración completa con tu tienda que permite a tus usuarios crear carros de compra en tu tienda y pagarlos mediante tarjetas o Redcompra en Webpay; cuando contrates Webpay para tu tienda Bootic **asegúrate de contratar este servicio**.
+
+## Información general:
+
+### Costos de contratar Webpay Plus
+
+* 0.48 UF + IVA por uso mensual del servicio
+* 2.95 % + IVA por transacción con tarjeta de crédito
+* 1.95 % + IVA por transacción con tarjeta de débito
+
+### Boletas de garantía
+
+Actualmente, contratar Webpay Plus con pagos usando plásticos nacionales **no requiere** Boleta de garantía. No obstante lo anterior, si contratas webpay plus con pagos usando plásticos extranjeros requieres de una boleta de garantía de **CLP$1.500.000**.
+
+### Documentación solicitada para generar el contrato:
+
+* Último IVA.
+* Copia cartola bancaria.
+* Boletas o facturas emitidas.
+* Patente Comercial.
+* Cédula de identidad del representante legal.
+* Extracto sociedad (fotocopia).
+
+## Paso por paso
+
+A continuación los pasos para contratar el servicio:
+
+- Ir al sitio de transbank y [completar el formulario de solicitud de producto][formulario] (Webpay plus). En un plazo de 48 horas te contactará un Ejecutivo Comercial para establecer las condiciones del contrato e iniciar el proceso de certificación de tu tienda Bootic. 
+
+- Al momento de completar el formulario existe una sección donde debes completar la información del sitio web:
+
+* URL: *TIENDA*.bootic.net (donde “TIENDA” es el subdominio elegido para tu tienda al momento de crearla) o bien la dirección final de tu tienda, ej: *www.mitienda.cl*
+* Plataforma Tecnológica: Linux
+* Solución de Comercio Electrónico: Bootic.net
+* Sistema de Seguridad: SSL
+* Empresa Configuradora: Bootic.net
+* Proveedor Servicio de Hosting: Bootic.net 
+
+Para realizar el proceso de certificación es muy importante que tengas al menos 10 productos cargados en tu tienda y creada alguna zona de despacho (link al screencast)
+
+Luego recibirás por parte Transbank  un correo electrónico con el “asunto”: 
+
+    Integración de KIT WebPay – Nombre de tu Tienda.
+
+Aunque transbank te solicita que descargues el Kit, esto no es necesario, pues ya tenemos instalado el Kit en nuestra plataforma. Junto con el Kit te envían dos documentos:
+
+1.Ficha de Certificación Webpay 
+2.Check list de cerficación
+
+Estos documentos los puedes descargar del Kit de instalación, o bajarlos directamente en este link. Debes completar estos documentos con la información solicitada. Además de la información referida a tu empresa debes proveer los siguientes datos técnicos:
+
+En el caso que bajes los documentos directamente del Kit, te solicitarán información técnica, que debes completar con los siguientes datos.
+
+* Contacto técnico: Tomás Pollak 
+* Teléfono: 9519519 
+* Email: soporte@bootic.net 
+* Plataforma: Bootic 
+* URL Pruebas: http://TIENDA.bootic.info URL 
+* Página de Cierre: http://checkout.bootic.info/webpay/TIENDA/check 
+* Datos de prueba: Ninguno
+
+Si utilizas los archivos bajados desde nuestro link debes completar solamente:
+
+URL Pruebas: http://*TIENDA*.bootic.info 
+URL Página de Cierre: http://checkout.bootic.info/webpay/*TIENDA*/check
+
+Donde “TIENDA” es el subdominio que elegiste para tu tienda al momento de crearla.
+
+Al completar íntegramente ambas fichas debes enviarlas vía correo electrónico al ejecutivo de soporte (Transbank) que te envió el Kit. Por favor envía tu respuesta con copia a soporte@bootic.net para estar al tanto. Esto es muy importante pues al recibir este correo debemos hacer algunos ajustes a tu tienda para que los técnicos de Transbank realicen sus pruebas.
+
+Después de algunos días recibirás un nuevo correo con el asunto: “Soporte Webpay Plus - Inicio Precertificación – Nombre Tienda” Es muy importante que este correo lo envíes a soporte@bootic.net En el mail Solicitarán los siguientes datos:
+
+* Archivos log y bitácora
+* Archivos de validación de Mac
+* Archivo ficha de certificación (adjunta)
+* La programación de tu Página de Cierre
+* Datos para poder realizar una prueba (Link, usuario, password).
+
+Luego de finalizado el proceso de certificación, Transbank nos enviará la llave final de producción, la cual será instalada en tu tienda por nosotros. Luego te enviaremos un correo avisandote que todo está en regla y que ya puedes vender usando Webpay Plus.

@@ -17,7 +17,7 @@ Los medios disponibles son:
 
 [Ver más](/es/administration/medios-de-pago/dineromail)
 
-## WebPay (Chile)
+## [WebPay (Chile)](/es/administration/medios-de-pago/webpay)
 
 La plataforma de pago en línea por defecto en Chile. Requiere que [firmes contrato con ellos](https://www.transbank.cl/public/pagina-webpay-plus-personas.html) y que tu tienda pase por un proceso de certificación. Funciona muy bien una vez hecho el trámite inicial.
 
