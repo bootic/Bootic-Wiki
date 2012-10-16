@@ -60,7 +60,7 @@ siguiente lista OK**:
 2. Tener **al menos una** zona de despacho creada (<a href="/es/administration/preferencias/shipping_zones">¿cómo se crean?</a>)
 3. Dirección postal el pie de página.
 4. Tener una página con Política de Devoluciones y Reembolsos.
-5. Cuando una [orden][orden] es cerrada se le envía un mensaje al cliente, en ese mensaje debe ir también los enlaces a las políticas de Devolución y Reemvolso que creaste en el punto 4.
+5. Cuando una [orden][orden] es cerrada se le envía un mensaje al cliente, en ese mensaje debe ir también los enlaces a las políticas de Devolución y Reembolsos que creaste en el punto 4.
 
 ## Transbank envía correo con el KIT
 
