@@ -73,7 +73,7 @@ En el caso que bajes los documentos directamente del Kit, te solicitarán inform
 * Teléfono: 9519519 
 * Email: soporte@bootic.net 
 * Plataforma: Bootic 
-* URL Pruebas: http://TIENDA.bootic.info URL
+* URL Pruebas: http://TIENDA.bootic.info
 * Página de Cierre: http://checkout.bootic.info/webpay/TIENDA/check 
 * Datos de prueba: Ninguno
 
@@ -109,6 +109,6 @@ En repsuesta a este correo, nosotros generamos las llaves y dejamos el kit listo
 
 Una vez que reciben la llave publica y el logo finalmente lo suben a producción, lo que permite finalmente echar a andar el kit en Bootic producción.
 
-Desde este momento (y no antes) va a empezar a funcionar la redirección del usuario a la página de pago en Bootic producción, ya que el KCC requiere de que la llave pública esté instalada en Webpay. Sino muestra un error con letras rojas de que no se puede realizar la transacción.
+**Desde este momento** (y no antes) va a empezar a funcionar la redirección del usuario a la página de pago en Bootic producción, ya que el KCC requiere de que la llave pública esté instalada en Webpay. Sino muestra un error con letras rojas de que no se puede realizar la transacción.
 
 Cuando todo esté listo, te enviaremos un email para contarte cuando ya, finalmente, el pago con Webpay esté activo y funcionando.
