@@ -8,7 +8,7 @@
 
 ¿Estás interesada(o) en ofrecer Webpay Plus en tu tienda Bootic como medio de pago?
 
-En Bootic estamos integrados con Webpay Plus. Sin embartgo, Transbank exige a cada nuevo comercio firmar un contrato, y a nivel técnico, cada tienda debe pasar por un proceso de certificación.
+En Bootic estamos integrados con Webpay Plus. Sin embargo, Transbank exige a cada nuevo comercio firmar un contrato, y a nivel técnico, cada tienda debe pasar por un proceso de certificación.
 
 ## ¿Webpay o Webpay plus?
 
