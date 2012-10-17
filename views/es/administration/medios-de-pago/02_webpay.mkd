@@ -127,10 +127,10 @@ Una vez que reciben la llave pública y el logo finalmente lo suben a producció
 
 Cuando todo esté listo, te enviaremos un email informándote que el pago con Webpay **esta activo y funcionando** en tu tienda.
 
-[webpay]:http://www.webpay.cl "sitio webpay"
-[formulario]:https://www.transbank.cl/transbank/afiliacion-webpay.jsp?menu=productos "formulario de solicitud del webpay plus"
+[webpay]:http://www.webpay.cl "Sitio webpay"
+[formulario]:https://www.transbank.cl/transbank/afiliacion-webpay.jsp?menu=productos "Formulario de solicitud del webpay plus"
 [soporte]:mailto:soporte@bootic.net
-[descargarkit]:https://www.transbank.cl/public/documentacion/descarga-kits/kcc-linux32bits.rar "descargar kit - archivos comprimidos"
+[descargarkit]:https://www.transbank.cl/public/documentacion/descarga-kits/kcc-linux32bits.rar "Descargar kit - archivos comprimidos"
 [orden]:/es/administration/ordenes "Órdenes"
-[cls]:FichaCertificacionWebpayV6.docx.zip "Ficha de Certificación"
-[fcw]:Bootic_checklist.xlsx.zip "Checklist"
+[cls]:/downloads/FichaCertificacionWebpayV6.docx.zip "Ficha de Certificación"
+[fcw]:/downloads/Bootic_checklist.xlsx.zip "Checklist"
