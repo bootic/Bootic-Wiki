@@ -73,7 +73,9 @@ Aunque transbank te solicita que [descargues el Kit][descargarkit], esto no es n
 1. Ficha de Certificación Webpay (FCW)
 2. Check list de cerficación (CLC)
 
-Estos documentos los puedes descargar del Kit de instalación, o bajarlos directamente en este link. 
+### Descarga los documentos desde Bootic 
+
+Para tu comodidad puedes descargar [la FCW][fcw] y [el CLS][cls] desde Bootic.net con la información técnica pre-completada (se debe terminar de completar antes de enviarla a transbank).
 
 ## Completando la información solicitada por Transbank
 
@@ -104,18 +106,20 @@ Una vez enviada la ficha, comenzará la fase de certificación, que consta de do
 
 En caso de que haya algun problema en esta fase, Transbank enviará un correo detallando los puntos que deben ser corregidos para poder ser certificados (por ejemplo, falta de información sobre problemas con productos defectuosos).
 
+### Transbank pedirá los archivo de log 
+
 Una vez realizada la certificación, Transbank enviará un correo solicitando los siguientes archivos:
 
-* Registro de eventos del KCC de Webpay (e.g. TBK_EVN20120605.log)
-* Bitácora de pagos del KCC (e.g. tbk_bitacora_TR_NORMAL_0605.log)
+* Registro de eventos del KCC de Webpay (ejm: TBK_EVN20120605.log)
+* Bitácora de pagos del KCC (ejm: tbk_bitacora_TR_NORMAL_0605.log)
 * Archivo de configuración de la tienda (tbk_config.dat)
 * La programación de tu Página de Cierre (check.rb)
 
-Estos archivos serán enviados por nosotros. Una vez que los reciben, Transbank (después de unos días) manda un email que contiene el identificador de la tienda en Webpay, y un ZIP que contiene los archivos para generar las llaves de seguridad para el kit de la tienda.
+**Estos archivos serán enviados por nosotros**. Una vez que los reciben, Transbank (después de unos días) manda un email que contiene el identificador de la tienda en Webpay, y un ZIP que contiene los archivos para generar las llaves de seguridad para el kit de la tienda.
 
-En respuesta a este correo, nosotros generamos las llaves y dejamos el kit listo para la tienda en producción. Respondemos a Transbank enviándoles la llave pública resultante y opcionalmente, el logo de la tienda en formato 130x59 (GIF) para que lo pongan en el ambiente de pago Webpay plus.
+En respuesta a este correo, nosotros generamos las llaves y dejamos el kit listo para la tienda en producción. Respondemos a Transbank enviándoles la llave pública resultante y opcionalmente, **el logo de la tienda** en formato 130x59 (GIF) para que lo pongan en el ambiente de pago Webpay plus.
 
-Una vez que reciben la llave publica y el logo finalmente lo suben a producción, lo que permite finalmente echar a andar el kit en Bootic producción.
+Una vez que reciben la llave pública y el logo finalmente lo suben a producción, lo que permite finalmente echar a andar el kit en Bootic producción.
 
 **Desde este momento** (y no antes) va a empezar a funcionar la redirección del usuario a la página de pago en Bootic producción, ya que el KCC requiere de que la llave pública esté instalada en Webpay. De lo contrario **mostrará un error con letras rojas** de que no se puede realizar la transacción.
 
@@ -128,3 +132,5 @@ Cuando todo esté listo, te enviaremos un email informándote que el pago con We
 [soporte]:mailto:soporte@bootic.net
 [descargarkit]:https://www.transbank.cl/public/documentacion/descarga-kits/kcc-linux32bits.rar "descargar kit - archivos comprimidos"
 [orden]:/es/administration/ordenes "Órdenes"
+[cls]:FichaCertificacionWebpayV6.docx.zip "Ficha de Certificación"
+[fcw]:Bootic_checklist.xlsx.zip "Checklist"
