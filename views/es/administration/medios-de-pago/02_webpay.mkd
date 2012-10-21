@@ -44,7 +44,7 @@ A continuación los pasos para contratar el servicio Webpay plus:
 * Ir al sitio de transbank y [completar el formulario de solicitud de producto][formulario]. En un plazo de 48 horas te contactará un Ejecutivo Comercial para establecer las condiciones del contrato e iniciar el Proceso de Certificación de tu tienda Bootic.
 * Al momento de completar el formulario existe una sección donde debes completar la información del sitio web:
   * URL: ***TIENDA*.bootic.net** (donde «TIENDA» es el subdominio Bootic elegido para tu tienda al momento de crearla) o bien la dirección final de tu tienda, ejm: <kbd>www.mitienda.cl</kbd>.
-  * Plataforma Tecnológica: **Linux**.
+  * Plataforma Tecnológica: **Linux 32 bits**.
   * Solución de Comercio Electrónico: **Bootic.net**.
   * Sistema de Seguridad: **SSL**.
   * Empresa Configuradora: **Bootic.net**.
@@ -64,7 +64,7 @@ siguiente lista OK**:
 
 ## Transbank envía correo con el KIT
 
-Luego recibirás por parte Transbank  un correo electrónico con el asunto:
+Luego recibirás por parte Transbank un correo electrónico con el asunto:
 
 > Integración de KIT WebPay – <strong>Nombre de tu Tienda</strong>.
 
@@ -89,7 +89,7 @@ Debes completar estos documentos con la información solicitada. Además de la i
 * Página de Cierre: <kbd>http://checkout.bootic.info/webpay/<strong>TIENDA</strong>/check</kbd>
 * Datos de prueba: **Ninguno**
 
-Si utilizas los archivos bajados desde nuestro link debes completar solamente:
+Si utilizas los formularios bajados desde Bootic entonces solamente debe completar:
 
 * URL Pruebas: <kbd>http://<strong>TIENDA</strong>.bootic.info</kbd>
 * URL Página de Cierre: <kbd>http://checkout.bootic.info/webpay/<strong>TIENDA</strong>/check</kbd>
