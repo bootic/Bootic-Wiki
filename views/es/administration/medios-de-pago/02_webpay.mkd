@@ -117,9 +117,16 @@ Una vez realizada la certificación, Transbank enviará un correo solicitando lo
 
 **Estos archivos serán enviados por nosotros**. Una vez que los reciben, Transbank (después de unos días) manda un email que contiene el identificador de la tienda en Webpay, y un ZIP que contiene los archivos para generar las llaves de seguridad para el kit de la tienda.
 
-En respuesta a este correo, nosotros generamos las llaves y dejamos el kit listo para la tienda en producción. Respondemos a Transbank enviándoles la llave pública resultante y opcionalmente, **el logo de la tienda** en formato 130x59 (GIF) para que lo pongan en el ambiente de pago Webpay plus.
+En respuesta a este correo, nosotros generamos las llaves y dejamos el Kit listo para la tienda en producción. Respondemos a Transbank enviándoles la llave pública resultante y opcionalmente, **el logo de la tienda** en formato 130x59 (GIF) para que lo pongan en el ambiente de pago Webpay plus — Figura 1.
 
-Una vez que reciben la llave pública y el logo finalmente lo suben a producción, lo que permite finalmente echar a andar el kit en Bootic producción.
+<div class="captura">
+  <div class="c-contenido">
+      <img src="/img/admin/logo-en-webpaycl.png">
+  </div>
+  <div class="c-pie"><strong>Figura 1</strong>: Logo de la tienda cliente en ambiente de pago webpay plus (en el ejemplo de tienda romano.cl)</div>
+</div>
+
+Una vez que reciben la llave pública y el logo finalmente **lo suben a producción**, lo que permite finalmente echar a andar el kit en Bootic producción.
 
 **Desde este momento** (y no antes) va a empezar a funcionar la redirección del usuario a la página de pago en Bootic producción, ya que el KCC requiere de que la llave pública esté instalada en Webpay. De lo contrario **mostrará un error con letras rojas** de que no se puede realizar la transacción.
 
