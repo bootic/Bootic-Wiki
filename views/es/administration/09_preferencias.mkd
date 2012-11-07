@@ -10,7 +10,7 @@ La sección preferencias muestra opciones de configuración de tu tienda. Alguna
  - Subir un logo
  - Configurar Google Analytics
  - Configurar destinatarios de correo
- - Órden de productos por defecto en listas
+ - [Órden de productos por defecto en listas](/es/administration/preferencias/orden_de_producto)
  - Zonas y costos de envío
  - Configuración de medios de pago
  - Configuración de dominio propio
