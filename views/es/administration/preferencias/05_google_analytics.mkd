@@ -16,10 +16,10 @@ Google Analytics (GA) es un servicio ofrecido por Google completamente gratis qu
 
 Bootic ofrece la posibilidad de instalar GA en tu tienda de una forma muy simple. Los pasos para configurar GA en tu tienda Bootic son:
 
-1. De no tenerla [crea un usuario en GA][1], si ya tienes usuario GA ingresa en su panel de control. 
-2. Crea una nueva Cuenta GA.
+1. De no tenerlo [crea un usuario en GA][1], si ya tienes usuario GA ingresa en su panel de control. 
+2. En el panel GA crea una nueva «Cuenta».
 3. Dentro de esta nueva Cuenta crea una nueva Propiedad (web o app) e ingresa la información que te solicita.
-4. Cuando hayas creado esta nueva propiedad GA generará un ID Traking, que por lo general tiene la forma de **UA-823244297-1**
+4. Cuando hayas creado esta nueva propiedad GA generará un **ID Tracking**, que por lo general tiene la forma de **UA-823244297-1**. El ID tracking es un identificador único que Google genera para registrar las estadísticas del perfil creado. Asegúrate de que este número corresponda al sitio que acabas de configurar (en el caso de que tengas muchos otros sitios trackeado en GA)
 5. Luego ingresa a tu **Panel de Administración Bootic** y anda a **Preferencias** &rarr; **Opciones generales**, y en **Identificador Google Analytics** pon el ID Traking del punto **4.**, luego **Guarda** — Figura 1.
 
 <div class="captura">
@@ -30,7 +30,6 @@ Bootic ofrece la posibilidad de instalar GA en tu tienda de una forma muy simple
 		<strong>Figura 1</strong>: Identificador Google Analytics
 	</div>
 </div>
-
 
 ## Activa E-commerce tracking
 
@@ -48,10 +47,8 @@ Con esto podrás obtener estadísticas de las distintas páginas del checkout, c
 * El evento `/order/pending` corresponde a la página de elección de medio de pago.  
 * El evento `/order/success` sólo se alcanza cuando la orden es cerrada automáticamente por Webpay. Otros métodos de pago como la transferecia bancaria no cierran llevan la orden a la página de cierre, por lo que tienes que considerar eso al momento de evaluar las estadísticas.
 
-
 ## Espera 24 horas
 
 Ten en cuenta que Google Analytics **demora 24 horas en iniciar el registro de estadísticas**, por lo tanto debes esperar para ver los resultados. Pasado el tiempo de espera ingresa a tu cuenta GA y ya podrás ver las estadísticas. **Tip**: Hay una sección dentro de GA donde puedes decirle que te envíe un correo todos los días con el informe.
 
 [1]: http://www.google.com/analytics/
-
