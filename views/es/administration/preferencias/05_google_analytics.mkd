@@ -19,8 +19,8 @@ Bootic ofrece la posibilidad de instalar GA en tu tienda de una forma muy simple
 1. De no tenerla [crea un usuario en GA][1], si ya tienes usuario GA ingresa en su panel de control. 
 2. Crea una nueva Cuenta GA.
 3. Dentro de esta nueva Cuenta crea una nueva Propiedad (web o app) e ingresa la información que te solicita.
-3. Cuando hayas creado esta nueva propiedad GA generará un ID Traking, que por lo general tiene la forma de **UA-823244297-1**
-4. Luego ingresa a tu **Panel de Administración Bootic** y anda a **Preferencias** &rarr; **Opciones generales**, y en **Identificador Google Analytics** pon el ID Traking del punto **3.**, luego **Guarda** — Figura 1.
+4. Cuando hayas creado esta nueva propiedad GA generará un ID Traking, que por lo general tiene la forma de **UA-823244297-1**
+5. Luego ingresa a tu **Panel de Administración Bootic** y anda a **Preferencias** &rarr; **Opciones generales**, y en **Identificador Google Analytics** pon el ID Traking del punto **4.**, luego **Guarda** — Figura 1.
 
 <div class="captura">
     <div class="c-contenido">
