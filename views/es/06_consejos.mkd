@@ -1,0 +1,8 @@
+---
+:title: "Consejos y sugerencias"
+:description: "Consejos y sugerencias para una mejor administración y experiencia de usuario"
+:keywords: administración, consejos, sugerencias 
+---
+# Consejos y Sugerencias 
+
+* [Retirar en tienda](/es/consejos/retirar-en-tienda)
