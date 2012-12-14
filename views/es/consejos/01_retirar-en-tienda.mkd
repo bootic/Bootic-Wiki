@@ -21,9 +21,18 @@ a sus clientes.
 ¿Cómo darle al cliente la posibilidad de retirar el producto en la tienda
 física?, a continuación los pasos a seguir:
 
-1. Crear una Zona y costo de envío. Una zona podría ser:
+<div class="captura">
+    <div class="c-contenido">
+        <img src="/img/admin/retirar-tienda-crear-zona.png" alt="Creación de la zona" />
+    </div>
+    <div class="c-pie">
+        <strong>Figura 1</strong>: Creación de la Zona y costo de envio
+    </div>
+</div>
+
+1. Crear una [Zona y costo de envío][zona]. Una zona podría ser (Figura 1):
     
-    * **Nombre**: Retiro en tienda
+    * **Nombre**: Retirar en tienda
     * **País**: Chile
     * **Región**: Todos
 
@@ -32,22 +41,23 @@ física?, a continuación los pasos a seguir:
     * **Hasta**: 1000000 grs
     * **Costo**: 0
 
-    El **peso** es 1 tonelada, esta cifra aldo _descabellada_ es para cubrir el
+    El **peso** es 1 tonelada, esta cifra algo _descabellada_ es para cubrir el
 mayor rango posible — si tu tienda vende productos en este rango de peso
 entonces pon una cantidad «inalcanzable».
 
-3. Dale clic a **Guardar zonas de envío**
+3. Dale clic a **Guardar zona de envío**
 
 ¡Listo!, eso es todo, desde ahora en adelante tus clientes tendrán esa opción a la
-hora de **Realizar la compra** — Figura 1.
+hora de **Realizar la compra** — Figura 2.
 
 <div class="captura">
 	<div class="c-contenido">
         <img src="/img/admin/retiro_en_tienda.png" alt="retiro en tienda" />
     </div>
 	<div class="c-pie">
-		<strong>Figura 1</strong>: Retiro en tienda como Opción de envío
+		<strong>Figura 2</strong>: Retiro en tienda como Opción de envío
 	</div>
 </div>
 
 
+  [zona]:/es/administration/preferencias/shipping_zones "Cómo crear zonas y costo de envio"
