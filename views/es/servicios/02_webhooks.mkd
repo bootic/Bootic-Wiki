@@ -1,0 +1,14 @@
+---
+:title: "Webhooks genéricos para tu tienda Bootic"
+:description: "Integra tu tienda con otras aplicaciones mediante Webhooks"
+:keywords: webhook, http, POST, inspector, data, integraciones
+---
+
+Webhook genérico
+====================================
+
+Puedes usar la URL de abajo para probar tus Webhooks.
+
+Los mensajes nuevos iran apareciendo abajo.
+
+<iframe src="http://bootic-wh-inspector.herokuapp.com/" frameborder="0" width="100%" height="700" scrolling="no"></iframe>
