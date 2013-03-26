@@ -10,6 +10,18 @@
 Google Apps para correos y documentos
 ====================================
 
+
+<div class="importante">
+<p><strong>Importante</strong>: En diciembre de 2012 <a
+href="http://googleenterprise.blogspot.ca/2012/12/changes-to-google-apps-for-businesses.html">Google
+anunció que <strong>ya no habrá más servicio gratuito</strong> de Google Apps</a>.
+El costo por cada casilla de correo será de U$5 al mes <strong>por
+usuario</strong> — <a
+href="http://www.google.com/intl/es-419/enterprise/apps/business/pricing.html">
+revisa la información de precios en su sitio web</a>.</p>
+</div>
+
+
 Google Apps es una serie de servicios de Google, que te permiten usar herramientas Google como GMail, Google Docs, Calendario y otros bajo tu dominio. Esto significa que puedes tener correos con tu propio dominio (por ejemplo *ismael@mitienda.com*) administrados por Google y accesibles de la misma forma que una cuenta GMail normal.
 
 Además puedes configurar software de escritorio como Oulook, Apple Mail u otros para sincronizar el correo con tu cuenta Google Apps.
@@ -18,7 +30,7 @@ Si quieres usar Google Apps con tu dominio, debes crear registros especiales en 
 
 Si mantienes DNS con nosotros ([ver explicación](/es/administration/dominio_propio)), debes solicitarnos que hagamos el cambio en nuestro DNS. 
 
-Para ambos casos debes primero crear una cuenta en Google Apps. La versión "estandar" es gratuita y soporta hasta 10 usuarios.
+Para ambos casos debes primero crear una cuenta en Google Apps. La versión "estandar".
 
 [Google Apps Edición Estandar](http://www.google.com/apps/intl/es/group/index.html)
 
@@ -53,3 +65,4 @@ Una vez creada la cuenta Google te pide activar la cuenta verificando que eres d
 4. ### Activa la verificación
 	Vuelve a tu panel en Google Webmaster o Google Apps y verifica el sitio dando click en el botón correspondiente.
     <div class="captura"><div class="c-contenido"><a title="Verifica la propiedad del sitio" href="/img/posicionamiento/sitemap-6.png" rel="fancybox"><img src="/img/posicionamiento/sitemap-th-6.png" /></a></div><div class="c-pie">Figura 6: Verificar sitio</div></div>
+

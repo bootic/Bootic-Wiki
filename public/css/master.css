@@ -526,3 +526,14 @@ html[xmlns] .clearfix {
 .orden-exitoda {border-left-color: #57d6b5}
 .orden-cerrada {border-left-color: #b7d457}
 .orden-despachada {border-left-color: #4e8ad5 }
+
+.importante {
+    border:1px solid #fff55c;
+    background-color:#f9f8d0;
+    padding:10px 10px;
+}
+.importante p {
+    padding:0;
+    margin:0;
+}
+
