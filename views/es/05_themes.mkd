@@ -13,7 +13,9 @@
 
 Las plantillas HTML de cada página de tu tienda Bootic pueden ser editadas en el área de diseño de tu panel de administración.
 
-Para esto, Bootic define una serie de plantillas presentes en todas las tiendas.
+Bootic ofrece [una lista creciente](/es/themes/galeria) de *temas* de diseño que puedes elegir para partir. Cada tema define *plantillas* para cada tipo de página.
+
+Las siguientes plantillas están presentes presentes en todas las tiendas.
 
 <table class="list" cellpadding="0" cellspacing="0">
   <thead>

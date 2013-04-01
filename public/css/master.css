@@ -445,6 +445,28 @@ ul.grid {
 	display: inline-block;
 }
 
+/* Media elements (theme gallery)
+----------------------------------*/
+.media_items {
+  margin: 0;
+  padding: 0;
+}
+.media_item {
+  
+}
+.media_item .thumbnail {
+  float: left;
+}
+.media_item .info {
+  position: relative;
+  float: left;
+  width: 360px;
+  padding-top: 10px;
+  margin-left: 20px;
+}
+.media_item .buttons {
+  text-align: right;
+}
 /* disqus comments
 ---------------------------------------*/
 #comments {

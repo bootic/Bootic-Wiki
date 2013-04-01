@@ -1,0 +1,91 @@
+---
+:title: Galería de temas de diseño
+:description: Temas de diseño disponibles
+:keywords: theme, plantilla, tema, galería, galeria, gallery, editor, simplelist, snap, base, bootstrap
+---
+
+# Temas de diseño por defecto
+
+Estos son los *temas* de diseño que puedes elegir para empezar con tu tienda Bootic. Todas los temas pueden ser modificados totalmente mediante el [editor de plantillas](/es/themes) de tu tienda.
+
+<div class="tip">
+  Las tiendas nuevas vienen por defecto con el tema "snap", pero puedes elegir un distinto en el area de diseño de tu panel de administración.
+</div>
+
+<hr />
+
+<ul class="media_items">
+  <li class="media_item clearfix">
+    <a href="http://bootstrap1.bootic.net" class="thumbnail" target="_blank" title="Ver tienda de ejemplo">
+      <img src="/img/themes/gallery/bootstrap1/preview.png" alt="Bootstrap 1" />
+    </a>
+    <div class="info">
+      <h3>Bootstrap 1</h3>
+      <p>Tema simple basado en el popular <em>framework</em> CSS <a href="http://twitter.github.com/bootstrap/index.html">Bootstrap</a>.</p>
+      <ul>
+        <li>HTML y CSS modular gracias a Bootstrap</li>
+        <li>Optimizado para móviles</li>
+        <li>Carrito Ajax</li>
+      </ul>
+      <p class="buttons">
+        
+        <a href="http://bootstrap1.bootic.net" class="preview_link" target="_blank">Ver tienda de ejemplo</a>
+      </p>
+    </div>
+  </li><!-- /bootstrap1 -->
+  
+  <li class="media_item clearfix">
+    <a href="http://snap.bootic.net" class="thumbnail" target="_blank" title="Ver tienda de ejemplo">
+      <img src="/img/themes/gallery/snap/preview.png" alt="Snap" />
+    </a>
+    <div class="info">
+      <h3>Snap</h3>
+      <p>Tema simple con <em>carrusel</em> y noticias en portada.</p>
+      <ul>
+        <li>Carrusel de productos destacados</li>
+        <li>Botones Twitter/Facebook de ejemplo</li>
+      </ul>
+      <p class="buttons">
+        <a href="http://snap.bootic.net" class="preview_link" target="_blank">Ver tienda de ejemplo</a>
+      </p>
+    </div>
+  </li><!-- /snap -->
+  
+  <li class="media_item clearfix">
+    <a href="http://simplelist.bootic.net" class="thumbnail" target="_blank" title="Ver tienda de ejemplo">
+      <img src="/img/themes/gallery/simplelist/preview.png" alt="Simplelist" />
+    </a>
+    <div class="info">
+      <h3>Simplelist</h3>
+      <p>Lista detallada de productos con fotos grandes.</p>
+      <ul>
+        <li>Detalle de producto con carrusel de fotos</li>
+        <li>Optimizado para móviles</li>
+        <li>Carrito Ajax integrado en barra lateral</li>
+        <li>Espacio para logo de tienda grande</li>
+      </ul>
+      <p class="buttons">
+        <a href="http://simplelist.bootic.net" class="preview_link" target="_blank">Ver tienda de ejemplo</a>
+      </p>
+    </div>
+  </li><!-- /simplelist -->
+  
+  <li class="media_item clearfix">
+    <a href="http://tienda.inventario.cl" class="thumbnail" target="_blank" title="Ver tienda de ejemplo">
+      <img src="/img/themes/gallery/base/preview.png" alt="Base" />
+    </a>
+    <div class="info">
+      <h3>Base</h3>
+      <p>Tema compacto con carrusel en portada.</p>
+      <ul>
+        <li>Carrusel en portada</li>
+        <li>Menú multi categorías</li>
+        <li>Filtros de etiquetas en lista de productos</li>
+      </ul>
+      <p class="buttons">
+        <a href="http://tienda.inventario.cl" class="preview_link" target="_blank">Ver tienda de ejemplo</a>
+      </p>
+    </div>
+  </li><!-- /base -->
+  
+</ul>
