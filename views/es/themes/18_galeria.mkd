@@ -9,7 +9,7 @@
 Estos son los *temas* de diseño que puedes elegir para empezar con tu tienda Bootic. Todas los temas pueden ser modificados totalmente mediante el [editor de plantillas](/es/themes) de tu tienda.
 
 <div class="tip">
-  Las tiendas nuevas vienen por defecto con el tema "snap", pero puedes elegir un distinto en el area de diseño de tu panel de administración.
+  Las tiendas nuevas vienen por defecto con el tema "snap", pero puedes elegir uno distinto en el area de diseño de tu panel de administración.
 </div>
 
 <hr />
