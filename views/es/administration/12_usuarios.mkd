@@ -1,0 +1,27 @@
+---
+:title: Usuarios de la tienda
+:description: "Usuario de la tienda"
+:keywords: usuarios, administrador, editor, supervisor, vendedor, bodeguero, diseñador, admin
+:group:
+  :name: Administración y configuración
+  :label: ¿Cómo cambio el remitente de los correos que salen de mi tienda?
+---
+# Usuarios de la tienda 
+
+Bootic ofrece la posibilidad de que el panel de administración de tu tienda tenga distintos tipos de usuarios, estos usuarios tienen distintos niveles de acceso:
+
+
+1. **Administrador**: Tiene acceso a la totalidad del sistema.
+2. **Supervisor**: Puede administrar productos, noticias, y cambiar preferencias.
+3. **Editor**: Puede publicar, editar y eliminar noticias.
+4. **Vendedor**: Puede administrar productos y asignarlos a colecciones creadas por el Administrador.
+5. **Bodeguero**: Puede modificar el estado de órdenes.
+6. **Diseñador**: Puede crear y modificar plantillas HTML y menus de navegación.
+
+
+## ¿Cómo cambio el remitente de los correos que salen de mi tienda?
+
+El correo electrónico del **primer administrador** de la lista de usuarios _será
+el usado_ como remitente para todos los correos electrónicos que tu tienda Bootic
+envíe a tus clientes.
+
