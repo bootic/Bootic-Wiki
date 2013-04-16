@@ -8,9 +8,17 @@ module Helpers
     pjax? ? @content : erb(:layout)
   end
   
+  def markdown_engine
+    @markdown_engine ||= begin
+      renderer = Redcarpet::Render::HTML.new(:with_toc_data => true)
+      engine = Redcarpet::Markdown.new(renderer, :autolink => true, :space_after_headers => true)
+      engine
+    end
+  end
+  
   def render_markup(markup)
     erb_content = ERB.new(markup).result(binding)
-    RDiscount.new(erb_content).to_html
+    markdown_engine.render(erb_content)
   end
   
   def coderay(body)

@@ -3,7 +3,7 @@ require 'rubygems'
 require 'bundler/setup'
 
 require 'sinatra/base'
-require "rdiscount"
+require "redcarpet"
 require "dragonfly"
 require "multi_json"
 
