@@ -115,7 +115,7 @@ Una vez realizada la certificación, Transbank enviará un correo solicitando lo
 * Archivo de configuración de la tienda (tbk_config.dat)
 * La programación de tu Página de Cierre (check.rb)
 
-**Estos archivos serán enviados por nosotros**. Una vez que los reciben, Transbank (después de unos días) manda un email que contiene el identificador de la tienda en Webpay, y un ZIP que contiene los archivos para generar las llaves de seguridad para el kit de la tienda.
+<a name="logo"></a>**Estos archivos serán enviados por nosotros**. Una vez que los reciben, Transbank (después de unos días) manda un email que contiene el identificador de la tienda en Webpay, y un ZIP que contiene los archivos para generar las llaves de seguridad para el kit de la tienda.
 
 En respuesta a este correo, nosotros generamos las llaves y dejamos el Kit listo para la tienda en producción. Respondemos a Transbank enviándoles la llave pública resultante y opcionalmente, **el logo de la tienda** en formato 130x59 (GIF) para que lo pongan en el ambiente de pago Webpay plus — Figura 1.
 
