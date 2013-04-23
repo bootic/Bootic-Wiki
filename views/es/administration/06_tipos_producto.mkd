@@ -19,7 +19,7 @@ los siguientes campos:
 - Peso (grs)
 
 ### Problema
-Pero es muy probable que en algún momento requieras **adicionarle nuevos
+Pero es muy probable que en algún momento requieras **agregarle nuevos
 campos** a tu producto, como por ejemplo: **Potencia** (en watts), o **Capacidad
 de disco duro** (en GB), si tuviésemos una tienda de sacajugos o computadores
 respectivamente. Pero además de lo anterior requieres además que **no todos los
@@ -27,7 +27,7 @@ productos** tengan los mismos atributos adicionales.
 
 ### Solución
 Buscando responder a esta necesidad es que en Bootic **puedes crear tipos de
-productos**. Los tipos de productos son un _subconjuntos_ dentro de tu universo
+productos**. Los tipos de productos son un _subconjunto_ dentro de tu universo
 de productos, los cuales **tienen** uno o más **atributos propios**. Un Tipo de Producto
 puede tener **_n_ atributos**, pero un producto **solo puede pertenecer** a un Tipo
 de Producto. 
@@ -50,7 +50,7 @@ No hay límites para ingresar atributos a un Tipo de Producto, pueden ser n.
 
 Una vez que se ha creado el Tipo de Producto ahora debes **mostrarlo** en tu
 plantilla, por defecto todas las plantillas Bootic mostrarán los atributos del
-producto, **siempre y cuando** este tengan un valor, de no tenerlo no se
+producto, **siempre y cuando** estos tengan un valor, de no tenerlo no se
 mostrará. Un ejemplo de cómo mostrar todos los atributos de un producto sería:
 
 <pre>:::html
@@ -67,7 +67,7 @@ mostrará. Un ejemplo de cómo mostrar todos los atributos de un producto sería
 </pre>
 
 Si quieres mostrar **un atributo** en particular (como por ejemplo el código
-embebido de un video) el trozo de código liquid sería así:
+embebido de un video) el trozo de código _liquid_ sería así:
 
 <pre>:::html
 {% if product.product_type %}
