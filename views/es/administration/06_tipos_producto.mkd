@@ -8,7 +8,7 @@
 ---
 # Tipos de productos 
 
-Cuando ingresas un producto a tu tienda Bootic debes completar un formulario con
+Cuando ingresas un producto (Figura 1) a tu tienda Bootic debes completar un formulario con
 los siguientes campos:  
 
 - Modelo o título
@@ -18,23 +18,34 @@ los siguientes campos:
 - Precio ($)
 - Peso (grs)
 
+<div class="captura">
+    <div class="c-contenido">
+        <img src="/img/admin/ss_new_product.png" width="650" alt="agregar un nuevo producto" />
+    </div>
+    <div class="c-pie">
+        <strong>Figura 1</strong>: Agregar un nuevo producto
+    </div>
+</div>
+
+
 ### Problema
 Pero es muy probable que en algún momento requieras **agregarle nuevos
 campos** a tu producto, como por ejemplo: **Potencia** (en watts), o **Capacidad
 de disco duro** (en GB), si tuviésemos una tienda de sacajugos o computadores
-respectivamente. Pero además de lo anterior requieres además que **no todos los
+respectivamente. Pero además de lo anterior requieres que **no todos los
 productos** tengan los mismos atributos adicionales.
 
 ### Solución
 Buscando responder a esta necesidad es que en Bootic **puedes crear tipos de
-productos**. Los tipos de productos son un _subconjunto_ dentro de tu universo
+productos**. Los Tipos de Productos son un _subconjunto_ dentro de tu universo
 de productos, los cuales **tienen** uno o más **atributos propios**. Un Tipo de Producto
 puede tener **_n_ atributos**, pero un producto **solo puede pertenecer** a un Tipo
 de Producto. 
 
 ### Crear un tipo de producto
 
-Estando en la ficha del producto dale clic al enlace «Administrar tipos de producto», luego anda a 
+Estando en la ficha del producto dale clic al enlace «Administrar tipos de
+producto» (Figura 2), luego anda a: 
 
 1. Nuevo tipo de Producto
 2. Pon un nombre, por Ejm: «Sacajugos»
@@ -45,6 +56,14 @@ Estando en la ficha del producto dale clic al enlace «Administrar tipos de prod
 
 No hay límites para ingresar atributos a un Tipo de Producto, pueden ser n.
 
+<div class="captura">
+    <div class="c-contenido">
+        <img src="/img/admin/ss_new_product_type.png" width="650" alt="agregar un nuevo tipo de producto" />
+    </div>
+    <div class="c-pie">
+        <strong>Figura 2</strong>: Creando un nuevo tipo de producto 
+    </div>
+</div>
 
 ### Mostrando el nuevo atributo en la plantilla
 
