@@ -28,7 +28,7 @@ Los DNS (Domain Name Servers) son los servidores encargados de traducir un nombr
 
 Lo que necesitas hacer es "apuntar" un subdominio de tu dominio a los servidores de Bootic. El subdominio más común es "www".
 
-## Opción 1: Yo administro mis DNS.
+### Opción 1: Yo administro mis DNS.
 
 Es posible administrar los DNS de tu dominio en empresas especializadas. También, si ya tienes una empresa que te provee hosting, muy probablemente ellos también dan el servicio de DNS para tu dominio. Puedes averiguarlo con ellos. Esta opción te da control absoluto sobre el dominio, incluyendo crear subdominios, apuntar el t®áfico de emails a tu servicio de correos favorito, etc.
 
@@ -36,14 +36,21 @@ Los pasos son:
 
 1. Anda al panel de administración de DNS de tu proveedor.
 2. Crea un registro de tipo CNAME con el nombre del subdominio y dominio que quieres redirigir (por ejemplo "www.mitienda.com"). El valor debe ser "proxy.bootic.net"
-3. Espera unas horas (los cambios de DNS tardan horas en propagarse por internet). Cuando tu dominio "www.mitienda.com" muestre una página de error de Bootc, significa que el dominio ya está *apuntado* a tu sitio Bootic. 
-4. Entra a tu administrador Bootic, navega hasta las preferencias y edita el campo "Dirección URL" con "www.mitienda.com". Guarda el cambio.
-5. Eso es todo. Ahora la dirección "www.mitienda.com" debiera mostrarte tu tienda Bootic.
-    <img src="/img/admin/url-field.png" alt="Edit URL field" />
+3. Espera unas horas (los cambios de DNS tardan horas en propagarse por internet). Cuando tu dominio `www.mitienda.com` muestre una página de error de Bootc, significa que el dominio ya está *apuntado* a tu sitio Bootic. 
+4. Entra a tu administrador Bootic, navega hasta las preferencias y edita el campo «Dirección URL» con `www.mitienda.com`. Guarda el cambio.
+5. Eso es todo. Ahora la dirección `www.mitienda.com` debiera mostrarte tu tienda Bootic - Figura 1.
 
-## Opción 2: No tengo acceso a DNS
+<div class="captura">
+    <div class="c-contenido"><img src="/img/admin/url-field.png" alt="Edit URL field" /></div><!-- /.c-contenido -->
+    <div class="c-pie">
+        <strong>Figura 1:</strong> Dirección URL en el panel de control
+    </div>
+</div>
+    
 
-Proveedores de dominios como el NIC en Chile (para dominios ".cl") normalmente no tienen administración de DNS integrada, por lo que tienes que configurar el dominio explícitamente para usar los DNS que prefieras.
+### Opción 2: No tengo acceso a DNS
+
+Proveedores de dominios como el NIC en Chile (para dominios «.cl») normalmente no tienen administración de DNS integrada, por lo que tienes que configurar el dominio explícitamente para usar los DNS que prefieras.
 
 En estos casos puedes contratar servicio con especialistas como [EasyDNS](https://web.easydns.com/) o [DNS Made Easy](http://www.dnsmadeeasy.com/), lo que te pone en control de tu dominio y te da opciones avanzadas.
 
@@ -51,27 +58,30 @@ Sin embargo, si sólo quieres alojar tu tienda Bootic bajo tu dominio y no plane
 
 1. Accede al panel de tu proveedor de dominios (NIC.cl en el caso de Chile)
 2. Busca la sección sobre DNS e ingresa los siguientes servidores **primario**, **secundario** y **terciario**:
-
-    * ns1.linode.com (69.93.127.10)
-    * ns2.linode.com (65.19.178.10)
-    * ns3.linode.com (75.127.96.10)
-
-    Bookmarklet: <a href="javascript:(function()%7Bwindow.linode%20%3D%20%7Bns1%20%3A%20%7Bname%3A'ns1.linode.com'%2Cip%3A'69.93.127.10'%7D%2Cns2%20%3A%20%7Bname%3A'ns2.linode.com'%2Cip%3A'65.19.178.10'%7D%2Cns3%20%3A%20%7Bname%3A'ns3.linode.com'%2Cip%3A'75.127.96.10'%7D%7D%3Bvar%20fields%20%3D%20%5B'ns1'%2C'ns2'%2C'ns3'%5D%3Bfor%20(%20var%20i%20%3D%200%3Bi%3Cfields.length%3Bi%2B%2B)%20%7Bvar%20ns%20%3D%20document.getElementsByName(fields%5Bi%5D)%5B0%5D%3Bvar%20ip%20%3D%20document.getElementsByName('ip'%2Bfields%5Bi%5D)%5B0%5D%3Bns.setAttribute('value'%2Cwindow%5B'linode'%5D%5Bfields%5Bi%5D%5D%5B'name'%5D)%3Bip.setAttribute('value'%2Cwindow%5B'linode'%5D%5Bfields%5Bi%5D%5D%5B'ip'%5D)%3B%7D%7D)()">Bootic NS-NIC.cl</a> – (<a href="http://www.youtube.com/watch?v=qTxqMsct7cM">¿Qué es esto?</a>)
-
+   * `ns1.linode.com` (69.93.127.10)
+   * `ns2.linode.com` (65.19.178.10)
+   * `ns3.linode.com` (75.127.96.10)
 3. Guarda los cambios y espera unas horas. Estos cambios tardan un tiempo en propagarse de servidor en servidor.
 4. Avísanos cuando el cambio en tu proveedor esté listo. Nosotros debemos hacer una pequeña configuración por nuestro lado.
 5. Cuando tu dominio muestre una página de error de Bootic, significa que el dominio ya está *apuntado* a tu sitio Bootic.
-6. Entra a tu administrador Bootic, navega hasta las preferencias y edita el campo "Dirección URL" con "www.mitienda.com". Guarda el cambio.
-7. Eso es todo. Ahora la dirección "www.mitienda.com" debiera mostrarte tu tienda Bootic.
+6. Entra a tu administrador Bootic, navega hasta las preferencias y edita el campo «Dirección URL» con `www.mitienda.com`. Guarda el cambio.
+7. Eso es todo. Ahora la dirección `www.mitienda.com` debiera mostrarte tu tienda Bootic.
 
-<h2 id="nic">NIC Chile </h2>
+Para evitar errores de digitación de nuestro DNS ayúdate con este
+**Bookmarklet**: <a href="javascript:(function()%7Bwindow.linode%20%3D%20%7Bns1%20%3A%20%7Bname%3A'ns1.linode.com'%2Cip%3A'69.93.127.10'%7D%2Cns2%20%3A%20%7Bname%3A'ns2.linode.com'%2Cip%3A'65.19.178.10'%7D%2Cns3%20%3A%20%7Bname%3A'ns3.linode.com'%2Cip%3A'75.127.96.10'%7D%7D%3Bvar%20fields%20%3D%20%5B'ns1'%2C'ns2'%2C'ns3'%5D%3Bfor%20(%20var%20i%20%3D%200%3Bi%3Cfields.length%3Bi%2B%2B)%20%7Bvar%20ns%20%3D%20document.getElementsByName(fields%5Bi%5D)%5B0%5D%3Bvar%20ip%20%3D%20document.getElementsByName('ip'%2Bfields%5Bi%5D)%5B0%5D%3Bns.setAttribute('value'%2Cwindow%5B'linode'%5D%5Bfields%5Bi%5D%5D%5B'name'%5D)%3Bip.setAttribute('value'%2Cwindow%5B'linode'%5D%5Bfields%5Bi%5D%5D%5B'ip'%5D)%3B%7D%7D)()">Bootic NS-NIC.cl</a> – (<a href="http://www.youtube.com/watch?v=qTxqMsct7cM">¿Qué es esto?</a>)
 
-Los pasos de arriba son aplicables para dominios `.cl` registrados en el [NIC](http://nic.cl). El video a continuación muestra la configuración de dominio propio en el NIC para una tienda Bootic.
+## NIC Chile
+
+Los pasos de arriba son aplicables para dominios `.cl` registrados en el [NIC](http://nic.cl) - Figura 2. El video a continuación muestra la configuración de dominio propio en el NIC para una tienda Bootic.
 
 <iframe src="http://www.screenr.com/embed/AgV" width="650" height="396" frameborder="0"></iframe>
 
-<img src="/img/admin/nic.png" alt="panel NIC" />
-<p><small>Configuración de DNS en NIC.cl</small></p>
+<div class="captura">
+    <div class="c-contenido"><img src="/img/admin/nic.png" alt="panel NIC" /></div>
+    <div class="c-pie">
+        <strong>Figura 2</strong>: Configuración de DNS en NIC.cl 
+    </div>
+</div>
 
 <div class="tip">
   <h3>¿Cómo funcionan los DNS?</h3>
