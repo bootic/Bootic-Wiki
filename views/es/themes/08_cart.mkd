@@ -51,4 +51,40 @@ mensaje:
 
 > Tu carro de compras está vacío. Revisa nuestro catálogo y agrega un producto!
 
+## Archivo `json`
+
+Adicionalmente a lo anterior, existe un archivo en formato `json` que contiene el
+detalle de los productos que el cliente ha agredo al carro. El archivo «vive» en
+la siguiente URL: `http://TIENDA.bootic.net/cart.json`
+
+Un ejemplo de uso de este `json` sería el **mostrar los totales de cantidad
+y precio** de los productos en el carro.
+
+### HTML
+
+Esto podría ir en `layout.html`.
+
+<pre>:::html
+<div id="carro"><a href="/cart" title="Carro de compra"></a></div>
+</pre>
+
+#### Javascript 
+
+Y esto podría ir en `theme.js`. Usando la librería jquery.
+
+<pre>:::javascript
+$(function(){
+	$.getJSON('/cart.json',function(data){
+	   if ( data.products.length ) {
+		  var unidades = data.units; 
+		  var total = data.formatted_total; 
+		  var target = $('#carro a');
+		  target.append('Carro de compra ('+ unidades +')' + total);
+		}
+	});
+});
+</pre>
+
+
+
 
