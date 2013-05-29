@@ -49,19 +49,16 @@
     <div id="main" class="box clearfix">
 
       <div id="sidebar">
-        
-        <% if menu %>
         <div class="section">
           <ul class="nested_menu">
             <li class="page depth_2">
               <a href="/">Preguntas frecuentes</a>
             </li>
-            <% menu.each do |page| %>
+            <% menu('/').each do |page| %>
               <%= build_menu page %>
             <% end %>
           </ul>
         </div>
-        <% end %>
       </div><!-- /sidebar -->
 
       <div id="content">
