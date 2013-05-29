@@ -40,9 +40,13 @@ module Helpers
   def partial(page, options={})
     erb :"_#{page}", options.merge!(:layout => false)
   end
-
-  def menu
-    @menu ||= Page.root
+  
+  def menu(path = '/')
+    @menu ||= if path == '/'
+      Page.root
+    else
+      Page.find(path)
+    end
   end
 
   def pjax?
