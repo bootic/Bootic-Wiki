@@ -48,7 +48,23 @@ module Helpers
       Page.find(path)
     end
   end
-
+  
+  # section to build menu from. 
+  # ie. for URL /es/administration/foo/bar section is "/es/administration"
+  #
+  def menu_section
+    @menu_section ||= begin
+      s = request.path.split('/')
+      s[0..2].join('/')
+    end
+  end
+  
+  # Load a menu for the current seciton of the wiki
+  #
+  def current_section
+    @current_section ||= menu(menu_section)
+  end
+  
   def pjax?
     !!request.env['HTTP_X_PJAX']
   end

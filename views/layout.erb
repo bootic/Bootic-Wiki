@@ -92,15 +92,15 @@
     </div>
 
   </div><!-- /title -->
-
+  
   <% if !is_index? %>
   <div id="sidebar">
     <div class="section">
-      <ul class="nested_menu">
+      <ul class="side_menu">
         <li class="page depth_2">
-          <a href="/">Preguntas frecuentes</a>
+          <a href="<%= current_section.url %>">Introducción</a>
         </li>
-        <% menu.each do |page| %>
+        <% current_section.each do |page| %>
           <%= build_menu page %>
         <% end %>
       </ul>
