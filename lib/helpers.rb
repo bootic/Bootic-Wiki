@@ -1,4 +1,9 @@
 module Helpers
+
+  def is_index?
+    request.path == '' || request.path == '/'
+  end
+
   def cache_long(seconds = 3600)
     response['Cache-Control'] = "public, max-age=#{seconds.to_i}"
   end

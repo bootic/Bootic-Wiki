@@ -4,15 +4,38 @@
 :keywords: bootic, documentacion, ecommerce
 ---
 
-# Preguntas frecuentes
+<div id="start" class="row">
+  <div class="span4">
+    <div class="pad">
+    <h3>
+      <a href="/es/management">
+        Administración de tu tienda
+      </a>
+    </h3>
+    <p>Cómo llegar desde el primer producto a la primera venta. La información que todo dueño de una tienda Bootic tiene que saber, incluyendo cómo funcionan los pedidos, las promociones y el sistema de costos de envío.</p>
+    </div>
+  </div>
 
-<div class="faq-list">
-  <% Page.groups.each do |group_name, pages| %>
-  <h2><%= group_name %></h2>
-  <ol>
-  <% pages.each_with_index do |p, i| %>
-  <li><h3><a href="<%= p.url %>"><%= p.group_label %></a></h3></li>
-  <% end %>
-  </ol>
-  <% end %>
+  <div class="span4">
+    <div class="pad">
+    <h3>
+      <a href="/es/configuration">
+        Sistemas de pago, dominio y SEO
+      </a>
+    </h3>
+    <p>Los pasos para usar tu dominio propio y cómo incorporar sistemas de pago con tarjeta de crédito, como Webpay y Dineromail. Además te mostramos cómo usar las herramientas SEO de Bootic para que aumentes tu tráfico.</p>
+    </div>
+  </div>
+
+  <div class="span4">
+    <div class="pad">
+    <h3>
+      <a href="/es/themes">
+        Diseño y modificación de plantillas
+      </a>
+    </h3>
+    <p>Si quieres modificar el diseño de tu tienda, aquí encontrarás la documentación para editar nuestras plantillas o crear una a partir de cero. Requiere conocimiento básico a intermedio en HTML y CSS.</p>
+    </div>
+  </div>
+
 </div>
