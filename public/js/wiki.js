@@ -7,11 +7,11 @@ USAGE: WikiSearch.search('foo', function (results) {...})
       url += '?callback=?'
     }
 
-    var index = Lunr('pages', function () {
-      this.field('title', {multiplier: 10})
+    var index = lunr(function () {
+      this.field('title', {boost: 10})
       this.field('description')
-      this.field('keywords', {multiplier: 5})
-      this.field('headings', {multiplier: 8})
+      this.field('keywords', {boost: 5})
+      this.field('headings', {boost: 8})
       this.ref('id')
     })
 
@@ -48,8 +48,8 @@ USAGE: WikiSearch.search('foo', function (results) {...})
     this.search = function (term, callback) {
       load(function () {
         var hits = [];
-        $.each(index.search(term), function (i, url) {
-          hits.push(pages[url])
+        $.each(index.search(term), function (i, hit) {
+          hits.push(pages[hit.ref])
         })
         if(callback != undefined) callback(hits)
         $container.trigger('search:results', [hits]);
