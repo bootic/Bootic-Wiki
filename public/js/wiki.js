@@ -20,7 +20,7 @@ USAGE: WikiSearch.search('foo', function (results) {...})
 
     var load = function (callback) {
       if(loaded){ callback(); return }
-
+      
       $.getJSON(url, function (json) {
 
         $.each(json, function (i, page) {
@@ -75,15 +75,15 @@ USAGE: WikiSearch.search('foo', function (results) {...})
 // Search results view
 ;(function () {
 
-  var $template = $('<li><a class="link"><span class="title"></span></a><p class="desc"></p></li>')
+  var $template = $('<li><a class="result_link"><span class="result_title"></span></a><p class="result_desc"></p></li>')
   $('#search').bind('search:results', function (evt, pages) {
     $('#results').html('')
     $('#content_wrapper').hide()
     $.each(pages, function (i, page) {
       $template.clone()
-        .find('.link').attr('href', page.href).end()
-        .find('.title').html(page.title).end()
-        .find('.desc').html(page.description).end()
+        .find('.result_link').attr('href', page.href).end()
+        .find('.result_title').html(page.title).end()
+        .find('.result_desc').html(page.description).end()
         .appendTo('#results')
     })
     $('#search_box .term').text($('#search').val())
@@ -118,8 +118,7 @@ USAGE: WikiSearch.search('foo', function (results) {...})
 
   $('#search_form').submit(function () {
     var row = $('#results li.hover')
-    console.log(row)
-    if(row.length > 0) document.location.href = row.find('.link').attr('href')
+    if(row.length > 0) document.location.href = row.find('.result_link').attr('href')
     return false
   })
 

@@ -6,20 +6,6 @@ p{
   margin-bottom: 100px;
 }
 
-#search_form {
-  margin: 30px 0;
-}
-
-#search_form input {
-  width: 70%;
-  padding: 10px;
-  margin-bottom: 0;
-}
-
-#search_form button {
-  padding: 10px 30px;
-}
-
 #start .span4 {
   background-color: #fafafa;
   border: 1px solid #ddd;
@@ -47,4 +33,37 @@ p{
 }
 .side_menu ul {
   margin-left: 1em;
+}
+
+/* Search results
+----------------------------*/
+#search_form {
+  margin: 30 100px;
+}
+
+#search_form input {
+  width: 83%;
+  padding: 10px;
+  margin-bottom: 0;
+}
+
+#search_form button {
+  padding: 10px 30px;
+}
+#search_box {
+  text-align: left;
+  margin: 10px;
+}
+#results {
+  list-style-type: none;
+}
+#results p {
+  max-width: none;
+  font-size: 1em;
+}
+#results li {
+  padding: 0.25em 1em;
+}
+#results li.hover {
+  background: white;
 }
