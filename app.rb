@@ -6,6 +6,7 @@ require 'sinatra/base'
 require "redcarpet"
 require "dragonfly"
 require "multi_json"
+require 'yaml'
 
 $LOAD_PATH.unshift(File.dirname(__FILE__) + '/lib')
 
