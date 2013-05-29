@@ -28,7 +28,7 @@ module Helpers
   end
   
   def render_404
-    @content = RDiscount.new(File.read(File.join(settings.root, 'views', '404.mkd'))).to_html
+    @content = markdown_engine.render(File.read(File.join(settings.root, 'views', '404.mkd')))
     halt 404, erb(:layout)
   end
   
