@@ -38,3 +38,13 @@ p{
   font-size: 26px;
   letter-spacing: -0.09em;
 }
+
+/* Nested sidebar menu
+----------------------------*/
+.side_menu a.current {
+  font-weight: bold;
+  color: black;
+}
+.side_menu ul {
+  margin-left: 1em;
+}
