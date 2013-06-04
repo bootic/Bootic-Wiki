@@ -1,11 +1,13 @@
 .CodeRay {
   background-color: #f8f8f8;
   border: 1px solid silver;
-  font-family: 'Bitstream Vera Sans Mono', Courier, monospace;
-  color: #000;
+  font-family: 'Monaco', 'Consolas', 'Droid Sans Mono', 'Bitstream Vera Sans Mono', Courier, monospace;
+  color: #333;
   padding: 1em;
-  overflow-x: scroll;
+  overflow-x: auto;
+  margin: 20px 0;
 }
+
 .CodeRay pre { margin: 0px }
 
 div.CodeRay { }
