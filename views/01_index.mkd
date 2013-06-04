@@ -8,7 +8,7 @@
   <div class="span4">
     <div class="pad">
     <h3>
-      <a href="/es/management">
+      <a href="/es/administration">
         Administración de tu tienda
       </a>
     </h3>

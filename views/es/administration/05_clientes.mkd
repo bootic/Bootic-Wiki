@@ -1,0 +1,7 @@
+---
+:title: Listado de clientes
+:description: "Bla bla"
+:keywords: pedidos, órdenes, pagos, gestión, venta, despachar, pendiente, cerrada
+---
+
+## PENDIENTE

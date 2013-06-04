@@ -1,0 +1,28 @@
+---
+:title: Exportando tus pedidos
+:description: "Cómo generar reportes de tus pedidos en formato de planilla de cálculo."
+:keywords: pedidos, órdenes, pagos, gestión, venta, despachar, pendiente, cerrada
+---
+
+## PENDIENTE: Gestionando el CSV usando Google Docs
+
+Si deseas abrir con Google Docs, los pasos son:
+
+1. Crear &rarr; Hoja de cálculo.
+2. Menú **Archivo** &rarr; **Importar** &rarr; Seleccionar el archivo `CSV` desde
+   tu PC.
+3. Crear una hoja de cálculo nueva (en caso de querer esta opción).
+4. Separador Automático.
+5. Importar (esta acción tomará tiempo dependiente de la cantidad de datos).
+6. Una vez importado verá un mensaje y un enlace de «abrir ahora».
+7. Inmovilice el encabezado de las columnas, vaya **Ver** &rarr; **Inmovilizar
+   Filas** &rarr; **Inmovilizar 1 fila**.
+8. Si desea filtrar la información puede ir a **Datos** &rarr; **Filtro**,
+   con ello en cada encabezado de columna aparecerá un enlace donde podrá
+realizar los filtros que desee. Ejemplo: Filtrar todas las órdenes de agosto de
+2012 con estado «pending» (pendientes).
+
+5. Podrá filtrar las órdenes por fecha.
+6. Podrá buscar las órdenes por ID. No es necesario ingresar todo el código
+   puede ingresar parte de el, ejm «CB7»: filtrará todas las órdenes que
+comienzan con **CB7**.

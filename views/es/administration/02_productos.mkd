@@ -1,0 +1,8 @@
+---
+:title: Productos
+:description: Ingresando tu catálogo de productos a Bootic
+:keywords: productos, variantes, admin
+:group:
+  :name: Administración y configuración
+  :label: ¿Qué son las variantes de producto?
+---

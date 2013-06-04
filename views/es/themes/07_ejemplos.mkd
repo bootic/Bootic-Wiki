@@ -1,0 +1,186 @@
+---
+:title: Ejemplos
+:description: Ejemplos de código para listar disintos elementos en las plantillas.
+:keywords: liquid, filtros, diseno, size, asset_url
+---
+
+## [all_products](#all_products)
+<div id="all_products">
+
+Referencia a todos los productos visibles en la tienda. Lo puedes usar para iterar o paginar productos en cualquier página.
+
+<pre>:::html
+{% paginate all_products by 5 %}
+  {% for product in paginated_list %}
+    <p>
+      <a href="{{ product.url }}">{{ product.model }}</a> |
+      <span class="price">{{ product.price.format }}</span>
+    </p>
+  {% endfor %}
+  {{ paginated_list | pagination }}
+{% endpaginate %}
+</pre>
+
+<a href="/es/themes/pagination">Ver más</a> sobre paginación de listas.
+
+<code>all_products</code> soporta el método <code>tagged_with</code>, que retorna un sub-set de productos con la etiqueta provista.
+
+<pre>:::html
+{% for product in all_products.tagged_with.destacado %}
+  <p>
+    <a href="{{ product.url }}">{{ product.model }}</a> |
+    <span class="price">{{ product.price.format }}</span>
+  </p>
+{% endfor %}
+</pre>
+
+</div>
+
+Cada producto es un objeto [product](/es/themes/globales/product)
+
+## [collections](#collections)
+<div id="collections">
+
+Referencia a todas las colecciones en la tienda. Iterable.
+
+<pre>:::html
+{% for collection in collections.all %}
+  <p>
+    <a href="{{ collection.url }}">{{ collection.title }}</a>
+  </p>
+{% endfor %}
+</pre>
+
+También es posible acceder a una colección por nombre, usando la <em>manilla</em> o título normalizado.
+
+Este ejemplo itera los productos de la colección "portada".
+
+<pre>:::html
+{% for product in collections.portada.products %}
+  <p>
+    <a href="{{ product.url }}">{{ product.model }}</a>
+  </p>
+{% endfor %}
+</pre>
+
+</div>
+
+## [pages](#pages)
+<div id="pages">
+
+Referencia a todas las páginas en la tienda. Iterable.
+
+<pre>:::html
+{% for page in pages.all %}
+  <p>
+    <a href="{{ page.url }}">{{ page.title }}</a>
+  </p>
+{% endfor %}
+</pre>
+
+</div>
+
+## [forms](#forms)
+<div id="forms">
+
+Referencia a todas los formularios de contacto en la tienda. Iterable.
+
+<pre>:::html
+{% for form in form.all %}
+  <p>
+    <a href="{{ form.url }}">{{ form.title }}</a>
+  </p>
+{% endfor %}
+</pre>
+
+</div>
+
+## [menus](#menus)
+<div id="menus">
+
+Referencia a todas los menús de navegación en la tienda. Iterable. <a href="/es/themes/menus">Ver más</a>
+
+</div>
+
+## [blog](#blog)
+<div id="blog">
+
+Referencia al blog y noticias en la tienda. <a href="/es/themes/blog">Ver más</a>
+
+</div>
+
+## [tags](#tags)
+<div id="tags">
+
+Referencia a todas las etiquetas en la tienda. Iterable.
+
+<pre>:::html
+{% for tag in tags.all %}
+  <p>
+    <a href="{{ tag.url }}">{{ tag.name }}</a>
+  </p>
+{% endfor %}
+</pre>
+
+</div>
+
+## [product_types](#product_types)
+<div id="product_types">
+
+Referencia a todas los tipos de producto en la tienda. Iterable.
+
+<pre>:::html
+{% for product_type in product_types.all %}
+  <p>
+    <a href="{{ product_type.url }}">{{ product_type.name }}</a>
+  </p>
+{% endfor %}
+</pre>
+
+Este ejemplo itera los productos del tipo "zapatos"
+
+<pre>:::html
+{% if product_types.zapatos.has_products %}
+  {% for product in product_types.zapatos.products %}
+    <p>
+      <a href="{{ product.url }}">{{ product.model }}</a>
+    </p>
+  {% endfor %}
+{% endif %}
+</pre>
+
+</div>
+
+Cada tipo de producto es un objeto [product_type](/es/themes/globales/product_type)
+
+## [vendors](#vendors)
+<div id="vendors">
+
+Referencia a todas las marcas (fabricantes) de productos en la tienda.
+
+<pre>:::html
+{% for vendor in vendor.all %}
+  <h3>{{ vendor }}</h3>
+{% endfor %}
+</pre>
+
+</div>
+
+## [resource](#resource)
+<div id="resource">
+
+Referencia al objeto principal de una página. Por ejemplo, en la plantilla collection.html, <code>resource</code> es la colección actual. En product.html, <code>resource</code> es el producto actual, también disponible en el objeto <code>product</code>.
+
+<code>resource</code> es útil para comparar con objetos en una lista, por ejemplo, y destacar la página actual en un menú.
+
+<pre>:::html
+<ul>
+  {% for link in menus.sidebar %}
+  <li class="{{ 'current' | print_if_equal: resource, link }}">
+    {{ link.title | link_to: link.url }}
+  </li>
+  {% endfor %}
+</ul>
+</pre>
+
+</div>
