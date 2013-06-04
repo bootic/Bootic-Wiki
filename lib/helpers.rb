@@ -9,7 +9,7 @@ module Helpers
   end
 
   def mkd(page)
-    @content = render_markup(page.body)
+    @content = render_markup(page.content)
     pjax? ? @content : erb(:layout)
   end
 
@@ -40,7 +40,7 @@ module Helpers
   def partial(page, options={})
     erb :"_#{page}", options.merge!(:layout => false)
   end
-  
+
   def menu(path = '/')
     @menu ||= if path == '/'
       Page.root
@@ -48,8 +48,8 @@ module Helpers
       Page.find(path)
     end
   end
-  
-  # section to build menu from. 
+
+  # section to build menu from.
   # ie. for URL /es/administration/foo/bar section is "/es/administration"
   #
   def menu_section
@@ -58,13 +58,13 @@ module Helpers
       s[0..2].join('/')
     end
   end
-  
+
   # Load a menu for the current seciton of the wiki
   #
   def current_section
     @current_section ||= menu(menu_section)
   end
-  
+
   def pjax?
     !!request.env['HTTP_X_PJAX']
   end
@@ -92,8 +92,8 @@ module Helpers
   def build_menu(page, depth = 1)
     return '' unless page.in_menus?
     klass = 'current' if @page && page.url == @page.url
-    str = %(<li class="page depth_#{depth}">)
-    str << %(<a href="#{page.url}" class="#{klass}" title="#{page.description}">#{page.title}</a>)
+    str = %(<li class="page #{klass} depth_#{depth}">)
+    str << %(<a href="#{page.url}" title="#{page.description}">#{page.title}</a>)
     if page.size > 0
       page.each do |child|
         str << %(<ul>)
