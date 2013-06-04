@@ -75,8 +75,17 @@
 <div id="main" class="container clearfix">
 
   <div class="title">
-    <h2>Documentación Bootic</h2>
-    <p>Todo la información para empezar a vender en línea.</p>
+    <% if current_section %>
+      <h2>
+        <a href="<%= current_section.url %>">
+        <%= current_section.title %>
+        </a>
+      </h2>
+      <p><%= current_section.description %></p>
+    <% else %>
+      <h2>Documentación Bootic</h2>
+      <p>Todo la información para empezar a vender en línea.</p>
+    <% end %>
 
     <!-- lunr search -->
     <form id="search_form">
@@ -84,19 +93,24 @@
         <input type="search" placeholder="Busca una pregunta, palabra o tema" id="search" autocomplete="off" tabindex="1" />
         <button type="submit" class="btn btn-success">Buscar</button>
       </div>
-      
+
       <div id="search_box" style="display: none">
         <ul id="results"></ul>
       </div>
-      
+
     </form>
 
   </div><!-- /title -->
-  
-  <% if !is_index? %>
-  <div id="sidebar">
-    <div class="section">
-      <ul class="side_menu">
+
+  <div class="row">
+
+    <% if !is_index? %>
+    <div id="sidebar" class="span3">
+      <a class="toggle-menu visible-phone" href="#" onclick="$(this).next().toggleClass('hidden-phone')">
+        Ver menú
+      </a>
+
+      <ul class="hidden-phone side_menu">
         <li class="page depth_2">
           <a href="<%= current_section.url %>">Introducción</a>
         </li>
@@ -104,24 +118,19 @@
           <%= build_menu page %>
         <% end %>
       </ul>
-    </div>
-  </div><!-- /sidebar -->
-  <% end %>
 
-  <div id="content">
-
-    <div id="content_wrapper">
-      <%= @content %>
-    </div>
-
-    <% if !is_index? %>
-    <div id="comments">
-      <!-- Disqus comments -->
-      <div id="disqus_thread"></div>
-    </div>
+    </div><!-- /sidebar -->
     <% end %>
 
-  </div><!-- /content -->
+    <div id="content" class="<%= is_index? ? '' : 'span9' %>">
+
+      <div id="content_wrapper">
+        <%= @content %>
+      </div>
+
+    </div><!-- /content -->
+
+  </div><!-- /row -->
 
 </div><!-- /container -->
 
