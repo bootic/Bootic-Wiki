@@ -1,9 +1,0 @@
----
-:title: "Introducción a los productos"
-:description: "Cómo funcionan los productos y las variantes en Bootic"
-:keywords: productos, variantes, introduccion
----
-
-# Pendiente!
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ac lacinia eros. Pellentesque mattis, leo vitae suscipit sagittis, lorem dui egestas velit, vel pulvinar odio metus non lectus. Mauris ac nunc orci, nec tempus massa. Suspendisse eget augue eros, ac mollis dolor. Nullam at commodo leo. Pellentesque consectetur arcu id libero gravida lacinia. Maecenas eget vulputate magna. Mauris libero metus, dignissim quis consequat tincidunt, interdum sit amet augue. Donec rutrum purus a odio hendrerit ut lobortis dolor eleifend. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla id ligula tortor. Cras vel sapien sit amet leo ullamcorper elementum ut vel sem.

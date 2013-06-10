@@ -1,0 +1,12 @@
+  <tr>
+    <th>{{ shop.name }}</th>
+    <td>Nombre de la tienda</td>
+  </tr>
+  <tr>
+    <th>{{ shop.description }}</th>
+    <td>descripción de la tienda, modificable en el panel de administración.</td>
+  </tr>
+  <tr>
+    <th>{{ shop.url }}</th>
+    <td>URL de la portada.</td>
+  </tr>

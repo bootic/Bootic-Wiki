@@ -1,0 +1,128 @@
+---
+:title: Imágenes
+:description: Trabajando con imágenes en plantillas HTML y CSS Bootic
+:keywords: liquid, html, images, css, assets, static, imagen, imagenes, upload, fotos, asset_url, productos, thumbnail, medium, small, large, personalizado, grey
+---
+
+# Insertando imágenes
+
+<div class="clearfix">
+<img src="/img/themes/upload1.png" alt="Subir imagenes" class="left" />
+Para insertar una imagen de fondo en tu archivo CSS, primero tienes que subir la imagen al servidor mediante el botón "Subir archivos" en tu editor Bootic.
+
+A continuación puedes usar el nombre de la imagen subida en tus reglas CSS.
+
+<img src="/img/themes/css_upload.png" alt="Subir imagenes" class="right" />
+</div>
+
+Puedes leer más cómo trabajar con imágenes en Bootic en [este link](/es/themes/imagenes).
+
+<h3 id="favicon">Favicon</h3>
+
+El "favicon" es el ícono del sitio que aparece en la barra de título del navegador, y es simplemente una imagen que puedes insertar en la plantilla <code>layout.html</code>. Los favicons normalmente están optimizados y tienen la extensión ".ico", y los puedes generar a partir de una imagen en otro formato (png, gif, jpg) usando un editor de imágenes como Phothoshop o incluso herramientas gratuitas online (puedes encontrar muchas en Google: [http://www.google.co.uk/search?gcx=c&ix=c1&sourceid=chrome&ie=UTF-8&q=favico+generator](http://www.google.co.uk/search?gcx=c&ix=c1&sourceid=chrome&ie=UTF-8&q=favico+generator))
+
+Sube una imágen de 16x16px a la lista de archivos de tu editor de plantillas Bootic e inserta el siguiente código HTML en la sección <code>HEAD</code> de la plantilla <code>layout.html</code>.
+
+<pre>:::HTML
+<link rel="shortcut icon" href="{{ 'favicon.ico' | asset_url }}" type="image/x-icon" />
+</pre>
+
+"favico.ico" es la convención para estos archivos pero en verdad puedes nombrarlo como quieras.
+
+Recuerda leer la documentación sobre [cómo trabajar con imágenes en Bootic](/es/themes/imagenes).
+
+# Subiendo imágenes en el editor
+
+<img src="/img/themes/asset_upload.png" alt="Subir imágenes" class="left" />
+
+Abajo a la derecha en el editor de plantillas puedes subir archivos de tipo .gif, .png y .jpg. Bootic te muestra los archivos subidos con su nombre completo.
+
+Estas imágenes puedes ser usadas tanto en tus plantillas CSS como HTML.
+
+# Insertando imágenes en plantillas HTML
+
+Abre la plantilla que quieras (por ejemplo <code>layout.html</code>) y agrega una etiqueta de image <code>&lt;img&gt;</code>. En el atributo <code>src</code> debes insertar el nombre del archivo que subiste, tal cual aparece en la lista de archivos subidos, usando el filtro <code>asset_url</code>, así:
+
+<pre>:::html
+<img src="{{ 'logo.png' | asset_url }}" alt="Logo de mi tienda" />
+</pre>
+
+El filtro <code>asset_url</code> genera la URL al directorio donde Bootic guarda tus archivos. Una vez que guardas la plantilla, Bootic genera dinámicamentte la ruta completa, que se ve más o menos así:
+
+<pre>:::html
+<img src="http://static.bootic.net/uploads/themes/32/logo.png" alt="Logo de mi tienda" />
+</pre>
+
+<div class="tip">
+  <strong>Tip:</strong> si situas el cursor donde quieres insertar la imagen y a continuación haces click en la imagen en la lista de archivos subidos, Bootic inserta el nombre de imagen por ti.
+</div>
+
+# Insertando imágenes en plantillas CSS.
+
+En CSS basta con usar el nombre de la imágen directamente. Bootic guarda las plantillas CSS y las imágenes subidas en el mismo directorio, por lo que no es necesario usar el filtro <code>asset_url</code>.
+
+Este ejemplo situa la imagen "fondo.gif" como imagen de fondo del elemento <code>body</code> (por ejemplo en la plantilla <code>master.css</code>)
+
+<pre>:::css
+body {
+  font-size: 12px;
+  background: url(fondo.gif);
+}
+</pre>
+
+<h2 id="productos">Imágenes de productos</h2>
+
+La colección <code>product.images</code> contiene las imágenes subidas a un producto por los administradores de la tienda.
+
+Cada imagen tiene atributos que puedes usar para construir una galería o simplemente mostrar la primera.
+
+El siguiente ejemplo muestra las 2 primeras imágenes del producto.
+
+<pre>:::html
+{% if product.has_images %}
+  <div id="ficha-right" class="clearfix">
+    <!-- big images (2) -->
+    <ul id="img-big" class="assets clearfix">
+      {% for image in product.images limit:2 %}
+      <li class="img-big-{{ forloop.index }}">
+        <a href="{{ image.large }}" title="{{product.model}}'s details" rel="lightbox[ficha]">
+          <img src="{{ image.small }}" alt="{{ product.model }}" />
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+    <!-- /big images -->
+  </div>
+{% endif %}
+</pre>
+
+Cada imagen muestra el tamaño "small" (240x180px) dentro de un link que apunta a la versión "large" (800x600px). Esto es útil para usar librerías JavaScript para galerías de imágenes (como las excelentes <a href="http://www.huddletogether.com/projects/lightbox2/">Lightbox</a> o  <a href="http://fancybox.net/">FancyBox</a>) o simplemente mostra la imagen grande en el navegador.
+
+El fragmento a continuación muestra el resto de las imágenes de un producto (si es que tiene) en un tamaño menor ("thumbnail", de 75x75px).
+
+<pre>:::html
+{% if product.images | size > 2 %}
+<!-- small images -->
+<ul id="img-small" class="assets clearfix">
+  {% for image in product.images offset: 2 %}
+  <li>
+    <a href="{{ image.large }}" title="{{product.model}}'s details" rel="lightbox[ficha]">
+      <img src="{{ image.thumbnail }}" alt="{{ product.model }}" />
+    </a>
+  </li>
+  {% endfor %}
+</ul>
+<!-- /small images -->
+{% endif %}
+</pre>
+
+Cada imagen de producto tiene los siguientes tamaños predefinidos:
+
+<ul>
+  <li><code>thumbnail</code>: 75x75</li>
+  <li><code>small</code>: 240x180</li>
+  <li><code>medium</code>: 500x375</li>
+  <li><code>large</code>: 800x600</li>
+</ul>
+
+Si quieres obtener tamaños específicos, haz click a la izquierda en "Imagenes > Control Avanzado".

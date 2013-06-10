@@ -1,0 +1,5 @@
+Links
+link.title
+link.url
+link.type
+link.object

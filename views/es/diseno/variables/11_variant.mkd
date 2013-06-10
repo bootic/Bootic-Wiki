@@ -1,0 +1,4 @@
+variant.id
+variant.title
+variant.available
+variant.stock

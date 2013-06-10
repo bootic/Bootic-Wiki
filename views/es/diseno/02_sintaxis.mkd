@@ -1,0 +1,70 @@
+---
+:title: Sintaxis
+:description: Cómo modificar el código de las plantillas
+:keywords: liquid, filtros, diseno, size, asset_url
+---
+
+# Liquid: El lenguaje de las plantillas Bootic
+
+Bootic utiliza Liquid para la creación y modificación de los templates que definen el HTML de las tiendas online; se trata de un lenguaje de templating que combina los tags tradicionales de HTML con otros que le son propios, llamados tags especiales.
+
+## Cómo se genera el HTML
+
+Cada una de las plantillas Bootic recibe contenido dinámicamente de acuerdo a lo que estas mostrando en ella. Para esto, Bootic define una sintaxis especial que puedes usar en las plantillas HTML para insertar el contenido dinámico. La tecnología detras de estas variables se llama **Liquid** y puedes leer más en [este link](https://github.com/Shopify/liquid/wiki/Liquid-for-Designers).
+
+Por ejemplo, para generar una lista de productos en la plantilla *products.html*:
+
+<pre>:::html
+<ul id="products">
+  {% for product in products %}
+  <li class="product">
+    <h3><a href="{{product.url}}">{{ product.model }}</a></h3>
+    <span class="price">{{ product.price.format }}</span>
+  </li>
+  {% endfor %}
+</ul>
+</pre>
+
+La sintaxis de Liquid define tres tipos de operaciones: variables, filtros y etiquetas.
+
+### [Variables](#variables)
+
+Una variable está rodeada por {{}} e inserta texto directamente en tu plantilla.
+
+<pre>:::html
+{{ product.url }}
+</pre>
+
+### [Filtros](#filtros)
+
+Un filtro modifica o agrega al valor de una variable o expresión. La sintáxis de un filtro es <code>expresión | filtro</code>. La barra vertical quiere decir "toma el valor de la expresión y pásalo a través del filtro".
+
+Por ejemplo, el filtro <code>asset_url</code> agrega la URL completa del servidor de archivos. El ejemplo
+
+<pre>:::html
+'estilos.css' | asset_url
+</pre>
+
+... Genera la ruta absoluta a una imagen subida a través del editor de plantillas Bootic, como esta:
+
+<pre>:::html
+http://static.bootic.net/themes/110/estilos.css
+</pre>
+
+<a href="/es/themes/filters">Este link</a> lista todos los filtros disponibles en Bootic y detalla sus formas de uso.
+
+### [Etiquetas](#etiquetas)
+
+Una etiqueta esta rodeada por {% %} y no retorna texto directamente, sino que modifica el contenido que rodea. Este ejemplo itera una lista de 3 productos y genera HTML para cada producto en la lista.
+
+<pre>:::html
+{% for product in products limit:3 %}
+<a href="{{ product.url }}">{{ product.model }}</a>
+{% endfor %}
+</pre>
+
+El resultado es 3 links HTML, uno para cada producto.
+
+<div class="tip">
+  <strong>Liquid</strong> es un motor de plantillas muy completo y este wiki sólo nos enfocamos en los aspectos que tienen relación directa con plantillas de tiendas Bootic. Para uso general te recomendamos que revises <a href="https://github.com/Shopify/liquid/wiki/Liquid-for-Designers" title="Documentación completa de Liquid">la documentación oficial de liquid</a>.
+</div>

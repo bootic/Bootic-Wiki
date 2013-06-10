@@ -1,0 +1,27 @@
+---
+:title: Filtros de texto
+:description:
+:keywords: foo, bar
+---
+
+# Filtros de texto
+
+ - t
+ - downcase(input)
+ - upcase(input)
+ - format_text
+ - strip_html
+ - strip_newlines
+ - truncate(input, characters = 100)
+ - truncatewords(input, words = 15)
+ - split
+ - print_if_equal
+ - print_if_matches
+ - print_if_included
+
+ - escape(input)
+ - newline_to_br
+ - replace(input, substring, replacement)
+ - replace_first(input, substring, replacement)
+ - remove(input, substring)
+ - remove_first(input, substring)

@@ -1,0 +1,11 @@
+---
+:title: Filtros de imágenes
+:description:
+:keywords: foo, bar
+---
+
+# Filtros de imágenes
+
+ - product_image_url
+ - resize
+ - greyscale

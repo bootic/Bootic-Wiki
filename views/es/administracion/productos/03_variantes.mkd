@@ -1,0 +1,11 @@
+---
+:title: Las variantes de productos
+:description: Qué son las variantes y para qué sirven
+:keywords: productos, variantes, introduccion
+---
+
+# ¿Qué son las variantes de un producto?
+
+Las Variantes son “versiones” distintas de un mismo producto, y por lo mismo comparten todos los atributos del producto junto a su peso y precio. El caso más común son las tallas de una misma polera, o también, los colores de una bicicleta de cierta marca y modelo. Todos los productos tienen al menos una Variante, ya que en rigor es la Variante de un producto lo que el cliente agrega al carro a la hora de hacer una compra.
+
+Si un producto tiene sólo una Variante sólo se presenta el botón “Agregar al carro” junto al campo para que el cliente defina el número de unidades. En el caso de que un producto tenga dos o más variantes se le dará al opción para que elija una de ellas.

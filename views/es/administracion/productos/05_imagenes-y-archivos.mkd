@@ -1,0 +1,9 @@
+---
+:title: Fotos y archivos asociados
+:description: Cómo asociar fotos a productos y definir la primaria.
+:keywords: fotos, imágenes, archivos, lista, productos, slideshow, vitrina
+---
+
+# Las imágenes de tus productos
+
+PENDIENTE

@@ -1,0 +1,5 @@
+---
+:title: Productos
+:description: Ingresando tu catálogo de productos a Bootic
+:keywords: productos, variantes, admin
+---

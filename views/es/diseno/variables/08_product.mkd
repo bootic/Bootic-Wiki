@@ -1,0 +1,27 @@
+### [Producto](#producto)
+
+Disponible en product.html o dentro de un *loop* de productos.
+
+<ul>
+  <li><code>product.title</code> - el título o modelo, sinónimo de <code>product.model</code></li>
+  <li><code>product.description</code> - la descripción</li>
+  <li><code>product.vendor</code> - la marca o fabricante</li>
+  <li><code>product.tags</code> - lista de etiquetas del producto</li>
+  <li><code>product.collections</code> - lista de colecciones del producto</li>
+  <li><code>product.variants</code> - lista de variantes del producto</li>
+  <li><code>product.any_available</code> - [true|false] si el producto tiene alguna variable disponible</li>
+  <li><code>product.available_variants</code> - lista de variantes con stock disponible</li>
+  <li><code>product.unavailable_variants</code> - lista de variantes con stock agotado</li>
+  <li><code>product.has_variants</code> - [true|false]</li>
+  <li><code>product.images</code> - lista de imágenes asociadas al producto</li>
+  <li><code>product.first_image</code> - primera imagen del producto</li>
+  <li><code>product.has_images</code> - [true|false]</li>
+  <li><code>product.files</code> - lista de archivos (no imágenes) del producto</li>
+  <li><code>product.has_files</code> - [true|false]</li>
+  <li><code>product.product_type</code> - tipo de producto con campos personalizados</li>
+  <li><code>product.price</code> - precio del producto</li>
+  <li><code>product.weight_in_gr</code> - peso del producto, en gramos</li>
+  <li><code>product.weight_in_kg</code> - peso del producto, en kilos</li>
+  <li><code>product.has_similar_products</code> - [true|false]</li>
+  <li><code>product.attributes</code> - atributos personalizados de producto</li>
+</ul>

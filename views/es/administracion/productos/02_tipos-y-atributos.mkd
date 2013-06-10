@@ -1,0 +1,37 @@
+---
+:title: Tipos de productos
+:description: "Aprende a usar los tipos de producto y sus atributos específicos."
+:keywords: custom, field, productos, tipos, atributos, campo, campos, personalización, agregar
+:group:
+  :name: Administración y configuración
+  :label: ¿Puedo agregar nuevos atributos a un producto?
+---
+
+# ¿Qué son los tipos de productos?
+
+El Tipo de un producto es, por lo general, el nombre del producto en sí, lo que lo define como tal. Por ejemplo un “Apple Macbook” sería de tipo “notebook”, así como un “Nintendo Wii” sería una “consola de juegos”. Por lo general los tipos se usan en plural (i.e. “Notebooks”) ya que se usan como categorías de navegación. Un producto sólo puede pertenecer a un tipo, ya que es éste el que define los atributos del producto en base a su naturaleza. Tú defines los atributos para los Tipos de producto que quieras.
+
+Por ejemplo, todas las bicicletas tienen un aro, un número de cambios y un material específico. Entonces al crear el Tipo “Bicicletas” definirías esos tres atributos para que cuando agregues una nueva bicicleta a tu catálogo agregues los valores de esos atributos, además de su modelo, precio y descripción. Puedes marcar los atributos como requeridos para todos los productos de ése tipo, o bien dejarlos como opcionales. En la ficha pública de un producto sólo se verán los que contengan información.
+
+## Cómo crear un tipo de producto
+
+Estando en la ficha del producto dale clic al enlace «Administrar tipos de
+producto» (Figura 2), luego anda a:
+
+1. Nuevo tipo de Producto
+2. Pon un nombre, por Ejm: «Sacajugos»
+3. Nombre del primer atributo, por ejm: «Potencia»
+4. Tipo: Acá tienes 6 alternativas, por ejm: «Texto corto»
+6. Comentario: pequeña frase que describe el atributo, por ejm: «En Watts»
+7. Requerido: define si el campo es requerido o no.
+
+No hay límites para ingresar atributos a un Tipo de Producto, pueden ser todos los que quieras.
+
+<div class="captura">
+    <div class="c-contenido">
+        <img src="/img/admin/ss_new_product_type.png" width="650" alt="agregar un nuevo tipo de producto" />
+    </div>
+    <div class="c-pie">
+        <strong>Figura 2</strong>: Creando un nuevo tipo de producto
+    </div>
+</div>

@@ -1,0 +1,8 @@
+post.id
+post.title
+post.author
+post.body
+post.created_at
+post.published_on
+post.url
+post.tags

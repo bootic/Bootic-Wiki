@@ -1,0 +1,115 @@
+---
+:title: layout.html
+:description: Plantilla HTML global para todas las páginas
+:keywords: home, html, plantilla, template, diseno, layout, content_for_layout, shop, css, master, favicon, include, stylesheet_tag, javascript_tag, current_title
+---
+
+# La plantilla principal: layout.html
+
+Esta es la plantilla principal de tu tienda. Cada página que visitas se despliega dentro de layout.html usando la variable <code>{{ content_for_layout }}</code>. Para motivos de ejemplificar, ésta es una versión simplificada de una plantilla **layout.html**.
+
+<pre>:::html
+<html>
+  <head>
+    <title>{% current_title %} - {{ shop.name }}</title>
+    <meta name="description" content="{{ shop.description }}">
+  </head>
+  <body>
+    {{ content_for_layout }}
+  </body>
+</html>
+</pre>
+
+Si tenemos una plantilla [home.html](/es/themes/home) con el siguiente contenido:
+
+<pre>:::html
+<h1>Hola, estas en la portada de mi sitio!</h1>
+</pre>
+
+... Y visitamos la portada, la variable <code>{{ content_for_layout }}</code> es reemplazada autom&aacute;ticamente por el contenido de home.html. El HTML resultante es:
+
+<pre>:::html
+  <html>
+    <head>
+      <title>Descripción de la tienda - Mi tienda</title>
+      <meta name="description" content="Descripción de la tienda">
+    </head>
+    <body>
+      <h1>Hola, estas en la portada de mi sitio!</h1>
+    </body>
+  </html>
+</pre>
+
+<div class="tip">
+  La etiqueta especial <code>{% current_title %}</code> genera automáticamente un título adecuado para la página actual.
+</div>
+
+## Incluyendo otras plantillas
+
+A veces es buena idea poner fragmentos de HTML compartidos en sus propias plantillas e incluirlas en otras plantillas.
+
+Para esto simplemente crea una nueva plantilla .html con tu código e inclúyela en layout.html (u otras) con la etiqueta <code>{% include %}</code>.
+
+<pre>:::html
+{% include 'mi_plantilla' %}
+</pre>
+
+Por ejemplo, una de los temas de diseño de Bootic usa esta técnica para incluir distintas barras laterales dependiendo de la página que se está desplegando:
+
+<pre>:::html
+{% if template == 'collection' %}
+  {% include 'sidebar_pages' %}
+{% elsif template == 'page' %}
+  {% include 'sidebar_pages' %}
+{% elsif template == 'blog' %}
+  {% include 'sidebar_blog' %}
+{% else %}
+  {% include 'sidebar' %}
+{% endif %}
+</pre>
+
+<h2 id="custom_layouts">Layouts especializados</h2>
+
+Tu tienda usa la plantilla <code>layout.html</code> por defecto para todas las páginas, pero también puedes crear layouts especializados para distintas secciones de tu sitio. Por ejemplo, si creas una plantilla llamada <code>product_layout.html</code>, ésta será usada en lugar de <code>layout.html</code> para todas las fichas individuales de producto. Las opciones son:
+
+<table class="list" cellpadding="0" cellspacing="0">
+  <thead>
+    <tr>
+      <th>plantilla</th>
+      <th>usada en URLs</th>
+      <th>&nbsp;</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th><code>home_layout.html</code></th>
+      <td><small>/</small></td>
+      <td>Layout específico para la portada</td>
+    </tr>
+    <tr>
+      <th><code>products_layout.html</code></th>
+      <td><small>/products, /types/[tipo], /collections/[colección]</small></td>
+      <td>Todas las listas de productos</td>
+    </tr>
+    <tr>
+      <th><code>product_layout.html</code></th>
+      <td><small>/products/[producto]</small></td>
+      <td>Fichas individuales de producto</td>
+    </tr>
+    <tr>
+      <th><code>page_layout.html</code></th>
+      <td><small>/pages/[producto]</small></td>
+      <td>Fichas individuales de producto</td>
+    </tr>
+    <tr>
+      <th><code>form_layout.html</code></th>
+      <td><small>/forms/[formulario]</small></td>
+      <td>Formularios de contacto</td>
+    </tr>
+    <tr>
+      <th><code>cart_layout.html</code></th>
+      <td><small>/cart</small></td>
+      <td>Carro de compra antes de pasar al "checkout"</td>
+    </tr>
+  </tbody>
+</table>
