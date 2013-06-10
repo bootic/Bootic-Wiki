@@ -1,7 +1,8 @@
 module Helpers
 
+  # returns true if we're showing a language index (/es or /en)
   def is_index?
-    request.path == '' || request.path == '/'
+    request.path[/^\/([^\/]+)$/]
   end
 
   def cache_long(seconds = 3600)
@@ -16,7 +17,11 @@ module Helpers
   def markdown_engine
     @markdown_engine ||= begin
       renderer = Redcarpet::Render::HTML.new(:with_toc_data => true)
-      engine = Redcarpet::Markdown.new(renderer, :autolink => true, :space_after_headers => true)
+      engine = Redcarpet::Markdown.new(renderer,
+        :autolink => true,
+        :space_after_headers => true,
+        :no_intra_emphasis => true
+      )
       engine
     end
   end
@@ -91,7 +96,7 @@ module Helpers
 
   def build_menu(page, depth = 1)
     return '' unless page.in_menus?
-    klass = 'current' if @page && page.url == @page.url
+    klass = 'current' if is_current?(page)
     str = %(<li class="page #{klass} depth_#{depth}">)
     str << %(<a href="#{page.url}" title="#{page.description}">#{page.title}</a>)
     if page.size > 0
@@ -102,6 +107,11 @@ module Helpers
       end
     end
     str << %(</li>)
+  end
+
+  def is_current?(page)
+    return false unless @page
+    @page.url[page.url]
   end
 
   def current_url
