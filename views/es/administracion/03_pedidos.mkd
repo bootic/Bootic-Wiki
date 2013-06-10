@@ -1,10 +1,7 @@
 ---
-:title: Órdenes
-:description: "Órdenes (compra)"
-:keywords: órdenes, compra, ot, Orden compra, pedidos
-:group:
-  :name: Administración y configuración
-  :label: ¿Cómo se gestionan las Órdenes?
+:title: Pedidos
+:description: Pedidos o compras realizadas por tus clientes.
+:keywords: órdenes, compra, ot, orden compra, pedido, pedidos
 ---
 
 # ¿Qué son y cómo funcionan los pedidos?
