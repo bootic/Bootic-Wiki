@@ -1,0 +1,16 @@
+---
+:title: blog
+:description: Atributos del objeto blog
+:keywords: variables, blog
+---
+
+# El objeto blog
+
+Variable global.
+
+<ul>
+  <li><code>blog.posts</code></li>
+  <li><code>blog.posts_count</code></li>
+  <li><code>blog.url</code></li>
+  <li><code>blog.calendar</code></li>
+</ul>

@@ -8,4 +8,5 @@
 
 Esta plantilla despliega los formularios de contacto que puedes crear en tu tienda Bootic.
 
-PENDIENTE
+<th>{%&nbsp;contact_form_field&nbsp;%}</th>
+<td>Etiqueta especial que muestra los campos definidos para el formulario actual.</td>

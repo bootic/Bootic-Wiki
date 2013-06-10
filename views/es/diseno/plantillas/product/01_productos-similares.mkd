@@ -34,11 +34,8 @@ En el editor de plantillas de tu tienda, abre a la plantilla <a href="/es/themes
           <a href="{{ p.url }}" title="{{ p.model }}">{{ p.model | truncate:30 }}</a>
         </h3>
         
-        <p class="product-vendor">{{ p.vendor }}</p>
-        
-        {% unless p.price.to_f == 0.0 %}
+        <p class="product-vendor">{{ p.vendor }}</p>        
         <small class="product-price">{{ p.price.format }}</small>
-        {% endunless %}
 
       </li>
       {% endfor %}
@@ -74,34 +71,6 @@ El filtro "t" se usa para traducir cadenas de texto comunes conocidad por Bootic
   {% endfor %}
 </pre>
 
-Este bloque está recorriendo los 4 primeros productos en la colección <code>similar_products</code> del producto actual. Cada producto es asignado a la variable <code>p</code> para que puedas acceder a sus atributos al generar el HTML para cada uno. Esto es lo que se llama un "loop".
+Este bloque está recorriendo los 4 primeros productos en la colección <code>similar_products</code> del producto actual. Cada producto es asignado a la variable <code>p</code> para que puedas acceder a sus atributos al generar el HTML para cada uno. Esto es lo que se llama un "loop". 
 
-Dentro del <em>loop</em> incluyes el HTML que quieres generar para cada producto. En el ejemplo de esta página estamos mostrando la primera imagen de cada producto dentro de un hipervínculo ("link") a la ficha del producto.
-
-<pre>:::html
-  <a href="{{ p.url }}" title="{{ p.model }}">
-    <img src="{{ p.first_image.thumbnail }}" alt="{{ p.model }}" />
-  </a>
-</pre>
-
-Luego mostramos el título o modelo del producto - de nuevo dentro de un link - usando el filtro <code>truncate</code> para asegurarnos de que sólo mostramos los primeros 30 caractéres del título y así evitar romper el diseño.
-
-<pre>:::html
-  <a href="{{ p.url }}" title="{{ p.model }}">{{ p.model | truncate:30 }}</a>
-</pre>
-
-Luego mostramos el nombre del fabricante del producto ("vendor")
-
-<pre>:::html
-  <p class="product-vendor">{{ p.vendor }}</p>
-</pre>
-
-Por último, mostramos el precio de producto, pero sólo si éste es mayor que 0 (para no mostrar un "0" para productos que pudieran no tener precio o ser gratuitos)
-
-<pre>:::html
-  {% unless p.price.to_f == 0.0 %}
-    <small class="product-price">{{ p.price.format }}</small>
-  {% endunless %}
-</pre>
-
-Usamos el método <code>format</code> en el precio del producto, que despliega la puntuación correcta y el símbolo de la moneda configurada en tu tienda.
+De aquí en adelante, este listado se comporta de la misma forma que un conjunto de productos, como sucede en la plantilla <a href="/es/diseno/plantillas/products">products.html</a>.

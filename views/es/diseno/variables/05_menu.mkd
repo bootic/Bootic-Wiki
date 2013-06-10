@@ -1,4 +1,15 @@
-menu.id
-menu.title
-menu.handle
-menu.links
+---
+:title: menu
+:description: Atributos del objeto menu
+:keywords: variables, variable, menu, navegacion
+---
+
+# El objeto meu
+
+Disponible a través de la variable global <code>menus</code>, ya sea iterando o usando un _handle_ (ej. <code>menus.sidebar</code>).
+
+<ul>
+  <li><code>menu.title</code></li>
+  <li><code>menu.handle</code></li>
+  <li><code>menu.links</code></li>
+</ul>

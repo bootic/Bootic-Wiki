@@ -3,6 +3,7 @@
 :description: Paginando listas de productos en products.html, collection.html y otras plantillas
 :keywords: paginación, páginas, listas, productos, ecommerce, paginated_list, paginate, pagination, endpaginate
 ---
+
 # Paginación de listas productos
 
 La etiqueta <code>{% paginate %}</code> sirve para dividir listas de productos en varias páginas. Dentro de cada bloque <code>{% paginate %}</code> existe la variable <code>paginated_list</code> con el grupo de objetos para la página actual.

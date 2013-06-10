@@ -8,7 +8,7 @@
 
 Las siguientes plantillas están presentes presentes en todas las tiendas.
 
-<table class="list" cellpadding="0" cellspacing="0">
+<table class="table table-striped">
   <thead>
     <tr>
       <th>plantilla</th>
@@ -18,54 +18,49 @@ Las siguientes plantillas están presentes presentes en todas las tiendas.
   </thead>
   <tbody>
     <tr>
-      <th><a href="/es/themes/layout">layout.html</a></th>
+      <th><a href="/es/diseno/plantillas/layout">layout.html</a></th>
       <td>Todas</td>
-      <td>es la plantilla HTML principal. Todas las otras páginas se despliegan aquí dentro.</td>
+      <td>La plantilla HTML principal. Todas las otras páginas se despliegan aquí dentro.</td>
     </tr>
     <tr>
-      <th><a href="/es/themes/home">home.html</a></th>
+      <th><a href="/es/diseno/plantillas/home">home.html</a></th>
       <td>/</td>
-      <td>es la página que ves cuando visitas la portada de tu tienda.</td>
+      <td>Plantilla usada para desplegar la portada de una tienda.</td>
     </tr>
     <tr>
-      <th><a href="/es/themes/products">products.html</a></th>
-      <td><code>/products</code>, <code>/types/mp3s</code>, <code>/types/mp3s/tags/apple</code></td>
-      <td>despliega todos los productos de tu tienda.</td>
+      <th><a href="/es/diseno/plantillas/products">products.html</a></th>
+      <td><code>/products</code>, <code>/types/mp3s</code>, <code>/collections/ofertas</code></td>
+      <td>Plantilla para desplegar conjuntos de productos, ya sea por coleccíón o por tipo.</td>
     </tr>
     <tr>
-      <th><a href="/es/themes/product">product.html</a></th>
+      <th><a href="/es/diseno/plantillas/product">product.html</a></th>
       <td><code>/product/ipod-nano</code></td>
-      <td>es la ficha o detalle de cada producto.</td>
+      <td>Plantill para la ficha o detalle de un producto.</td>
     </tr>
     <tr>
-      <th><a href="/es/themes/collection">collection.html</a></th>
-      <td><code>/collections/destacados</code>, y colecciones filtradas por tipo o etiquetas</td>
-      <td>detalle de una colección de productos. Aquí muestras la descripción de la colección y la lista de productos asociados a ella.</td>
-    </tr>
-    <tr>
-      <th><a href="/es/themes/page">page.html</a></th>
+      <th><a href="/es/diseno/plantillas/page">page.html</a></th>
       <td><code>/pages/about-us</code></td>
-      <td>detalle de cada página de contenido que hayas creado para tu tienda.</td>
+      <td>Vista detalle de cada página con contenido.</td>
     </tr>
     <tr>
-      <th><a href="/es/themes/form">form.html</a></th>
+      <th><a href="/es/diseno/plantillas/form">form.html</a></th>
       <td><code>/forms/contacto</code></td>
-      <td>contenido y campos de cada formulario de contacto de tu tienda.</td>
+      <td>Contenido y campos de un formulario de contacto.</td>
     </tr>
     <tr>
-      <th><a href="/es/themes/cart">cart.html</a></th>
-      <td><code>/cart</code></td>
-      <td>muestra a tus clientes el contenido de sus carros de compra en tu tienda.</td>
-    </tr>
-    <tr>
-      <th><a href="/es/themes/blog">blog.html</a></th>
+      <th><a href="/es/diseno/plantillas/blog">blog.html</a></th>
       <td><code>/blog</code></td>
-      <td>lista de artículos en el blog.</td>
+      <td>Plantilla para mostrar listados de noticias publicadas.</td>
     </tr>
     <tr>
-      <th><a href="/es/themes/blog">post.html</a></th>
-      <td><code>/blog/2011/01/13/hola-mundo</code></td>
-      <td>detalle de un artículo del blog.</td>
+      <th><a href="/es/diseno/plantillas/blog">post.html</a></th>
+      <td><code>/blog/2014/01/13/hola-mundo</code></td>
+      <td>Detalle de una noticia publicada en el blog.</td>
+    </tr>
+    <tr>
+      <th><a href="/es/diseno/plantillas/cart">cart.html</a></th>
+      <td><code>/cart</code></td>
+      <td>Plantilla para desplegar los productos ingresados al carro de compra de tus clientes.</td>
     </tr>
   </tbody>
 </table>

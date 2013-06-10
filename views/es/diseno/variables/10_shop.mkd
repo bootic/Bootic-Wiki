@@ -1,12 +1,15 @@
-  <tr>
-    <th>{{ shop.name }}</th>
-    <td>Nombre de la tienda</td>
-  </tr>
-  <tr>
-    <th>{{ shop.description }}</th>
-    <td>descripción de la tienda, modificable en el panel de administración.</td>
-  </tr>
-  <tr>
-    <th>{{ shop.url }}</th>
-    <td>URL de la portada.</td>
-  </tr>
+---
+:title: shop
+:description: Atributos del objeto shop
+:keywords: variables, variable, shop
+---
+
+# El objeto shop
+
+Disponible a través de la variable global <code>shop</code>.
+
+<ul>
+  <li><code>shop.name</code>: Nombre de la tienda</li>
+  <li><code>shop.description</code>: Descripción de la tienda, modificable en la sección de preferencias.</li>
+  <li><code>shop.url</code>: URL de la portada de la tienda.</li>
+</ul>

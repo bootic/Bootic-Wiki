@@ -1,0 +1,15 @@
+---
+:title: vendor
+:description: Atributos del objeto vendor
+:keywords: variables, variable, vendor
+---
+
+# El objeto vendor
+
+Disponible al iterar sobre el conjunto global <code>vendors</code>, o como el atributo <code>vendor</code> de un <a href="/es/diseno/variables/product">producto</a>.
+
+<ul>
+  <li><code>vendor.name</code>: Nombre de la marca o fabricante.</li>
+  <li><code>vendor.url</code>: URL que despliega los productos de ese vendor.</li>
+  <li><code>vendor.products</code>: Productos para ese vendor.</li>
+</ul>

@@ -1,6 +1,12 @@
-### [Producto](#producto)
+---
+:title: product
+:description: Atributos del objeto product
+:keywords: variables, variable, product
+---
 
-Disponible en product.html o dentro de un *loop* de productos.
+# El objeto product
+
+Disponible en la plantilla <a href="/es/diseno/plantillas/product">product.html</a> o dentro de un loop de posts.
 
 <ul>
   <li><code>product.title</code> - el título o modelo, sinónimo de <code>product.model</code></li>

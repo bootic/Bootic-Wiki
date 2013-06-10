@@ -13,10 +13,7 @@ Esta es una de las plantillas más sencillas de Bootic y su función es mostrar 
 
   <div class="entry">
     {{ page.body }}
-  </div><!-- /entry -->
+  </div>
 </pre>
 
-La variable <code>page</code> es la página que estás viendo en ese momento y tiene sólo 2 atributos:
-
-* title - El título dado a la página en la interfaz de administración.
-* body - el contenido completo de la página, incluyendo links, imágenes y HTML que le hayas agregado en el editor de páginas en la interfaz de administración.
+Los atributos disponibles para la variable <code>page</code> los puedes ver <a href="/es/diseno/variables/page">aquí</a>.
