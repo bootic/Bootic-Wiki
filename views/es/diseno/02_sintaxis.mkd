@@ -6,14 +6,12 @@
 
 # Liquid: El lenguaje de las plantillas Bootic
 
-Bootic utiliza [Liquid](https://github.com/Shopify/liquid/wiki/Liquid-for-Designers) como lenguaje para crear y modificar las plantillas que generan el HTML de una tienda. Al igual que otros sistemas de _templating_, Liquid permite combinar código HTML con etiquetas especiales para desplegar el contenido en variables.
+Bootic utiliza [Liquid](https://github.com/Shopify/liquid/wiki/Liquid-for-Designers) como lenguaje para crear y modificar las plantillas que generan el HTML de una tienda. Al igual que otros sistemas de _templating_, Liquid permite combinar código HTML con etiquetas especiales para desplegar el contenido.
 
-## Veamos un ejemplo
-
-Por ejemplo, para generar una lista de productos en la plantilla *products.html*:
+Por ejemplo, para mostrar una lista de productos en la plantilla *products.html*, usaríamos el siguiente código:
 
 <pre>:::html
-<ul id="products">
+<ul class="products">
   {% for product in products %}
   <li class="product">
     <h3><a href="{{ product.url }}">{{ product.model }}</a></h3>
@@ -25,7 +23,7 @@ Por ejemplo, para generar una lista de productos en la plantilla *products.html*
 
 La sintaxis de Liquid define tres tipos de elementos: <code>variables</code>, <code>filtros</code> y <code>etiquetas</code>.
 
-### [Variables](/es/diseno/variables)
+## [Variables](/es/diseno/variables)
 
 Una variable está rodeada por <code>{{</code> y <code>}}</code> e inserta texto directamente en tu plantilla.
 
@@ -41,15 +39,17 @@ Esto resulta en:
 
 Más información sobre las variables disponibles <a href="/es/diseno/variables">aquí</a>.
 
-### [Filtros](/es/diseno/filtros)
+## [Filtros](/es/diseno/filtros)
 
 Un filtro modifica o agrega al valor de una variable o expresión. La sintáxis de un filtro es <code>expresión | filtro</code>. La barra vertical quiere decir "toma el valor de la expresión y pásalo a través del filtro".
+
+Un ejemplo usando el filtro ´truncate´:
 
 <pre>:::html
 {{ 'Esta frase es muy larga así que la cortaremos' | truncate:20 }}
 </pre>
 
-Este ejemplo resulta en:
+Esto resulta en:
 
 <pre>:::html
 Esta frase es muy l...
@@ -57,7 +57,7 @@ Esta frase es muy l...
 
 Más información sobre las filtros disponibles <a href="/es/diseno/filtros">aquí</a>.
 
-### [Etiquetas](/es/diseno/etiquetas)
+## [Etiquetas](/es/diseno/etiquetas)
 
 Una etiqueta esta rodeada por <code>{%</code> y <code>%}</code> y no retorna texto directamente, sino que modifica el contenido que rodea. Este ejemplo itera una lista de 3 productos y genera HTML para cada producto en la lista.
 
