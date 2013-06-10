@@ -1,0 +1,47 @@
+---
+:title: Plantilla común para las listas de productos 
+:description: Foobar.
+:keywords: foo, bar
+---
+
+## Reutilizando HTML de detalle de producto con la etiqueta *loop*
+
+A veces el HTML de cada producto en <code>products.html</code> es similar o igual al de la plantilla de detalle de un producto en <code>product.html</code> o en otras listas de productos como <code>collection.html</code>. En estos casos puedes crear una plantilla nueva HTML (por ejemplo "product_item.html") cuya función es mostrar los datos de cada producto en distintas páginas.
+
+<pre>:::html
+  <li class="item-{{ product_item_counter }} clearfix">
+
+    <div class="image-centerer">
+      <a href="{{ product_item.url }}" class="product-image">
+        <img src="{{ product_item.first_image.small }}" alt="{{ product_item.title }}" />
+      </a>
+    </div>
+
+    <h3 class="product-model">
+      <a href="{{ product_item.url }}" title="{{ product_item.title }}">{{ product_item.title | truncate:26 }}</a>
+    </h3>
+
+    {% unless product_item.price.zero %}
+      <small class="product-price">{{ product_item.price.format }}</small>
+    {% endunless %}
+
+    {% if product_item.vendor != shop.name %}
+      <span class="product-vendor">{{ product_item.vendor }}</span>
+    {% endif %}
+  </li>
+</pre>
+
+A continuación, nuestro *loop* de productos en <code>products.html</code> o <code>collection.html</code> usamos la etiqueta especial *loop* para llamar nuestra plantilla <code>product_item.html</code> con cada producto en la lista:
+
+<pre>:::html
+{% paginate products by 20 %}
+  <ul class="products clearfix">
+  {% loop paginated_list in 'product_item' %}
+  </ul>
+  {{ paginated_list | pagination }}
+{% endpaginate %}
+</pre>
+
+De esta manera podemos re-utilizar el mismo HTML para productos desde distintas plantillas. Estas plantillas reutilizables a veces son llamadas "parciales", porque muestran sólo una parte de la información de una página.
+
+Nótese que el nombre de la variable para cada producto en <code>product_item</code> es "product_item" en lugar de "product". Esto es porque la etiqueta *loop* asigna cada producto a una variable con el mismo nombre de la plantilla parcial.

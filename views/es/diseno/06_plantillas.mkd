@@ -35,12 +35,12 @@ Las siguientes plantillas están presentes presentes en todas las tiendas.
     <tr>
       <th><a href="/es/diseno/plantillas/product">product.html</a></th>
       <td><code>/product/ipod-nano</code></td>
-      <td>Plantill para la ficha o detalle de un producto.</td>
+      <td>Plantilla para la ficha o detalle de un producto.</td>
     </tr>
     <tr>
       <th><a href="/es/diseno/plantillas/page">page.html</a></th>
       <td><code>/pages/about-us</code></td>
-      <td>Vista detalle de cada página con contenido.</td>
+      <td>Vista detalle de páginas estáticas.</td>
     </tr>
     <tr>
       <th><a href="/es/diseno/plantillas/form">form.html</a></th>
