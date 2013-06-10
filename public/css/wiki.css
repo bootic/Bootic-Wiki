@@ -126,7 +126,8 @@ p, li{
   display: none;
 }
 
-#sidebar .depth_1.current ul {
+#sidebar .depth_1.current > ul,
+#sidebar .depth_2.current > ul {
   display: block;
   margin-top: 8px;
   margin-bottom: -8px;

@@ -47,6 +47,9 @@ Esto es porque al mostrarse el detalle de un producto, Bootic sabe cuál product
     <code>template</code>:
       Nombre de la plantilla actual (home, products, page, etc)</li>
   <li>
+    <code>resource</code>:
+      Variable especial que representa al objeto principal de la plantilla. Más infomación abajo.</li>
+  <li>
     <code>current_page</code>:
       Entrega el número de la página actual, en caso de que haya paginación.</li>
   <li>
@@ -57,7 +60,7 @@ Esto es porque al mostrarse el detalle de un producto, Bootic sabe cuál product
       Conjunto de <a href="/es/diseno/variables/menu">menús</a> de la tienda.</li>
   <li>
     <code>all_products</code>:
-      Conjunto de todos los <a href="/es/diseno/variables/product">productos</a>.</li>
+      Conjunto de todos los <a href="/es/diseno/variables/product">productos</a> visibles de la tienda.</li>
   <li>
     <code>product_types</code>:
       Conjunto de <a href="/es/diseno/variables/product_type">tipos de producto</a> de la tienda.</li>
@@ -79,27 +82,72 @@ Esto es porque al mostrarse el detalle de un producto, Bootic sabe cuál product
       Conjunto de <a href="/es/diseno/variables/post">noticias</a> publicadas.</li>
 </ul>
 
-## Cómo usar una variable global
+# Cómo usar las variables globales
 
-En el siguiente ejemplo, mostraremos cómo usar la variable `vendors` para listar las marcas de los productos de una tienda, dentro de la plantilla principal (layout.html):
+## [all_products](#all_products)
+<div id="all_products">
+
+Este ejemplo muestra cómo crear un listado paginado de 5 productos por página. Más información sobre paginación <a href="/es/diseno/plantillas/products/paginacion">aquí</a>.
 
 <pre>:::html
-<html>
-<head>
-  <title>{{ shop.name }}</title>
-</head>
-<body>
-{% for vendor in vendors %}
-  <a href="{{ vendor.url }}">{{ vendor.name }}</a>
-{% end %}
-{{ content_for_layout }}
-</body>
-</html>
+{% paginate all_products by 5 %}
+  {% for product in paginated_list %}
+    <p>
+      <a href="{{ product.url }}">{{ product.model }}</a> |
+      <span class="price">{{ product.price.format }}</span>
+    </p>
+  {% endfor %}
+  {{ paginated_list | pagination }}
+{% endpaginate %}
 </pre>
 
-## Segundo ejemplo: generando un menú condicionalmente
+</div>
 
-En este caso, usaremos la variable `menus` junto con `template` para mostrar un menú de navegación sólo cuando el usuario esté mirando la portada del sitio:
+## [collections](#collections)
+<div id="collections">
+
+<pre>:::html
+{% for collection in collections.all %}
+  <a href="{{ collection.url }}">{{ collection.title }}</a>
+{% endfor %}
+</pre>
+
+También es posible acceder a una colección por nombre, usando la <em>manilla</em> o título normalizado.
+
+Este ejemplo itera los productos de la colección "ofertas".
+
+<pre>:::html
+{% for product in collections.ofertas.products %}
+  <a href="{{ product.url }}">{{ product.model }}</a>
+{% endfor %}
+</pre>
+
+</div>
+
+## [pages](#pages)
+<div id="pages">
+
+<pre>:::html
+{% for page in pages.all %}
+  <a href="{{ page.url }}">{{ page.title }}</a>
+{% endfor %}
+</pre>
+
+</div>
+
+## [forms](#forms)
+<div id="forms">
+
+<pre>:::html
+{% for form in form.all %}
+  <a href="{{ form.url }}">{{ form.title }}</a>
+{% endfor %}
+</pre>
+
+</div>
+
+## [menus](#menus)
+<div id="menus">
 
 <pre>:::html
 <html>
@@ -107,12 +155,9 @@ En este caso, usaremos la variable `menus` junto con `template` para mostrar un 
   <title>{{ shop.name }}</title>
 </head>
 <body>
-
-{% if template == 'home' %}
-  {% for link is menus.redes_sociales.links }
-    <a href="{{ link.url }}">{{ link.title }}</a>
-  {% endfor %}
-{% endif %}
+{% for link is menus.redes_sociales.links }
+  <a href="{{ link.url }}">{{ link.title }}</a>
+{% endfor %}
 
 {{ content_for_layout }}
 </body>
@@ -122,4 +167,68 @@ En este caso, usaremos la variable `menus` junto con `template` para mostrar un 
 
 <div class="tip">
 Si te fijas, en este caso agregamos `.redes_sociales.links` a la variable `menus`. Con eso, lo que estamos haciendo es pedirle a Bootic que nos entregue los links asociados al menú **redes_sociales**. Si hubiésemos escrito simplemente `menus.links`, el HTML resultante de ese bloque sería vacío, ya que Bootic necesita poder identificar el menú de navegación para entregar los links asociados a él.
+</div>
+
+</div>
+
+## [blog](#blog)
+<div id="blog">
+
+<pre>:::html
+{% for post in blog.posts %}
+  <a href="{{ post.url }}">{{ post.titl }}</a>
+{% endfor %}
+</pre>
+
+</div>
+
+## [product_types](#product_types)
+<div id="product_types">
+
+<pre>:::html
+{% for product_type in product_types.all %}
+  <a href="{{ product_type.url }}">{{ product_type.name }}</a>
+{% endfor %}
+</pre>
+
+Este ejemplo itera los productos del tipo "zapatos":
+
+<pre>:::html
+{% if product_types.zapatos.has_products %}
+  {% for product in product_types.zapatos.products %}
+    <a href="{{ product.url }}">{{ product.model }}</a>
+  {% endfor %}
+{% endif %}
+</pre>
+
+</div>
+
+## [vendors](#vendors)
+<div id="vendors">
+
+<pre>:::html
+{% for vendor in vendor.all %}
+  <a href="{{ vendor.url }}">{{ vendor.name }}</a>
+{% endfor %}
+</pre>
+
+</div>
+
+## [resource](#resource)
+<div id="resource">
+
+Referencia al objeto principal de una página. Por ejemplo, en la plantilla collection.html, <code>resource</code> es la colección actual. En product.html, <code>resource</code> es el producto actual, también disponible en el objeto <code>product</code>.
+
+<code>resource</code> es útil para comparar con objetos en una lista, por ejemplo, y destacar la página actual en un menú.
+
+<pre>:::html
+<ul>
+  {% for link in menus.sidebar %}
+  <li class="{{ 'current' | print_if_equal: resource, link }}">
+    {{ link.title | link_to: link.url }}
+  </li>
+  {% endfor %}
+</ul>
+</pre>
+
 </div>
