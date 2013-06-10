@@ -5,6 +5,7 @@ GEM
     coderay (0.9.6)
     dragonfly (0.8.2)
       rack
+    http_accept_language (1.0.2)
     multi_json (1.0.3)
     rack (1.4.1)
     rack-contrib (1.1.0)
@@ -27,6 +28,7 @@ DEPENDENCIES
   builder
   coderay (= 0.9.6)
   dragonfly (= 0.8.2)
+  http_accept_language
   multi_json
   rack-contrib
   redcarpet
