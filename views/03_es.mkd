@@ -1,34 +1,41 @@
 ---
-:title: Castellano
-:description: Documentación Bootic
-:keywords: Bootic, documentacion, liquid, e-commerce, faq
+:title: Documentación Bootic
+:description: Todo lo que necesitas saber para empezar a vender en línea.
+:keywords: Bootic, documentacion, e-commerce, faq
 ---
-# Administrando tu tienda Bootic
 
-<div class="clearfix section">  
-  <div class="grid_thumb column">
-    <a href="http://vimeo.com/12716140" class="js_fancy_box_vimeo">
-      <img src="http://b.vimeocdn.com/ts/718/660/71866071_200.jpg" alt="Bootic intro" />
-      <strong>Introducción a Bootic</strong>
-    </a>
+<div id="start" class="row">
+  <div class="span4">
+    <div class="pad">
+    <h3>
+      <a href="/es/administracion">
+        Administración de tu tienda
+      </a>
+    </h3>
+    <p>Cómo llegar desde el primer producto a la primera venta. La información que todo dueño de una tienda Bootic tiene que saber, incluyendo cómo funcionan los pedidos, las promociones y el sistema de costos de envío.</p>
+    </div>
   </div>
-  <div class="column info_column">
-    <p>Aprende cómo administrar y sacarle el mejor provecho a tu tienda Bootic.</p>
-    <p>Este video muestra la principal funcionalidad de una tienda Bootic.</p>
-    <p><a href="/es/screencasts">Ver más videos</a></p>
+
+  <div class="span4">
+    <div class="pad">
+    <h3>
+      <a href="/es/configuracion">
+        Sistemas de pago, dominio y SEO
+      </a>
+    </h3>
+    <p>Los pasos para usar tu dominio propio y cómo incorporar sistemas de pago con tarjeta de crédito, como Webpay y Dineromail. Además te mostramos cómo usar las herramientas SEO de Bootic para que aumentes tu tráfico.</p>
+    </div>
   </div>
+
+  <div class="span4">
+    <div class="pad">
+    <h3>
+      <a href="/es/diseno">
+        Diseño y modificación de plantillas
+      </a>
+    </h3>
+    <p>Si quieres modificar el diseño de tu tienda, aquí encontrarás la documentación para editar nuestras plantillas o crear una a partir de cero. Requiere conocimiento básico a intermedio en HTML y CSS.</p>
+    </div>
+  </div>
+
 </div>
-
-## Ver información sobre:
-
-* [Plantillas y diseño](/es/themes)
-* [Promociones de descuento](http://www.bootic.net/blog/2010/12/13/promociones-de-descuento-configurables)
-* [Variantes de productos](http://www.bootic.net/blog/2010/6/27/administracion-de-variantes-de-productos)
-* [Tipos de productos personalizados](http://www.bootic.net/blog/2010/6/27/definiendo-tipos-de-productos-en-bootic)
-* [Flujo de órdenes de compra](http://www.bootic.net/blog/2010/6/27/flujo-de-ordenes-de-compra)
-* [Formularios y destinatarios de correo](http://www.bootic.net/blog/2010/5/31/configurando-destinatarios-de-correo-en-bootic)
-* [Creación de Newsletters con Mailchimp.com](http://www.bootic.net/blog/2010/3/30/administracion-de-listas-de-correo-con-mailchimp)
-* [Base de datos de clientes con Highrise CRM](http://www.bootic.net/blog/2010/3/18/integracion-con-highrise-crm)
-* [Filtrar órdenes de compra por estado](http://www.bootic.net/blog/2010/2/25/ordenes-de-compra-exitosas)
-* [Exportación de datos para Excel](http://www.bootic.net/blog/2010/2/25/exportacion-de-datos-para-excel)
-* [Administración de stock de productos](http://www.bootic.net/blog/2009/12/14/gestion-de-stock-y-disponibilidad-de-productos)
