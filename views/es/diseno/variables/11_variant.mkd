@@ -9,7 +9,7 @@
 Disponible al iterar sobre el conjunto <code>variants</code> un <a href="/es/diseno/variables/product">producto</a>.
 
 <ul>
-  <li><code>variant.title</code>: Nombre o títull de la variante.</li>
+  <li><code>variant.title</code>: Nombre o título de la variante.</li>
   <li><code>variant.available</code>: True o false dependiendo de si hay unidades en stock.</li>
   <li><code>variant.stock</code>: Cantidad de unidades en stock.</li>
   <li><code>variant.sku</code>: SKU de esta variante.</li>
