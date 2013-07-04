@@ -21,61 +21,65 @@
 
   <link rel="stylesheet" href="/css/wiki.css" type="text/css" media="screen" title="no title" charset="utf-8">
   <link rel="stylesheet" href="/css/coderay.css" type="text/css" media="screen" charset="utf-8">
+  <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
 
 </head>
 
 <body id="wiki">
 
-<div id="header">
-  <div class="stripe">
-    <div class="container">
+<div id="top">
+  <div id="header">
+    <div class="stripe">
+      <div class="container">
 
-      <a class="pull-right menu-toggle" data-toggle="collapse" data-target=".nav-collapse">
-        Menu
-      </a>
+        <a class="pull-right menu-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          Menu
+        </a>
 
-      <h1>
-        <a href="/"><img src="http://static.bootic.net/themes/1322/logo.png" alt="Bootic" /></a>
-      </h1>
+        <h1>
+          <a href="/"><img src="http://static.bootic.net/themes/1322/logo-white.png" alt="Bootic"></a>
+        </h1>
 
-      <div class="nav-collapse collapse">
-        <ul class="nav menu pull-right">
+        <div class="nav-collapse collapse">
+          <ul class="nav menu pull-right">
 
-          <li class="menuitem-portada current">
-            <a href="/">Portada</a>
-          </li>
+            <li class="menuitem-portada">
+              <a href="/">Portada</a>
+            </li>
 
-          <li class="menuitem-planes-y-precios">
-            <a href="/pages/planes">Planes y precios</a>
-          </li>
+            <li class="menuitem-planes-y-precios current">
+              <a href="/pages/planes">Planes y precios</a>
+            </li>
 
-          <li class="menuitem-faq">
-            <a href="/pages/faq">FAQ</a>
-          </li>
+            <li class="menuitem-faq">
+              <a href="/pages/faq">FAQ</a>
+            </li>
 
-          <li class="menuitem-blog">
-            <a href="/blog/page">Blog</a>
-          </li>
+            <li class="menuitem-blog">
+              <a href="/blog/page">Blog</a>
+            </li>
 
-          <li class="menuitem-about">
-            <a href="/pages/about">Acerca</a>
-          </li>
+            <li class="menuitem-about">
+              <a href="/pages/about">Acerca</a>
+            </li>
 
-          <li class="menuitem-contact">
-            <a href="/forms/contact">Contacto</a>
-          </li>
+            <li class="menuitem-docs">
+              <a href="/">Documentación</a>
+            </li>
 
-        </ul>
-      </div>
+            <li class="menuitem-contact">
+              <a href="/forms/contact">Contacto</a>
+            </li>
 
-    </div><!-- /container -->
-  </div><!-- /stripe -->
-</div><!-- /header -->
+          </ul>
+        </div>
 
-<div id="main" class="container clearfix">
+      </div><!-- /container -->
+    </div><!-- /stripe -->
+  </div><!-- /header -->
 
   <div class="title">
-    <% if current_section %>
+    <% if false && current_section %><!-- use global wiki link -->
       <h2>
         <a href="<%= current_section.url %>">
         <%= current_section.title %>
@@ -83,7 +87,7 @@
       </h2>
       <p><%= current_section.description %></p>
     <% else %>
-      <h2>Documentación Bootic</h2>
+      <h2><a href="/">Documentación Bootic</a></h2>
       <p>Todo la información para empezar a vender en línea.</p>
     <% end %>
 
@@ -95,12 +99,18 @@
       </div>
 
       <div id="search_box" style="display: none">
-        <ul id="results"></ul>
+        <div class="container">
+          <ul id="results"></ul>
+        </div>
       </div>
 
     </form>
 
   </div><!-- /title -->
+
+</div>
+
+<div id="main" class="container clearfix">
 
   <div class="row">
 

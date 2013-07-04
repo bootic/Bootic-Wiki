@@ -24,9 +24,17 @@ p, li{
   padding: 10px 15px;
 }
 
-#start h3 {
-  font-size: 26px;
-  letter-spacing: -0.09em;
+#start .pad i {
+  font-size: 8em;
+  text-align: center;
+  display: block;
+  margin-top: 10px;
+}
+
+#start h2 {
+  font-size: 30px !important;
+  margin: 10px 0 !important;
+  border: 0 !important;
 }
 
 /* content
@@ -37,11 +45,12 @@ p, li{
   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
   line-height: 140%;
   letter-spacing: -0.08em;
+  font-weight: 300;
 }
 
 #content h1 {
   font-size: 28px;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 
 #content h2 {
@@ -143,7 +152,7 @@ p, li{
 
 #search_form {
   margin-top: 30px;
-  margin-bottom: 30px;
+
 }
 
 #search_form input {
@@ -157,10 +166,11 @@ p, li{
 }
 #search_box {
   text-align: left;
-  margin: 10px;
+  margin: 20px 0 0;
 }
 #results {
   list-style-type: none;
+  background: rgba(255,255,255,0.8)
 }
 #results p {
   max-width: none;
@@ -169,6 +179,6 @@ p, li{
 #results li {
   padding: 0.25em 1em;
 }
-#results li.hover {
+#results li:hover {
   background: white;
 }

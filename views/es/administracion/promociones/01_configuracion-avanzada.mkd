@@ -1,7 +1,0 @@
----
-:title: Configuracion avanzada de promociones
-:description: "Cómo combinar los límites de las promociones de manera avanzada."
-:keywords: pedidos, órdenes, pagos, gestión, venta, despachar, pendiente, cerrada
----
-
-## PENDIENTE

@@ -5,18 +5,17 @@ en la tienda"
 :keywords: retirar, tienda, showroom, entrega, recoger
 ---
 
-Retirar un producto en la tienda física
-=======================================
+# Retirar un producto en la tienda física
 
 Una de las ventajas del comercio electrónico es que el producto _viaja_ hasta la
 puerta de su casa. Pero muchas veces el cliente quiere **retirar el producto en
-la tienda física** para abaratar costos o simple comodidad. 
+la tienda física** para abaratar costos o simple comodidad.
 
 **Importante**: Ofrecer la posibilidad de «Retirar en tienda» es una
 política de cada comercio, el locatario Bootic deberá evaluar **si la ofrece o no**
 a sus clientes.
 
-### Cómo se hace
+## Cómo se hace
 
 ¿Cómo darle al cliente la posibilidad de retirar el producto en la tienda
 física?, a continuación los pasos a seguir:
@@ -31,7 +30,7 @@ física?, a continuación los pasos a seguir:
 </div>
 
 1. Crear una [Zona y costo de envío][zona]. Una zona podría ser (Figura 1):
-    
+
     * **Nombre**: Retirar en tienda
     * **País**: Chile
     * **Región**: Todos

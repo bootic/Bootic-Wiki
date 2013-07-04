@@ -4,8 +4,3 @@
 :keywords: google apps, api, mailchimp, correo, email, servidor
 :sitemap_priority: 1.0
 ---
-<h2>Integración con servicios externos</h2>
-
-Puedes extender la funcionalidad de Bootic integrando tu tienda y dominio con otros servicios.
-
-* [Google Apps para correos y documentos](/es/servicios/google-apps)

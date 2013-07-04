@@ -10,16 +10,18 @@ Una Colección de productos es justamente éso, un conjunto o agrupación de pro
 
 Por ejemplo, podrías tener una colección llamada “Destacados” y otra “Ofertas” donde estén agrupados distintos productos independiente del Tipo del que sean.
 
-# ¿Qué son las etiquetas?
+## ¿Qué son las etiquetas?
 
-Las Etiquetas son un tercer nivel de filtros que puedes usar en tu tienda, en caso de que tengas muchos productos dentro de un mismo Tipo o Colección, y quieras facilitar la navegación a través de ellos. Un producto puede tener tantas Etiquetas como quieras, y son independiente del Tipo y las Colecciones a las que pertenezca. Es decir, puedes habilitar que tus clientes filtren los productos de una Colección por una Etiqueta específica, así como también los productos de un Tipo con cierta Etiqueta, e incluso los productos que pertenezcan a una Colección, de un Tipo definido y que contengan una Etiqueta específica.
+Las etiquetas son un tipo de colección especial que Bootic utiliza internamente para hacer relaciones entre tus productos, y en base a eso generar los listados de "Productos Similares" o "Productos Relacionados".
 
-Usando el mismo ejemplo de las bicicletas, podrías usar las etiquetas "Urbana" o "Montaña" para identificar las bicicletas de acuerdo al tipo de público al que apuntan. Las etiquetas, además, las usa Bootic internamente para buscar productos relacionados o similares y mostrarlos en tu plantilla. Esto quiere decir que no es estrictamente necesario mostrar las etiquetas de forma pública en tu tienda: si quieres puedes usarlas sólo de forma interna para hacer estas asociaciones entre tus productos.
+En caso de que cuentes con una gran gama de productos, es posible usar las etiquetas como un tercer nivel de filtro para agrupar tus productos, para facilitar la navegación a través de ellos.
+
+Es decir, puedes habilitar que tus clientes filtren los productos de una Colección por una Etiqueta específica, así como también los productos de un Tipo con cierta Etiqueta, e incluso los productos que pertenezcan a una Colección, de un Tipo definido y que contengan una Etiqueta específica.
+
 
 ## ¿Cómo creo/borro una etiqueta?
 
-Para una mejor clasificación de tu producto **puedes agregarle una etiqueta**
-(una o varias si así lo prefieres).
+Para agregar una etiqueta a un producto, los pasos son:
 
 ## Crear
 

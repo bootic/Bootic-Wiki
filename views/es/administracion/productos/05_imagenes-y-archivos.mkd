@@ -6,4 +6,7 @@
 
 # Las imágenes de tus productos
 
-PENDIENTE
+## Cómo subir imágenes
+## Cómo eliminar
+## Cómo setear una como la principal
+## Link a tamaños de imágenes

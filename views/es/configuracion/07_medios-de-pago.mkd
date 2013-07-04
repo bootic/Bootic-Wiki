@@ -3,20 +3,7 @@
 :description: "Contratar y configurar medios de pago con tarjetas en tu tienda"
 :keywords: pago, tarjeta, crédito, webpay, certificación, webpay, dineromail, transferencia.
 ---
-# Medios de pago con tarjeta de crédito
 
-En bootic puedes configurar medios de pago simultáneos. [Leer más](/es/administration/preferencias/medios-de-pago).
-
-Cada medio de pago debe ser gestionado directamente con el proveedor. Los más importantes son:
-
-* [DineroMail](/es/administration/medios-de-pago/dineromail) (Chile y Argentina).
-* [WebPay Plus](/es/administration/medios-de-pago/webpay) (Chile)
-
----
-:title: Configurando medios de pago
-:description: "Configurar medios de pago de productos para los clientes de tu tienda"
-:keywords: pago, tarjeta, crédito, dineromail, webpay, transferencia
----
 # Configurando medios de pago
 
 Bootic te da la opción de ofrecer varios medios de pago a tus clientes (de momento 6). Para configurar los medios elegidos, en tu administrador Bootic anda a **Preferencias** y luego **Pago en línea y órdenes**. donde podrás ver el selector de medios de pago — Figura 1.
@@ -28,7 +15,7 @@ Bootic te da la opción de ofrecer varios medios de pago a tus clientes (de mome
 	<div class="c-pie"><strong>Figura 1</strong>: Selector de medios de pago. Verde significa «activo», rojo significa «desactivado»</div>
 </div>
 
-### Medio de pago:
+### Medios de pago:
 
 1. [Webpay (Chile)][webpay]
 2. [DineroMail (Chile)][dineromail]

@@ -1,0 +1,57 @@
+---
+:title: Filtros con colecciones y etiquetas
+:description: Cómo usar estas herramientas de manera efectiva.
+:keywords: etiqueta, borrar, crear, gestionar, tag, faq, tag, admin
+---
+
+## Ejemplo de filtros con colecciones y etiquetas:
+
+Asumiendo la siguiente estructura de contenido:
+
+ - Tipos
+   - Bicicletas
+   - Accesorios
+ - Colecciones
+   - En Oferta
+   - Destacadas
+ - Etiquetas
+   - Hombre
+   - Mujer
+
+En base a esto, Bootic te permite generar los siguientes cruces de filtros:
+
+ - Primer nivel
+   - Todas las bicicletas de tu tienda (tipo)
+   - Todos los accesorioes de tu tienda (tipo)
+   - Todos los productos en oferta (colección)
+   - Todos los productos descadados (colección)
+   - Todos los productos para hombre (etiqueta)
+   - Todos los productos para mujer (etiqueta)
+ - Segundo nivel: Tipo + Colección
+   - Todas las bicicletas en oferta
+   - Todas las bicicletas destacadas
+   - Todos los accesorios en oferta
+   - Todos los accesorios destacados
+ - Segundo nivel: Tipo + Etiqueta
+   - Todas las bicicletas para hombres
+   - Todas las bicicletas para mujeres
+   - Todos los accesorios para hombres
+   - Todos los accesorios para mujeres
+ - Segundo nivel: Colección + Etiqueta
+   - Todas los productos en oferta para mujeres
+   - Todas las productos en oferta para hombres
+   - Todas los productos destacados para mujeres
+   - Todas las productos destacados para hombres
+ - Tercer nivel: Tipo + Colección + Etiqueta
+   - Todas las bicicletas destacadas para hombres
+   - Todas las bicicletas en oferta para hombres
+   - Todos los accesorios destacados para hombres
+   - Todos los accesorios en oferta para hombres
+   - Todas las bicicletas destacadas para mujeres
+   - Todas las bicicletas en oferta para mujeres
+   - Todos los accesorios destacados para mujeres
+   - Todos los accesorios en oferta para mujeres
+
+Si te fijas, puedes tener un nivel de filtro granular en caso de que tengas muchos productos. Lo importante a tener en cuenta es que de poco sirve tener muchos filtros (por el contrario, confunde al usuario) si es que la cantidad de tus productos no lo hace realmente necesario.
+
+Una buena pregunta es ¿cuántos productos se mostrarían usando los filtros A + B + C? Si la pregunta es uno o dos, quizás no vale la pena agregar ese filtro adicional. 

@@ -6,7 +6,7 @@
 
 # Los productos
 
-Los productos son la base de toda tienda Bootic, o mejor dicho, de toda tienda en línea. Un producto es, esencialmente, un ítem que tiene un nombre y un precio asociado, y que tus clientes pueden comprar a través de tu tienda.
+Como toda tienda en línea, los productos son la base de una tienda Bootic. Un producto es, esencialmente, un ítem que tiene un nombre y un precio asociado, y que tus clientes pueden comprar a través de tu tienda.
 
 Antes de empezar a vender, lo primero que debes hacer es crear los productos en tu tienda. Para hacerlo, puedes hacer click sobre el botón "Crear nuevo producto" desde el Tablero de tu panel, o bien desde la sección Productos.
 
@@ -14,18 +14,13 @@ Antes de empezar a vender, lo primero que debes hacer es crear los productos en 
 
 Cuando ingresas un producto (Figura 1) a tu tienda Bootic debes llenar los siguientes campos:
 
-- Modelo o título
-- Tipo de Producto
-- Descripción
-- Marca o Proveedor
-- Precio ($)
-- Peso (grs)
-
 <div class="captura">
-    <div class="c-contenido">
-        <img src="/img/admin/ss_new_product.png" width="650" alt="agregar un nuevo producto" />
-    </div>
-    <div class="c-pie">
-        <strong>Figura 1</strong>: Agregar un nuevo producto
-    </div>
+  <div class="c-contenido">
+    <img src="/img/admin/ss_new_product.png" width="650" alt="agregar un nuevo producto" />
+  </div>
+  <div class="c-pie">
+    <strong>Figura 1</strong>: Agregando un nuevo producto
+  </div>
 </div>
+
+Partamos por lo primero: [¿Qué es un Tipo de Producto?](/es/administracion/productos/tipos-y-atributos)
