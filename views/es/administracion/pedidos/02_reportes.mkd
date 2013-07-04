@@ -4,7 +4,7 @@
 :keywords: pedidos, órdenes, pagos, gestión, venta, despachar, pendiente, cerrada
 ---
 
-## PENDIENTE: Gestionando el CSV usando Google Docs
+# Gestionando el CSV usando Google Docs
 
 Si deseas abrir con Google Docs, los pasos son:
 
