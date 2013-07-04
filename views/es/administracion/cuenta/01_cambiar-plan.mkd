@@ -1,5 +1,5 @@
 ---
-:title: Elegir y pagar tu plan Bootic
+:title: Como cambiar tu plan Bootic
 :description: "Elegir y pagar tu plan mensual Bootic"
 :keywords: fee, pago, servicio, bootic, pagar, mensualidad, rbs, worldpay, tarjeta, crédito, subscripción
 :group:

@@ -1,0 +1,7 @@
+---
+:title: Menús de navegación
+:description: Cómo modificar los menús de navegación
+:keywords: pedidos, órdenes, pagos, gestión, venta, despachar, pendiente, cerrada
+---
+
+## PENDIENTE
