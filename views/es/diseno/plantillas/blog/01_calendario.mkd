@@ -1,5 +1,9 @@
+---
+:title: Calendario de noticias
+:description: Calendario de noticias
+---
 
-## Calendario de artículos
+## Calendario de noticias
 
 Con el objeto <code>blog.calendar</code> y una combinación de trucos *Liquid* podemos generar una lista de meses, cada uno con la cuenta de artículos para cada més. Por último generamos un link a cada mes para ver el archivo de artículos.
 

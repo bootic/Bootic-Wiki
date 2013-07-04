@@ -1,5 +1,5 @@
 ---
-:title: Paginación
+:title: Paginación de productos
 :description: Paginando listas de productos en products.html, collection.html y otras plantillas
 :keywords: paginación, páginas, listas, productos, ecommerce, paginated_list, paginate, pagination, endpaginate
 ---
@@ -12,7 +12,7 @@ La etiqueta <code>{% paginate %}</code> sirve para dividir listas de productos e
   {% paginate products by 5 %}
     {% for product in paginated_list %}
       <p>
-        <a href="{{ product.url }}">{{ product.model }}</a> | 
+        <a href="{{ product.url }}">{{ product.model }}</a> |
         <span class="price">{{ product.price.format }}</span>
       </p>
     {% endfor %}
@@ -25,4 +25,3 @@ El ejemplo anterior crea grupos de 5 productos por página.
 También dentro del bloque <code>paginate</code>, el filtro <code>pagination</code> crea HTML para la navegación entre páginas.
 
 <img src="/img/themes/pagination1.png" alt="Paginacion de productos en plantillas Bootic" />
-

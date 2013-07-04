@@ -1,4 +1,9 @@
+---
+:title: Galería o slideshow de productos
+:description: Cómo mostrar una galería o slideshow de productos
+---
 
+# Galería o slideshow de productos
 
 <h2 id="galerias">Galería de imágenes de productos</h2>
 
@@ -6,12 +11,14 @@ Los "banners" o imágenes rotativas de productos pueden ser resueltos de forma s
 
 <img src="<%= img('/img/themes/the_stage.png').thumb('640x').url %>" alt="The stage" />
 
-### Ejemplos
+## Ejemplos
+
 El diseño por defecto de las tiendas Bootic usa la librería JavaScript [jQuery](http://jquery.com/) con el plugin [Cycle](http://jquery.malsup.com/cycle/) para hacer imágenes rotativas fácilmente.
 
 Algunas tiendas que usan banners rotativos son [Pilpil](http://www.pilpil.cl) y [Romano](http://www.romano.cl).
 
-### El código
+## El código
+
 El HTML usa los productos dentro de la colección "destacados"
 
 <pre>:::html

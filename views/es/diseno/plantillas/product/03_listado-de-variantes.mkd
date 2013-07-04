@@ -1,4 +1,9 @@
-## Listando variantes
+---
+:title: Listando variantes
+:description: Manera avanzada de mostrar las variantes de un producto
+---
+
+# Listando variantes de producto
 
 También puedes usar la colección <code>product.variants</code> para listar las variantes fuera del formulario o en otro contexto.
 

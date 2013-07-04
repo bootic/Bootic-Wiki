@@ -1,8 +1,9 @@
 ---
-:title: Mostrar productos similares
+:title: Productos similares
 :description: Mostrando productos relacionados (similares) en la ficha de un producto
 :keywords: html, liquid, bootic, similares, relacionados, producto, productos, related_products, has_similar_products, similar_products, price format, thumbnail
 ---
+
 # Mostrando productos similares en la ficha de producto
 
 ## Relacionando productos en el administrador
@@ -20,7 +21,7 @@ En el editor de plantillas de tu tienda, abre a la plantilla <a href="/es/themes
 <pre>:::html
 {% if product.has_similar_products %}
   <div id="similares">
-    
+
     <h2 class="titulo">{{ "titles.related_products" | t }}</h2>
 
     <ul class="collection clearfix">
@@ -33,8 +34,8 @@ En el editor de plantillas de tu tienda, abre a la plantilla <a href="/es/themes
         <h3 class="product-model">
           <a href="{{ p.url }}" title="{{ p.model }}">{{ p.model | truncate:30 }}</a>
         </h3>
-        
-        <p class="product-vendor">{{ p.vendor }}</p>        
+
+        <p class="product-vendor">{{ p.vendor }}</p>
         <small class="product-price">{{ p.price.format }}</small>
 
       </li>
@@ -71,6 +72,6 @@ El filtro "t" se usa para traducir cadenas de texto comunes conocidad por Bootic
   {% endfor %}
 </pre>
 
-Este bloque está recorriendo los 4 primeros productos en la colección <code>similar_products</code> del producto actual. Cada producto es asignado a la variable <code>p</code> para que puedas acceder a sus atributos al generar el HTML para cada uno. Esto es lo que se llama un "loop". 
+Este bloque está recorriendo los 4 primeros productos en la colección <code>similar_products</code> del producto actual. Cada producto es asignado a la variable <code>p</code> para que puedas acceder a sus atributos al generar el HTML para cada uno. Esto es lo que se llama un "loop".
 
 De aquí en adelante, este listado se comporta de la misma forma que un conjunto de productos, como sucede en la plantilla <a href="/es/diseno/plantillas/products">products.html</a>.

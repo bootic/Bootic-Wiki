@@ -6,7 +6,8 @@
   :name: SEO y posicionamiento
   :label: ¿Cómo muestro botones de Twitter o Facebook?
 ---
-# Botones de redes sociales en páginas de productos
+
+# Botones de redes sociales en ficha de un producto
 
 Redes sociales como Twitter y Facebook ofrecen botones en formato HTML que puedes pegar en tu propio sitio. Esta página muestra el procedimiento básico para usar los botones de Twitter y Facebook en las plantillas HTML de tu sitio. Necesitarás conocimientos básicos de HTML y también algo de CSS si quieres ajustar el diseño y posición de los botones.
 
@@ -16,9 +17,9 @@ En Bootic, puedes pegar estos botones en la plantilla HTML de cada producto. Est
 
 ## Botón Twitter
 
-El código del botón de Twitter lo encuentras en esta dirección: [http://twitter.com/about/resources/tweetbutton](http://twitter.com/about/resources/tweetbutton). 
+El código del botón de Twitter lo encuentras en esta dirección: [http://twitter.com/about/resources/tweetbutton](http://twitter.com/about/resources/tweetbutton).
 
-Ahí puedes personalizar el diseño y texto y generar el código HTML. 
+Ahí puedes personalizar el diseño y texto y generar el código HTML.
 
 <img src="/img/themes/twitter_button.jpg" alt="Twitter button" />
 

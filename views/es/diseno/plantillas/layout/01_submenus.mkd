@@ -1,8 +1,9 @@
 ---
-:title: Menús de navegación
+:title: Menús de navegació
 :description: Creando menús de navegación en tu tienda Bootic
 :keywords: navigation, ux, design, links, menu, menus, catalogo, manilla, slug, desplegable, tagged_collection_path, css, has_product_types, typed_collection_path
 ---
+
 # Menús de navegación
 
 En Bootic, la estructura de navegación de tu sitio puede ser creada enteramente desde el área "Navegación" del administrador de tu tienda.
@@ -29,7 +30,7 @@ Además usamos el helper <code>print_if_equal</code> para agregar la clase "curr
 
 De esta forma puedes crear y mostrar distintos menús de navegación en tus páginas.
 
-<h2 id="submenus">Submenús o menús desplegables</h2>
+# Submenús o menús desplegables
 
 Bootic no soporta la creación de submenús en la interfaz de administración, pero con una combinación de colecciones y etiquetas es fácil construir menús dentro de otros menús.
 
@@ -104,4 +105,3 @@ Una segunda opción para generar submenús es usar tipos de productos dentro de 
 <!-- /tipos -->
 ...
 </pre>
-
