@@ -182,3 +182,35 @@ p, li{
 #results li:hover {
   background: white;
 }
+
+/* Media items, shop screenshots
+----------------------------*/
+#content .media_items {
+  list-style-type: none;
+  margin: 0;padding: 0;
+}
+#content .media_item {
+  padding: 0;
+  margin-bottom: 20px;
+}
+#content .media_item .thumbnail,
+#content .media_item .info {
+  float: left;
+}
+#content .media_item .thumbnail { border-width: 0; }
+#content .media_item .thumbnail:hover {box-shadow: none;}
+#content .media_item .info {
+  width: 410px;
+  margin-left: 18px;
+}
+#content .media_item h3 {
+  margin: 0 0 1em 0;
+}
+#content .media_item .info ul {
+  margin: 0 0 20px 0;
+  padding: 0;
+}
+#content .media_item .info li {
+  font-size: 0.8em;
+  line-height: 1;
+}
