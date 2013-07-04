@@ -11,7 +11,7 @@ module Helpers
 
   def mkd(page)
     @content = render_markup(page.content)
-    pjax? ? @content : erb(:layout)
+    pjax? or ajax? ? @content : erb(:layout)
   end
 
   def markdown_engine
@@ -72,6 +72,10 @@ module Helpers
 
   def pjax?
     !!request.env['HTTP_X_PJAX']
+  end
+
+  def ajax?
+    request.xhr?
   end
 
   def load_page(url, json = false)

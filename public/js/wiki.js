@@ -20,7 +20,7 @@ USAGE: WikiSearch.search('foo', function (results) {...})
 
     var load = function (callback) {
       if(loaded){ callback(); return }
-      
+
       $.getJSON(url, function (json) {
 
         $.each(json, function (i, page) {
@@ -154,5 +154,16 @@ USAGE: WikiSearch.search('foo', function (results) {...})
 
   $('a[rel=fancybox]').fancybox();
 
+  $('#sidebar a').live('click', function(e){
+    var href = $(this).attr('href');
+    if (href[0] != '/')
+      return true;
+
+    $('#content').load(href);
+    $('#sidebar li').removeClass('current');
+    $(this).parent().addClass('current').parents('li').addClass('current');
+
+    e.preventDefault();
+  })
 
 })()
