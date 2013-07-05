@@ -6,7 +6,18 @@
 
 # Las imágenes de tus productos
 
+Los productos tienen fotos (o imágenes) asociadas, a continuación te contamos
+cómo gestionarlas.
+
+<div class="tip">«Una imagen vale más que mil palabras», la imagen vende, eso en
+marketing es un <em>mandamiento</em> - publica productos con fotos de
+calidad (nítidas, limpias, que vendan), invierte en aquello, el resultado es
+puro beneficio para tu comercio.</div>
+
 ## Cómo subir imágenes
+Con mucho cuidado
 ## Cómo eliminar
+Con el mismo cuidado
 ## Cómo setear una como la principal
+preguntón ehh?
 ## Link a tamaños de imágenes
