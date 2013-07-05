@@ -125,4 +125,4 @@ Cada imagen de producto tiene los siguientes tamaños predefinidos:
   <li><code>large</code>: 800x600</li>
 </ul>
 
-Si quieres obtener tamaños específicos, haz click a la izquierda en "Imagenes > Control Avanzado".
+Si quieres obtener tamaños específicos, revisa la documentación sobre [control avanzado de imágenes de productos](/es/diseno/imagenes/control-avanzado).

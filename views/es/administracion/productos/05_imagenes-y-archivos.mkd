@@ -14,10 +14,43 @@ marketing es un <em>mandamiento</em> - publica productos con fotos de
 calidad (nítidas, limpias, que vendan), invierte en aquello, el resultado es
 puro beneficio para tu comercio.</div>
 
-## Cómo subir imágenes
-Con mucho cuidado
+<h2 id="subir-imagenes">Cómo subir imágenes</h2>
+
+<div class="clearfix">
+  <img src="/img/admin/upload-product-image-1.png" alt="Donde subir imágenes de productos" class="right captura" />
+  <p>En la pestaña "productos" de tu panel de administración, anda a la ficha del producto elegido.</p>
+  <p>Al final encontrarás la lista de imágenes existentes para el producto y un link "Agregar archivo o imagen"</p>
+</div>
+
+<hr />
+
+<div class="clearfix">
+  <img src="/img/admin/upload-product-image-2.png" alt="Donde subir imágenes de productos" class="right captura" />
+  <p>El link "Agregar archivo o imagen" despliega un botón para elegir un archivo en tu disco duro, y campos opcionales para <em>título</em> y <em>descripción</em> de la imagen.</p>
+  <p>Elige una imagen y aprieta "subir archivo"</p>
+</div>
+
+<hr />
+
+<p>Dependiendo de cómo estan construidas las plantillas de tu tienda, ahora el detalle del producto muestra la nueva imagen</p>
+
 ## Cómo eliminar
-Con el mismo cuidado
-## Cómo setear una como la principal
-preguntón ehh?
+
+<div class="clearfix">
+  <img src="/img/admin/upload-product-image-3.png" alt="Donde subir imágenes de productos" class="right captura" />
+  <p>En la ficha de producto en tu panel de administración, posiciona el <em>cursor</em> sobre la imagen que quieres eliminar</p>
+    <p>En la esquina inferior derecha de la imagen verás aparecer un botón con forma de un signo menos, rojo.</p>
+    <p>Presiona ese botón para eliminar la imagen.</p>
+</div>
+
+## Cómo configurar una como la principal
+
+Simplemente usa el mouse para arrastrar la imagen que quieres como representativa del producto al frente de la lista de imágenes.
+
+Esa imagen será usada como imagen principal del producto en las listas, resultados de búsqueda y colecciones.
+
 ## Link a tamaños de imágenes
+
+El tamaño de cada imagen como lo ven tus visitantes depende de las plantillas HTML de tu tienda.
+
+Para saber cómo ajustar el tamaño en las plantillas, lee la [documentación sobre tamaños de imágenes](/es/diseno/imagenes#products).

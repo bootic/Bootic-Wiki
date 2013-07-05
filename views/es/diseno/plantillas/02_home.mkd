@@ -14,6 +14,6 @@ Dado que la portada puede contener cosas distintas dependiendo del rubro y estil
 
 Algunos ejemplos de qué cosas puedes hacer en tu **home.html**:
 
- - Galeria de productos
- - Productos destacados
+ - [Galeria de productos](/es/diseno/plantillas/home/productos-destacados)
+ - [Productos destacados](/es/diseno/plantillas/home/galeria-de-productos)
  - Banners
