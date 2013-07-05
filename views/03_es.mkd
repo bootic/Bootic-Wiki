@@ -4,7 +4,7 @@
 :keywords: Bootic, documentacion, e-commerce, faq
 ---
 
-<div id="start" class="row">
+<div id="start">
   <div class="span4">
     <div class="pad">
     <i class="icon-tasks icon-4x"></i>
