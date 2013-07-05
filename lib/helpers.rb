@@ -57,7 +57,11 @@ module Helpers
       Page.find(path)
     end
   end
-
+  
+  def page_class
+    @page.url.split('/').reject{|e| e == ''}.join('_')
+  end
+  
   # section to build menu from.
   # ie. for URL /es/administration/foo/bar section is "/es/administration"
   #
