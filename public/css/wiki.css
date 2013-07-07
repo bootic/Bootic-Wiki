@@ -37,6 +37,11 @@ p, li{
   border: 0 !important;
 }
 
+/* images
+----------------------------*/
+img.right {
+  margin: 0 0 0 1em;
+}
 /* content
 ----------------------------*/
 
@@ -152,7 +157,6 @@ p, li{
 
 #search_form {
   margin-top: 30px;
-
 }
 
 #search_form input {
@@ -179,7 +183,8 @@ p, li{
 #results li {
   padding: 0.25em 1em;
 }
-#results li:hover {
+#results li:hover,
+#results li.hover {
   background: white;
 }
 
