@@ -207,7 +207,7 @@ Este ejemplo itera los productos del tipo "zapatos":
 <div id="vendors">
 
 <pre>:::html
-{% for vendor in vendor.all %}
+{% for vendor in vendors.all %}
   <a href="{{ vendor.url }}">{{ vendor.name }}</a>
 {% endfor %}
 </pre>
