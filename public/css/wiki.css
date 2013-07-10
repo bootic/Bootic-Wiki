@@ -131,6 +131,9 @@ img.right {
   padding: 8px 10px;
   border-top: 1px solid #ddd;
 }
+#sidebar li:first-child {
+  border-top-width: 0;
+}
 
 #sidebar li a {
   color: #666;
@@ -152,11 +155,31 @@ img.right {
   color: #111;
 }
 
-/* Search results
-----------------------------*/
+/* Title bar
+Show big version only on homepage
+----------------------------------------*/
+.title { 
+  margin: 0 0 20px 0;
+  padding: 10px 0;
+}
+.title .title_info { display: none; }
+.es .title,
+.en .title {
+  margin: 40px auto 30px;
+  padding: 20px 0 50px;
+}
+.es .title .title_info,
+.en .title .title_info { display: block; }
 
 #search_form {
+  margin-bottom: 0;
+}
+/* Search results
+----------------------------*/
+.es #search_form,
+.en #search_form {
   margin-top: 30px;
+  margin-bottom: 20px;
 }
 
 #search_form input {

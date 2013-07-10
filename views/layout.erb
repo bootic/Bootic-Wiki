@@ -25,8 +25,7 @@
 
 </head>
 
-<body id="wiki">
-
+<body id="wiki" class="<%= page_class %>">
 <div id="top">
   <div id="header">
     <div class="stripe">
@@ -79,17 +78,19 @@
   </div><!-- /header -->
 
   <div class="title">
-    <% if false && current_section %><!-- use global wiki link -->
-      <h2>
-        <a href="<%= current_section.url %>">
-        <%= current_section.title %>
-        </a>
-      </h2>
-      <p><%= current_section.description %></p>
-    <% else %>
-      <h2><a href="/">Documentación Bootic</a></h2>
-      <p>Todo la información para empezar a vender en línea.</p>
-    <% end %>
+    <div class="title_info">
+      <% if false && current_section %><!-- use global wiki link -->
+        <h2>
+          <a href="<%= current_section.url %>">
+            <%= current_section.title %>
+          </a>
+        </h2>
+        <p><%= current_section.description %></p>
+      <% else %>
+        <h2><a href="/">Documentación Bootic</a></h2>
+        <p>Todo la información para empezar a vender en línea.</p>
+      <% end %>
+    </div>
 
     <!-- lunr search -->
     <form id="search_form">
