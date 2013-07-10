@@ -114,7 +114,7 @@
 
   <div class="row">
 
-    <% if !is_index? %>
+    <% if !is_index? && current_section %>
     <div id="sidebar" class="span3">
       <a class="toggle-menu visible-phone" href="#" onclick="$(this).next().toggleClass('hidden-phone')">
         Ver menú
