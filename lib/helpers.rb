@@ -15,7 +15,7 @@ module Helpers
 
   def mkd(page)
     @content = render_markup(page.content)
-    pjax? or ajax? ? @content : erb(:layout)
+    return (pjax? or ajax?) ? @content : erb(:layout)
   end
 
   def markdown_engine
@@ -57,11 +57,11 @@ module Helpers
       Page.find(path)
     end
   end
-  
+
   def page_class
     @page.url.split('/').reject{|e| e == ''}.join('_')
   end
-  
+
   # section to build menu from.
   # ie. for URL /es/administration/foo/bar section is "/es/administration"
   #

@@ -68,6 +68,18 @@ USAGE: WikiSearch.search('foo', function (results) {...})
   }
 })(jQuery);
 
+var current_idx = -1;
+
+function arrow (how_much) {
+  var $lis = $('#results li')
+  current_idx = current_idx + how_much
+  if(current_idx > $lis.length -1) current_idx = 0
+  if(current_idx < 0) current_idx = $lis.length -1
+
+  var $row = $lis.eq(current_idx)
+  $('#results li.hover').removeClass('hover')
+  $row.addClass('hover')
+}
 
 
 /* jQuery behaviours
@@ -94,18 +106,6 @@ USAGE: WikiSearch.search('foo', function (results) {...})
     $('#content_wrapper').show()
   })
 
-  var current_idx = -1;
-  function arrow (how_much) {
-    var $lis = $('#results li')
-    current_idx = current_idx + how_much
-    if(current_idx > $lis.length -1) current_idx = 0
-    if(current_idx < 0) current_idx = $lis.length -1
-
-    var $row = $lis.eq(current_idx)
-    $('#results li.hover').removeClass('hover')
-    $row.addClass('hover')
-  }
-
   $('#search').keydown(function (e) {
     if(e.keyCode == 38) { // up
       arrow(-1)
@@ -118,7 +118,8 @@ USAGE: WikiSearch.search('foo', function (results) {...})
 
   $('#search_form').submit(function () {
     var row = $('#results li.hover')
-    if(row.length > 0) document.location.href = row.find('.result_link').attr('href')
+    if (row.length > 0)
+      document.location.href = row.find('.result_link').attr('href')
     return false
   })
 
@@ -154,13 +155,23 @@ USAGE: WikiSearch.search('foo', function (results) {...})
 
   $('a[rel=fancybox]').fancybox();
 
+  $(document).pjax('#main a', '#content', { scrollTo: false })
+
+  $(document).on('pjax:complete', function(e, opts){
+    var link = e.relatedTarget;
+
+    if (!link) return;
+    $('#sidebar li').removeClass('current');
+    $(link).parent().addClass('current').parents('li').addClass('current');
+  })
+
   // $('#sidebar a').live('click', function(e){
   //    e.preventDefault();
   //    var href = $(this).attr('href');
-  // 
+  //
   //    if (href[0] != '/')
   //      return true;
-  // 
+  //
   //    $('#content').load(href);
   //    $('#sidebar li').removeClass('current');
   //    $(this).parent().addClass('current').parents('li').addClass('current');
