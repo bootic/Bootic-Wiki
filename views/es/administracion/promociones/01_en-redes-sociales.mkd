@@ -4,4 +4,21 @@
 :keywords: pedidos, órdenes, pagos, gestión, venta, despachar, pendiente, cerrada
 ---
 
-## PENDIENTE
+# Tus promociones en las redes sociales
+
+Al crear una promoción en Bootic, debes ingresar un código que tus clientes pueden usar para activar aquella promoción al momento de pagar en tu tienda.
+
+Sin embargo, además de esto, cada promoción que creas posee un link o URL única que asocia esa promoción a la compra de quien visite el link. Es decir, evita la necesidad de escribir el código al final del proceso, y además, permite visualizar si se han cumplido todos las condiciones para que el descuento se aplique.
+
+## ¿Cuáles son los pasos?
+
+- Primero, debes generar una nueva promoción en el panel Bootic.
+- Hecho eso, el panel mostrará el link de activación de esa promoción, para que lo puedas enviar a tus clientes.
+- Publicas el link en Twitter, Facebook, Pinterest o donde quieras.
+- Tus clientes hacen click sobre el link y llegan a tu tienda, donde se les muestra un mensaje diciendo "has activado tu promoción" (o similar).
+- El cliente agregar uno o más productos al carro, hasta que se cumplen todas las condiciones para que descuento se aplique sobre la compra (ej. total de la compra sobre 50.000).
+- Al pagar la compra, al cliente se le muestra el descuento aplicado en el cuadro resumen del total a pagar.
+
+<div class="tip">
+  Al momento de publicitar productos o promociones en las redes sociales, recomendamos utilizar siempre imágenes más que sólo texto. Muchos estudios y métricas revelan que son mucho más efectivos a la hora de atraer tráfico.
+</div>

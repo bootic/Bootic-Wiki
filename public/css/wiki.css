@@ -158,7 +158,7 @@ img.right {
 /* Title bar
 Show big version only on homepage
 ----------------------------------------*/
-.title { 
+.title {
   margin: 0 0 20px 0;
   padding: 10px 0;
 }
@@ -179,7 +179,6 @@ Show big version only on homepage
 .es #search_form,
 .en #search_form {
   margin-top: 30px;
-  margin-bottom: 20px;
 }
 
 #search_form input {
