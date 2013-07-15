@@ -1,0 +1,44 @@
+---
+:title: Gestión de pedidos
+:description: "Qué hacer una vez que tus clientes realicen un pedido."
+:keywords: pedidos, Pedidos, pagos, gestión, venta, despachar, pendiente, cerrada
+---
+
+# Gestión de pedidos
+
+En la sección Pedidos de tu panel de Administración podrás encontrar los pedidos que tus clientes han realizado.
+
+<div class="captura">
+  <div class="c-contenido">
+      <img src="/img/admin/orders-home.png">
+  </div>
+  <div class="c-pie"><strong>Figura 2</strong>: Pedidos, descripción de
+cada sección</div>
+</div>
+
+Esta página contiene:
+
+1. Una **gráfica con las cantidades de Pedidos** que ha generado tu tienda, también
+   puedes ver un gráfico de torta con las conversiones (enlace inferior).
+
+2. Un listado con las **últimos 30 Pedidos**, si pasan de esa número se generará una
+   paginación al final del mismo listado. Respecto a este listado:
+    - Haciendo clic en el ID de la orden podrás **ver el detalle** de la misma.
+    - Haciendo clic en el Nombre del cliente podrás ver el **historial de Pedidos** de ese cliente (basado en su correo).
+
+3. Un menú lateral con enlaces para filtrar según el estado de la Orden:
+    * <strong class="label-orden orden-todas">Todas</strong>: listará todos las Pedidos.
+    * <strong class="label-orden orden-pendiente">Pendientes</strong>: Locatario está a la espera del pago.
+    * <strong class="label-orden orden-anulada">Anuladas</strong>: el Locatario ha anulado la Orden (por no pago, error o carrito abandonado).
+    * <strong class="label-orden orden-exitoda">Exitosas</strong>: Pedidos cerrados y despachados.
+    * <strong class="label-orden orden-cerrada">Cerradas</strong>: Pedidos que han recibido pago; todo está en regla.
+    * <strong class="label-orden orden-despachada">Despachados</strong>: La compra se ha despachado al cliente.
+
+4. Un enlace exportar las Pedidos a un archivo CSV (el cual será enviado a tu
+   correo): este formato de archivo se puede abrir usando:
+    * [Google Docs/Drive](http://drive.google.com)
+    * [LibreOffice.org Calc](http://www.libreoffice.org)
+    * Microsoft Excel
+    * Apple Numbers
+
+    El archivo `CSV` contendrá **la totalidad de los pedidos** procesadas por la tienda, para el rango de fecha en despliegue.

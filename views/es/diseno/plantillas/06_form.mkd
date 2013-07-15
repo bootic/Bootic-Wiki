@@ -1,0 +1,12 @@
+---
+:title: form.html
+:description: Plantilla para formularios de contacto
+:keywords: liquid, formulario, contacto, form, plantilla, html, css, fields, email, mensaje, campo
+---
+
+# Plantilla para formularios de contacto: form.html
+
+Esta plantilla despliega los formularios de contacto que puedes crear en tu tienda Bootic.
+
+<th>{%&nbsp;contact_form_field&nbsp;%}</th>
+<td>Etiqueta especial que muestra los campos definidos para el formulario actual.</td>

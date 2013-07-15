@@ -1,0 +1,48 @@
+---
+:title: Tipos de productos
+:description: "Aprende a usar los tipos de producto y sus atributos específicos."
+:keywords: custom, field, productos, tipos, atributos, campo, campos, personalización, agregar
+:group:
+  :name: Administración y configuración
+  :label: ¿Puedo agregar nuevos atributos a un producto?
+---
+
+# ¿Qué son los tipos de productos?
+
+El Tipo de un producto es, por lo general, el nombre del producto en sí, **lo que lo define como tal**. Por ejemplo un “Apple Macbook” sería de tipo “notebook”, así como un “Nintendo Wii” sería una “consola de juegos”. Por lo general los tipos se escriben en plural (i.e. “Notebooks”) ya que esto permite usarlos en los [menús de navegación](/es/administracion/menus).
+
+Por definición, **un producto sólo puede pertenecer a un tipo**, ya que es éste el que define sus atributos, en función de su naturaleza. Estos atributos los defines tú.
+
+Por ejemplo, todas las bicicletas tienen un aro, un número de cambios y un material específico. Entonces al crear el Tipo “Bicicletas” definirías esos tres atributos para que cuando agregues una nueva bicicleta a tu catálogo agregues los valores de esos atributos, además de su modelo, precio y descripción.
+
+**Puedes marcar los atributos como requeridos** para todos los productos de ése tipo, o bien dejarlos como opcionales. Esto significa que al asociar un producto a ese tipo, Bootic exigirá que se llene ese campo antes de guardar los cambios.
+
+## Qué NO es un tipo de producto
+
+A veces es fácil confundir una colección o etiqueta con un tipo de producto, en vista de que ambas cosas pueden usarse para agrupar productos en una tienda. En base a la definición previa, "Bicicletas" sería un tipo de producto válido, sin embargo "Destacadas" no lo sería ya que eso no define a un producto en sí.
+
+"Destacadas", en particular, es un buen ejemplo de una colección de productos, que veremos más adelante.
+
+## Cómo crear un tipo de producto
+
+En la edición de un producto, haz clic sobre el enlace «Administrar tipos de producto» (Figura 2). Los pasos a seguir son:
+
+ 1. Click sobre «Nuevo Tipo de Producto»
+ 2. Pon un nombre, por ejemplo: «Microondas»
+ 3. Nombre del primer atributo, por ejemplo: «Potencia»
+ 4. Tipo: Acá tienes 6 alternativas, por ejemplo: «Texto corto»
+ 6. Comentario: pequeña frase que describe el atributo, por ejemplo: «En Watts»
+ 7. Requerido: define si el campo es requerido o no.
+
+No hay límites para ingresar atributos a un Tipo de Producto, pueden ser todos los que quieras.
+
+<div class="captura">
+  <div class="c-contenido">
+    <img src="/img/admin/ss_new_product_type.png" width="650" alt="agregar un nuevo tipo de producto" />
+  </div>
+  <div class="c-pie">
+    <strong>Figura 2</strong>: Creando un nuevo tipo de producto
+  </div>
+</div>
+
+Siguiente: [Las Variantes de un producto](/es/administracion/productos/variantes).

@@ -1,0 +1,17 @@
+---
+:title: post
+:description: Atributos del objeto post
+:keywords: variables, variable, post, noticia
+---
+
+# El objeto post
+
+Disponible en la plantilla <a href="/es/diseno/plantillas/post">post.html</a> o al iterar sobre un conjunto de posts (<code>blog.posts</code>).
+
+<ul>
+  <li><code>post.title</code></li>
+  <li><code>post.author</code></li>
+  <li><code>post.body</code></li>
+  <li><code>post.published_on</code></li>
+  <li><code>post.url</code></li>
+</ul>

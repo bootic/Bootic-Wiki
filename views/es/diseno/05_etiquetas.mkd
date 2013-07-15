@@ -1,0 +1,27 @@
+---
+:title: Etiquetas
+:description: Funciones que puedes usar en todas las plantillas.
+:keywords: liquid, tags, variables
+---
+
+# Etiquetas Liquid
+
+ - {% if %}
+ - {% unless %}
+ - {% case %}
+ - {% cycle %}
+ - {% for %}
+ - {% tablerow %}
+ - {% assign %}
+ - {% include [template] %}
+
+# Etiquetas Bootic
+
+ - {{ content_for_layout }}
+ - {% current_title %}
+ - {% navigation_path %}
+ - {% bootic_header %}
+ - {% bootic_footer %}
+ - {% loop [objects] in 'template' %}
+ - {% add_to_cart %}
+ - {% cart %}

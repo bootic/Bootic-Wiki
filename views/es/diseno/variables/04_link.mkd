@@ -1,0 +1,16 @@
+---
+:title: link
+:description: Atributos del objeto link
+:keywords: variables, variable, link
+---
+
+# El objeto link
+
+Disponible al iterar sobre el atributo <code>links</code> de un objeto <code>menu</code>.
+
+<ul>
+  <li><code>link.title</code></li>
+  <li><code>link.url</code></li>
+  <li><code>link.type</code></li>
+  <li><code>link.object</code></li>
+</ul>

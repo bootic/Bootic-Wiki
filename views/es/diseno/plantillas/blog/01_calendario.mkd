@@ -1,0 +1,23 @@
+---
+:title: Calendario de noticias
+:description: Calendario de noticias
+---
+
+## Calendario de noticias
+
+Con el objeto <code>blog.calendar</code> y una combinación de trucos *Liquid* podemos generar una lista de meses, cada uno con la cuenta de artículos para cada més. Por último generamos un link a cada mes para ver el archivo de artículos.
+
+<pre>:::html
+<ul id="archivo">
+  {% for date in blog.calendar %}
+  <li>
+  {% capture localized_month %}datetime.month_names.month_{{date.month_num}}{% endcapture %}
+  <a href="{{ date.url }}" title="{{ localized_month | t }}">
+    {{ localized_month | t }} {{ date.year}} ({{ date.post_count }})
+  </a>
+  </li>
+  {% endfor %}
+</ul>
+</pre>
+
+El método <code>capture</code> es parte de Liquid y permite "capturar" el valor de un bloque de código y asignarlo a una variable, en este caso *localized_months*. ([ver documentación Liquid](http://wiki.shopify.com/UsingLiquid))

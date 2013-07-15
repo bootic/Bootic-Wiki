@@ -1,0 +1,33 @@
+---
+:title: Productos destacados en portada
+:description: Productos destacados en portada
+---
+
+# Lista de productos destacados
+
+<div class="clearfix">
+<img src="<%= img('/img/themes/new_collection.png').thumb('300x200').url %>" alt="Crear colección destacados" class="shadowed left" />
+<p>Una forma común de mostrar destacados en la portada es la siguiente:</p>
+<ol>
+  <li>Crea una colección llamada "detacados" (si es que no existe una ya)</li>
+  <li>Agrega los productos que quieras a la colección.</li>
+</ol>
+<p>Ahora puedes escribir el código (en <code>home.html</code>) que recorra los productos dentro de la colección "detacados" y muestre sus títulos (con link) y primera imagen.</p>
+</div>
+
+<pre>:::html
+<ul id="productos_destacados">
+  {% for product in collections.destacados.products %}
+  <li>
+    <!-- 1ra imagen -->
+    <a href="{{ product.url }}" class="product-image">
+      <img src="{{ product.first_image.small }}" alt="{{ product.model }}" />
+    </a>
+    <!-- título -->
+    <h3 class="product-model">
+      <a href="{{ product.url }}">{{ product.model | truncate: 30 }}</a>
+    </h3>
+  </li>
+  {% endfor %}
+</ul>
+</pre>

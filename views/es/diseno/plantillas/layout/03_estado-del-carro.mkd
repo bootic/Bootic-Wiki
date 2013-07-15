@@ -1,0 +1,42 @@
+---
+:title: Estado del carro
+:description: Cómo mostrar el estado del carro en todas las páginas.
+---
+
+# Estado del carro
+
+Bootic provee un método para obtener el detalle de productos que el cliente ha agregado al carro. Estos datos se pueden obtener via AJAX y en función de la respuesta, actualizar un elemento del DOM o efectuar otra acción.
+
+El archivo «vive» en la ruta /cart.json.
+
+Un ejemplo de uso de este `json` sería el **mostrar los totales de cantidad
+y precio** de los productos en el carro.
+
+### HTML
+
+Esto podría ir en `layout.html`, en la parte superior del elemento <code><body></code>.
+
+<pre>:::html
+<div id="carro">
+  <a href="/cart" title="Carro de compra"></a>
+</div>
+</pre>
+
+#### Javascript
+
+Y esto podría ir en `theme.js`. Usando la librería JQuery, podríamos hacer:
+
+<pre>:::javascript
+$(function(){
+	$.getJSON('/cart.json',function(data){
+	   if ( data && data.products.length ) {
+		  var unidades = data.units;
+		  var total = data.formatted_total;
+		  var target = $('#carro a');
+		  target.append('Carro de compra ('+ unidades +')' + total);
+		}
+	});
+});
+</pre>
+
+Y esto mostraría el total y la cantidad de productos que hay actualmente en el carro.

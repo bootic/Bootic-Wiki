@@ -1,0 +1,13 @@
+---
+:title: Menús de navegación
+:description: Cómo modificar los menús de navegación
+:keywords: pedidos, órdenes, pagos, gestión, venta, despachar, pendiente, cerrada
+---
+
+# Menús de navegación
+
+En Bootic, la estructura de navegación de tu sitio puede ser creada enteramente desde el área "Navegación" del administrador de tu tienda.
+
+Primero, crea un menú de navegación y agregar un par de links dentro de él. Bootic generará una "<abbr title="'Handle', o nombre normalizado">manilla</abbr>" que puedes usar para manipular el menú en el editor de plantillas.
+
+<img src="/img/themes/menus.png" alt="Administración de menus y links de navegación en Bootic" />

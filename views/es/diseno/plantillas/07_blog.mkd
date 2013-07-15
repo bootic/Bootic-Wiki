@@ -1,0 +1,69 @@
+---
+:title: blog.html
+:description: Variables y etiquetas Liquid para el blog y noticias en una tienda Bootic
+:keywords: liquid, tags, variables, blog, posts, noticias, artículos, paginate, strip_html, published_on, date, truncate, capture, blog.html, post.html
+---
+
+# Plantilla para el listado de noticias: blog.html
+
+Esta plantilla está diseñada para mostrar las noticias que publiques en tu tienda.
+
+<img src="/img/themes/blog-admin.png" alt="Administración de blog y noticias en Bootic" />
+
+## Paginando artículos
+
+<pre>:::html
+{% paginate blog.posts by 30 %}
+ {% for post in paginated_list %}
+  <div class="post">
+   <h3>
+    <a href="{{post.url}}" title="{{post.title}}">
+     {{ post.title }}
+    </a>
+   </h3>
+   <p class="texto">
+    {{ post.body | strip_html | truncate: 512 }}
+   </p><!-- /texto -->
+
+   <small class="date">
+    Publicado el {{ post.published_on | date:'%d/%m/%Y' }}
+   </small>
+  </div><!-- /post -->
+ {% endfor %}
+ {{ paginated_list | pagination }}
+{% endpaginate %}
+</pre>
+
+En este ejemplo usamos los *helpers* <code>strip_html</code> para remover etiquetas HTML y <code>truncate</code> para limitar el texto a 512 caractéres.
+
+Además usamos <code>date</code> para formatear la fecha de cada artículo.
+
+<h2 id="leer-mas">"Leer más"</h2>
+
+A veces querrás dividir artículos muy largos en dos y mostrar la primera parte o introducción en las listas de noticias (por ejemplo la portada o la plantilla <code>blog.html</code>). Para esto, primero asegúrate de que el código que muestra la lista de noticias usa el filtro <code>split</code>:
+
+<pre>:::html
+{% paginate blog.posts by 30 %}
+ {% for post in paginated_list %}
+  <div class="post">
+   ...
+   <p class="texto">
+    {{ post | split }}
+   </p><!-- /texto -->
+   ...
+  </div><!-- /post -->
+ {% endfor %}
+ {{ paginated_list | pagination }}
+{% endpaginate %}
+</pre>
+
+El filtro <code>split</code>, aplicado a una noticia, muestra la primera parte del artículo si detecta un símbolo especial insertado en cada noticia. Si la noticia no tiene ese símbolo simplemente se muestra el artículo completo.
+
+Con las plantillas listas, ahora puedes usar el botón de división de cada noticia. Lo encuentras en las herramientas de edición de cada noticia (ver foto).
+
+<img src="/img/themes/post-edit-split.png" alt="dividir artículo" />
+
+Ahora, los artículos que usen esto mostrarán sólo la primera parte en las listas, y un link "Seguir leyendo" que apunta al artículo completo.
+
+<img src="/img/themes/post-split.png" alt="Leer más" />
+

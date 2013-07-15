@@ -1,0 +1,82 @@
+---
+:title: Sintaxis
+:description: Cómo modificar el código de las plantillas
+:keywords: liquid, filtros, diseno, size, asset_url
+---
+
+# Liquid: El lenguaje de las plantillas Bootic
+
+Bootic utiliza [Liquid](https://github.com/Shopify/liquid/wiki/Liquid-for-Designers) como lenguaje para crear y modificar las plantillas que generan el HTML de una tienda. Al igual que otros sistemas de _templating_, Liquid permite combinar código HTML con etiquetas especiales para desplegar el contenido.
+
+Por ejemplo, para mostrar una lista de productos en la plantilla *products.html*, usaríamos el siguiente código:
+
+<pre>:::html
+<ul class="products">
+  {% for product in products %}
+  <li class="product">
+    <h3><a href="{{ product.url }}">{{ product.model }}</a></h3>
+    <span class="price">{{ product.price.format }}</span>
+  </li>
+  {% endfor %}
+</ul>
+</pre>
+
+La sintaxis de Liquid define tres tipos de elementos: <code>variables</code>, <code>filtros</code> y <code>etiquetas</code>.
+
+## [Variables](/es/diseno/variables)
+
+Una variable está rodeada por <code>{{</code> y <code>}}</code> e inserta texto directamente en tu plantilla.
+
+<pre>:::html
+{{ product.url }}
+</pre>
+
+Esto resulta en:
+
+<pre>:::html
+/products/producto-de-ejemplo
+</pre>
+
+Más información sobre las variables disponibles <a href="/es/diseno/variables">aquí</a>.
+
+## [Filtros](/es/diseno/filtros)
+
+Un filtro modifica o agrega al valor de una variable o expresión. La sintáxis de un filtro es <code>expresión | filtro</code>. La barra vertical quiere decir "toma el valor de la expresión y pásalo a través del filtro".
+
+Un ejemplo usando el filtro ´truncate´:
+
+<pre>:::html
+{{ 'Esta frase es muy larga así que la cortaremos' | truncate:20 }}
+</pre>
+
+Esto resulta en:
+
+<pre>:::html
+Esta frase es muy l...
+</pre>
+
+Más información sobre las filtros disponibles <a href="/es/diseno/filtros">aquí</a>.
+
+## [Etiquetas](/es/diseno/etiquetas)
+
+Una etiqueta esta rodeada por <code>{%</code> y <code>%}</code> y no retorna texto directamente, sino que modifica el contenido que rodea. Este ejemplo itera una lista de 3 productos y genera HTML para cada producto en la lista.
+
+<pre>:::html
+{% for product in products limit:3 %}
+  <a href="{{ product.url }}">{{ product.model }}</a>
+{% endfor %}
+</pre>
+
+El resultado será:
+
+<pre>:::html
+<a href="/products/xbox-one">Xbox One</a>
+<a href="/products/psx4">Sony Playstation 4</a>
+<a href="/products/gameboy">Gameboy</a>
+</pre>
+
+Más información sobre las etiquetas disponibles <a href="/es/diseno/etiquetas">aquí</a>.
+
+<div class="tip">
+  <strong>Liquid</strong> es un motor de plantillas muy completo y este wiki sólo nos enfocamos en los aspectos que tienen relación directa con plantillas de tiendas Bootic. Para uso general te recomendamos que revises <a href="https://github.com/Shopify/liquid/wiki/Liquid-for-Designers" title="Documentación completa de Liquid">la documentación oficial de liquid</a>.
+</div>

@@ -1,0 +1,42 @@
+---
+:title: Atributos de producto
+:description: Cómo desplegar los atributos de producto en la ficha.
+:keywords: 
+---
+
+# Mostrando el nuevo atributo en la plantilla
+
+Una vez creado el Tipo de Producto ahora debes **mostrarlo** en tu
+plantilla.
+
+Por defecto todas las plantillas Bootic mostrarán los atributos del
+producto, **siempre y cuando** estos tengan un valor, de no tenerlo no se
+mostrará. Un ejemplo de cómo mostrar todos los atributos de un producto sería:
+
+<pre>:::html
+{% if product.product_type %}
+<h2>{{ product.product_type }}</h2>
+<ul id="product-attributes">
+  {% for field in product.attributes %}
+  <li class="attribute-{{field.key}}">
+    <strong>{{ field.name }}:</strong> <span>{{ field.value }}</span>
+  </li>
+  {% endfor %}
+</ul>
+{% endif %}
+</pre>
+
+Si quieres mostrar **un atributo** en particular (como por ejemplo el código
+embebido de un video) el trozo de código _liquid_ sería así:
+
+<pre>:::html
+{% if product.product_type %}
+  {% for field in product.attributes %}
+    {% if field.key == "video" %}
+      <div class="video">
+        {{ field.value }}
+      </div>
+    {% endif %}
+  {% endfor %}
+{% endif %}
+</pre>

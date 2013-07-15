@@ -1,0 +1,29 @@
+---
+:title: Páginas y noticias
+:description: Cómo crear, modificar y eliminar páginas, noticias y formularios
+:keywords: páginas, contenido, formularios, secciones, noticias, artículos
+---
+
+# Cómo publicar y modificar páginas y noticias
+
+Como todo sitio web, una tienda en línea necesita de contenido relevante y fresco para obtener un buen ranking en los motores de búsqueda. En Bootic tienes la posibilidad de crear todas las páginas que quieras y además mantener un blog de manera muy fácil.
+
+Incluso puedes crear más de un formulario de contacto y definir los campos y remitentes a través del panel de administración, sin que tengas que meterte a modificar la plantilla de tu tienda.
+
+## ¿Cuál es la diferencia entre una página y una noticia?
+
+A diferencia de una noticia, una página normalmente se mantiene estática porque no está sujeta al criterio de la temporalidad. Por lo general las páginas se linkean desde el menú de un sitio y un ejemplo de ello es el "Acerca de" o "Políticas de despacho".
+
+Las noticias, en cambio, no se linkean desde el menú (aunque podrías hacerlo si quisieras) sino que aparecen dentro de la sección **Blog** de tu tienda. Como todo blog, el orden de las noticias es cronológicamente inverso, es decir, las noticias más nuevas van apareciendo arriba y empujan a las previas para abajo.
+
+## ¿Cómo creo o modifico una página?
+
+Para crear una página, debes abrir la sección "Páginas y Formularios" dentro del panel y hacer click donde dice "Nueva página". Luego debes elegir el nombre y confirmar la acción, con lo cual la página aparecerá en el listado de páginas de tu tienda.
+
+Para modificar una página ya creada, debes hacer click sobre su título en esa sección y con ello verás el formulario de edición. Una página tiene un título y un cuerpo, donde puedes ingresar HTML al cambiar el modo visual por modo código (muy similar al sistema de Wordpress).
+
+Una vez que hayas realizado los cambios apreta **Guardar**.
+
+## ¿Cómo creo una noticia?
+
+Para publicar una noticia, debes hacer click sobre el ítem Noticias y apretar el botón "Nueva noticia". Hecho eso, verás un formulario muy similar al que poseen las páginas, ya que las noticias también tienen tanto un título como un cuerpo. La única diferencia es que una noticia puede quedar en estado "borrador", con lo cual no se muestra de forma pública y así puedes avanzar tranquilamente y guardar tus cambios hasta que esté lista para salir al aire.

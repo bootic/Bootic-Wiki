@@ -7,6 +7,7 @@ require "redcarpet"
 require "dragonfly"
 require "multi_json"
 require 'yaml'
+require 'http_accept_language'
 
 $LOAD_PATH.unshift(File.dirname(__FILE__) + '/lib')
 
@@ -15,12 +16,15 @@ require 'helpers'
 
 class App < Sinatra::Base
 
+  AVAILABLE_LANGS = %w(en es)
+
   set :public_folder, File.dirname(__FILE__) + '/public'
   set :root, File.dirname(__FILE__)
   disable :protection # allow jsonp
 
   helpers do
     include Helpers
+    include HttpAcceptLanguage
   end
 
   configure do
@@ -36,7 +40,7 @@ class App < Sinatra::Base
   end
 
   before do
-    cache_long
+    cache_long unless development?
   end
 
   get '/sitemap.xml' do
@@ -59,7 +63,9 @@ class App < Sinatra::Base
   end
 
   get '/?' do
-    load_page ''
+    # language = compatible_language_from(AVAILABLE_LANGS)
+    language = 'es'
+    redirect '/' + language
   end
 
   get '/*.json' do

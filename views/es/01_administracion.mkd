@@ -1,0 +1,5 @@
+---
+:title: "Administrando tu tienda"
+:description: "Cómo funciona el día a día de una tienda Bootic."
+:keywords: administración, configuración, panel, backend, login
+---

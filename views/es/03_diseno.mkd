@@ -1,0 +1,31 @@
+---
+:title: "Diseño de plantillas"
+:description: "Cómo modificar el diseño de una tienda Bootic"
+:keywords: diseño, plantillas, customización, personalización
+:sitemap_priority: 1.0
+:group:
+  :name: Diseño
+  :label: ¿Cómo modifico el diseño?
+---
+
+# Cómo modificar el diseño de una tienda
+
+Bootic cuenta con diversos temas (themes) de diseño que tienen todo lo necesario para mostrar tus productos y empezar a vender en línea. En nuestra <a href="/es/diseno/galeria">galería de temas</a> puedes ver los diseños disponibles para usar.
+
+Sin embargo, es posible que desees ajustar el diseño de la plantilla a tus necesidades. Para lograr esto, es necesario modificar las plantillas que componen un tema a través de nuestro editor integrado. Para esto necesitarás conocimientos en HTML y CSS, tal cual como necesitarías para modificar las plantillas de un diseño en Wordpress.
+
+Un tema de diseño es, en esencia, un conjunto de plantillas HTML acompañadas de imágenes y hojas de estilo (CSS) que definen las características visuales de cada elemento.
+
+## Cambiando el tema de diseño de tu tienda
+
+Por defecto, las tiendas nuevas en Bootic utilizan nuestro tema **Snap**, que posee un diseño simple y limpio y por lo tanto funciona muy bien para diversos tipos de tiendas. Si quieres probar otro diseño, puedes dirigirte a la seccion Diseño del panel de administración Bootic y elegir otro.
+
+Una vez cambiado, basta con que abras (o refresques) la portada de tu tienda y verás cómo se ve con el nuevo diseño.
+
+## Modificando una plantilla
+
+Las plantillas HTML de cada página de tu tienda Bootic pueden ser editadas en el área de diseño de tu panel de administración, dentro del menú Diseño.
+
+<img src="/img/themes/editor_cover.png" alt="Bootic code editor" />
+
+Para empezar a modificar el código, es necesario que entiendas cómo funciona nuestro sistema de plantillas, empezando por <a href="/es/diseno/sintaxis">la sintaxis</a> que debes utilizar.

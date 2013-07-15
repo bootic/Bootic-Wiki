@@ -1,0 +1,11 @@
+---
+:title: Notificaciones y destinatarios
+:description: Cómo agregar o eliminar nuevos destinatarios para las notificaciones de tu tienda.
+:keywords: usuarios, administrador, editor, supervisor, vendedor, bodeguero, diseñador, admin
+---
+# Notificaciones y destinatarios
+
+El correo electrónico del **primer administrador** de la lista de usuarios _será
+el usado_ como remitente para todos los correos electrónicos que tu tienda Bootic
+envíe a tus clientes.
+

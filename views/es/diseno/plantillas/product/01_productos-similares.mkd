@@ -1,0 +1,77 @@
+---
+:title: Productos similares
+:description: Mostrando productos relacionados (similares) en la ficha de un producto
+:keywords: html, liquid, bootic, similares, relacionados, producto, productos, related_products, has_similar_products, similar_products, price format, thumbnail
+---
+
+# Mostrando productos similares en la ficha de producto
+
+## Relacionando productos en el administrador
+
+Bootic relaciona productos mediante "etiquetas". Si dos productos comparten una o más etiquetas se consideran productos relacionados o similares.
+
+Para agregar o quitar etiquetas a un producto en el panel de administración, navega al formulario de edición de cada producto y utiliza el selector de etiquetas del costado derecho, bajo las colecciones.
+
+<img src="<%= img('/img/themes/tag-selector.png').url %>" alt="Selector de etiquetas" />
+
+## Mostrando productos en tus plantillas
+
+En el editor de plantillas de tu tienda, abre a la plantilla <a href="/es/themes/product">product.html</a>, que representa la ficha de cada producto y pega el siguiente código.
+
+<pre>:::html
+{% if product.has_similar_products %}
+  <div id="similares">
+
+    <h2 class="titulo">{{ "titles.related_products" | t }}</h2>
+
+    <ul class="collection clearfix">
+      {% for p in product.similar_products limit:4 %}
+      <li class="item-{{ forloop.index + 1 }} clearfix">
+        <a href="{{ p.url }}" title="{{ p.model }}">
+          <img src="{{ p.first_image.thumbnail }}" alt="{{ p.model }}" />
+        </a>
+
+        <h3 class="product-model">
+          <a href="{{ p.url }}" title="{{ p.model }}">{{ p.model | truncate:30 }}</a>
+        </h3>
+
+        <p class="product-vendor">{{ p.vendor }}</p>
+        <small class="product-price">{{ p.price.format }}</small>
+
+      </li>
+      {% endfor %}
+    </ul>
+
+  </div><!-- /similares -->
+  {% endif %}
+</pre>
+
+Con un poco de <code>CSS</code> para el diseño, esto genera una lista de hasta 4 productos relacionados al producto actual.
+
+<img src="<%= img('/img/themes/similar-products.png').thumb('x200').url %>" alt="Products relacionados" class="framed" />
+
+Vamos por partes:
+
+<pre>:::html
+{% if product.has_similar_products %}
+   ...
+{% endif %}
+</pre>
+
+El método <code>has_similar_products</code> en el objeto <code>product</code> (el producto de la página actual) revisa que el producto tenga productos relacionados. Si no es así el contenido de la condición simplemente no se despliega en la página.
+
+<pre>:::html
+  {{ "titles.related_products" | t }}
+</pre>
+
+El filtro "t" se usa para traducir cadenas de texto comunes conocidad por Bootic. En este caso la clave "titles.related_products" se traduce al castellano "productos relacionados" y al inglés "similar products". Puedes reemplazar todo eso por tu propio título.
+
+<pre>:::html
+  {% for p in product.similar_products limit:4 %}
+     ...
+  {% endfor %}
+</pre>
+
+Este bloque está recorriendo los 4 primeros productos en la colección <code>similar_products</code> del producto actual. Cada producto es asignado a la variable <code>p</code> para que puedas acceder a sus atributos al generar el HTML para cada uno. Esto es lo que se llama un "loop".
+
+De aquí en adelante, este listado se comporta de la misma forma que un conjunto de productos, como sucede en la plantilla <a href="/es/diseno/plantillas/products">products.html</a>.

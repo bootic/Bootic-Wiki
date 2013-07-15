@@ -1,0 +1,19 @@
+---
+:title: "Zonas y costos de envío"
+:description: "Información sobre cómo configurar las zonas y costos de envío en tu tienda Bootic"
+:keywords: costos, zonas, envío, despacho, despachos, órdenes, pedidos, productos
+:group:
+  :name: Administración y configuración
+  :label: ¿Cómo administro costos de envío?
+---
+# Zonas y costos de envío
+
+Al realizar un pedido, tus clientes deben ingresar la dirección de envío para que puedas enviarle el producto. En base a esta información, Bootic revisa en la configuración de tu tienda para ver qué opciones de envío ofrecerles a tu cliente, y cuánto cobrar por una u otra.
+
+Estas opciones o formas de envío se definen previamente en tu panel Bootic a través de las Zonas de Envío. Una Zona de Envío es el conjunto de costos por peso asociados a un área geográfica definida.
+
+En otras palabras, dependiendo del peso total de un pedido (por ejemplo, 2 kilos), a ése pedido se le agregará el costo que tú definas que tiene el envío de un paquete de 2 kilos al área geográfica que corresponde a la dirección de envío.
+
+En este video explicamos cómo funcionan y cómo configurar las zonas de envío y sus costos.
+
+<iframe src="http://www.screenr.com/embed/A33" width="650" height="396" frameborder="0" style="margin-top: 20px"></iframe>

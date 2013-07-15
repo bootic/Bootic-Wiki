@@ -1,9 +1,0 @@
----
-:title: "Preguntas Frecuentes"
-:description: "Preguntas frecuentes sobre Bootic"
-:keywords: faq, preguntas, frecuentes, dudas, problemas, cómo, como, qué
-:in_menus: false
----
-# Preguntas frecuentes
-
-Haz click en las fotos para ver cada video.

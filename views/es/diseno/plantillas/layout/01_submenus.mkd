@@ -1,0 +1,101 @@
+---
+:title: Menús de navegación
+:description: Creando menús de navegación en tu tienda Bootic
+:keywords: navigation, ux, design, links, menu, menus, catalogo, manilla, slug, desplegable, tagged_collection_path, css, has_product_types, typed_collection_path
+---
+
+# Menús de navegación
+
+Para desplegar los links de un menú en específico dentro de tu plantilla, debes usar la manilla desde la variable <code>menus</code> e iterar sus links, en la forma `menus.MANILLA.links`. Ejemplo:
+
+<pre>:::html
+  <ul class="navegacion">
+  {% for link in menus.navegacion-footer.links %}
+    <li class="{{ link.slug }}{{ ' current' | print_if_equal: resource, link }}">
+      <a href="{{ link.url }}">{{ link.title }}</a>
+    </li>
+  {% endfor %}
+  </ul>
+</pre>
+
+El atributo <code>slug</code> en cada link es el valor de su propia manilla. En este caso lo usamos para asignar classes CSS a cada item del menu.
+
+Además usamos el helper <code>print_if_equal</code> para agregar la clase "current" si un link es igual a la página actual (<em>resource</em>).
+
+De esta forma puedes crear y mostrar distintos menús de navegación en tus páginas.
+
+# Submenús o menús desplegables
+
+Bootic no soporta la creación de submenús en la interfaz de administración, pero con una combinación de colecciones y etiquetas es fácil construir menús dentro de otros menús.
+
+Por ejemplo, supongamos que tenemos una colección "catálogo" con 2 productos. Producto 1 tiene las etiquetas ("tags") "etiqueta1" y "etiqueta2". Producto 2 tiene las etiquetas "etiqueta 1" y "etiqueta 3".
+
+<pre>
+Colección "catálogo"
+  - Producto 1
+    - tag "Etiqueta 1"
+    - tag "Etiqueta 2"
+  - Producto 2
+    - tag "Etiqueta 1"
+    - tag "Etiqueta 3"
+</pre>
+
+Crea un link en un menú apuntando a la colección "catálogo".
+
+<img src="/img/themes/menus2.png" alt="Administración de menus y links de navegación en Bootic" />
+
+A continuación construimos el HTML para los links del menú "navegacion-principal" de la misma forma que en el ejemplo anterior, pero dentro de cada link revisamos si hay etiquetas asociadas.
+
+<pre>:::html
+<ul class="navegacion">
+{% for link in menus.navegacion-principal.links %}
+  <li class="{{ link.slug }}{{ ' current' | print_if_equal: resource, link }}">
+    <a href="{{ link.url }}">{{ link.title }}</a>
+    <!-- este link tiene etiquetas ? -->
+    {% if link.has_tags %}
+      <ul class="submenu">
+      {% for tag in link.tags %}
+        <li>
+          <a href="{{ link | tagged_collection_path: tag }}">{{ tag.name }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+    <!-- /etiquetas -->
+  </li>
+{% endfor %}
+</ul>
+</pre>
+
+
+Si el link corresponde a una colección y esta tiene etiquetas asociadas, construimos un elemento <code>UL</code>, recorremos las etiquetas asociadas a la colección y generamos una lista con links usando el filtro <code>tagged_collection_path</code>, pasando el link y cada etiqueta como parámetros. El resultado es un submenú dentro del item "Catálogo", apuntando a las siguientes direcciones:
+
+<pre>
+- /collections/catalogo/tags/etiqueta-1
+- /collections/catalogo/tags/etiqueta-2
+- /collections/catalogo/tags/etiqueta-3
+</pre>
+
+Como se puede adivinar, estas direcciones sólo muestran productos dentro de la colección "catálogo" que además tengan la etiqueta indicada.
+
+Con un poco de JavaScript y CSS usar esta técnica para construir submenús desplegables, acordiones y otros.
+
+<img src="/img/themes/submenu.png" alt="Ejemplo de submenú" />
+
+Una segunda opción para generar submenús es usar tipos de productos dentro de colecciones en lugar de etiquetas. El código del submenú es similar al ejemplo anterior:
+
+<pre>:::html
+...
+<!-- este link tiene tipos ? -->
+{% if link.has_product_types %}
+  <ul class="submenu">
+  {% for tipo in link.product_types %}
+    <li>
+      <a href="{{ link | typed_collection_path: tipo }}">{{ tipo.name }}</a>
+    </li>
+  {% endfor %}
+  </ul>
+{% endif %}
+<!-- /tipos -->
+...
+</pre>

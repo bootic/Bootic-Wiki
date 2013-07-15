@@ -1,0 +1,25 @@
+---
+:title: "Promociones"
+:description: "Como hacer una promoción"
+:keywords: promo, promociones, publicidad, campaña, redes sociales, twitter, facebook, blog, screencast, video, video tutorial
+:group:
+  :name: Administración y configuración
+  :label: ¿Qué es y cómo se configura una Promoción?
+---
+
+# ¿Qué son las Promociones y cómo las uso?
+
+En resumen, una promoción permite aplicar un descuento al ingresar un código a la hora de hacer una compra. Bootic te permite crear tantas promociones como quieras, usando distintos criterios para definir en qué casos son aplicables o no.
+
+Los límites que puedes aplicar a una promoción son los siguientes:
+
+* Un valor o un porcentaje del valor de cada pedido de compra.
+* Tiempo de validez (con año, mes, día, hora y minuto) — incluso puedes programar futuras promociones.
+* Límite de usos.
+* Rango de precios.
+* Cantidad de productos.
+
+En el siguiente video (5:25) te explicamos cómo crear tu primera promoción.
+
+<iframe width="665" height="374" src="http://www.youtube.com/embed/1a9w1bM3-4g"
+frameborder="0" allowfullscreen></iframe>

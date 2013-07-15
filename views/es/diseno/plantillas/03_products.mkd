@@ -1,0 +1,80 @@
+---
+:title: products.html
+:description: Plantilla para listas y colecciones de productos.
+:keywords: liquid, producto, products, plantilla, html, css, thumbnail, product_type, variants, price, precio, variantes, archivos, colecciones, loop, parcial
+---
+
+# La plantilla para listar productos: products.html
+
+Esta es la plantilla usada por Bootic para mostrar listas y colecciones de productos. Esta siempre tiene disponible una lista de productos en el objeto <code>products</code>. 
+
+Normalmente querrás usar [paginación](/es/themes/pagination) para mostrar tus productos en varias páginas, ya que esa lista podría tener muchos productos (por ejemplo en el caso de <code>/products</code>, que muestra todos los productos visibles de tu tienda).
+
+<pre>:::html
+<ul class="products">
+{% paginate products by 5 %}
+  {% for product in paginated_list %}
+    <li class="clearfix">
+      <a href="{{ product.url }}" class="product-image">
+        <img src="{{ product.first_image.small }}" alt="{{ product.model }}" />
+      </a>
+
+      <h3 class="product-model">
+        <a href="{{ product.url }}">{{ product.model }}</a>
+      </h3>
+
+      <span class="product-vendor">{{ product.vendor }}</span>
+
+      {% unless product.price.zero %}
+        <small class="product-price">{{ product.price.format }}</small>
+      {% endunless %}
+
+    </li>
+  {% endfor %}
+  {{ paginated_list | pagination }}
+{% endpaginate %}
+</ul>
+</pre>
+
+En este caso iteramos sobre la lista de productos <code>products</code> y generamos HTML para cada producto, mostrando detalles básicos de cada uno como título, imagen pequeña, precio y fabricante.
+
+En este ejemplo estamos mostrando la primera imagen de cada producto dentro de un hipervínculo ("link") a la ficha del producto.
+
+<pre>:::html
+<a href="{{ product.url }}" class="product-image">
+  <img src="{{ product.first_image.small }}" alt="{{ product.model }}" />
+</a>
+</pre>
+
+Luego mostramos el título o modelo del producto - de nuevo dentro de un link - usando el filtro <code>truncate</code> para asegurarnos de que sólo mostramos los primeros 30 caractéres del título y así evitar romper el diseño.
+
+<pre>:::html
+<h3 class="product-model">
+  <a href="{{ product.url }}" title="{{ product.model }}">{{ product.model }}</a>
+</h3></pre>
+
+Luego mostramos el nombre de la marca o fabricante del producto ("vendor").
+
+<pre>:::html
+  <span class="product-vendor">{{ product.vendor }}</span>
+</pre>
+
+Por último, mostramos el precio de producto, pero sólo si éste es mayor que 0 (para no mostrar un "0" para productos que pudieran no tener precio o ser gratuitos)
+
+<pre>:::html
+  {% unless product.price.zero %}
+   <small class="product-price">{{ product.price.format }}</small>
+  {% endunless %}
+</pre>
+
+Usamos el método <code>format</code> en el precio del producto, que despliega la puntuación correcta y el símbolo de la moneda configurada en tu tienda.
+
+<div class="tip">
+  En este ejemplo mostramos la imagen pequeña por defecto de cada producto (product.first_image.small), pero también es posible mostrar <a href="/es/diseno/imagenes">tamaños personalizados de imágenes</a>
+</div>
+
+## Relacionados:
+
+* [Paginación de productos](/es/themes/pagination)
+* [product.html](/es/themes/product)
+* [Tamaños personalizados de imágenes de productos](/es/themes/imagenes#resize)

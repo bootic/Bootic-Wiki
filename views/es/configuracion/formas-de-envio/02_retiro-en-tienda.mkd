@@ -1,0 +1,62 @@
+---
+:title: "Ofreciendo retiro en Tienda"
+:description: "Como ofrecer a tus clientes la posibilidad de retirar el producto
+en la tienda"
+:keywords: retirar, tienda, showroom, entrega, recoger
+---
+
+# Retirar un producto en la tienda física
+
+Una de las ventajas del comercio electrónico es que el producto _viaja_ hasta la
+puerta de su casa. Pero muchas veces el cliente quiere **retirar el producto en
+la tienda física** para abaratar costos o simple comodidad.
+
+**Importante**: Ofrecer la posibilidad de «Retirar en tienda» es una
+política de cada comercio, el locatario Bootic deberá evaluar **si la ofrece o no**
+a sus clientes.
+
+## Cómo se hace
+
+¿Cómo darle al cliente la posibilidad de retirar el producto en la tienda
+física?, a continuación los pasos a seguir:
+
+<div class="captura">
+    <div class="c-contenido">
+        <img src="/img/admin/retirar-tienda-crear-zona.png" alt="Creación de la zona" />
+    </div>
+    <div class="c-pie">
+        <strong>Figura 1</strong>: Creación de la Zona y costo de envio
+    </div>
+</div>
+
+1. Crear una [Zona y costo de envío][zona]. Una zona podría ser (Figura 1):
+
+    * **Nombre**: Retirar en tienda
+    * **País**: Chile
+    * **Región**: Todos
+
+2. En **Rango de pesos y valores** poner:
+
+    * **Hasta**: 1000000 grs
+    * **Costo**: 0
+
+    El **peso** es 1 tonelada, esta cifra algo _descabellada_ es para cubrir el
+mayor rango posible — si tu tienda vende productos en este rango de peso
+entonces pon una cantidad «inalcanzable».
+
+3. Dale clic a **Guardar zona de envío**
+
+¡Listo!, eso es todo, desde ahora en adelante tus clientes tendrán esa opción a la
+hora de **Realizar la compra** — Figura 2.
+
+<div class="captura">
+	<div class="c-contenido">
+        <img src="/img/admin/retiro_en_tienda.png" alt="retiro en tienda" />
+    </div>
+	<div class="c-pie">
+		<strong>Figura 2</strong>: Retiro en tienda como Opción de envío
+	</div>
+</div>
+
+
+  [zona]:/es/administration/preferencias/shipping_zones "Cómo crear zonas y costo de envio"

@@ -1,0 +1,26 @@
+---
+:title: post.html
+:description: Plantilla para el detalle de una noticia.
+:keywords: foo, bar
+---
+
+# Plantilla para el detalle de una noticia: post.html
+
+La plantilla <code>post.html</code> muestra el detalle de cada noticia y tiene su propia URL. por ejemplo <code>/blog/2012/03/18/mi-primera-noticia</code>. En esta plantilla puedes mostrar el artículo completo.
+
+<pre>:::html
+  <div class="post">
+
+    <h2>{{ post.title }}</h2>
+
+    <div class="entry">
+    {{ post.body }}
+    </div><!-- /entry -->
+
+    <small class="date" title="{{ post.published_on | date:'%b %d %H:%M:%S %Y' }}">
+    Publicado <span>el {{ post.published_on | date:'%d/%m/%Y' }}</span>
+    por {{ post.user_name }}
+    </small>
+
+  </div><!-- /post -->
+</pre>
