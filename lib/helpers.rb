@@ -1,7 +1,8 @@
 module Helpers
 
   def web_host
-    'http://bootic.bootic.net' # 'www.bootic.net'
+    # 'http://bootic.bootic.net'
+    'www.bootic.net'
   end
 
   # returns true if we're showing a language index (/es or /en)
