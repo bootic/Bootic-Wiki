@@ -17,8 +17,6 @@ Como medio de pago utilizamos [RBS WorldPay][2]. Sus oficinas centrales se
 encuentran en el Reino Unido, por este motivo **no entregamos una factura**, pero
 mes a mes se genera un _Invoice_ (tipo de factura) que llega vía mail.
 
-# ¿Cómo se paga el fee mensual de Bootic? ¿Se recibe algún comprobante?
-
 Pese a que es del extranjero, es **perfectamente posible ingresarlos** a la
 contabilidad, tal como lo harías con otros servicios por Internet (SalesForce,
 Google Apps, hosting, etc).  De esta forma se puede justificar como un gasto.
