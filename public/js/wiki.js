@@ -155,7 +155,10 @@ function arrow (how_much) {
 
   $('a[rel=fancybox]').fancybox();
 
-  $(document).pjax('#main a', '#content', { scrollTo: false })
+  // PJAX, only on inner pages (with sidebar)
+
+  if ($('#sidebar')[0])
+    $(document).pjax('#main a', '#content', { scrollTo: false })
 
   $(document).on('pjax:complete', function(e, opts){
     var link = e.relatedTarget;
