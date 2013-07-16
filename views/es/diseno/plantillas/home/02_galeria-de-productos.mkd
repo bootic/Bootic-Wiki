@@ -1,6 +1,7 @@
 ---
 :title: Galería o slideshow de productos
 :description: Cómo mostrar una galería o slideshow de productos
+:keywords: galeria, slideshow, imagenes, productos, jquery, cycle, myGallery, banner
 ---
 
 # Galería o slideshow de productos
@@ -57,7 +58,7 @@ El plugin Cycle debes descargarlo y subirlo como archivo al editor de tu tienda.
 </pre>
 
 <div class="tip">
-  Lee "<a href="/es/themes/librerias_externas">jQuery y librerías externas</a>" para saber más sobre cómo trabajar con javaScript en Bootic.
+  Lee "<a href="/es/diseno/librerias/librerias-externas">jQuery y librerías externas</a>" para saber más sobre cómo trabajar con javaScript en Bootic.
 </div>
 
 Por último, necesitarás un poco de CSS para que la galería de imágenes se vean bien (en <code>master.css</code>):
