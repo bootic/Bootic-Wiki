@@ -60,6 +60,7 @@ module Helpers
   end
 
   def page_class
+    return 'not_found' unless @page
     @page.url.split('/').reject{|e| e == ''}.join('_')
   end
 
