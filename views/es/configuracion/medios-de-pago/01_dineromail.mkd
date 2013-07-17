@@ -7,7 +7,7 @@
 
 [DineroMail](http://dineromail.com/) es un medio de pago muy popular en Latinoamerica y muy fácil de configurar.
 
-Sus oficina centrales están en Argentina, y tienen oficinas de representación en Brasil, Chile, Colombia y México. Una de sus principales ventajas es que permite, aparte del pago con tarjeta de crédito, el uso de las tarjetas de casas comerciales o servicios como Servipag (en Chile).
+Sus oficinas centrales están en Argentina, y tienen oficinas de representación en Brasil, Chile, Colombia y México. Una de sus principales ventajas es que permite, aparte del pago con tarjeta de crédito, el uso de las tarjetas de casas comerciales o servicios como Servipag (en Chile).
 
 No existe ningún tipo de costo por garantía.
 
@@ -21,13 +21,13 @@ La integración de DineroMail con Bootic es muy sencilla.
 
 ## Paso 1: crear cuenta
 
-Ingresar al [sitio de DineroMail de tu país]((http://dineromail.com/)) y crear una cuenta.
+Ingresar al [sitio de DineroMail de tu país](http://dineromail.com/) y crear una cuenta.
 
 ## Paso 2: ubicar tu número de cuenta
 
 Dada cuenta DineroMail tiene asignado un número que debes ingresar en en panel de administración de Bootic (campo "API KEY") al configurar DineroMail como medio de pago.
 
-La "Api Key" que debe ingresarse en el panel de administración es el "Número de Cuenta", pero es importante indicar que, por ejemplo, si el Número de Cuenta **en tu panel DineroMail** es 0579035/7, las cifras que debes ingresar como api key son 579035, es decir sin el 0 y hasta el último número antes del /. Mira la foto a continuación para un ejemplo:
+La "Api Key" que debe ingresarse en el panel de administración es el "Número de Cuenta", pero es importante indicar que, por ejemplo, si el Número de Cuenta **en tu panel DineroMail** es 0579035/7, las cifras que debes ingresar como api key son 579035, es decir sin el 0 y hasta el último número antes del /. Mira la imagen a continuación para un ejemplo:
 
 <img class="framed" src="/img/payment_methods/dineromail-account-number.png" alt="API key dineromail" />
 
