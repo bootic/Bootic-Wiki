@@ -1,12 +1,12 @@
 ---
 :title: Galería de temas de diseño
-:description: Temas de diseño disponibles
-:keywords: theme, plantilla, tema, galería, galeria, gallery, editor, simplelist, snap, base, bootstrap
+:description: Temas de diseño disponibles para vestir tu tienda Bootic.
+:keywords: diseño, theme, plantilla, tema, galería, galeria, gallery, editor, simplelist, snap, base, bootstrap
 ---
 
-# Temas de diseño por defecto
+# Temas de diseño Bootic
 
-Estos son los *temas* de diseño que puedes elegir para empezar con tu tienda Bootic. Todas los temas pueden ser modificados totalmente mediante el [editor de plantillas](/es/themes) de tu tienda.
+Bootic cuenta con algunos temas prediseñados que puedes usar en tu tienda Bootic. Todas ellos pueden ser modificados a través el [editor de plantillas](/es/diseno) de tu tienda.
 
 <div class="tip">
   Las tiendas nuevas vienen por defecto con el tema "snap", pero puedes elegir uno distinto en el area de diseño de tu panel de administración.
@@ -28,12 +28,12 @@ Estos son los *temas* de diseño que puedes elegir para empezar con tu tienda Bo
         <li>Carrito Ajax</li>
       </ul>
       <p class="buttons">
-        
+
         <a href="http://bootstrap1.bootic.net" class="preview_link" target="_blank">Ver tienda de ejemplo</a>
       </p>
     </div>
   </li><!-- /bootstrap1 -->
-  
+
   <li class="media_item clearfix">
     <a href="http://snap.bootic.net" class="thumbnail" target="_blank" title="Ver tienda de ejemplo">
       <img src="/img/themes/gallery/snap/preview.png" alt="Snap" />
@@ -50,7 +50,7 @@ Estos son los *temas* de diseño que puedes elegir para empezar con tu tienda Bo
       </p>
     </div>
   </li><!-- /snap -->
-  
+
   <li class="media_item clearfix">
     <a href="http://simplelist.bootic.net" class="thumbnail" target="_blank" title="Ver tienda de ejemplo">
       <img src="/img/themes/gallery/simplelist/preview.png" alt="Simplelist" />
@@ -69,7 +69,7 @@ Estos son los *temas* de diseño que puedes elegir para empezar con tu tienda Bo
       </p>
     </div>
   </li><!-- /simplelist -->
-  
+
   <li class="media_item clearfix">
     <a href="http://tienda.inventario.cl" class="thumbnail" target="_blank" title="Ver tienda de ejemplo">
       <img src="/img/themes/gallery/base/preview.png" alt="Base" />
@@ -87,5 +87,5 @@ Estos son los *temas* de diseño que puedes elegir para empezar con tu tienda Bo
       </p>
     </div>
   </li><!-- /base -->
-  
+
 </ul>

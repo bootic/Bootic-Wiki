@@ -5,7 +5,30 @@
 ---
 # Notificaciones y destinatarios
 
+Bootic envía correos para notificar cuando los siguientes eventos ocurren en tu tienda:
+
+## Un nuevo pedido fue generado por un cliente (estado pendiente)
+
+Este correo se envía una vez que un cliente llenó todos los campos asociados a una compra, y luego de hacer click sobre el botón "Ir al pago". El correo se envía a el o los destinatarios que hayan sido definidos en la sección Notificaciones y Destinatarios del panel de Preferencias. Por defecto es el primer usuario registrado en una tienda.
+
+## Un pedido fue existosamente pagado a través de tarjeta de crédito (Webpay)
+
+Este correo se envía una vez que un cliente realizó el pago para un pedido usando tarjeta de crédito (por ahora sólo Webpay). Al igual que en el caso anterior, el correo se envía a el o los destinatarios que hayan sido definidos en la sección Notificaciones y Destinatarios del panel de Preferencias.
+
+## El stock de un producto está bajo el nível mínimo definido para las alertas.
+
+Opcional. Este email se envía luego de que un pedido se concrete y el nivel de stock de un producto quede por debajo del umbral mínimo definido para las alertas. Esta opción se desactiva en la sección Notificaciones y Destinatarios del panel de Preferencias.
+
+## Un cliente envió un formulario de contacto
+
+Este correo se envía para notificarte cuando un usuario envió un formulario de contacto, y contiene todos los campos que hayan sido llenados a la hora de enviar el formulario. A diferencia de los casos anteriores, **los destinatarios de un formulario se definen en su página de edición**, es decir, puedes definir una o más casillas distintas a las que recibirán las notificaciones de nuevas compras.
+
+# Notificaciones a tus clientes
+
+Bootic también envía correos a tus clientes para notificarles que un pedido fue exitosamente agregado al sistema, y en el momento en que un pedido cambia al estado "Cerrado", ya sea porque pagó usando tarjeta de crédito (Webpay), o bien porque tú cambiaste el estado del pedido en el panel (ej. después de recibir el comprobante de una transferencia).
+
+En este caso, Bootic además de te entrega la posibilidad de que añadas un mensaje personalizado a tu cliente, por ejemplo para avisarle el estado del despacho o una fecha u hora aproximada en que lo recibirá.
+[](URL)
 El correo electrónico del **primer administrador** de la lista de usuarios _será
 el usado_ como remitente para todos los correos electrónicos que tu tienda Bootic
-envíe a tus clientes.
-
+envíe a tus clientes. Esta propiedad no puede ser modificada.
