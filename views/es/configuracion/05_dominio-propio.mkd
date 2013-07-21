@@ -36,7 +36,7 @@ Los pasos son:
 
 1. Anda al panel de administración de DNS de tu proveedor.
 2. Crea un registro de tipo CNAME con el nombre del subdominio y dominio que quieres redirigir (por ejemplo "www.mitienda.com"). El valor debe ser "proxy.bootic.net"
-3. Espera unas horas (los cambios de DNS tardan horas en propagarse por internet). Cuando tu dominio `www.mitienda.com` muestre una página de error de Bootc, significa que el dominio ya está *apuntado* a tu sitio Bootic. 
+3. Espera unas horas (los cambios de DNS tardan horas en propagarse por internet). Cuando tu dominio `www.mitienda.com` muestre una página de error de Bootc, significa que el dominio ya está *apuntado* a tu sitio Bootic.
 4. Entra a tu administrador Bootic, navega hasta las preferencias y edita el campo «Dirección URL» con `www.mitienda.com`. Guarda el cambio.
 5. Eso es todo. Ahora la dirección `www.mitienda.com` debiera mostrarte tu tienda Bootic - Figura 1.
 
@@ -46,7 +46,7 @@ Los pasos son:
         <strong>Figura 1:</strong> Dirección URL en el panel de control
     </div>
 </div>
-    
+
 
 ### Opción 2: No tengo acceso a DNS
 
@@ -79,7 +79,7 @@ Los pasos de arriba son aplicables para dominios `.cl` registrados en el [NIC](h
 <div class="captura">
     <div class="c-contenido"><img src="/img/admin/nic.png" alt="panel NIC" /></div>
     <div class="c-pie">
-        <strong>Figura 2</strong>: Configuración de DNS en NIC.cl 
+        <strong>Figura 2</strong>: Configuración de DNS en NIC.cl
     </div>
 </div>
 
@@ -91,7 +91,7 @@ Los pasos de arriba son aplicables para dominios `.cl` registrados en el [NIC](h
     <li>le pregunta a un Servidor de Nombres (DNS) cuál es la dirección IP corespondiente al nombre "bootic.net".</li>
     <li>el servidor DNS responde en este caso con "74.207.237.171" (nuestra dirección IP)</li>
     <li>el navegador visita el servidor con IP 74.207.237.171 y descarga la portada de nuestro sitio. </li>
-    <li>Todo esto sucede sin que tu como usuario te des cuenta.</li>    
+    <li>Todo esto sucede sin que tu como usuario te des cuenta.</li>
   </ol>
 
 </div>
@@ -110,4 +110,4 @@ Si alojas tus DNS con nosotros (si configuraste tu dominio para apuntar a nuestr
 
 Google Apps es una serie de servicios de Google, que te permiten usar herramientas Google como GMail, Google Docs, Calendario y otros bajo tu dominio. Esto significa que puedes tener correos con tu propio dominio (por ejemplo *ismael@mitienda.com*) administrados por Google y accesibles de la misma forma que una cuenta GMail normal.
 
-[Leer más sobre configurar Google Apps para tu dominio](/es/servicios/google-apps)
+[Leer más sobre configurar Google Apps para tu dominio](/es/configuracion/servicios/google-apps)
