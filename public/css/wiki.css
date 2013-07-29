@@ -72,7 +72,13 @@ img.right {
 #content ol,
 #content ul {
   margin: 20px 30px;
+}
+#content ul {
   list-style: disc inside;
+}
+
+#content ol {
+  list-style: decimal;
 }
 
 #content li {
