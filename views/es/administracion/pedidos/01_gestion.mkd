@@ -42,3 +42,7 @@ Esta página contiene:
     * Apple Numbers
 
     El archivo `CSV` contendrá **la totalidad de los pedidos** procesadas por la tienda, para el rango de fecha en despliegue.
+
+5. Podrá filtrar las órdenes por fecha.
+
+6. Podrá buscar las órdenes por ID. No es necesario ingresar todo el código puede ingresar parte de el, ejm «CB7»: filtrará todas las órdenes que comienzan con **CB7**.
