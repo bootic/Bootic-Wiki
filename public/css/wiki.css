@@ -90,7 +90,20 @@ img.right {
   margin: 20px 0 40px;
   text-align: center;
 }
-
+.image_and_detail {
+  margin-bottom: 20px;
+}
+.image_and_detail .image_left {
+  margin-right: 10px;
+  float: left;
+}
+.image_and_detail .image_right {
+  margin-right: 10px;
+  float: right;
+}
+.image_and_detail .detail {
+  text-align: justify;
+}
 .c-pie {
   font-size: 1em;
   color: #666;

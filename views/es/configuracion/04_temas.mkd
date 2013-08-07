@@ -1,7 +1,7 @@
 ---
 :title: Galería de temas de diseño
 :description: Temas de diseño disponibles para vestir tu tienda Bootic.
-:keywords: diseño, theme, plantilla, tema, galería, galeria, gallery, editor, simplelist, snap, base, bootstrap
+:keywords: diseño, theme, plantilla, plantillas, tema, galería, galeria, gallery, editor, simplelist, snap, base, bootstrap
 ---
 
 # Temas de diseño Bootic

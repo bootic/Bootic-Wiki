@@ -1,0 +1,329 @@
+---
+:title: Carrito Ajax
+:description: Carrito de compras dinámico con Ajax
+:keywords: liquid, html, carrito, ajax, carro, cart, widgets, cart, dinamico, javacript, tim
+---
+
+# Carrito dinámico Ajax
+
+<div class="clearfix image_and_detail">
+  <img src="/img/themes/ajax_cart/simplelist-example.gif" alt="Carrito dinámico Ajax" class="image_left" />
+  <p class="detail">
+    El carrito <em>Ajax</em> se refiere al uso de JavaScript para implementar un carrito de compras dinámico donde el usuario puede agregar y editar productos en el carro sin necesidad de recargar la página. Esto puede mejorar la experiencia de usuario y mejorar la tasa de conversión.
+  </p>
+</div>
+
+<div class="tip">
+  <a href="/es/configuracion/temas" title="Galería de plantillas predefinidas de Bootic">Algunas plantillas predefinidas</a> de Bootic vienen de fábrica con el carrito Ajax funcionando
+</div>
+
+Para implementar el carrito Ajax en tu propia plantilla puedes usar la librería JavaScript `bootic_cart.js`. Para esto es necesario entender JavaScript y HTML.
+
+## bootic_cart.js
+
+Lo primero es incluír la librería en tu [layout.html](/es/diseno/plantillas/layout) o la plantilla parcial donde la quieras usar.
+
+`{{ 'http://js.bootic.net/cart/0.0/bootic_cart.min.js' | javascript_tag }}`
+
+<div class="tip">
+  <code>bootic_cart.js</code> depende de jQuery. <a href="/es/diseno/librerias/librerias-externas" title="Cómo usar jquery en plantillas Bootic">Revisa nuestra documentación</a> si no sabes cómo usar jQuery en tu tienda Bootic.
+</div>
+
+La librería hace disponible el object `Bootic.Cart`. Este objeto hace cosas como cargar el estado del carrito y tiene métodos para agregar, actualizar y quitar productos del carro. Además gatilla *eventos* cada vez que el carro es actualizado o está trabajando.
+
+Revisa [la documentación](https://github.com/bootic/bootic_cart) de la librería para ver todos los eventos y atributos del objeto `Bootic.Cart`.
+
+### Evento `updated`
+
+El evento `updated` gatilla cuando el carrito es cargado por primera vez y cada vez que es actualizado. Puedes registrar una función que ejecute en estos casos.
+
+<pre>:::javascript
+// Registra una función que ejecuta cuando el carrito es actualizado
+Bootic.Cart.bind('updated', function () {
+  console.log( Bootic.Cart.units ) // <- unidades en el carro
+  console.log( Bootic.Cart.formatted_total )  // <- total
+})
+
+// Carga el carro cuando la página esté lista (usando jQuery). 
+// Esto gatilla el evento 'updated'
+$(function () {
+  Bootic.Cart.load()
+})
+</pre>
+
+El siguiente ejemplo registra una función en el evento `updated` para para mostrar las unidades y total actualizado del carro; supongamos que tienes el siguiente HTML en alguna parte de tu plantilla `layout.html`:
+
+<pre>:::html
+<div id="carrito">
+  <h2><span class="units">0</span> products en el carro</h2>
+  <p>Total: <span class="total"></span></p>
+</div>  
+</pre>
+
+Ahora, en JavaScript, cargamos el carro y actualizamos el valor de los elementos `.units` y `.total`
+
+<pre>:::javascript
+// Actualiza el HTML cuando el carrito es actualizado o cargado.
+Bootic.Cart.bind('updated', function () {
+  $('#carrito .units').text(Bootic.Cart.units)
+  $('#carrito .total').text(Bootic.Cart.formatted_total_)
+})
+
+// Carga el carrito.
+$(function () {
+  Bootic.Cart.load()
+})
+</pre>
+
+### Productos en el carrito
+
+`Bootic.Cart` también tiene información sobre los productos agregados al carro. Disponibles en el *array* de objectos `Bootic.Cart.products`
+
+<pre>:::javascript
+Bootic.Cart.bind('updated', function () {
+  if(Bootic.Cart.hasProducts) {
+    $.each(Bootic.Cart.products, function (i, product) {
+      // Aquí puedes insertar HTML para cada producto en tu plantilla.
+      // Atributos disponibles en cada producto son:
+      //    product.model
+      //    product.variant_title
+      //    product.variant_id
+      //    product.quantity
+      //    product.formatted_price
+      //    product.image
+      //    product.unavailable // true | false si quedan más para unidades disponibles
+    })
+  }
+})
+
+// Carga el carrito.
+$(function () {
+  Bootic.Cart.load()
+})
+</pre>
+
+### Promoción activa
+
+`Bootic.Cart` también tiene información sobre la [promoción](/es/administracion/promociones) activa (si es que hay una).
+
+<pre>:::javascript
+Bootic.Cart.bind('updated', function () {
+  if(Bootic.Cart.hasPromotion) {
+    if(Bootic.Cart.validPromotion) {
+      // La promoción es válida.
+      // Aquí usas cart.promotion con los siguientes atributos
+      //    Bootic.Cart.promotion.name
+      //    Bootic.Cart.promotion.formatted_discount_total
+      //    Bootic.Cart.promotion.free_shipping // true | false
+    } else {
+      // la promoción es inválida. Puedes explicar porqué:
+      $.each(Bootic.Cart.promotion.errors, function (i, errorMessage) {
+        // Aquí puedes insertar cada error en tu HTML
+        $('#carrito ul.errores').append('<li>' + errorMessage + '</li>')
+      })
+    }
+
+  }
+})
+
+// Carga el carrito.
+$(function () {
+  Bootic.Cart.load()
+})
+</pre>
+
+### Botones "agregar al carro"
+
+El botón "agregar al carro" de los productos en tu tienda por defecto redirige al usuario al carrito normal [/cart.html](/es/diseno/plantillas/cart).
+
+Para desactivar elcomportamiento por defecto y hacer que los botones agreguen productos al carrito Ajax, simplemente usa `$.Bootic.ajaxButtons()`
+
+<pre>:::javascript
+Bootic.Cart.bind('updated', function () {
+  // ... tu código aquí
+})
+
+$(function () {
+  // Carga el carrito.
+  Bootic.Cart.load()
+  
+  // Activa botones Ajax
+  $.Bootic.ajaxButtons()
+})
+</pre>
+
+<div class="clearfix image_and_detail">
+  <img src="/img/themes/ajax_cart/add-to-cart-button.png" alt="Botones agregar al carro" class="image_right" />
+  <p class="detail">
+    Ahora, cada vez que aprietes "agregar al carro" en cualquier producto, el producto es agregado a <code>Bootic.Cart</code> y éste gatilla el evento <code>updated</code>. La librería automáticamente actualiza el texto de los botones para indicar las unidades en el carro.
+  </p>
+</div>
+
+### Plantillas para el carrito
+
+Usar jQuery para actualizar el HTML de tu plantilla funciona, pero puede ser inconveniente para carritos más complejos. La librería `bootic_cart.js` incluye un motor de plantillas para que, opcionalmente, puedas diseñar tu carrito en HTML de forma similar a como lo haces con las plantillas normales de tu tienda.
+
+Lo primero es definir la plantilla del carrito dentro una etiqueta `<script>` especial.
+  
+<pre>:::html
+<!-- esta plantilla será utilizada por el carito -->
+<script type="text/html" data-template="cart">
+  <!-- muestra unidades -->
+  <h3>%{ units } productos en el carro</h3>
+  
+  %{hasProducts}
+    <!-- muestra products -->
+    <ul class="items" id="cart_items">
+      %{products}
+        <li id="citem_%{ id }">
+          <h4>%{ model } - %{ variant_title }</h4>
+          <small>(%{ quantity } unidades): %{ formatted_price }</small>
+        </li>
+      %{/products}
+    </ul>
+    
+    <!-- muestra total -->
+    <p class="total">Total: %{ formatted_total }</p>
+  
+    <!-- Checkout button. Send cart to checkout section. -->
+    <form action="/cart" method="post">
+      <input type="hidden" name="_method" value="put" />
+      <input type="submit" name="cart_action" class="checkout bootic_button" value="{{ 'js_cart.purchase' | t }} »" />
+    </form>
+  %{/hasProducts}
+</script>
+
+<!-- la plantilla dinámica será insertada en este elemento -->
+<div id="carrito"></div>
+</pre>
+
+Fíjate en el atributo `data-template="cart"`. Este es el nombre de la plantilla que usaremos en JavaScript.
+
+<div class="tip">
+  <p>Aunque funcionan de forma similar, las plantillas para el carrito Ajax tienen sintaxis distinta a las <a href="/es/diseno/sintaxis">plantillas Liquid</a> tradicionales de Bootic.
+  Esto es porque las plantillas del carrito son procesadas por JavaScript en el navegador en lugar del servidor.</p>
+  <p>Por ejemplo, para mostrar el valor de una variable, en Liquid usas <code>{{ variable }}</code>, mientras que en las plantillas del carrito usas <code>%{ variable }</code>. No las confundas!</p>
+</div>
+
+Ahora en JavaScript, usamos el plugin jQuery `booticTemplateRender` (incluído en la librería) para poblar la plantilla dinámica con los datos del carrito e insertarla dentro del contenedor `#carrito`.
+
+<pre>:::javascript
+Bootic.Cart.bind('updated', function () {
+  // Puebla la plantilla 'cart' con los datos del carro
+  // e insértala dentro del elemento '#carrito'
+  $('#carrito').booticTemplateRender('cart', Bootic.Cart)
+})
+
+$(function () {
+  // Carga el carrito.
+  Bootic.Cart.load()
+
+  // Activa botones Ajax
+  $.Bootic.ajaxButtons()
+})
+</pre>
+
+Veamos cómo se ve (usé un poco de CSS muy básico para el estilo):
+
+<img src="/img/themes/ajax_cart/example1.png" alt="Simple carrito ajax" />
+
+### Eliminar producto del carrito
+
+Ahora usaremos una combinación de jQuery y el método `Bootic.Cart.remove()` para implementar botones para remover productos del carrito.
+
+Lo primero, agreguemos el HTML para los botones junto a cada producto en la plantilla.
+
+<pre>:::html
+<script type="text/html" data-template="cart">
+  ...
+  
+  %{hasProducts}
+  
+    <!-- muestra products -->
+    <ul class="items" id="cart_items">
+      %{products}
+        <li id="citem_%{ id }">
+          <h4>%{ model } - %{ variant_title }</h4>
+          <small>(%{ quantity } unidades): %{ formatted_price }</small>
+          
+          <!-- botón "remover" -->
+          <button class="remove" data-remove="%{ variant_id }">remover</button>
+        </li>
+      %{/products}
+    </ul>
+    
+    ...
+  %{/hasProducts}
+</script>
+</pre>
+
+<img src="/img/themes/ajax_cart/example2.png" alt="Simple carrito ajax - remover del carro" />
+
+Fíjate en el atributo `data-remove`
+
+<pre>:::html
+<button class="remove" data-remove="%{ variant_id }">remover</button>
+</pre>
+
+Ese es un *data-attribute* HTML, una forma de insertar datos en HTML. El valor del atributo para cada producto será la variable `variant_id`. Esa es la ID única de la variante del producto en el carro. Usaremos esa ID para removerla mediante `Bootic.Cart.remove()`. En jQuery:
+
+<pre>:::javascript
+...
+// Corre este código cuando la página esté lista
+$(function () {
+  // Carga el carrito.
+  Bootic.Cart.load()
+
+  // Activa botones Ajax
+  $.Bootic.ajaxButtons()
+  
+  // Botones para remover del carrito Ajax
+  $('#carrito').on('click', 'button[data-remove]', function () {
+    var variantId = $(this).data('remove');
+    Bootic.Cart.remove(variantId)    
+    return false;
+  })
+})
+</pre>
+
+Vamos por parte:
+
+<pre>:::javascript
+...
+// Corre este código cuando la página esté lista
+$(function () {
+  ...
+  
+  // Botones para remover del carrito Ajax
+  // Ejecuta esta función cada vez que un botón 
+  // con attribute "data-remove" sea presionado.
+  $('#carrito').on('click', 'button[data-remove]', function () {
+    // Obten la ID de la variante de producto
+    var variantId = $(this).data('remove');
+    // Pasa la ID de variante al método `remove`
+    Bootic.Cart.remove(variantId)
+    
+    return false;
+  })
+})
+</pre>
+
+Cada vez que llamas el método `Bootic.Cart.remove()`, el producto es removido del carrito y el evento `updated` es gatillado, haciendo que la plantilla dinámica se refresque con el estado actualizado del carrito.
+
+### Código completo
+
+El código completo del ejemplo en este tutorial está [aquí](https://gist.github.com/ismasan/6178528). Puedes pegarlo en tu `layout.html` como punto de partida.
+
+## Ejemplos avanzados
+
+Hay mucho más que puedes hacer con `bootic_cart.js`. Por ejemplo: 
+
+* mostrar el carrito en una ventana tipo "lightbox", o al pie de página, o donde quieras. 
+* mostrar más información sobre la promoción activa, o mostrar si ésta tiene envío gratuito activado. 
+* implementar controles para actualizar las cantidades de cada producto
+* hacer transiciones animadas cuando el carrito cambia.
+
+A continuación incluimos ejemplos completos de las implementaciones en dos de nuestras plantillas tipo:
+
+* [Simplelist](http://simplelist.bootic.net) Carrito en menú lateral con datos de promoción y edición de cantidades. [Ver código](https://gist.github.com/ismasan/4014381).
+* [Bootstrap1](http://bootstrap1.bootic.net) Carrito flotante en "lightbox" usando [Bootstrap CSS](http://twitter.github.io/bootstrap). [Ver código](https://gist.github.com/ismasan/6178902).
