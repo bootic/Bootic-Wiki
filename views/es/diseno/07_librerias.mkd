@@ -10,9 +10,9 @@ En el editor Bootic, puedes agregar archivos CSS o JS subiendo los archivos desd
 
 La diferencia es que al agregarlos como archivos, no es posible modificarlos usando el editor de código. En cambio, al incluirlos como plantillas tienes la posibilidad de editarlos haciendo click sobre el nombre que le diste al archivo.
 
-Como sugerencia, recomendamos que todas las librerías que utilices, ya sean Javascript o CSS -- por ejemplo el plugin Cycle de Jquery o el framework CSS Bootstrap -- las subas como archivos, ya que idealmente no querrás modificar el contenido de esos archivos. Para todo lo demás (es decir, hojas de estilo o código JS que sí fue escrito por tí) recomendamos ingresarlos como plantillas.
+Como sugerencia, recomendamos que todas las librerías que utilices, ya sean Javascript o CSS -- por ejemplo el plugin [Cycle](http://jquery.malsup.com/cycle/) de jQuery o el framework CSS [Bootstrap](http://getbootstrap.com/) -- las subas como archivos, ya que idealmente no querrás modificar el contenido de esos archivos. Para todo lo demás (es decir, hojas de estilo o código JS que sí fue escrito por tí) recomendamos ingresarlos como plantillas.
 
-# Cómo crear una nueva plantilla JS o CSS
+# Cómo crear una nueva plantilla JavaScript o CSS
 
 En este caso mostraremos como ejemplo la creación de una plantilla CSS llamada **master.css**.
 
