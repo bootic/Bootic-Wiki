@@ -260,3 +260,8 @@ Show big version only on homepage
   font-size: 0.8em;
   line-height: 1;
 }
+#comments {
+  margin-top: 40px;
+  border-top: solid silver 1px;
+  padding-top: 20px;
+}
