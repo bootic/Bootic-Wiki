@@ -30,19 +30,17 @@ física?, a continuación los pasos a seguir:
 </div>
 
 1. Crear una [Zona y costo de envío][zona]. Una zona podría ser (Figura 1):
-
     * **Nombre**: Retirar en tienda
     * **País**: Chile
     * **Región**: Todos
 
 2. En **Rango de pesos y valores** poner:
-
     * **Hasta**: 1000000 grs
     * **Costo**: 0
 
     El **peso** es 1 tonelada, esta cifra algo _descabellada_ es para cubrir el
-mayor rango posible — si tu tienda vende productos en este rango de peso
-entonces pon una cantidad «inalcanzable».
+    mayor rango posible — si tu tienda vende productos en este rango de peso
+    entonces pon una cantidad «inalcanzable».
 
 3. Dale clic a **Guardar zona de envío**
 
