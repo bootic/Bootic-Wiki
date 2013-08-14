@@ -46,4 +46,11 @@ A continucación te dejamos un video con la explicación paso por paso.
 <iframe src="http://www.screenr.com/embed/GYa" width="650" height="396" frameborder="0"></iframe>
 
 
+## Problemas con DineroMail - no aparece medio de pago
+
+Si al comprar detactas que en el ambiente de pagos DineroMail aparece vacía la sección de
+**Elige el medio de pago** significa que DineroMail **no ha activado tu cuenta**.
+Contáctate con ellos desde el panel de administracción de DineroMail o bien usando [su
+formulario de soporte](https://cl.dineromail.com/ayuda/contacto) - indicales cláramente tu
+correo y tu ID para que puedan brindarte ayuda lo más pronto posible.
 
