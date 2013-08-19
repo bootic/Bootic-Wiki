@@ -265,3 +265,13 @@ Show big version only on homepage
   border-top: solid silver 1px;
   padding-top: 20px;
 }
+
+.note {
+    margin:20px 0;
+    padding:10px;
+}
+
+.alert > strong:first-child {
+    font-weight:bold;
+    text-transform:uppercase;
+}

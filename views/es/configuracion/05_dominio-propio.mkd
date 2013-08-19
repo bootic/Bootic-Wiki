@@ -8,11 +8,15 @@
 ---
 # Configurando dominio propio en Bootic
 
+<div class="note alert"> 
+    <strong>Importante</strong>: Los cambios descritos en esta sección —si no se realizan adecuadamante— <strong>te pueden dejar sin acceso a tu correo electrónico</strong>, ante cualquier duda pregúntanos (soporte@bootic.net) antes de hacer cualquier tipo de cambio.
+</div>
+
 Todas las tiendas Bootic estan alojadas bajo un subdominio a elección del dominio *bootic.net*. Por ejemplo, si al crear la tienda elijes el subdominio "mitienda", las páginas públicas de tu sitio podrán ser vistas bajo la dirección "mitienda.bootic.net".
 
 Esto está bien para empezar y preparar tu sitio, pero pronto querrás usar tu propio nombre de dominio y configurar tu tienda para usarlo.
 
-## Paso 1: compra el dominio
+## Paso 1: Compra el dominio
 
 Los nombres de dominio tienen un costo y son provistos por distintas empresas u organismos, dependiendo del "<abbr title="Top Level Domain">TLD</abbr>" (la extensión luego del último punto, por ejemplo ".cl" o ".com"). Los dominios nacionales normalmente son provistos por organismos estatales de cada país. En Chile, por ejemplo, los dominios ".cl" deben ser registrados en el [NIC](http://nic.cl), dependiente de la Universidad de Chile.
 
@@ -20,7 +24,7 @@ Los dominios comerciales / internacionales como ".com" o ".net" son vendidos por
 
 Para usar tu propio dominio debes ser dueño del dominio y ser capaz de administrarlo en el panel web del organismo proveedor.
 
-## Paso 2: configura los DNS
+## Paso 2: Configura los DNS
 
 <img src="/img/admin/dns-flow.png" />
 
@@ -30,7 +34,7 @@ Lo que necesitas hacer es "apuntar" un subdominio de tu dominio a los servidores
 
 ### Opción 1: Yo administro mis DNS.
 
-Es posible administrar los DNS de tu dominio en empresas especializadas. También, si ya tienes una empresa que te provee hosting, muy probablemente ellos también dan el servicio de DNS para tu dominio. Puedes averiguarlo con ellos. Esta opción te da control absoluto sobre el dominio, incluyendo crear subdominios, apuntar el t®áfico de emails a tu servicio de correos favorito, etc.
+Es posible administrar los DNS de tu dominio en empresas especializadas. También, si ya tienes una empresa que te provee hosting, muy probablemente ellos también dan el servicio de DNS para tu dominio. Puedes averiguarlo con ellos. Esta opción te da control absoluto sobre el dominio, incluyendo crear subdominios, apuntar el tráfico de emails a tu servicio de correos favorito, etc.
 
 Los pasos son:
 
@@ -49,6 +53,11 @@ Los pasos son:
 
 
 ### Opción 2: No tengo acceso a DNS
+
+<div class="note alert">
+    <strong>Importante</strong>: Si el dominio que quieres apuntar a nuestro DNS
+TIENE correos electrónicos asociados (ejm: <em>hugo@miempresa.com</em>) nos debes avisar. Si haces el cambio y no nos avisas TE QUEDARÁS SIN ACCESO a tu correo electrónico hugo@miempresa.com y por consiguiente todas las personas que tengas correo con ese dominio. Además de lo anterior también infórmanos el nombre de la empresa (o servicio) que gestionará el correo (Google apps, Outlook.com, etc).
+</div>
 
 Proveedores de dominios como el NIC en Chile (para dominios «.cl») normalmente no tienen administración de DNS integrada, por lo que tienes que configurar el dominio explícitamente para usar los DNS que prefieras.
 
