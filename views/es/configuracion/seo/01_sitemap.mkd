@@ -83,7 +83,7 @@ Generar el archivo sitemap es la _mitad del trabajo_, la otra parte **la debes h
     <div class="captura"><div class="c-contenido"><a title="Agregar Sitio" href="/img/posicionamiento/sitemap-2.png" rel="fancybox"><img src="/img/posicionamiento/sitemap-th-2.png" /></a></div><div class="c-pie">Figura 2: Digitar la URL del sitio que se quiere agregar</div></div>
 
 3. ### Verificar propiedad del sitio
-Revisa nuestra sección sobre [cómo verificar tu sitio en Google](/es/servicios/google-apps#verificacion) antes de continuar con ésta guía.
+Revisa nuestra sección sobre [cómo verificar tu sitio en Google](/es/configuracion/servicios/google-apps#verificacion) antes de continuar con ésta guía.
 
 4. ### Enviar el archivo sitemap
 	Luego de verificar el sitio recibirás el mensaje «Verificación correcta», ahora que Google Webmaster sabe que tu eres el dueño del sitio puedes enviar el sitemap, al final del panel de la página recién verificada dale click a «Enviar sitemap»
