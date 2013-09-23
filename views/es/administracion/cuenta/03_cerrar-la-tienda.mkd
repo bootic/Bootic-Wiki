@@ -35,4 +35,4 @@ nombre de la tienda y la razón.
 
 
 [1]:http://www.bootic.net/forms/contacto "Formulario de contacto"
-[2]:/es/administration/plan_pagos_contabilidad/elegir-y-pagar-plan "Eligiendo plan y pagando tu tienda Bootic"
+[2]:/es/administracion/cuenta/cambiar-plan "Eligiendo plan y pagando tu tienda Bootic"

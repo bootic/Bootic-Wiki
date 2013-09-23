@@ -12,7 +12,7 @@ Tu tienda Bootic es de pago mensual. En tu interfaz de administración eliges el
 
 Bootic usa [RBS WorldPay](http://www.worldpay.com/) (en inglés) para recibir tu pago. Al momento de pagar también estarás creando una cuenta en este sistema para tus futuros pagos.
 
-No entregamos factura por esta vía de pago, pero los *invoices* (recibos) de pago con tarjeta [pueden ser usados para justificar gastos en tu contabilidad](/es/administration/plan_pagos_contabilidad).
+No entregamos factura por esta vía de pago, pero los *invoices* (recibos) de pago con tarjeta [pueden ser usados para justificar gastos en tu contabilidad](/es/administracion/cuenta/contabilidad).
 
 ## Paso 1: Elige tu plan
 
@@ -56,7 +56,7 @@ Elegido el plan, presiona el botón "Finalizar suscripción" abajo en la misma p
 suscripción y pagando en RBS WorldPay</div>
 </div>
 
-Esto te dirige a un formulario de pago de RBS WorldPay, el **servicio de pagos internacionales** que usamos para recaudar el costo mensual de cada tienda Bootic. Este servicio [no entrega factura](/es/administration/plan_pagos_contabilidad "¿Cómo se paga el fee mensual de Bootic, se recibe algún comprobante?").
+Esto te dirige a un formulario de pago de RBS WorldPay, el **servicio de pagos internacionales** que usamos para recaudar el costo mensual de cada tienda Bootic. Este servicio [no entrega factura](/es/administracion/cuenta/contabilidad "¿Cómo se paga el fee mensual de Bootic, se recibe algún comprobante?").
 
 ## Paso 3: Selecciona tarjeta de crédito
 

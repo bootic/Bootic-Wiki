@@ -28,7 +28,7 @@ Además puedes configurar software de escritorio como Oulook, Apple Mail u otros
 
 Si quieres usar Google Apps con tu dominio, debes crear registros especiales en tu administrador de DNS para apuntar el tráfico de correo a los servidores de Google. Si administras tus propios DNS puedes buscar información en internet o pedir asistencia de tu webmaster o proveedor de hosting.
 
-Si mantienes DNS con nosotros ([ver explicación](/es/administration/dominio_propio)), debes solicitarnos que hagamos el cambio en nuestro DNS. 
+Si mantienes DNS con nosotros ([ver explicación](/es/configuracion/dominio-propio)), debes solicitarnos que hagamos el cambio en nuestro DNS. 
 
 Para ambos casos debes primero crear una cuenta en Google Apps. La versión "estandar".
 

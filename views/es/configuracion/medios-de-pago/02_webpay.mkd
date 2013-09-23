@@ -57,7 +57,7 @@ elementos ya configurados — para acelerar el proceso **asegúrate de tener la
 siguiente lista OK**:
 
 1. Tener **al menos 10** productos cargados
-2. Tener **al menos una** zona de despacho creada (<a href="/es/administration/preferencias/shipping_zones">¿cómo se crean?</a>)
+2. Tener **al menos una** zona de despacho creada (<a href="/es/configuracion/formas-de-envio">¿cómo se crean?</a>)
 3. Dirección postal el pie de página.
 4. Tener una página con Política de Devoluciones y Reembolsos.
 5. Cuando una [orden][orden] es cerrada se le envía un mensaje al cliente, en ese mensaje debe ir también los enlaces a las políticas de Devolución y Reembolsos que creaste en el punto 4.
@@ -138,6 +138,6 @@ Cuando todo esté listo, te enviaremos un email informándote que el pago con We
 [formulario]:https://www.transbank.cl/transbank/afiliacion-webpay.jsp?menu=productos "Formulario de solicitud del webpay plus"
 [soporte]:mailto:soporte@bootic.net
 [descargarkit]:https://www.transbank.cl/public/documentacion/descarga-kits/kcc-linux32bits.rar "Descargar kit - archivos comprimidos"
-[orden]:/es/administration/pedidos "Órdenes"
+[orden]:/es/administracion/pedidos "Órdenes"
 [cls]:/downloads/FichaCertificacionWebpayV6.docx.zip "Ficha de Certificación"
 [fcw]:/downloads/Bootic_checklist.xlsx.zip "Checklist"
