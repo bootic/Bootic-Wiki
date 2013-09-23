@@ -138,6 +138,6 @@ Cuando todo esté listo, te enviaremos un email informándote que el pago con We
 [formulario]:https://www.transbank.cl/transbank/afiliacion-webpay.jsp?menu=productos "Formulario de solicitud del webpay plus"
 [soporte]:mailto:soporte@bootic.net
 [descargarkit]:https://www.transbank.cl/public/documentacion/descarga-kits/kcc-linux32bits.rar "Descargar kit - archivos comprimidos"
-[orden]:/es/administration/ordenes "Órdenes"
+[orden]:/es/administration/pedidos "Órdenes"
 [cls]:/downloads/FichaCertificacionWebpayV6.docx.zip "Ficha de Certificación"
 [fcw]:/downloads/Bootic_checklist.xlsx.zip "Checklist"
