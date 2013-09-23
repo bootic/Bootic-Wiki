@@ -36,5 +36,5 @@ Con esta opción puedes presentarle al usuario los datos de tu cuenta bancaria p
 
 Campo libre de texto para que ofrezcas otra opción, por ejemplo: **Pago contra entrega**.
 
-[webpay]:/es/administracion/medios-de-pago/webpay "Webpay (Chile)"
-[dineromail]:/es/administracion/medios-de-pago/dineromail "DineroMail (Argentina y Chile)"
+[webpay]:/es/configuracion/medios-de-pago/webpay "Webpay (Chile)"
+[dineromail]:/es/configuracion/medios-de-pago/dineromail "DineroMail (Argentina y Chile)"
