@@ -1,0 +1,7 @@
+---
+:title: Subir un archivo PDF
+:description: "Subir un archivo PDF"
+:keywords: pdf,archivo,file,upload,subir
+---
+
+# Cómo subir un archivo PDF a tu tienda
