@@ -11,8 +11,6 @@ p, li{
 }
 
 #start .span4 {
-  background-color: #fafafa;
-  border: 1px solid #ddd;
   margin-left: 18px;
 }
 
@@ -49,8 +47,11 @@ img.right {
 #content h2 {
   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
   line-height: 140%;
-  letter-spacing: -0.08em;
   font-weight: 300;
+}
+
+#content .pad h2 {
+  letter-spacing: -0.08em;
 }
 
 #content h1 {
@@ -60,13 +61,16 @@ img.right {
 
 #content h2 {
   font-size: 22px;
-  margin: 30px 0 30px;
+  margin: 30px 0 10px 0;
   border-bottom: 1px solid #999;
   padding-bottom: 5px;
 }
 
 #content h3 {
   margin: 30px 0;
+  font-size:18px;
+  font-weight:bold;
+  color:#535353;
 }
 
 #content ol,
@@ -74,7 +78,7 @@ img.right {
   margin: 20px 30px;
 }
 #content ul {
-  list-style: disc inside;
+  list-style: disc ;
 }
 
 #content ol {
@@ -119,6 +123,10 @@ img.right {
   margin: 1.5em 0;
   color: #626D4C;
   line-height: 170%;
+}
+
+#content .tip h3 { 
+    margin-top:10px;
 }
 
 
