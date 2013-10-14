@@ -5,3 +5,43 @@
 ---
 
 # Cómo subir un archivo PDF a tu tienda
+
+Para apoyor la gestión de tu tienda Bootic muchas veces requieres de compartir archivos para descarga (ZIPs, PDFs, etc) para tus clientes. Archivos que **no** quieres relacionar con un producto si no más bien son de caracter general.
+
+En los siguientes pasos dejaremos un archivo PDF público para nuestros clientes, será un **catálogo de productos para mayoristas**.
+
+## Paso 1: Crear cuenta en un servicio para compartir archivos
+## Paso 2: Subir el archivo
+## Paso 3: Obtener el enlace público 
+
+<div class="captura">
+    <div class="c-contenido">
+        <img src="/img/tutoriales/dropbox-enlace-publico.png" width="630" height="382" alt="Dropbox - enlace público" />
+    </div>
+    <div class="c-pie">
+        <strong>Figura 1</strong>: Enlace público Dropbox (se copiará al portapapeles)
+    </div>
+</div>
+
+## Paso 4: Poner el enlace en la tienda
+## Paso 5: Abrir el enlace en una ventana nueva
+
+<pre>:::javascript
+// Asumiendo que el identificador DOM 
+// del menú de navegación es 'main_nav'
+
+// Alternativa A: usando javascript nativo
+var aCollection = document.getElementById('main_nav').getElementsByTagName('a');
+var rx = /pdf$/;
+for ( var i=0; i < aCollection.length; i++ ) {
+    if ( aCollection[i].href.match(rx) ) {
+        aCollection[i].setAttribute('target','_blank');
+    }
+}
+
+// Alternativa A: usando jQuery 
+$('#main_nav a[href$="pdf"]').each(function(index,value){
+    $(value).attr('target','_blank');
+});
+</pre>
+

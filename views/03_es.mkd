@@ -39,8 +39,8 @@
 
   <div class="span3">
     <i class="icon-coffee icon-4x"></i>
-    <h2> <a href="/es/tutoriales">Tutoriales</a></h2>
-    <p>Para sacarle el máximo de provecho a tu tienda Bootic. Trucos, Consejos.</p>
+    <h2> <a href="/es/tutoriales">Tutoriales, consejos, mejoras</a></h2>
+    <p>Para sacarle el máximo provecho a tu tienda Bootic. Trucos, Consejos. Cosas que no pensabas que se podian hacer.</p>
   </div>
 </div>
 </div>
