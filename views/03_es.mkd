@@ -4,9 +4,10 @@
 :keywords: Bootic, documentacion, e-commerce, faq
 ---
 
+<div class="row">
+
 <div id="start">
-  <div class="span4">
-    <div class="pad">
+  <div class="span3">
     <i class="icon-tasks icon-4x"></i>
     <h2>
       <a href="/es/administracion">
@@ -14,11 +15,9 @@
       </a>
     </h2>
     <p>Cómo llegar desde el primer producto a la primera venta. La información que todo dueño de una tienda Bootic tiene que saber, incluyendo cómo funcionan los pedidos, las promociones y el sistema de costos de envío.</p>
-    </div>
   </div>
 
-  <div class="span4">
-    <div class="pad">
+  <div class="span3">
     <i class="icon-wrench icon-4x"></i>
     <h2>
       <a href="/es/configuracion">
@@ -26,11 +25,9 @@
       </a>
     </h2>
     <p>Los pasos para usar tu dominio propio y cómo incorporar sistemas de pago con tarjeta de crédito, como Webpay y Dineromail. Además te mostramos cómo usar las herramientas SEO de Bootic para que aumentes tu tráfico.</p>
-    </div>
   </div>
 
-  <div class="span4">
-    <div class="pad">
+  <div class="span3">
     <i class="icon-edit icon-4x"></i>
     <h2>
       <a href="/es/diseno">
@@ -38,7 +35,12 @@
       </a>
     </h2>
     <p>Si quieres modificar el diseño de tu tienda, aquí encontrarás la documentación para editar nuestras plantillas o crear una a partir de cero. Requiere conocimiento básico a intermedio en HTML y CSS.</p>
-    </div>
   </div>
 
+  <div class="span3">
+    <i class="icon-coffee icon-4x"></i>
+    <h2> <a href="/es/tutoriales">Tutoriales, consejos, mejoras</a></h2>
+    <p>Para sacarle el máximo provecho a tu tienda Bootic. Trucos, Consejos. Cosas que no pensabas que se podian hacer.</p>
+  </div>
+</div>
 </div>
