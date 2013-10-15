@@ -1,22 +1,24 @@
 ---
 :title: Subir un archivo PDF
-:description: "Subir un archivo PDF"
+:description: "Compartir un archivo PDF"
 :keywords: pdf,archivo,file,upload,subir
 ---
 
-# Cómo subir un archivo PDF a tu tienda
-
+# Cómo compartir un archivo PDF a tu tienda
 Para apoyar la gestión de tu tienda Bootic muchas veces requieres de compartir archivos (ZIPs, PDFs, etc) con tus clientes. Archivos que **no quieres** relacionar con un producto en particular si no más bien son de caracter general. 
 
 ## Requerimiento
 En los siguientes pasos dejaremos un archivo de tipo PDF para nuestros clientes, será un **catálogo de productos para mayoristas**. Como **requisito extra**: será accesible desde el menú de navegación de la tienda.
 
 ## Paso 1: Crear cuenta en un servicio para compartir archivos
-Como requisito fundamental es necesario crear una cuenta para compartir archivos (de no tener ya una) el servicio web más extensamente usado y conocido es [ Dropbox ](http://www.dropbox.com), [crear una cuenta es completamente gratis][1], además puedes encontrar [ muchos tutoriales ][2] sobre como dejarlo funcionando en tu dispositivo (PC, teléfono, tableta, etc).
+Como requisito fundamental es necesario crear una cuenta para compartir archivos (de no tener ya una) el servicio web más extensamente usado y conocido es [Dropbox](http://www.dropbox.com), [crear una cuenta es completamente gratis][1], además puedes encontrar [ muchos tutoriales ][2] sobre como dejarlo funcionando en tu dispositivo (PC, teléfono, tableta, etc).
 
 
 ## Paso 2: Subir el archivo
+Una vez que la cuenta en Dropbox ha sido creada (y el cliente instalado en tu dispositivo) estás en condiciones de subir el archivo que se quiere compartir. Si eres un usuario nuevo de Dropbox deberás activar la carpeta Pública ([enlace de activación](https://www.dropbox.com/enable_public_folder)). En esta carpeta _Public_ podrás dejar todos los archivos que quieras compartir en Internet. Ahora que ya tienes la carpeta Pública subes el archivo PDF a ella, finalmente quedará en la siguiente ruta: `~/Dropbox/Public/catalogo_mayoristas_web.pdf`.
+
 ## Paso 3: Obtener el enlace público 
+Utilizando tu navegador de carpetas anda al lugar donde está el archivo a compartir y le das clic con el botón derecho, en el menú que aparecerá selecciona "Copiar vínculo público" (Figura 1), esto copiará el enlace a tu portapapeles. Los enlaces públicos tiene la forma `https://dl.dropboxusercontent.com/u/312324/nombre_del_archivo`.
 
 <div class="captura">
     <div class="c-contenido">
@@ -28,7 +30,25 @@ Como requisito fundamental es necesario crear una cuenta para compartir archivos
 </div>
 
 ## Paso 4: Poner el enlace en la tienda
+Ahora resta el último paso, copiar el enlace público en el Menú de Navegación de la tienda (Figura 2). Para ellos vamos a: 
+
+1. **Navegación** &rarr; **Menú principal** &rarr; **Agregar link**.
+2. Digitamos en "Nombre del link" _Catálogo Mayorista_ &rarr; en "Apunta a:" seleccionamos "URL externa" y en el campo de ingreso (justo al lado) ponemos en enlace Dropbox del paso anterior, como ya está en el portapapeles solo hacemos un <kbd>Ctrl+C</kbd> (pegar).
+3. Finalmente clic en "Crear link".
+
+<div class="captura">
+    <div class="c-contenido">
+        <img src="/img/tutoriales/dropbpx-crear-link-menu.png" width="700" height="140" alt="Crear enlace en menú de navegación" />
+    </div>
+    <div class="c-pie">
+        <strong>Figura 2</strong>: Crear enlace al archivo PDF en el menú de navegación 
+    </div>
+</div>
+
+¡Listo! - es todo, ahora cada vez que quieras editar el PDF solo debes ir a tu carpeta Dropbox Pública, editas el archivo y guardas, es todo, no tienes necesidad de hacer nada más, Dropbox se encargará de hacer todo el trabajo. Ahora bien, si quieres **borrar** el archivo lo haces como si borrases cualquier otro, pero **debes tener la precaución** de quitarlo también del Menú de Navegación de tu Tienda para que tus clientes no se encuentren con un mensaje de "Archivo no encontrado".
+
 ## Paso 5: Abrir el enlace en una ventana nueva
+Como el requerimiento inicial tenía un agregado (que el enlace al archivo PDF se abra en una ventana nueva) utiliza algo de Javascript, acá te presentamos dos alternativas para el mismo cometido. Copia esto en tu archivo `scripts.js` de la tienda.
 
 <pre>:::javascript
 // Asumiendo que el identificador DOM 
@@ -43,7 +63,7 @@ for ( var i=0; i < aCollection.length; i++ ) {
     }
 }
 
-// Alternativa A: usando jQuery 
+// Alternativa B: usando jQuery 
 $('#main_nav a[href$="pdf"]').each(function(index,value){
     $(value).attr('target','_blank');
 });
