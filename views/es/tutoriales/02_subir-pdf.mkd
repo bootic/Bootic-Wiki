@@ -4,7 +4,7 @@
 :keywords: pdf,archivo,file,upload,subir
 ---
 
-# Cómo compartir un archivo PDF a tu tienda
+# Cómo compartir un archivo PDF en tu tienda
 Para apoyar la gestión de tu tienda Bootic muchas veces requieres de compartir archivos (ZIPs, PDFs, etc) con tus clientes. Archivos que **no quieres** relacionar con un producto en particular si no más bien son de caracter general. 
 
 ## Requerimiento
