@@ -50,18 +50,10 @@ Ahora resta el último paso, copiar el enlace público en el Menú de Navegació
 ## Paso 5: Abrir el enlace en una ventana nueva
 Como el requerimiento inicial tenía un agregado (que el enlace al archivo PDF se abra en una ventana nueva) utiliza algo de Javascript, acá te presentamos dos alternativas para el mismo cometido. Copia esto en tu archivo `scripts.js` de la tienda.
 
+### Usando jQuery
 <pre>:::javascript
 // Asumiendo que el identificador DOM 
 // del menú de navegación es 'main_nav'
-
-// Alternativa A: usando javascript nativo
-var aCollection = document.getElementById('main_nav').getElementsByTagName('a');
-var rx = /pdf$/;
-for ( var i=0; i < aCollection.length; i++ ) {
-    if ( aCollection[i].href.match(rx) ) {
-        aCollection[i].setAttribute('target','_blank');
-    }
-}
 
 // Alternativa B: usando jQuery 
 $('#main_nav a[href$="pdf"]').each(function(index,value){
@@ -69,6 +61,16 @@ $('#main_nav a[href$="pdf"]').each(function(index,value){
 });
 </pre>
 
-
+### Sin jQuery
+<pre>:::javascript
+// Alternativa B: usando javascript nativo
+var aCollection = document.getElementById('main_nav').getElementsByTagName('a');
+var rx = /pdf$/;
+for ( var i=0; i < aCollection.length; i++ ) {
+    if ( aCollection[i].href.match(rx) ) {
+        aCollection[i].setAttribute('target','_blank');
+    }
+}
+</pre>
 [1]:https://www.dropbox.com/register
 [2]:http://youtu.be/VnYXMwu4uig
