@@ -1,7 +1,7 @@
 ---
 :title: Subir un archivo PDF
 :description: "Compartir un archivo PDF"
-:keywords: pdf,archivo,file,upload,subir
+:keywords: pdf,archivo,file,upload,subir,zip,compartir,share,publicar,dropbox
 ---
 
 # Cómo compartir un archivo PDF en tu tienda
@@ -55,7 +55,7 @@ Como el requerimiento inicial tenía un agregado (que el enlace al archivo PDF s
 // Asumiendo que el identificador DOM 
 // del menú de navegación es 'main_nav'
 
-// Alternativa B: usando jQuery 
+// Alternativa A: usando jQuery 
 $('#main_nav a[href$="pdf"]').each(function(index,value){
     $(value).attr('target','_blank');
 });
