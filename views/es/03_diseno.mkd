@@ -10,7 +10,7 @@
 
 # Cómo modificar el diseño de una tienda
 
-Bootic cuenta con diversos temas (themes) de diseño que tienen todo lo necesario para mostrar tus productos y empezar a vender en línea. En nuestra <a href="/es/diseno/galeria">galería de temas</a> puedes ver los diseños disponibles para usar.
+Bootic cuenta con diversos temas (themes) de diseño que tienen todo lo necesario para mostrar tus productos y empezar a vender en línea. En nuestra <a href="/es/configuracion/temas">galería de temas</a> puedes ver los diseños disponibles para usar.
 
 Sin embargo, es posible que desees ajustar el diseño de la plantilla a tus necesidades. Para lograr esto, es necesario modificar las plantillas que componen un tema a través de nuestro editor integrado. Para esto necesitarás conocimientos en HTML y CSS, tal cual como necesitarías para modificar las plantillas de un diseño en Wordpress.
 
