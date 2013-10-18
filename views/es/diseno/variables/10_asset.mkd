@@ -1,0 +1,15 @@
+---
+:title: imagen
+:description: Atributos del objeto image
+:keywords: variables, variable, asset, imagen, archivo, asociado
+---
+
+# El objeto image
+
+Se accede a él iterando sobre `product.images`.
+
+<ul>
+  <li><code>asset.full_file_name</code> - nombre completo del archivo</li>
+  <li><code>asset.original</code> - URL al archivo original</li>
+  <li><code>asset.thumbnail</code> - URL a la version <em>thumbnail</em></li>
+</ul>

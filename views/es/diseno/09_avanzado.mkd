@@ -1,7 +1,0 @@
----
-:title: Uso avanzado
-:description: Uso y diseño avanzado de plantillas Bootic.
-:keywords: liquid, html, carrito, ajax, cart, widgets, avanzado, javascript
----
-
-# Diseño y uso avanzado de plantillas Bootic
