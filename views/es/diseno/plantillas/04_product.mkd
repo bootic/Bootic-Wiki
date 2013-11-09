@@ -12,6 +12,42 @@ En la plantilla <code>product.html</code> tienes un objeto <code>product</code> 
 
 También existe la etiqueta especial <code>add_to_cart</code> que genera el html del botón para agregar al carro de compra.
 
+## Mostrar el precio de un producto
+
+Todo producto en lista o página de detalles tiene un atributoo <code>price</code> con el precio del producto. Mostrarlo en plantillas es sencillo:
+
+<pre>:::html
+  Precio: {{ product.price }}
+</pre>
+
+La función <code>format</code> muestra el precio formateado de acuerdo a moneda actual de la tienda.
+
+<pre>:::html
+  Precio: {{ product.price.format }}
+</pre>
+
+Si no quieres mostrar el precio de productos cuyo precio es 0 (por ejemplo para productos gratuitos), puedes usar lo siguiente:
+
+<pre>:::html
+  {% unless product.price.zero %}
+    Precio: {{ product.price.format }}
+  {% endunless %}
+</pre>
+
+## Precio de comparación de producto
+
+Todos los productos pueden tener un campo opcional de precio de comparación. Muy útil si el producto está en oferta y quieres mostrar el precio anterior. En el panel de administración:
+
+<img src="/img/themes/product_price_comparison.png" alt="precio de comparación de productos" />
+
+En las plantillas de producto (<code>product.html</code> para e detalle, <code>products.html</code> u otros para las listas) puedes mostrar el precio de comparación como prefieras, si es que está disponible:
+
+<pre>:::html
+  {% if product.has_price_comparison %}
+    Precio anterior: {{ product.price_comparison.format }}
+  {% endif %}
+</pre>
+
 ## Mostrando imágenes de un producto
 
 La colección <code>product.images</code> contiene las imágenes subidas a un producto por los administradores de la tienda.

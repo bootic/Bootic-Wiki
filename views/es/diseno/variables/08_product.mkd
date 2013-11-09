@@ -26,6 +26,8 @@ Disponible en la plantilla <a href="/es/diseno/plantillas/product">product.html<
   <li><code>product.has_files</code> - [true|false]</li>
   <li><code>product.product_type</code> - tipo de producto con campos personalizados</li>
   <li><code>product.price</code> - precio del producto</li>
+  <li><code>product.price_comparison</code> - precio de comparación del producto</li>
+  <li><code>product.has_price_comparison</code> - [true|false]</li>
   <li><code>product.weight_in_gr</code> - peso del producto, en gramos</li>
   <li><code>product.weight_in_kg</code> - peso del producto, en kilos</li>
   <li><code>product.has_similar_products</code> - [true|false]</li>
