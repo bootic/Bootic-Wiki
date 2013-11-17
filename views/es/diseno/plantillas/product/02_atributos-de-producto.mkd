@@ -26,8 +26,7 @@ mostrará. Un ejemplo de cómo mostrar todos los atributos de un producto sería
 {% endif %}
 </pre>
 
-Si quieres mostrar **un atributo** en particular (como por ejemplo el código
-embebido de un video) el trozo de código _liquid_ sería así:
+Puedes iterar todos los atributos y usar condiciones:
 
 <pre>:::html
 {% if product.product_type %}
@@ -40,3 +39,16 @@ embebido de un video) el trozo de código _liquid_ sería así:
   {% endfor %}
 {% endif %}
 </pre>
+
+Si quieres mostrar **un atributo** en particular (como por ejemplo el código
+embebido de un video) el trozo de código _liquid_ sería así:
+
+<pre>:::html
+{% if product.attributes.video.has_value %}
+  <div class="video">
+    {{ product.attributes.video.value }}
+  </div>
+{% endif %}
+</pre>
+
+El método `has_value` en cada atributo revisa que el atributo exista y su valor no esté vacío.
