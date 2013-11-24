@@ -147,21 +147,23 @@ Cada archivo tiene los siguientes atributos:
 
 <h2 id="variantes">Variantes y botón de compra</h2>
 
-La etiqueta <code>{% add_to_cart %}</code> genera un formulario HTML prediseñado con la lista de variantes del producto, un campo para ingresar la cantidad de unidades y un botón para guardar la variante y cantidad elegida en el carro de compras.
+<img src="/img/themes/add_to_cart.png" alt="Agregar al carro de compras" align="right" />
 
-<div class="clearfix">
-<div class="column">
+La etiqueta <code>{% add_to_cart %}</code> genera un formulario HTML prediseñado
+con la lista de variantes del producto, un campo para ingresar la cantidad de
+unidades y un botón para guardar la variante y cantidad elegida en el carro de compras.
+
+<div class="clear"></div>
+
 <pre>:::html
 <div id="agregar_al_carro">
   {% add_to_cart %}
-</div></pre>
 </div>
-<img src="/img/themes/add_to_cart.png" alt="Agregar al carro de compras" class="right" />
-</div>
+</pre>
 
-La etiqueta también revisa el estado de cada variante y deshabilita las que esten fuera de "stock". Normalmente esta etiqueta es suficiente para la mayoría de los casos. Con un poco de CSS puedes cambiar el estilo de los elementos generados.
-
-
+La etiqueta también revisa el estado de cada variante y deshabilita las que esten
+fuera de "stock". Normalmente esta etiqueta es suficiente para la mayoría de los
+casos. Con un poco de CSS puedes cambiar el estilo de los elementos generados.
 
 <h2 id="collections">Colecciones</h2>
 
@@ -220,21 +222,3 @@ También puedes acceder a una etiqueta en particular usando su "manilla"* o nomb
 </p>
 {% endif %}
 </pre>
-
-
-
-### [Carro de compras](#cart)
-
-<table class="list section" cellpadding="0" cellspacing="0" id="cart">
-  <tr>
-    <th>{%&nbsp;add_to_cart&nbsp;%}</th>
-    <td>Página de producto (product.html). HTML para selector de variantes y botón "agregar al carro".</td>
-  </tr>
-  <tr>
-  </tr>
-
-## Temas relacionados:
-
-<ul>
-  <li><a href="/es/themes/productos_similares">mostrando productos similares</a></li>
-</ul>
