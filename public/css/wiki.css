@@ -2,12 +2,8 @@ body {
   background: #fff;
 }
 
-p, li{
-  font-size: 16px;
-}
-
 #main {
-  margin-bottom: 100px;
+  margin-bottom: 60px;
 }
 
 #start .span4 {
@@ -40,18 +36,16 @@ p, li{
 img.right {
   margin: 0 0 0 1em;
 }
+
 /* content
 ----------------------------*/
 
 #content h1 ,
 #content h2 {
   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
-  line-height: 140%;
+  line-height: 120%;
   font-weight: 300;
-}
-
-#content .pad h2 {
-  letter-spacing: -0.08em;
+  letter-spacing: -0.05em;
 }
 
 #content h1 {
@@ -108,6 +102,7 @@ img.right {
 .image_and_detail .detail {
   text-align: justify;
 }
+
 .c-pie {
   font-size: 1em;
   color: #666;
@@ -125,7 +120,7 @@ img.right {
   line-height: 170%;
 }
 
-#content .tip h3 { 
+#content .tip h3 {
     margin-top:10px;
 }
 
@@ -157,7 +152,10 @@ img.right {
   list-style: none;
   padding: 8px 10px;
   border-top: 1px solid #ddd;
+  font-size: 16px;
 }
+
+
 #sidebar li:first-child {
   border-top-width: 0;
 }
@@ -185,24 +183,29 @@ img.right {
 /* Title bar
 Show big version only on homepage
 ----------------------------------------*/
+
 .title {
   margin: 0 0 20px 0;
   padding: 10px 0;
 }
+
 .title .title_info { display: none; }
 .es .title,
 .en .title {
   margin: 40px auto 30px;
   padding: 20px 0 50px;
 }
+
 .es .title .title_info,
 .en .title .title_info { display: block; }
 
 #search_form {
   margin-bottom: 0;
 }
+
 /* Search results
 ----------------------------*/
+
 .es #search_form,
 .en #search_form {
   margin-top: 30px;
@@ -217,21 +220,26 @@ Show big version only on homepage
 #search_form button {
   padding: 10px 30px;
 }
+
 #search_box {
   text-align: left;
   margin: 20px 0 0;
 }
+
 #results {
   list-style-type: none;
   background: rgba(255,255,255,0.8)
 }
+
 #results p {
   max-width: none;
   font-size: 1em;
 }
+
 #results li {
   padding: 0.25em 1em;
 }
+
 #results li:hover,
 #results li.hover {
   background: white;
@@ -243,31 +251,38 @@ Show big version only on homepage
   list-style-type: none;
   margin: 0;padding: 0;
 }
+
 #content .media_item {
   padding: 0;
   margin-bottom: 20px;
 }
+
 #content .media_item .thumbnail,
 #content .media_item .info {
   float: left;
 }
+
 #content .media_item .thumbnail { border-width: 0; }
 #content .media_item .thumbnail:hover {box-shadow: none;}
 #content .media_item .info {
   width: 410px;
   margin-left: 18px;
 }
+
 #content .media_item h3 {
   margin: 0 0 1em 0;
 }
+
 #content .media_item .info ul {
   margin: 0 0 20px 0;
   padding: 0;
 }
+
 #content .media_item .info li {
   font-size: 0.8em;
   line-height: 1;
 }
+
 #comments {
   margin-top: 40px;
   border-top: solid silver 1px;
@@ -275,11 +290,11 @@ Show big version only on homepage
 }
 
 .note {
-    margin:20px 0;
-    padding:10px;
+  margin:20px 0;
+  padding:10px;
 }
 
 .alert > strong:first-child {
-    font-weight:bold;
-    text-transform:uppercase;
+  font-weight:bold;
+  text-transform:uppercase;
 }
