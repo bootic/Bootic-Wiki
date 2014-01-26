@@ -1,7 +1,7 @@
 ---
 :title: product.html
 :description: Plantilla para ficha de producto en Bootic
-:keywords: liquid, producto, plantilla, html, css, imágenes, add_to_cart, has_images, thumbnail, small, medium, large, tags, files, product_type, variants, price, precio, variantes, archivos, colecciones, upload, pdf, anterior, antes
+:keywords: liquid, producto, plantilla, html, css, imágenes, add_to_cart, has_images, thumbnail, small, medium, large, tags, files, product_type, variants, price, precio, variantes, archivos, colecciones, upload, pdf, anterior, antes, comparison, descuento
 ---
 
 # El detalle de un producto: product.html
@@ -40,11 +40,19 @@ Todos los productos pueden tener un campo opcional de precio de comparación. Mu
 
 <img src="/img/themes/product_price_comparison.png" alt="precio de comparación de productos" />
 
-En las plantillas de producto (<code>product.html</code> para e detalle, <code>products.html</code> u otros para las listas) puedes mostrar el precio de comparación como prefieras, si es que está disponible:
+En las plantillas de producto (<code>product.html</code> para el detalle, <code>products.html</code> u otros para las listas) puedes mostrar el precio de comparación como prefieras, si es que está disponible:
 
 <pre>:::html
   {% if product.has_price_comparison %}
     Precio anterior: {{ product.price_comparison.format }}
+  {% endif %}
+</pre>
+
+También puedes mostrar el porcentaje de descuento del precio actual con respecto al an "anterior" o comparación:
+
+<pre>:::html
+  {% if product.has_price_comparison %}
+    Descuento: %{{ product.price_comparison_percentage }}
   {% endif %}
 </pre>
 
