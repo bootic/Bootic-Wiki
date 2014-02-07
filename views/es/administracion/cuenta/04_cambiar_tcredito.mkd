@@ -1,0 +1,15 @@
+---
+:title: Cambiar información tarjeta de crédito 
+:description: "Cambiar la información de la tarjeta de crédito"
+:keywords: fee, pago, servicio, bootic, pagar, mensualidad, rbs, worldpay, tarjeta, crédito, subscripción
+:group:
+  :name: Pagos y contabilidad
+  :label: ¿Cómo cambio los datos de mi tarjeta de crédito?
+---
+# Cambiar información de la tarjeta de crédito
+
+
+Si por algún motivo deseas **cambiar la información de tu tarjeta de crédito** (por cambio o extravío) estos son los pasos que debes seguir:
+
+## Paso 1: Ir a la opción «Actualizar datos de pago»
+

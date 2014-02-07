@@ -27,3 +27,4 @@ Google Apps, hosting, etc).  De esta forma se puede justificar como un gasto.
 ## Temas relacionados:
 
 * [Cómo elegir plan y pagar tu tienda Bootic](/es/administracion/cuenta/cambiar-plan)
+* [Cómo cambiar la información de la tarjeta de crédito](/es/administracion/cuenta/cambiar_tcredito)
