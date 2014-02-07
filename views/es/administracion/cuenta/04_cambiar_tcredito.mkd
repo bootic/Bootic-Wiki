@@ -13,3 +13,17 @@ Si por algún motivo deseas **cambiar la información de tu tarjeta de crédito*
 
 ## Paso 1: Ir a la opción «Actualizar datos de pago»
 
+En tu panel de control anda a **Mi cuenta** &rarr; **Actualizar datos de pago** (costado derecho). Luego dale clic al botón **Modificar datos de la plataforma de pagos**
+
+## Paso 2: Acceder a tu perfil de usuario en WordPay
+
+Luego de darle clic a "Modificar datos de la plataforma de pago" saldrás de tu panel de Administración e irás a parar a la página de ingreso en Wordpay (nuestro sistema de pagos).
+
+Acá debes ingresar a tu cuenta Wordpay con tu **usuario** y **contraseña** que creaste _cuando iniciaste_ la suscripción de tu plan. 
+
+
+## ¡Ops!, no recuerdo mis credenciales Wordpay
+
+
+
+
