@@ -6,7 +6,7 @@
 
 # El objeto product_type
 
-Disponible iterando sobre la variable global <code>product_types</code> o como el atributo de un <a href="/es/diseno/variables/product">producto</a>.
+Disponible iterando sobre la variable global <code>product_types</code> o como el atributo de un <a href="/es/diseno/sintaxis/variables/product">producto</a>.
 
 <ul>
   <li><code>product_type.name</code></li>

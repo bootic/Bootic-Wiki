@@ -20,7 +20,7 @@ Esta es la plantilla principal de tu tienda. Cada página que visitas se desplie
 </html>
 </pre>
 
-Si tenemos una plantilla [home.html](/es/themes/home) con el siguiente contenido:
+Si tenemos una plantilla [home.html](/es/diseno/plantilles/home) con el siguiente contenido:
 
 <pre>:::html
 <h1>Hola, estas en la portada de mi sitio!</h1>
