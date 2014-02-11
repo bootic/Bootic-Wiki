@@ -24,7 +24,6 @@ La lista de geometrías de imagen reconocidas por <code>resize</code> es:
   <li><span><code>'400x300>'</code></span>: modifica tamaño sólo si imagen es más grande que esto</li>
   <li><span><code>'400x300<'</code></span>: modifica tamaño sólo si imagen es más pequeña que esto</li>
   <li><span><code>'50x50%'</code></span>: modifica alto y ancho al %50</li>
-  <li><span><code>'50x50%'</code></span>: modifica alto y ancho al %50</li>
   <li><span><code>'400x300^'</code></span>: modifica ancho, alto a mínimo 400x300. Mantiene proporciones.</li>
   <li><span><code>'2000@'</code></span>: modifica para que area máxima sea 2000 pixeles</li>
   <li><span><code>'400x300#'</code></span>: modifica, recorta si es necesario para mantener proporciones. Centra.</li>
