@@ -24,6 +24,9 @@ Acá debes ingresar a tu cuenta Wordpay con tu **usuario** y **contraseña** que
 
 ## ¡Ops!, no recuerdo mis credenciales Wordpay
 
+Cuando creaste la suscripción de tu plan debiste además crear un usuario y contraseña WordPay. Si no recuerdas tu usuario o tu contraseña busca en tu archivo de correos. Ellos envían mensajes desde la dirección `shopper@rbsworldpay.com`. Si no logras encontrar tus credenciales originales puedes [rescatar tu contraseña en la misma página de Wordpay](http://www.worldpay.com/shopper/index.php?page=recurring&sub=login&c=WW) (forgotten your password).
 
 
+## Paso 3: Cambiando los datos de tu tarjeta de crédito
 
+Una vez dentro de tu **cuenta WordPay** anda a los datos de información de tu tarjeta y los cambias. 
