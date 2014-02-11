@@ -4,40 +4,15 @@
 :keywords: liquid, html, images, css, assets, static, imagen, imagenes, upload, fotos, asset_url, productos, thumbnail, medium, small, large, personalizado, grey
 ---
 
-# Insertando imágenes
-
-<div class="clearfix">
-<img src="/img/themes/upload1.png" alt="Subir imagenes" class="left" />
-Para insertar una imagen de fondo en tu archivo CSS, primero tienes que subir la imagen al servidor mediante el botón "Subir archivos" en tu editor Bootic.
-
-A continuación puedes usar el nombre de la imagen subida en tus reglas CSS.
-
-<img src="/img/themes/css_upload.png" alt="Subir imagenes" class="right" />
-</div>
-
-Puedes leer más cómo trabajar con imágenes en Bootic en [este link](/es/themes/imagenes).
-
-<h3 id="favicon">Favicon</h3>
-
-El "favicon" es el ícono del sitio que aparece en la barra de título del navegador, y es simplemente una imagen que puedes insertar en la plantilla <code>layout.html</code>. Los favicons normalmente están optimizados y tienen la extensión ".ico", y los puedes generar a partir de una imagen en otro formato (png, gif, jpg) usando un editor de imágenes como Phothoshop o incluso herramientas gratuitas online (puedes encontrar muchas en Google: [http://www.google.co.uk/search?gcx=c&ix=c1&sourceid=chrome&ie=UTF-8&q=favico+generator](http://www.google.co.uk/search?gcx=c&ix=c1&sourceid=chrome&ie=UTF-8&q=favico+generator))
-
-Sube una imágen de 16x16px a la lista de archivos de tu editor de plantillas Bootic e inserta el siguiente código HTML en la sección <code>HEAD</code> de la plantilla <code>layout.html</code>.
-
-<pre>:::HTML
-<link rel="shortcut icon" href="{{ 'favicon.ico' | asset_url }}" type="image/x-icon" />
-</pre>
-
-"favico.ico" es la convención para estos archivos pero en verdad puedes nombrarlo como quieras.
-
-Recuerda leer la documentación sobre [cómo trabajar con imágenes en Bootic](/es/themes/imagenes).
-
 # Subiendo imágenes en el editor
 
-<img src="/img/themes/asset_upload.png" alt="Subir imágenes" class="left" />
+<div class="clearfix">
+<img src="/img/themes/asset_upload.png" alt="Subir imágenes" class="right" />
 
-Abajo a la derecha en el editor de plantillas puedes subir archivos de tipo .gif, .png y .jpg. Bootic te muestra los archivos subidos con su nombre completo.
+<p>Abajo a la derecha en el editor de plantillas puedes subir archivos de tipo .gif, .png y .jpg. Bootic te muestra los archivos subidos con su nombre completo.</p>
 
-Estas imágenes puedes ser usadas tanto en tus plantillas CSS como HTML.
+<p>Estas imágenes puedes ser usadas tanto en tus plantillas CSS como HTML.</p>
+</div>
 
 # Insertando imágenes en plantillas HTML
 
@@ -70,7 +45,20 @@ body {
 }
 </pre>
 
-<h2 id="productos">Imágenes de productos</h2>
+## Favicon
+
+El "favicon" es el ícono del sitio que aparece en la barra de título del navegador, y es simplemente una imagen que puedes insertar en la plantilla <code>layout.html</code>. Los favicons normalmente están optimizados y tienen la extensión ".ico", y los puedes generar a partir de una imagen en otro formato (png, gif, jpg) usando un editor de imágenes como Phothoshop o incluso herramientas gratuitas online (puedes encontrar muchas en Google: [http://www.google.co.uk/search?gcx=c&ix=c1&sourceid=chrome&ie=UTF-8&q=favico+generator](http://www.google.co.uk/search?gcx=c&ix=c1&sourceid=chrome&ie=UTF-8&q=favico+generator))
+
+Sube una imágen de 16x16px a la lista de archivos de tu editor de plantillas Bootic e inserta el siguiente código HTML en la sección <code>HEAD</code> de la plantilla <code>layout.html</code>.
+
+<pre>:::HTML
+<link rel="shortcut icon" href="{{ 'favicon.ico' | asset_url }}" type="image/x-icon" />
+</pre>
+
+"favico.ico" es la convención para estos archivos pero en verdad puedes nombrarlo como quieras.
+
+
+# Imágenes de productos
 
 La colección <code>product.images</code> contiene las imágenes subidas a un producto por los administradores de la tienda.
 

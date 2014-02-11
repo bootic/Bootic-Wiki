@@ -37,7 +37,7 @@ Esto resulta en:
 /products/producto-de-ejemplo
 </pre>
 
-Más información sobre las variables disponibles <a href="/es/diseno/variables">aquí</a>.
+Más información sobre las variables disponibles <a href="/es/diseno/sintaxis/variables">aquí</a>.
 
 ## [Filtros](/es/diseno/filtros)
 
@@ -55,7 +55,7 @@ Esto resulta en:
 Esta frase es muy l...
 </pre>
 
-Más información sobre las filtros disponibles <a href="/es/diseno/filtros">aquí</a>.
+Más información sobre las filtros disponibles <a href="/es/diseno/sintaxis/filtros">aquí</a>.
 
 ## [Etiquetas](/es/diseno/etiquetas)
 
@@ -75,7 +75,7 @@ El resultado será:
 <a href="/products/gameboy">Gameboy</a>
 </pre>
 
-Más información sobre las etiquetas disponibles <a href="/es/diseno/etiquetas">aquí</a>.
+Más información sobre las etiquetas disponibles <a href="/es/diseno/sintaxis/etiquetas">aquí</a>.
 
 <div class="tip">
   <strong>Liquid</strong> es un motor de plantillas muy completo y este wiki sólo nos enfocamos en los aspectos que tienen relación directa con plantillas de tiendas Bootic. Para uso general te recomendamos que revises <a href="https://github.com/Shopify/liquid/wiki/Liquid-for-Designers" title="Documentación completa de Liquid">la documentación oficial de liquid</a>.

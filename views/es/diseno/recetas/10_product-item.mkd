@@ -1,7 +1,7 @@
 ---
 :title: Plantilla común para las listas de productos
-:description: Foobar.
-:keywords: foo, bar
+:description: Una manera simple para evitar duplicidad de código.
+:keywords: product_item.html, plantillas, templates
 ---
 
 # Reutilizando HTML en listas de productos con la etiqueta *loop*

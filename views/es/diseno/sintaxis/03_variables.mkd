@@ -12,7 +12,7 @@ Una variable es, esencialmente, un objeto que representa un valor. Este valor pu
 {{ product.url }}
 </pre>
 
-A este tipo de variables se les puede aplicar los <a href="/es/diseno/filtros/texto">filtros de texto</a>.
+A este tipo de variables se les puede aplicar los <a href="/es/diseno/sintaxis/filtros/texto">filtros de texto</a>.
 
 Ahora, en caso de que la variable represente un conjunto de elementos, necesitamos poder iterar sobre ellos para entonces usar los bigotes sobre los atributos que queramos usar o desplegar. Para esto usamos la etiqueta `for`. Ejemplo:
 
@@ -22,7 +22,7 @@ Ahora, en caso de que la variable represente un conjunto de elementos, necesitam
 {% endfor %}
 </pre>
 
-A este tipo de variables, que corresponden a conjunto de elementos, nos referimos como **variables iterables**. A ellas se les puede aplicar los <a href="/es/diseno/filtros/conjuntos">filtros de conjunto</a>.
+A este tipo de variables, que corresponden a conjunto de elementos, nos referimos como **variables iterables**. A ellas se les puede aplicar los <a href="/es/diseno/sintaxis/filtros/conjuntos">filtros de conjunto</a>.
 
 # Variables globales vs. locales
 
@@ -57,29 +57,29 @@ Esto es porque al mostrarse el detalle de un producto, Bootic sabe cuál product
       Contiene el nombre, la URL y la descripción de la tienda.</li>
   <li>
     <code>menus</code>:
-      Conjunto de <a href="/es/diseno/variables/menu">menús</a> de la tienda.</li>
+      Conjunto de <a href="/es/diseno/sintaxis/variables/menu">menús</a> de la tienda.</li>
   <li>
     <code>all_products</code>:
-      Conjunto de todos los <a href="/es/diseno/variables/product">productos</a> visibles de la tienda.</li>
+      Conjunto de todos los <a href="/es/diseno/sintaxis/variables/product">productos</a> visibles de la tienda.</li>
   <li>
     <code>product_types</code>:
-      Conjunto de <a href="/es/diseno/variables/product_type">tipos de producto</a> de la tienda.</li>
+      Conjunto de <a href="/es/diseno/sintaxis/variables/product_type">tipos de producto</a> de la tienda.</li>
   <li>
     <code>collections</code>:
-    Conjunto de <a href="/es/diseno/variables/collection">colecciones</a> de productos de la tienda.</li>
+    Conjunto de <a href="/es/diseno/sintaxis/variables/collection">colecciones</a> de productos de la tienda.</li>
   <li>
     <code>vendors</code>:
-      Conjunto de <a href="/es/diseno/variables/vendor">marcas/fabricantes</a> asociados a los productos.</li>
+      Conjunto de <a href="/es/diseno/sintaxis/variables/vendor">marcas/fabricantes</a> asociados a los productos.</li>
   <li>
     <code>pages</code>:
-      Conjunto de <a href="/es/diseno/variables/page">páginas</a> de la tienda.</li>
+      Conjunto de <a href="/es/diseno/sintaxis/variables/page">páginas</a> de la tienda.</li>
   <li>
     <code>forms</code>:
-      Conjunto de <a href="/es/diseno/variables/form">formularios</a> de la tienda.</li>
+      Conjunto de <a href="/es/diseno/sintaxis/variables/form">formularios</a> de la tienda.</li>
   <!-- <li><code>links</code>: Conjunto de los links de la tienda.</li>-->
   <li>
     <code>blog</code>:
-      Conjunto de <a href="/es/diseno/variables/post">noticias</a> publicadas.</li>
+      Conjunto de <a href="/es/diseno/sintaxis/variables/post">noticias</a> publicadas.</li>
 </ul>
 
 # Cómo usar las variables globales
