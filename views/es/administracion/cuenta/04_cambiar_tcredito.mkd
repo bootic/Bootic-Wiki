@@ -15,18 +15,72 @@ Si por algún motivo deseas **cambiar la información de tu tarjeta de crédito*
 
 En tu panel de control anda a **Mi cuenta** &rarr; **Actualizar datos de pago** (costado derecho). Luego dale clic al botón **Modificar datos de la plataforma de pagos**
 
+<div class="captura">
+    <div class="c-contenido"><img src="/img/admin/tc_cambiar_mi_cuenta.png"></div>
+    <div class="c-pie">
+        <strong></strong>
+    </div>
+</div>
+
+<div class="captura">
+    <div class="c-contenido"><img src="/img/admin/tc_cambiar_datos.png"></div>
+    <div class="c-pie">
+        <strong></strong>
+    </div>
+</div>
+
+<div class="captura">
+    <div class="c-contenido"><img src="/img/admin/tc_cambiar_modificar_datos.png"></div>
+    <div class="c-pie">
+        <strong></strong>
+    </div>
+</div>
+
+
 ## Paso 2: Acceder a tu perfil de usuario en WordPay
 
 Luego de darle clic a "Modificar datos de la plataforma de pago" saldrás de tu panel de Administración e irás a parar a la página de ingreso en Wordpay (nuestro sistema de pagos).
 
 Acá debes ingresar a tu cuenta Wordpay con tu **usuario** y **contraseña** que creaste _cuando iniciaste_ la suscripción de tu plan. 
 
+<div class="captura">
+    <div class="c-contenido"><img src="/img/admin/tc_cambiar_login_wp.png"></div>
+    <div class="c-pie">
+        <strong></strong>
+    </div>
+</div>
 
 ## ¡Ops!, no recuerdo mis credenciales Wordpay
 
 Cuando creaste la suscripción de tu plan debiste además crear un usuario y contraseña WordPay. Si no recuerdas tu usuario o tu contraseña busca en tu archivo de correos. Ellos envían mensajes desde la dirección `shopper@rbsworldpay.com`. Si no logras encontrar tus credenciales originales puedes [rescatar tu contraseña en la misma página de Wordpay](http://www.worldpay.com/shopper/index.php?page=recurring&sub=login&c=WW) (forgotten your password).
 
+<div class="captura">
+    <div class="c-contenido"><img src="/img/admin/tc_cambiar_rescatar_pass.png"></div>
+    <div class="c-pie">
+        <strong></strong>
+    </div>
+</div>
 
 ## Paso 3: Cambiando los datos de tu tarjeta de crédito
 
-Una vez dentro de tu **cuenta WordPay** anda a los datos de información de tu tarjeta y los cambias. 
+Una vez dentro de tu **cuenta WordPay**:
+
+Dale clic a "Edit your details".
+
+<div class="captura">
+    <div class="c-contenido"><img src="/img/admin/tc_cambiar_home_wp.png"></div>
+    <div class="c-pie">
+        <strong></strong>
+    </div>
+</div>
+
+Dale clic a "Change Payment Details".
+
+<div class="captura">
+    <div class="c-contenido"><img src="/img/admin/tc_cambiar_detalles_tarjeta.png"></div>
+    <div class="c-pie">
+        <strong></strong>
+    </div>
+</div>
+
+Cambia la información por la nueva y listo.
