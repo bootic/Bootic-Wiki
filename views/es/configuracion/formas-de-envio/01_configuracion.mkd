@@ -69,7 +69,7 @@ Exacto. No creerías que te íbamos a hacer crear una zona por cada comuna, ¿o 
 
 ## ¿Qué pasa si tengo una zona asociada a un país y otra asociada a una región de ese país?
 
-En ése caso, aquellos pedidos cuya dirección de envío esté dentro de esa región podrá elegir dentro de las dos opciones de envío. Todas los demás pedidos -- las con dirección de envío a otras regiones de ése país -- sólo verán la primera opción.
+En ése caso, aquellos pedidos cuya dirección de envío esté dentro de esa región podrá elegir dentro de las dos opciones de envío. Todos los demás pedidos —las con dirección de envío a otras regiones de ése país— sólo verán la primera opción.
 
 ## ¿Y si la zona está asociada a una ciudad o comuna específica? ¿Pasa lo mismo?
 
