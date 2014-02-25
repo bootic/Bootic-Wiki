@@ -24,5 +24,5 @@ realizar los filtros que desee. Ejemplo: Filtrar todas las órdenes de agosto de
 
 5. Podrá filtrar las órdenes por fecha.
 6. Podrá buscar las órdenes por ID. No es necesario ingresar todo el código
-   puede ingresar parte de el, ejm «CB7»: filtrará todas las órdenes que
+   puede ingresar parte de el, ejm «CB7»: filtrará todas los pedidos que
 comienzan con **CB7**.

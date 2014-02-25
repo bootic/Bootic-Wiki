@@ -26,10 +26,10 @@ Esta página contiene:
     - Haciendo clic en el ID de la orden podrás **ver el detalle** de la misma.
     - Haciendo clic en el Nombre del cliente podrás ver el **historial de Pedidos** de ese cliente (basado en su correo).
 
-3. Un menú lateral con enlaces para filtrar según el estado de la Orden:
+3. Un menú lateral con enlaces para filtrar según el estado del Pedido:
     * <strong class="label-orden orden-todas">Todas</strong>: listará todos las Pedidos.
     * <strong class="label-orden orden-pendiente">Pendientes</strong>: Locatario está a la espera del pago.
-    * <strong class="label-orden orden-anulada">Anuladas</strong>: el Locatario ha anulado la Orden (por no pago, error o carrito abandonado).
+    * <strong class="label-orden orden-anulada">Anuladas</strong>: el Locatario ha anulado el Pedido (por no pago, error o carrito abandonado).
     * <strong class="label-orden orden-exitoda">Exitosas</strong>: Pedidos cerrados y despachados.
     * <strong class="label-orden orden-cerrada">Cerradas</strong>: Pedidos que han recibido pago; todo está en regla.
     * <strong class="label-orden orden-despachada">Despachados</strong>: La compra se ha despachado al cliente.
@@ -43,6 +43,6 @@ Esta página contiene:
 
     El archivo `CSV` contendrá **la totalidad de los pedidos** procesadas por la tienda, para el rango de fecha en despliegue.
 
-5. Podrá filtrar las órdenes por fecha.
+5. Podrá filtrar los pedidos por fecha.
 
-6. Podrá buscar las órdenes por ID. No es necesario ingresar todo el código puede ingresar parte de el, ejm «CB7»: filtrará todas las órdenes que comienzan con **CB7**.
+6. Podrá buscar los Pedido por ID. No es necesario ingresar todo el código puede ingresar parte de el, ejm «CB7»: filtrará todas los pedidos que comienzan con **CB7**.

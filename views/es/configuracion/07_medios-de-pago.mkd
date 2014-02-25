@@ -6,7 +6,7 @@
 
 # Configurando los medios de pago
 
-Bootic te da la opción de ofrecer varios medios de pago a tus clientes (de momento 6). Para configurar los medios elegidos, en tu administrador Bootic anda a **Preferencias** y luego **Pago en línea y órdenes**. donde podrás ver el selector de medios de pago.
+Bootic te da la opción de ofrecer varios medios de pago a tus clientes (de momento 6). Para configurar los medios elegidos, en tu administrador Bootic anda a **Preferencias** y luego **Pago en línea y pedidos**. donde podrás ver el selector de medios de pago.
 
 <div class="captura">
 	<div class="c-contenido">

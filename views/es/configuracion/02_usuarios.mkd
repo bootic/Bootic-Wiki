@@ -15,7 +15,7 @@ Bootic ofrece la posibilidad de que el panel de administración de tu tienda ten
 2. **Supervisor**: Puede administrar productos, noticias, y cambiar preferencias.
 3. **Editor**: Puede publicar, editar y eliminar noticias.
 4. **Vendedor**: Puede administrar productos y asignarlos a colecciones creadas por el Administrador.
-5. **Bodeguero**: Puede modificar el estado de órdenes.
+5. **Bodeguero**: Puede modificar el estado de pedidos.
 6. **Diseñador**: Puede crear y modificar plantillas HTML y menus de navegación.
 
 

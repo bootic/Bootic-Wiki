@@ -20,7 +20,7 @@ Para que te hagas una idea, la imagen a continuación te muestra una tienda que 
 
 <img src="/img/shipping_zones/list.png" alt="Bootic shipping zones list" />
 
-**Nota:** si te fijas las zonas aparecen como de "Costo fijo" y eso es porque sólo tienen un rango de peso único definido (es decir, independiente del peso de la orden siempre se aplicará el costo de ese único rango).
+**Nota:** si te fijas las zonas aparecen como de "Costo fijo" y eso es porque sólo tienen un rango de peso único definido (es decir, independiente del peso del pedido siempre se aplicará el costo de ese único rango).
 
 ## Rangos por peso
 
@@ -37,13 +37,13 @@ Es decir dentro de Santiago, por ejemplo, puedes crear varios rangos de peso, ca
 
 Por ejemplo, un rango puede ser "de 0 a 1000 gramos" con el valor de $500.
 
-Eso significa que si el peso total de la orden es dentro de Santiago y pesa entre 0 y 1KG, se le suman automáticamente $500.
+Eso significa que si el peso total del pedido es dentro de Santiago y pesa entre 0 y 1KG, se le suman automáticamente $500.
 
 Luego puedes crear otro rango desde 1000gr hasta 2000gr con otro precio, etc.
 
-Al final del proceso de pago, Bootic calcula el peso total de la orden, encuentra la zona de envío según la dirección ingresada por el comprador y busca el rango de peso adecuado para la orden. El precio correspondiente al rango encontrado es sumado al total de la orden.
+Al final del proceso de pago, Bootic calcula el peso total del pedido, encuentra la zona de envío según la dirección ingresada por el comprador y busca el rango de peso adecuado para el pedido. El precio correspondiente al rango encontrado es sumado al total del pedido.
 
-Así puedes ir segmentando distintos precios dentro de la misma zona de acuerdo al peso de la orden. Depende de tí cuanta plata quieres cobrar por cada rango, y puedes decidir eso de acuerdo a los precios de tu servicio de courier, etc.
+Así puedes ir segmentando distintos precios dentro de la misma zona de acuerdo al peso del pedido. Depende de tí cuanta plata quieres cobrar por cada rango, y puedes decidir eso de acuerdo a los precios de tu servicio de courier, etc.
 
 Esto significa que puedes crear otra zona (por ejemplo "Sur de Chile") con sus propios rangos de peso de acuerdo a los costos extras del courier u otros factores. Depende de tí.
 
@@ -59,7 +59,7 @@ Lo mismo de arriba. Ahora, en caso de que quieras ofrecer despacho a todos los p
 
 ## ¿Qué pasa si dejo una zona sin un país o una región asignada?
 
-Cuando hay una zona que no está asociada a un país, Bootic asumirá que esa zona de envío se aplica sobre cualquier lugar del mundo, y por lo tanto le mostrará a tus clientes el listado total de países para elegir a la hora de ingresar la dirección de envío de su orden. Si todas tus zonas están asociadas a países, entonces Bootic sólo permitirá a tus usuarios elegir los países que están asociados a zonas.
+Cuando hay una zona que no está asociada a un país, Bootic asumirá que esa zona de envío se aplica sobre cualquier lugar del mundo, y por lo tanto le mostrará a tus clientes el listado total de países para elegir a la hora de ingresar la dirección de envío de su pedido. Si todas tus zonas están asociadas a países, entonces Bootic sólo permitirá a tus usuarios elegir los países que están asociados a zonas.
 
 Ahora, si una zona tiene un país no tiene una región definida el criterio es el mismo: Bootic entenderá que esa zona no tiene restricciones de región y por lo tanto el usuario podrá elegir entre todas las regiones del país asociado a la zona. Si todas tus zonas dentro de un país tienen una región asociada, Bootic sólo permitirá al usuario elegir una de esas regiones.
 
@@ -69,7 +69,7 @@ Exacto. No creerías que te íbamos a hacer crear una zona por cada comuna, ¿o 
 
 ## ¿Qué pasa si tengo una zona asociada a un país y otra asociada a una región de ese país?
 
-En ése caso, aquellas órdenes cuya dirección de envío esté dentro de esa región podrá elegir dentro de las dos opciones de envío. Todas las demás órdenes -- las con dirección de envío a otras regiones de ése país -- sólo verán la primera opción.
+En ése caso, aquellos pedidos cuya dirección de envío esté dentro de esa región podrá elegir dentro de las dos opciones de envío. Todas los demás pedidos -- las con dirección de envío a otras regiones de ése país -- sólo verán la primera opción.
 
 ## ¿Y si la zona está asociada a una ciudad o comuna específica? ¿Pasa lo mismo?
 
