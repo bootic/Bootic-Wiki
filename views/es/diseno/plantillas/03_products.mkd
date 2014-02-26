@@ -75,6 +75,6 @@ Usamos el método <code>format</code> en el precio del producto, que despliega l
 
 ## Relacionados:
 
-* [Paginación de productos](/es/themes/pagination)
-* [product.html](/es/themes/product)
-* [Tamaños personalizados de imágenes de productos](/es/themes/imagenes#resize)
+* [Paginación de productos](/es/diseno/recetas/paginacion)
+* [product.html](/es/diseno/plantillas/product)
+* [Tamaños personalizados de imágenes de productos](/es/diseno/imagenes/control-avanzado)

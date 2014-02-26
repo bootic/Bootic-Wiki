@@ -139,5 +139,5 @@ Cuando todo esté listo, te enviaremos un email informándote que el pago con We
 [soporte]:mailto:soporte@bootic.net
 [descargarkit]:https://www.transbank.cl/public/documentacion/descarga-kits/kcc-linux32bits.rar "Descargar kit - archivos comprimidos"
 [orden]:/es/administracion/pedidos "Órdenes"
-[cls]:/downloads/FichaCertificacionWebpayV6.docx.zip "Ficha de Certificación"
-[fcw]:/downloads/Bootic_checklist.xlsx.zip "Checklist"
+[fcw]:/downloads/FichaCertificacionWebpayV6.docx.zip "Ficha de Certificación"
+[cls]:/downloads/Bootic_checklist.xlsx.zip "Checklist"
