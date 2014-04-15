@@ -1,0 +1,83 @@
+---
+:title: Publicar un Banner
+:description: "Como publicar un banner en tu tienda"
+:keywords: banner, publicar, foto, portada, cartel, temporal, foto 
+---
+
+# Publicar un Banner 
+
+
+Algunas veces necesitas publicar una imagen (o banner) que **no necesariamente** está asociada a un producto. 
+
+El objetivo de esto podría ser:
+
+* información importante 
+* stocks agotados
+* aviso «avance de temporada» 
+* promoción de tu producto estrella
+* llamado a concurso
+* resultados de un concurso 
+* aviso de periodo vacaciones
+* enlace a tu facebook, twitter o instagram
+* ... un largo etcétera
+
+## Requerimientos
+
+A continuación te mostramos tres requerimientos ficticios:
+
+1. Se quiere un banner para **destacar la nueva colección Otoño-Invierno**, este debe estar en la portada de la tienda y muy destacado.
+2. Se quiere publicar los **resultados del concurso** "Yo compré en Zapatos en TocosTacos", se necesita una imagen que sea enlazada a una noticia.
+3. Se quiere mostrar una imagen con la _flamente_ **nueva cuenta Twitter** recién abierta. 
+
+**Importante**: El formato de la imagen para el banner puede ser GIF, JPG ó PNG y el _peso_ no superior a 1MB. Con una imagen que pese 500KB es más que suficiente.
+
+### Requerimiento 1: Banner Otoño-Invierno
+
+Los pasos serían:
+
+1. Asegúrate que la imagen **tiene las dimensiones apropiadas** para que no rompa tu diseño, te puedes ayudar de alguna herramienta como por ejemplo [ Page Ruler ][1] (Complemente Google Chrome) para medir el lugar donde irá la imagen.
+2. Sube la imagen utilizando el editor de plantillas (Diseño &rarr; Editar Plantilla Actual) / Buscar Archivo y lo subes. 
+3. Asumiremos que el archivo tiene nombre `banner-otono-invierno.jpg`.
+4. Luego editamos la plantilla `home.html` **porque el requerimiento** dice que debe estar en la portada de la tienda.
+5. Como es un elemento HTML del [ tipo imagen ](http://htmldog.com/reference/htmltags/img/ "que es y como se crea una imagen en HTML") debería quedar así: `<img alt="Colección Otoño-Invierno" src="{{ 'banner-twitter.png' | asset_url }}" />` 
+6. Listo, la imagen debería estar publicada en la portada, anda a verificar. Recuerda actualizar tu navegador con Ctrl+F5 en Windows o Cmd+R en mac.
+
+¿Y el enlace?
+
+Los pasos anteriores mostrarán la imagen **pero no está enlazada a la colección todavía**, ahora finalizamos la tarea creando en [link](http://htmldog.com/reference/htmltags/a/ "que es y como se hace un link").
+
+    <a href="/collections/otono-invierno">
+        <img alt="Colección Otoño-Invierno" src="{{ 'banner-twitter.png' | asset_url }}" />
+    </a> 
+
+Listo, tarea terminada. 
+
+### Requerimiento 2: Banner resultado concurso 
+
+Los pasos 1, 2 y 4 del requerimiento anterior se repiten. 
+
+Asumiendo que la imagen tiene como nombre `resultado-concurso.jpg` quedaría así en la plantilla: `<img alt="Resultado concurso" src="{{ 'resultado-concurso.jpg' | asset_url }} />`
+
+Y por supuesto el enlace donde **nos llevará la imagen** (una noticia dentro de nuestra tienda):
+
+    <a href="/blog/2014/3/12/resultado-concurso">
+        <img alt="Resultado concurso" src="{{ 'resultado-concurso.jpg' | asset_url }}" />
+    </a> 
+
+Eso es todo.
+
+### Requerimiento 3: Banner nueva cuenta Twitter 
+
+Nuevamente los pasos 1,2 y 4 del requerimiento 1 se repiten.
+
+Asumiendo que la imagen tiene como nombre `icono-twitter.jpg` quedaría así en la plantilla `<img alt="Twitter" src="{{ 'icono-twitter.jpg' | asset_url }} />`
+
+Y lo más importante, ahora ponemos **el enlace a nuestra** cuenta twitter:
+
+    <a href="http://www.twitter.com/tacostacostienda">
+        <img alt="Twitter" src="{{ 'icono-twitter.jpg' | asset_url }} />
+    </a> 
+
+Listo.
+
+[1]:https://chrome.google.com/webstore/detail/page-ruler/jlpkojjdgbllmedoapgfodplfhcbnbpn
