@@ -16,7 +16,7 @@ Para agregar o quitar etiquetas a un producto en el panel de administración, na
 
 ## Mostrando productos en tus plantillas
 
-En el editor de plantillas de tu tienda, abre a la plantilla <a href="/es/themes/product">product.html</a>, que representa la ficha de cada producto y pega el siguiente código.
+En el editor de plantillas de tu tienda, abre a la plantilla <a href="/es/diseno/plantillas/product">product.html</a>, que representa la ficha de cada producto y pega el siguiente código.
 
 <pre>:::html
 {% if product.has_similar_products %}

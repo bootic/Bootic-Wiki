@@ -8,7 +8,7 @@
 
 Esta es la plantilla usada por Bootic para mostrar listas y colecciones de productos. Esta siempre tiene disponible una lista de productos en el objeto <code>products</code>. 
 
-Normalmente querrás usar [paginación](/es/themes/pagination) para mostrar tus productos en varias páginas, ya que esa lista podría tener muchos productos (por ejemplo en el caso de <code>/products</code>, que muestra todos los productos visibles de tu tienda).
+Normalmente querrás usar [paginación](/es/diseno/recetas/paginacion) para mostrar tus productos en varias páginas, ya que esa lista podría tener muchos productos (por ejemplo en el caso de <code>/products</code>, que muestra todos los productos visibles de tu tienda).
 
 <pre>:::html
 <ul class="products">
