@@ -23,19 +23,19 @@ El objetivo de esto podría ser:
 
 ## Requerimientos
 
-A continuación te mostramos tres requerimientos ficticios:
+A continuación te mostramos tres requerimientos de ejemplo:
 
 1. Se quiere un banner para **destacar la nueva colección Otoño-Invierno**, este debe estar en la portada de la tienda y muy destacado.
 2. Se quiere publicar los **resultados del concurso** "Yo compré en Zapatos en TocosTacos", se necesita una imagen que sea enlazada a una noticia.
-3. Se quiere mostrar una imagen con la _flamente_ **nueva cuenta Twitter** recién abierta. 
+3. Se quiere mostrar una imagen con la _flamante_ **nueva cuenta Twitter** recién abierta. 
 
-**Importante**: El formato de la imagen para el banner puede ser GIF, JPG ó PNG y el _peso_ no superior a 1MB. Con una imagen que pese 500KB es más que suficiente.
+**Importante**: El formato de la imagen para el banner puede ser GIF, JPG ó PNG y el _peso_ no superior a 1MB. Con una imagen que _pese_ 250KB ¡es más que suficiente!.
 
 ### Requerimiento 1: Banner Otoño-Invierno
 
 Los pasos serían:
 
-1. Asegúrate que la imagen **tiene las dimensiones apropiadas** para que no rompa tu diseño, te puedes ayudar de alguna herramienta como por ejemplo [ Page Ruler ][1] (Complemente Google Chrome) para medir el lugar donde irá la imagen.
+1. Asegúrate que la imagen **tiene las dimensiones apropiadas** para que no rompa tu diseño, te puedes ayudar de alguna herramienta como por ejemplo [ Page Ruler ][1] (Complemento Google Chrome) para medir el lugar donde irá la imagen.
 2. Sube la imagen utilizando el editor de plantillas (Diseño &rarr; Editar Plantilla Actual) / Buscar Archivo y lo subes. 
 3. Asumiremos que el archivo tiene nombre `banner-otono-invierno.jpg`.
 4. Luego editamos la plantilla `home.html` **porque el requerimiento** dice que debe estar en la portada de la tienda.
