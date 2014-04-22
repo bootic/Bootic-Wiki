@@ -39,7 +39,7 @@ Los pasos serían:
 2. Sube la imagen utilizando el editor de plantillas (Diseño &rarr; Editar Plantilla Actual) / Buscar Archivo y lo subes. 
 3. Asumiremos que el archivo tiene nombre `banner-otono-invierno.jpg`.
 4. Luego editamos la plantilla `home.html` **porque el requerimiento** dice que debe estar en la portada de la tienda.
-5. Como es un elemento HTML del [ tipo imagen ](http://htmldog.com/reference/htmltags/img/ "que es y como se crea una imagen en HTML") debería quedar así: `<img alt="Colección Otoño-Invierno" src="{{ 'banner-twitter.png' | asset_url }}" />` 
+5. Como es un elemento HTML del [ tipo imagen ](http://htmldog.com/reference/htmltags/img/ "que es y como se crea una imagen en HTML") debería quedar así: `<img alt="Colección Otoño-Invierno" src="{{ 'banner-otono-invierno.jpg' | asset_url }}" />` 
 6. Listo, la imagen debería estar publicada en la portada, anda a verificar. Recuerda actualizar tu navegador con Ctrl+F5 en Windows o Cmd+R en mac.
 
 ¿Y el enlace?
@@ -51,6 +51,15 @@ Los pasos anteriores mostrarán la imagen **pero no está enlazada a la colecci�
     </a> 
 
 Listo, tarea terminada. 
+
+<div class="captura">
+  <div class="c-contenido">
+    <a title="Zoom" href="/img/tutoriales/tutorial-banner-original.png">
+      <img src="/img/tutoriales/tutorial-banner-small.png" />
+    </a>
+  </div>
+  <div class="c-pie">Agregando banner a la portada de la tienda - clic para zoom</div>
+</div>
 
 ### Requerimiento 2: Banner resultado concurso 
 
