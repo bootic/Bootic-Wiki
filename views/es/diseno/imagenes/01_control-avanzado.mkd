@@ -6,7 +6,7 @@
 
 # Control avanzado de imágenes
 
-Además de los [tamaños predefinidos](/es/themes/product), puedes asignar dimensiones personalizadas a imágenes de productos usando el filtro <code>resize</code>.
+Además de los [tamaños predefinidos](/es/diseno/plantillas/product#toc_3), puedes asignar dimensiones personalizadas a imágenes de productos usando el filtro <code>resize</code>.
 
 <pre>:::html
 <img src="{{ image | resize: '100x100#c' }}" alt="{{ product.model }}" />

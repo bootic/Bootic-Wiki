@@ -107,4 +107,4 @@ No obstante lo anterior _debes saber_ que generar el sitemap de tu sitio para Go
 [bot]: http://es.wikipedia.org/wiki/Googlebot "Entrada en wikipedia de Googlebot"
 [seo]: http://es.wikipedia.org/wiki/Posicionamiento_en_buscadores "SEO en wikipedia"   
 [ggt]: http://www.google.com/webmasters/tools "Google Webmaster Tools"
-[layout]: /es/themes/layout "Qué es la plantilla layout"
+[layout]: /es/diseno/plantillas/layout "Qué es la plantilla layout"
