@@ -26,7 +26,7 @@ body {
 }
 
 #start h2 {
-  font-size: 30px !important;
+  font-size: 23px !important;
   margin: 10px 0 !important;
   border: 0 !important;
 }
@@ -44,7 +44,7 @@ img.right {
 #content h2 {
   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
   line-height: 120%;
-  font-weight: 300;
+  /*font-weight: 300;*/
   letter-spacing: -0.05em;
 }
 
@@ -56,7 +56,7 @@ img.right {
 #content h2 {
   font-size: 22px;
   margin: 30px 0 10px 0;
-  border-bottom: 1px solid #999;
+  border-bottom: 1px solid #d6d6d6;
   padding-bottom: 5px;
 }
 
@@ -80,7 +80,7 @@ img.right {
 }
 
 #content li {
-  padding: 5px;
+  padding: 2px 0p 0pxx;
 }
 
 .captura {
@@ -122,6 +122,31 @@ img.right {
 
 #content .tip h3 {
     margin-top:10px;
+}
+
+#content p, #content li, #content div {
+    font-weight: normal;
+    line-height:1.9;
+    font-size:15px;
+    color:#000;
+}
+#content code, #content pre {
+    white-space: pre;
+    margin: 0;
+    font: 14px/1.8em Menlo, Consolas, "Courier New", Courier, "Liberation Mono", monospace;
+    padding: 4px 6px;
+    -webkit-border-radius:  5px 5px 0 0;
+    -moz-border-radius:  5px 5px 0 0;
+    border-radius:  5px 5px 0 0;
+}
+
+ul li ul li {
+    margin-left: 20px;
+    line-height: 20px !important;
+}
+
+#content #start {
+    font-size:.8em;
 }
 
 /* Nested sidebar menu
