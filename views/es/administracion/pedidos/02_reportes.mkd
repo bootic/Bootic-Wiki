@@ -1,28 +1,74 @@
 ---
 :title: Exportando tus pedidos
 :description: "Cómo generar reportes de tus pedidos en formato de planilla de cálculo."
-:keywords: pedidos, órdenes, pagos, gestión, venta, despachar, pendiente, cerrada
+:keywords: pedidos, órdenes, pagos, gestión, venta, despachar, pendiente, cerrada, drive, google, planilla, csv
 ---
 
-# Gestionando el CSV usando Google Docs
+# Gestionando el CSV usando Google Drive
 
-Si deseas abrir con Google Docs, los pasos son:
+Si deseas abrir el archivo CSV de pedidos usando [Google Drive](http://drive.google.com), los pasos son:
 
 1. Crear &rarr; Hoja de cálculo.
+<div class="captura">
+  <div class="c-contenido">
+      <img src="/img/admin/crea_nueva_hoja_calculo.png">
+  </div>
+</div>
+
 2. Menú **Archivo** &rarr; **Importar** &rarr; Seleccionar el archivo `CSV` desde
    tu PC.
+    <div class="captura">
+      <div class="c-contenido">
+          <img src="/img/admin/importar_csv.png">
+      </div>
+    </div>
+    <div class="captura">
+      <div class="c-contenido">
+          <img src="/img/admin/subir_archivo.png">
+      </div>
+    </div>
 3. Crear una hoja de cálculo nueva (en caso de querer esta opción).
+    <div class="captura">
+      <div class="c-contenido">
+          <img src="/img/admin/preparando_importacion.png">
+      </div>
+    </div>
 4. Separador Automático.
 5. Importar (esta acción tomará tiempo dependiente de la cantidad de datos).
 6. Una vez importado verá un mensaje y un enlace de «abrir ahora».
+    <div class="captura">
+      <div class="c-contenido">
+          <img src="/img/admin/csv_importado.png">
+      </div>
+    </div>
 7. Inmovilice el encabezado de las columnas, vaya **Ver** &rarr; **Inmovilizar
    Filas** &rarr; **Inmovilizar 1 fila**.
-8. Si desea filtrar la información puede ir a **Datos** &rarr; **Filtro**,
-   con ello en cada encabezado de columna aparecerá un enlace donde podrá
-realizar los filtros que desee. Ejemplo: Filtrar todas las órdenes de agosto de
-2012 con estado «pending» (pendientes).
+    <div class="captura">
+      <div class="c-contenido">
+          <img src="/img/admin/inmovilizar_fila.png">
+      </div>
+    </div>
+8. Si desea filtrar la información puede ir a **Datos** &rarr; **Filtro**, con ello en cada encabezado de columna aparecerá un enlace donde podrá realizar los filtros que desee. Ejemplo: Filtrar todas las órdenes de agosto de 2012 con estado «pending» (pendientes).
+    <div class="captura">
+      <div class="c-contenido">
+          <img src="/img/admin/filtrar_datos.png">
+      </div>
+    </div>
+    <div class="captura">
+      <div class="c-contenido">
+          <img src="/img/admin/filtrar_x_status.png">
+      </div>
+    </div>
+    <div class="captura">
+      <div class="c-contenido">
+          <img src="/img/admin/preparando_filtrado.png">
+      </div>
+    </div>
+    <div class="captura">
+      <div class="c-contenido">
+          <img src="/img/admin/resultado_filtracion.png">
+      </div>
+    </div>
 
-5. Podrá filtrar las órdenes por fecha.
-6. Podrá buscar las órdenes por ID. No es necesario ingresar todo el código
-   puede ingresar parte de el, ejm «CB7»: filtrará todas las órdenes que
-comienzan con **CB7**.
+9. Podrá filtrar las órdenes por fecha.
+10. Podrá buscar las órdenes por ID. No es necesario ingresar todo el código puede ingresar parte de el, ejm «CB7»: filtrará todas las órdenes que comienzan con **CB7**.
