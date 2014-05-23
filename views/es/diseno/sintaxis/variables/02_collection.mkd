@@ -6,7 +6,7 @@
 
 # El objeto collection
 
-Disponible en la plantilla <a href="/es/diseno/plantillas/collection">collection.html</a> o a través de la variable global <code>collections</code>, ya sea iterando o bien usando una manilla (ej. <code>collections.ofertas.products</code>).
+Disponible en la plantilla `collection.html` o a través de la variable global <code>collections</code>, ya sea iterando o bien usando una manilla (ej. <code>collections.ofertas.products</code>).
 
 <ul>
   <li><code>collection.title</code></li>

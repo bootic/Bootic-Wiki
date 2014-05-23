@@ -87,7 +87,7 @@ Esto es porque al mostrarse el detalle de un producto, Bootic sabe cuál product
 ## [all_products](#all_products)
 <div id="all_products">
 
-Este ejemplo muestra cómo crear un listado paginado de 5 productos por página. Más información sobre paginación <a href="/es/diseno/plantillas/products/paginacion">aquí</a>.
+Este ejemplo muestra cómo crear un listado paginado de 5 productos por página. Más información en sección [Paginación](/es/diseno/recetas/paginacion).
 
 <pre>:::html
 {% paginate all_products by 5 %}

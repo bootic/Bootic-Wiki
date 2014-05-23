@@ -28,7 +28,7 @@ Para usar tu propio dominio debes ser dueño del dominio y ser capaz de administ
 
 <img src="/img/admin/dns-flow.png" />
 
-Los DNS (Domain Name Servers) son los servidores encargados de traducir un nombre de dominio (por ejemplo "www.bootic.net") a la dirección IP del servidor donde el sitio está alojado.
+Los DNS (Domain Name Servers) son los servidores encargados de traducir un nombre de dominio (por ejemplo `www.bootic.net`) a la dirección IP del servidor donde el sitio está alojado.
 
 Lo que necesitas hacer es "apuntar" un subdominio de tu dominio a los servidores de Bootic. El subdominio más común es "www".
 
@@ -39,7 +39,7 @@ Es posible administrar los DNS de tu dominio en empresas especializadas. Tambié
 Los pasos son:
 
 1. Anda al panel de administración de DNS de tu proveedor.
-2. Crea un registro de tipo CNAME con el nombre del subdominio y dominio que quieres redirigir (por ejemplo "www.mitienda.com"). El valor debe ser "proxy.bootic.net"
+2. Crea un registro de tipo CNAME con el nombre del subdominio y dominio que quieres redirigir (por ejemplo `www.mitienda.com`). El valor debe ser "proxy.bootic.net"
 3. Espera unas horas (los cambios de DNS tardan horas en propagarse por internet). Cuando tu dominio `www.mitienda.com` muestre una página de error de Bootc, significa que el dominio ya está *apuntado* a tu sitio Bootic.
 4. Entra a tu administrador Bootic, navega hasta las preferencias y edita el campo «Dirección URL» con `www.mitienda.com`. Guarda el cambio.
 5. Eso es todo. Ahora la dirección `www.mitienda.com` debiera mostrarte tu tienda Bootic - Figura 1.
