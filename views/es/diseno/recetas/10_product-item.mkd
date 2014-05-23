@@ -46,7 +46,7 @@ De esta manera podemos re-utilizar el mismo HTML para productos desde distintas 
 
 Nótese que el nombre de la variable para cada producto en <code>product_item</code> es "product_item" en lugar de "product". Esto es porque la etiqueta *loop* asigna cada producto a una variable con el mismo nombre de la plantilla parcial.
 
-Asimismo, ahora podemos incluir esta misma plantilla en el listado de [productos similares](/es/diseno/plantillas/product/productos-similares) en [product.html](es/diseno/plantillas/product):
+Asimismo, ahora podemos incluir esta misma plantilla en el listado de [productos similares](/es/diseno/recetas/productos-similares) en [product.html](es/diseno/plantillas/product):
 
 <pre>:::html
 {% if product.has_similar_products %}

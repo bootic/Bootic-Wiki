@@ -57,4 +57,4 @@ hora de **Realizar la compra** — Figura 2.
 </div>
 
 
-  [zona]:/es/configuracion/formas-de-envio/ "Cómo crear zonas y costo de envio"
+  [zona]:/es/configuracion/formas-de-envio "Cómo crear zonas y costo de envio"

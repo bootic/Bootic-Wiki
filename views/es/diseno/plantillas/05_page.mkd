@@ -16,4 +16,4 @@ Esta es una de las plantillas más sencillas de Bootic y su función es mostrar 
   </div>
 </pre>
 
-Los atributos disponibles para la variable <code>page</code> los puedes ver <a href="/es/diseno/variables/page">aquí</a>.
+Los atributos disponibles para la variable <code>page</code> los puedes ver <a href="/es/diseno/sintaxis/variables/page">aquí</a>.
