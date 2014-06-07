@@ -58,8 +58,8 @@ img.right {
 }
 
 #content h2 {
-  font-size: 24px;
-  margin: 50px 20px 10px 0;
+  font-size: 22px;
+  margin: 40px 20px 10px 0;
   padding-bottom: 5px;
   letter-spacing:1px;
   color:#888;
@@ -133,9 +133,12 @@ img.right {
 
 #content p, #content li, #content div {
     font-weight: normal;
-    line-height:1.9;
+    line-height: 1.66666667;
     font-size:17px;
     color:#000;
+}
+#content p { 
+    padding-bottom:10px;
 }
 #content code, #content pre {
     white-space: pre;
