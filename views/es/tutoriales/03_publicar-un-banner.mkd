@@ -44,11 +44,13 @@ Los pasos serían:
 
 ¿Y el enlace?
 
-Los pasos anteriores mostrarán la imagen **pero no está enlazada a la colección todavía**, ahora finalizamos la tarea creando en [link](http://htmldog.com/reference/htmltags/a/ "que es y como se hace un link").
+Los pasos anteriores mostrarán la imagen **pero no está enlazada a la colección todavía**, ahora finalizamos la tarea [creando en link](http://htmldog.com/reference/htmltags/a/ "que es y como se hace un link").
 
-    <a href="/collections/otono-invierno">
-        <img alt="Colección Otoño-Invierno" src="{{ 'banner-twitter.png' | asset_url }}" />
-    </a> 
+<pre>:::HTML
+<a href="/collections/otono-invierno">
+    <img alt="Colección Otoño-Invierno" src="{{ 'banner-twitter.png' | asset_url }}" />
+</a> 
+</pre>
 
 Listo, tarea terminada. 
 
@@ -65,13 +67,19 @@ Listo, tarea terminada.
 
 Los pasos 1, 2 y 4 del requerimiento anterior se repiten. 
 
-Asumiendo que la imagen tiene como nombre `resultado-concurso.jpg` quedaría así en la plantilla: `<img alt="Resultado concurso" src="{{ 'resultado-concurso.jpg' | asset_url }} />`
+Asumiendo que la imagen tiene como nombre `resultado-concurso.jpg` quedaría así en la plantilla: 
+
+<pre>:::HTML
+<img alt="Resultado concurso" src="{{ 'resultado-concurso.jpg' | asset_url }}" />
+</pre>
 
 Y por supuesto el enlace donde **nos llevará la imagen** (una noticia dentro de nuestra tienda):
 
-    <a href="/blog/2014/3/12/resultado-concurso">
-        <img alt="Resultado concurso" src="{{ 'resultado-concurso.jpg' | asset_url }}" />
-    </a> 
+<pre>:::HTML
+<a href="/blog/2014/3/12/resultado-concurso">
+    <img alt="Resultado concurso" src="{{ 'resultado-concurso.jpg' | asset_url }}" />
+</a> 
+</pre>
 
 Eso es todo.
 
@@ -79,13 +87,19 @@ Eso es todo.
 
 Nuevamente los pasos 1,2 y 4 del requerimiento 1 se repiten.
 
-Asumiendo que la imagen tiene como nombre `icono-twitter.jpg` quedaría así en la plantilla `<img alt="Twitter" src="{{ 'icono-twitter.jpg' | asset_url }} />`
+Asumiendo que la imagen tiene como nombre `icono-twitter.jpg` quedaría así en la plantilla:
+
+<pre>:::HTML
+<img alt="Twitter" src="{{ 'icono-twitter.jpg' | asset_url }}" />
+</pre>
 
 Y lo más importante, ahora ponemos **el enlace a nuestra** cuenta twitter:
 
-    <a href="http://www.twitter.com/tacostacostienda">
-        <img alt="Twitter" src="{{ 'icono-twitter.jpg' | asset_url }} />
-    </a> 
+<pre>:::HTML
+<a href="http://www.twitter.com/tacostacostienda">
+    <img alt="Twitter" src="{{ 'icono-twitter.jpg' | asset_url }}" />
+</a> 
+</pre>
 
 Listo.
 
