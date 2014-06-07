@@ -47,34 +47,34 @@ Así puedes ir segmentando distintos precios dentro de la misma zona de acuerdo 
 
 Esto significa que puedes crear otra zona (por ejemplo "Sur de Chile") con sus propios rangos de peso de acuerdo a los costos extras del courier u otros factores. Depende de tí.
 
-# Preguntas frecuentes
+## Preguntas frecuentes
 
-## Actualmente tengo una zona que aplica para más de una región. ¿Qué hago?
+### Actualmente tengo una zona que aplica para más de una región. ¿Qué hago?
 
 En este caso tendrás que crear una zona por separado para cada uno de esas regiones. Te tomará sólo un minuto!
 
-## ¿Y si la zona aplica para más de un país?
+### ¿Y si la zona aplica para más de un país?
 
 Lo mismo de arriba. Ahora, en caso de que quieras ofrecer despacho a todos los países puedes dejar una zona sin un país asociado. Lee a continuación!
 
-## ¿Qué pasa si dejo una zona sin un país o una región asignada?
+### ¿Qué pasa si dejo una zona sin un país o una región asignada?
 
 Cuando hay una zona que no está asociada a un país, Bootic asumirá que esa zona de envío se aplica sobre cualquier lugar del mundo, y por lo tanto le mostrará a tus clientes el listado total de países para elegir a la hora de ingresar la dirección de envío de su orden. Si todas tus zonas están asociadas a países, entonces Bootic sólo permitirá a tus usuarios elegir los países que están asociados a zonas.
 
 Ahora, si una zona tiene un país no tiene una región definida el criterio es el mismo: Bootic entenderá que esa zona no tiene restricciones de región y por lo tanto el usuario podrá elegir entre todas las regiones del país asociado a la zona. Si todas tus zonas dentro de un país tienen una región asociada, Bootic sólo permitirá al usuario elegir una de esas regiones.
 
-## ¿Es decir, si una zona está asociada a una región pero no a una ciudad o comuna el usuario podrá elegir cualquiera de ellas?
+### ¿Es decir, si una zona está asociada a una región pero no a una ciudad o comuna el usuario podrá elegir cualquiera de ellas?
 
 Exacto. No creerías que te íbamos a hacer crear una zona por cada comuna, ¿o si?
 
-## ¿Qué pasa si tengo una zona asociada a un país y otra asociada a una región de ese país?
+### ¿Qué pasa si tengo una zona asociada a un país y otra asociada a una región de ese país?
 
 En ése caso, aquellas órdenes cuya dirección de envío esté dentro de esa región podrá elegir dentro de las dos opciones de envío. Todas las demás órdenes -- las con dirección de envío a otras regiones de ése país -- sólo verán la primera opción.
 
-## ¿Y si la zona está asociada a una ciudad o comuna específica? ¿Pasa lo mismo?
+### ¿Y si la zona está asociada a una ciudad o comuna específica? ¿Pasa lo mismo?
 
 Así es. La idea es que tengas la flexibilidad de ofrecer los métodos de envío que quieras basados en la ubicación de tus clientes. Por ejemplo, ésto te da la posibilidad de ofrecer despacho expedito a quienes estén más cerca tuyo, obviamente cobrando lo que corresponda.
 
-## ¿Y las zonas que no tienen país? ¿No aparecerán siempre según este criterio?
+### ¿Y las zonas que no tienen país? ¿No aparecerán siempre según este criterio?
 
 Aprendes rápido! Eso sí, la respuesta es no: las zonas que no tienen país se consideran "despacho al mundo" por lo que sólo estrán disponibles para quienes ingresen una dirección que no coincida con ninguno de los países que sí estén asociados a zonas. Pero recuerda, tus clientes sólo podrán elegir entre los países para los que tengas zonas definidas **a menos de que tengas una zona sin un país definido**.
