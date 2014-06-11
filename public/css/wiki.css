@@ -49,9 +49,9 @@ img.right {
 }
 
 #content h1 {
-  font-size: 30px;
+  font-size: 34px;
   margin-bottom: 25px;
-  font-family:"Helvetica Neue",Helvetica,Arial;
+  font-family: 'Open Sans', "Helvetica Neue",Helvetica,Arial;
   font-weight:300;
   text-transform:uppercase;
   letter-spacing:1px;
@@ -401,3 +401,23 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9e2712', end
     background:url('/img/ico-warning.png') no-repeat;
 }
 
+
+#mini-site-map {
+    margin:40px 0 10px 0;
+}
+
+#mini-site-map ul {
+    margin:0;
+    padding:0;
+}
+#mini-site-map li {
+    list-style-type:none;
+    display:inline;
+}
+#mini-site-map li a { 
+    display:inline-box;
+    margin-right:15px;
+}
+#mini-site-map {
+    text-align:center;
+}
