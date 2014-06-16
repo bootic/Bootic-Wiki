@@ -22,7 +22,7 @@ Una primera aclaración: para el pago en línea (a través de internet), Transba
 
 * 0.48 UF + IVA por uso mensual del servicio
 * 2.95 % + IVA por transacción con tarjeta de crédito
-* 1.95 % + IVA por transacción con tarjeta de débito
+* 1.79 % + IVA por transacción con tarjeta de débito
 
 ### Boletas de garantía
 
@@ -110,10 +110,10 @@ En caso de que haya algun problema en esta fase, Transbank enviará un correo de
 
 Una vez realizada la certificación, Transbank enviará un correo solicitando los siguientes archivos:
 
-* Registro de eventos del KCC de Webpay (ejm: TBK_EVN20120605.log)
-* Bitácora de pagos del KCC (ejm: tbk_bitacora_TR_NORMAL_0605.log)
-* Archivo de configuración de la tienda (tbk_config.dat)
-* La programación de tu Página de Cierre (check.rb)
+* Registro de eventos del KCC de Webpay (ejm: `TBK_EVN20120605.log`)
+* Bitácora de pagos del KCC (ejm: `tbk_bitacora_TR_NORMAL_0605.log`)
+* Archivo de configuración de la tienda (`tbk_config.dat`)
+* La programación de tu Página de Cierre (`check.rb`)
 
 <a name="logo"></a>**Estos archivos serán enviados por nosotros**. Una vez que los reciben, Transbank (después de unos días) manda un email que contiene el identificador de la tienda en Webpay, y un ZIP que contiene los archivos para generar las llaves de seguridad para el kit de la tienda.
 
