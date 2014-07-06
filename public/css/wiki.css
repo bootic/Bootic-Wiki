@@ -87,8 +87,18 @@ img.right {
 }
 
 #content li {
-  padding: 2px 0p 0pxx;
+  padding: 2px 0px 10px 0px;
 }
+
+#content strong { 
+    font-weight:bold !important;
+}
+
+#content pre, #content code {
+    font: 14px/1.8em Menlo, Consolas, "Courier New", Courier, "Liberation Mono", monospace;
+}
+
+#content pre {margin-bottom:30px !important;}
 
 .captura {
   border: 1px solid #999;
@@ -340,9 +350,18 @@ Show big version only on homepage
     padding:20px 20px 20px;
     border-radius:5px;
     padding-left:70px;
-}
-.note p {
     color:white !important;
+}
+.note strong {
+    color:#EFEEF0;
+    font-weight:bold;
+}
+.note p, .note li {
+    color:white !important;
+}
+.note a {
+    color:#eee;
+    text-decoration:underline;
 }
 .note h5 {
     color:white !important;
@@ -388,19 +407,18 @@ Show big version only on homepage
     background:url('/img/ico-tip.png') no-repeat;
 }
 .warning { 
-background: rgba(158,39,18,1);
-background: -moz-linear-gradient(top, rgba(158,39,18,1) 0%, rgba(111,13,13,1) 100%);
-background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(158,39,18,1)), color-stop(100%, rgba(111,13,13,1)));
-background: -webkit-linear-gradient(top, rgba(158,39,18,1) 0%, rgba(111,13,13,1) 100%);
-background: -o-linear-gradient(top, rgba(158,39,18,1) 0%, rgba(111,13,13,1) 100%);
-background: -ms-linear-gradient(top, rgba(158,39,18,1) 0%, rgba(111,13,13,1) 100%);
-background: linear-gradient(to bottom, rgba(158,39,18,1) 0%, rgba(111,13,13,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9e2712', endColorstr='#6f0d0d', GradientType=0 );
+    background: rgba(158,39,18,1);
+    background: -moz-linear-gradient(top, rgba(158,39,18,1) 0%, rgba(111,13,13,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(158,39,18,1)), color-stop(100%, rgba(111,13,13,1)));
+    background: -webkit-linear-gradient(top, rgba(158,39,18,1) 0%, rgba(111,13,13,1) 100%);
+    background: -o-linear-gradient(top, rgba(158,39,18,1) 0%, rgba(111,13,13,1) 100%);
+    background: -ms-linear-gradient(top, rgba(158,39,18,1) 0%, rgba(111,13,13,1) 100%);
+    background: linear-gradient(to bottom, rgba(158,39,18,1) 0%, rgba(111,13,13,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9e2712', endColorstr='#6f0d0d', GradientType=0 );
 }
 .warning:after{
     background:url('/img/ico-warning.png') no-repeat;
 }
-
 
 #mini-site-map {
     margin:40px 0 10px 0;
@@ -421,3 +439,4 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9e2712', end
 #mini-site-map {
     text-align:center;
 }
+

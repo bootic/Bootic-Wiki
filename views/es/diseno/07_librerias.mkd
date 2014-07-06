@@ -12,7 +12,7 @@ La diferencia es que al agregarlos como archivos, no es posible modificarlos usa
 
 Como sugerencia, recomendamos que todas las librerías que utilices, ya sean Javascript o CSS -- por ejemplo el plugin [Cycle](http://jquery.malsup.com/cycle/) de jQuery o el framework CSS [Bootstrap](http://getbootstrap.com/) -- las subas como archivos, ya que idealmente no querrás modificar el contenido de esos archivos. Para todo lo demás (es decir, hojas de estilo o código JS que sí fue escrito por tí) recomendamos ingresarlos como plantillas.
 
-# Cómo crear una nueva plantilla JavaScript o CSS
+## Cómo crear una nueva plantilla JavaScript o CSS
 
 En este caso mostraremos como ejemplo la creación de una plantilla CSS llamada **master.css**.
 

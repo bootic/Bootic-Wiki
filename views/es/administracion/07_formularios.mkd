@@ -21,5 +21,5 @@ Por defecto, todos los formularios tienen al menos los campos Nombre, Email y Em
 
 Una vez definidos los campos de un formulario, el último paso es definir el o los destinatarios que recibirán los correos cuando se envíe un formulario. Por defecto Bootic muestra el o los usuarios asociados a la tienda para que los agregues como destinatarios, haciendo click sobre su(s) nombre(s), pero tú puedes poner cualquier nombre y casilla que quieras.
 
-<div class="tip">
+<div class="note tip">
 Si un formulario no posee ningún destinatario, los datos no se enviarán a ninguna parte, así que asegúrate de agregar al menos un destinatario y probar que los emails lleguen sin problemas.</div>

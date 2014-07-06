@@ -44,7 +44,7 @@ Asumiendo que nuestros productos tienen variantes llamadas "rojo", "azul", "verd
 .v-naranjo .color {background-color: orange;}
 </pre>
 </div>
-<img src="/img/themes/variants1.png" alt="Variantes personalizadas" class="right" />
+<img src="/img/themes/variants1.png" alt="Variantes personalizadas" />
 </div>
 
 Otras opciones son usar los nombres de variantes para cargar imágenes, etc.

@@ -40,7 +40,7 @@ El HTML usa los productos dentro de la colección "destacados"
 
 Analiza el código línea por línea para entender cada elemento.
 
-<div class="tip">
+<div class="note tip">
   La línea <code>collections.destacados.products</code> usa la <em>manilla</em> de la colección ("destacados"), que es una versión sin espacios ni tildes del título. Por ejemplo, una colección con título "Productos destacados" tiene una manilla "productos-destacados".<br />
   Las manillas son generadas automáticamente a partir del título, pero tu puedes modificarla en elformulario de edición de cada colección.
 </div>
@@ -57,7 +57,7 @@ El plugin Cycle debes descargarlo y subirlo como archivo al editor de tu tienda.
 {{ 'jquery.cycle.all.latest.js' | asset_url | javascript_tag }}
 </pre>
 
-<div class="tip">
+<div class="note tip">
   Lee "<a href="/es/diseno/librerias/librerias-externas">jQuery y librerías externas</a>" para saber más sobre cómo trabajar con javaScript en Bootic.
 </div>
 
