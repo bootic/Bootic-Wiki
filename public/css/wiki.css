@@ -100,6 +100,11 @@ img.right {
 
 #content pre {margin-bottom:30px !important;}
 
+#content blockquote p {
+    color:#666;
+    font-style:italic;
+}
+
 .captura {
   border: 1px solid #999;
   margin: 20px 0 40px;
