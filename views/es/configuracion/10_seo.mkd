@@ -12,4 +12,7 @@ El SEO es la sigla de _Search Engine Optimization_ en español de traduce como
 de mejorar la visibilidad de un sitio web en los resultados de los diferentes
 buscadores.
 
+## Enlace relacionado
+
+* [ Google sitemap para tu tienda Bootic ](/es/configuracion/seo/sitemap)
 
