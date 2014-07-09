@@ -13,13 +13,13 @@ En resumen, una promoción permite aplicar un descuento al ingresar un código a
 
 Los límites que puedes aplicar a una promoción son los siguientes:
 
-* Un valor o un porcentaje del valor de cada pedido de compra.
-* Tiempo de validez (con año, mes, día, hora y minuto) — incluso puedes programar futuras promociones.
-* Límite de usos.
-* Rango de precios.
-* Cantidad de productos.
+* Un **valor** o un **porcentaje del valor** de cada pedido y otorgar despacho gratuito.
+* Restringir la promoción a productos pertenecientes a una **colección determinada**.
+* **Tiempo de validez** (con año, mes, día, hora y minuto) — incluso puedes programar futuras promociones.
+* Límite de **usos**.
+* **Rango** de precios.
+* **Cantidad** de productos.
 
-En el siguiente video (5:25) te explicamos cómo crear tu primera promoción.
+En el siguiente video (5:25) te explicamos cómo crear tu primera promoción:
 
-<iframe width="665" height="374" src="http://www.youtube.com/embed/1a9w1bM3-4g"
-frameborder="0" allowfullscreen></iframe>
+<iframe width="665" height="374" src="http://www.youtube.com/embed/1a9w1bM3-4g" frameborder="0" allowfullscreen></iframe>
