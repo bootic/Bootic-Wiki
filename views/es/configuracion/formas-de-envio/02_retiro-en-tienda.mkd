@@ -11,14 +11,14 @@ Una de las ventajas del comercio electrónico es que el producto _viaja_ hasta l
 puerta de su casa. Pero muchas veces el cliente quiere **retirar el producto en
 la tienda física** para abaratar costos o simple comodidad.
 
-**Importante**: Ofrecer la posibilidad de «Retirar en tienda» es una
-política de cada comercio, el locatario Bootic deberá evaluar **si la ofrece o no**
-a sus clientes.
+<div class="note info">
+    <strong>Importante</strong>: Ofrecer la posibilidad de «Retirar en tienda» es una
+    política de cada comercio, el locatario Bootic deberá evaluar <strong>si la ofrece o no</strong> a sus clientes.
+</div>
 
 ## Cómo se hace
 
-¿Cómo darle al cliente la posibilidad de retirar el producto en la tienda
-física?, a continuación los pasos a seguir:
+¿Cómo darle al cliente la posibilidad de retirar el producto en la tienda física?, a continuación los pasos a seguir:
 
 <div class="captura">
     <div class="c-contenido">

@@ -1,0 +1,124 @@
+---
+:title: Pagar usando plataforma de pago Webpay.cl 
+:description: "Habilitar el medio de pago webpay.cl en tu tienda Bootic"
+:keywords: webpay, webpay.cl, cl, chile, pago, plataforma de pago, transbank 
+---
+
+# Pagar usando plataforma de pago Webpay.cl
+
+Webpay.cl es el _portal de pagos_ de [ Transbank ][1], **no confundir con el otro** servicio: [Webpay
+Plus][2]. Dentro de los medios de pagos que ofrece Bootic está el «Medio de Pago Personalizado», puedes
+utilizar esta opción para ofrece el medio de pago Webpay.cl.
+
+Te debemos advertir que Webpay.cl no es una opción de pago _integrada_ a tu tienda Bootic, en la sección
+«[Cómo funciona][3]» te podrás dar cuenta que el cliente **debe ir a otro sitio web a pagar**, es decir, _debe salir_ de la tienda Bootic para finalizar la transacción del producto. 
+
+En Bootic recomendamos [ Webpay Plus ][4], que **sí se integra** con tu tienda, pero algunos locatarios pueden considerar útil Webpay.cl por su _rápida implementación_ o bien adoptarla de manera temporal mientras gestionan la contratación de [Webpay Plus con Transbank][5].
+
+<div class="note info">
+    <h5>¿Quienes puede usar Webpay.cl</h5>
+    <p>
+    Si tu comercio está adherido al Portal de pago webpay.cl puedes ofrecer este medio de pago a tus clientes.
+Para más información visita el <a href="https://www.transbank.cl/public/pagina_producto_webpay-cl.html">sitio
+de Transbank</a>, sección <a href="https://www.webpay.cl/portalpagodirecto/pages/faq.jsf">preguntas
+frecuentes</a> o <a href="https://www.webpay.cl/portalpagodirecto/pages/contacto.jsf">sección contacto webpay.cl</a> - Teléfonos de asistencia : 6006386380 / +56226612700
+    </p>
+</div>
+
+## ¿Qué beneficio tiene este medio de pago?
+
+Sacado de las [preguntas frecuentes][6] de Webpay.cl:
+
+> Puedes realizar pagos en línea a través de Internet desde cualquier lugar en que
+> te encuentres y a cualquier hora. Ofrecemos un servicio cómodo y con alto
+> respaldo de seguridad. Además, podrás acceder a las promociones y beneficios que
+> entregue tu banco así como pagar en cuotas
+
+## ¿Cómo funciona?
+
+El cliente que quiera pagar en tu tienda Bootic utilizando este medio de pago **deberá ir al sitio Webpay.cl**
+y completar un **formulario genérico** de pago, los tres datos críticos necesarios para asegurar un correcto pago son: 
+
+1. Que el _cliente llegue_ al formulario de pago **correspondiente a tu tienda** y no a la de otro establecimiento
+   comercial (ver sección «URL de mi tienda en Webpay.cl»).
+2. Que el _cliente digite correctamente_ el **número de pedido** que generó Bootic.
+3. Que el _cliente digite correctamente_ el **monto de la transacción**.
+
+Una vez que el comercio (locatario Bootic) haya sido notificado que recibió un pago vía webpay.cl—esta
+notificación es enviada por Transbank—se **deberá cambiar el estado** del pedido en tu panel de administración
+Bootic de Pendiente a Cerrado.
+
+<div class="note warning">
+    <h5>Pago exitoso o fallido</h5>
+    <p>Utilizando el medio de pago Personalizado Webpay.cl Bootic no tiene forma de controlar el
+pago exitoso o fallido de la transacción.
+    </p>
+</div>
+
+### URL de mi tienda en Webpay.cl
+
+Cuando el Comercio (locatario Bootic) ha adherido a Webpay.cl el sistema generará una URL ó dirección web que tiene la siguiente
+forma:
+
+<pre>:::HTML
+https://www.webpay.cl/portalpagodirecto/pages/institucion.jsf?idEstablecimiento=82434340
+</pre>
+
+El número al final de la dirección (`82434340`) es el **identificador** dentro del Portal, con esta dirección se puede acceder
+directamente sin pasar por la [búsqueda del rubro y establecimiento en Webpay.cl][7].
+
+## Habilitando el medio de pago
+
+Los pasos para que tu tienda Bootic proporcione el medio de pago webpay.cl son los
+siguientes:
+
+### 1. Crear un medio de pago personalizado
+
+Anda **Preferencias** &rarr; **Pagos en línea** &rarr; **Medio de pago personalizado**. 
+
+![Medio de pago Personalizado][8]
+
+### 2. Configurando webpay.cl
+
+En el campo **Nombre** ponga «Webpay.cl».
+
+En el campo **Mensaje** copie y pegue el siguiente código HTML. **IMPORTANTE**: debe poner su IDENTIFICADOR:
+
+<pre>:::HTML
+<ol>
+  <li>1. Vaya <a
+href="https://www.webpay.cl/portalpagodirecto/pages/institucion.jsf?idEstablecimiento=IDENTIFICADOR">a nuestro botón
+de pago en Webpay.cl</a>.</li>
+  <li>2. Haga clic en el botón <strong>Pagar</strong> (al final de la página).</li>
+  <li>3. Complete el formulario que allí aparece.</li>
+  <li>4. Asegúrese de ingresar correctamente el <strong>Indentificador del pago</strong>(código del pedido)
+y el <strong>monto</strong>(debe incluir el valor del despacho).</li>
+  <li>5. Dele clic al botón <strong>Pagar con Webpay</strong></li> 
+</ol>
+
+<p>Tome como ejemplo la siguiente imagen:</p>
+
+<img src="http://www.bootic.net/images/webpay_cl-medio_pago_ejm.png" />
+</pre>
+
+Listo, eso es todo.
+
+Las instrucciones y la siguiente imagen aparecerán cuando el cliente selecciones este medio de pago:
+
+![ webpay_cl-medio_pago.png ][9]
+
+<div class="note tip">
+    <h5>Cerrar el Pedido</h5>
+    <p>Recuerde que debe cambiar el estado del pedido de <strong>Pendiente</strong> a <strong>Cerrada</strong> una vez que se haya verificado el pago (notificación desde Webpay.cl)</p>
+</div>
+
+
+[1]: https://www.transbank.cl/public/pagina_producto_03.html "Transbank: Webpay Plus"
+[2]: /es/configuracion/medios-de-pago/webpay "Bootic: Medio de pago webpay plus"
+[3]: #toc_2 "Ir a sección Como Funciona"
+[4]: /es/configuracion/medios-de-pago/webpay "Bootic: Medio de pago webpay plus"
+[5]: https://www.transbank.cl/public/pagina_producto_03.html "Transbank: Webpay Plus"
+[6]: https://www.webpay.cl/portalpagodirecto/pages/faq.jsf
+[7]: https://www.webpay.cl/portalpagodirecto/pages/index.jsf
+[8]: /img/admin/webpay_cl_01.png
+[9]: /img/admin/webpay_cl-medio_pago.png

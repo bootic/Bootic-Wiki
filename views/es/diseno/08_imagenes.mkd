@@ -14,7 +14,7 @@
 <p>Estas imágenes puedes ser usadas tanto en tus plantillas CSS como HTML.</p>
 </div>
 
-# Insertando imágenes en plantillas HTML
+## Insertando imágenes en plantillas HTML
 
 Abre la plantilla que quieras (por ejemplo <code>layout.html</code>) y agrega una etiqueta de image <code>&lt;img&gt;</code>. En el atributo <code>src</code> debes insertar el nombre del archivo que subiste, tal cual aparece en la lista de archivos subidos, usando el filtro <code>asset_url</code>, así:
 
@@ -28,11 +28,11 @@ El filtro <code>asset_url</code> genera la URL al directorio donde Bootic guarda
 <img src="http://static.bootic.net/uploads/themes/32/logo.png" alt="Logo de mi tienda" />
 </pre>
 
-<div class="tip">
+<div class="note tip">
   <strong>Tip:</strong> si situas el cursor donde quieres insertar la imagen y a continuación haces click en la imagen en la lista de archivos subidos, Bootic inserta el nombre de imagen por ti.
 </div>
 
-# Insertando imágenes en plantillas CSS.
+## Insertando imágenes en plantillas CSS.
 
 En CSS basta con usar el nombre de la imágen directamente. Bootic guarda las plantillas CSS y las imágenes subidas en el mismo directorio, por lo que no es necesario usar el filtro <code>asset_url</code>.
 
@@ -58,7 +58,7 @@ Sube una imágen de 16x16px a la lista de archivos de tu editor de plantillas Bo
 "favico.ico" es la convención para estos archivos pero en verdad puedes nombrarlo como quieras.
 
 
-# Imágenes de productos
+## Imágenes de productos
 
 La colección <code>product.images</code> contiene las imágenes subidas a un producto por los administradores de la tienda.
 

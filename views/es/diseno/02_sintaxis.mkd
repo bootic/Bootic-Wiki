@@ -77,6 +77,6 @@ El resultado será:
 
 Más información sobre las etiquetas disponibles <a href="/es/diseno/sintaxis/etiquetas">aquí</a>.
 
-<div class="tip">
+<div class="note tip">
   <strong>Liquid</strong> es un motor de plantillas muy completo y este wiki sólo nos enfocamos en los aspectos que tienen relación directa con plantillas de tiendas Bootic. Para uso general te recomendamos que revises <a href="https://github.com/Shopify/liquid/wiki/Liquid-for-Designers" title="Documentación completa de Liquid">la documentación oficial de liquid</a>.
 </div>

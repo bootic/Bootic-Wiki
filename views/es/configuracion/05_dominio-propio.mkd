@@ -8,7 +8,7 @@
 ---
 # Configurando dominio propio en Bootic
 
-<div class="note alert"> 
+<div class="note warning"> 
     <strong>Importante</strong>: Los cambios descritos en esta sección —si no se realizan adecuadamante— <strong>te pueden dejar sin acceso a tu correo electrónico</strong>, ante cualquier duda pregúntanos (soporte@bootic.net) antes de hacer cualquier tipo de cambio.
 </div>
 
@@ -54,7 +54,7 @@ Los pasos son:
 
 ### Opción 2: No tengo acceso a DNS
 
-<div class="note alert">
+<div class="note warning">
     <strong>Importante</strong>: Si el dominio que quieres apuntar a nuestro DNS
 TIENE correos electrónicos asociados (ejm: <em>hugo@miempresa.com</em>) nos debes avisar. Si haces el cambio y no nos avisas TE QUEDARÁS SIN ACCESO a tu correo electrónico hugo@miempresa.com y por consiguiente todas las personas que tengas correo con ese dominio. Además de lo anterior también infórmanos el nombre de la empresa (o servicio) que gestionará el correo (Google apps, Outlook.com, etc).
 </div>
@@ -92,8 +92,8 @@ Los pasos de arriba son aplicables para dominios `.cl` registrados en el [NIC](h
     </div>
 </div>
 
-<div class="tip">
-  <h3>¿Cómo funcionan los DNS?</h3>
+<div class="note info">
+  <h5>¿Cómo funcionan los DNS?</h5>
 
   <p>Cada vez que visitas el sitio www.bootic.net, tu navegador hace lo siguiente:</p>
   <ol>

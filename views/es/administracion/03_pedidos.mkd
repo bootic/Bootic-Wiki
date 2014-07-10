@@ -39,7 +39,7 @@ menú «Órdenes» — Figura 1.
   <div class="c-pie"><strong>Figura 1</strong>: Menú Órdenes</div>
 </div>
 
-<div class="tip">
+<div class="note info">
 En el caso de que se haya seleccionado como medio de pago Webpay <strong>la Orden pasará
 a estado Cerrada automáticamente</strong> y un email de notificación será enviado al comprador y al administrador — en los otros medios de pago será el Locatario el encargado de cerrar la Orden.
 </div>

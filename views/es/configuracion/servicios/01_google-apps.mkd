@@ -11,13 +11,12 @@ Google Apps para correos y documentos
 ====================================
 
 
-<div class="importante">
-<p><strong>Importante</strong>: En diciembre de 2012 <a
+<div class="note info">
+<p>En diciembre de 2012 <a
 href="http://googleenterprise.blogspot.ca/2012/12/changes-to-google-apps-for-businesses.html">Google
 anunció que <strong>ya no habrá más servicio gratuito</strong> de Google Apps</a>.
 El costo por cada casilla de correo será de U$5 al mes <strong>por
-usuario</strong> — <a
-href="http://www.google.com/intl/es-419/enterprise/apps/business/pricing.html">
+usuario</strong> — <a href="http://www.google.com/intl/es-419/enterprise/apps/business/pricing.html">
 revisa la información de precios en su sitio web</a>.</p>
 </div>
 

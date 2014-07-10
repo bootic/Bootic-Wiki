@@ -13,8 +13,10 @@
   </p>
 </div>
 
-<div class="tip">
-  <a href="/es/configuracion/temas" title="Galería de plantillas predefinidas de Bootic">Algunas plantillas predefinidas</a> de Bootic vienen de fábrica con el carrito Ajax funcionando
+<div class="note tip">
+  <p>
+      <a href="/es/configuracion/temas" title="Galería de plantillas predefinidas de Bootic">Algunas plantillas predefinidas</a> de Bootic vienen de fábrica con el carrito Ajax funcionando.
+  </p>
 </div>
 
 Para implementar el carrito Ajax en tu propia plantilla puedes usar la librería JavaScript `bootic_cart.js`. Para esto es necesario entender JavaScript y HTML.
@@ -25,8 +27,10 @@ Lo primero es incluír la librería en tu [layout.html](/es/diseno/plantillas/la
 
 `{{ 'http://js.bootic.net/cart/0.0/bootic_cart.min.js' | javascript_tag }}`
 
-<div class="tip">
-  <code>bootic_cart.js</code> depende de jQuery. <a href="/es/diseno/librerias/librerias-externas" title="Cómo usar jquery en plantillas Bootic">Revisa nuestra documentación</a> si no sabes cómo usar jQuery en tu tienda Bootic.
+<div class="note tip">
+  <p>
+      <code>bootic_cart.js</code> depende de jQuery. <a href="/es/diseno/librerias/librerias-externas" title="Cómo usar jquery en plantillas Bootic">Revisa nuestra documentación</a> si no sabes cómo usar jQuery en tu tienda Bootic.
+  </p>
 </div>
 
 La librería hace disponible el object `Bootic.Cart`. Este objeto hace cosas como cargar el estado del carrito y tiene métodos para agregar, actualizar y quitar productos del carro. Además gatilla *eventos* cada vez que el carro es actualizado o está trabajando.
@@ -199,7 +203,7 @@ Lo primero es definir la plantilla del carrito dentro una etiqueta `<script>` es
 
 Fíjate en el atributo `data-template="cart"`. Este es el nombre de la plantilla que usaremos en JavaScript.
 
-<div class="tip">
+<div class="note tip">
   <p>Aunque funcionan de forma similar, las plantillas para el carrito Ajax tienen sintaxis distinta a las <a href="/es/diseno/sintaxis">plantillas Liquid</a> tradicionales de Bootic.
   Esto es porque las plantillas del carrito son procesadas por JavaScript en el navegador en lugar del servidor.</p>
   <p>Por ejemplo, para mostrar el valor de una variable, en Liquid usas <code>{{ variable }}</code>, mientras que en las plantillas del carrito usas <code>%{ variable }</code>. No las confundas!</p>
