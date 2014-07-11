@@ -10,9 +10,7 @@ Bootic cuenta con algunos temas prediseñados que puedes usar en tu tienda Booti
 
 <div class="note tip">
     <h5>Tienda por defecto</h5>
-    <div class="note info">
       <p>Las tiendas nuevas vienen por defecto con el tema <strong>SNAP</strong>, pero puedes elegir uno distinto en el area de diseño de tu panel de administración.</p>
-    </div>
 </div>
 
 <hr />
