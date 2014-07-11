@@ -12,7 +12,7 @@
 
 Una primera aclaración: para el pago en línea (a través de internet), Transbank ofrece dos servicios:
 
-* **Webpay.cl**: *Es un botón de pago*, el cual llevará a tus clientes al sitio [webpay.cl][webpay]. Muy similar al servicio de Servipag (Portal de pagos). Esta opción no es óptima para tu tienda en línea dado que saca al usuario completamente del contexto de tu sitio.
+* **Webpay.cl**: *Es un botón de pago*, el cual llevará a tus clientes al sitio [webpay.cl][webpay]. Muy similar al servicio de Servipag (Portal de pagos). Esta opción no es óptima para tu tienda en línea dado que saca al usuario completamente del contexto de tu sitio. A pesar de no ser una alternativa muy _usable_ para el cliente visita nuestro artículo de [ cómo lograr implementarlo ](/es/tutoriales/webpay-punto-cl "Receta: Pagar usando plataforma de pago webpay.cl").
 
 * **Webpay Plus**: Es una **integración completa con tu tienda** que permite a tus usuarios crear carros de compra en tu tienda y pagarlos mediante tarjetas o Redcompra en Webpay; cuando contrates Webpay para tu tienda Bootic **asegúrate de contratar este servicio** y no el anterior.
 

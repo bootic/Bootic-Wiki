@@ -109,7 +109,7 @@ Las instrucciones y la siguiente imagen aparecerán cuando el cliente seleccione
 
 <div class="note tip">
     <h5>Cerrar el Pedido</h5>
-    <p>Recuerde que debe cambiar el estado del pedido de <strong>Pendiente</strong> a <strong>Cerrada</strong> una vez que se haya verificado el pago (notificación desde Webpay.cl)</p>
+    <p>Recuerda que se debe cambiar el estado del pedido de <strong>Pendiente</strong> a <strong>Cerrado</strong> una vez que se haya verificado el pago (notificación desde Webpay.cl)</p>
 </div>
 
 
