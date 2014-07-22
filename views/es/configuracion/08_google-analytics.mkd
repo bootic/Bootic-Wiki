@@ -14,7 +14,13 @@ Google Analytics (GA) es un servicio ofrecido por Google completamente gratis qu
 
 ## ¿Cómo se configura?
 
-Bootic ofrece la posibilidad de instalar GA en tu tienda de una forma muy simple. Los pasos para configurar GA en tu tienda Bootic son:
+Bootic ofrece la posibilidad de instalar GA en tu tienda de una forma muy simple. 
+
+<div class="note info">
+    Si ya dispones de un código de seguimiento Google Analytics (o ID Tracking) anda diréctamente al punto 5.
+</div>
+
+Los pasos para configurar GA en tu tienda Bootic son:
 
 1. De no tenerlo [crea un usuario en GA][1], si ya tienes usuario GA ingresa en su panel de control.
 2. En el panel GA crea una nueva «Cuenta».
