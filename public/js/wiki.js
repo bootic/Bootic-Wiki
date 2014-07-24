@@ -157,7 +157,7 @@ function arrow (how_much) {
 
   // PJAX, only on inner pages (with sidebar)
 
-  if ($('#sidebar')[0])
+  // if ($('#sidebar')[0])
     // $(document).pjax('#main a', '#content', { scrollTo: 0 })
 
   $(document).on('pjax:complete', function(e, opts){
