@@ -9,8 +9,9 @@
 Disponible en la plantilla `collection.html` o a través de la variable global <code>collections</code>, ya sea iterando o bien usando una manilla (ej. <code>collections.ofertas.products</code>).
 
 <ul>
-  <li><code>collection.title</code></li>
-  <li><code>collection.body</code></li>
-  <li><code>collection.url</code></li>
-  <li><code>collection.products</code></li>
+  <li><code>collection.title</code>: Título.</li>
+  <li><code>collection.body</code>: Descripción de la colección.</li>
+  <li><code>collection.url</code>: URL completa de la colección.</li>
+  <li><code>collection.slug</code>: Nombre del recurso (único).</li>
+  <li><code>collection.products</code>: Listado de productos de la colección.</li>
 </ul>
