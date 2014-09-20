@@ -93,7 +93,7 @@ function arrow (how_much) {
     $('#content_wrapper').hide()
     $.each(pages, function (i, page) {
       $template.clone()
-        .find('.result_link').attr('href', page.href).end()
+        .find('.result_link').attr('href', page.url).end()
         .find('.result_title').html(page.title).end()
         .find('.result_desc').html(page.description).end()
         .appendTo('#results')
