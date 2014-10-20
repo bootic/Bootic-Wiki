@@ -34,14 +34,14 @@ Lo que necesitas hacer es "apuntar" un subdominio de tu dominio a los servidores
 
 ### Opción 1: Yo administro mis DNS.
 
-Es posible administrar los DNS de tu dominio en empresas especializadas. También, si ya tienes una empresa que te provee hosting, muy probablemente ellos también dan el servicio de DNS para tu dominio. Puedes averiguarlo con ellos. Esta opción te da control absoluto sobre el dominio, incluyendo crear subdominios, apuntar el tráfico de emails a tu servicio de correos favorito, etc.
+Es posible administrar los DNS de tu dominio en empresas especializadas. También, si ya tienes una empresa que te provee hosting, muy probablemente ellos también dan el servicio de DNS para tu dominio. Puedes averiguarlo con ellos. Esta opción te da **control absoluto** sobre el dominio, incluyendo crear subdominios, apuntar el tráfico de emails a tu servicio de correos favorito, etc.
 
-Los pasos son:
+Asumiendo que tu tienda Bootic (`TIENDA.bootic.net`) debe tener URL personalizada `www.mitienda.com` entonces debes hacer lo siguiente:
 
-1. Anda al panel de administración de DNS de tu proveedor.
-2. Crea un registro de tipo CNAME con el nombre del subdominio y dominio que quieres redirigir (por ejemplo `www.mitienda.com`). El valor debe ser "proxy.bootic.net"
-3. Espera unas horas (los cambios de DNS tardan horas en propagarse por internet). Cuando tu dominio `www.mitienda.com` muestre una página de error de Bootc, significa que el dominio ya está *apuntado* a tu sitio Bootic.
-4. Entra a tu administrador Bootic, navega hasta las preferencias y edita el campo «Dirección URL» con `www.mitienda.com`. Guarda el cambio.
+1. Anda al panel de administración de DNS de tu proveedor (en la gran mayoría esta herramiento puede ser [cPanel][cpanel]).
+2. Crea un registro de tipo CNAME de nombre `www` que debes ser apuntado a `proxy.bootic.net`. 
+3. **Espera unas horas** (los cambios de DNS tardan horas en propagarse por internet). Cuando tu dominio `www.mitienda.com` muestre una página Bootc, significa que el dominio ya está *apuntado* a nuestros servidores.
+4. Entra a tu administrador Bootic, navega hasta las **Preferencias** y edita el campo «Dirección URL» con `www.mitienda.com`. Guarda el cambio.
 5. Eso es todo. Ahora la dirección `www.mitienda.com` debiera mostrarte tu tienda Bootic - Figura 1.
 
 <div class="captura">
@@ -120,3 +120,4 @@ Si alojas tus DNS con nosotros (si configuraste tu dominio para apuntar a nuestr
 Google Apps es una serie de servicios de Google, que te permiten usar herramientas Google como GMail, Google Docs, Calendario y otros bajo tu dominio. Esto significa que puedes tener correos con tu propio dominio (por ejemplo *ismael@mitienda.com*) administrados por Google y accesibles de la misma forma que una cuenta GMail normal.
 
 [Leer más sobre configurar Google Apps para tu dominio](/es/configuracion/servicios/google-apps)
+[cpanel]:http://es.wikipedia.org/wiki/CPanel "cPanel en Wikipedia"
