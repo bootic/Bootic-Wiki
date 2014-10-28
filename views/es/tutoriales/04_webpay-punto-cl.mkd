@@ -98,7 +98,7 @@ y el <strong>monto</strong>(debe incluir el valor del despacho).</li>
 
 <p>Tome como ejemplo la siguiente imagen:</p>
 
-<img src="http://bootic-permanent-assets.s3.amazonaws.com/webpay_cl-medio_pago_ejm.png" />
+<img src="http://permanent-assets.btcdn.co/webpay_cl-medio_pago_ejm.png" />
 </pre>
 
 Listo, eso es todo.
