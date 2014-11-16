@@ -52,7 +52,7 @@ Acá debes ingresar a tu cuenta Wordpay con tu **usuario** y **contraseña** que
 
 ## ¡Ops!, no recuerdo mis credenciales Wordpay
 
-Cuando creaste la suscripción de tu plan debiste además crear un usuario y contraseña WordPay. Si no recuerdas tu usuario o tu contraseña busca en tu archivo de correos. Ellos envían mensajes desde la dirección `shopper@rbsworldpay.com`. Si no logras encontrar tus credenciales originales puedes [rescatar tu contraseña en la misma página de Wordpay](http://www.worldpay.com/shopper/index.php?page=recurring&sub=login&c=WW) (forgotten your password).
+Cuando creaste la suscripción de tu plan debiste además crear un usuario y contraseña WordPay. Si no recuerdas tu usuario o tu contraseña busca en tu archivo de correos. Ellos envían mensajes desde la dirección `shopper@rbsworldpay.com`. Si no logras encontrar tus credenciales originales puedes [rescatar tu contraseña en la misma página de Wordpay](http://support.worldpay.com/support/shopper/index.php?page=recurring&sub=newlogin&c=WW) (forgotten your password).
 
 <div class="captura">
     <div class="c-contenido"><img src="/img/admin/tc_cambiar_rescatar_pass.png"></div>
