@@ -1,6 +1,6 @@
 ---
 :title: "Promociones"
-:description: "Como hacer una promoción"
+:description: "Como crear una promoción o código de descuento"
 :keywords: promo, promociones, publicidad, campaña, redes sociales, twitter, facebook, blog, screencast, video, video tutorial,discount, descuento, codigo
 :group:
   :name: Administración y configuración
