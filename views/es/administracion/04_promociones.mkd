@@ -1,7 +1,7 @@
 ---
 :title: "Promociones"
 :description: "Como hacer una promoción"
-:keywords: promo, promociones, publicidad, campaña, redes sociales, twitter, facebook, blog, screencast, video, video tutorial
+:keywords: promo, promociones, publicidad, campaña, redes sociales, twitter, facebook, blog, screencast, video, video tutorial,discount, descuento, codigo
 :group:
   :name: Administración y configuración
   :label: ¿Qué es y cómo se configura una Promoción?
@@ -9,7 +9,61 @@
 
 # ¿Qué son las Promociones y cómo las uso?
 
-En resumen, una promoción permite aplicar un descuento al ingresar un código a la hora de hacer una compra. Bootic te permite crear tantas promociones como quieras, usando distintos criterios para definir en qué casos son aplicables o no.
+En Bootic hay dos tipos de ofertas o *promociones* que puedes ofrecer a tus clientes.
+
+Ambos tipos de promociones son administradas en la pestaña "Promociones" de tu interfaz de administración.
+
+<div class="captura">
+  <div class="c-contenido">
+    <img src="/img/admin/promotions-tab.png" alt="Pestaña de promociones" />
+  </div>
+  <div class="c-pie">
+    Administrando promociones.
+  </div>
+</div>
+
+## 1. Código de descuento
+
+Un código de descuento es una promoción u oferta donde el comprador necesita un código para activar la oferta. El código lo creas tu al momento de activar la promoción y lo distribuyes a tus compradores.
+
+<div class="captura">
+  <div class="c-contenido">
+    <img src="/img/admin/promo-discount-code.png" alt="Creando un código de descuento" />
+  </div>
+  <div class="c-pie">
+    Creando un código de descuento.
+  </div>
+</div>
+
+Un código de descuento puede ser ingresado manualmente en un campo especial al momento comprar. 
+
+<div class="captura">
+  <div class="c-contenido">
+    <img src="/img/admin/discount-code-field.png" alt="Campo para código de descuento" />
+  </div>
+  <div class="c-pie">
+    Ingresando el código de descuento al momento de comprar.
+  </div>
+</div>
+
+Este tipo de promoción también genera una *URL* especial que puedes distribuir a tus clientes (por ejemplo en emails o [redes sociales](/es/administracion/promociones/en-redes-sociales)). Una vez visitada, esta URL o link deja activo el descuento para ese usuario.
+
+## 2. Promoción automática
+
+Una promoción automática se aplica automáticamente a pedidos que califiquen con los criterios de la promoción. Por ejemplo, puedes crear una promoción automática que incluya *envío gratuito* para pedidos sobre cierta cantidad de dinero.
+
+<div class="captura">
+  <div class="c-contenido">
+    <img src="/img/admin/promo-automatic.png" alt="Creando una promoción automática" />
+  </div>
+  <div class="c-pie">
+    Creando una promoción automática.
+  </div>
+</div>
+
+## Criterios de promoción
+
+Bootic te permite crear tantas promociones como quieras de ambos tipos, usando distintos criterios para definir en qué pedidos son aplicables o no.
 
 Los límites que puedes aplicar a una promoción son los siguientes:
 
@@ -20,6 +74,9 @@ Los límites que puedes aplicar a una promoción son los siguientes:
 * **Rango** de precios.
 * **Cantidad** de productos.
 
-En el siguiente video (5:25) te explicamos cómo crear tu primera promoción:
+## Video-tutorial: Creando códigos de descuento
+
+En el siguiente video (5:25) te explicamos cómo crear tu primera promoción con código de desuento:
 
 <iframe width="665" height="374" src="http://www.youtube.com/embed/1a9w1bM3-4g" frameborder="0" allowfullscreen></iframe>
+
