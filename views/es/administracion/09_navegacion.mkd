@@ -1,10 +1,10 @@
 ---
-:title: Menús de navegación
+:title: Navegación
 :description: Cómo modificar los menús de navegación
 :keywords: pedidos, órdenes, pagos, gestión, venta, despachar, pendiente, cerrada
 ---
 
-# Menús de navegación
+# Navegación
 
 En Bootic la estructura de navegación de tu tienda puede ser creada enteramente desde el área "Navegación" del
 Administrador de tu tienda.

@@ -4,7 +4,9 @@
 :keywords: órdenes, compra, ot, orden compra, pedido, pedidos
 ---
 
-# ¿Qué son y cómo funcionan los pedidos?
+# Pedidos
+
+## ¿Qué son y cómo funcionan los pedidos?
 
 Los pedidos son la base del proceso de transacción en Bootic. Una vez que tu cliente agrega los productos a su carro de compras, tiene la opción de comprarlos, para lo cual se le pedirán algunos datos (como mínimo su nombre, email y teléfono) y entonces quedará guardado el pedido con toda la información.
 

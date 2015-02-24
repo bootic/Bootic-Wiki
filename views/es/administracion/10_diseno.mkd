@@ -1,0 +1,10 @@
+---
+:title: Diseño
+:description: "Como realizar gestion de clientes a través de Bootic."
+:keywords: pedidos, órdenes, pagos, gestión, venta, despachar, pendiente, cerrada
+---
+
+# Diseño
+
+## Editar plantilla actual
+## Galería de plantillas

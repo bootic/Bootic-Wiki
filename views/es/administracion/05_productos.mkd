@@ -4,7 +4,7 @@
 :keywords: productos, variantes, admin
 ---
 
-# Los productos
+# Productos
 
 Como toda tienda en línea, los productos son la base de una tienda Bootic. Un producto es, esencialmente, un ítem que tiene un nombre y un precio asociado, y que tus clientes pueden comprar a través de tu tienda.
 

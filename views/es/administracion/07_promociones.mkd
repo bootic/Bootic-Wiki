@@ -7,7 +7,9 @@
   :label: ¿Qué es y cómo se configura una Promoción?
 ---
 
-# ¿Qué son las Promociones y cómo las uso?
+# Promociones
+
+## ¿Qué son las Promociones y cómo las uso?
 
 En Bootic hay dos tipos de ofertas o *promociones* que puedes ofrecer a tus clientes.
 

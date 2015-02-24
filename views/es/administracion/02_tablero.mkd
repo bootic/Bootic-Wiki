@@ -1,0 +1,9 @@
+---
+:title: Tablero
+:description: "Vista resumida de la tienda"
+:keywords: tablero, home, portada
+---
+
+# Tablero
+
+El Tablero es....

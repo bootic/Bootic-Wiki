@@ -1,10 +1,12 @@
 ---
-:title: Páginas y noticias
+:title: Noticias
 :description: Cómo crear, modificar y eliminar páginas, noticias y formularios
 :keywords: páginas, contenido, formularios, secciones, noticias, artículos
 ---
 
-# Cómo publicar y modificar páginas y noticias
+# Noticias
+
+## Cómo publicar y modificar páginas y noticias
 
 Como todo sitio web, una tienda en línea necesita de contenido relevante y fresco para obtener un buen ranking en los motores de búsqueda. En Bootic tienes la posibilidad de crear todas las páginas que quieras y además mantener un blog de manera muy fácil.
 
