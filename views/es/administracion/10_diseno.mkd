@@ -8,3 +8,5 @@
 
 ## Editar plantilla actual
 ## Galería de plantillas
+
+Listado de actuales plantillas
