@@ -96,4 +96,10 @@ Al crear una suscripción de pago por medio de RBS WorldPay **estás creando una
 
 Si no lo encuentras, el email normalmente llega de parte del correo *shopper@rbsworldpay.com*.
 
-Esta contraseña es necesaria si luego necesitas cambiar los datos de tu tarjeta en el panel de administración de RBS WorldPay. Guárdala o memorízala. [También puedes ingresar al panel de RBS WorldPay rescatarla y cambiarla](http://www.worldpay.com/shopper/index.php?page=recurring&sub=login&c=WW "Cambiar tu contraseña WorldPay") (Forgotten your password).
+Esta contraseña es necesaria si luego necesitas cambiar los datos de tu tarjeta en el panel de administración de RBS WorldPay. Guárdala o memorízala. [También puedes ingresar al panel de RBS WorldPay rescatarla y cambiarla](https://futurepay.worldpay.com/fp/jsp/common/login_shopper.jsp "Cambiar tu contraseña WorldPay") (Forgotten your password).
+
+<div class="note info">
+    <p>
+        En caso de que <strong>nada de lo anterior</strong> funcione ponte en contacto con nosotros al correo soporte <em>arroba</em> bootic <em>punto</em> net.
+    </p>
+</div>
