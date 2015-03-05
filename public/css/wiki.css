@@ -390,9 +390,6 @@ Show big version only on homepage
 }
 
 #content .tip { 
-  padding: 1em;
-  margin: 1.5em 0;
-  color: #eee;
   background: rgba(126,109,66,1);
   background: -moz-linear-gradient(top, rgba(126,109,66,1) 0%, rgba(92,78,53,1) 100%);
   background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(126,109,66,1)), color-stop(100%, rgba(92,78,53,1)));
@@ -440,3 +437,10 @@ Show big version only on homepage
     text-align:center;
 }
 
+#content .tip code,
+#content .warning code,
+#content .info code {
+    color:white;
+    background-color:transparent;
+    border:none;
+}
