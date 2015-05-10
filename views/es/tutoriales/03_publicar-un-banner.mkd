@@ -36,7 +36,13 @@ A continuación te mostramos tres requerimientos de ejemplo:
 Los pasos serían:
 
 1. Asegúrate que la imagen **tiene las dimensiones apropiadas** para que no rompa tu diseño, te puedes ayudar de alguna herramienta como por ejemplo [ Page Ruler ][1] (Complemento Google Chrome) para medir el lugar donde irá la imagen.
-2. Sube la imagen utilizando el editor de plantillas (Diseño &rarr; Editar Plantilla Actual) / Buscar Archivo y lo subes. 
+2. Sube la imagen utilizando el Editor de Plantillas (Diseño &rarr; Editar Plantilla Actual) / Buscar archivos y lo subes (<strong>Figura 1</strong>). 
+<div class="captura">
+    <div class="c-contenido"><img src="/img/admin/subir_archivo_via_editor_plantillas.png" alt="Subir archivo" /></div>
+    <div class="c-pie">
+        <strong>Figura 1</strong>: Subir archivo por medio del Editor de Plantillas
+    </div>
+</div>
 3. Asumiremos que el archivo tiene nombre `banner-otono-invierno.jpg`.
 4. Luego editamos la plantilla `home.html` **porque el requerimiento** dice que debe estar en la portada de la tienda.
 5. Como es un elemento HTML del [ tipo imagen ](http://htmldog.com/reference/htmltags/img/ "que es y como se crea una imagen en HTML") debería quedar así: `<img alt="Colección Otoño-Invierno" src="{{ 'banner-otono-invierno.jpg' | asset_url }}" />` 
