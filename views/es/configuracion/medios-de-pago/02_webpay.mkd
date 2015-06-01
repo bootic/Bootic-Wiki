@@ -1,12 +1,12 @@
 ---
-:title: Webpay Plus
+:title: Cómo instalar Webpay plus en tu tienda 
 :description: "Configurar Webpay Plus como medio de pago para Chile"
 :keywords: pago, tarjeta, crédito, webpay, chile, checkout, carro, carrito, api key, certificacion
 ---
 
 # Contratando y configurando Webpay Plus.
 
-¿Estás interesada(o) en ofrecer Webpay Plus en tu tienda Bootic como medio de pago?. En Bootic estamos integrados con Webpay Plus. Sin embargo, Transbank **exige** a cada nuevo comercio *firmar un contrato*, y a nivel técnico, cada tienda debe pasar por un Proceso de Certificación.
+¿Estás interesada(o) en ofrecer **Webpay Plus** en tu tienda Bootic como medio de pago?. En Bootic estamos integrados con Webpay Plus. Sin embargo, Transbank **exige** a cada nuevo comercio *firmar un contrato*, y a nivel técnico, cada tienda debe pasar por un Proceso de Certificación.
 
 ## ¿Webpay o Webpay plus?
 
@@ -15,6 +15,15 @@ Una primera aclaración: para el pago en línea (a través de internet), Transba
 * **Webpay.cl**: *Es un botón de pago*, el cual llevará a tus clientes al sitio [webpay.cl][webpay]. Muy similar al servicio de Servipag (Portal de pagos). Esta opción no es óptima para tu tienda en línea dado que saca al usuario completamente del contexto de tu sitio. A pesar de no ser una alternativa muy _usable_ para el cliente visita nuestro artículo de [ cómo lograr implementarlo ](/es/tutoriales/webpay-punto-cl "Receta: Pagar usando plataforma de pago webpay.cl").
 
 * **Webpay Plus**: Es una **integración completa con tu tienda** que permite a tus usuarios crear carros de compra en tu tienda y pagarlos mediante tarjetas o Redcompra en Webpay; cuando contrates Webpay para tu tienda Bootic **asegúrate de contratar este servicio** y no el anterior.
+
+<div class="note info">
+    <p>
+        <strong>Producto</strong>: Cuando contrates Webpay plus la opción es: «Kit Webpay Plus con autorización y captura simultánea».
+    </p>
+    <p>
+        <img src="/img/admin/wp_tipo_de_producto.png" />
+    </p>
+</div>
 
 ## Información general:
 
