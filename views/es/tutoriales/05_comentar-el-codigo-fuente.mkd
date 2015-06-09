@@ -58,26 +58,3 @@ OJO: El día 21 de feb quitar estos comentarios.
 
 {% endcomment %}
 </pre>
-## HTML
-
-El lenguaje HTML también tiene la opción de comentario, puede ser útil conocer
-su sintaxis: 
-
-<pre>:::HTML
-<!-- Esto no será tomado en cuenta por el navegador -->
-</pre>
-
-Acá, a diferencia de la versión Liquid, es el navegador web del visitante quien
-entenderá que todo lo encerrado en `<!--` y `-->` no debe ser visualizado.
-
-Por ejemplo: queremos ocultar temporalmente el horario de la tienda física que
-aparece en el pié de todas las páginas:
-
-<pre>:::HTML
-<!--
-<div class="footer">
-    <p>Horario de la tienda física: Lun - Vie 10:00 a 18:00 </p>
-</div>
--->
-</pre>
-
