@@ -1,29 +1,34 @@
 ---
-:title: Comentar el código fuente
+:title: Ocultar el botón "Agregar al carro"
 :description: "Comentar el código fuente (HTML y Liquid)"
-:keywords: liquid,html,comentario,comentar,ocultar 
+:keywords: liquid, html, comentario, comentar, ocultar, codigo, fuente, vacaciones
 ---
 
-# Comentar el código fuente
+# Ocultar el botón "Agregar al carro"
 
 Al finalizar este tutorial **ud. será capaz** de ocultar el botón «agregar al
 carro», acción que **impedirá**—temporalmente—a sus _compradores_ añadir productos al carrito de compra. 
 
 Esto le será útil en situaciones tales como:
 
-* Ajustar stock.
+* Ajustar el stock de su tienda.
 * Agregar/modificar información sensible.
 * Irse de vacaciones y que la tienda siga exhibiendo sus productos.
 
 ## Liquid
 
+Liquid es el motor de plantillas que usa Bootic para _mostrar_ una tienda. Es el puente entre los datos de su tienda y la presentación (diseño). Este motor de plantillas—al igual que muchos lenguajes de programación—permite hacer comentarios al contenido. El propósito de comentar es _excluir_ contenido para que este no sea procesado. La zona comentada **no será tomada** en cuenta. 
+
+En Liquid se comenta una sección de la siguiente forma
+
 <pre>:::Liquid
 {% comment %}
-Esto no será tomado en cuenta, nunca nadie lo verá
+Todo lo que esté encerrado aquí no será tomado en cuenta, nunca nadie lo verá,
+excepto quienes cuentan con acceso al Editor de Plantillas de la tienda.
 {% endcomment %}
 </pre>
 
-Ahora hagamos desaparecer el botón agregar al carro:
+Ya que aprendimos a comentar contenido entonces podemos «hacer desaparecer» el botón _Agregar al carro_:
 
 <pre>:::Liquid
 {% comment %}
@@ -31,6 +36,28 @@ Ahora hagamos desaparecer el botón agregar al carro:
 {% endcomment %}
 </pre>
 
+Con esta acción **no será posible agregar** productos al carro. Esta línea de código la puedes encontrar (en el 95% de las veces) en la plantilla [ products.html ](/es/diseno/plantillas/product) - Figura 1.
+
+<div class="captura">
+    <div class="c-contenido"><img src="/img/admin/captura_add_to_cart.png" alt="comentar Add_to_Cart" /></div>
+    <div class="c-pie">
+        <strong>Figura 1</strong>: Identificando add_to_cart para comentar 
+    </div>
+</div>
+
+Un comentario **con algo más** de información podría ser:
+
+<pre>:::Liquid
+{% comment %}
+
+Desde el 1ro al 20 de feb la tienda virtual estará cerrada por vacaciones
+
+{% add_to_cart %}
+
+OJO: El día 21 de feb quitar estos comentarios.
+
+{% endcomment %}
+</pre>
 ## HTML
 
 El lenguaje HTML también tiene la opción de comentario, puede ser útil conocer
