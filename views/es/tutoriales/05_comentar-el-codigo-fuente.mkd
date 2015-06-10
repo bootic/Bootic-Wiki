@@ -58,3 +58,10 @@ OJO: El día 21 de feb quitar estos comentarios.
 
 {% endcomment %}
 </pre>
+
+
+## Video
+
+A continuación el proceso completo en video:
+
+<iframe width="640" height="360" src="https://www.youtube.com/embed/4G0cvdmM3gQ" frameborder="0" allowfullscreen></iframe>
