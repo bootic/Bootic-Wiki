@@ -1,0 +1,57 @@
+---
+:title: Redireccionar dominio sin www a uno con www
+:description: "Tienda sin www redireccionarla a una con www"
+:keywords: www, rediccionar, dominio, dns, apache, header, php
+---
+
+# Redireccionar dominio sin www a uno con www
+
+## Definición del problema
+
+Tienes un sitio o tienda en tu propio servidor—supongamos **acme.com**—y quieres seguir manteniendo esa infraestructura. Entonces necesitas que tu recién _creada tienda Bootic_ `mitiendaacme.bootic.net` sea tu dominio corporativo: `www.acme.com`.
+
+Esto se logra accediendo al DNS de tu servidor, creas un registro del tipo `CNAME` de nombre `www` con el valor `proxy.bootic.net` ([ver detalles][1]). 
+
+Pero esto **genera un problema**: cuando se visita la tienda sin las `www` se ve tu antigua página web, los cual—por supuesto—no quieres.
+
+## Alternativas de solución
+
+Te presentamos 3 alternativas de solución:
+
+### Redireccionamiento Apache
+
+Si tu servidor usa Apache (como lo es en la mayoría de los servidores web) puedes crear un archivo de nombre `.htaccess` en la raíz de tu sitio con el siguiente contenido:
+
+<pre>:::Apache
+RewriteEngine On
+RewriteCond %{HTTP_HOST} !^www\. [NC]
+RewriteRule ^(.*)$ http://www.%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+</pre>
+
+### Redireccionamiento usando PHP
+
+Si tu servidor tiene soporte para PHP puedes editar la página `index.php` con lo siguiente:
+
+<pre>:::PHTML
+<?php 
+header('Location: http://www.acme.com/');
+exit;
+?>
+</pre>
+
+### Redireccionamiento usando HTML 
+
+Otra alternativa es usar HTML. Edita el archivo `index.html` y pon lo siguiente:
+
+<pre>:::HTML
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="refresh" content="0;URL='http://www.acme.com/'" />
+  </head>
+</html>
+</pre>
+
+
+[1]:/es/configuracion/dominio-propio#toc_3 "Detalles del dominio propio"
