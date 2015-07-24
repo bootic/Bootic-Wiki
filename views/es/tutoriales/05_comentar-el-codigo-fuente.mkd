@@ -36,7 +36,7 @@ Ya que aprendimos a comentar contenido entonces podemos «hacer desaparecer» el
 {% endcomment %}
 </pre>
 
-Con esta acción **no será posible agregar** productos al carro. Esta línea de código la puedes encontrar (en el 95% de las veces) en la plantilla [ products.html ](/es/diseno/plantillas/product) - Figura 1.
+Con esta acción **no será posible agregar** productos al carro. Esta línea de código la puedes encontrar (en el 95% de las veces) en la plantilla [ product.html ](/es/diseno/plantillas/product) - Figura 1.
 
 <div class="captura">
     <div class="c-contenido"><img src="/img/admin/captura_add_to_cart.png" alt="comentar Add_to_Cart" /></div>
