@@ -8,7 +8,7 @@
 
 ## Relacionando productos en el administrador
 
-Bootic relaciona productos mediante "etiquetas". Si dos productos comparten una o más etiquetas se consideran productos relacionados o similares.
+Bootic relaciona productos mediante "etiquetas". Si **dos productos comparten una** o más etiquetas se consideran productos relacionados o similares. Si el producto no tiene etiquetas compartidas entonces buscará en los **tipos de productos**.
 
 Para agregar o quitar etiquetas a un producto en el panel de administración, navega al formulario de edición de cada producto y utiliza el selector de etiquetas del costado derecho, bajo las colecciones.
 
