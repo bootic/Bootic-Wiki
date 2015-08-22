@@ -14,31 +14,37 @@ Google Analytics (GA) es un servicio ofrecido por Google completamente gratis qu
 
 ## ¿Cómo se configura?
 
-Bootic ofrece la posibilidad de instalar GA en tu tienda de una forma muy simple. 
+Bootic ofrece la posibilidad de instalar GA en tu tienda de una forma muy simple.
 
 <div class="note info">
-    Si ya dispones de un código de seguimiento Google Analytics (o ID Tracking) anda diréctamente al punto 5.
+  Si ya dispones de un código de seguimiento Google Analytics (o ID Tracking) anda directamente al punto 5.
 </div>
 
 Los pasos para configurar GA en tu tienda Bootic son:
 
 1. De no tenerlo [crea un usuario en GA][1], si ya tienes usuario GA ingresa en su panel de control.
-2. En el panel GA crea una nueva «Cuenta».
+2. En el panel GA crea una nueva Cuenta.
 3. Dentro de esta nueva Cuenta crea una nueva Propiedad (web o app) e ingresa la información que te solicita.
-4. Cuando hayas creado esta nueva propiedad GA generará un **ID Tracking**, que por lo general tiene la forma de **UA-823244297-1**. El ID tracking es un identificador único que Google genera para registrar las estadísticas del perfil creado. Asegúrate de que este número corresponda al sitio que acabas de configurar (en el caso de que tengas muchos otros sitios trackeado en GA)
-5. Luego ingresa a tu **Panel de Administración Bootic** y anda a **Preferencias** &rarr; **Opciones generales**, y en **Identificador Google Analytics** pon el ID Traking del punto **4.**, luego **Guarda** — Figura 1.
+4. Cuando hayas creado esta nueva propiedad GA generará un **ID Tracking**, que por lo general tiene la forma de **UA-8244297-1**. El ID tracking es un identificador único que Google genera para registrar las estadísticas del perfil creado. Asegúrate de que este número corresponda al sitio que acabas de configurar (en el caso de que tengas muchos otros sitios trackeado en GA)
+5. Luego ingresa a tu **Panel de Administración Bootic** y anda a **Preferencias** &rarr; **Opciones generales**, y en **Identificador Google Analytics** pon el identificador del punto **4.**, luego **Guarda** — Figura 1.
 
 <div class="captura">
-    <div class="c-contenido">
-        <img src="/img/admin/Bootic-GA.png" width="656" alt="Bootic GA" />
-    </div>
-	<div class="c-pie">
-		<strong>Figura 1</strong>: Identificador Google Analytics
-	</div>
+  <div class="c-contenido">
+    <img src="/img/admin/Bootic-GA.png" width="656" alt="Bootic GA" />
+  </div>
+  <div class="c-pie">
+    <strong>Figura 1</strong>: Identificador Google Analytics
+  </div>
 </div>
 
 ## Importante: Espera 24 horas
 
 Ten en cuenta que Google Analytics **demora 24 horas en iniciar el registro de estadísticas**, por lo tanto debes esperar para ver los resultados. Pasado el tiempo de espera ingresa a tu cuenta GA y ya podrás ver las estadísticas. **Tip**: Hay una sección dentro de GA donde puedes decirle que te envíe un correo todos los días con el informe.
+
+## Cómo puedo usar Bootic con el módulo E-Commerce de Analytics?
+
+Bootic soporte Analytics E-Commerce de fábrica!
+
+Una vez que ingresas tu ID de Analytics en el panel, Bootic empezará a mostrar el código de Universal Analytics en todas las páginas de tu tienda, junto con las las de la zona de pagos (checkout). Además de esto, Bootic generará el código para Analytics E-Commerce, pero sólo en la página final del proceso de pagos y **una única vez**, como lo plantea [la documentación de Analytics](https://developers.google.com/analytics/devguides/collection/analyticsjs/ecommerce#implementation), para evitar que se cuente una misma compra dos veces. Hay que agregar que esa página de éxito solo la ven los clientes que realizan su pago en línea, es decir, no cuenta a los que paguen por otros medios como transferencia electrónica.
 
 [1]: http://www.google.com/analytics/
