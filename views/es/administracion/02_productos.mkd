@@ -8,11 +8,11 @@
 
 Como toda tienda en línea, los productos son la base de una tienda Bootic. Un producto es, esencialmente, un ítem que tiene un nombre y un precio asociado, y que tus clientes pueden comprar a través de tu tienda.
 
-Antes de empezar a vender, lo primero que debes hacer es crear los productos en tu tienda. Para hacerlo, puedes hacer click sobre el botón "Crear nuevo producto" desde el Tablero de tu panel, o bien desde la sección Productos.
+Antes de empezar a vender, **lo primero que debes hacer** es _crear_ los productos en tu tienda. Para hacerlo, puedes hacer click sobre el botón «Nuevo producto» desde el panel de Administración, o bien desde la sección Productos.
 
-## Campos de los productos
+## Campos de un producto
 
-Cuando ingresas un producto (Figura 1) a tu tienda Bootic debes llenar los siguientes campos:
+Cuando ingresas un producto —<em>Figura 1</em>— a tu tienda Bootic debes completar los siguientes campos:
 
 <div class="captura">
   <div class="c-contenido">
@@ -23,4 +23,13 @@ Cuando ingresas un producto (Figura 1) a tu tienda Bootic debes llenar los sigui
   </div>
 </div>
 
-Partamos por lo primero: [¿Qué es un Tipo de Producto?](/es/administracion/productos/tipos-y-atributos)
+1. **Nombre del producto**: Nombre descriptivo del producto. Es **requerido** para la creación del producto.
+2. **Descripción del producto**: Acepta formato HTML. Si la plantilla que visualiza este campo (`product.html`) tiene aplicado el filtro `format_text` entonces _dos espacios_ consecutivos serán transformados a `<p>` y toda nueva línea terminará en un `<br />`.
+3. **Tipo de producto**: Clasificación que ayuda a definir los atributos de un producto. **No es necesario que todos los producto tenga un tipo de producto asociado**, esta clasificación _se recomienda_ hacer solo cuando se necesita explicitar atributos que ayuden a dar mayor información sobre el mismo — [más información](/es/administracion/productos/tipos-y-atributos).
+4. **Marca o proveedor**: Nombre del fabricante o quien proveyó el producto. 
+5. **Precio**: Valor monetario.
+6. **Precio de comparación**: Qué valor monetario tenía antes (estrategia de marketing). No es necesario ingresarlo.
+7. **Peso**: Expresado en gramos. Valor necesario para las [zonas y costos de envío](/es/configuracion/formas-de-envio).
+
+
+Siguiente: [¿Qué es un Tipo de Producto? &rarr;](/es/administracion/productos/tipos-y-atributos).
