@@ -8,11 +8,15 @@
 ---
 # Eligiendo plan y pagando tu tienda Bootic
 
-Tu tienda Bootic es de pago mensual. En tu interfaz de administración eliges el plan que quieres e ingresas los datos de tu tarjeta de crédito para proceder al pago. Con eso creas una «subscripción» de pago mensual por el monto del plan elegido. **Puedes cambiar de plan o cerrar la tienda y dejar de pagar en cualquier momento sin costo extra asociado**.
+Tu tienda Bootic es de pago mensual. En tu interfaz de administración eliges el plan que quieres e ingresas los datos de
+tu tarjeta de crédito para proceder al pago. Con eso creas una «subscripción» de pago mensual por el monto del plan
+elegido. **Puedes cambiar de plan o cerrar la tienda y dejar de pagar en cualquier momento sin costo extra asociado**.
 
-Bootic usa [RBS WorldPay](http://www.worldpay.com/) (en inglés) para recibir tu pago. Al momento de pagar también estarás creando una cuenta en este sistema para tus futuros pagos.
+Bootic usa [RBS WorldPay](http://www.worldpay.com/) (en inglés) para recibir tu pago. Al momento de pagar también
+estarás creando una cuenta en este sistema para tus futuros pagos.
 
-No entregamos factura por esta vía de pago, pero los *invoices* (recibos) de pago con tarjeta [pueden ser usados para justificar gastos en tu contabilidad](/es/administracion/cuenta/contabilidad).
+No entregamos factura por esta vía de pago, pero los *invoices* (recibos) de pago con tarjeta [pueden ser usados para
+justificar gastos en tu contabilidad](/es/administracion/cuenta/contabilidad).
 
 ## Paso 1: Elige tu plan
 
@@ -34,7 +38,8 @@ También pueden hacer lo mismo mediante el enlace «mi cuenta», en la parte sup
 sección Mi Cuenta.</div>
 </div>
 
-A continuación verás nuestra oferta de planes. Revísalos con atención y elige el que se adecue a tu tienda presionando el botón «Quiero este plan», bajo el plan elegido — Figura 3.
+A continuación verás nuestra oferta de planes. Revísalos con atención y elige el que se adecue a tu tienda presionando
+el botón «Quiero este plan», bajo el plan elegido — Figura 3.
 
 <div class="captura"><div class="c-contenido">
 <img src="<%= img('/img/billing/plans.png').thumb('600x').url %>" alt="Elige tu plan" />
@@ -56,7 +61,9 @@ Elegido el plan, presiona el botón "Finalizar suscripción" abajo en la misma p
 suscripción y pagando en RBS WorldPay</div>
 </div>
 
-Esto te dirige a un formulario de pago de RBS WorldPay, el **servicio de pagos internacionales** que usamos para recaudar el costo mensual de cada tienda Bootic. Este servicio [no entrega factura](/es/administracion/cuenta/contabilidad "¿Cómo se paga el fee mensual de Bootic, se recibe algún comprobante?").
+Esto te dirige a un formulario de pago de RBS WorldPay, el **servicio de pagos internacionales** que usamos para
+recaudar el costo mensual de cada tienda Bootic. Este servicio [no entrega
+factura](/es/administracion/cuenta/contabilidad "¿Cómo se paga el fee mensual de Bootic, se recibe algún comprobante?").
 
 ## Paso 3: Selecciona tarjeta de crédito
 
@@ -81,11 +88,14 @@ Luego RBS WorldPay te mostrará un formulario donde debes ingresar los datos de 
 <div class="c-pie"><strong>Figura 5</strong>: Ingresando información para hacer el pago.</div>
 </div>
 
-Ingresa los datos requeridos y presiona «Make payment» (realizar el pago) al final del formulario. Recibirás un e-mail de RBS WorldPay confirmando el pago y otro de Bootic **confirmando que tu tienda está ahora activa**.
+Ingresa los datos requeridos y presiona «Make payment» (realizar el pago) al final del formulario. Recibirás un e-mail
+de RBS WorldPay confirmando el pago y otro de Bootic **confirmando que tu tienda está ahora activa**.
 
 ## Paso 5: Guarda la contraseña de RBS WorldPay
 
-Al crear una suscripción de pago por medio de RBS WorldPay **estás creando una cuenta** de usuario en ese sistema, **distinta a tu cuenta de usuario en Bootic**. Luego de seguir los pasos de arriba RBS WorldPay te enviará un email de confirmación y un nombre de usuario y contraseña generados aleatoriamente — Figura 6.
+Al crear una suscripción de pago por medio de RBS WorldPay **estás creando una cuenta** de usuario en ese sistema,
+**distinta a tu cuenta de usuario en Bootic**. Luego de seguir los pasos de arriba RBS WorldPay te enviará un email de
+confirmación y un nombre de usuario y contraseña generados aleatoriamente — Figura 6.
 
 <div class="captura">
 <div class="c-contenido">
@@ -96,10 +106,12 @@ Al crear una suscripción de pago por medio de RBS WorldPay **estás creando una
 
 Si no lo encuentras, el email normalmente llega de parte del correo *shopper@rbsworldpay.com*.
 
-Esta contraseña es necesaria si luego necesitas cambiar los datos de tu tarjeta en el panel de administración de RBS WorldPay. Guárdala o memorízala. [También puedes ingresar al panel de RBS WorldPay rescatarla y cambiarla](https://futurepay.worldpay.com/fp/jsp/common/login_shopper.jsp "Cambiar tu contraseña WorldPay") (Forgotten your password).
+Esta contraseña es necesaria si luego necesitas cambiar los datos de tu tarjeta en el panel de administración de RBS
+WorldPay. Guárdala o memorízala. [También puedes ingresar al panel de RBS WorldPay rescatarla
+y cambiarla](https://futurepay.worldpay.com/fp/jsp/common/login_shopper.jsp "Cambiar tu contraseña WorldPay") (Forgotten
+your password).
 
 <div class="note info">
-    <p>
-        En caso de que <strong>nada de lo anterior</strong> funcione ponte en contacto con nosotros al correo soporte <em>arroba</em> bootic <em>punto</em> net.
-    </p>
+  <p> En caso de que <strong>nada de lo anterior</strong> funcione ponte en contacto con nosotros al correo soporte
+  <em>arroba</em> bootic <em>punto</em> net.  </p>
 </div>
