@@ -8,12 +8,11 @@
 ---
 # Cambiar información de la tarjeta de crédito
 
-
 Si por algún motivo deseas **cambiar la información de tu tarjeta de crédito** (por cambio o extravío) estos son los pasos que debes seguir:
 
 ## Paso 1: Ir a la opción «Actualizar datos de pago»
 
-En tu panel de control anda a **Mi cuenta** &rarr; **Actualizar datos de pago** (costado derecho). Luego dale clic al botón **Modificar datos de la plataforma de pagos**
+En tu panel de control dale clic al _plan suscrito_. 
 
 <div class="captura">
     <div class="c-contenido"><img src="/img/admin/tc_cambiar_mi_cuenta.png"></div>
@@ -22,12 +21,16 @@ En tu panel de control anda a **Mi cuenta** &rarr; **Actualizar datos de pago** 
     </div>
 </div>
 
+**Actualizar datos de pago** (costado derecho).
+
 <div class="captura">
     <div class="c-contenido"><img src="/img/admin/tc_cambiar_datos.png"></div>
     <div class="c-pie">
         <strong></strong>
     </div>
 </div>
+
+Luego dale clic al botón **Modificar datos de la plataforma de pagos**
 
 <div class="captura">
     <div class="c-contenido"><img src="/img/admin/tc_cambiar_modificar_datos.png"></div>
