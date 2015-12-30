@@ -1,29 +1,29 @@
 ---
 :title: Intentos de cobro
 :description: "Intentos de cobro"
-:keywords: fee, pago, servicio, bootic, cobro, intentos pagar, mensualidad, rbs, worldpay, tarjeta, crédito, subscripción
+:keywords: fee, pago, servicio, bootic, cobro, intentos pagar, mensualidad, rbs, worldpay, tarjeta, crédito, subscripción, suscripcion
 :group:
   :name: Pagos y contabilidad
-  :label: ¿Cómo cambio los datos de mi tarjeta de crédito?
+  :label: ¿Cómo funcionan los cobros?
 ---
 
 # Intentos de cobro
 
 El pago de mensual de tu plan Bootic es gestionado por la empresa [WorldPay](http://www.worldpay.com/), la cual tiene
-sus oficina centrales en Hong Kong.
+sus oficina centrales en el Reino Unido.
 
-Cuando te suscribes a uno de nuestros planes ese _mismo día del mes_ queda registrado para el siguiente intento de
-cobro.
+Cuando te suscribes a uno de [nuestros planes](http://www.bootic.net/pages/planes) ese _mismo día del mes queda
+registrado_ para el siguiente intento de cobro.
 
 
 ## Primer intento
 
 Si por algún motivo (cupo, bloqueo, caducidad) **no es posible realizar el intento de cobro** el día del mes programado
-entonces nuestro sistema esperará 3 días para realizar el 2do intento de cobro. 
+entonces nuestro sistema _esperará_ 3 días para realizar el 2do intento de cobro. 
 
 ## Segundo intento 
 
-Si también falla entonces esperará **tres días más** para realizar el tercer intento de cobro. 
+Si también falla entonces _esperará_ **tres días más** para realizar el tercer intento de cobro. 
 
 ## Tercer intento
 
