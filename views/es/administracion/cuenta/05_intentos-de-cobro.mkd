@@ -1,0 +1,47 @@
+---
+:title: Intentos de cobro
+:description: "Intentos de cobro"
+:keywords: fee, pago, servicio, bootic, cobro, intentos pagar, mensualidad, rbs, worldpay, tarjeta, crédito, subscripción
+:group:
+  :name: Pagos y contabilidad
+  :label: ¿Cómo cambio los datos de mi tarjeta de crédito?
+---
+
+# Intentos de cobro
+
+El pago de mensual de tu plan Bootic es gestionado por la empresa [WorldPay](http://www.worldpay.com/), la cual tiene
+sus oficina centrales en Hong Kong.
+
+Cuando te suscribes a uno de nuestros planes ese _mismo día del mes_ queda registrado para el siguiente intento de
+cobro.
+
+
+## Primer intento
+
+Si por algún motivo (cupo, bloqueo, caducidad) **no es posible realizar el intento de cobro** el día del mes programado
+entonces nuestro sistema esperará 3 días para realizar el 2do intento de cobro. 
+
+## Segundo intento 
+
+Si también falla entonces esperará **tres días más** para realizar el tercer intento de cobro. 
+
+## Tercer intento
+
+Si este último intento falla la cuenta quedará **deshabilitada**.
+
+**En resumen**: Si el **lunes** falla el primer intento de cobro **tienes hasta el domingo** para regularizar la situación de tu
+tarjeta de crédito; de lo contrario perderás el acceso a tu panel de control. 
+
+
+## ¿Qué significa «cuenta deshabilitada»?
+
+Quiero decir que **no podrás acceder a ningún item** dentro de tu panel de administración salvo la opción de habilitar
+nuevamente la cuenta realizando un intento de pago manual.
+
+## Si la cuenta queda deshabilitada ¿se borran los productos?
+
+**No**.
+
+## Si la cuenta queda deshabilitada ¿la tienda es visible al público?
+
+**Sí**. La tienda sigue visible y operativa. Pero como locatario no puedes gestionarla.
