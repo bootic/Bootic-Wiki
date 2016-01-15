@@ -9,7 +9,7 @@
 
 # Intentos de cobro
 
-El pago de mensual de tu plan Bootic es gestionado por la empresa [WorldPay](http://www.worldpay.com/), la cual tiene
+El pago mensual de tu plan Bootic es gestionado por la empresa [WorldPay](http://www.worldpay.com/), la cual tiene
 sus oficina centrales en el Reino Unido.
 
 Cuando te suscribes a uno de [nuestros planes](http://www.bootic.net/pages/planes) ese _mismo día del mes queda
