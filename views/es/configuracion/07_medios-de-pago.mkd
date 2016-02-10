@@ -20,9 +20,10 @@ Bootic te da la opción de ofrecer varios medios de pago a tus clientes (de mome
 1. [Webpay (Chile)][webpay]
 2. [DineroMail (Chile)][dineromail]
 3. [DineroMail (Argentina)][dineromail]
-4. Paypal
-5. Transferencia bancaria
-6. Medio de pago personalizado
+4. [Paypal Express][ppe]
+5. Paypal
+6. Transferencia bancaria
+7. Medio de pago personalizado
 
 ## PayPal (Internacional)
 
@@ -38,3 +39,4 @@ Campo libre de texto para que ofrezcas otra opción, por ejemplo: **Pago contra 
 
 [webpay]:/es/configuracion/medios-de-pago/webpay "Webpay (Chile)"
 [dineromail]:/es/configuracion/medios-de-pago/dineromail "DineroMail (Argentina y Chile)"
+[ppe]:/es/configuracion/medios-de-pago/paypal-express "PayPal Express"

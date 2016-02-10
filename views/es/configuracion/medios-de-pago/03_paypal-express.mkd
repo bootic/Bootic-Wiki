@@ -1,0 +1,108 @@
+---
+:title: Paypal Express
+:description: "Configurar medio de pago Paypal Express"
+:keywords: pago, tarjeta, crédito, paypal, express"
+---
+
+# Paypal Express
+
+Bootic tiene integración con [Paypal Express][1] (PPE). La diferencia con Paypal _clásico_ &dagger; es que PPE 
+le «avisa» a tu tienda Bootic sobre el pago exitoso y deja el Pedido como Confirmado de manera
+automática. En palabras simples: las dos aplicaciones (PPE y Bootic) _conversan_. Esto es posible
+gracias a su API.
+
+Este es un **servicio de pago**, [ revisa sus tarifas ][2]. La política de PayPal es que mientras _más
+vendas_ usando su medio de pago _menos pagas_ por el servicio. Si estás de acuerdo [crea una cuenta][3]
+(Chile). 
+
+A continuación la configuración del medio de pago en 4 pasos:
+
+## Paso 1: Crea la cuenta Paypal Empresa 
+
+Para recibir pagos primero debes [crear una cuenta empresa][3]. <strong>Importante</strong>: al momento de escribir este documento
+paypal te pregunta la **divisa** en la que quieres recibir el pago, no está el peso chileno por lo que
+debes seleccionar dólar estadounidense — Figura 1. 
+
+<div class="captura">
+  <div class="c-contenido">
+      <img src="/img/admin/ppe_000.png">
+  </div>
+  <div class="c-pie"><strong>Figura 1</strong>: Selección de divisa al momento de crear la cuenta</div>
+</div>
+
+Cuando tu cliente llegue a nuestro checkout verá un mensaje con la conversión a dólares del total del Pedido — Figura 2.
+
+<div class="captura">
+  <div class="c-contenido">
+      <img src="/img/admin/ppe_001.png">
+  </div>
+  <div class="c-pie"><strong>Figura 2</strong>: Checkout Bootic seleccionando el medio de pago Paypal Express</div>
+</div>
+
+
+
+### Paso 2: Validar tu correo electrónico
+
+Este paso es importante, Paypal debe validar tu correo electrónico para conseguir el acceso a la API. En la sección «Mi Perfil» (de tu cuenta Paypal) puedes realizar esta validación.
+
+### Paso 3: Configurar credenciales y permisos API
+
+La secuencia de clic es la siguiente: Desde la consola de administración Paypal anda a:
+
+- Completa la configuración para poder empezar a vender — Ir a la Configuración.
+- Como desea empezar a recibir pagos - En su sitio Web.
+- Agregue el proceso de pago con Paypal como forma adicional para recibir pagos.
+- Opción B: Utilice nuestra API para agregar pagos exprés en su sitio web.
+- Configure el acceso API cuando esté listo para la publicación — Figura 3.
+- Opción 2: Solicite credenciales de API — Figura 4
+
+<div class="captura">
+  <div class="c-contenido">
+      <img src="/img/admin/ppe_002.png">
+  </div>
+  <div class="c-pie"><strong>Figura 3</strong>: Configurar acceso API</div>
+</div>
+
+<div class="captura">
+  <div class="c-contenido">
+      <img src="/img/admin/ppe_003.png" width="640" height="459" />
+  </div>
+  <div class="c-pie"><strong>Figura 4</strong>: Solicitar Credenciales</div>
+</div>
+
+Justo a lado de cada campo existe un enlace "Mostrar", dale clic — Figura 5. Esta información deberás
+ingresarla a tu panel de control Bootic. En el paso 4 te mostramos una captura de pantalla donde
+podrás saber qué información va en cada campo.
+
+<div class="captura">
+  <div class="c-contenido">
+      <img src="/img/admin/ppe_004.png" width="640" height="348" />
+  </div>
+  <div class="c-pie"><strong>Figura 5</strong>: Credenciales</div>
+</div>
+ 
+### Paso 4: Ingresar la información en tu panel Bootic
+
+Con las credenciales de la API Paypal generadas ahora debes ir a tu administrador Bootic `>`
+Preferencias `>` Pago en línea `>` Paypal Express y completa `Login`, `Password` y `Signatura`.
+
+<div class="captura">
+  <div class="c-contenido">
+      <img src="/img/admin/ppe_005.png" width="442" height="327" />
+  </div>
+  <div class="c-pie"><strong>Figura 6</strong>: Configuración Paypal Express en panel de control Bootic</div>
+</div>
+
+Listo. Ahora puedes recibir pagos usando Paypal Express en tu tienda Bootic.
+
+## Retirar fondos
+
+Es posible retirar tus fondos en Chile vía MultiCaja, [ revisa las condiciones ][4] de este servicio.
+
+&dagger; Actualmente soportado por Bootic pero será descontinuado en el futuro.
+
+
+[1]: https://www.paypal.com/cl/webapps/mpp/accept-payments-online
+[2]: https://www.paypal.com/cl/webapps/mpp/paypal-fees
+[3]: https://www.paypal.com/cl/merchantsignup/create
+[4]: https://www.multicaja.cl/paypal/retirar_dolares
