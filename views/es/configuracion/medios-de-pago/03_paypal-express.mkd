@@ -15,6 +15,11 @@ Este es un **servicio de pago**, [ revisa sus tarifas ][2]. La política de PayP
 vendas_ usando su medio de pago _menos pagas_ por el servicio. Si estás de acuerdo [crea una cuenta][3]
 (Chile). 
 
+<div class="note info">
+  <p>Si tu empresa no es Chilena visita <a title="paypal.com" href="http://www.paypal.com">PayPal.com</a> y el selector geográfico te llevará a paypal de tu
+  país. </p>
+</div>
+
 A continuación la configuración del medio de pago en 4 pasos:
 
 ## Paso 1: Crea la cuenta Paypal Empresa 
@@ -39,8 +44,6 @@ Cuando tu cliente llegue a nuestro checkout verá un mensaje con la conversión 
   <div class="c-pie"><strong>Figura 2</strong>: Checkout Bootic seleccionando el medio de pago Paypal Express</div>
 </div>
 
-
-
 ### Paso 2: Validar tu correo electrónico
 
 Este paso es importante, Paypal debe validar tu correo electrónico para conseguir el acceso a la API. En la sección «Mi Perfil» (de tu cuenta Paypal) puedes realizar esta validación.
@@ -50,7 +53,7 @@ Este paso es importante, Paypal debe validar tu correo electrónico para consegu
 La secuencia de clic es la siguiente: Desde la consola de administración Paypal anda a:
 
 - Completa la configuración para poder empezar a vender — Ir a la Configuración.
-- Como desea empezar a recibir pagos - En su sitio Web.
+- Cómo desea empezar a recibir pagos - En su sitio Web.
 - Agregue el proceso de pago con Paypal como forma adicional para recibir pagos.
 - Opción B: Utilice nuestra API para agregar pagos exprés en su sitio web.
 - Configure el acceso API cuando esté listo para la publicación — Figura 3.
@@ -84,7 +87,7 @@ podrás saber qué información va en cada campo.
 ### Paso 4: Ingresar la información en tu panel Bootic
 
 Con las credenciales de la API Paypal generadas ahora debes ir a tu administrador Bootic `>`
-Preferencias `>` Pago en línea `>` Paypal Express y completa `Login`, `Password` y `Signatura`.
+Preferencias `>` Pago en línea `>` Paypal Express y completa `Login`, `Password` y `Signature`.
 
 <div class="captura">
   <div class="c-contenido">
