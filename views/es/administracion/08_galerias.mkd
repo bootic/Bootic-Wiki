@@ -1,0 +1,9 @@
+---
+:title: Galerías 
+:description: Crear una galería de fotos
+:keywords: galería, fotos, portada, carrusel 
+---
+
+# Galerías 
+
+Bla bla bla
