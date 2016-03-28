@@ -1,0 +1,144 @@
+---
+:title: Galerías 
+:description: Crear una galería de fotos
+:keywords: galería, fotos, portada, carrusel 
+---
+
+# Galerías 
+
+Las galerías son una herramienta que te permiten **destacar visualmente** contenido de tu tienda.
+En una galería puedes subir _una_ o _varias fotos_ y que estas lleven al visitante de tu
+tienda a:
+
+- una colección,
+- un formulario
+- un tipo de producto
+- un fabricante
+- una noticia
+- enlace externo
+
+<div class="captura">
+  <div class="c-contenido">
+    <img src="/img/admin/galerias_00.png" alt="Galerías" />
+  </div>
+  <div class="c-pie">
+      <strong>Figura 1</strong>. Una galería de imágenes
+  </div>
+</div>
+
+1. Crea nueva galería
+2. Cambiar el orden de los elementos. Editar el título
+3. Listado de ítemes 
+4. Editar, eliminar elemento
+5. Agregar un nuevo elemento
+
+
+### Cómo se hace
+
+Crear y mostrar una galería requiere de tres pasos:
+
+1. Crearla
+2. Agregar fotos (y sus enlaces)
+3. Mostrarla
+
+
+## Paso 1: Crear la galería
+
+En tu panel de control Bootic anda a _Contenido_ `>` _Galerías_ `>` _Nueva galería_ le pones un nombre —por ejm— **Portada** `>` clic en _Crear galería_ 
+
+## Paso 2: Agregar fotos
+
+Una vez creada la galería es momento de agregarle contenido. Para ello haz clic
+en Agregar elemento (ver **Figura 1**) y luego:
+
+<div class="captura">
+  <div class="c-contenido">
+    <img src="/img/admin/galerias_01.png" alt="Galerías" />
+  </div>
+  <div class="c-pie">
+      <strong>Figura 2</strong>. Agregando contenido a la galería
+  </div>
+</div>
+
+1. Arrastra (o haz clic) una foto desde tu PC.
+2. Configura **el enlace** que tendrá la foto. Cuando el visitante haga en clic en la foto lo llevará al lugar que definas acá. 
+3. Clic en Agregar.
+
+Repite los pasos anteriores _para agregar más fotos_ a la galería.
+
+## Paso 3: Mostrar galería
+
+En el 99% de las veces querrás que la galería aparezca en la portada de tu
+tienda entonces deberías incluir el siguiente trozo de código en la plantilla
+**home.html**.
+
+    ...
+    {% include 'galeria' %}
+    ...
+
+
+## Aspecto dinámico - requerido la primera vez
+
+Los tres pasos anteriores son suficientes para mostrar una galería. Sin embargo
+**la primera vez que creas una** es _necesario_ **un paso adicional**: Agregar los
+archivos necesarios para darle un aspecto más dinámico a tu galería.
+
+![galeria](/img/admin/galeria_animacion.gif)
+
+### Pasos para configurar aspecto dinámico
+
+1. Anda a Diseño `>` Editar Plantilla Actual `>` Crear nueva.
+2. En nombre pones **galeria**
+3. Selecciona **html**
+4. Clic en Crear
+
+Repite los tres pasos anteriores para crear además:
+
+1.  **galeria-header**
+2.  **galeria-footer**
+
+El contenido de cada una de las tres plantillas que acabas de crear lo
+encuentras acá (haz clic en el nombre, luego copia y pega). No olvides darle
+clic en botón **Guardar**.
+
+* [`galeria.html`](https://gist.githubusercontent.com/juque/e6cfe0adcad8551ff386/raw/614d6845e74344e4084f5fd890b2697ac48abab8/galeria.html)
+* [`galeria-header.html`](https://gist.githubusercontent.com/juque/f39a0fdc52a829ccebd8/raw/344c7bdcc3a13bbd06457566c1f8d4f0c0d7dc28/galeria-header.html)
+* [`galeria-footer.html`](https://gist.githubusercontent.com/juque/e195e08d5250b74b82b0/raw/8f1b4161fbf74539a2b8e71085cec48fade815e3/galeria-footer.html)
+
+En el siguiente video se muestra el procedimiento de copia-pegar:
+
+<iframe width="640" height="360" src="https://www.youtube.com/embed/Ze_8XCKtgvM" frameborder="0" allowfullscreen></iframe>
+
+Para finalizar la configuración solo resta llamar a `galeria-header` y `galeria-footer`. Esto lo hacemos en **layout.html** En la Figura 2 puedes ver el lugar desde
+donde se hace la llamada. Antes del `</header>` y antes del `</body>`.
+
+<div class="captura">
+  <div class="c-contenido">
+    <img src="/img/admin/galerias_02.png" alt="Layout" />
+  </div>
+  <div class="c-pie">
+      <strong>Figura 2</strong>. Llamada de plantillas necesarias para el
+      funcionamiento dinámica de la galería
+  </div>
+</div>
+
+La plantilla **layout.html** debería verse así:
+
+<div class="captura">
+  <div class="c-contenido">
+    <img src="/img/admin/galerias_04a.png" alt="Layout" />
+  </div>
+  <div class="c-pie">
+    Llamada de galeria-header
+  </div>
+</div>
+<div class="captura">
+  <div class="c-contenido">
+    <img src="/img/admin/galerias_04b.png" alt="Layout" />
+  </div>
+  <div class="c-pie">
+    Llamada de galeria-footer
+  </div>
+</div>
+
+Listo, en la portada de tu tienda ahora deberías poder ver la galería funcionando.
