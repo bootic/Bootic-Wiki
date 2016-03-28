@@ -6,7 +6,7 @@
 
 # Galerías 
 
-Las galerías son una herramienta que te permiten **destacar visualmente** contenido de tu tienda.
+Las galerías son una herramienta que te permite **destacar visualmente** contenido de tu tienda.
 En una galería puedes subir _una_ o _varias fotos_ y que estas lleven al visitante de tu
 tienda a:
 

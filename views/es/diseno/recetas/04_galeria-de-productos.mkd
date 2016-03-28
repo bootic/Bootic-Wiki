@@ -8,7 +8,7 @@
 
 <h2 id="galerias">Galería de imágenes de productos</h2>
 
-Los "banners" o imágenes rotativas de productos pueden ser resueltos de forma similar a la lista de productos destacados, pero mostramos una versión más grande de cada imagen y, opcionalmente, podemos usar javaScript para avanzar las ímágenes automáticamente.
+Los "banners" o imágenes rotativas de productos pueden ser resueltos utilizando [las galerías](/es/administracion/galerias).
 
 <img src="<%= img('/img/themes/the_stage.png').thumb('640x').url %>" alt="The stage" />
 
@@ -16,34 +16,20 @@ Los "banners" o imágenes rotativas de productos pueden ser resueltos de forma s
 
 El diseño por defecto de las tiendas Bootic usa la librería JavaScript [jQuery](http://jquery.com/) con el plugin [Cycle](http://jquery.malsup.com/cycle/) para hacer imágenes rotativas fácilmente.
 
-Algunas tiendas que usan banners rotativos son [Pilpil](http://www.pilpil.cl) y [Romano](http://www.romano.cl).
-
 ## El código
 
-El HTML usa los productos dentro de la colección "destacados"
+El HTML para mostrar la galería `destacados`:
 
 <pre>:::html
 <div id="myGallery">
-    {% for product in collections.destacados.products %}
-    {% if product.images | size > 0 %}
+    {% for item in galleries.destacados %}
       <div class="imageElement">
-        <a href="{{ product.url }}" title="Ver m&aacute;s" class="open"></a>
-        <img src="{{ product.first_image.medium }}" class="full" alt="{{ foto.file_name }}" />
-        <img src="{{ product.first_image.thumbnail }}" class="thumbnail" alt="{{ foto.file_name }}" />
-        <h3>{{ product.model }}</h3>
-        <p>{{ product.description | truncate: 120 }}</p>
+        <a href="{{ item.url }}" title="Ver más" class="open"></a>
+        <img src="{{ item.image | resize:'540x' }}" class="full" alt="{{ item.descripcion }}" />
       </div>
-    {% endif %}
     {% endfor %}
   </div><!-- /myGallery -->
 </pre>
-
-Analiza el código línea por línea para entender cada elemento.
-
-<div class="note tip">
-  La línea <code>collections.destacados.products</code> usa la <em>manilla</em> de la colección ("destacados"), que es una versión sin espacios ni tildes del título. Por ejemplo, una colección con título "Productos destacados" tiene una manilla "productos-destacados".<br />
-  Las manillas son generadas automáticamente a partir del título, pero tu puedes modificarla en elformulario de edición de cada colección.
-</div>
 
 A continuación es necesario incluír las librerías JavaScript jQuery y el plugin Cycle. La primera puede ser incluída directamente desde los repositorios de Google. En <code>layout.html</code>, en la sección <code>head</code>:
 
