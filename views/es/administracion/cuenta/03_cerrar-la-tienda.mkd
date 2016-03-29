@@ -26,11 +26,7 @@ Sí, ingresa al panel de control (aunque esté cerrada todavía tienes acceso al
 _Respuesta corta_: **NO**. 
 
 _Respuesta larga_: Luego de cerrar tu tienda los datos de la misma (fotos, productos, etc)
-quedan en nuestros servidores por algún tiempo (semanas) — pasado ese tiempo será borrada toda la información. Si
-quieres cerrar tu tienda **pero conservar su contenido** (apostando a una próxima reapertura) envíanos tu solicitud
-a __soporte__ [arroba] __bootic__ [punto] __net__, o bien usando nuestro [Formulario de contacto][1] - informando
-cláramente el nombre de la tienda y la razón.
-
+quedan en nuestros servidores por algún tiempo (semanas) — pasado ese tiempo será borrada toda la información. 
 
 [1]:http://www.bootic.net/forms/contacto "Formulario de contacto"
 [2]:/es/administracion/cuenta/cambiar-plan "Eligiendo plan y pagando tu tienda Bootic"
