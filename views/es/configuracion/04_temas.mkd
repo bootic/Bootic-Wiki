@@ -17,6 +17,23 @@ Bootic cuenta con algunos temas prediseñados que puedes usar en tu tienda Booti
 
 <ul class="media_items">
   <li class="media_item clearfix">
+    <a href="http://oxygen.bootic.net" class="thumbnail" target="_blank" title="Ver tienda de ejemplo">
+      <img src="/img/themes/gallery/oxygen/preview.png" alt="Oxygen" />
+    </a>
+    <div class="info">
+      <h3>Oxygen</h3>
+      <p>Un tema limpio y ordenado para todo tipo de tiendas que deseen proyectar sobriedad y elegancia.</p>
+      <ul>
+        <li>HTML y CSS basados en <a href="http://getskeleton.com/">Skeleton</a></li>
+        <li>Optimizado múltiples dispositivos</li>
+        <li>Carrito clasico</li>
+      </ul>
+      <p class="buttons">
+        <a href="http://oxygen.bootic.net" class="preview_link" target="_blank">Ver tienda de ejemplo</a>
+      </p>
+    </div>
+  </li><!-- /bootstrap1 -->
+  <li class="media_item clearfix">
     <a href="http://bootstrap1.bootic.net" class="thumbnail" target="_blank" title="Ver tienda de ejemplo">
       <img src="/img/themes/gallery/bootstrap1/preview.png" alt="Bootstrap 1" />
     </a>
