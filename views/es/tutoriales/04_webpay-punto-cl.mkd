@@ -86,13 +86,10 @@ En el campo **Mensaje** copie y pegue el siguiente código HTML. **IMPORTANTE**:
 
 <pre>:::HTML
 <ol>
-  <li>Vaya <a
-href="https://www.webpay.cl/portalpagodirecto/pages/institucion.jsf?idEstablecimiento=IDENTIFICADOR">a nuestro botón
-de pago en Webpay.cl</a>.</li>
+  <li>Vaya <a href="https://www.webpay.cl/portalpagodirecto/pages/institucion.jsf?idEstablecimiento=IDENTIFICADOR">a nuestro botón de pago en Webpay.cl</a>.</li>
   <li>Haga clic en el botón <strong>Pagar</strong> (al final de la página).</li>
   <li>Complete el formulario que allí aparece.</li>
-  <li>Asegúrese de ingresar correctamente el <strong>Indentificador del pago</strong>(código del pedido)
-y el <strong>monto</strong>(debe incluir el valor del despacho).</li>
+  <li>Asegúrese de ingresar correctamente el <strong>Indentificador del pago</strong>(código del pedido) y el <strong>monto</strong>(debe incluir el valor del despacho).</li>
   <li>Dele clic al botón <strong>Pagar con Webpay</strong></li> 
 </ol>
 
