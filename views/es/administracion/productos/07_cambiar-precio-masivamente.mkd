@@ -1,0 +1,81 @@
+---
+:title: Cambiar precio masivamente
+:description: "Cómo cambiar los precios a los productos de manera masiva"
+:keywords: precios, lotes, video, masivo, importar, csv, importer, precio
+---
+
+# Cambiar precios masivamente
+
+A continuación podrás conocer la forma de cambiar los precios a tus productos de
+forma masiva (o por lotes) utilizando nuestra herramienta de Importación Bootic. Esto es posible gracias a nuestra [API](http://developers.bootic.net)&dagger;.
+
+Dado que el atributo precio **es crítico** en una tienda **recomendamos revisar** el video y esta documentación _con mucha atención_. Cambiar el precio de manera masiva **no tiene** una opción «revertir cambios». 
+
+### Conceptos clave
+
+* Archivo CSV: Archivo de valores separado por coma, formato abierto, simple y rápido de compartir datos en Informática.
+* Clave primaria: Campo que no puede repetirse.
+
+## Páginas del video
+
+En el video el relator mantiene tres pestañas abiertas en su navegador:
+
+1. _Administrador tienda Boootic_ `>` **Productos**.
+2. [Google Hoja de Cálculo](https://docs.google.com/spreadsheets) - (hoja nueva)
+3. [Importador Bootic](https://bootic-csv-importer.herokuapp.com/)
+
+<iframe width="640" height="360" src="https://www.youtube.com/embed/QcVRdo7gHD8" frameborder="0" allowfullscreen></iframe>
+
+## Objetivo: Un CSV de tres columnas
+
+Para cambiar el precios de tus productos de manera masiva debes generar un archivo de tipo CSV con tres columnas: 
+
+* **slug**: clave primaria del producto
+* **price**: precio
+* **price_comparison**: precio de comparación (columna opcional)
+
+
+<div class="note tip">
+¿Dudas con el cambio masivo?: Puedes probar generando un CSV de tres columnas que solo
+contenga <strong>un producto</strong>; es decir, una fila.
+</div>
+
+### De dónde salen los datos
+
+Este archivo CSV de tres columnas _es el resultado_ de procesar el CSV de
+productos **exportado desde tu tienda Bootic** (final listado de productos de la
+sección del mismo nombre).
+
+<div class="note warning">
+  <p>No se deben agregar nuevas filas al archivo CSV de tres columnas durante su manipulación. Solo se debe editar, NO crear.</p>
+</div>
+
+### Qué software usar
+
+Para manipular un archivo de tipo CSV puedes usar:
+
+* Microsoft Excel 
+* Apple Numbers
+* LibreOffice Calc
+* Google hoja de cálculo
+
+Bootic **recomienda** Google Hoja de cálculo ya que sus opciones de
+importar/exportar a CSV son 100% compatibles con la herramienta de Importación
+Bootic.
+
+
+<div class="note info">
+ <p>Solo un <strong>administrador</strong> de tienda tiene acceso al Importador Bootic, otro
+ tipo de usuario no podrá acceder.</p>
+</div>
+
+### Accesos directos dentro del video:
+
+* [Exporar desde la tienda](https://youtu.be/QcVRdo7gHD8?t=1m27s) — 1:27
+* [Importar en Google hoja de cálculo](https://youtu.be/QcVRdo7gHD8?t=1m42s) — 1:42
+* [Unique - filtrar productos únicos](https://youtu.be/QcVRdo7gHD8?t=2m14s) — 2:14
+* [Cambio de precios](https://youtu.be/QcVRdo7gHD8?t=2m31s) — 2:31
+* [Exportar desde Google hoja de cálculo](https://youtu.be/QcVRdo7gHD8?t=2m48s) — 2:48
+* [Importar en Herramienta de Importación Bootic](https://youtu.be/QcVRdo7gHD8?t=2m57s) — 2:57
+
+<strong>&dagger;</strong>: Actualmente el uso de la API es gratuito para todos nuestros locatarios; pero en el futuro será de pago de acuerdo al plan contratado.
