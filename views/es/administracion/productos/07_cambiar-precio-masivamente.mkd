@@ -13,8 +13,9 @@ Dado que el atributo precio **es crítico** en una tienda **recomendamos revisar
 
 ### Conceptos clave
 
-* Archivo CSV: Archivo de valores separado por coma, formato abierto, simple y rápido de compartir datos en Informática.
-* Clave primaria: Campo que no puede repetirse.
+* **Archivo CSV**: Archivo de valores separado por coma, formato abierto, simple y rápido de compartir datos en Informática.
+* **Clave primaria**: Campo que no puede repetirse.
+* **Producto único**: El precio es un **atributo del producto**, pero el CSV exportado desde la tienda se detalla por variantes, por eso es preciso filtrar los productos únicos antes de cambiar el precio.
 
 ## Páginas del video
 
