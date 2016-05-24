@@ -31,9 +31,9 @@ En el video el relator mantiene tres pestañas abiertas en su navegador:
 
 Para cambiar el precios de tus productos de manera masiva debes generar un archivo de tipo CSV con tres columnas: 
 
-* **slug**: clave primaria del producto. **No debe** ser _modificado_.
-* **price**: precio
-* **price_comparison**: precio de comparación (columna opcional)
+* **slug**: Clave primaria del producto. **No debe** ser _modificada_.
+* **price**: Precio
+* **price_comparison**: Precio de comparación (columna opcional)
 
 
 <div class="note tip">
@@ -72,7 +72,7 @@ Bootic.
 
 ### Accesos directos dentro del video:
 
-* [Exporar desde la tienda](https://youtu.be/QcVRdo7gHD8?t=1m27s) — 1:27
+* [Exportar desde la tienda](https://youtu.be/QcVRdo7gHD8?t=1m27s) — 1:27
 * [Importar en Google hoja de cálculo](https://youtu.be/QcVRdo7gHD8?t=1m42s) — 1:42
 * [Unique - filtrar productos únicos](https://youtu.be/QcVRdo7gHD8?t=2m14s) — 2:14
 * [Cambio de precios](https://youtu.be/QcVRdo7gHD8?t=2m31s) — 2:31
