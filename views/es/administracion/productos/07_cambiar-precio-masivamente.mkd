@@ -14,7 +14,7 @@ Dado que el atributo precio **es crítico** en una tienda **recomendamos revisar
 ### Conceptos clave
 
 * **Archivo CSV**: Archivo de valores separado por coma, formato abierto, simple y rápido de compartir datos en Informática.
-* **Clave primaria**: Campo que no puede repetirse.
+* **Clave primaria**: Campo que no puede repetirse. Es un identificador **único**.  
 * **Producto único**: El precio es un **atributo del producto**, pero el CSV exportado desde la tienda se detalla por variantes, por eso es preciso filtrar los productos únicos antes de cambiar el precio.
 
 ## Páginas del video
@@ -31,7 +31,7 @@ En el video el relator mantiene tres pestañas abiertas en su navegador:
 
 Para cambiar el precios de tus productos de manera masiva debes generar un archivo de tipo CSV con tres columnas: 
 
-* **slug**: clave primaria del producto
+* **slug**: clave primaria del producto. **No debe** ser _modificado_.
 * **price**: precio
 * **price_comparison**: precio de comparación (columna opcional)
 
