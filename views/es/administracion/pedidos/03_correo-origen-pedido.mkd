@@ -1,0 +1,23 @@
+---
+:title: Correo origen de pedido
+:description: "¿Cómo cambio la dirección de correo de los pedidos"
+:keywords: correo, pedidos, origen, desde, orden
+---
+
+# Correo origen pedido
+
+Cuando recién creas tu tienda, Bootic tomará el correo ingresado como el
+emisor de todos los mensajes salientes.
+
+Si quieres cambiar esta información debes ingresar a:
+
+**Preferencias** `>` **Notificaciones y destinatarios**
+
+Cambias _Nombre_,  _Email_ y luego «Guardar»
+
+
+## El primer registro
+
+Esta sección te da la posibilidad de ingresar múltiples nombres y correos. Bootic
+tomará **siempre el primer registro del listado** como _emisor_ para enviar todos
+tus correos electrónicos.
