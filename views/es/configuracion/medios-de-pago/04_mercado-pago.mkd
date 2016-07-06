@@ -1,0 +1,107 @@
+---
+:title: Mercado Pago 
+:description: "Mercado Pago"
+:keywords: pago, tarjeta, crédito, mercado pago, medios, pago, mercadopago
+---
+
+# Mercado Pago
+
+**Mercado Pago** es una plataforma de cobro para vendedores de
+[MercadoLibre][mercadolibre]. Ofrece la [ posibilidad de pago ][mpurl] para tarjetas:
+
+* Visa
+* MasterCard
+* AmericanExpress 
+* Magna
+* Presto
+* Diners Club
+* CMR Falabella
+* ServiPag
+
+Cualquier otra tarjeta o servicio no listado acá —de momento— no está _contemplada_ en esta integración Bootic.
+
+## Costo
+
+El **costo del servicio** (al momento de escribir este artículo) es de 4.99% + IVA
+de cada pago acreditado — [ver más detalles][costos].
+
+A continuación te contamos los pasos que debes seguir para configurar este medio de pago.
+
+## Paso 1: Crear cuenta en Marcado Pago
+
+Ingresa al sitio web de [ Mercado Pago ](https://www.mercadopago.cl/ "Ir al sitio") y regístrate (enlace «Inscríbete»)
+- **Figura 1**. 
+
+<div class="captura">
+	<div class="c-contenido">
+    <img src="/img/admin/mp-inscripcion-servicio.png" />
+  </div>
+	<div class="c-pie"><strong>Figura 1</strong>: Formulario de registro</div>
+</div>
+
+## Paso 2: Confirmar cuenta
+
+Luego de registrarte _debes ir a tu correo electrónico_ (el que usaste para completar el formulario) y **confirmar la
+creación** de tu cuenta en MarcadoPago.
+
+## Paso 3: Seleccionar cuenta Vendedor
+
+Una vez que ingresas a tu nueva cuenta de Mercado Pago te preguntará por el **tipo de cuenta** que quieres usar, dale clic
+a "Cuenta vendedor permanente" - **Figura 2**.
+
+<div class="captura">
+	<div class="c-contenido">
+    <img src="/img/admin/mp-tipo-de-cuenta.png" alt="Tipo de cuenta" />
+  </div>
+	<div class="c-pie"><strong>Figura 2</strong>: Qué tipo de cuenta quieres usar</div>
+</div>
+
+## Paso 4: Credenciales API
+
+Para conseguir las credenciales de la API **anda** al siguiente enlace (debes _estar logeado_ en Mercado Pago): [Credenciales](https://www.mercadopago.com/mlc/account/credentials).
+
+## Paso 5: Ir a Producción
+
+Estando en la sección anterior verás un enlace que dice «Quiero ir a produción», dale clic — **Figura 3**.
+
+<div class="captura">
+	<div class="c-contenido">
+    <img src="/img/admin/mp-enlace-ir-a-produccion.png" />
+  </div>
+	<div class="c-pie"><strong>Figura 3</strong>: Credenciales API </div>
+</div>
+
+Esto **te llevará a un formulario** que debes completar para comenzar a usar el medio de pago en tu tienda Bootic. En la **Figura 4** encontrarás _un
+ejemplo_ del formulario ya completado.
+
+<div class="captura">
+	<div class="c-contenido">
+    <img src="/img/admin/mp-ir-a-produccion.png" alt="Formulario para ir producción con información de ejemplo" />
+  </div>
+	<div class="c-pie"><strong>Figura 4</strong>: Formulario para ir a Producción con información de ejemplo</div>
+</div>
+
+Luego de completar el fomulario y enviarlo estás en condiciones de usar la información en tu tienda Bootic — **Figura 5**.
+
+<div class="captura">
+	<div class="c-contenido">
+		<img src="/img/admin/mp-credenciales-produccion.png" alt="Credenciales en Producción" />
+	</div>
+	<div class="c-pie"><strong>Figura 5</strong>: Credenciales listas para ser usadas en la tienda Bootic</div>
+</div>
+
+Los valores de `Public key`, y `Access key` es la información que **debes copiar** en tu panel de control Bootic para el medio de pago
+MercadoPago para `Llave pública` y `Llave privada` _respectivamente_ — **Figura 6**.
+
+<div class="captura">
+	<div class="c-contenido">
+    <img src="/img/admin/mp-panel-bootic.png" alt="Medio de pago Mercado Pago configurado" />
+  </div>
+	<div class="c-pie"><strong>Figura 5</strong>: Llave pública y Llave privada copiadas en el panel del control</div>
+</div>
+
+Presiona «Guardar» y el medio de pago estará listo para operar en tu tienda.
+
+[costos]:https://www.mercadopago.cl/ayuda/costos-comision-recibir-pagos_2002
+[mercadolibre]:http://www.mercadolibre.cl/ "Mercado Libre"
+[mpurl]:https://www.mercadopago.cl/recibir-pagos-online#herramienta-todo-resuelto "Recibir pagos"
