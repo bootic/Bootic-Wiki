@@ -16,7 +16,6 @@
 * Presto
 * Diners Club
 * CMR Falabella
-* ServiPag
 
 Cualquier otra tarjeta o servicio no listado acá —de momento— no está _contemplada_ en esta integración Bootic.
 
