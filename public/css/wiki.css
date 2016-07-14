@@ -444,3 +444,5 @@ Show big version only on homepage
     background-color:transparent;
     border:none;
 }
+.msg-tpl {border:3px dashed #22D7CC;padding:10px}
+.msg-tpl p {font-size:14px !important}
