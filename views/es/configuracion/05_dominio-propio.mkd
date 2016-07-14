@@ -76,21 +76,32 @@ Sin embargo, si sólo quieres alojar tu tienda Bootic bajo tu dominio y no plane
 6. Entra a tu administrador Bootic, navega hasta las preferencias y edita el campo «Dirección URL» con `www.mitienda.com`. Guarda el cambio.
 7. Eso es todo. Ahora la dirección `www.mitienda.com` debiera mostrarte tu tienda Bootic.
 
-Para evitar errores de digitación de nuestro DNS ayúdate con este
-**Bookmarklet**: <a href="javascript:(function()%7Bwindow.linode%20%3D%20%7Bns1%20%3A%20%7Bname%3A'ns1.linode.com'%2Cip%3A'69.93.127.10'%7D%2Cns2%20%3A%20%7Bname%3A'ns2.linode.com'%2Cip%3A'65.19.178.10'%7D%2Cns3%20%3A%20%7Bname%3A'ns3.linode.com'%2Cip%3A'75.127.96.10'%7D%7D%3Bvar%20fields%20%3D%20%5B'ns1'%2C'ns2'%2C'ns3'%5D%3Bfor%20(%20var%20i%20%3D%200%3Bi%3Cfields.length%3Bi%2B%2B)%20%7Bvar%20ns%20%3D%20document.getElementsByName(fields%5Bi%5D)%5B0%5D%3Bvar%20ip%20%3D%20document.getElementsByName('ip'%2Bfields%5Bi%5D)%5B0%5D%3Bns.setAttribute('value'%2Cwindow%5B'linode'%5D%5Bfields%5Bi%5D%5D%5B'name'%5D)%3Bip.setAttribute('value'%2Cwindow%5B'linode'%5D%5Bfields%5Bi%5D%5D%5B'ip'%5D)%3B%7D%7D)()">Bootic NS-NIC.cl</a> – (<a href="http://www.youtube.com/watch?v=qTxqMsct7cM">¿Qué es esto?</a>)
-
 ## NIC Chile
 
-Los pasos de arriba son aplicables para dominios `.cl` registrados en el [NIC](http://nic.cl) - Figura 2. El video a continuación muestra la configuración de dominio propio en el NIC para una tienda Bootic.
-
-<iframe src="http://www.screenr.com/embed/AgV" width="650" height="396" frameborder="0"></iframe>
+Para apuntar tu dominio desde NIC Chile a nuestro DNS debes seguir los siguiente
+pasos — **Figura 2**.
 
 <div class="captura">
-    <div class="c-contenido"><img src="/img/admin/nic.png" alt="panel NIC" /></div>
-    <div class="c-pie">
-        <strong>Figura 2</strong>: Configuración de DNS en NIC.cl
-    </div>
+  <div class="c-contenido"><img src="/img/admin/ns-linode-en-nic.cl.png" alt="panel NIC" /></div>
+  <div class="c-pie"> <strong>Figura 2</strong>: Configuración de DNS en NIC.cl </div>
 </div>
+
+1. Ingresa a [NIC.cl](https://www.nic.cl/) (con tu usuario y contraseña).
+2. Anda al [panel de control de tus dominios](https://clientes.nic.cl/registrar/listarDominio.do).
+3. Dale clic al nombre del dominio que deseas apuntar a nuestro DNS.
+4. Anda a la sección **Servidores de nombre (DNS)**.
+5. Ingresa la siguiente información para «Nombre de servidor»: 
+  * ns1.linode.com
+  * ns2.linode.com
+  * ns3.linode.com
+6. Clic en el botón **Actualizar datos del dominio**
+7. Avísanos enviándonos un correo a _soporte arroba bootic punto net_ del tipo:
+
+<div class="msg-tpl">
+<p><strong>Asunto</strong>: Registro dominio PON_AQUI_TU_DOMINIO en NIC.cl </p>
+<p><strong>Mensaje</strong>: Acabo de registrar el dominio PON_AQUI_TU_DOMINIO y lo he apuntado al DNS de Bootic. Según la documentación les debo avisar.</p>
+</div>
+
 
 <div class="note info">
   <h5>¿Cómo funcionan los DNS?</h5>
@@ -107,17 +118,18 @@ Los pasos de arriba son aplicables para dominios `.cl` registrados en el [NIC](h
 
 <h2 id="email">Correos (Email)</h2>
 
-Bootic no da el servicio de alojamiento de correos, pero desde tu administración de DNS puedes apuntar tu dominio para manejar correo electrónico donde prefieras.
+Bootic **no da el servicio de alojamiento de correos**, pero desde tu administración de DNS puedes apuntar tu dominio para manejar correo electrónico donde prefieras.
 
 Si tienes tu DNS administrado por un servicio de *hosting*, es posible que éste ya te de alojamiento de correos y no tengas que hacer nada.
 
 Si administras tu DNS en un servicio especializado, puedes buscar información en Internet sobre cómo apuntar tu tráfico de correo al servidor de correos de tu preferencias.
 
-Si alojas tus DNS con nosotros (si configuraste tu dominio para apuntar a nuestros DNS - ver "Opción 2" más arriba), entonces debes solicitarnos que apuntemos el tráfico de correo de tu dominio a tu servicio de correos de preferencia.
+Si alojas tus DNS con nosotros (si configuraste tu dominio para apuntar a nuestros DNS - ver "<strong>Opción 2</strong>" más arriba), entonces **debes solicitarnos** que apuntemos el tráfico de correo de tu dominio a tu servicio de correos de preferencia.
 
-### Alojando correos en Google Apps
+### Gestionando tu correos con Google Apps
 
-Google Apps es una serie de servicios de Google, que te permiten usar herramientas Google como GMail, Google Docs, Calendario y otros bajo tu dominio. Esto significa que puedes tener correos con tu propio dominio (por ejemplo *ismael@mitienda.com*) administrados por Google y accesibles de la misma forma que una cuenta GMail normal.
+Google Apps ([ver cómo configurarlo][googleapps]) es un servicio proporcionado por Google, que te permiten usar herramientas Google como GMail, Google Docs, Calendario y otros bajo tu dominio. Esto significa que puedes tener correos con tu propio dominio (por ejemplo *ismael@mitienda.com*) administrados por Google y accesibles de la misma forma que una cuenta GMail normal.
 
-[Leer más sobre configurar Google Apps para tu dominio](/es/configuracion/servicios/google-apps)
+
 [cpanel]:http://es.wikipedia.org/wiki/CPanel "cPanel en Wikipedia"
+[googleapps]:/es/configuracion/servicios/google-apps
