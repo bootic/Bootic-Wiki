@@ -37,6 +37,6 @@ Sin embargo, además de esto, cada promoción que creas posee un link o *URL* ú
   </div>
 </div>
 
-<div class="tip">
+<div class="tip note">
   Al momento de publicitar productos o promociones en las redes sociales, recomendamos utilizar siempre imágenes más que sólo texto. Muchos estudios y métricas revelan que son mucho más efectivos a la hora de atraer tráfico.
 </div>
