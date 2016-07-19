@@ -5,3 +5,5 @@
 ---
 
 # Listado de Clientes
+
+Gestión de clientes que han **comprado** o bien te han **contactado** por medio de la tienda.
