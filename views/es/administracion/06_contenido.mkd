@@ -1,0 +1,12 @@
+---
+:title: Contenido
+:description: 
+:keywords: 
+---
+
+# Contenido
+
+* [Noticias](/es/administracion/contenido/noticias)
+* [Páginas y formularios](/es/administracion/contenido/paginas_y_formularios)
+* [Galerías](/es/administracion/contenido/galerias)
+* [Menús de navegación](/es/administracion/contenido/navegacion)
