@@ -6,6 +6,9 @@
 
 # Contenido
 
+Para **apoyar** la administración, visualización, promoción y venta de productos Bootic te proporciona las siguientes
+herramientas:
+
 * [Noticias](/es/administracion/contenido/noticias)
 * [Páginas y formularios](/es/administracion/contenido/paginas_y_formularios)
 * [Galerías](/es/administracion/contenido/galerias)
