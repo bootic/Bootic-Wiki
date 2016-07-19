@@ -1,0 +1,7 @@
+---
+:title: Clientes
+:description: "Como realizar gestion de clientes a través de Bootic."
+:keywords: clientes, listado, usuario, compradores
+---
+
+# Listado de Clientes
