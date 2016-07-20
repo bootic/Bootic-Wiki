@@ -78,8 +78,7 @@ Sin embargo, si sólo quieres alojar tu tienda Bootic bajo tu dominio y no plane
 
 ## NIC Chile
 
-Para apuntar tu dominio desde NIC Chile a nuestro DNS debes seguir los siguiente
-pasos — **Figura 2**.
+A continuación encontrarás las instrucciones **específicas** para apuntar tu dominio desde NIC Chile a nuestro DNS. Este caso aplica para la [ Opción 2 ](/es/configuracion/dominio-propio#toc_4) descrita arriba — **Figura 2**.
 
 <div class="captura">
   <div class="c-contenido"><img src="/img/admin/ns-linode-en-nic.cl.png" alt="panel NIC" /></div>
@@ -101,7 +100,6 @@ pasos — **Figura 2**.
 <p><strong>Asunto</strong>: Registro dominio PON_AQUI_TU_DOMINIO en NIC.cl </p>
 <p><strong>Mensaje</strong>: Acabo de registrar el dominio PON_AQUI_TU_DOMINIO y lo he apuntado al DNS de Bootic. Según la documentación les debo avisar.</p>
 </div>
-
 
 <div class="note info">
   <h5>¿Cómo funcionan los DNS?</h5>
