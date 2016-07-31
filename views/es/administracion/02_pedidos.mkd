@@ -1,20 +1,23 @@
 ---
 :title: Pedidos
-:description: Pedidos o compras realizadas por tus clientes.
+:description: Pedidos realizadas por tus clientes.
 :keywords: órdenes, compra, ot, orden compra, pedido, pedidos
 ---
 
 # ¿Qué son y cómo funcionan los pedidos?
 
-Los pedidos son la base del proceso de transacción en Bootic. Una vez que tu cliente agrega los productos a su carro de compras, tiene la opción de comprarlos, para lo cual se le pedirán algunos datos (como mínimo su nombre, email y teléfono) y entonces quedará guardado el pedido con toda la información.
+Los **Pedidos** son la base del proceso de transacción en Bootic. Una vez que tu cliente agrega los
+productos a su carro de compras, tiene la opción de comprarlos, para lo cual se le pedirán algunos
+datos (como mínimo su nombre, email y teléfono) y entonces quedará guardado el pedido con toda la
+información.
 
-En caso de que tengas activado al menos una forma de pago en línea, el usuario podrá entonces pagar el pedido de forma inmediata, eligiendo uno de los métodos de pago que tengas activado en tu tienda.
+En caso de que tengas activado al menos una forma de pago en línea, el usuario podrá entonces pagar
+el pedido de forma inmediata, eligiendo uno de los métodos de pago que tengas activado en tu tienda.
 
 ## Ciclo de la compra y despacho de un producto
 
-Para entender mejor el momento en que se genera la Orden hemos confeccionado la
-siguiente ilustración que refleja el ciclo de compra y despacho de un producto
-— Figura 3:
+Para entender mejor el momento en que se genera el Pedido hemos confeccionado la siguiente
+ilustración que refleja el ciclo de compra y despacho de un producto — Figura 3:
 
 <div class="captura">
   <div class="c-contenido">
@@ -24,22 +27,21 @@ siguiente ilustración que refleja el ciclo de compra y despacho de un producto
 producto</div>
 </div>
 
-En el **punto 6** de la gráfica se genera la Órden, tanto el cliente como el
-locatario recibirán un correo electrónico, además de verla en su panel de
-administración.
+En el **punto 6** de la gráfica se genera el Pedido, tanto el cliente como el locatario recibirán un
+correo electrónico, además de verla en su panel de administración.
 
-Cuanto el cliente realiza una compra en tu tienda Bootic, ésta se registra en tu
-panel de administración como una orden (pedido de compra); para acceder a dichas órdenes debes ir al
-menú «Órdenes» — Figura 1.
+Cuanto el cliente realiza una compra en tu tienda Bootic, ésta se registra en tu panel de
+administración como un Pedido; para acceder a dichos pedidos debes ir al menú «Pedidos» — Figura 1.
 
 <div class="captura">
   <div class="c-contenido">
-      <img src="/img/admin/orders-menu.png">
+      <img src="/img/admin/pedido-menu.png">
   </div>
-  <div class="c-pie"><strong>Figura 1</strong>: Menú Órdenes</div>
+  <div class="c-pie"><strong>Figura 1</strong>: Menú Pedidos</div>
 </div>
 
 <div class="note info">
-En el caso de que se haya seleccionado como medio de pago Webpay <strong>la Orden pasará
-a estado Cerrada automáticamente</strong> y un email de notificación será enviado al comprador y al administrador — en los otros medios de pago será el Locatario el encargado de cerrar la Orden.
+En el caso de que se haya seleccionado como medio de pago Webpay <strong>el Pedido pasará a estado
+Cerrado automáticamente</strong> y un email de notificación _será enviado_ tanto al Comprador como al
+Administrador de la tienda.
 </div>
