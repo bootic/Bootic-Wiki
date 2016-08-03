@@ -31,7 +31,7 @@ Para disponer de este medio de pago en tu tienda Bootic:
 3. Aceptar los **Términos del Contrato**. 
 4. Con el paso anterior listo podrás obtener **las credenciales de la API**. Esta última información _es la que necesita_ tu tienda
    Bootic para ser configurada con este medio de pago.
-5. Configurar tu tienda Bootic con Khipu
+5. Activar Khipu en tu tienda Bootic
 
 A continuación de detalle de los pasos:
 
@@ -162,6 +162,8 @@ Al final de la página busca la sección **Para integrar khipu a tu sitio web** 
   <div class="c-pie"><strong>Figura 13</strong>: Información que necesita Bootic. Id de cobrador y Llave</div>
 </div>
 
+## Paso 5: Activar Khipu en tu tienda Bootic
+
 Con la información de paso 4 ingresa a tu panel de administración Bootic, anda a **Preferencias** `>` **Pago
 en línea** `>` Khipu. Completa la información para ID de cobrador y Llave pública. Presiona **Activo** y
 **Guardar** - Figura 14
@@ -172,6 +174,8 @@ en línea** `>` Khipu. Completa la información para ID de cobrador y Llave púb
   </div>
   <div class="c-pie"><strong>Figura 14</strong>: Activando khipu en Bootic</div>
 </div>
+
+Eso es todo, ahora ya puedes usar el medio de pago Khipu.
 
 [app]:https://khipu.com/page/app-terminal-de-pagos
 [tarifas]:https://khipu.com/page/precios
