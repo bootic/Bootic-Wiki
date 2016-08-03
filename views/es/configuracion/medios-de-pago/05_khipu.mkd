@@ -1,18 +1,18 @@
 ---
 :title: Khipu
 :description: "Configurar Khipu como medio de pago para Chile"
-:keywords: pago, tranferencia, khipu.
+:keywords: medio de pago, pago, tranferencia, khipu. 
 ---
 # Khipu 
 
-[ Khipu][www] es un medio de pago que permite a tus compradores pagar **vía transferencia**; la **ventaja está** que
-al pasar la transacción a través de su [ aplicación móvil ][app] el Locatario _es avisado_ que el pago
+[ Khipu][www] es un medio de pago que permite a tus compradores pagar **vía transferencia**; la **ventaja
+está** que al pasar ésta por medio de su[ aplicación móvil ][app] el Locatario _es avisado_ que el pago
 (transferencia) fue realizado con éxito, además de cerrarse el Pedido de forma automática en tu panel de
 control Bootic.
 
 <div class="note info">
   <p>
-    Para que Khipu sea útil para ti, locatario Bootic, el comprador debe tener instalada la aplicación en su
+    Para que Khipu sea útil para ti, locatario Bootic, el comprador <strong>debe</strong> tener instalada la aplicación en su
     teléfono y usarla. Lo que ellos llaman «Transferencia simplificada».
   </p>
 </div>
@@ -20,6 +20,19 @@ control Bootic.
 ### El costo
 
 Antes de implementar este medio de pago [revisa las tarifas][tarifas] del servicios.
+
+### Resumen del proceso 
+
+Para disponer de este medio de pago en tu tienda Bootic debes abrir una cuenta en [Khipu.com][www]. Además
+deberás comprobar con ellos tu cuenta corriente (o de ahorros) - realizando un pequeño depósito que te será
+devuelto en 24 horas. Luego deberás aceptar los **términos del contrato**.  Acto seguido podrás obtener las
+credenciales de la API. Esta última información es la que necesita tu tienda Bootic para ser configurada con
+este medio de pago.
+
+## Paso: Formulario de registro
+## Paso: Confirmar registro - activar cuenta
+## Paso: Configurar cuenta
+## Paso: Integrar Khipu a tu sitio
 
 https://khipu.com/page/api#llave-del-cobrador
 
