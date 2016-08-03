@@ -5,8 +5,8 @@
 ---
 # Khipu 
 
-[ Khipu][www] es un medio de pago que permite a tus compradores pagar **vía transferencia**; la **ventaja
-está** que al pasar ésta por medio de su[ aplicación móvil ][app] el Locatario _es avisado_ que el pago
+[ Khipu][www] es un medio de pago que permite a tus compradores pagar **vía transferencia bancaria**; la **ventaja
+está** en que al pasar ésta por medio de su[ aplicación móvil ][app] el locatario _es notificado_ de que el pago
 (transferencia) fue realizado con éxito, además de cerrarse el Pedido de forma automática en tu panel de
 control Bootic.
 
@@ -19,27 +19,27 @@ control Bootic.
 
 ### El costo
 
-Antes de implementar este medio de pago [revisa las tarifas][tarifas] del servicios.
+Antes de implementar este medio de pago [revisa las tarifas][tarifas] del servicio.
 
 ### Resumen del proceso 
 
 Para disponer de este medio de pago en tu tienda Bootic:
 
-1.  _Debes abrir_ una cuenta en [Khipu.com][www]. Y activarla. 
+1.  _Debes abrir_ una cuenta en [Khipu.com][www]. Y activarla — [#](#toc_3) 
 2. Deberás comprobar con ellos tu cuenta bancaria — realizando un pequeño depósito que te será
-   devuelto en 24 horas. 
-3. Aceptar los **Términos del Contrato**. 
+   devuelto en 24 horas — [#](#toc_4)
+3. Aceptar los **Términos del Contrato** — [#](#toc_5)
 4. Con el paso anterior listo podrás obtener **las credenciales de la API**. Esta última información _es la que necesita_ tu tienda
-   Bootic para ser configurada con este medio de pago.
-5. Activar Khipu en tu tienda Bootic
+   Bootic para ser configurada con este medio de pago — [#](#toc_6)
+5. Activar Khipu en tu tienda Bootic — [#](#toc_7)
 
-A continuación de detalle de los pasos:
+A continuación el detalle de los pasos7
 
 ## Paso 1: Formulario de registro y activación
 
 Anda a [ Khipu.com ][www] y busca el enlace «crear cuenta» — Figura 1. 
 
-Para finalizar el preceso de registro deberás <strong>confirmar tu correo</strong> revisando el mensaje que
+Para finalizar el proceso de registro deberás <strong>confirmar tu correo</strong> revisando el mensaje que
 te envía el sistema.
 
 <div class="captura">
