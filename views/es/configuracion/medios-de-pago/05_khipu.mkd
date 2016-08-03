@@ -12,8 +12,8 @@ control Bootic.
 
 <div class="note info">
   <p>
-    Para que Khipu sea útil para ti, locatario Bootic, el comprador <strong>debe</strong> tener instalada la aplicación en su
-    teléfono y usarla. Lo que ellos llaman «Transferencia simplificada».
+      Khipu representa una alternativa muy útil para el locatario Bootic <em>si el comprador</em> paga el
+      Pedido por medio de la opción que ellos llaman «Transferencia simplificada».
   </p>
 </div>
 
@@ -23,27 +23,155 @@ Antes de implementar este medio de pago [revisa las tarifas][tarifas] del servic
 
 ### Resumen del proceso 
 
-Para disponer de este medio de pago en tu tienda Bootic debes abrir una cuenta en [Khipu.com][www]. Además
-deberás comprobar con ellos tu cuenta corriente (o de ahorros) - realizando un pequeño depósito que te será
-devuelto en 24 horas. Luego deberás aceptar los **términos del contrato**.  Acto seguido podrás obtener las
-credenciales de la API. Esta última información es la que necesita tu tienda Bootic para ser configurada con
-este medio de pago.
+Para disponer de este medio de pago en tu tienda Bootic:
 
-## Paso: Formulario de registro
-## Paso: Confirmar registro - activar cuenta
-## Paso: Configurar cuenta
-## Paso: Integrar Khipu a tu sitio
+1.  _Debes abrir_ una cuenta en [Khipu.com][www]. Y activarla. 
+2. Deberás comprobar con ellos tu cuenta bancaria — realizando un pequeño depósito que te será
+   devuelto en 24 horas. 
+3. Aceptar los **Términos del Contrato**. 
+4. Con el paso anterior listo podrás obtener **las credenciales de la API**. Esta última información _es la que necesita_ tu tienda
+   Bootic para ser configurada con este medio de pago.
+5. Configurar tu tienda Bootic con Khipu
 
-https://khipu.com/page/api#llave-del-cobrador
+A continuación de detalle de los pasos:
+
+## Paso 1: Formulario de registro y activación
+
+Anda a [ Khipu.com ][www] y busca el enlace «crear cuenta» — Figura 1. 
+
+Para finalizar el preceso de registro deberás <strong>confirmar tu correo</strong> revisando el mensaje que
+te envía el sistema.
+
+<div class="captura">
+  <div class="c-contenido">
+      <img src="/img/admin/khipu_register.png">
+  </div>
+  <div class="c-pie"><strong>Figura 1</strong>: Formulario de registro Khipu</div>
+</div>
+
+Confirmado el correo llegarás a la pantalla de inicio Khipu — Figura 2.
+
+<div class="captura">
+  <div class="c-contenido">
+      <img src="/img/admin/khipu-pantalla_inicio.png">
+  </div>
+  <div class="c-pie"><strong>Figura 2</strong>: Pantalla de inicio luego de confirmar el registro</div>
+</div>
+
+Anda a tu nombre (menú lateral) y selecciona «Crear nueva cuenta de cobro» — Figura 3
+
+<div class="captura">
+  <div class="c-contenido">
+      <img src="/img/admin/khipu-crear-cuenta-de-cobro.png">
+  </div>
+  <div class="c-pie"><strong>Figura 3</strong>: Crear nueva cuenta de cobro</div>
+</div>
+
+Acá verás el listado de pasos para la creación de la cuenta de Cobro. Selecciona el país (Chile) - Figura 4
+
+<div class="captura">
+  <div class="c-contenido">
+      <img src="/img/admin/khipu-pasos-del-proceso.png">
+  </div>
+  <div class="c-pie"><strong>Figura 4</strong>: Pasos del proceso</div>
+</div>
+
+En el paso «Tipo de cuenta», asegúrate de seleccionar **Uso Comercial** - Figura 5
+
+<div class="captura">
+  <div class="c-contenido">
+      <img src="/img/admin/khipu-uso-comercial.png">
+  </div>
+  <div class="c-pie"><strong>Figura 5</strong>: Tipo de cuenta de cobro: Uso Comercial</div>
+</div>
+
+## Paso 2: Comprobando cuenta Bancaria
+
+Elige tu Banco. Para validar tu cuenta bancaria es necesario que deposites a Khipu $200 pesos. Te **serán devueltos
+pasadas 24 horas** - Figura 6 y 7.
+
+<div class="captura">
+  <div class="c-contenido">
+      <img src="/img/admin/khiou-deposito.png">
+  </div>
+  <div class="c-pie"><strong>Figura 6</strong>: Elegir Banco</div>
+</div>
+
+<div class="captura">
+  <div class="c-contenido">
+      <img src="/img/admin/khipu-banco-estado.png">
+  </div>
+  <div class="c-pie"><strong>Figura 7</strong>: Seleccionando Banco Estado y tipo de cuenta</div>
+</div>
 
 
-Crear cuenta
-Completar formulario
-Generar credenciales
-Configurar panel de Administración
+Para deportar a Khipu los $200 pesos de verificación de tu cuenta Bancaria te ofrecen dos alternativas - Figura 8.
 
-* ID Comprador
-* Llave secreta
+1. Por medio de **Transferencia simplificada**: Deberás descargar un programa y luego instalarlo en tu PC. Acto seguido podrás hacer la transferencia usando este software - Figura 9.
+2. La segunda alternativa es relizar una simple **Transferencia de fondos** desde tu Banco a la cuenta de Khipu - Figura 10.
+
+<div class="captura">
+  <div class="c-contenido">
+      <img src="/img/admin/khipu-verificar-cuenta-bancaria.png">
+  </div>
+  <div class="c-pie"><strong>Figura 8</strong>: Verificar cuenta bancaria - pago de $200</div>
+</div>
+
+<div class="captura">
+  <div class="c-contenido">
+      <img src="/img/admin/khipu-instalar-extension.png">
+  </div>
+  <div class="c-pie"><strong>Figura 9</strong>: Ventana modal de Transferencia simplificada para verificar cuenta corriente</div>
+</div>
+
+<div class="captura">
+  <div class="c-contenido">
+      <img src="/img/admin/khipu-transferencia-manual.png">
+  </div>
+  <div class="c-pie"><strong>Figura 10</strong>: Transferencia manual para verificar cuenta bancaria</div>
+</div>
+
+## Paso 3: Aceptando los términos del Contrato
+
+Una vez realizado confirmado el depósito deberás Aceptar los Términos del Contrato - Figura 11
+
+<div class="captura">
+  <div class="c-contenido">
+      <img src="/img/admin/khipu-contrato.png">
+  </div>
+  <div class="c-pie"><strong>Figura 11</strong>: Acetar términos de contrato</div>
+</div>
+
+Luego anda a **Opciones de Cuenta** - menú lateral - Figura 12.
+
+<div class="captura">
+  <div class="c-contenido">
+      <img src="/img/admin/khipu-opciones-de-cuenta.png">
+  </div>
+  <div class="c-pie"><strong>Figura 12</strong>: Opciones de la cuenta, bajar al final de la página</div>
+</div>
+
+## Paso 4: Credenciales API
+
+Al final de la página busca la sección **Para integrar khipu a tu sitio web** - Figura 13.
+
+<div class="captura">
+  <div class="c-contenido">
+      <img src="/img/admin/khipu-identificador.png">
+  </div>
+  <div class="c-pie"><strong>Figura 13</strong>: Información que necesita Bootic. Id de cobrador y Llave</div>
+</div>
+
+Con la información de paso 4 ingresa a tu panel de administración Bootic, anda a **Preferencias** `>` **Pago
+en línea** `>` Khipu. Completa la información para ID de cobrador y Llave pública. Presiona **Activo** y
+**Guardar** - Figura 14
+
+<div class="captura">
+  <div class="c-contenido">
+      <img src="/img/admin/khipu-activando-en-bootic.png">
+  </div>
+  <div class="c-pie"><strong>Figura 14</strong>: Activando khipu en Bootic</div>
+</div>
 
 [app]:https://khipu.com/page/app-terminal-de-pagos
 [tarifas]:https://khipu.com/page/precios
