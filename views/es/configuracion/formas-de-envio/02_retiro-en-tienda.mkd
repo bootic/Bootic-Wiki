@@ -61,5 +61,3 @@ Acá deben ingresar el Nombre y un Documento identificatorio solicitado para el 
         <strong>Figura 3</strong>: Checkout: pestaña Retirar en tienda
     </div>
 </div>
-
-[v1]: "Versión anterior del Retiro en Tienda"
