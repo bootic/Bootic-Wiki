@@ -1,0 +1,60 @@
+---
+:title: "Ofreciendo retiro en Tienda"
+:description: "Como ofrecer a tus clientes la posibilidad de retirar el producto en la tienda"
+:keywords: retirar, tienda, showroom, entrega, recoger, retiro
+---
+
+# Retirar un producto en la tienda física
+
+Una de las ventajas del comercio electrónico es que el producto _viaja_ hasta la puerta de su casa. Pero
+muchas veces el cliente quiere **retirar el producto en la tienda física** para abaratar costos o simple
+comodidad.
+
+<div class="note info">
+    <strong>Importante</strong>: Ofrecer la posibilidad de «Retirar en tienda» es una
+    política de cada comercio, el locatario Bootic deberá evaluar <strong>si la ofrece o no</strong> a sus clientes.
+</div>
+
+## Cómo activar el retiro en tienda
+
+En tu panel de administración Bootic anda a: **Preferencias** `>` **Pago en línea**. En la sección **Activar
+despachos** verás una sub-sección **Permitir opción de retiro en tienda** - Figura 1.
+
+<div class="captura">
+    <div class="c-contenido">
+        <img src="/img/configuracion/retiro_01.png" alt="Activando retiro en tienda" />
+    </div>
+    <div class="c-pie">
+        <strong>Figura 1</strong>: Activar retiro en tienda
+    </div>
+</div>
+
+Cuando el retiro en tienda _está activo_ puedes configurar la **dirección de tu tienda física** o el lugar
+donde tus clientes pueden retirar los productos que compren en tu tienda tienda virtual - Figura 2
+
+<div class="captura">
+    <div class="c-contenido">
+        <img src="/img/configuracion/retiro_02.png" alt="Configuración del retiro en tienda" />
+    </div>
+    <div class="c-pie">
+        <strong>Figura 2</strong>: Configuración del retiro en tienda
+    </div>
+</div>
+
+Eso finaliza la activación y configuración del retiro en tienda.
+
+## Lo que verán tus clientes
+
+Al momento de que tus clientes lleguen al checkout además de ver el formulario solicitando la dirección de
+envío del producto verán además una _pestaña_ "Retirar en tienda" - Figura 3. 
+
+Acá deben ingresar el Nombre y un Documento identificatorio solicitado para el retiro de la compra.
+
+<div class="captura">
+    <div class="c-contenido">
+        <img src="/img/configuracion/retiro_03.png" alt="Checkout retirar en tienda" />
+    </div>
+    <div class="c-pie">
+        <strong>Figura 3</strong>: Checkout: pestaña Retira en tienda
+    </div>
+</div>
