@@ -44,7 +44,7 @@ donde tus clientes pueden retirar los productos que compren en tu tienda tienda 
     </div>
 </div>
 
-Eso finaliza la activación y configuración del retiro en tienda.
+Para finalizar la activación y configuración del retiro en tienda _anda al final_ de la página y **presiona** el botón «Guardar»
 
 ## Lo que verán tus clientes
 
