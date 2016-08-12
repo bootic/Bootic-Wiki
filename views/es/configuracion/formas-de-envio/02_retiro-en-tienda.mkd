@@ -10,9 +10,12 @@ Una de las ventajas del comercio electrónico es que el producto _viaja_ hasta l
 muchas veces el cliente quiere **retirar el producto en la tienda física** para abaratar costos o simple
 comodidad.
 
+<div class="note warning">
+Si tu tienda tenía configurada la <a href="/es/configuracion/formas-de-envio/ret-descontinuado">versión anterior</a>  del "Retiro en tienda" debes quitarla antes de activar esta.
+</div>
+
 <div class="note info">
-    <strong>Importante</strong>: Ofrecer la posibilidad de «Retirar en tienda» es una
-    política de cada comercio, el locatario Bootic deberá evaluar <strong>si la ofrece o no</strong> a sus clientes.
+    Ofrecer la posibilidad de «Retirar en tienda» es una política de cada comercio, el locatario Bootic deberá evaluar <strong>si la ofrece o no</strong> a sus clientes.
 </div>
 
 ## Cómo activar el retiro en tienda
@@ -55,6 +58,8 @@ Acá deben ingresar el Nombre y un Documento identificatorio solicitado para el 
         <img src="/img/configuracion/retiro_03.png" alt="Checkout retirar en tienda" />
     </div>
     <div class="c-pie">
-        <strong>Figura 3</strong>: Checkout: pestaña Retira en tienda
+        <strong>Figura 3</strong>: Checkout: pestaña Retirar en tienda
     </div>
 </div>
+
+[v1]: "Versión anterior del Retiro en Tienda"
