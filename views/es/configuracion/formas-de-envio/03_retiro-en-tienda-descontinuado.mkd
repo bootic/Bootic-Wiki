@@ -1,7 +1,7 @@
 ---
 :title: "Ofreciendo retiro en Tienda"
 :description: "Como ofrecer a tus clientes la posibilidad de retirar el producto en la tienda"
-:keywords: retirar, tienda, showroom, entrega, recoger
+:keywords: retirar, tienda, showroom, entrega, recoger, descontinuado
 ---
 
 <div style="padding10px;text-align:center;border:3px dotted red">
