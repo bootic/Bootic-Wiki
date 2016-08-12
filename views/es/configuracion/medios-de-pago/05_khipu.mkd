@@ -33,7 +33,7 @@ Para disponer de este medio de pago en tu tienda Bootic:
    Bootic para ser configurada con este medio de pago — [#](#toc_6)
 5. Activar Khipu en tu tienda Bootic — [#](#toc_7)
 
-A continuación el detalle de los pasos7
+A continuación el detalle de los pasos:
 
 ## Paso 1: Formulario de registro y activación
 
