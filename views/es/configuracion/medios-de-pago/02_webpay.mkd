@@ -1,31 +1,43 @@
 ---
 :title: Cómo instalar Webpay plus en tu tienda 
 :description: "Configurar Webpay Plus como medio de pago para Chile"
-:keywords: pago, tarjeta, crédito, webpay, chile, checkout, carro, carrito, api key, certificacion
+:keywords: pago, tarjeta, débito, crédito, webpay, chile, checkout, carro, carrito, api, key, certificacion
 ---
 
 # Contratando y configurando Webpay Plus.
 
-¿Estás interesada(o) en ofrecer **Webpay Plus** en tu tienda Bootic como medio de pago?. En Bootic estamos integrados con Webpay Plus. Sin embargo, Transbank **exige** a cada nuevo comercio *firmar un contrato*, y a nivel técnico, cada tienda debe pasar por un Proceso de Certificación.
+¿Estás interesada(o) en ofrecer **Webpay Plus** en tu tienda Bootic como medio de pago?. En Bootic estamos
+integrados con Webpay Plus. Sin embargo, Transbank **exige** a cada nuevo comercio *firmar un contrato*,
+y a nivel técnico, cada tienda debe pasar por un Proceso de Certificación - Figura 1.
+
+El proceso para tener tu tienda Bootic con Webpay Plus KCC lo componen dos Etapas:
+
+* **Administrativa**: Papeleo legal que debe gestionar el locatario — [#](#toc_2)
+* **Técnica**: Bootic prepara la tienda y envía **evidencias** a Transbank para Certificar tienda — [#](#toc_6) 
+
+<div class="captura">
+  <div class="c-contenido">
+      <a target="_blank" href="/img/configuracion/bootic-webpay-plug-kcc-proceso-xl.png">
+       <img style="margin-bottom:20px" alt="Proceso webpay plus en Bootic" src="/img/configuracion/bootic-webpay-plug-kcc-proceso.png" />
+      </a>
+  </div>
+  <div class="c-pie"><strong>Figura 1</strong>: Proceso habilitación tienda Bootic con Webpay Plus KCC - Click para Zoom </div>
+</div>
 
 ## ¿Webpay o Webpay plus?
 
 Una primera aclaración: para el pago en línea (a través de internet), Transbank ofrece dos servicios:
 
-* **Webpay.cl**: *Es un botón de pago*, el cual llevará a tus clientes al sitio [webpay.cl][webpay]. Muy similar al servicio de Servipag (Portal de pagos). Esta opción no es óptima para tu tienda en línea dado que saca al usuario completamente del contexto de tu sitio. A pesar de no ser una alternativa muy _usable_ para el cliente visita nuestro artículo de [ cómo lograr implementarlo ](/es/tutoriales/webpay-punto-cl "Receta: Pagar usando plataforma de pago webpay.cl").
+* **Webpay.cl**: *Es un botón de pago*, el cual llevará a tus clientes al sitio [webpay.cl][webpay]. Muy
+  similar al servicio de Servipag (Portal de pagos). Esta opción no es óptima para tu tienda en línea dado que
+  saca al usuario completamente del contexto de tu sitio. A pesar de no ser una alternativa muy _usable_ para
+  el cliente, visita nuestro artículo de [cómo lograr implementarlo en Bootic](/es/tutoriales/webpay-punto-cl "Receta: Pagar usando plataforma de pago webpay.cl").
 
-* **Webpay Plus**: Es una **integración completa con tu tienda** que permite a tus usuarios crear carros de compra en tu tienda y pagarlos mediante tarjetas o Redcompra en Webpay; cuando contrates Webpay para tu tienda Bootic **asegúrate de contratar este servicio** y no el anterior.
+* **Webpay Plus**: Es una **integración completa con tu tienda** que permite a tus usuarios crear carros de
+  compra en tu tienda y pagarlos mediante tarjetas de crédito o débito; cuando contrates Webpay para tu tienda
+  Bootic **asegúrate de contratar este servicio** y no el anterior.
 
-<div class="note info">
-    <p>
-        <strong>Producto</strong>: Cuando contrates Webpay plus la opción es: «Kit Webpay Plus con autorización y captura simultánea».
-    </p>
-    <p>
-        <img src="/img/admin/wp_tipo_de_producto.png" />
-    </p>
-</div>
-
-## Información general:
+## Etapa Administrativa: Contratar el producto Webpay Plus en Transbank 
 
 ### Costos de contratar Webpay Plus
 
@@ -33,9 +45,16 @@ Una primera aclaración: para el pago en línea (a través de internet), Transba
 * 2.95 % + IVA por transacción con tarjeta de crédito
 * 1.79 % + IVA por transacción con tarjeta de débito
 
+<div class="note tip">
+  <p>Te recomendamos acelerar lo más posible la gestión en contratar el servicio en Transbank, dado que toma
+semanas su finalización.</p>
+</div>
+
 ### Boletas de garantía
 
-Actualmente, contratar Webpay Plus con pagos usando plásticos nacionales **no requiere** Boleta de garantía. No obstante lo anterior, si contratas Webpay Plus con pagos usando plásticos extranjeros requieres de una boleta de garantía de **CLP$1.500.000**.
+Actualmente, contratar Webpay Plus con pagos usando plásticos nacionales **no requiere** Boleta de garantía.
+No obstante lo anterior, si contratas Webpay Plus con pagos usando plásticos extranjeros requieres de una
+boleta de garantía de **CLP$1.500.000**.
 
 ### Documentación solicitada para generar el contrato:
 
@@ -46,98 +65,45 @@ Actualmente, contratar Webpay Plus con pagos usando plásticos nacionales **no r
 * Cédula de identidad del Representante legal.
 * Extracto Sociedad (fotocopia).
 
-## Contratando el servicio Webpay plus
+<div class="note info">
+  <p><strong>Producto</strong>: Cuando contrates Webpay plus la opción es: «Kit Webpay Plus con autorización y captura simultánea».</p>
+  <p><img src="/img/admin/wp_tipo_de_producto.png" /></p>
+</div>
 
-A continuación los pasos para contratar el servicio Webpay plus:
+Con todo lo anterior _en regla_ y _aceptando_ los costos del servicio ya puedes [ contratar el producto ][formulario] 
+en Transbank.cl. También puedes llamar a: 600 638 6380 ó 2 6612 700 desde celulares (horario 24/7).
 
-* Ir al sitio de transbank y [completar el formulario de solicitud de producto][formulario]. En un plazo de 48 horas te contactará un Ejecutivo Comercial para establecer las condiciones del contrato e iniciar el Proceso de Certificación de tu tienda Bootic.
-* Al momento de completar el formulario existe una sección donde debes completar la información del sitio web:
-  * URL: ***TIENDA*.bootic.net** (donde «TIENDA» es el subdominio Bootic elegido para tu tienda al momento de crearla) o bien la dirección final de tu tienda, ejm: <kbd>www.mitienda.cl</kbd>.
-  * Plataforma Tecnológica: **Linux 32 bits**.
-  * Solución de Comercio Electrónico: **Bootic.net**.
-  * Sistema de Seguridad: **SSL**.
-  * Empresa Configuradora: **Bootic.net**.
-  * Proveedor Servicio de Hosting: **Bootic.net**
+## Etapa Técnica: Lo que Bootic necesita de ti para finalizar el proceso
 
-## Lo que tu tienda debe tener antes del proceso 
+Finalizada la <a href="#toc_2">etapa administrativa</a> de contratar el servicio Webpay Plus (proceso que demora semanas) es el
+turno de los aspectos técnicos. 
 
-El proceso de certificación de transbank requiere que tu tienda tanga algunos
-elementos ya configurados — para acelerar el proceso **asegúrate de tener la
-siguiente lista OK**:
+Contratar Webpay plus finaliza con la **entrega del Código de Comercio**. El equipo de soporte Bootic se
+encargará de todo lo que resta del proceso, pero para asegurar la total fluidez de esta etapa **es preciso**
+que el Locatario:
 
-1. Tener **al menos 10** productos cargados
-2. Tener **al menos una** zona de despacho creada (<a href="/es/configuracion/formas-de-envio">¿cómo se crean?</a>)
-3. Dirección postal el pie de página.
-4. Tener una página con Política de Devoluciones y Reembolsos.
-5. Cuando una [orden][orden] es cerrada se le envía un mensaje al cliente, en ese mensaje debe ir también los enlaces a las políticas de Devolución y Reembolsos que creaste en el punto 4.
+1. Se **asegure** de tener un Código de Comercio activo y que además _corresponda_ al producto Webpay Plus. Es
+   común que se confunda este código con el asignado al Terminal POS físico. No hay ninguna relación entre ambos productos.
+2. La tienda Bootic **debe tener** una sección **pública** y **visiblemente** accesible con las _Políticas de
+   Devolución y Cambios_. Las tengas o no, esto es un requisito de Transbank.
+3. La tienda debe tener—al menos—1 producto.
+4. Enviarnos un logo al correo soporte _arroba_ bootic _punto_ net, de formato GIF, con dimensiones de 130x59, **exactos** - Figura 2.
+5. Completar y enviar el [formulario de inicio](http://goo.gl/forms/fmmx0Yx0sm) del proceso de Certificación Webpay Plus KCC.
 
-## Transbank envía correo con el KIT
-
-Luego recibirás por parte Transbank un correo electrónico con el asunto:
-
-> Integración de KIT WebPay – <strong>Nombre de tu Tienda</strong>.
-
-Aunque transbank te solicita que [descargues el Kit][descargarkit], esto no es necesario, pues ya tenemos instalado el Kit en nuestra plataforma. Junto con el Kit te envían dos documentos que debes completar y devolver adjuntos como respuesta al correo:
-
-1. Ficha de Certificación Webpay (FCW)
-2. Check list de cerficación (CLC)
-
-### Descarga los documentos desde Bootic 
-
-Para tu comodidad puedes descargar [la FCW][fcw] y [el CLS][cls] desde Bootic.net con la información técnica pre-completada (se debe terminar de completar antes de enviarla a transbank).
-
-## Completando la información solicitada por Transbank
-
-Debes completar estos documentos con la información solicitada. Además de la información referida a tu empresa debes proveer los siguientes datos técnicos:
-
-* Contacto técnico: **Tomás Pollak**
-* Teléfono: **+5629519519**
-* Email: **soporte@bootic.net**
-* Plataforma: **Bootic**
-* URL Pruebas: <kbd>http://<strong>TIENDA</strong>.bootic.info</kbd>
-* Página de Cierre: <kbd>http://checkout.bootic.info/webpay/<strong>TIENDA</strong>/check</kbd>
-* Datos de prueba: **Ninguno**
-
-Si utilizas los formularios bajados desde Bootic entonces solamente debe completar:
-
-* URL Pruebas: <kbd>http://<strong>TIENDA</strong>.bootic.info</kbd>
-* URL Página de Cierre: <kbd>http://checkout.bootic.info/webpay/<strong>TIENDA</strong>/check</kbd>
-
-Donde «TIENDA» es el subdominio que elegiste para tu tienda al momento de crearla.
-
-## Enviando la información solicitada a Transbank
-
-Al completar íntegramente **ambas fichas** (FCW y CLC) debes enviarlas vía correo electrónico al Ejecutivo de Soporte Transbank que te envió el correo con el Kit. **Importante**: envía tu respuesta con copia a [soporte@bootic.net][soporte]. Esto es muy importante pues al recibir este correo **debemos hacer algunos ajustes a tu tienda** para que los técnicos de Transbank realicen sus pruebas.
-
-## Se inicia formalmente el Proceso de Certificación
-
-Una vez enviada la ficha, comenzará la fase de certificación, que consta de dos etapas. Primero una «pre-certificación» donde gente de Transbank revisará que el sitio cumpla con todos los requerimientos formales, como que aparezca la dirección y los otros requisitos. Hecho esto, Transbank realizará la certificación técnica que consta de una serie de pruebas de seguridad para comprobar que la plataforma está protegida ante posibles ataques de terceros.
-
-En caso de que haya algun problema en esta fase, Transbank enviará un correo detallando los puntos que deben ser corregidos para poder ser certificados (por ejemplo, falta de información sobre problemas con productos defectuosos).
-
-### Transbank pedirá los archivo de log 
-
-Una vez realizada la certificación, Transbank enviará un correo solicitando los siguientes archivos:
-
-* Registro de eventos del KCC de Webpay (ejm: `TBK_EVN20120605.log`)
-* Bitácora de pagos del KCC (ejm: `tbk_bitacora_TR_NORMAL_0605.log`)
-* Archivo de configuración de la tienda (`tbk_config.dat`)
-* La programación de tu Página de Cierre (`check.rb`)
-
-<a name="logo"></a>**Estos archivos serán enviados por nosotros**. Una vez que los reciben, Transbank (después de unos días) manda un email que contiene el identificador de la tienda en Webpay, y un ZIP que contiene los archivos para generar las llaves de seguridad para el kit de la tienda.
-
-En respuesta a este correo, nosotros generamos las llaves y dejamos el Kit listo para la tienda en producción. Respondemos a Transbank enviándoles la llave pública resultante y opcionalmente, **el logo de la tienda** en formato 130x59 (GIF) para que lo pongan en el ambiente de pago Webpay plus — Figura 1.
+<div class="note tip">
+  <p><strong>«¿El diseño de mi tienda debe estar finalizado para contratar Webpay Plus?»</strong>: No, ambos eventos son paralelos.</p>
+</div>
 
 <div class="captura">
   <div class="c-contenido">
       <img src="/img/admin/logo-en-webpaycl.png">
   </div>
-  <div class="c-pie"><strong>Figura 1</strong>: Logo de la tienda cliente en ambiente de pago webpay plus (en el ejemplo de tienda romano.cl)</div>
+  <div class="c-pie"><strong>Figura 2</strong>: Logo de la tienda cliente en ambiente de pago webpay plus (en el ejemplo de tienda romano.cl)</div>
 </div>
 
-Una vez que reciben la llave pública y el logo finalmente **lo suben a producción**, lo que permite finalmente echar a andar el kit en Bootic producción.
-
-**Desde este momento** (y no antes) va a empezar a funcionar la redirección del usuario a la página de pago en Bootic producción, ya que el KCC requiere de que la llave pública esté instalada en Webpay. De lo contrario **mostrará un error con letras rojas** de que no se puede realizar la transacción.
+<div class="note info">
+<p>La etapa técnica puede tardar—en el mejor de los casos—un par de días y semanas en el peor.</p>
+</div>
 
 ## Tu tienda activa y funcionando con Webpay Plus 
 
@@ -145,8 +111,3 @@ Cuando todo esté listo, te enviaremos un email informándote que el pago con We
 
 [webpay]:http://www.webpay.cl "Sitio webpay"
 [formulario]:https://www.transbank.cl/transbank/afiliacion-webpay.jsp?menu=productos "Formulario de solicitud del webpay plus"
-[soporte]:mailto:soporte@bootic.net
-[descargarkit]:https://www.transbank.cl/public/documentacion/descarga-kits/kcc-linux32bits.rar "Descargar kit - archivos comprimidos"
-[orden]:/es/administracion/pedidos "Órdenes"
-[fcw]:/downloads/FichaCertificacionWebpayV6.docx.zip "Ficha de Certificación"
-[cls]:/downloads/Bootic_checklist.xlsx.zip "Checklist"
