@@ -1,0 +1,9 @@
+---
+:title: "Dominio Bootic"
+:description: "Qué es un dominio Bootic"
+:keywords: dominio, bootic, nombre, net 
+---
+
+# Qué es el dominio Bootic
+
+Bueno, dominio bootic es...
