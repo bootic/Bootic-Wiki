@@ -1,0 +1,23 @@
+---
+:title: "Dominio personalizado"
+:description: "Dirección propia"
+:keywords: dominio, bootic, nombre, personalizado
+---
+
+# Dominio personalizado
+
+El dominio personalizado (o dominio propio) es la dirección web que el Locatario ha elegido para su tienda
+Bootic.
+
+A diferencia del [ dominio Bootic ][dominiob] este nombre puede tener cualquier nombre y cualquier [TLD][tld],
+ejm: `solomarcas.cl`, `cafenegro.com`, `costurasema.net`, etc.
+
+Incluso un dominio personalizado **puede ser un subdominio**, como por ejemplo: `tienda.tacostacos.com`,
+`store.cafenegro.nl`.
+
+## Enlaces relacionados
+
+* [Configurando dominio propio en Bootic](/es/configuracion/dominio-propio)
+
+[tld]:https://es.wikipedia.org/wiki/Dominio_de_nivel_superior "Wikipedia (Enlace externo)"
+[dominiob]:/es/wiki/dominio-bootic
