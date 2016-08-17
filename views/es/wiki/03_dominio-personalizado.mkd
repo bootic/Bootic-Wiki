@@ -9,11 +9,18 @@
 El dominio personalizado (o dominio propio) es la dirección web que el Locatario ha elegido para su tienda
 Bootic.
 
-A diferencia del [ dominio Bootic ][dominiob] este nombre puede tener cualquier nombre y cualquier [TLD][tld],
-ejm: `solomarcas.cl`, `cafenegro.com`, `costurasema.net`, etc.
+A diferencia del [ dominio Bootic ][dominiob] éste puede tener cualquier nombre y cualquier [TLD][tld].
 
-Incluso un dominio personalizado **puede ser un subdominio**, como por ejemplo: `tienda.tacostacos.com`,
-`store.cafenegro.nl`.
+Ejemplos:
+
+* `solomarcas.cl` 
+* `cafenegro.com` 
+* `costurasema.net`
+
+Incluso un dominio personalizado **puede ser un subdominio**, como por ejemplo: 
+
+* `tienda.tacostacos.com`
+* `store.cafenegro.nl`
 
 ## Enlaces relacionados
 
