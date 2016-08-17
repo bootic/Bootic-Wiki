@@ -446,3 +446,8 @@ Show big version only on homepage
 }
 .msg-tpl {border:3px dashed #22D7CC;padding:10px}
 .msg-tpl p {font-size:14px !important}
+
+/* ocultar el menú lateral para la seccion /wiki */
+body[class^='es_wiki'] #sidebar {
+  display:none;
+}
