@@ -448,6 +448,6 @@ Show big version only on homepage
 .msg-tpl p {font-size:14px !important}
 
 /* ocultar el menú lateral para la seccion /wiki */
-body[class^='es_wiki'] #sidebar {
+body[class^='es_general'] #sidebar {
   display:none;
 }

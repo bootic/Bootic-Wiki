@@ -181,7 +181,7 @@ function arrow (how_much) {
   //  })
 
   // ocultar menú lateral para la seccion /wiki
-  $('body[class^=es_wiki]').each(function(){
+  $('body[class^=es_general]').each(function(){
       $('#sidebar').remove();
       $('#content').toggleClass('span9 span10');
   });
