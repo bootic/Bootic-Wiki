@@ -27,4 +27,4 @@ Incluso un dominio personalizado **puede ser un subdominio**, como por ejemplo:
 * [Configurando dominio propio en Bootic](/es/configuracion/dominio-propio)
 
 [tld]:https://es.wikipedia.org/wiki/Dominio_de_nivel_superior "Wikipedia (Enlace externo)"
-[dominiob]:/es/wiki/dominio-bootic
+[dominiob]:/es/general/dominio-bootic

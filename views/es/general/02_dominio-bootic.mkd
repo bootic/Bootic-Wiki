@@ -29,4 +29,4 @@ dominio Bootic.
 
 * [Configurando dominio propio en Bootic](/es/configuracion/dominio-propio)
 
-[dominio]:/es/wiki/dominio-personalizado
+[dominio]:/es/general/dominio-personalizado
