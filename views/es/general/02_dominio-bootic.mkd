@@ -1,0 +1,32 @@
+---
+:title: "Dominio Bootic"
+:description: "Qué es el dominio Bootic"
+:keywords: dominio, bootic, nombre, net 
+---
+
+# Dominio Bootic
+
+El dominio Bootic finaliza en `bootic.net`. Es la **dirección única** de tu tienda. 
+
+Esta dirección _no cambia_. Incluso si la tienda tuviese un [dominio personalizado][dominio] el dominio Bootic permanece inalterable.
+
+Ejemplos de dominios Bootic:
+
+* `cafenegro.bootic.net`
+* `tacostacos.bootic.net`
+* `tejidosema.bootic.net`
+
+Es importante que reconozcas y agregues a tus favoritos el dominio Bootic porque por medio de él puedes acceder
+al Panel de Control de tu tienda, ejemplo: `cafenegro.bootic.net/admin`.
+
+## Problemas con el dominio personalizado
+
+Muchas veces _pueden_ existir problemas con tu dominio personalizado, si esto ocurre la tienda no **será
+accesible** públicamente, pero aun así **puedes acceder** al Panel de Control agregando `/admin` al final del
+dominio Bootic.
+
+## Enlaces relacionados
+
+* [Configurando dominio propio en Bootic](/es/configuracion/dominio-propio)
+
+[dominio]:/es/general/dominio-personalizado

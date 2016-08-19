@@ -1,0 +1,7 @@
+---
+:title: "Wiki"
+:description: "Wiki Wiki"
+:keywords: personalización, Wiki
+:sitemap_priority: 1.0
+---
+

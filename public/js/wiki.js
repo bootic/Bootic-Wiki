@@ -180,4 +180,10 @@ function arrow (how_much) {
   //    $(this).parent().addClass('current').parents('li').addClass('current');
   //  })
 
+  // ocultar menú lateral para la seccion /wiki
+  $('body[class^=es_general]').each(function(){
+      $('#sidebar').remove();
+      $('#content').toggleClass('span9 span10');
+  });
+
 })()
