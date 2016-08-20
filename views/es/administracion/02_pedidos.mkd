@@ -24,7 +24,7 @@ acceder a ellos debes ir a la sección Pedidos — Figura 1.
 
 4. **Búsqueda por código**: El código es el **ID** del listado de pedidos (2da columna).
 5. **Filtro por estado**: Los estados son:
-    * <strong>Todas</strong>: listará todos las Pedidos.
+    * <strong>Todas</strong>: listará todos los Pedidos.
     * <strong class="label-order label-pending">Pendientes</strong>: a la espera del pago. 
     * <strong class="label-order label-invalid">Anuladas</strong>: nulo.
     * <strong class="label-order label-successful">Exitosas</strong>: cerrados y despachados.
