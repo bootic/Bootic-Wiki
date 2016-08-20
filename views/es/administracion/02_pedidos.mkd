@@ -4,25 +4,34 @@
 :keywords: órdenes, compra, ot, orden compra, pedido, pedidos
 ---
 
-# ¿Qué son y cómo funcionan los pedidos?
+# Pedidos
 
-Los **Pedidos** son la base del proceso de transacción en Bootic. Una vez que tu cliente agrega los
-productos a su carro de compras, tiene la opción de comprarlos, para lo cual se le pedirán algunos
-datos (como mínimo su nombre, email y teléfono) y entonces quedará guardado el pedido con toda la
-información.
-
-En caso de que tengas activado al menos una forma de pago en línea, el usuario podrá entonces pagar
-el pedido de forma inmediata, eligiendo uno de los métodos de pago que tengas activado en tu tienda.
-
-Cuanto el cliente realiza una compra en tu tienda Bootic, ésta se registra en tu panel de
-administración como un Pedido; para acceder a dichos pedidos debes ir al menú «Pedidos» — Figura 1.
+Un **Pedido** es una petición de compra de _uno o más productos_ que un cliente hace en tu tienda. Para
+acceder a ellos debes ir a la sección Pedidos — Figura 1.
 
 <div class="captura">
   <div class="c-contenido">
-      <img src="/img/admin/pedido-menu.png">
+      <img src="/img/admin/pedidos-home.png">
   </div>
-  <div class="c-pie"><strong>Figura 1</strong>: Menú Pedidos</div>
+  <div class="c-pie"><strong>Figura 1</strong>: sección Pedidos</div>
 </div>
+
+1. **Filtro fecha**: Filtra la vista actual por mes y año.
+2. **Gráfico**: Por cantidad o conversiones (los colores se relacionan con los estados).
+3. **Listado**: Enumeración de pedidos, el primero de la lista es el más recientemente actualizado.
+    - Haciendo clic en el ID del pedido podrás **ver el detalle** de la misma.
+    - Haciendo clic en el Nombre del cliente podrás ver el **historial de Pedidos** de ese cliente (basado en su correo).
+
+4. **Búsqueda por código**: El código es el **ID** del listado de pedidos (2da columna).
+5. **Filtro por estado**: Los estados son:
+    * <strong>Todas</strong>: listará todos las Pedidos.
+    * <strong class="label-order label-pending">Pendientes</strong>: a la espera del pago. 
+    * <strong class="label-order label-invalid">Anuladas</strong>: nulo.
+    * <strong class="label-order label-successful">Exitosas</strong>: cerrados y despachados.
+    * <strong class="label-order label-closed">Cerradas</strong>: recibió el pago. 
+    * <strong class="label-order label-shipped">Despachados</strong>: el pedido se envió al cliente. 
+ 
+6. **Exportación**: Permite exportar los pedidos por año y mes a formato CSV
 
 ## Ciclo de la compra y despacho de un producto
 
@@ -33,15 +42,18 @@ ilustración que refleja el ciclo de compra y despacho de un producto — Figura
   <div class="c-contenido">
       <a rel="fancybox" href="/img/admin/orders-ciclo-big.png"><img src="/img/admin/orders-ciclo-th.png"></a>
   </div>
-  <div class="c-pie"><strong>Figura 2</strong>: Ciclo de compra y despacho de un
-producto</div>
+  <div class="c-pie"><strong>Figura 2</strong>: Ciclo de compra y despacho de un producto</div>
 </div>
 
 En el **punto 6** de la gráfica se genera el Pedido, tanto el cliente como el locatario recibirán un
 correo electrónico, además de verla en su panel de administración.
 
 <div class="note info">
-En el caso de que se haya seleccionado como medio de pago Webpay <strong>el Pedido pasará a estado
-Cerrado automáticamente</strong> y un email de notificación <em>será enviado</em> tanto al Comprador como al
-Administrador de la tienda.
+  <p>Los siguientes Medios de pago no Cerrarán (verde) el pedido automáticamente:</p>
+  <ul>
+    <li>Tranferencia bancaria</li>
+    <li>Paypal</li>
+    <li>Medio de pago personalizado</li>
+  </ul>
+  <p>El locatario <em>manualmente</em> deberá cambiar el estado cuando este reciba el pago</p>
 </div>

@@ -452,3 +452,10 @@ Show big version only on homepage
 body[class^='es_general'] #sidebar {
   display:none;
 }
+
+.label-order {color:white;padding:3px;border-radius:5px}
+.label-pending {background-color:#fc0}
+.label-invalid {background-color:#d74815}
+.label-closed{background-color:#aecf47}
+.label-shipped{background-color:#008AB1}
+.label-successful {background-color:#53D4B2 }
