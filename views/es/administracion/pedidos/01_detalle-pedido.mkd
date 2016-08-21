@@ -1,0 +1,24 @@
+---
+:title: Detalle del pedido 
+:description: "Contenido del un pedido"
+:keywords: pedido, pagos, gestión, venta, despachar, pendiente, cerrada
+---
+
+# Detalle de un pedido
+
+El detalle de un pedido muestra la siguiente información — Figura 1.
+
+<div class="captura">
+  <div class="c-contenido">
+      <img src="/img/admin/vista-pedido.png">
+  </div>
+  <div class="c-pie"><strong>Figura 1</strong>: Vista de un pedido (Pendiente)</div>
+</div>
+
+1. **Número**: Identidad del pedido, es único.
+2. **Mapa**: Lugar geográfico donde el pedido será despachado.
+3. **Listado de productos**: Un pedido puede contener uno o más productos.
+4. **Detalles**: del cliente, del pedido e información adicional. 
+5. **Estado**: Sección donde es posible cambiar el estado.
+6. **Actividad**: Cuando fue creado, cuando fue cerrado, etc.
+
