@@ -19,7 +19,7 @@ acceder a ellos debes ir a la sección Pedidos — Figura 1.
 1. **Filtro fecha**: Filtra la vista actual por mes y año.
 2. **Gráfico**: Por cantidad o conversiones (los colores se relacionan con los estados).
 3. **Listado**: Enumeración de pedidos, el primero de la lista es el más recientemente actualizado.
-    - Haciendo clic en el ID del pedido podrás **ver el detalle** de la misma.
+    - Haciendo clic en el ID del pedido podrás **[ ver el detalle ](/es/administracion/pedidos/detalle-pedido)** del mismo.
     - Haciendo clic en el Nombre del cliente podrás ver el **historial de Pedidos** de ese cliente (basado en su correo).
 
 4. **Búsqueda por código**: El código es el **ID** del listado de pedidos (2da columna).
