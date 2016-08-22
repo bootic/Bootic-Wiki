@@ -9,22 +9,22 @@
 
 # ¿Cómo se paga el fee mensual de Bootic? ¿Se recibe algún comprobante?
 
-Para el pago del __fee__ (costo) mensual por el uso de Bootic es necesario
-generar una suscripción de pago, donde **mes a mes** se descuenta de tu tarjeta
-de crédito el valor del [plan seleccionado][1].
+Para el pago del __fee__ (costo) mensual por el uso de Bootic es necesario generar una [suscripción de pago][sus],
+donde **mes a mes** se descuenta de tu tarjeta de crédito el valor del [plan seleccionado][1].
 
-Como medio de pago utilizamos [RBS WorldPay][2]. Sus oficinas centrales se
-encuentran en el Reino Unido, por este motivo **no entregamos una factura**, pero
-mes a mes se genera un _Invoice_ (tipo de factura) que llega vía mail.
+Como medio de pago utilizamos [RBS WorldPay][2]. Sus oficinas centrales se encuentran en el Reino Unido, por
+este motivo **no entregamos una factura**, pero mes a mes se genera un _Invoice_ (tipo de factura) que llega
+vía mail.
 
-Pese a que es del extranjero, es **perfectamente posible ingresarlos** a la
-contabilidad, tal como lo harías con otros servicios por Internet (SalesForce,
-Google Apps, hosting, etc).  De esta forma se puede justificar como un gasto.
-
- [1]:http://www.bootic.net/pages/planes
- [2]:http://www.worldpay.com/
+Pese a que es del extranjero, es **perfectamente posible ingresarlos** a la contabilidad, tal como lo harías
+con otros servicios por Internet (SalesForce, Google Apps, hosting, etc).  De esta forma se puede justificar
+como un gasto.
 
 ## Temas relacionados:
 
 * [Cómo elegir plan y pagar tu tienda Bootic](/es/administracion/cuenta/cambiar-plan)
 * [Cómo cambiar la información de la tarjeta de crédito](/es/administracion/cuenta/cambiar_tcredito)
+
+[sus]:/es/administracion/cuenta/cambiar-plan
+[1]:http://www.bootic.net/pages/planes
+[2]:http://www.worldpay.com/
