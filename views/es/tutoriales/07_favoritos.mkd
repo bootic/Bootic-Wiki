@@ -76,7 +76,7 @@ Para crear los otros enlaces —Pedidos (todos), pendientes, confirmados y despa
   <div class="c-contenido">
       <img src="/img/tutoriales/fav-todos.png">
   </div>
-  <div class="c-pie"><strong>Figura 4</strong>: Agregando el resto de los enlaces</div>
+  <div class="c-pie"><strong>Figura 5</strong>: Agregando el resto de los enlaces</div>
 </div>
 
 <div class="note tip">
