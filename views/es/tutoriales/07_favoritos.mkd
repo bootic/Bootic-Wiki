@@ -1,0 +1,89 @@
+---
+:title: Favoritos
+:description: "Usando los favoritos de tu navegador web"
+:keywords: favoritos, fav, bookmarks, chrome, tutorial
+---
+
+# Favoritos
+
+Tu navegador _de cabecera_ (y todos los navegadores) tienen una opción de **Favoritos** (también llamados
+«Marcadores»). Los favoritos son enlaces que puedes guardar y así tener un acceso más rápido a las páginas que
+frecuentas - Figura 1. En el video puedes ver el ejemplo «en vivo».
+
+A continuación te enseñamos a _crear favoritos_ para el navegador [Google Chrome](https://www.google.com/chrome/browser/desktop/).
+
+
+<div class="captura">
+  <div class="c-contenido">
+      <img src="/img/tutoriales/favoritos.png">
+  </div>
+  <div class="c-pie"><strong>Figura 1</strong>: Ejemplo de Favoritos para una tienda Bootic</div>
+</div>
+
+<iframe width="640" height="360" src="https://www.youtube.com/embed/VQkv1YuDpAA" frameborder="0"
+allowfullscreen></iframe>
+
+## Paso 1: Mostrar la barra de favoritos
+
+En Google Chrome para Windows y Linux presiona las teclas: **Ctrl + Shift + b**. Si usas Mac presiona **⌘
++ Shift + b**. Con ello podrás ver la barra de Favoritos (o bien ocultarla si es que ya la tienes visible)
+  — Figura 2.
+
+<div class="captura">
+  <div class="c-contenido">
+      <img src="/img/tutoriales/favoritos-mostrar.png">
+  </div>
+  <div class="c-pie"><strong>Figura 2</strong>: Mostrar la barra de favoritos</div>
+</div>
+
+## Paso 2: Agregar una carpeta
+
+Con el mouse te paras sobre la _barra de favoritos_ y le das clic al botón derecho > Añadir Carpeta, ponle como
+nombre **Tienda**, clic en Añadir. Con la carpeta creada ahora le agregaremos nuestros enlaces favoritos
+- Figura 3
+
+<div class="captura">
+  <div class="c-contenido">
+      <img src="/img/tutoriales/fav-agrega-carpeta.png">
+  </div>
+  <div class="c-pie"><strong>Figura 3</strong>: Creando carpeta Tienda </div>
+</div>
+
+## Paso 3: Agregar un enlace
+
+1. Anda al administrador de tu tienda bootic (ejm: <kbd>acme.bootic.net/admin</kbd>). Porque es este el enlace
+   que quieres dejar como Favorito.
+2. Estando ahí dale clic a la estrella que aparece al final de la dirección.
+3. Ingresa un nombre, para nuestro ejemplo pondremos **Admin**.
+4. En Carpeta selecciona **Tienda**.
+5. Clic en Listo.
+
+Con los 5 pasos anteriores deberías tener tu favorito de nombre _Admin_ apuntando al administrador
+de tu tienda, todo esto dentro de la Carpeta _Tienda_ - Figura 4.
+
+<div class="captura">
+  <div class="c-contenido">
+      <img src="/img/tutoriales/fav-agrega-link1.png">
+      <img src="/img/tutoriales/fav-agrega-link2.png">
+  </div>
+  <div class="c-pie"><strong>Figura 4</strong>: Agregando favorito Admin </div>
+</div>
+
+Para crear los otros enlaces —Pedidos (todos), pendientes, confirmados y despachados— los pasos son los mismos
+(clic en la estrella, nombre del favorito, en qué carpeta, Listo) - Figura 5.
+
+<div class="captura">
+  <div class="c-contenido">
+      <img src="/img/tutoriales/fav-todos.png">
+  </div>
+  <div class="c-pie"><strong>Figura 5</strong>: Agregando el resto de los enlaces</div>
+</div>
+
+<div class="note tip">
+  <p>
+    Puedes crear un favorito que te muestre todos los pedidos para un mes y año en particular. ¿Cómo?: anda al
+    Admin de tu tienda, en los filtros selecciona <em>Agosto</em>, en año pon <em>2016</em>, clic en
+    "Cambiar". Ahora simplemente le das clic a la estrella y lo agregas a tus favoritos con el nombre «Pedidos
+    agosto 2016».
+  </p>
+</div>
