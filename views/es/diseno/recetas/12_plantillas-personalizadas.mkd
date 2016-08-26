@@ -39,6 +39,10 @@ En la **Figura 1** puedes ver un ejemplo ([fuente][fuente]) de plantilla para la
     	<td><kbd>/types/{product_type_slug}</kbd></td>
     </tr>
     <tr>
+    	<td><kbd>vendor-{vendor_slug}.html </kbd></td>
+    	<td><kbd>/vendors/{vendor_slug}</kbd></td>
+    </tr>
+    <tr>
     	<td><kbd>form-{form_slug}.html </kbd></td>
     	<td><kbd>/forms/{form_slug}</kbd> </td>
     </tr>
