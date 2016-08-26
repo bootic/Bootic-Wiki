@@ -11,6 +11,7 @@ Al igual que en [ Wordpress ][wppt] en Bootic es posible crear plantillas person
 - Un producto.
 - Una colección.
 - Un tipo de producto.
+- Una marca.
 - Un formulario.
 - Una página.
 
