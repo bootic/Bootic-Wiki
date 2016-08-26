@@ -1,0 +1,38 @@
+---
+:title: Plantillas personalizadas
+:description: plantillas para un recurso en específico
+:keywords: plantilla, custom, template, colección, tipo producto, post, formulario
+---
+
+# Plantillas personalizadas
+
+Al igual que en [ Wordpress ][wppt] en Bootic es posible crear plantillas personalizadas de:
+
+- Un producto.
+- Una colección.
+- Un tipo de producto.
+- Un formulario.
+- Una página.
+
+En la **Figura 1** puedes ver un ejemplo ([ fuente ][fuente]) de plantilla para la colección de slug «popular».
+
+La regla es (nombre de la plantilla, URL pública):
+
+<pre>
+product-{product_slug}.html       -> /products/{product_slug}
+collection-{collection_slug}.html -> /collections/{collection_slug}
+type-{product_type_slug}.html     -> /types/{product_type_slug}
+form-{form_slug}.html             -> /forms/{form_slug}
+page-{page_slug}.html             -> /pages/{pages_slug}
+</pre>
+
+<div class="captura">
+  <div class="c-contenido">
+       <img alt="" src="/img/diseno/recetas/collection-popular.png" />
+  </div>
+  <div class="c-pie"><strong>Figura 1</strong>: Ejemplo de una plantillas personalizada: colección popular</div>
+</div>
+
+
+[wppt]:https://codex.wordpress.org/Post_Type_Templates
+[fuente]:https://gist.github.com/juque/ee32abf66f3cb9682b2b547a8d4c4e5b
