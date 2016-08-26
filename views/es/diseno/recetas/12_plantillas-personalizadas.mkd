@@ -17,6 +17,13 @@ Al igual que en [ Wordpress ][wppt] en Bootic es posible crear plantillas person
 
 En la **Figura 1** puedes ver un ejemplo ([fuente][fuente]) de plantilla para la colección de slug «popular».
 
+<div class="captura">
+  <div class="c-contenido">
+       <img alt="" src="/img/diseno/recetas/collection-popular.png" />
+  </div>
+  <div class="c-pie"><strong>Figura 1</strong>: Ejemplo de una plantillas personalizada: colección popular</div>
+</div>
+
 ## Regla de asociación
 
 <table class="table">
