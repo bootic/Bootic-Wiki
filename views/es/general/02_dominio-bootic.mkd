@@ -16,7 +16,7 @@ Ejemplos de dominios Bootic:
 * `tacostacos.bootic.net`
 * `tejidosema.bootic.net`
 
-Es importante que reconozcas y agregues a tus favoritos el dominio Bootic porque por medio de él puedes acceder
+Es importante que reconozcas y agregues a [tus favoritos][1] el dominio Bootic porque por medio de él puedes acceder
 al Panel de Control de tu tienda, ejemplo: `cafenegro.bootic.net/admin`.
 
 ## Problemas con el dominio personalizado
@@ -30,3 +30,4 @@ dominio Bootic.
 * [Configurando dominio propio en Bootic](/es/configuracion/dominio-propio)
 
 [dominio]:/es/general/dominio-personalizado
+[1]:/es/tutoriales/favoritos
