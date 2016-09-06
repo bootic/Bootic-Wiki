@@ -10,7 +10,7 @@
 
 <h3 id="galerias">Galería de imágenes de productos</h3>
 
-Los "banners" o imágenes rotativas de productos pueden ser resueltos utilizando [las galerías](/es/administracion/galerias).
+Los "banners" o imágenes rotativas de productos pueden ser resueltos utilizando [las galerías](/es/administracion/contenido/galerias).
 
 <img src="<%= img('/img/themes/the_stage.png').thumb('640x').url %>" alt="The stage" />
 
