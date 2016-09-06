@@ -1,27 +1,44 @@
 ---
 :title: Páginas y Formularios
 :description: Formularios de contacto para recibir consultas de tus clientes.
-:keywords: formulario, contacto, página, contenido, estático
+:keywords: formulario, contacto, página, contenido, estático, page, form
 ---
 
 # Páginas y Formularios
+
+## Páginas
+
+Las páginas son secciones de contenido fijo y que siempre son aplicables. Un _ejemplo clásico de página_ es la sección «Acerca», otro ejemplo puede ser una página de «Politicas de Devolución y Reembolso».
+
+<div class="captura">
+  <div class="c-contenido">
+      <img src="/img/admin/paginas_y_formularios.png">
+  </div>
+  <div class="c-pie"><strong>Figura 1</strong>: sección Páginas y Formularios</div>
+</div>
 
 ## Formularios de contacto
 
 En Bootic, los formularios de contacto son páginas que además incluyen los campos necesarios para que tus clientes te envíen consultas. Es decir, un formulario tiene un título y un cuerpo (ej. "Contacto" y "Estamos esperando que nos escribas!", por ejemplo), y además los campos que se configuran en el panel.
 
-## Campos de un formulario
+### Campos de un formulario
 
-Por defecto, todos los formularios tienen al menos los campos Nombre, Email y Empresa. Tú puedes, además, agregar los campos que quieras y definir si quieres que sean campos opcionales o requeridos. Normalmente, para un formulario de contacto tendrías un campo adicional llamado "Mensaje" de tipo "Texto largo". Los tipos de campo disponibles son:
+Por defecto, todos los formularios tienen al menos los campos Nombre, Email y Teléfono. Tú puedes, además, agregar los campos que quieras y definir si quieres que sean campos opcionales o requeridos. Normalmente, para un formulario de contacto tendrías un campo adicional llamado "Mensaje" de tipo "Texto largo".
 
- - Texto corto: Por ejemplo para que añadan la dirección o nacionalidad. Datos cortos.
- - Texto largo: Para respuestas más largas, como por ejemplo "Mensaje" o "Comentario".
- - Número: Para números de teléfonos, códigos, cualquier dato que no contenga letras.
- - Si/No: Para respuestas si/no, por ejemplo "He comprado antes en esta tienda".
+Los tipos de campo disponibles son:
 
-## Destinatarios
+ - **Texto corto**: Por ejemplo para que añadan la dirección o nacionalidad. Datos cortos.
+ - **Texto largo**: Para respuestas más largas, como por ejemplo "Mensaje" o "Comentario".
+ - **Email**: Correo electrónico.
+ - **Rut (Chileno)**: Identificador de persona para Chile.
+ - **Número**: Para números de teléfonos, códigos, cualquier dato que no contenga letras.
+ - **Sí/No**: Para respuestas si/no, por ejemplo "He comprado antes en esta tienda".
+ - **Campo de selección**: Define un grupo de alternativas. Ejemplo: "Cómo nos conoció": Facebook, Twitter, Web.
+
+### Destinatarios
 
 Una vez definidos los campos de un formulario, el último paso es definir el o los destinatarios que recibirán los correos cuando se envíe un formulario. Por defecto Bootic muestra el o los usuarios asociados a la tienda para que los agregues como destinatarios, haciendo click sobre su(s) nombre(s), pero tú puedes poner cualquier nombre y casilla que quieras.
 
 <div class="note tip">
-Si un formulario no posee ningún destinatario, los datos no se enviarán a ninguna parte, así que asegúrate de agregar al menos un destinatario y probar que los emails lleguen sin problemas.</div>
+<p>Si un formulario no posee ningún destinatario, los datos no se enviarán a ninguna parte, así que asegúrate de agregar al menos un destinatario y probar que los emails lleguen sin problemas.</p>
+</div>
