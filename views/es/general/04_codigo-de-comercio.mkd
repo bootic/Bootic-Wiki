@@ -1,0 +1,18 @@
+---
+:title: "Código de Comercio"
+:description: "Producto Transbank"
+:keywords: codigo, comercio, codigo de comercio, transbank, certificacion
+---
+
+# Código de Comercio 
+
+Es un número de la forma <kbd>31789402</kbd> que es _proporcionado_ por la empresa [Transbank](http://www.transbank.cl).
+Se otorga a las empresas que **han formalizado** el contrato de alguno de sus productos: por ejemplo [Webpay Plus
+KCC](/es/configuracion/medios-de-pago/webpay).
+
+Es requisito fundamental poseer un Código de Comercio activado si el locatario Bootic desea habilitar el medio de pago Webpay
+Plus KCC.
+
+## ¿Dónde se obtiene?
+
+En [Transbank](http://www.transbank.cl). Mesa de ayuda: 800 441 144 o desde celulares: +56 2 2661 2705.

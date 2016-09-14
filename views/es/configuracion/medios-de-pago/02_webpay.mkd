@@ -78,11 +78,11 @@ en Transbank.cl. También puedes llamar a: 600 638 6380 ó 2 6612 700 desde celu
 Finalizada la <a href="#toc_2">etapa administrativa</a> de contratar el servicio Webpay Plus (proceso que demora semanas) es el
 turno de los aspectos técnicos. 
 
-Contratar Webpay plus finaliza con la **entrega del Código de Comercio**. El equipo de soporte Bootic se
+Contratar Webpay plus finaliza con la **entrega del [Código de Comercio](/es/general/codigo-de-comercio)**. El equipo de soporte Bootic se
 encargará de todo lo que resta del proceso, pero para asegurar la total fluidez de esta etapa **es preciso**
 que el Locatario:
 
-1. Se **asegure** de tener un Código de Comercio activo y que además _corresponda_ al producto Webpay Plus. Es
+1. Se **asegure** de tener un [Código de Comercio](/es/general/codigo-de-comercio) activo y que además _corresponda_ al producto Webpay Plus. Es
    común que se confunda este código con el asignado al Terminal POS físico. No hay ninguna relación entre ambos productos.
 2. La tienda Bootic **debe tener** una sección **pública** y **visiblemente** accesible con las _Políticas de
    Devolución y Cambios_. Las tengas o no, esto es un requisito de Transbank.
