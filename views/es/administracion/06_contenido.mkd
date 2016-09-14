@@ -1,7 +1,7 @@
 ---
 :title: Contenido
-:description: 
-:keywords: 
+:description: "Secciones de apoyo a la tienda: Noticias, Páginas, Galerías, Menus"
+:keywords: contenido, noticias, galeria, menus
 ---
 
 # Contenido
