@@ -40,7 +40,7 @@ Asumiendo que tu tienda Bootic (`TIENDA.bootic.net`) debe tener URL personalizad
 
 1. Anda al panel de administración de DNS de tu proveedor (en la gran mayoría esta herramiento puede ser [cPanel][cpanel]).
 2. Crea un registro de tipo CNAME de nombre `www` que debes ser apuntado a `proxy.bootic.net`. 
-3. **Espera unas horas** (los cambios de DNS tardan horas en propagarse por internet). Cuando tu dominio `www.mitienda.com` muestre una página Bootc, significa que el dominio ya está *apuntado* a nuestros servidores.
+3. **Espera unas horas** (los cambios de DNS tardan horas en propagarse por internet). Cuando tu dominio `www.mitienda.com` muestre una página Bootic, significa que el dominio ya está *apuntado* a nuestros servidores.
 4. Entra a tu administrador Bootic, navega hasta las **Preferencias** y edita el campo «Dirección URL» con `www.mitienda.com`. Guarda el cambio.
 5. Eso es todo. Ahora la dirección `www.mitienda.com` debiera mostrarte tu tienda Bootic - Figura 1.
 
