@@ -1,7 +1,7 @@
 ---
 :title: Páginas y Formularios
 :description: Formularios de contacto para recibir consultas de tus clientes.
-:keywords: formulario, contacto, página, contenido, estático, page, form
+:keywords: formulario, contacto, página, contenido, estático, page, form, página
 ---
 
 # Páginas y Formularios
