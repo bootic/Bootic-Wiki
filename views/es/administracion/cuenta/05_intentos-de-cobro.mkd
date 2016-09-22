@@ -10,10 +10,10 @@
 # Intentos de cobro
 
 El pago mensual de tu plan Bootic **se carga a tu tarjeta de crédito** y este cobro es gestionado por la empresa
-[WorldPay](http://www.worldpay.com/), la cual tiene sus oficina centrales en el Reino Unido.
+[WorldPay](http://www.worldpay.com/), la cual tiene sus oficinas centrales en el Reino Unido.
 
 Cuando te suscribes a uno de [nuestros planes](http://www.bootic.net/pages/planes) ese _mismo día del mes queda
-registrado_ para el siguiente intento de cobro.
+registrado_ para el **siguiente** intento de cobro.
 
 ## Primer intento
 
