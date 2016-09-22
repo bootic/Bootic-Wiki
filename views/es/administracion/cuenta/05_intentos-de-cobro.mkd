@@ -1,6 +1,6 @@
 ---
 :title: Intentos de cobro
-:description: "Intentos de cobro"
+:description: "Pago mensual plan: Intentos de cobro"
 :keywords: fee, pago, servicio, bootic, cobro, intentos pagar, mensualidad, rbs, worldpay, tarjeta, crédito, subscripción, suscripcion
 :group:
   :name: Pagos y contabilidad
@@ -9,8 +9,8 @@
 
 # Intentos de cobro
 
-El pago mensual de tu plan Bootic es gestionado por la empresa [WorldPay](http://www.worldpay.com/), la cual tiene
-sus oficina centrales en el Reino Unido.
+El pago mensual de tu plan Bootic **se carga a tu tarjeta de crédito** y este cobro es gestionado por la empresa
+[WorldPay](http://www.worldpay.com/), la cual tiene sus oficina centrales en el Reino Unido.
 
 Cuando te suscribes a uno de [nuestros planes](http://www.bootic.net/pages/planes) ese _mismo día del mes queda
 registrado_ para el siguiente intento de cobro.
@@ -28,8 +28,8 @@ Si también falla entonces _esperará_ **cindo días más** para realizar el ter
 
 Si este último intento falla la cuenta quedará **deshabilitada**.
 
-**En resumen**: Si el **lunes** falla el primer intento de cobro **tienes hasta el jueves** (10 días) para regularizar la situación de tu
-tarjeta de crédito; de lo contrario perderás el acceso a tu panel de control — Figura 1.
+**En resumen**: Si el **lunes** falla el primer intento de cobro **tienes hasta el jueves** (10 días) para regularizar
+la situación de tu tarjeta de crédito; de lo contrario perderás el acceso a tu panel de control — Figura 1.
 
 <div class="captura">
   <div class="c-contenido">
