@@ -70,6 +70,15 @@ boleta de garantía de **CLP$1.500.000**.
   <p><img src="/img/admin/wp_tipo_de_producto.png" /></p>
 </div>
 
+### Información Técnica
+
+* URL: ***TIENDA*.bootic.net** (donde «TIENDA» es el subdominio Bootic elegido para tu tienda al momento de crearla) o bien la dirección final de tu tienda, ejm: <kbd>www.mitienda.cl</kbd>.
+* Plataforma Tecnológica: **Linux 32 bits**.
+* Solución de Comercio Electrónico: **Bootic.net**.
+* Sistema de Seguridad: **SSL**.
+* Empresa Configuradora: **Bootic.net**.
+* Proveedor Servicio de Hosting: **Bootic.net**
+
 Con todo lo anterior _en regla_ y _aceptando_ los costos del servicio ya puedes [ contratar el producto ][formulario] 
 en Transbank.cl. También puedes llamar a: 600 638 6380 ó 2 6612 700 desde celulares (horario 24/7).
 
