@@ -13,7 +13,7 @@ y a nivel técnico, cada tienda debe pasar por un **Proceso de Certificación** 
 El proceso para tener tu tienda Bootic con Webpay Plus KCC está compuesto por dos Etapas:
 
 * **Administrativa**: Papeleo legal que debe gestionar el locatario — [#](#toc_2)
-* **Técnica**: Bootic prepara la tienda y envía **evidencias** a Transbank para Certificar tienda — [#](#toc_6) 
+* **Técnica**: Bootic prepara la tienda y envía **evidencias** a Transbank para Certificar tienda — [#](#toc_7) 
 
 <div class="captura">
   <div class="c-contenido">
