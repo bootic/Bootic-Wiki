@@ -6,7 +6,7 @@
 
 # Problemas de ingreso 
 
-Si ves una mensaje extraño al momento de ingresar al panel de control de tu tienda Bootic (Figura 1) **no
+Si ves un mensaje extraño al momento de ingresar al panel de control de tu tienda Bootic (Figura 1) **no
 significa** que _ocurre algo malo_, es una medida de seguridad.
 
 <div class="captura">
