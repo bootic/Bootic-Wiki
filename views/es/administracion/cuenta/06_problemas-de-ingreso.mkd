@@ -17,7 +17,7 @@ significa** que _ocurre algo malo_, es una medida de seguridad.
 </div>
 
 Cada vez que ingresas al panel de control de la tienda se deja un archivo temporal en tu navegador que valida
-el ingreso.  Este achivo temporal _expira rápidamente_ y **si pasan los días** y vuelves a ingresar Bootic
+el ingreso.  Este archivo temporal _expira rápidamente_ y **si pasan los días** y vuelves a ingresar Bootic
 piensa que algo anda mal y muestra este mensaje.
 
 ## Solución
