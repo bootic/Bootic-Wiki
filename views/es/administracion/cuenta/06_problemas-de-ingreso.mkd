@@ -1,0 +1,39 @@
+---
+:title: Problemas de ingreso
+:description: "Se se puede ingresar al panel de control"
+:keywords: error, 422, login, ingreso, panel, admin
+---
+
+# Problemas de ingreso 
+
+Si ves una mensaje extraño al momento de ingresar al panel de control de tu tienda Bootic (Figura 1) **no
+significa** que _ocurre algo malo_, es una medida de seguridad.
+
+<div class="captura">
+  <div class="c-contenido">
+       <img alt="" src="/img/admin/error_422.png" />
+  </div>
+  <div class="c-pie"><strong>Figura 1</strong>: Mensaje de alerta</div>
+</div>
+
+Cada vez que ingresas al panel de control de la tienda se deja un archivo temporal en tu navegador que valida
+el ingreso.  Este achivo temporal _expira rápidamente_ y **si pasan los días** y vuelves a ingresar Bootic
+piensa que algo anda mal y muestra este mensaje.
+
+## Solución
+
+Para decirle a tu navegador que actualice sus archivos temporales (memoria caché) presiona Ctrl+F5 ó ⌘+R si tienes Window
+o Mac respectivamente. **Repite esta acción reiteradas veces**.
+
+También funciona si presionas el ícono de actualizar (varias veces) que debería estar al lado de la barra de
+direcciones de tu navegador - Figura 2.
+
+<div class="captura">
+  <div class="c-contenido">
+       <img alt="" src="/img/admin/boton_refrescar.png" />
+  </div>
+  <div class="c-pie"><strong>Figura 2</strong>: Ícono refrescar</div>
+</div>
+
+Si refrescaste con éxito los archivos temporales _deberías poder_ ingresar tu usuario y contraseña y acceder
+al panel de control de tu tienda.
