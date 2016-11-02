@@ -6,3 +6,37 @@
 
 # Cambiar precios masivamente vía el Admin
 
+Cambiar el precio a tus productos _uno a uno_ puede ser muchas veces una tarea dura. Bootic te da la
+posibilidad de hacer este cambio masivamente por medio del administrador de tu tienda.
+
+<div class="captura">
+  <div class="c-contenido">
+      <img src="/img/admin/cambio-precio-admin.png">
+  </div>
+  <div class="c-pie"><strong>Figura 1</strong>: Selección de producto(s)</div>
+</div>
+
+## Cómo hacerlo
+
+1. Anda a la sección **Productos** de tu tienda.
+2. Seleciona **el o los** _productos_ a los cuales deseas cambiarles el precio - _Figura 1_.
+3. Aparecerá una ventana modal - _Figura 2_
+4. Seleciona el tipo de cambio (absoluto o porcentual)
+5. Configura el precio de comparación
+6. Click en "Cambiar precios"
+
+<div class="captura">
+  <div class="c-contenido">
+      <img src="/img/admin/cambio-precio2-admin.png">
+  </div>
+  <div class="c-pie"><strong>Figura 2</strong>: Cambia el precio a los productos seleccionados</div>
+</div>
+
+## ¿Absoluto  o porcentual?
+
+**Valor Absoluto**: Cambiar el precio puede ser en valores absolutos, ejm **5000**, Donde se cambiará el o los productos
+seleccionados a precio de _cinco mil_ **cada uno**.
+
+**Porcentaje**: Pero además puedes aplicarle un porcentaje, esto es ingresando **90**. Donde se cambiará el o los productos
+seleccionados a un 90 % de su valor actual, Ejm: si un producto tenía como precio $100.000 quedará con
+$90.000.
