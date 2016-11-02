@@ -1,0 +1,8 @@
+---
+:title: Cambiar precio masivamente vía Admin
+:description: "Cómo cambiar los precios masivamente vía el admin"
+:keywords: precios, lotes, masivo, precio
+---
+
+# Cambiar precios masivamente vía el Admin
+

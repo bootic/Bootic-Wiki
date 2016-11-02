@@ -1,10 +1,10 @@
 ---
-:title: Cambiar precio masivamente
-:description: "Cómo cambiar los precios a los productos de manera masiva"
+:title: Cambiar precio masivamente vía CSV
+:description: "Cómo cambiar los precios masivamente vía CSV"
 :keywords: precios, lotes, video, masivo, importar, csv, importer, precio
 ---
 
-# Cambiar precios masivamente
+# Cambiar precios masivamente vía archivo CSV
 
 A continuación podrás conocer la forma de cambiar los precios a tus productos de
 forma masiva (o por lotes) utilizando nuestra herramienta de Importación Bootic. Esto es posible gracias a nuestra [API](http://developers.bootic.net)&dagger;.
