@@ -38,7 +38,7 @@ Es posible administrar los DNS de tu dominio en empresas especializadas. Tambié
 
 Asumiendo que tu tienda Bootic (`TIENDA.bootic.net`) debe tener URL personalizada `www.mitienda.com` entonces debes hacer lo siguiente:
 
-1. Anda al panel de administración de DNS de tu proveedor (en la gran mayoría esta herramiento puede ser [cPanel][cpanel]).
+1. Anda al panel de administración DNS de tu proveedor (en la gran mayoría esta herramiento puede ser [cPanel][cpanel]). Identifica la seción «DNS Editor» o «Editor de zona DNS».
 2. Crea un registro de tipo CNAME de nombre `www` que debes ser apuntado a `proxy.bootic.net`. 
 3. **Espera unas horas** (los cambios de DNS tardan horas en propagarse por internet). Cuando tu dominio `www.mitienda.com` muestre una página Bootic, significa que el dominio ya está *apuntado* a nuestros servidores.
 4. Entra a tu administrador Bootic, navega hasta las **Preferencias** y edita el campo «Dirección URL» con `www.mitienda.com`. Guarda el cambio.
