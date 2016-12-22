@@ -32,7 +32,7 @@ despachos** verás una sub-sección **Permitir opción de retiro en tienda** - F
     </div>
 </div>
 
-Cuando el retiro en tienda _está activo_ puedes configurar la **dirección de tu tienda física** o el lugar
+Cuando el retiro en tienda _está activo_ puedes configurar la **dirección de tu tienda física** (oficina o bodega) o el lugar
 donde tus clientes pueden retirar los productos que compren en tu tienda tienda virtual - Figura 2
 
 <div class="captura">
