@@ -20,4 +20,11 @@ Cambias _Nombre_,  _Email_ y luego «Guardar»
 
 Esta sección te da la posibilidad de ingresar múltiples nombres y correos. Bootic
 tomará **siempre el primer registro del listado** como _emisor_ para enviar todos
-tus correos electrónicos.
+tus correos electrónicos - Figura 1.
+
+<div class="captura">
+    <div class="c-contenido"><img src="/img/admin/primer_correo_lista.png" alt="Primer correo de la lista" /></div>
+    <div class="c-pie">
+        <strong>Figura 1</strong>: Primer correo de la lista
+    </div>
+</div>
