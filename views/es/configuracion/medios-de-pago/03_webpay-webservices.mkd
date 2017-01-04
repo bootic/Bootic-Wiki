@@ -30,7 +30,7 @@ pago fluctúa entre <strong>3 a 7</strong> días aproximadamente si todos los
 requisitos se cumplen.</p>
 </div>
 
-**IMPORTANTE**: Habilitar este medio de pago es _absolutamente gratuito_ paar el
+**IMPORTANTE**: Habilitar este medio de pago es _absolutamente gratuito_ para el
 locatario Bootic.
 
 [kcc]:/es/configuracion/medios-de-pago/webpay
