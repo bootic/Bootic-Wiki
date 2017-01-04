@@ -1,0 +1,38 @@
+---
+:title: Webpay plus Webservices
+:description: "Configurar Webpay Plus Webservices como medio de pago para Chile"
+:keywords: pago, tarjeta, débito, crédito, webpay, chile, webservices, checkout, carro, carrito, api, key, certificacion
+---
+
+# Webpay Plus Webservices
+
+Bootic **da soporte** al medio de pago Webpay plus Webservices. Este medio de pago
+es promovido por Transbank en _reemplazo_ de [Webpay Plus KCC][kcc].
+
+<div style="text-align:center">
+  <img src="/img/configuracion/wpws-logo.png" alt="Webpay webservices">
+</div>
+
+## Cómo habilitarlo
+
+Para habilitarlo en tu tienda Bootic **debes seguir los mismo pasos** que Webpay
+Plus KCC, esto es:
+
+1. [ Etapa administrativa ][administrativa]
+2. [ Etapa técnica ][tecnica]
+
+Finalizada la **Etapa Técnica** te enviaremos un correo informando que el medio de
+pago está listo para operar.
+
+<div class="note info">
+<p><strong>Etapa Técnica</strong>: El tiempo de habilitación de este medio de
+pago fluctúa entre <strong>3 a 7</strong> días aproximadamente si todos los
+requisitos se cumplen.</p>
+</div>
+
+**IMPORTANTE**: Habilitar este medio de pago es _absolutamente gratuito_ para el
+locatario Bootic.
+
+[kcc]:/es/configuracion/medios-de-pago/webpay
+[administrativa]:/es/configuracion/medios-de-pago/webpay#toc_2
+[tecnica]:/es/configuracion/medios-de-pago/webpay#toc_7
