@@ -110,7 +110,7 @@ module Helpers
 
   def build_menu(page, depth = 1)
     return '' unless page.in_menus?
-    klass = 'current' if is_current?(page)
+    klass = match_path(page)
     str = %(<li class="page #{klass} depth_#{depth}">)
     str << %(<a href="#{page.url}" title="#{page.description}">#{page.title}</a>)
     if page.size > 0
@@ -123,9 +123,15 @@ module Helpers
     str << %(</li>)
   end
 
-  def is_current?(page)
-    return false unless @page
-    @page.url[page.url]
+  def match_path(page)
+    return "none" unless @page
+    if @page.url == page.url
+      "current"
+    elsif @page.url[page.url]
+      "in_path"
+    else
+      ""
+    end
   end
 
   def current_url

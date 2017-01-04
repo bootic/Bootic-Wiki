@@ -91,7 +91,7 @@ img.right {
   padding: 2px 0px 10px 0px;
 }
 
-#content strong { 
+#content strong {
     font-weight:bold !important;
 }
 
@@ -141,7 +141,7 @@ img.right {
     font-size:17px;
     color:#000;
 }
-#content p { 
+#content p {
     padding-bottom:10px;
 }
 #content code, #content pre {
@@ -206,8 +206,10 @@ ul li ul li {
   display: none;
 }
 
-#sidebar .depth_1.current > ul,
-#sidebar .depth_2.current > ul {
+#sidebar .in_path.depth_1 > ul,
+#sidebar .in_path.depth_2 > ul,
+#sidebar .current.depth_1 > ul,
+#sidebar .current.depth_2 > ul {
   display: block;
   margin-top: 8px;
   margin-bottom: -8px;
@@ -390,7 +392,7 @@ Show big version only on homepage
     margin-top:10px;
 }
 
-#content .tip { 
+#content .tip {
   background: rgba(126,109,66,1);
   background: -moz-linear-gradient(top, rgba(126,109,66,1) 0%, rgba(92,78,53,1) 100%);
   background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(126,109,66,1)), color-stop(100%, rgba(92,78,53,1)));
@@ -404,7 +406,7 @@ Show big version only on homepage
 .tip:after{
     background:url('/img/ico-tip.png') no-repeat;
 }
-.warning { 
+.warning {
     background: rgba(158,39,18,1);
     background: -moz-linear-gradient(top, rgba(158,39,18,1) 0%, rgba(111,13,13,1) 100%);
     background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(158,39,18,1)), color-stop(100%, rgba(111,13,13,1)));
@@ -430,7 +432,7 @@ Show big version only on homepage
     list-style-type:none;
     display:inline;
 }
-#mini-site-map li a { 
+#mini-site-map li a {
     display:inline-box;
     margin-right:15px;
 }
