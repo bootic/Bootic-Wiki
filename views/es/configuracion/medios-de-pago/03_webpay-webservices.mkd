@@ -4,7 +4,7 @@
 :keywords: pago, tarjeta, débito, crédito, webpay, chile, webservices, checkout, carro, carrito, api, key, certificacion
 ---
 
-# Webpay Plus Webservices.
+# Webpay Plus Webservices
 
 Bootic **da soporte** al medio de pago Webpay plus Webservices. Este medio de pago
 es promovido por Transbank en _reemplazo_ de [Webpay Plus KCC][kcc].
