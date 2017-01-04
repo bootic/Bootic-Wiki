@@ -25,8 +25,9 @@ Finalizada la **Etapa Técnica** te enviaremos un correo informando que el medio
 pago está listo para operar.
 
 <div class="note info">
-<p>El tiempo de habilitación de este medio de pago fluctúa entre <strong>3 a 7</strong> días si
-todos los requisitos se cumplen.</p>
+<p><strong>Etapa Técnica</strong>: El tiempo de habilitación de este medio de
+pago fluctúa entre <strong>3 a 7</strong> días aproximadamente si todos los
+requisitos se cumplen.</p>
 </div>
 
 **IMPORTANTE**: Habilitar este medio de pago es _absolutamente gratuito_ paar el
