@@ -18,14 +18,15 @@ Bootic te da la opción de ofrecer varios medios de pago a tus clientes (de mome
 ## Medios de pago disponibles:
 
 1. [Webpay (Chile)][webpay]
-2. [DineroMail (Chile)][dineromail]
-3. [DineroMail (Argentina)][dineromail]
-4. [Paypal Express][ppe]
-5. [Mercado Pago][mercadopago]
-6. [Khipu][khipu]
-7. Paypal
-8. Transferencia bancaria
-9. Medio de pago personalizado
+2. [Webpay Webservices (Chile)][webpayws]
+3. [DineroMail (Chile)][dineromail]
+4. [DineroMail (Argentina)][dineromail]
+5. [Paypal Express][ppe]
+6. [Mercado Pago][mercadopago]
+7. [Khipu][khipu]
+8. Paypal
+9. Transferencia bancaria
+10. Medio de pago personalizado
 
 ## PayPal (Internacional)
 
@@ -40,6 +41,7 @@ Con esta opción puedes presentarle al usuario los datos de tu cuenta bancaria p
 Campo libre de texto para que ofrezcas otra opción, por ejemplo: **Pago contra entrega**.
 
 [webpay]:/es/configuracion/medios-de-pago/webpay "Webpay (Chile)"
+[webpayws]:/es/configuracion/medios-de-pago/webpay-webservices "Webpay Webservices (Chile)"
 [dineromail]:/es/configuracion/medios-de-pago/dineromail "DineroMail (Argentina y Chile)"
 [ppe]:/es/configuracion/medios-de-pago/paypal-express "PayPal Express"
 [mercadopago]:/es/configuracion/medios-de-pago/mercado-pago "Mercado Pago"
