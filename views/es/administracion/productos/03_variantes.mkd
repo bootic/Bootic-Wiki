@@ -6,11 +6,13 @@
 
 # ¿Qué son las variantes de un producto?
 
-Las **Variantes** son «versiones» distintas **de un mismo producto**, y por lo mismo comparten todos los atributos del producto, _junto a su peso y precio_. 
+Las **Variantes** son «variaciones» **de un mismo producto**, comparten todos los atributos del producto, _junto a su peso y precio_. 
 
 El caso más común son las tallas de una misma polera, o también, los colores de una bicicleta de cierta marca y modelo.
 
 Todos los productos **tienen al menos una Variante**, ya que en rigor es la Variante de un producto lo que el cliente agrega al carro a la hora de hacer una compra.
+
+### Una variante
 
 Si un producto tiene **una variante** sólo se presenta el botón «Agregar al carro» junto al campo para que el cliente defina el número de unidades. 
 
@@ -20,6 +22,8 @@ Si un producto tiene **una variante** sólo se presenta el botón «Agregar al c
   </div>
   <div class="c-pie">Producto sin variantes</div>
 </div>
+
+### Más de una variante
 
 En el caso de que un producto tenga **dos o más variantes** se le dará al opción para que elija una de ellas.
 
@@ -32,7 +36,7 @@ En el caso de que un producto tenga **dos o más variantes** se le dará al opci
 
 ## SKUs y niveles de stock
 
-En vista de que lo que tus clientes compran son Variantes de un producto más que el producto en sí, son las Variantes las que contienen el número de unidades de stock, así como el <acronym title="Stock Keeping Unit">SKU</acronym>.
+En vista de que lo que tus clientes compran son Variantes de un producto más que el producto en sí, son las Variantes las que contienen el número de unidades de stock, también conocido como <acronym title="Stock Keeping Unit">SKU</acronym>.
 
 <div class="note info">
   <p>El SKU es único para la tienda, es decir, dos variantes no pueden compartir el mismo SKU. Si intentas esto Bootic te mostrará un mensaje «SKU duplicado» </p>
@@ -60,4 +64,12 @@ Cuando la variante del producto se agota, este estado será informado al visitan
   <div class="c-pie">Variante Rojo agotada</div>
 </div>
 
+Cuando un producto **con solo una variante** y disponibilidad **En stock** mostrará el mensaje «Producto fuera de stock».
+
+<div class="captura">
+  <div class="c-contenido">
+      <img src="/img/admin/variantes-fuera-de-stock.png" />
+  </div>
+  <div class="c-pie">Producto con una variante sin stock</div>
+</div>
 
