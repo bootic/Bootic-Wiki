@@ -6,14 +6,58 @@
 
 # ¿Qué son las variantes de un producto?
 
-Las Variantes son “versiones” distintas de un mismo producto, y por lo mismo comparten todos los atributos del producto, junto a su peso y precio. El caso más común son las tallas de una misma polera, o también, los colores de una bicicleta de cierta marca y modelo.
+Las **Variantes** son «versiones» distintas **de un mismo producto**, y por lo mismo comparten todos los atributos del producto, _junto a su peso y precio_. 
 
-Todos los productos tienen al menos una Variante, ya que en rigor es la Variante de un producto lo que el cliente agrega al carro a la hora de hacer una compra.
+El caso más común son las tallas de una misma polera, o también, los colores de una bicicleta de cierta marca y modelo.
 
-Si un producto tiene sólo una Variante sólo se presenta el botón “Agregar al carro” junto al campo para que el cliente defina el número de unidades. En el caso de que un producto tenga dos o más variantes se le dará al opción para que elija una de ellas.
+Todos los productos **tienen al menos una Variante**, ya que en rigor es la Variante de un producto lo que el cliente agrega al carro a la hora de hacer una compra.
+
+Si un producto tiene **una variante** sólo se presenta el botón «Agregar al carro» junto al campo para que el cliente defina el número de unidades. 
+
+<div class="captura">
+  <div class="c-contenido">
+      <img src="/img/admin/variantes-producto-sin-variantes.png" />
+  </div>
+  <div class="c-pie">Producto sin variantes</div>
+</div>
+
+En el caso de que un producto tenga **dos o más variantes** se le dará al opción para que elija una de ellas.
+
+<div class="captura">
+  <div class="c-contenido">
+      <img src="/img/admin/variantes-producto-con-variantes.png" />
+  </div>
+  <div class="c-pie">Producto con variantes (2)</div>
+</div>
 
 ## SKUs y niveles de stock
 
 En vista de que lo que tus clientes compran son Variantes de un producto más que el producto en sí, son las Variantes las que contienen el número de unidades de stock, así como el <acronym title="Stock Keeping Unit">SKU</acronym>.
 
-Además de esto, en Bootic las variantes cuentan con un atributo llamado "Disponibilidad", que te da la libertad de permitirle a tus clientes agregar y comprar un producto aún cuando no existan unidades de esa Variante en stock (este es el comportamiento por defecto). Si deseas desactivar esta opción, debes editar una Variante y cambiar el campo Disponibilidad de "Siempre" a "En Stock".
+<div class="note info">
+  <p>El SKU es único para la tienda, es decir, dos variantes no pueden compartir el mismo SKU. Si intentas esto Bootic te mostrará un mensaje «SKU duplicado» </p>
+</div>
+
+Además de esto, en Bootic las variantes cuentan con un atributo llamado «Disponibilidad», que te da la libertad de permitirle a tus clientes **agregar y comprar un producto aún cuando no existan unidades de esa Variante en stock** (este es el comportamiento por defecto). 
+
+Si deseas desactivar esta opción, debes editar una Variante y cambiar el campo Disponibilidad de «Siempre» a «En Stock».
+
+<div class="captura">
+  <div class="c-contenido">
+      <img src="/img/admin/variantes-edicion.png" />
+  </div>
+  <div class="c-pie">Edición de variantes de un producto: La variante Verde <strong>siempre estará disponible</strong> para la venta, no así Rojo, que <strong>solo</strong> estará disponible con 10 unidades.</div>
+</div>
+
+### Variante agotada
+
+Cuando la variante del producto se agota, este estado será informado al visitante de la tienda y no será posible agregar al carro.
+
+<div class="captura">
+  <div class="c-contenido">
+      <img src="/img/admin/variantes-agotado.png" />
+  </div>
+  <div class="c-pie">Variante Rojo agotada</div>
+</div>
+
+
