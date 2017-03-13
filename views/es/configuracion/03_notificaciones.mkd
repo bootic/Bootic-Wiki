@@ -25,7 +25,7 @@ Este correo se envía para notificarte cuando un usuario envió un formulario de
 
 ## Notificaciones a tus clientes
 
-Bootic también envía correos a tus clientes para notificarles que un pedido fue exitosamente agregado al sistema, y en el momento en que un pedido cambia al estado "Cerrado", ya sea porque pagó usando tarjeta de crédito (Webpay), o bien porque tú cambiaste el estado del pedido en el panel (ej. después de recibir el comprobante de una transferencia).
+Bootic también envía correos a tus clientes para notificarles que un pedido fue exitosamente agregado al sistema, y en el momento en que un pedido cambia al estado "Confirmado", ya sea porque pagó usando tarjeta de crédito (Webpay), o bien porque tú cambiaste el estado del pedido en el panel (ej. después de recibir el comprobante de una transferencia).
 
 En este caso, Bootic además de te entrega la posibilidad de que añadas un mensaje personalizado a tu cliente, por ejemplo para avisarle el estado del despacho o una fecha u hora aproximada en que lo recibirá.
 [](URL)

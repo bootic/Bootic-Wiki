@@ -27,8 +27,8 @@ acceder a ellos debes ir a la sección Pedidos — Figura 1.
     * <strong>Todas</strong>: listará todos los Pedidos.
     * <strong class="label-order label-pending">Pendientes</strong> = a la espera del pago. 
     * <strong class="label-order label-invalid">Anulados</strong> = nulo.
-    * <strong class="label-order label-successful">Exitosos</strong> = cerrados y despachados.
-    * <strong class="label-order label-closed">Cerrados</strong> = recibió el pago. 
+    * <strong class="label-order label-successful">Exitosos</strong> = confirmado y despachados.
+    * <strong class="label-order label-closed">Confirmados</strong> = recibió el pago. 
     * <strong class="label-order label-shipped">Despachados</strong>= el pedido se envió al cliente. 
  
 6. **Exportación**: Permite exportar los pedidos por año y mes a formato CSV
@@ -49,10 +49,9 @@ En el **punto 6** de la gráfica se genera el Pedido, tanto el cliente como el l
 correo electrónico, además de verla en su panel de administración.
 
 <div class="note info">
-  <p>Los siguientes Medios de pago no Cerrarán (verde) el pedido automáticamente:</p>
+  <p>Los siguientes Medios de pago no cambiarán el estado a Confirmado (verde) automáticamente:</p>
   <ul>
     <li>Tranferencia bancaria</li>
-    <li>Paypal</li>
     <li>Medio de pago personalizado</li>
   </ul>
   <p>El locatario <em>manualmente</em> deberá cambiar el estado cuando este reciba el pago</p>

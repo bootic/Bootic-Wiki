@@ -20,5 +20,5 @@ El detalle de un pedido muestra la siguiente información — Figura 1.
 3. **Listado de productos**: Un pedido puede contener uno o más productos.
 4. **Detalles**: del cliente, del pedido e información adicional. 
 5. **Estado**: Sección donde es posible cambiar el estado.
-6. **Actividad**: Cuando fue creado, cuando fue cerrado, etc.
+6. **Actividad**: Cuando fue creado, cuando fue confirmado, etc.
 

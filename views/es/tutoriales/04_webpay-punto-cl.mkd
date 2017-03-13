@@ -46,7 +46,7 @@ y completar un **formulario genérico** de pago, los tres datos críticos necesa
 
 Una vez que el comercio (locatario Bootic) haya sido notificado que recibió un pago vía webpay.cl—esta
 notificación es enviada por Transbank—se **deberá cambiar el estado** del pedido en tu panel de administración
-Bootic de Pendiente a Cerrado.
+Bootic de Pendiente a Confirmado.
 
 <div class="note warning">
     <h5>Pago exitoso o fallido</h5>
@@ -106,7 +106,7 @@ Las instrucciones y la siguiente imagen aparecerán cuando el cliente seleccione
 
 <div class="note tip">
     <h5>Cerrar el Pedido</h5>
-    <p>Recuerda que se debe cambiar el estado del pedido de <strong>Pendiente</strong> a <strong>Cerrado</strong> una vez que se haya verificado el pago (notificación desde Webpay.cl)</p>
+    <p>Recuerda que se debe cambiar el estado del pedido de <strong>Pendiente</strong> a <strong>Confirmado</strong> una vez que se haya verificado el pago (notificación desde Webpay.cl)</p>
 </div>
 
 
