@@ -40,7 +40,7 @@ Si tenemos una plantilla [home.html](/es/diseno/plantilles/home) con el siguient
   </html>
 </pre>
 
-<div class="tip">
+<div class="note tip">
   La etiqueta especial <code>{% current_title %}</code> genera automáticamente un título adecuado para la página actual.
 </div>
 

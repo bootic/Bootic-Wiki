@@ -119,8 +119,10 @@ Además de los tamaños predefinidos, puedes asignar dimensiones personalizadas 
 
 El ejemplo anterior crea un cuadrado de 100x100 px, centrado, a partir de la imagen de un producto.
 
-<div class="tip">
-  Para saber más sobre tamaños personalizados de imágenes de productos, lee la sección en "<a href="/es/diseno/imagenes/control-avanzado">trabajando con imágenes</a>".
+<div class="note tip">
+  <p>
+      Para saber más sobre tamaños personalizados de imágenes de productos, lee la sección en "<a href="/es/diseno/imagenes/control-avanzado">trabajando con imágenes</a>".
+  </p>
 </div>
 
 ## Otros archivos

@@ -18,7 +18,7 @@ Un tema de diseño es, en esencia, un conjunto de plantillas HTML acompañadas d
 
 ## Cambiando el tema de diseño de tu tienda
 
-Por defecto, las tiendas nuevas en Bootic utilizan nuestro tema **Snap**, que posee un diseño simple y limpio y por lo tanto funciona muy bien para diversos tipos de tiendas. Si quieres probar otro diseño, puedes dirigirte a la seccion Diseño del panel de administración Bootic y elegir otro.
+Por defecto, las tiendas nuevas en Bootic utilizan nuestro tema **Oxygen**, que posee un diseño simple y limpio y por lo tanto funciona muy bien para diversos tipos de tiendas. Si quieres probar otro diseño, puedes dirigirte a la seccion Diseño del panel de administración Bootic y elegir otro.
 
 Una vez cambiado, basta con que abras (o refresques) la portada de tu tienda y verás cómo se ve con el nuevo diseño.
 

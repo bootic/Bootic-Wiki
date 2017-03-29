@@ -165,7 +165,7 @@ Este ejemplo itera los productos de la colección "ofertas".
 </pre>
 
 
-<div class="tip">
+<div class="note tip">
 Si te fijas, en este caso agregamos `.redes_sociales.links` a la variable `menus`. Con eso, lo que estamos haciendo es pedirle a Bootic que nos entregue los links asociados al menú **redes_sociales**. Si hubiésemos escrito simplemente `menus.links`, el HTML resultante de ese bloque sería vacío, ya que Bootic necesita poder identificar el menú de navegación para entregar los links asociados a él.
 </div>
 
