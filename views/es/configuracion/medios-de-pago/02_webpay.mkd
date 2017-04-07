@@ -41,7 +41,7 @@ Una primera aclaración: para el pago en línea (a través de internet), Transba
 
 ### Costos de contratar Webpay Plus
 
-* 0.48 UF + IVA por uso mensual del servicio
+* <strike>0.48 UF + IVA por uso mensual del servicio</strike> <strong>Webpay plus Webservices</strong> <em>no tiene</em> costo de mantención.
 * 2.95 % + IVA por transacción con tarjeta de crédito
 * 1.79 % + IVA por transacción con tarjeta de débito
 
