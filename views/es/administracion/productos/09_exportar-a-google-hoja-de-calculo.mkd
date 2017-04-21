@@ -1,0 +1,98 @@
+---
+:title: Exportar productos a Google hoja de cálculo
+:description: "Cómo procesar el archivo CSV exportado desde la sección Productos"
+:keywords: csv, productos, google, hoja, calculo, excel
+---
+
+# Exportar productos a Google hoja de cálculo
+
+El servicio Google Hoja de Cálculo (GHC)—similar a una planilla Excel pero en la nube—te permite
+procesar fácilmente el archivo en _formato_ CSV que se **exporta desde la sección
+Productos de tu tienda**. En el siguiente artículo te contamos cómo hacerlo.
+
+## Paso 1
+
+Anda a la sección Productos de tu tienda Bootic, al final del listado dale clic a «Exportar lista de productos» - Figura 1.
+
+<div class="captura">
+  <div class="c-contenido">
+    <img src="/img/admin/products_google_spreadsheets_bootic_productos.png">
+  </div>
+  <div class="c-pie"><strong>Figura 1</strong>: Exportando archivo CSV de Productos</div>
+</div>
+
+Esto descargará el archivo CSV a tu PC.
+
+## Paso 2
+
+Anda a la <a href="https://docs.google.com/spreadsheets" target="_blank" title="se abrirá en una pestaña nueva">portada de GHC</a> —deberás logearte con tu usuario GMAIL—y crea una _nueva hoja_ - Figura 2
+
+<div class="captura">
+  <div class="c-contenido">
+    <img src="/img/admin/products_google_spreadsheets_home.png">
+  </div>
+  <div class="c-pie"><strong>Figura 2</strong>: Creando hoja de cálculo nueva</div>
+</div>
+
+## Paso 3
+
+En la hoja creada del paso 2, **importa** el archivo descargado en tu PC (ver Paso 1) — Figura 3
+
+<div class="captura">
+  <div class="c-contenido">
+    <img src="/img/admin/products_google_spreadsheets_importar.png">
+  </div>
+  <div class="c-pie"><strong>Figura 3</strong>: Importando el archivo CSV en GHC</div>
+</div>
+
+## Paso 4
+
+GHC te preguntará el origen, anda a «Cargar» — Figura 4
+
+<div class="captura">
+  <div class="c-contenido">
+    <img src="/img/admin/products_google_spreadsheets_cargar_csv.png">
+  </div>
+  <div class="c-pie"><strong>Figura 4</strong>: Seleccionando Cargar</div>
+</div>
+
+## Paso 5
+
+Selecciona el archivo desde tu computador — Figura 5 — también podrías [arrastrar y soltar][1] el archivo en la zona señalada.
+
+<div class="captura">
+  <div class="c-contenido">
+    <img src="/img/admin/products_google_spreadsheets_cargar_csv_2.png">
+  </div>
+  <div class="c-pie"><strong>Figura 5</strong>: Seleccionando el archivo desde mi PC</div>
+</div>
+
+## Paso 6
+
+Cuando GHC haya finalizado la carga te preguntará qué hacer con ella — Figura 6.
+
+<div class="captura">
+  <div class="c-contenido">
+    <img src="/img/admin/products_google_spreadsheets_reeplazar.png">
+  </div>
+  <div class="c-pie"><strong>Figura 6</strong>: Acciones de importación final</div>
+</div>
+
+## Pas 7
+
+Finalmente GHC te presentará el archivo importado ordenado en filas y columnas — Figura 7
+
+<div class="captura">
+  <div class="c-contenido">
+    <img src="/img/admin/products_google_spreadsheets_importacion.png">
+  </div>
+  <div class="c-pie"><strong>Figura 7</strong>: Ejemplo de carga finalizada</div>
+</div>
+
+### ¿Por qué veo productos repetidos?
+
+Recuerda que el archivo de productos que se importa desde tu tienda está basado en tus [variantes][variantes]. Posiblemente
+advertirás que algunos productos se repiten una, dos o varias veces, **esto quiere decir que** ese producto tiene _una_, _dos_ o _varias variantes_.
+
+[1]:https://es.wikipedia.org/wiki/Clic_(inform%C3%A1tica)#Arrastrar_y_soltar "Wikipedia: definición"
+[variantes]:/es/administracion/productos/variantes "Qué son las variantes de un producto"
