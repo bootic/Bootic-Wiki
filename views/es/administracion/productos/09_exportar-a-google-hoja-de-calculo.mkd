@@ -25,7 +25,7 @@ Esto descargará el archivo CSV a tu PC.
 
 ## Paso 2
 
-Anda a la [portada de GHC](https://docs.google.com/spreadsheets) —deberás logearte con tu usuario GMAIL—y crea una _nueva hoja_ - Figura 2
+Anda a la <a href="https://docs.google.com/spreadsheets" target="_blank" title="se abrirá en una pestaña nueva">portada de GHC</a> —deberás logearte con tu usuario GMAIL—y crea una _nueva hoja_ - Figura 2
 
 <div class="captura">
   <div class="c-contenido">
@@ -89,4 +89,10 @@ Finalmente GHC te presentará el archivo importado ordenado en filas y columnas 
   <div class="c-pie"><strong>Figura 7</strong>: Ejemplo de carga finalizada</div>
 </div>
 
+### ¿Por qué veo productos repetidos?
+
+Recuerda que el archivo de productos que se importa desde tu tienda está basado en tus [variantes][variantes]. Posiblemente
+advertirás que algunos productos se repiten una, dos o varias veces, **esto quiere decir que** ese producto tiene _una_, _dos_ o _varias variantes_.
+
 [1]:https://es.wikipedia.org/wiki/Clic_(inform%C3%A1tica)#Arrastrar_y_soltar "Wikipedia: definición"
+[variantes]:/es/administracion/productos/variantes "Qué son las variantes de un producto"
