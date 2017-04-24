@@ -55,7 +55,11 @@ Acá debes ingresar a tu cuenta Wordpay con tu **usuario** y **contraseña** que
 
 ## ¡Ops!, no recuerdo mis credenciales Wordpay
 
-Cuando creaste la suscripción de tu plan debiste además crear un usuario y contraseña WordPay. Si no recuerdas tu usuario o tu contraseña busca en tu archivo de correos. Ellos envían mensajes desde la dirección `shopper@rbsworldpay.com`. Si no logras encontrar tus credenciales originales puedes [rescatar tu contraseña en la misma página de Wordpay](https://futurepay.worldpay.com/fp/jsp/common/login_shopper.jsp) (forgotten your password).
+Cuando creaste la suscripción de tu plan debiste además crear un usuario y contraseña WordPay. Si no recuerdas
+tu usuario o tu contraseña busca en tu archivo de correos. Ellos envían mensajes desde la dirección
+`shopper@rbsworldpay.com`. Si no logras encontrar tus credenciales originales puedes [rescatar tu contraseña
+en la misma página de Wordpay](https://futurepay.worldpay.com/fp/jsp/common/login_shopper.jsp) («Forgot your
+password»).
 
 <div class="captura">
     <div class="c-contenido"><img src="/img/admin/tc_cambiar_rescatar_pass.png"></div>
@@ -72,9 +76,8 @@ Cuando creaste la suscripción de tu plan debiste además crear un usuario y con
 
 ## Paso 3: Cambiando los datos de tu tarjeta de crédito
 
-Una vez dentro de tu **cuenta WordPay**:
-
-Dale clic a "Edit your details".
+Una vez dentro de tu **cuenta WordPay**: Dale clic al número bajo la columna «Agreement ID» (Identificador de
+Acuerdo).
 
 <div class="captura">
     <div class="c-contenido"><img src="/img/admin/tc_cambiar_home_wp.png"></div>
@@ -83,7 +86,7 @@ Dale clic a "Edit your details".
     </div>
 </div>
 
-Dale clic a "Change Payment Details".
+Luego dale clic a «Change Payment Details».
 
 <div class="captura">
     <div class="c-contenido"><img src="/img/admin/tc_cambiar_detalles_tarjeta.png"></div>
@@ -93,3 +96,17 @@ Dale clic a "Change Payment Details".
 </div>
 
 Cambia la información por la nueva y listo.
+
+### Problemas guardando la información de la tarjeta
+
+Si te da problemas cuando intengas guardar la información de la tarjeta **deja en blanco el campo Issue
+number**. Luego de eso intenta enviar (Submit) nuevamente.
+
+<div class="captura">
+  <div class="c-contenido">
+    <img src="/img/admin/wp_issue_number.png">
+  </div>
+  <div class="c-pie">Issue number, dejar en blanco si no permite guardar la primera
+vez </div>
+</div>
+
