@@ -62,4 +62,21 @@ plantilla **product.html**:
 **Nota**: Para el ejemplo anterior se muestran tres productos similares. Además
 se usa el bloque de codigo reutilizable [product_item](/es/diseno/recetas/product-item).
 
+## Orden de aparición
+
+El orden de aparición de los productos similares es de forma descendente por la cantidad de etiquetas que
+tengan en común.
+
+## Ejemplo
+
+A continuación te mostramos una página detalle de un producto, con sus similars y relacionados.
+
+<div class="captura">
+  <div class="c-contenido">
+    <img src="/img/tutoriales/producto-detalle-relacionado-similar.jpg" alt="Detalle de producto - con
+    relacionados y similares">
+  </div>
+  <div class="c-pie"><strong>Figura 1</strong>: Detalle de un producto. Contiene además Similares y <a href="/es/diseno/recetas/productos-relacionados" title="Productos Relacionados">Relacionados</a>.</div>
+</div>
+
 [relacionados]:/es/diseno/recetas/productos-relacionados "Definición de relacionados"
