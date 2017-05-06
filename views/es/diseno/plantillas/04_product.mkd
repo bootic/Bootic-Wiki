@@ -202,7 +202,7 @@ También puedes acceder a una colección en particular usando su "manilla"* o t�
 {% endif %}
 </pre>
 
-<div class="tip">
+<div class="note info">
   <strong>*</strong> Una <em>manilla</em> es la versión sin tildes, mayúsculas ni espacios del título de una colección, producto, página u otro objeto en Bootic. Por ejemplo si el título de una colección es "Catálogo 2011", su manilla es "catalogo-211".
 </div>
 

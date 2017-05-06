@@ -1,0 +1,107 @@
+---
+:title: Productos relacionados
+:description: Mostrando productos relacionados en la ficha de un producto
+:keywords: html, liquid, bootic, relacionado, relacionados, producto, productos, related_products 
+---
+
+# Mostrando productos relacionados 
+
+
+El visitante de tu página está revisando el detalle de un producto que le
+interesó.
+
+Sería buena idea mostrarle además productos relacionados (no confundir con
+[similares][similares]) al que está revisando para así incentivar la permanencia en la tienda
+y _eventualmente_ generar una o varias ventas.
+
+¿Cómo hacer esto?. A continuación te contamos.
+
+## Qué es un producto relacionado
+
+Para Bootic un producto relacionado **tienen etiquetas en común** pero _además_ son
+de distinto *Tipo de Producto*. Veamos un ejemplo:
+
+* Producto 1: **Set Contenedores**
+* Marca: **Joseph Joseph**
+* Tipo de producto: **Contenedor**
+* Etiquetas: **hermético**, **portatil**, **utensilio**
+
+<hr />
+
+* Producto 2: **Good grips**
+* Marca: **Oxo**
+* Tipo de producto: **Mandolina**
+* Etiquetas: **cortar**, **ergonomico**, **utensilio**
+
+Ambos productos son de tipos de producto diferentes, pero tienen una etiqueta en
+común: «utensilio», en consecuencia son **Producto relacionados**.
+
+<div class="note info">
+  <p><strong>Una o más</strong>:</p>
+  <p> Los productos relacionados pueden compartir una o más etiquetas.</p>
+</div>
+
+## Cómo muestro productos relacionados
+
+Para mostrar un bloque de productos relacionados (Figura 1) en la página de destalle de un
+producto cualquiera debes agregar lo siguiente a la plantilla **product.html**: 
+
+<pre>:::html
+<!-- product.html -->
+{% if product.has_related_products %}
+<div id="related-products">
+  <h2>{{ "titles.related_products" | t }}</h2>
+  <ul class="products clearfix">
+  {% loop product.related_products in 'product_item' limit:3 %}
+  </ul>
+</div><!-- /related-products -->
+{% endif %}
+</pre>
+
+**Nota**: Para el ejemplo anterior se muestran tres productos relacionados. Además
+se usa el bloque de codigo reutilizable [product_item](/es/diseno/recetas/product-item).
+
+## Orden de aparición
+
+El orden de aparición de los productos relacionados es de forma descendente por la cantidad de etiquetas que
+tengan en común.
+
+## Ejemplo
+
+A continuación te mostramos una página detalle de un producto, con sus similares y relacionados.
+
+<div class="captura">
+  <div class="c-contenido">
+    <img src="/img/tutoriales/producto-detalle-relacionado-similar.jpg" alt="Detalle de producto - con
+    relacionados y similares">
+  </div>
+  <div class="c-pie"><strong>Figura 1</strong>: Detalle de un producto. Contiene además Relacionados y <a href="/es/diseno/recetas/productos-similares" title="Productos Similares">Similares</a></div>
+</div>
+
+## Sugiere productos relacionados en el carro de compra
+
+El siguiente trozo de código sugerirá productos relacionados **justo después** que el comprador agrega un producto
+al carro (Figura 2). Un excelente momento para _incentivar_ otra compra.
+
+<pre>:::HTML
+<!-- cart.html -->
+{% if related_products_to_just_added %}
+<section class="product-list">
+  <h2>{{ 'orders.messages.you_might_be_interested' | t }}</h2>
+  <ul class="products row">
+    {% loop related_products_to_just_added in 'product_item' limit:3 %}
+  </ul>
+</section>
+{% endif %}
+</pre>
+
+<div class="captura">
+  <div class="c-contenido">
+    <img src="/img/tutoriales/carro-compra-productos-relacionados.png" title="productos relacionados en el
+    carro de compra">
+  </div>
+  <div class="c-pie"><strong>Figura 2</strong>: Productos relacionados en el Carro de compra</div>
+</div>
+
+
+[similares]:/es/diseno/recetas/productos-similares "Definición de similares"

@@ -1,16 +1,22 @@
 ---
 :title: Plantilla común para las listas de productos
 :description: Una manera simple para evitar duplicidad de código.
-:keywords: product_item.html, plantillas, templates
+:keywords: product_item.html, plantillas, templates, product, product_item, pivote
 ---
 
 # Reutilizando HTML en listas de productos con la etiqueta *loop*
 
-En la mayoría de los casos, el HTML utilizado para mostrar un producto dentro de un listado (en products.html, o los destacados en home.html o los similares en product.html) es el mismo.
+En la mayoría de los casos, el HTML utilizado para mostrar un producto dentro de un listado (en **products.html**, o los destacados en **home.html** o los similares en **product.html**) es el mismo.
 
-Para esto es muy conveniente utilizar una misma plantilla e incluirla en cada listado utilizando la etiqueta `loop`. Por ejemplo, podríamos crear una plantilla HTML llamada `product_item.html` con el siguiente código:
+Para esto es muy conveniente utilizar una misma plantilla e **incluirla** en cada listado utilizando la etiqueta `loop`. 
+
+
+## Plantilla reutilizable product_item.html
+
+Por ejemplo, podríamos crear una plantilla HTML llamada `product_item.html` con el siguiente código:
 
 <pre>:::html
+<!-- product_item.html -->
 <li class="item-{{ product_item_counter }} clearfix">
 
   <div class="image-centerer">
@@ -31,9 +37,17 @@ Para esto es muy conveniente utilizar una misma plantilla e incluirla en cada li
 </li>
 </pre>
 
-A continuación, nuestro *loop* de productos en <code>products.html</code> o <code>collection.html</code> usamos la etiqueta especial *loop* para llamar nuestra plantilla <code>product_item.html</code> con cada producto en la lista:
+<div class="note info">
+  Nótese que el nombre de la variable es <strong>product_item</strong>. Idéntico
+nombre que la plantilla (product_item.html)
+</div>
+
+### Ejemplo de uso
+
+Usamos la etiqueta especial *loop* para llamar nuestra plantilla <code>product_item.html</code> con cada producto en la lista:
 
 <pre>:::html
+<!-- products.html -->
 {% paginate products by 20 %}
   <ul class="products clearfix">
   {% loop paginated_list in 'product_item' %}
@@ -42,20 +56,18 @@ A continuación, nuestro *loop* de productos en <code>products.html</code> o <co
 {% endpaginate %}
 </pre>
 
-De esta manera podemos re-utilizar el mismo HTML para productos desde distintas plantillas. Estas plantillas reutilizables a veces son llamadas "parciales", porque muestran sólo una parte de la información de una página.
-
-Nótese que el nombre de la variable para cada producto en <code>product_item</code> es "product_item" en lugar de "product". Esto es porque la etiqueta *loop* asigna cada producto a una variable con el mismo nombre de la plantilla parcial.
+De esta manera podemos reutilizar el mismo HTML para productos desde distintas plantillas. Estas plantillas reutilizables a veces son llamadas «parciales», porque muestran sólo una parte de la información de una página.
 
 Asimismo, ahora podemos incluir esta misma plantilla en el listado de [productos similares](/es/diseno/recetas/productos-similares) en [product.html](/es/diseno/plantillas/product):
 
 <pre>:::html
+<!-- product.html -->
 {% if product.has_similar_products %}
   <div id="similar-products">
     <h2>Productos similares</h2>
-
-    <ul class="products">
-      {% loop product.similar_products in 'product_item' %}
-    </ul>
+      <ul class="products">
+        {% loop product.similar_products in 'product_item' limit:3 %}
+      </ul>
   </div>
 {% endif %}
 </pre>
