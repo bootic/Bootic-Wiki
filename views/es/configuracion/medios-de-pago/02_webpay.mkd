@@ -79,7 +79,7 @@ boleta de garantía de **CLP$1.500.000**.
 * Empresa Configuradora: **Bootic.net**.
 * Proveedor Servicio de Hosting: **Bootic.net**
 
-Con todo lo anterior _en regla_ y _aceptando_ los costos del servicio ya puedes [ contratar el producto ][formulario] 
+Con todo lo anterior _en regla_ y _aceptando_ los costos del servicio ya puedes [ contratar el producto ][formulario] (Webpay Plus tienda normal) 
 en Transbank.cl. También puedes llamar a: 600 638 6380 ó 2 6612 700 desde celulares (horario 24/7).
 
 ## Etapa Técnica: Lo que Bootic necesita de ti para finalizar el proceso
@@ -119,4 +119,4 @@ que el Locatario:
 Cuando todo esté listo, te enviaremos un email informándote que el pago con Webpay **esta activo y funcionando** en tu tienda.
 
 [webpay]:http://www.webpay.cl "Sitio webpay"
-[formulario]:https://www.transbank.cl/public/productos-y-servicios/webpay/webservices-con-autorizacion-y-captura-simultanea/ "Formulario de solicitud del webpay plus"
+[formulario]:https://www.transbank.cl/web/productos-y-servicios/soluciones-para-ventas-internet#webpay_plus "Formulario de solicitud del webpay plus"
