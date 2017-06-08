@@ -1,0 +1,39 @@
+---
+:title: "Nuevo forma de ingresar a tu tienda"
+:description: "Nueva forma de ingresar"
+:keywords: login, ingreso, tienda, panel, admin,  
+---
+
+# Nueva forma de ingresar a tu tienda 
+
+Desde el **15 de junio de 2017** la forma de ingresar a tu tienda Bootic _ya no funcionará_ usando tu nombre de usuario — Figura 1. 
+
+Desde la fecha señanada tendrás que utilizar en su lugar tu **dirección de correo electrónico** — Figura 2.
+
+
+<div class="captura">
+  <div class="c-contenido">
+    <img src="/img/general/login-antes.png">
+  </div>
+  <div class="c-pie"><strong>Figura 1</strong>: Ingreso antes del 15 de junio de
+2017</div>
+</div>
+
+
+## ¿Cómo puedo saber mi dirección de correo electrónico?
+
+Anda a tu panel de control Bootic / **Preferencias** / **Usuarios**. Al lado de
+tu nombre de usuario aparecerá el correo electrónico asociado.
+
+<div class="captura">
+  <div class="c-contenido">
+    <img src="/img/general/login-despues.png">
+  </div>
+  <div class="c-pie"><strong>Figura 2</strong>: Ingreso después del 15 de junio
+de 2017</div>
+</div>
+
+
+## ¿Por qué el cambio?
+
+Porque nos permitirá ofrecerte más y mejores herramientas que enriquecerán tu experiencia como locatario Bootic. Pero esto requiere que tengas una credencial _única_ a _irrepetible_, y tu correo **es la mejor opción** de identificación.
