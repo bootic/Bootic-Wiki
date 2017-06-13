@@ -89,13 +89,29 @@ Acuerdo).
 Luego dale clic a «Change Payment Details».
 
 <div class="captura">
-    <div class="c-contenido"><img src="/img/admin/tc_cambiar_detalles_tarjeta.png"></div>
+    <div class="c-contenido">
+      <img src="/img/admin/tc_cambiar_detalles_tarjeta.png">
+    </div>
     <div class="c-pie">
         <strong></strong>
     </div>
 </div>
 
 Cambia la información por la nueva y listo.
+
+### Error 403
+
+Si ves un error 403 quiere decir que tu sesión en Worldpay está abierta, <a title="Salir de la
+sesión" target="_blank" href="https://futurepay.worldpay.com/fp/public/futurepay/logoff.html">sal de
+la misma</a> y luego [ingresas de nuevo][login].
+
+<div class="captura">
+  <div class="c-contenido">
+    <img alt="Worldpay Forbidden" src="/img/admin/worldpay-forbidden.png">
+  </div>
+  <div class="c-pie">Error 403</div>
+</div>
+
 
 ### Problemas guardando la información de la tarjeta
 
@@ -104,9 +120,11 @@ number**. Luego de eso intenta enviar (Submit) nuevamente.
 
 <div class="captura">
   <div class="c-contenido">
-    <img src="/img/admin/wp_issue_number.png">
+    <img alt="Issue number" src="/img/admin/wp_issue_number.png">
   </div>
   <div class="c-pie">Issue number, dejar en blanco si no permite guardar la primera
 vez </div>
 </div>
 
+[logout]: "Salir de la sesión"
+[login]:https://futurepay.worldpay.com/fp/jsp/common/login_shopper.jsp "Ingresar a WorldPay"
