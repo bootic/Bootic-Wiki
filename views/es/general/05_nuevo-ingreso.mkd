@@ -37,3 +37,25 @@ de 2017</div>
 ## ¿Por qué el cambio?
 
 Porque nos permitirá ofrecerte más y mejores herramientas que enriquecerán tu experiencia como locatario Bootic. Pero esto requiere que tengas una credencial _única_ a _irrepetible_, y tu correo **es la mejor opción** de identificación.
+
+### Cómo tener un mismo correo para más de una tienda
+
+Si tienes una cuenta de correo GMail (ó Google Apps ó GSuite) puedes usar un **alias de correo**, de esta
+forma Bootic entenderá que es un correo distinto.
+
+<div class="info note">
+  <p> Averigua si tu servidor de correo acepta este tipo de alias. No todos los servicios de correo lo tienen habilitado. Outlook.com, por ejm, también la tiene disponible. </p>
+</div>
+
+Para el ejemplo de la captura el usuario usó el correo `juanperez+acme@gmail.com` para registrarse en la tienda `acme` y el correo `juanperez+romano@gmail.com` para registrarse en la tienda `romano`.
+
+Ambos son el mismo correo `juanperez@gmail.com` _gracias_ al alias de correo que permite GMail.
+
+<div class="captura">
+  <div class="c-contenido">
+    <img src="/img/general/hack-correo.png">
+  </div>
+  <div class="c-pie">Ejemplo de alias correo Gmail</div>
+</div>
+
+
