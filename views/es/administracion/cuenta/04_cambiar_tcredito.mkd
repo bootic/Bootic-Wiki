@@ -126,5 +126,4 @@ number**. Luego de eso intenta enviar (Submit) nuevamente.
 vez </div>
 </div>
 
-[logout]: "Salir de la sesión"
 [login]:https://futurepay.worldpay.com/fp/jsp/common/login_shopper.jsp "Ingresar a WorldPay"
