@@ -63,9 +63,16 @@ Cuando la variante del producto se agota (stock = 0), este estado será informad
 
 <div class="captura">
   <div class="c-contenido">
+      <img src="/img/admin/variantes-edicion-sin-stock.png" />
+  </div>
+  <div class="c-pie">Administrador: Variante Rojo <strong>agotada</strong></div>
+</div>
+
+<div class="captura">
+  <div class="c-contenido">
       <img src="/img/admin/variantes-agotado.png" />
   </div>
-  <div class="c-pie">Variante Rojo agotada</div>
+  <div class="c-pie">Vista pública: Variante Rojo <strong>agotada</strong></div>
 </div>
 
 Cuando un producto **con solo una variante** y disponibilidad **En stock** mostrará el mensaje «Producto fuera de stock».
