@@ -16,6 +16,10 @@ Todos los productos **tienen al menos una Variante**, ya que en rigor es la Vari
 
 Si un producto tiene **una variante** sólo se presenta el botón «Agregar al carro» junto al campo para que el cliente defina el número de unidades. 
 
+<div class="note info">
+  <p> El botón «Agregar al carro» no aparecerá si el precio del Producto es igual a cero (0) </p>
+</div>
+
 <div class="captura">
   <div class="c-contenido">
       <img src="/img/admin/variantes-producto-sin-variantes.png" />
@@ -42,9 +46,9 @@ En vista de que lo que tus clientes compran son Variantes de un producto más qu
   <p>El SKU es único para la tienda, es decir, dos variantes no pueden compartir el mismo SKU. Si intentas esto Bootic te mostrará un mensaje «SKU duplicado» </p>
 </div>
 
-Además de esto, en Bootic las variantes cuentan con un atributo llamado «Disponibilidad», que te da la libertad de permitirle a tus clientes **agregar y comprar un producto aún cuando no existan unidades de esa Variante en stock** (este es el comportamiento por defecto). 
+Además de esto, en Bootic las Variantes cuentan con un atributo llamado «Disponibilidad», esta opción le permite a tus clientes _agregar y comprar_ un producto **aún cuando no existan unidades de esa Variante en stock**. El comportamiento **por defecto** es Disponibilidad «En stock» a la hora de _crear un nuevo_ producto. 
 
-Si deseas desactivar esta opción, debes editar una Variante y cambiar el campo Disponibilidad de «Siempre» a «En Stock».
+Si deseas cambiar la disponibilidad de una variante debes **editar** la columna Disponibilidad de «En Stock» a «Siempre». 
 
 <div class="captura">
   <div class="c-contenido">
@@ -55,7 +59,7 @@ Si deseas desactivar esta opción, debes editar una Variante y cambiar el campo 
 
 ### Variante agotada
 
-Cuando la variante del producto se agota, este estado será informado al visitante de la tienda y no será posible agregar al carro.
+Cuando la variante del producto se agota (stock = 0), este estado será informado al visitante de la tienda y no será posible agregar al carro.
 
 <div class="captura">
   <div class="c-contenido">
