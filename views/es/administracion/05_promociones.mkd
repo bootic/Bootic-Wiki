@@ -1,7 +1,7 @@
 ---
 :title: "Promociones"
-:description: "Como crear una promoción o código de descuento"
-:keywords: promo, promociones, publicidad, campaña, redes sociales, twitter, facebook, blog, screencast, video, video tutorial,discount, descuento, codigo
+:description: "Cómo crear una promoción o código de descuento"
+:keywords: promo, promociones, publicidad, campaña, redes sociales, twitter, facebook, blog, screencast, video, video tutorial, promoción, discount, descuento, codigo
 :group:
   :name: Administración y configuración
   :label: ¿Qué es y cómo se configura una Promoción?
@@ -9,44 +9,62 @@
 
 # ¿Qué son las Promociones y cómo las uso?
 
-En Bootic hay dos tipos de ofertas o *promociones* que puedes ofrecer a tus clientes.
+En Bootic hay _dos tipos_ de ofertas o Promociones que puedes ofrecer a tus clientes.
 
-Ambos tipos de promociones son administradas en la pestaña "Promociones" de tu interfaz de administración.
+1. El comprador —a la hora de ingresar al Checkout— ingresa un código de descuento. Activación **manual**. Figura 2 y 3.
+2. La promoción se activa automáticamente cuando el comprador agrega uno o más productos al carro de compra. Activación **automática**.
+
+Ambos tipos son administradas en la pestaña «Promociones» de tu interfaz de Administración.
 
 <div class="captura">
   <div class="c-contenido">
     <img src="/img/admin/promotions-tab.png" alt="Pestaña de promociones" />
   </div>
   <div class="c-pie">
-    Administrando promociones.
+    Administrando promociones. Se señala además los tipos (automática, por código).
   </div>
 </div>
 
 ## 1. Código de descuento
 
-Un código de descuento es una promoción u oferta donde el comprador necesita un código para activar la oferta. El código lo creas tu al momento de activar la promoción y lo distribuyes a tus compradores.
+Un **código de descuento** es una promoción u oferta donde el comprador necesita un *código* para activar la oferta. El código
+es creado por el locatario, ejemplos de código: `primavera17`,`oferta10`,`mama15`,`navidad100`. El código es único, es
+decir, no se puede repetir en el futuro, aún cuando éste haya expirado.
 
 <div class="captura">
   <div class="c-contenido">
     <img src="/img/admin/promo-discount-code.png" alt="Creando un código de descuento" />
   </div>
   <div class="c-pie">
-    Creando un código de descuento.
+    <strong>Figura 1</strong>: Creando un código de descuento.
   </div>
 </div>
 
-Un código de descuento puede ser ingresado manualmente en un campo especial al momento comprar. 
+### Activando la promoción con código
+
+Cuando el comprador llega al checkout debe ingresar el código de descuento. Si los productos en el carro **cumplen** con las
+condiciones de la promoción entonces se _aplicará_ el descuento.
 
 <div class="captura">
   <div class="c-contenido">
     <img src="/img/admin/discount-code-field.png" alt="Campo para código de descuento" />
   </div>
   <div class="c-pie">
-    Ingresando el código de descuento al momento de comprar.
+    <strong>Figura 2</strong> Checkout: Ingresando el código de descuento.
   </div>
 </div>
 
-Este tipo de promoción también genera una *URL* especial que puedes distribuir a tus clientes (por ejemplo en emails o [redes sociales](/es/administracion/promociones/en-redes-sociales)). Una vez visitada, esta URL o link deja activo el descuento para ese usuario.
+<div class="captura">
+  <div class="c-contenido">
+    <img src="/img/admin/promocion-activada.png">
+  </div>
+  <div class="c-pie"><strong>Figura 3</strong>: Promoción activada</div>
+</div>
+
+
+Este tipo de promoción también genera una *URL* de activación. Envía esta URL por correo o bien publícala en [tus redes
+sociales](/es/administracion/promociones/en-redes-sociales), de este forma quien haga click en la misma llegará a la
+tienda con la promoción _ya activada_ y no tendrá que ingresar el código al momento de llegar al Checkout.
 
 ## 2. Promoción automática
 
@@ -57,9 +75,21 @@ Una promoción automática se aplica automáticamente a pedidos que califiquen c
     <img src="/img/admin/promo-automatic.png" alt="Creando una promoción automática" />
   </div>
   <div class="c-pie">
-    Creando una promoción automática.
+    <strong>Figura 4</strong>: Creando una promoción automática.
   </div>
 </div>
+
+### Activando la promoción automática
+
+La promoción se activará de manera automática cuando uno o más productos que cumplan con la promoción ingresen al carro.
+
+<div class="captura">
+  <div class="c-contenido">
+    <img src="/img/admin/promocion-activada-auto.png">
+  </div>
+  <div class="c-pie"><strong>Figura 5</strong>: Promoción activada automáticamente</div>
+</div>
+
 
 ## Criterios de promoción
 
@@ -73,6 +103,11 @@ Los límites que puedes aplicar a una promoción son los siguientes:
 * Límite de **usos**.
 * **Rango** de precios.
 * **Cantidad** de productos.
+
+<div class="note tip">
+<p><strong>Despacho gratuito</strong>: Si quieres crea una promoción sin descuento y con despacho gratuito en <strong>Tipo de descuento</strong>
+selecciona «Dinero» y en <strong>Descuento</strong> pon «0».</p>
+</div>
 
 ## Video-tutorial: Creando códigos de descuento
 
