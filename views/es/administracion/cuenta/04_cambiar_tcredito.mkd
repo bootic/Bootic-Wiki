@@ -115,7 +115,7 @@ la misma</a> y luego [ingresas de nuevo][login].
 
 ### Problemas guardando la información de la tarjeta
 
-Si te da problemas cuando intengas guardar la información de la tarjeta **deja en blanco el campo Issue
+Si te da problemas cuando intentas guardar la información de la tarjeta **deja en blanco el campo Issue
 number**. Luego de eso intenta enviar (Submit) nuevamente.
 
 <div class="captura">
