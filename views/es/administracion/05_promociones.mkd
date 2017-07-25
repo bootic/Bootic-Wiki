@@ -97,12 +97,12 @@ Bootic te permite crear tantas promociones como quieras de ambos tipos, usando d
 
 Los límites que puedes aplicar a una promoción son los siguientes:
 
-* Un **valor** o un **porcentaje del valor** de cada pedido y otorgar despacho gratuito.
-* Restringir la promoción a productos pertenecientes a una **colección determinada**.
-* **Tiempo de validez** (con año, mes, día, hora y minuto) — incluso puedes programar futuras promociones.
-* Límite de **usos**.
-* **Rango** de precios.
-* **Cantidad** de productos.
+* Descuento: Un **valor** o un **porcentaje del valor** de cada pedido y otorgar despacho gratuito.
+* Limitar por colección: Restringir la promoción a productos pertenecientes a una **colección determinada**.
+* Fechas de validez: **Tiempo de validez** (con año, mes, día, hora y minuto) — incluso puedes programar futuras promociones.
+* Límite de **usos**: 1, 2, 10 ó sin límite.
+* **Rango** de precios: Desde y hasta.
+* **Cantidad** de productos en el pedido: Desde, hasta.
 
 <div class="note tip">
 <p><strong>Despacho gratuito</strong>: Si quieres crea una promoción sin descuento y con despacho gratuito en <strong>Tipo de descuento</strong>
