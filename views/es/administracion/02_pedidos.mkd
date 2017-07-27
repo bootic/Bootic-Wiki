@@ -31,7 +31,7 @@ acceder a ellos debes ir a la sección Pedidos — Figura 1.
     * <strong class="label-order label-closed">Confirmados</strong> = recibió el pago. 
     * <strong class="label-order label-shipped">Despachados</strong>= el pedido se envió al cliente. 
  
-6. **Exportación**: Permite exportar los pedidos por año y mes a formato CSV
+6. **Exportación**: Permite exportar los pedidos por año y mes a formato CSV — [más información](/es/administracion/pedidos/reportes).
 
 ## Ciclo de la compra y despacho de un producto
 
