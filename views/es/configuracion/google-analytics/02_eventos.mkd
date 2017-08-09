@@ -1,0 +1,43 @@
+---
+:title: "Eventos en el checkout"
+:description: "Eventos enviado a Google Analytics"
+:keywords: google, analytics, estadisticas, eventos, events
+---
+# Google Analytics: Eventos en el checkout
+
+En cada paso del Checkout Bootic envía eventos a Google Analytics — **Figura 1**. Estos eventos son útiles para analizar el
+comportamiento de tus compradores creando [objetivos][1].
+
+A continuación _qué se envía_ y _en qué momento_:
+
+### Paso 1 del checkout
+
+* **Categoría**: Checkout
+* **Acción**: Paso 1
+* **Etiqueta**: Información de envío
+
+### Paso 2 del checkout
+
+* **Categoría**: Checkout
+* **Acción**: Paso 2
+* **Etiqueta**: Opciones de envío y medio de pago
+
+### Paso 3 del checkout
+
+* **Categoría**: Checkout
+* **Acción**: Paso 3
+* **Etiqueta**: Pago exitoso, XXX
+
+Donde XXX es el total del pedido ($).
+
+
+
+<div class="captura">
+  <div class="c-contenido">
+    <img src="/img/configuracion/ga_eventos.png">
+  </div>
+  <div class="c-pie"><strong>Figura 1</strong>: Ejemplo de configuración de un evento en Google Analytics </div>
+</div>
+
+
+[1]: https://support.google.com/analytics/answer/1012040?hl=es "Qué es un objetivo en GA"
