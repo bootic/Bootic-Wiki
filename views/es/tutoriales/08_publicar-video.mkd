@@ -1,0 +1,68 @@
+---
+:title: Publicar un Video
+:description: "Como publicar un video de youtube"
+:keywords: video, publicar, portada, producto
+---
+
+# Publicar un Video (youtube)
+
+Bootic no permite subir videos, pero sí puedes _insertar_ un video **previamente** publicado en algún servicio
+como [Vimeo][vimeo] o [YouTube][youtube]. 
+
+A continuación te explicamos cómo «publicar» un video **alojado** en YouTube.
+
+<div class="note info"> <p>Todos los <a href="https://es.wikipedia.org/wiki/Anexo:Servicios_de_alojamiento_de_videos">servicios de alojamiento de videos</a> permiten <em>incrustar</em> los mismos en otra página web. Si tu servicio no es Youtube revisa la documentación.</p> </div> 
+
+## Paso 1: Subir el video
+
+El primer paso es [subir el video a youtube][como_subir].
+
+## Paso 2: «Subir» el video a tu tienda
+
+Para _insertar_ el video en tu Producto, Noticia o Página de tu tienda Bootic anda al video que acabas de subir en youtube y busca el enlace «Compartir» / «Insertar vínculo» — **Figura 1**.
+
+<div class="captura">
+  <div class="c-contenido">
+    <img src="/img/tutoriales/emb_video_youtube.gif" width="640">
+  </div>
+  <div class="c-pie"><strong>Figura 1</strong>: Obteniendo el código para insertar</div>
+</div>
+
+## Paso 3: Copia el código
+
+Copia el código que Youtube te mostrará — **Figura 2**. Ten presente que puedes personalizar el tamaño del video haciendo clic en «Mostrar más» — **Figura 3**.
+
+<div class="captura">
+  <div class="c-contenido">
+    <img src="/img/tutoriales/youtube_1.png" width="640">
+  </div>
+  <div class="c-pie"><strong>Figura 2 </strong>: Código vínculo</div>
+</div>
+
+<div class="captura">
+  <div class="c-contenido">
+    <img src="/img/tutoriales/youtube_2.png" width="640">
+  </div>
+  <div class="c-pie"><strong>Figura 3</strong>: Tamaños disponibles</div>
+</div>
+
+## Paso 4: Insertar el video
+
+El video que subiste a youtube puede ser _insertado_ en:
+
+1. La descripción de un producto — **Figura 4**.
+2. Una Noticia
+3. Una Página
+
+<div class="captura">
+  <div class="c-contenido">
+    <img src="/img/tutoriales/producto_con_video.png" width="640" />
+  </div>
+  <div class="c-pie"><strong>Figura 4</strong>: El video como descripción de un producto</div>
+</div>
+
+
+
+[vimeo]:https://www.vimeo.com
+[youtube]:https://www.youtube.com
+[como_subir]:https://support.google.com/youtube/answer/57407?hl=es
