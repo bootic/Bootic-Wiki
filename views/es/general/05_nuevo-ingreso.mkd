@@ -49,7 +49,7 @@ forma Bootic entenderá que es un correo distinto.
 
 Para el ejemplo de la captura el usuario usó el correo `juanperez+acme@gmail.com` para registrarse en la tienda `acme` y el correo `juanperez+romano@gmail.com` para registrarse en la tienda `romano`.
 
-Ambos son el mismo correo `juanperez@gmail.com` _gracias_ al alias de correo que permite GMail.
+Ambos son el mismo correo `juanperez@gmail.com` _gracias_ al alias de correo que permite GMail.  **Importante**: En Gmail este alias es **ficticio**, no confundir con el alias de casilla de correo, ese lo debes crear y no tiene relación con este _alias_.
 
 <div class="captura">
   <div class="c-contenido">
