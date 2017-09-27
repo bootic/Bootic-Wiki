@@ -1,0 +1,51 @@
+---
+:title: La conexión no es privada 
+:description: "Error en certificado"
+:keywords: error, conexión
+---
+# La conexión no es privada
+
+La gran mayoría de las veces tu tienda Bootic será accesible bajo el [ dominio propio ][1] `www.acme.com`—
+nótese las triple w (www)—en otro caso podría ser `store.acme.com` (en este caso pon atención a `store`) o
+bien `tienda.acme.com` (tienda)... etc.
+
+Ese prefijo (www, store, tienda) es el nombre con el que le dijiste a tu gestor DNS que derivara el tráfico a tu
+tienda Bootic. En otras palabras configuraste lo siguiente: «señor DNS si alguien va a www.acme.com derívalo a
+`acme.bootic.net`». Pero gracias a la magia de tu DNS el nombre `acme.bootic.net` nunca será visto por tu
+visitante. 
+
+Como sabrás Bootic genera una conexión segura SSL para todos los dominios personalizados, es así que visitando
+`http://www.acme.com` serás redireccionado automáticamente a `https://www.acme.com` (la **s** en el protocolo 
+indica conexión segura).
+
+Hasta acá todo va bien, porque tu DNS y Bootic conducen al visitante a una conexión cifrada... pero.
+
+## Pero
+
+Lo anterior tiene «consecuencias» inesperadas y muchas veces alarmantes a los ojos del visitante cuando se
+accede el dominio propio sin el prefijo designado para la tienda, o sea `acme.com` (nota que no están las
+www). **Esto no es un problema de Bootic**, recuerda que `www.acme.com` es _nuestra_ gestión, `acme.com` en
+cambio es gestionado por **tu** servidor. 
+
+Si estás usando Google Chrome verás un mensaje como la Figura 1.
+
+<div class="captura">
+  <div class="c-contenido">
+    <img src="/img/configuracion/conexion-no-privada.png">
+  </div>
+  <div class="c-pie"><strong>Figura 1</strong>: Advertencia de seguridad Google Chrome: Conexión no privada</div>
+</div>
+
+El servidor no ha podido probar que su dominio es `acme.com`, Google Chrome activa una advertencia y te mostrará ese
+atemorizador mensaje. Nota que el servidor al que se hace referencia es el tuyo, no el de tu tienda Bootic.
+
+## ¿Qué hacer?
+
+Tu gestor DNS debería tener una opción de redireccionamiento de dominio. Acá configura que quién te visite en `acme.com`
+sea redireccionado a `www.acme.com`, extrapola este ejemplo a `store` o `tienda`.
+
+Existe una posibilidad de que tu gestor DNS no tenga la opción descrita arriba, acá puedes resolverlo con
+alguna de las alternativas que te comentamos en nuestro artículo de [redirección de dominio sin www][2].
+
+[1]:/es/general/dominio-personalizado "dominio personalizado"
+[2]:/es/tutoriales/sin-www-a-www
