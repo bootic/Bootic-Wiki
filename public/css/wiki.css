@@ -460,4 +460,5 @@ body[class^='es_general'] #sidebar {
 .label-invalid {background-color:#d74815}
 .label-closed{background-color:#aecf47}
 .label-shipped{background-color:#008AB1}
-.label-successful {background-color:#53D4B2 }
+.label-delivered{background-color:#004a5f}
+.label-successful {background-color:#53D4B2}
