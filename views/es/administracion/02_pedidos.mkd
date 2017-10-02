@@ -16,22 +16,25 @@ acceder a ellos debes ir a la sección Pedidos — Figura 1.
   <div class="c-pie"><strong>Figura 1</strong>: sección Pedidos</div>
 </div>
 
-1. **Filtro fecha**: Filtra la vista actual por mes y año.
-2. **Gráfico**: Por cantidad o conversiones (los colores se relacionan con los estados).
-3. **Listado**: Enumeración de pedidos, el primero de la lista es el más recientemente actualizado.
+1. **Filtros**: Por estado / fecha / medio de pago / etiqueta / ordenado por
+
+    Estados: 
+      * <strong>Todas</strong>: listará todos los Pedidos.
+      * <strong class="label-order label-pending">Pendientes</strong> = a la espera del pago. 
+      * <strong class="label-order label-invalid">Anulados</strong> = nulo.
+      * <strong class="label-order label-successful">Exitosos</strong> = confirmado y despachados.
+      * <strong class="label-order label-closed">Confirmados</strong> = recibió el pago. 
+      * <strong class="label-order label-shipped">Despachados</strong> = el pedido se envió al cliente. 
+      * <strong class="label-order label-delivered">Entregados</strong> = el pedido se entregó vía retiro en tienda
+
+2. **Gráfico**: Adaptado al filtro activado
+3. **Listado**: Enumeración de pedidos, el primero de la lista es el más recientemente creado.
     - Haciendo clic en el ID del pedido podrás **[ ver el detalle ](/es/administracion/pedidos/detalle-pedido)** del mismo.
     - Haciendo clic en el Nombre del cliente podrás ver el **historial de Pedidos** de ese cliente (basado en su correo).
 
-4. **Búsqueda por código**: El código es el **ID** del listado de pedidos (2da columna).
-5. **Filtro por estado**: Los estados son:
-    * <strong>Todas</strong>: listará todos los Pedidos.
-    * <strong class="label-order label-pending">Pendientes</strong> = a la espera del pago. 
-    * <strong class="label-order label-invalid">Anulados</strong> = nulo.
-    * <strong class="label-order label-successful">Exitosos</strong> = confirmado y despachados.
-    * <strong class="label-order label-closed">Confirmados</strong> = recibió el pago. 
-    * <strong class="label-order label-shipped">Despachados</strong>= el pedido se envió al cliente. 
+4. **Búsqueda**: Por código o por nombre de cliente.
  
-6. **Exportación**: Permite exportar los pedidos por año y mes a formato CSV — [más información](/es/administracion/pedidos/reportes).
+5. **Exportación**: Permite exportar los pedidos por año y mes a formato CSV — [más información](/es/administracion/pedidos/reportes).
 
 ## Ciclo de la compra y despacho de un producto
 
@@ -52,6 +55,7 @@ correo electrónico, además de verla en su panel de administración.
   <p>Los siguientes Medios de pago no cambiarán el estado a Confirmado (verde) automáticamente:</p>
   <ul>
     <li>Tranferencia bancaria</li>
+    <li>Paypal</li>
     <li>Medio de pago personalizado</li>
   </ul>
   <p>El locatario <em>manualmente</em> deberá cambiar el estado cuando este reciba el pago</p>
