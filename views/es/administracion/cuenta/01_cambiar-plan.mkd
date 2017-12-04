@@ -39,7 +39,7 @@ Para finalizar presiona el botón «Proceder al pago» - Figura 2.2
 
 <div class="captura">
     <div class="c-contenido">
-        <img src="/img/billing/plan-amb.png" alt="Elige el plan y proceder al pago" />
+        <img src="/img/billing/planes.png" alt="Elige el plan y proceder al pago" />
     </div>
     <div class="c-pie"><strong>Figura 2</strong>: Seleccionar el plan y proceder al pago</div>
 </div>
