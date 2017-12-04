@@ -33,9 +33,7 @@ Si estas en período de prueba verás un enlace y tus días restantes — Figura
 </div>
 
 A continuación verás nuestra oferta de planes. Revísalos con atención y elige el que se adecue a tu tienda presionando
-el botón «Quiero este plan» - Figura 2.1
-
-Para finalizar presiona el botón «Proceder al pago» - Figura 2.2
+el botón «Elegir» - Figura 2.
 
 <div class="captura">
     <div class="c-contenido">
