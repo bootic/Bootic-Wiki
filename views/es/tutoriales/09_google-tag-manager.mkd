@@ -1,0 +1,71 @@
+---
+:title: Google tag manager
+:description: "Como instalar google tag manager"
+:keywords: google, gtm, tag, manager 
+---
+
+# Google tag manager (GTM)
+
+El [gestor de etiquetas][1] de Google se ha transformado en una herramienta fundamental de análisis de tráfico
+y optimización de campañas de marketing.
+
+<div class="note info">
+  <p>
+    Este tutorial asume que ya tienes creada la cuenta GTM, si todavía no la tienes puedes <a href="https://tagmanager.google.com">crear una</a> antes de continuar con este tutoral.
+  </p>
+</div>
+
+A continuación te contamos cómo instalar GTM en tu tienda Bootic. 
+
+## Paso 1: Obtener el código javascript GTM
+
+Cuando creas tu cuenta GTM te pedirán poner un código javascript en tu tienda, como el siguiente:
+
+<div class="captura">
+  <div class="c-contenido">
+    <img src="/img/tutoriales/gtm_3.png">
+  </div>
+  <div class="c-pie"><strong>Figura 1</strong>: Ejemplo de código generado por GTM</div>
+</div>
+
+Copia ambos códigos a tu portapapeles.
+
+## Paso 2: Editar layout
+
+La plantilla **layout** es la que llama a todas las otras, por lo tanto es acá donde debes agregar el código
+GTM para que éste sea replicado en todas las páginas que componen tu tienda Bootic.
+
+Anda a Diseño / Editor de plantillas — Figura 2.
+
+<div class="captura">
+  <div class="c-contenido">
+    <img src="/img/tutoriales/gtm_1.png">
+  </div>
+  <div class="c-pie"><strong>Figura 2</strong>: Ir al editor de plantillas </div>
+</div>
+
+Identifica las dos zonas dónde debes pegar el código que te entrega GMT — Figura 3:
+
+1. Justo antes del elemento de cierre `</head>`
+2. Justo después del inicio del elemento `<body>`
+
+<div class="captura">
+  <div class="c-contenido">
+    <img src="/img/tutoriales/gtm_2.png">
+  </div>
+  <div class="c-pie"><strong>Figura 3</strong>: Edición de plantilla layout</div>
+</div>
+
+## Paso 3: Resultado final
+
+A continuación puedes ver cómo debería quedar GTM instalado en tu tienda:
+
+<div class="captura">
+  <div class="c-contenido">
+    <img src="/img/tutoriales/gtm_4.png">
+  </div>
+  <div class="c-pie"><strong>Figura 4</strong>: Ejemplo de tienda con GTM</div>
+</div>
+
+
+[1]:https://support.google.com/tagmanager/answer/6102821?hl=es
