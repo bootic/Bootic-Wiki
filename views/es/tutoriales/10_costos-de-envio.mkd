@@ -1,0 +1,45 @@
+---
+:title: Muestra el costo de envío
+:description: "Muestra a tus cliente el costo del envío antes de llegar al checkout"
+:keywords: costos, envios, zonas, despacho, peso, calculo
+---
+
+# Muestra el costo de envío
+
+En el mundo del comercio electrónico una razón importante para **abandonar** la compra es el _costo del
+despacho_. Como ya sabrás Bootic calcula y muestra este costo al final del proceso de checkout.
+
+Pero muchas veces el comprador quiere conocer el costo de enviar ese producto antes de llegar al checkout.
+
+Un _helper_ Liquid (pequeña librería) hará posible esto. 
+
+Con ello tu tienda podrá mostrar un ventana modal con el costo de envío a la zona geográfica que el comprador seleccione — Figura 1.
+
+<div class="captura">
+  <div class="c-contenido">
+    <img src="/img/tutoriales/costos-de-envio.png">
+  </div>
+  <div class="c-pie"><strong>Figura 1 </strong>: Ventana modal mostrando el costo de envío</div>
+</div>
+
+<div class="note info">
+  <p><strong>Importante</strong>: Solo mostrará un resultado si la zona geográfica seleccionada tiene costos de envío creada en tu tienda.</p>
+</div>
+
+## Cómo implementarlo
+
+En algún lugar de la plantilla `product.html` (Diseño / Editor de plantillas) pon la siguiente línea — Figura 2.
+
+<pre> {% shipping_calculator %} </pre>
+
+Lo anterior generará un enlace de nombre: «Ver costos de envío» 
+
+<div class="captura">
+  <div class="c-contenido">
+    <img src="/img/tutoriales/costo-de-envio-edicion.png">
+  </div>
+  <div class="c-pie"><strong>Figura 2</strong>: Editando plantilla product.html</div>
+</div>
+
+
+<div class="note tip"><p>También funcionará si el helper se incluye en la plantilla <code>cart.html</code></p></div>
