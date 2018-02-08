@@ -1,5 +1,0 @@
----
-:title: "Recetas"
-:description: "Ejemplos de código para lograr distintas cosas"
-:keywords: diseño, plantillas, código, ejemplos, recetas
----
