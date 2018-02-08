@@ -24,7 +24,7 @@ class Redirects
   end
 end
 
-use Redirects, from_exp: /^\/es\/diseno\/?/, to: '/diseno', code: 301
+use Redirects, from_exp: /^\/es\/diseno\/(.*)/, to: '/es/diseno', code: 301
 use Codehighlighter
 use Rack::JSONP
 
