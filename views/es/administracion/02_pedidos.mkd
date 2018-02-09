@@ -34,7 +34,7 @@ acceder a ellos debes ir a la sección Pedidos — Figura 1.
 
 4. **Búsqueda**: Por código o por nombre de cliente.
  
-5. **Exportación**: Permite exportar los pedidos por año y mes a formato CSV — [más información](/es/administracion/pedidos/reportes).
+5. **Exportación**: Permite exportar los pedidos por año y mes a formato CSV — [más información](/es/administracion/pedidos/exportar-a-excel).
 
 ## Ciclo de la compra y despacho de un producto
 

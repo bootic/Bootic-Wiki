@@ -1,5 +1,5 @@
 ---
-:title: Detalle del pedido 
+:title: Detalle
 :description: "Contenido del un pedido"
 :keywords: pedido, pagos, gestión, venta, despachar, pendiente, cerrada
 ---
