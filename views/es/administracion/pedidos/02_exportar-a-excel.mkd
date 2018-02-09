@@ -24,20 +24,20 @@ En la sección Pedidos, _al final_, encontrarás un enlace «Exportar pedidos» 
 
 ## Paso 2: Abrir aplicación Excel
 
-Abra la aplicación MS-Excel / Archivo / Libro nuevo. Estos pasos previos son importantes.
+Abre la aplicación MS-Excel. Luego anda a:  Archivo / Libro nuevo. Estos pasos previos son importantes.
 
 ## Paso 3: Importar archivo CSV
 
 1. En el menú Excel anda a Archivo / Importar 
-2. Seleccione «Archivo CSV», clic en **Importar** — Figura 2
+2. Selecciona «Archivo CSV», clic en **Importar** — Figura 2
   <div class="captura">
     <div class="c-contenido">
       <img src="/img/admin/exportar_pedido_archivo-csv.png">
     </div>
     <div class="c-pie"><strong>Figura 2 </strong>: Archivo CSV</div>
   </div>
-3. Seleccione el archivo desde su PC
-4. En «Origen del archivo» seleccione Unicode (UTF-8) — Figura 3
+3. Selecciona el archivo desde su PC
+4. En «Origen del archivo» selecciona Unicode (UTF-8) — Figura 3
   <div class="captura">
     <div class="c-contenido">
       <img src="/img/admin/exportar_pedido_utf8.png">
@@ -55,7 +55,7 @@ Abra la aplicación MS-Excel / Archivo / Libro nuevo. Estos pasos previos son im
 7. «Siguiente»
 8. «Finalizar»
 
-El resultado final será una planilla de cálculo Excel — Figura 5.
+El resultado final—o sea el archivo importado—será una planilla de cálculo Excel — Figura 5.
 
 <div class="captura">
   <div class="c-contenido">
