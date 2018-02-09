@@ -1,0 +1,67 @@
+---
+:title: Exportando a Excel
+:description: "Exporta tus pedidos a MS-Excel"
+:keywords: pedidos, órdenes, pagos, gestión, venta, despachar, excel, csv, exportar
+---
+
+# Exportar los pedidos a MS-Excel
+
+En la sección [Pedidos][1] de tu panel de control Bootic es posible exportar la información a formato CSV, el cual
+puedes gestionar usando Microsoft Excel. 
+
+A continuación te contamos cómo lograrlo.
+
+## Paso 1: Descargar archivo CSV
+
+En la sección Pedidos, _al final_, encontrarás un enlace «Exportar pedidos» (Formato normal CSV), esto **descargará** en tu PC un archivo en formato CSV — Figura 1.
+
+<div class="captura">
+  <div class="c-contenido">
+    <img src="/img/admin/exportar_pedido_a_csv.png">
+  </div>
+  <div class="c-pie"><strong>Figura 1</strong>: Enlace a exportar contenido a CSV</div>
+</div>
+
+## Paso 2: Abrir aplicación Excel
+
+Abra la aplicación MS-Excel / Archivo / Libro nuevo. Estos pasos previos son importantes.
+
+## Paso 3: Importar archivo CSV
+
+1. En el menú Excel anda a Archivo / Importar 
+2. Seleccione «Archivo CSV», clic en **Importar** — Figura 2
+  <div class="captura">
+    <div class="c-contenido">
+      <img src="/img/admin/exportar_pedido_archivo-csv.png">
+    </div>
+    <div class="c-pie"><strong>Figura 2 </strong>: Archivo CSV</div>
+  </div>
+3. Seleccione el archivo desde su PC
+4. En «Origen del archivo» seleccione Unicode (UTF-8) — Figura 3
+  <div class="captura">
+    <div class="c-contenido">
+      <img src="/img/admin/exportar_pedido_utf8.png">
+    </div>
+    <div class="c-pie"><strong>Figura 3</strong>: Seleccionando Origen de archivo</div>
+  </div>
+5. Clic en «Siguiente»
+6. En Delimitadores «Otro», coma (,) — Figura 4
+  <div class="captura">
+    <div class="c-contenido">
+      <img src="/img/admin/exportar_pedido_delimitador.png">
+    </div>
+    <div class="c-pie"><strong>Figura 4</strong>: Delimitador, Otro</div>
+  </div>
+7. «Siguiente»
+8. «Finalizar»
+
+El resultado final será una planilla de cálculo Excel — Figura 5.
+
+<div class="captura">
+  <div class="c-contenido">
+    <img src="/img/admin/exportar_pedido_resultado.png">
+  </div>
+  <div class="c-pie"><strong>Figura 5</strong>: Resultado final </div>
+</div>
+
+[1]:/es/administracion/pedidos "pedidos"

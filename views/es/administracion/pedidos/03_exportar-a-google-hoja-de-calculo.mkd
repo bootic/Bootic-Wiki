@@ -1,10 +1,10 @@
 ---
-:title: Exportando tus pedidos
+:title: Exportando a Google Hoja de cálculo
 :description: "Cómo generar reportes de tus pedidos en formato de planilla de cálculo."
 :keywords: pedidos, órdenes, pagos, gestión, venta, despachar, pendiente, cerrada, drive, google, planilla, csv
 ---
 
-# Gestionando el CSV de pedidos usando Google hoja de cálculo
+# Exportar los pedidos a Google hoja de cálculo
 
 Si deseas abrir el archivo CSV de pedidos usando [Google hoja de cálculo](https://docs.google.com/spreadsheets), 
 los pasos son:
