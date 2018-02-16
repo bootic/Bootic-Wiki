@@ -1,0 +1,100 @@
+---
+:title: Colecciones 
+:description: Qué son las colecciones 
+:keywords: colecciones, collection, categoría, sección, agrupacion, productos
+---
+
+# Colecciones
+
+Una colección te permite agrupar una cantidad de productos bajo el criterio que tu estipules. Por ejemplo: 
+
+* Colección Verano 
+* Colección Invierno 
+* Colección Liquidación Verano
+* Colección Lo más Vendido 
+* Colección Día de la Madre
+* etc, etc, etc
+
+A diferencia de otras soluciones e-commerce Bootic prescinde de las categorías, acá solo existe
+**Colecciones** de productos.
+
+## Características de las colecciones
+
+Las colecciones proporcionan una cantidad interesante de características que te ayudarán a potenciar tu
+tienda, como son:
+
+* Puedes crear tantas colecciones quieras.
+* Un producto puede pertenecer a **una o varias** _colecciones_ _al mismo tiempo_. 
+* Eliminar una colección **no borra los productos** que contiene.
+* Una colección puede ser _llamada_ (link) desde un menú.
+* Es posible agregar o quitar productos a una colección **masivamente**.
+* Disponen de un **ordenamiento propio**, [independiente del de nivel tienda][1].
+* Tienen una dirección propia dentro de tu tienda, por ejm: `TIENDA.bootic.net/collections/verano`.
+* Es posible agregar un texto (HTML) a la colección, donde es posible _además_ subir una imagen—a modo de ilustración.
+* Es posible que una colección tenga un diseño personalizado.
+* Las colecciones disponen de una **clave primaria** (slug) que es útil para gestionar la visibilidad de la 
+  misma en determinadas zonas de la tienda. Ejm: Colección Ofertas en la portada de la tienda.
+
+<div class="note info">
+<p>Un producto puede pertenecer a <strong>muchas</strong> Colecciones, sin embargo solo puede pertenecer a <strong>un solo</strong> Tipo de Producto. Esta es la gran diferencia entre Colecciones y Tipos de Productos.</p>
+</div>
+
+## Cómo crear una colección
+
+En cualquier ficha de producto, en la columna «Colecciones», haciendo clic en «Agregar nueva» podrás creala (el producto actual será agregado automáticamente) — Figura 1. 
+
+<div class="captura">
+  <div class="c-contenido">
+    <img src="/img/admin/colecciones_4.png">
+  </div>
+  <div class="c-pie"><strong>Figura 1</strong>: Creando la colección «Sale»</div>
+</div>
+
+Si la colección **ya existe** solo debes hacer clic en el nombre y el producto será agregado — Figura 2.
+
+<div class="captura">
+  <div class="c-contenido">
+    <img src="/img/admin/colecciones_1.png">
+  </div>
+  <div class="c-pie"><strong>Figura 2 </strong>: Agregando el producto Polera Algodón a la colección «Destacados»</div>
+</div>
+
+Si **quieres agregar más de un producto** a un colección anda al listado (sección Productos), haciendo clic en
+el costado izquierdo del producto podrás seleccionarlo, luego en el menú de herramientas selecciona «Agregar
+a colección», luego selecciona la colección y finalmente presiona el botón «Aceptar» — Figura 3 
+
+<div class="captura">
+  <div class="c-contenido">
+    <img src="/img/admin/colecciones_2.png">
+  </div>
+  <div class="c-pie"><strong>Figura 3</strong>: Agregando productos masivamente a la colección Destacados</div>
+</div>
+
+
+## Cambiar el orden de los productos en una colección 
+
+Una de las características más poderosas de las colecciones es que puedes ordenar los productos que la
+contienen. Para ello anda a cualquier ficha de producto y en la columna colección dale clic a "editar", esto te
+llevará a la colección misma donde podrás cambiar el ordenamiento — Figura 4.
+
+<div class="captura">
+  <div class="c-contenido">
+    <img src="/img/admin/colecciones_3.png">
+  </div>
+  <div class="c-pie"><strong>Figura 4</strong>: Editando una colección: Cambiando el orden de los productos</div>
+</div>
+
+## Cómo eliminar una colección
+
+En la edición de la colección (clic en «editar» colección en cualquier ficha de producto), al costado derecho,
+podrás eliminar la misma - Figura 5. Esta acción **no eliminará** los productos que contenga.
+
+<div class="captura">
+  <div class="c-contenido">
+    <img src="/img/admin/colecciones_5.png">
+  </div>
+  <div class="c-pie"><strong>Figura 5</strong>: Eliminar una colección </div>
+</div>
+
+
+[1]:/es/administracion/productos/despliegue-en-listas
