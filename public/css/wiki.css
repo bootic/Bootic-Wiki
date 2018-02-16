@@ -462,3 +462,9 @@ body[class^='es_general'] #sidebar {
 .label-shipped{background-color:#008AB1}
 .label-delivered{background-color:#004a5f}
 .label-successful {background-color:#53D4B2}
+
+.more-at-the-bottom {
+  text-align: center;
+  background: #eee;
+  padding: 1em;
+}
