@@ -139,29 +139,9 @@
         <%= @content %>
       </div>
       <% unless !@page || ['/es', '/en', '/'].include?(@page.url) %>
-        <div id="comments">
-          <div id="disqus_thread"></div>
+        <div class="more-at-the-bottom">
+          ¿Tienes dudas sobre este artículo? <a href="https://www.bootic.io/forms/contacto" title="formulario de contacto">¡Escríbenos!</a>
         </div>
-        <script type="text/javascript" charset="utf-8">
-          ////////////////////////////////////
-          // disqus
-          ////////////////////////////////////
-
-          var disqus_shortname = 'booticwiki';
-          var disqus_identifier = '<%= current_url %>';
-          var disqus_url = '<%= current_url %>';
-          <% if development? %>
-          var disqus_developer = 1;
-          <% end %>
-
-          (function() {
-            var dsq = document.createElement('script');
-            dsq.type = 'text/javascript';
-            dsq.async = true;
-            dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
-            document.getElementsByTagName('head')[0].appendChild(dsq);
-          })();
-        </script>
       <% end %>
     </div><!-- /content -->
 
@@ -173,7 +153,7 @@
             <li><a href="/es/configuracion">Sistema de pago, Dominio, CEO</a></li>
             <li><a href="/es/diseno">Diseño y modificación de plantillas</a></li>
             <li><a href="/es/tutoriales">Tutoriales, consejos, mejoras</a></li>
-        </ul> 
+        </ul>
     </div>
 
 </div><!-- /container -->
