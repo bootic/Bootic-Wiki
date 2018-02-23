@@ -58,9 +58,6 @@ producto cualquiera debes agregar lo siguiente a la plantilla **product.html**:
 {% endif %}
 </pre>
 
-**Nota**: Para el ejemplo anterior se muestran tres productos relacionados. Además
-se usa el bloque de codigo reutilizable [product_item](/es/diseno/recetas/product-item).
-
 ## Orden de aparición
 
 El orden de aparición de los productos relacionados es de forma descendente por la cantidad de etiquetas que
@@ -75,7 +72,7 @@ A continuación te mostramos una página detalle de un producto, con sus similar
     <img src="/img/tutoriales/producto-detalle-relacionado-similar.jpg" alt="Detalle de producto - con
     relacionados y similares">
   </div>
-  <div class="c-pie"><strong>Figura 1</strong>: Detalle de un producto. Contiene además Relacionados y <a href="/es/diseno/recetas/productos-similares" title="Productos Similares">Similares</a></div>
+  <div class="c-pie"><strong>Figura 1</strong>: Detalle de un producto. Contiene además Relacionados y <a href="/es/tutoriales/productos-similares" title="Productos Similares">Similares</a></div>
 </div>
 
 ## Sugiere productos relacionados en el carro de compra
@@ -104,5 +101,5 @@ al carro (Figura 2). Un excelente momento para _incentivar_ otra compra.
 </div>
 
 
-[similares]:/es/diseno/recetas/productos-similares "Definición de similares"
+[similares]:/es/tutoriales/productos-similares "Definición de similares"
 
