@@ -24,21 +24,21 @@ Bootic te permite agregar una o varias etiquetas a un pedido — Figura 1.
 
 Existen dos formas de etiquetar un Pedido:
 
-1. En el detalle del pedido, costado derecho — Figura 4
-2. Por medio de la herramienta de edición masiva de Pedidos — Figura 5
+1. En el detalle del pedido, costado derecho — Figura 2
+2. Por medio de la herramienta de edición masiva de Pedidos — Figura 3
 
 <div class="captura">
   <div class="c-contenido">
     <img src="/img/admin/etiquetas_4.png">
   </div>
-  <div class="c-pie"><strong>Figura 4</strong>: Agregando etiqueta en el detalle del Pedido</div>
+  <div class="c-pie"><strong>Figura 2</strong>: Agregando etiqueta en el detalle del Pedido</div>
 </div>
 
 <div class="captura">
   <div class="c-contenido">
     <img src="/img/admin/etiquetas_5.png">
   </div>
-  <div class="c-pie"><strong>Figura 5</strong>: Agregando etiqueta(s) desde el listado de Pedidos</div>
+  <div class="c-pie"><strong>Figura 3</strong>: Agregando etiqueta(s) desde el listado de Pedidos</div>
 </div>
 
 ## Cómo quitar una etiqueta
@@ -52,20 +52,20 @@ Al igual que _crear_ es posible quitar una etiqueta:
 
 Puedes acceder a los pedidos etiquetados de dos maneras:
 
-1. Por medio del menú de filtros — Figura 2
-2. Haciendo click en el mismo nombre de la etiqueta — Figura 3
+1. Por medio del menú de filtros — Figura 4
+2. Haciendo click en el mismo nombre de la etiqueta — Figura 5
 
 <div class="captura">
   <div class="c-contenido">
     <img src="/img/admin/etiquetas_2.png">
   </div>
-  <div class="c-pie"><strong>Figura 2</strong>: Filtrando pedidos por etiquetas</div>
+  <div class="c-pie"><strong>Figura 4</strong>: Filtrando pedidos por etiquetas</div>
 </div>
 
 <div class="captura">
   <div class="c-contenido">
     <img src="/img/admin/etiquetas_3.png">
   </div>
-  <div class="c-pie"><strong>Figura 3</strong>: Click para ir los pedidos con esa etiqueta</div>
+  <div class="c-pie"><strong>Figura 5</strong>: Click para ir los pedidos con esa etiqueta</div>
 </div>
 
