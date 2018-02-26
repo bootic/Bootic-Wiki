@@ -9,7 +9,7 @@
 Etiquetar un pedido es darle una **clasificación rápida** para una mejor gestión. 
 
 Por ejemplo: quieres tener acceso rápido a todos los pedidos que consideres una buena oportunidad para hacer
-_remarketing_ o fidelizar enviándoles un código de promoción.
+_remarketing_ o fidelizar enviándoles un [código de promoción](/es/administracion/promociones).
 
 Bootic te permite agregar una o varias etiquetas a un pedido — Figura 1.
 
