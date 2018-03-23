@@ -109,9 +109,3 @@ Los límites que puedes aplicar a una promoción son los siguientes:
 selecciona «Dinero» y en <strong>Descuento</strong> pon «0».</p>
 </div>
 
-## Video-tutorial: Creando códigos de descuento
-
-En el siguiente video (5:25) te explicamos cómo crear tu primera promoción con código de desuento:
-
-<iframe width="665" height="374" src="http://www.youtube.com/embed/1a9w1bM3-4g" frameborder="0" allowfullscreen></iframe>
-
