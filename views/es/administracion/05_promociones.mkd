@@ -15,7 +15,7 @@ En Bootic existen _tres_ alternativas para activar una Promoción:
 
 1. El comprador—a la hora de ingresar al Checkout—ingresa un código de descuento. [Activación **manual**](#toc_1). Figura 3 y 4.
 2. La Promoción se activa automáticamente cuando el comprador agrega uno o más productos al carro. [Activación **automática**](#toc_3). Figura 7
-3. La Promoción se activa si el comprador selecciona como destino determinada ciudad. [Activación por opción de envío](#toc_5). Figura 7
+3. La Promoción se activa si el comprador selecciona como destino determinada ciudad. [Activación por opción de envío](#toc_5). Figura 8
 
 En «Promociones» de tu interfaz de Administración Bootic podrás ver las mismas — Figura 1:
 
@@ -111,14 +111,14 @@ ejemplo el envío será gratuito — Figura 8.
   <div class="c-contenido">
     <img src="/img/admin/activacion-forma-de-envio.png">
   </div>
-  <div class="c-pie"><strong>Figura 7</strong>: Activación por opción de envío</div>
+  <div class="c-pie"><strong>Figura 8</strong>: Activación por opción de envío</div>
 </div>
 
 <div class="captura">
   <div class="c-contenido">
     <img src="/img/admin/activacion-forma-de-envio2.png">
   </div>
-  <div class="c-pie"><strong>Figura 8</strong>: Envío gratuito para Valdivia</div>
+  <div class="c-pie"><strong>Figura 9</strong>: Envío gratuito para Valdivia</div>
 </div>
 
 ## Criterios de una promoción (creación)
@@ -131,7 +131,7 @@ Estos son los filtros que actualmente puedes configurar a la hora de crear una P
 * Fechas de validez: **Tiempo de validez** (con año, mes, día, hora y minuto) — incluso puedes programar futuras promociones.
 * Asociar a colección: Acotar a cierta Colección.
 
-### Ejemplo de promoción — Figura 9:
+### Ejemplo de promoción — Figura 10:
 
 1. Activado por código `marzo30`
 2. Descuento de un 30%
@@ -145,6 +145,17 @@ Estos son los filtros que actualmente puedes configurar a la hora de crear una P
   <div class="c-contenido">
     <img src="/img/admin/promo-example.png">
   </div>
-  <div class="c-pie"><strong>Figura 9</strong>: Ejemplo de promoción</div>
+  <div class="c-pie"><strong>Figura 10</strong>: Ejemplo de promoción</div>
 </div>
+
+## ¿Se acumulan?
+
+_Pregunta_: ¿Las Promociones son acumulables?. _Respuesta_: **sí y no**. 
+
+Los tres tipos de promociones descritos anteriormente se pueden asociar a **un mismo pedido**, en otras palabras: _que un pedido tenga 3 promociones
+activadas es perfectamente posible_; pero (y acá lo importante) **solo una por tipo**. Es decir: un pedido no puede tener dos o más promociones activadas
+por código, o dos o más promociones automáticas.
+
+
+
 
