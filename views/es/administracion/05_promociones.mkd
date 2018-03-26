@@ -150,12 +150,8 @@ Estos son los filtros que actualmente puedes configurar a la hora de crear una P
 
 ## ¿Se acumulan?
 
-_Pregunta_: ¿Las Promociones son acumulables?. _Respuesta_: **sí y no**. 
+_Pregunta_: ¿Las Promociones son acumulables? _Respuesta_: **sí y no**. 
 
 Los tres tipos de promociones descritos anteriormente se pueden asociar a **un mismo pedido**, en otras palabras: _que un pedido tenga 3 promociones
 activadas es perfectamente posible_; pero (y acá lo importante) **solo una por tipo**. Es decir: un pedido no puede tener dos o más promociones activadas
 por código, o dos o más promociones automáticas.
-
-
-
-
