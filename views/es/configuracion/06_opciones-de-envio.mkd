@@ -9,10 +9,31 @@
 
 # Opciones de envío
 
-Al realizar un pedido, tus clientes deben ingresar la dirección de envío para que puedas enviarle el producto. En base a esta información, Bootic revisa en la configuración de tu tienda para ver qué opciones de envío ofrecerles a tu cliente, y cuánto cobrar por una u otra.
+Al realizar un pedido, tus clientes deben ingresar la _dirección_ de envío para que puedas **enviarle** el producto — Figura 1. 
 
-Estas opciones o formas de envío se definen previamente en tu panel Bootic a través de las Zonas de Envío. Una Zona de Envío es el conjunto de costos por peso asociados a un área geográfica definida.
+<div class="captura">
+  <div class="c-contenido">
+    <img src="/img/configuracion/shipping_zones_address.png">
+  </div>
+  <div class="c-pie"><strong>Figura 1</strong>: Checkout (paso 1). Comprador ingresa la dirección de envío</div>
+</div>
 
-En otras palabras, dependiendo del peso total de un pedido (por ejemplo, 2 kilos), a ése pedido se le agregará el costo que tú definas que tiene el envío de un paquete de 2 kilos al área geográfica que corresponde a la dirección de envío.
+En base a la dirección ingresada por el comprador, Bootic revisa en la configuración de tu tienda para ver qué opciones de envío ofrecerles a tu cliente, y cuánto cobrar por una u otra — Figura 2
 
-En este video explicamos cómo funcionan y cómo configurar las zonas de envío y sus costos.
+<div class="captura">
+  <div class="c-contenido">
+    <img src="/img/configuracion/shipping_zones_checkout.png">
+  </div>
+  <div class="c-pie"><strong>Figura 2</strong>: Checkout (paso 2). Opción de envío seleccionada por el comprador</div>
+</div>
+
+Estas opciones o formas de envío se definen previamente en tu panel Bootic — Figura 3. **Una Opción de Envío es el conjunto de costos por peso asociados a un área geográfica definida**.
+
+<div class="captura">
+  <div class="c-contenido">
+    <img src="/img/configuracion/shipping_zones_editing.png">
+  </div>
+  <div class="c-pie"><strong>Figura 3</strong>: Configuración de una opción de envío. Nombre / Lugar / Rango de pesos y costos</div>
+</div>
+
+En otras palabras, **dependiendo** del peso total de un pedido (por ejemplo, 2 kilos), a ése pedido se le agregará el costo que tú definas que tiene el envío de un paquete de 2 kilos al área geográfica que corresponde a la dirección de envío.
