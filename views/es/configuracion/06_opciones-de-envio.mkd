@@ -36,4 +36,6 @@ Estas opciones o formas de envío se definen previamente en tu panel Bootic — 
   <div class="c-pie"><strong>Figura 3</strong>: Configuración de una opción de envío. Nombre / Lugar / Rango de pesos y costos</div>
 </div>
 
-En otras palabras, **dependiendo** del peso total de un pedido (por ejemplo, 2 kilos), a ése pedido se le agregará el costo que tú definas que tiene el envío de un paquete de 2 kilos al área geográfica que corresponde a la dirección de envío.
+En otras palabras, **dependiendo** del peso total de un pedido (por ejemplo, 2 kilos), a ése pedido se le agregará el costo que tú definas que tiene el envío de un paquete de 2 kilos al área geográfica que corresponde a la dirección de envío. 
+
+Aprende como configurar una en la <a href="/es/configuracion/opciones-de-envio/configuracion">siguiente sección</a>.

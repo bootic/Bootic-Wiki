@@ -22,8 +22,7 @@ Crear una Opción de envío (Figura 1) _requiere_ que ingreses:
 
 ## Video tutorial 
 
-En el siguiente video tutorial se crearán las siguientes cuatro Opciones de envío. La primera opción es
-a nivel Nacional y las otras dos específicas **para una ciudad específica**. 
+En el siguiente video tutorial se crearán las siguientes cuatro Opciones de envío. La primera opción es a nivel Nacional y las otras específicas **para una ciudad**. 
 
 <h4>Chile - Tercer día hábil</h4>
 <h5>Rangos:</h5>
