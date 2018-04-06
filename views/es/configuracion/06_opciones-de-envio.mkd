@@ -16,5 +16,3 @@ Estas opciones o formas de envío se definen previamente en tu panel Bootic a tr
 En otras palabras, dependiendo del peso total de un pedido (por ejemplo, 2 kilos), a ése pedido se le agregará el costo que tú definas que tiene el envío de un paquete de 2 kilos al área geográfica que corresponde a la dirección de envío.
 
 En este video explicamos cómo funcionan y cómo configurar las zonas de envío y sus costos.
-
-<iframe src="http://www.screenr.com/embed/A33" width="650" height="396" frameborder="0" style="margin-top: 20px"></iframe>

@@ -1,10 +1,10 @@
 ---
-:title: Cómo configurar zonas de envío
-:description: Foo
-:keywords: retirar, tienda, showroom, entrega, recoger
+:title: Configuración
+:description: "Como configurar una opción de envío"
+:keywords: opciones, envio, zonas, despacho, entrega, courier
 ---
 
-# Cómo configurar mis zonas de envío
+# Configuración de una Opción de envío
 
 <img src="/img/shipping_zones/editing.png" alt="Editing Bootic shipping zone" />
 
