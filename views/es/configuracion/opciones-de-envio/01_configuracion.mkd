@@ -11,7 +11,7 @@ Crear una Opción de envío (Figura 1) _requiere_ que ingreses:
 1. <strong>Activa</strong> o no, por defecto «Sí». Es posible dejar deshabilitada la opción por mantención u otra razón.
 2. El <strong>Nombre</strong>, ejms: «DHL Overnight», «Chilexpress AM/PM», «Bluexpress Base».
 3. Destino geográfico. Si solo se deja el país y los otros campos vacíos la cobertura será a nivel Nacional.
-4. Rangos de pesos y precios.
+4. Rangos de pesos y precios. Es posible ingresar tantos rangos como la tienda requiera.
 
 <div class="captura">
   <div class="c-contenido">
@@ -59,7 +59,7 @@ a nivel Nacional y las otras dos específicas **para una ciudad específica**.
 <iframe width="698" height="409" src="https://www.youtube.com/embed/fqVNinCTOUM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 <div class="note info">
-  <p> Si la tienda requiere dar cobertura a toda una región la configuración sería: País: <strong>Chile</strong> / Región: <strong>Maule</strong> </p>
+  <p> Si la tienda requiere dar cobertura a toda una región la configuración sería: País: <strong>Chile</strong> / Región: <strong>Maule</strong> por ejemplo</p>
 </div>
 
 ## Listado de las Opciones
