@@ -1,12 +1,13 @@
 ---
-:title: "Zonas y costos de envío"
+:title: "Opciones de envío"
 :description: "Información sobre cómo configurar las zonas y costos de envío en tu tienda Bootic"
 :keywords: costos, zonas, envío, despacho, despachos, órdenes, pedidos, productos
 :group:
   :name: Administración y configuración
   :label: ¿Cómo administro costos de envío?
 ---
-# Zonas y costos de envío
+
+# Opciones de envío
 
 Al realizar un pedido, tus clientes deben ingresar la dirección de envío para que puedas enviarle el producto. En base a esta información, Bootic revisa en la configuración de tu tienda para ver qué opciones de envío ofrecerles a tu cliente, y cuánto cobrar por una u otra.
 
