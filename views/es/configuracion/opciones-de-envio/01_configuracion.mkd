@@ -17,7 +17,7 @@ Crear una Opción de envío (Figura 1) _requiere_ que ingreses:
   <div class="c-contenido">
     <img src="/img/configuracion/shipping_zones_editing2.png">
   </div>
-  <div class="c-pie"><strong>Figura 1</strong>: Creación de una Opción de envío</div>
+  <div class="c-pie"><strong>Figura 1</strong>: Creación de una Opción de envío para la ciudad de Concepción</div>
 </div>
 
 ## Video tutorial 
