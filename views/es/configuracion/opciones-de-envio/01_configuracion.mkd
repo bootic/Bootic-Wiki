@@ -1,0 +1,74 @@
+---
+:title: Configuración
+:description: "Como configurar una opción de envío"
+:keywords: opciones, envio, zonas, despacho, entrega, courier
+---
+
+# Configuración de una Opción de envío
+
+Crear una Opción de envío (Figura 1) _requiere_ que ingreses:
+
+1. <strong>Activa</strong> o no, por defecto «Sí». Es posible dejar deshabilitada la opción por mantención u otra razón.
+2. El <strong>Nombre</strong>, ejms: «DHL Overnight», «Chilexpress AM/PM», «Bluexpress Base».
+3. Destino geográfico. Si solo se deja el país y los otros campos vacíos la cobertura será a nivel Nacional.
+4. Rangos de pesos y precios.
+
+<div class="captura">
+  <div class="c-contenido">
+    <img src="/img/configuracion/shipping_zones_editing2.png">
+  </div>
+  <div class="c-pie"><strong>Figura 1</strong>: Creación de una Opción de envío para la ciudad de Concepción</div>
+</div>
+
+## Video tutorial 
+
+En el siguiente video tutorial se crearán las siguientes cuatro Opciones de envío. La primera opción es
+a nivel Nacional y las otras dos específicas **para una ciudad específica**. 
+
+<h4>Chile - Tercer día hábil</h4>
+<h5>Rangos:</h5>
+
+* 2Kg - $3.000
+* 5Kg - $6.000
+* 10Kg - $9.000
+
+<h4>Temuco, Overnight </h4>
+
+<h5> Rangos:</h5>
+
+* 2kg - $1.500
+* 3kg - $2.500
+* 10Kg - $4.000
+
+<h4>Puerto Montt, Día hábil siguiente:</h4>
+
+<h5> Rangos:</h5>
+
+* 2Kg - $2.500
+* 5Kg - $3.000
+* 10Kg - $6.000
+
+<h4>Concepción, Últra rápido.</h4> 
+
+<h5> Rangos:</h5>
+
+* 2Kg - $1.500
+* 5Kg - $2.500
+* 10Kg - $5.000
+
+<iframe width="698" height="409" src="https://www.youtube.com/embed/fqVNinCTOUM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+<div class="note info">
+  <p> Si la tienda requiere dar cobertura a toda una región la configuración sería: País: <strong>Chile</strong> / Región: <strong>Maule</strong> </p>
+</div>
+
+## Listado de las Opciones
+
+Una vez creadas las Opciones de envío aparecerán listadas — Figura 2. Dando clic en el nombre de la Opción podrás **editarla** o **borrarla**.
+
+<div class="captura">
+  <div class="c-contenido">
+    <img src="/img/configuracion/shipping_zones_show_result.png">
+  </div>
+  <div class="c-pie"><strong>Figura 2</strong>: Listado de Opciones de envío</div>
+</div>
