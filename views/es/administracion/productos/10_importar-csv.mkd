@@ -1,0 +1,44 @@
+---
+:title: Importar datos de productos por lotes
+:description: "Importar datos en archivo CSV, cambiar precios y stock de productos"
+:keywords: csv, productos, precios, stock, importar, lotes, bulk, hoja, calculo, excel
+---
+
+# Importar datos de productos por lotes
+
+La importación por lotes te permite arrastar un archivo CSV directo a la lista de productos en tu panel de administración.
+
+<img src="/img/admin/csv/drag-csv.gif" alt="Arrastrando archivo CSV a lista de productos" />
+
+Hay varias operaciones por lote disponible, según las columnas que tenga el archivo CSV que arrastres.
+
+El formato CSV (Comma-Separated-Values) es un formato simple de texto separado por comas, y puede ser exportado desde Microsoft Excel, Google Sheets, Apple Numbers y otras herramientas.
+
+<div class="captura">
+<div class="c-contenido">
+  <img src="/img/admin/csv/available-ops.png" alt="Eligiendo operación de actualización por lotes" />
+</div><div class="c-pie">Eligiendo operación de actualización por lotes</div></div>
+
+## Actualizar precios de productos
+
+<img src="/img/admin/csv/sheet-update-prices.png" />
+
+Para actualizar precios de productos, el archivo CSV debe tener las siguientes columnas:
+
+<ul>
+  <li><code>id</code>. Requerido. Identificador único de producto en Bootic</li>
+  <li><code>price</code>. Requerido. Nuevo precio del producto, sin puntuación</li>
+  <li><code>price_comparison</code>. Opcional. Nuevo precio de comparación del producto, sin puntuación</li>
+</ul>
+
+## Actualizar stock de variantes
+
+<img src="/img/admin/csv/sheet-update-stock.png" />
+
+Para actualizar stock (cantidad) de una o más variantes de productos, es necesario un archivo con las siguientes columnas:
+
+<ul>
+  <li><code>sku</code>. Requerido. Código SKU de variante usado en la tienda Bootic</li>
+  <li><code>stock</code>. Requerido. Nueva cantidad de stock, sin puntuación</li>
+</ul>
+
