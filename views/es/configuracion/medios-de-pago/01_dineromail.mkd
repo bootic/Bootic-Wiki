@@ -41,11 +41,6 @@ A continuación presionas "activo" y "Guardar".
 
 Desde ahora tus compradores verán la opción de pago DineroMail al finalizar pedidos en tu tienda.
 
-A continucación te dejamos un video con la explicación paso por paso.
-
-<iframe src="http://www.screenr.com/embed/GYa" width="650" height="396" frameborder="0"></iframe>
-
-
 ## Problemas con DineroMail - no aparece medio de pago
 
 Si al comprar detactas que en el ambiente de pagos DineroMail aparece vacía la sección de
