@@ -48,6 +48,8 @@ Para actualizar stock (cantidad) de una o más variantes de productos, es necesa
 
 ## Importar o actualizar productos completos
 
+<img src="/img/admin/csv/sheet-full-import.png" />
+
 Esta operación espera un archivo CSV con las mismas columnas que el archivo de productos que exportas desde tu panel Bootic.
 Este CSV asume una fila para cada vriante de producto, es decir si un producto tiene 5 variantes, se deben incluir 5 filas donde los datos únicos de producto van repetidos (id, slug, title, vendor, status, product_type).
 Cada fila puede definir los atributos propios de cada variante (price, price_comparison, variant, variant_id, sku, stock, available_if_no_stock).
