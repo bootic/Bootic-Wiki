@@ -42,3 +42,31 @@ Para actualizar stock (cantidad) de una o más variantes de productos, es necesa
   <li><code>stock</code>. Requerido. Nueva cantidad de stock, sin puntuación</li>
 </ul>
 
+## Importar o actualizar productos completos
+
+Esta operación espera un archivo CSV con las mismas columnas que el archivo de productos que exportas desde tu panel Bootic.
+Este CSV asume una fila para cada vriante de producto, es decir si un producto tiene 5 variantes, se deben incluir 5 filas donde los datos únicos de producto van repetidos (id, slug, title, vendor, status, product_type).
+Cada fila puede definir los atributos propios de cada variante (price, price_comparison, variant, variant_id, sku, stock, available_if_no_stock).
+
+Como guía, puedes exportar el CSV de productos de tu tienda, al final de la lista de productos en tu panel de administración.
+
+<ul>
+  <li><code>id</code>. Opcional. Identificador único de producto en Bootic. Si no está, usa <em>slug</em></li>
+  <li><code>status</code>. Opcional. Estado del producto (<em>visible</em> para publicar, <em>hidden</em> para esconder</li>
+  <li><code>slug</code>. Opcional (requerido si es que no hay <em>id</em>. Manilla única basada en el nombre del producto. Si ya existe producto con este <em>sug</em>, será actualizado</li>
+  <li><code>title</code>. Requerido para productos nuevos, opcional para actualizar. Nombre del producto</li>
+  <li><code>vendor</code>. Opcional. Nombre del fabricante</li>
+  <li><code>variant_id</code>. Opcional. Identificador único de la variante, si no está, usa <em<sku</em></li>
+  <li><code>variant</code>. Requerido para variantes nuevas, opcional para actulizar. Nombre de la variante</li>
+  <li><code>price</code>. Opcional. Precio de la variante, sin puntuación</li>
+  <li><code>price_comparison</code>. Opcional. Precio de comparación de la variante, sin puntuación</li>
+  <li><code>weight_in_grams</code>. Opcional. Peso de la variante, en gramos, sin puntuación</li>
+  <li><code>stock</code>. Opcional. Cantidad de la variante, sin puntuación</li>
+  <li><code>available_if_not_stock</code>. Opcional. <em>true</em> si la variante está disponible con stock 0, <em>false</em> de lo contrario</li>
+</ul>
+
+### Atributos personalizados
+
+Esta operación además soporta crear atributos de nombre personalizados en cada producto. Cualquier columna CSV que empiece con "attr_" será usada para crear atributos personlizados.
+Por ejemplo, una columna <code>attr_Color</code> creará un atributo "Color" en cada producto.
+
