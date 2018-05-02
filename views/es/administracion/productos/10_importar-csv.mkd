@@ -10,14 +10,18 @@ La importación por lotes te permite arrastar un archivo CSV directo a la lista 
 
 <img src="/img/admin/csv/drag-csv.gif" alt="Arrastrando archivo CSV a lista de productos" />
 
-Hay varias operaciones por lote disponible, según las columnas que tenga el archivo CSV que arrastres.
+Hay varias operaciones por lote disponibles, según las columnas que tenga el archivo CSV que arrastres.
 
 El formato CSV (Comma-Separated-Values) es un formato simple de texto separado por comas, y puede ser exportado desde Microsoft Excel, Google Sheets, Apple Numbers y otras herramientas.
+
+Luego de arrastar el archivo CSV a tu panel de productos, Bootic te mostrará las operaciones compatibles con las columnas en el archivo.
 
 <div class="captura">
 <div class="c-contenido">
   <img src="/img/admin/csv/available-ops.png" alt="Eligiendo operación de actualización por lotes" />
 </div><div class="c-pie">Eligiendo operación de actualización por lotes</div></div>
+
+Si no estás seguro(a) de qué columnas incluir en tu archivo CSV, puedes usar la guía a continuación.
 
 ## Actualizar precios de productos
 
