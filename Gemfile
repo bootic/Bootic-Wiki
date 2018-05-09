@@ -1,6 +1,6 @@
 # A sample Gemfile
 source "http://rubygems.org"
-ruby "2.2.0"
+ruby "2.4.2"
 
 gem 'builder'
 gem 'sinatra', '~> 1.3.2'
