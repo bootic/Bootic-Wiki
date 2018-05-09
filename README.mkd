@@ -1,6 +1,6 @@
 This site is deployed to [http://wiki.bootic.net](http://wiki.bootic.net)
 
-# Install
+## Install
 
     git pull
     bundle install
@@ -10,6 +10,13 @@ This site is deployed to [http://wiki.bootic.net](http://wiki.bootic.net)
     bundle exec shotgun -p 3000 # reloads app in every request for easy development
     
 You can also use Pow http://pow.cx/
+
+## Deploy
+
+With [lisa](github.com/tomas/lisa).
+
+    npm install -g lisa
+    lisa deploy
 
 ## Create pages
 
