@@ -1,0 +1,23 @@
+#!/usr/bin/env puma
+
+root = '/home/git/apps/wiki'
+
+environment ENV['RACK_ENV'] || 'production'
+
+directory  root + '/current'
+rackup     root + '/current/config.ru'
+pidfile    root + '/shared/tmp/pids/puma.pid'
+state_path root + '/shared/tmp/pids/puma.state'
+stdout_redirect root + '/shared/log/puma_stdout.log', root + '/shared/log/puma_stderr.log', true
+
+bind 'unix://' + root + '/shared/tmp/sockets/puma.sock'
+
+threads 0,16
+workers 2
+# preload_app!
+prune_bundler
+
+
+
+
+

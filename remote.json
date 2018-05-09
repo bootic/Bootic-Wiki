@@ -1,0 +1,27 @@
+{
+  "application": "bootic-wiki",
+  "repository": "git@github.com:bootic/Bootic-Wiki",
+  "keep_releases": 3,
+  "deploy_to": "/home/git/apps/wiki",
+  "shared_paths": [
+    "log",
+    "pids",
+    "tmp",
+    "config/puma.rb"
+  ],
+  "environment": "production",
+  "branch": "master",
+  "user": "git",
+  "hosts": [
+    "104.238.164.175"
+  ],
+  "tasks": {
+    "deploy:start": "bundle exec puma -C config/puma.rb -d",
+    "deploy:stop": "bundle exec pumactl -C config/puma.rb stop", 
+    "deploy:restart": "bundle exec pumactl -C config/puma.rb restart",
+    "console": "irb -r ./app.rb"
+  },
+  "logs": {
+    "app": "log/app.log"
+  }
+}
