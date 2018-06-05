@@ -7,7 +7,7 @@
 # Pedidos
 
 Un **Pedido** es una petición de compra de _uno o más productos_ que un cliente hace en tu tienda. Para
-acceder a ellos debes ir a la sección Pedidos — Figura 1.
+acceder a ellos debes ir a la sección Pedidos — <strong>Figura 1</strong>.
 
 <div class="captura">
   <div class="c-contenido">
