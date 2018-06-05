@@ -25,7 +25,7 @@ acceder a ellos debes ir a la sección Pedidos — Figura 1.
       * <strong class="label-order label-successful">Exitosos</strong> = confirmado y despachados.
       * <strong class="label-order label-closed">Confirmados</strong> = recibió el pago. 
       * <strong class="label-order label-shipped">Despachados</strong> = el pedido se envió al cliente. 
-      * <strong class="label-order label-delivered">Entregados</strong> = el pedido se entregó vía [retiro en tienda][retiro]
+      * <strong class="label-order label-delivered">Entregados</strong> = el pedido se entregó al cliente.
 
 2. **Gráfico**: Adaptado al filtro activado
 3. **Listado**: Enumeración de pedidos, el primero de la lista es el más recientemente creado.
