@@ -48,7 +48,7 @@ ilustración que refleja el ciclo de compra y despacho de un producto — Figura
   <div class="c-pie"><strong>Figura 2</strong>: Ciclo de compra y despacho de un producto</div>
 </div>
 
-En el **punto 6** de la gráfica se genera el Pedido, tanto el cliente como el locatario recibirán un
+En el **punto 6** de la gráfica se genera el _Pedido_, tanto el cliente como el locatario recibirán un
 correo electrónico, además de verla en su panel de administración.
 
 <div class="note info">
