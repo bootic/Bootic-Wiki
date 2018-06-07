@@ -58,7 +58,7 @@ correo electrónico, además de verla en su panel de administración.
     <li>Paypal</li>
     <li>Medio de pago personalizado</li>
   </ul>
-  <p>El locatario <em>manualmente</em> deberá cambiar el estado cuando este reciba el pago</p>
+  <p>El locatario manualmente deberá cambiar el estado cuando este reciba el pago</p>
 </div>
 
 [retiro]:/es/configuracion/formas-de-envio/retiro-en-tienda "Retiro en tienda"
