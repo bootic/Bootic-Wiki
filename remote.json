@@ -18,8 +18,7 @@
   "tasks": {
     "deploy:start": "bundle exec puma -C config/puma.rb -d",
     "deploy:stop": "bundle exec pumactl -C config/puma.rb stop", 
-    "deploy:restart": "echo 1",
-    "xdeploy:restart": "bundle exec pumactl -C config/puma.rb restart",
+    "deploy:restart": "bundle exec pumactl -C config/puma.rb restart",
     "console": "irb -r ./app.rb"
   },
   "logs": {
