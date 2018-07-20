@@ -6,77 +6,83 @@
 
 # Cambiar precios masivamente vía archivo CSV
 
-A continuación podrás conocer la forma de cambiar los precios a tus productos de
-forma masiva (o por lotes) utilizando nuestra herramienta de Importación Bootic. Esto es posible gracias a nuestra [API](http://developers.bootic.net)&dagger;.
+En la sección **Productos** de tu panel de administración Bootic es posible
+descargar un archivo en formato CSV (separado por coma). El cual puedes abrir
+con tu editor de hoja de cálculo MS-Excel o similar, al terminar dicha
+edición lo exportas de vuelta a formato CSV y lo subes a **Productos**. 
 
-Dado que el atributo precio **es crítico** en una tienda **recomendamos revisar** el video y esta documentación _con mucha atención_. Cambiar el precio de manera masiva **no tiene** una opción «revertir cambios». 
+Revisa esta animación de la _última_ parte:
 
-### Conceptos clave
+![](/img/admin/demo_precios_csv.gif)
 
-* **Archivo CSV**: Archivo de valores separado por coma, formato abierto, simple y rápido de compartir datos en Informática.
-* **Clave primaria**: Campo que no puede repetirse. Es un identificador **único**.  
-* **Producto único**: El precio es un **atributo del producto**, pero el CSV exportado desde la tienda se detalla por variantes, por eso es preciso filtrar los productos únicos antes de cambiar el precio.
+A continuación encontrarás el paso a paso de este proceso:
 
-## Páginas del video
+## Paso 1: Bajar archivo CSV
 
-En el video el relator mantiene tres pestañas abiertas en su navegador:
+En la sección **Productos** anda al final del listado, encontrarás un enlace con
+tres botones, dale clic a «Precios» — Figura 1.
 
-1. _Administrador tienda Boootic_ `>` **Productos**.
-2. [Google Hoja de Cálculo](https://docs.google.com/spreadsheets) - (hoja nueva)
-3. [Importador Bootic](https://bootic-csv-importer.herokuapp.com/)
-
-<iframe width="640" height="360" src="https://www.youtube.com/embed/QcVRdo7gHD8" frameborder="0" allowfullscreen></iframe>
-
-## Objetivo: Un CSV de tres columnas
-
-Para cambiar el precios de tus productos de manera masiva debes generar un archivo de tipo CSV con tres columnas: 
-
-* **slug**: Clave primaria del producto. **No debe** ser _modificada_.
-* **price**: Precio
-* **price_comparison**: Precio de comparación (columna opcional)
-
-
-<div class="note tip">
-¿Dudas con el cambio masivo?: Puedes probar generando un CSV de tres columnas que solo
-contenga <strong>un producto</strong>; es decir, una fila.
+<div class="captura">
+  <div class="c-contenido">
+    <img src="/img/admin/descarga_csv_precios.png">
+  </div>
+  <div class="c-pie"><strong>Figura 1</strong>: Descarga CSV de precios</div>
 </div>
 
-### De dónde salen los datos
+## Paso 2: Importar a MS-Excel
 
-Este archivo CSV de tres columnas _es el resultado_ de procesar el CSV de
-productos **exportado desde tu tienda Bootic** (final listado de productos de la
-sección del mismo nombre).
+Estando en MS-Excel crea un archivo nuevo. 
 
-<div class="note warning">
-  <p>No se deben agregar nuevas filas al archivo CSV de tres columnas durante su manipulación. Solo se debe editar, NO crear.</p>
+Luego anda a Archivo `>` Importar `>` Archivo CSV. 
+
+<div class="captura">
+  <div class="c-contenido">
+    <img src="/img/admin/importando_csv_excel.gif">
+  </div>
+  <div class="c-pie"><strong>Figura </strong>: </div>
 </div>
 
-### Qué software usar
+Selecciona el archivo descargado desde Bootic y sigue la siguiente secuencia de
+importación:
 
-Para manipular un archivo de tipo CSV puedes usar:
+![](/img/admin/importar_csv_excel_1.png)
 
-* Microsoft Excel 
-* Apple Numbers
-* LibreOffice Calc
-* Google hoja de cálculo
+En Delimitaciones: Otro coma (,)
 
-Bootic **recomienda** Google Hoja de cálculo ya que sus opciones de
-importar/exportar a CSV son 100% compatibles con la herramienta de Importación
-Bootic.
+![](/img/admin/importar_csv_excel_2.png)
+![](/img/admin/importar_csv_excel_3.png)
 
+Resultado de la importación:
 
-<div class="note info">
- <p>Solo un <strong>administrador</strong> de tienda tiene acceso al Importador Bootic, otro
- tipo de usuario no podrá acceder.</p>
+![](/img/admin/importar_csv_excel_4.png)
+
+## Paso 3: Editar información
+
+Con la información importada ya puedes hacer el cambio de precios. Ten presente
+que solo puedes editar, **no puedes** _agregar_ ni _eliminar_ registros. Evita
+además darle formato a los valores monetarios.
+
+## Paso 4: Exportarlo a CSV
+
+Exporta desde Excel a CSV: Archivo `>` Guardar como ... — Figura 2.
+
+<div class="captura">
+  <div class="c-contenido">
+    <img src="/img/admin/exportar_a_csv.gif">
+  </div>
+  <div class="c-pie"><strong>Figura 2</strong>: Exportando a CSV </div>
 </div>
 
-### Accesos directos dentro del video:
+Pon un nombre al archivo y asegúrate de seleccionar el formato correcto:
 
-* [Exportar desde la tienda](https://youtu.be/QcVRdo7gHD8?t=1m27s) — 1:27
-* [Importar en Google hoja de cálculo](https://youtu.be/QcVRdo7gHD8?t=1m42s) — 1:42
-* [Unique - filtrar productos únicos](https://youtu.be/QcVRdo7gHD8?t=2m14s) — 2:14
-* [Cambio de precios](https://youtu.be/QcVRdo7gHD8?t=2m31s) — 2:31
-* [Exportar desde Google hoja de cálculo](https://youtu.be/QcVRdo7gHD8?t=2m48s) — 2:48
-* [Importar en Herramienta de Importación Bootic](https://youtu.be/QcVRdo7gHD8?t=2m57s) — 2:57
+![](/img/admin/exportar_a_csv_1.png)
 
-<strong>&dagger;</strong>: Actualmente el uso de la API es gratuito para todos nuestros locatarios; pero en el futuro será de pago de acuerdo al plan contratado.
+## Paso 5: Subir a Productos
+
+Finalmente, anda a la sección Productos de tu tienda y _sueltas_ el archivo
+exportado desde Excel con los nuevos precios.
+
+Dale clic al botón «Iniciar» y comenzará la actualización de precios.
+
+
+![](/img/admin/precios_subir_a_bootic.gif)
