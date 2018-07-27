@@ -10,18 +10,16 @@
 integrados con Webpay Plus. Sin embargo, Transbank **exige** a cada nuevo comercio *firmar un contrato*,
 y a nivel técnico, cada tienda debe pasar por un **Proceso de Certificación** - Figura 1 (trazo rojo).
 
-El proceso para tener tu tienda Bootic con Webpay Plus KCC está compuesto por dos Etapas:
+El proceso para tener tu tienda Bootic con Webpay Plus está compuesto por dos Etapas:
 
 * **Administrativa**: Papeleo legal que debe gestionar el locatario — [#](#toc_2)
 * **Técnica**: Bootic prepara la tienda y envía **evidencias** a Transbank para Certificar tienda — [#](#toc_7) 
 
 <div class="captura">
   <div class="c-contenido">
-      <a target="_blank" href="/img/configuracion/bootic-webpay-plug-kcc-proceso-xl.png">
-       <img style="margin-bottom:20px" alt="Proceso webpay plus en Bootic" src="/img/configuracion/bootic-webpay-plug-kcc-proceso.png" />
-      </a>
+       <img style="margin-bottom:20px" alt="Proceso webpay plus en Bootic" src="/img/configuracion/diagrama-proceso-wp-ws.png" />
   </div>
-  <div class="c-pie"><strong>Figura 1</strong>: Proceso habilitación tienda Bootic con Webpay Plus KCC - Click para Zoom </div>
+  <div class="c-pie"><strong>Figura 1</strong>: Proceso habilitación tienda Bootic con Webpay Plus</div>
 </div>
 
 ## ¿Webpay o Webpay plus?
@@ -97,7 +95,7 @@ que el Locatario:
    Devolución y Cambios_. Las tengas o no, esto es un requisito de Transbank.
 3. La tienda debe tener—al menos—1 producto.
 4. Enviarnos un logo al correo soporte _arroba_ bootic _punto_ net, de formato GIF, con dimensiones de 130x59, **exactos** - Figura 2.
-5. Completar y enviar el [formulario de inicio](http://goo.gl/forms/fmmx0Yx0sm) del proceso de Certificación Webpay Plus KCC.
+5. Completar y enviar el [formulario de inicio](http://goo.gl/forms/fmmx0Yx0sm) del proceso de Certificación Webpay Plus.
 
 <div class="note tip">
   <p><strong>«¿El diseño de mi tienda debe estar finalizado para contratar Webpay Plus?»</strong>: No, ambos eventos son paralelos.</p>

@@ -11,7 +11,7 @@ Se otorga a las empresas que **han formalizado** el contrato de alguno de sus pr
 KCC](/es/configuracion/medios-de-pago/webpay).
 
 Es requisito fundamental poseer un Código de Comercio activado si el locatario Bootic desea habilitar el medio de pago Webpay
-Plus KCC.
+Plus.
 
 ## ¿Dónde se obtiene?
 
