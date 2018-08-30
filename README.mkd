@@ -83,14 +83,3 @@ If you are a collaborator:
 
     $ git push origin master
 
-## Deploy
-
-If you are a collaborator on heroku, add the "heroku" remote:
-
-    $ git remote add heroku git@heroku.com:booticdocs.git
-
-Deploy to Heroku
-
-    $ git push heroku master
-
-Done!
