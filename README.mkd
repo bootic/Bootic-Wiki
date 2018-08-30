@@ -4,11 +4,11 @@ This site is deployed to [http://wiki.bootic.net](http://wiki.bootic.net)
 
     git pull
     bundle install
-    
+
 ## Run
 
     bundle exec shotgun -p 3000 # reloads app in every request for easy development
-    
+
 You can also use Pow http://pow.cx/
 
 ## Deploy
@@ -39,7 +39,7 @@ File names are prefixed with numbers (02_themes.mkd). Number prefixes are used f
 ## Group pages
 
 
-As well as the directory-tree, pages can be added to groups along with a label 
+As well as the directory-tree, pages can be added to groups along with a label
 
     ---
     ...
@@ -47,7 +47,7 @@ As well as the directory-tree, pages can be added to groups along with a label
       :name: Administración
       :label: Cómo administro mi sitio?
     ---
-    
+
 `:name:` is the group name. `:label:` is an alternative name for the page in the context of that group.
 
 ## Images
@@ -55,20 +55,20 @@ As well as the directory-tree, pages can be added to groups along with a label
 Images go in public/img, but there's a helper that allows one to freely resize them:
 
     <img src="<%= img('/img/themes/pagination1.png').thumb('500x400').url %>" />
-    
+
 This works thanks to the incredibly awesome Dragonfly Gem : http://markevans.github.com/dragonfly
 
 Another example turning images to greyscale
 
     <%= img('/img/themes/pagination1.png').process(:greyscale).url %>
-    
+
 ## Drafts
 
 Pages whose names are in the format draft-some-page (no position number) don'r appear in menus but can be linked to directly.
 
 ## Commit
 
-Commit your changes. 
+Commit your changes.
 
 If you DO NOT have have collaborator access but want to contribute:
 
@@ -87,10 +87,10 @@ If you are a collaborator:
 
 If you are a collaborator on heroku, add the "heroku" remote:
 
-    $ git remote add heroku git@heroku.com:booticdocs.git 
+    $ git remote add heroku git@heroku.com:booticdocs.git
 
 Deploy to Heroku
 
     $ git push heroku master
-    
+
 Done!
