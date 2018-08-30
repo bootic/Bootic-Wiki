@@ -1,0 +1,29 @@
+---
+:title: Canal Mayoristas
+:description: "Activar y administrar tu Canal Mayoristas Bootic"
+:keywords: wholesale, ecommerce, mayoristas, b2b
+---
+
+# Canal Mayoristas
+
+La funcionalidad de Canal Mayoristas te permite transformar tu tienda Bootic en un avanzado portal B2B, en pocos pasos.
+
+El siguiente video explica lo esencial:
+
+<iframe width="700" height="514" src="https://www.youtube.com/embed/ISQ5DBtVOOM?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+## Definiciones
+
+### Clientes registrados
+
+Los clientes registrados son clientes que ingresan a las páginas de tu catálogo con una contraseña. Una vez el cliente se registra, Bootic puede saber quién es y por lo tanto mostrarle contenido especial para él o ella, en particular listas de precios con precios especiales.
+
+### Listas de precios
+
+Todos los productos Bootic tienen precios públicos, visibles por el público general de tu tienda.
+Las listas de precios permiten asignar precios especiales a todos o algunos productos en tu catálogo.
+Al asociar una lista de precios a uno o más clientes registrados, esos clientes verán los precios de esa lista en particular al navegar las páginas de tu catálogo, en lugar de los precios para el público en general.
+
+### Más...
+
+* [Diseñadores] [Cómo usar funcionalidad para mayoristas en mi plantilla de diseño](/es/administracion/mayoristas/theme)
