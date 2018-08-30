@@ -32,6 +32,10 @@ En nuestro lenguage de plantillas hay un nuevo object <code>current_customer</co
 
 <img src="/img/wholesale/is_logged_in.png" alt="editando plantilla para mostrar links de cliente registrado" />
 
+<div class="note info">
+  Si no tienes quién te ayude con tu plantilla, <a href="https://www.bootic.io/forms/contacto">ponte en contacto</a>. Nosotros lo podemos hacer por tí.
+</div>
+
 ## Permitir acceso sólo a clientes mayoristas
 
 Puedes usar <code>current_customer.is_logged_in</code> para convertir tu tienda Bootic en un canal B2B exclusivo para clientes autorizados.
