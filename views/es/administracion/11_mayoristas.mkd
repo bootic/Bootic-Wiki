@@ -24,6 +24,31 @@ Todos los productos Bootic tienen precios públicos, visibles por el público ge
 Las listas de precios permiten asignar precios especiales a todos o algunos productos en tu catálogo.
 Al asociar una lista de precios a uno o más clientes registrados, esos clientes verán los precios de esa lista en particular al navegar las páginas de tu catálogo, en lugar de los precios para el público en general.
 
-### Más...
+## Mostrando "login" para usuarios mayoristas en mi plantilla
 
-* [Diseñadores] [Cómo usar funcionalidad para mayoristas en mi plantilla de diseño](/es/administracion/mayoristas/theme)
+Una vez activo el canal mayorista, como diseñador sólo debes mostrar el link apropiado para que tus usuarios mayoristas puedan entrar a tu tienda con su contraseña.
+
+En nuestro lenguage de plantillas hay un nuevo object <code>current_customer</code> que puedes usar para mostrar o esconder contenido dependiendo de si hay un usuario registrado o no.
+
+<img src="/img/wholesale/is_logged_in.png" alt="editando plantilla para mostrar links de cliente registrado" />
+
+## Permitir acceso sólo a clientes mayoristas
+
+Puedes usar <code>current_customer.is_logged_in</code> para convertir tu tienda Bootic en un canal B2B exclusivo para clientes autorizados.
+
+Por ejemplo, en la plantilla <code>layout.html</code> te puedes asegurar de que sólo clientes registrados ven el contenido y productos de cualquier página.
+
+<img src="/img/wholesale/wrap_layout.png" alt="Impedir acceso a clientes no registrados" />
+
+## Medio de pago para mayoristas
+
+Una vez activo el canal de mayoristas, podrás activar un medio de pago adicional sólo visible para clientes mayoristas.
+Esto puede ser útil si quieres ofrecer crédito o plazos distintos que para el público general.
+
+Para activarlo, anda a "Preferencias" y luego "Formas de pago".
+
+<img src="/img/wholesale/wholesale-payment.png" alt="Medio de pago para mayoristas" />
+
+Puedes editar el título y descripción de este medio de pago. Tus clientes verán esa información al finalizar el proceso de "checkout" en tu tienda.
+
+<img src="/img/wholesale/wholesale-payment-checkout.png" alt="Medio de pago para mayoristas" />
