@@ -7,40 +7,28 @@
 <div class="row">
 
 <div id="start">
-  <div class="span3">
+  <div class="span4">
     <i class="icon-tasks icon-4x"></i>
-    <h2>
-      <a href="/es/administracion">
-        Administración de tu tienda
-      </a>
-    </h2>
-    <p>Cómo llegar desde el primer producto a la primera venta. La información que todo dueño de una tienda Bootic tiene que saber, incluyendo cómo funcionan los pedidos, las promociones y el sistema de costos de envío.</p>
-  </div>
+    <h2> <a href="/es/administracion"> Administración de tu tienda </a> </h2>
 
-  <div class="span3">
     <i class="icon-wrench icon-4x"></i>
-    <h2>
-      <a href="/es/configuracion">
-        Sistemas de pago, dominio y SEO
-      </a>
-    </h2>
-    <p>Los pasos para usar tu dominio propio y cómo incorporar sistemas de pago con tarjeta de crédito, como Webpay y Dineromail. Además te mostramos cómo usar las herramientas SEO de Bootic para que aumentes tu tráfico.</p>
+    <h2> <a href="/es/configuracion"> Medios de pago, dominio y SEO </a> </h2>
   </div>
+  <div class="span4">
 
-  <div class="span3">
     <i class="icon-edit icon-4x"></i>
-    <h2>
-      <a href="/es/diseno">
-        Diseño y modificación de plantillas
-      </a>
-    </h2>
-    <p>Si quieres modificar el diseño de tu tienda, aquí encontrarás la documentación para editar nuestras plantillas o crear una a partir de cero. Requiere conocimiento básico a intermedio en HTML y CSS.</p>
+    <h2> <a href="/es/diseno">Edición de plantillas</a></h2>
+
+    <i class="icon-coffee icon-4x"></i>
+    <h2> <a href="/es/tutoriales">Tutoriales, consejos, mejoras</a> </h2>
   </div>
 
-  <div class="span3">
-    <i class="icon-coffee icon-4x"></i>
-    <h2> <a href="/es/tutoriales">Tutoriales, consejos, mejoras</a></h2>
-    <p>Para sacarle el máximo provecho a tu tienda Bootic. Trucos, Consejos. Cosas que no pensabas que se podian hacer.</p>
+  <div class="span4">
+    <i class="icon-gears icon-4x"></i>
+    <h2><a href="#">Componentes </a> </h2>
+    
+    <i class="icon-play-sign icon-4x"></i>
+    <h2><a href="#">Videos</a></h2>
   </div>
 </div>
 </div>
