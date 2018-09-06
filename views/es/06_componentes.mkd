@@ -1,0 +1,6 @@
+---
+:title: "Componentes"
+:description: "Componentes"
+:keywords: personalización, componentes, integraciones 
+:sitemap_priority: 1.0
+---

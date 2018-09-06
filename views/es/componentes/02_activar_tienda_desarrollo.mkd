@@ -1,0 +1,39 @@
+---
+:title: Activar tienda en modo desarrollo
+:description: "Edita el diseño de tu tienda en un ambiente de pruebas"
+:keywords: theme, desarrollo, pruebas, dev, development
+---
+# Activar tienda en modo desarrollo
+
+Bootic dispone de un componente llamado _Plantilla de desarrollo_. 
+
+¿Qué hace este componente?: le saca una _copia_ a tu diseño actual para que trabajes líbremente en él de manera «privada»; esto último va entre comillas porque la URL es pública pero _nadie se tiene que enterar_ ¿verdad?
+
+## Pasos para activar el componente
+
+1. Anda la sección [ Componentes ][1].
+2. Estando ahí busca el de nombre «Plantilla de desarrollo»
+3. Clic en «Ver más» - Activar por $0 USD / Mes
+3. Anda a la sección Diseño / [ Editor de plantillas ][2]
+4. Deberías ver un nuevo botón «Copiar a Desarrollo» / Dale clic. Esta acción copiara tu actual tienda pública a una de tipo desarrollo - en otras palabras le sacará una copia a tu tienda actual. 
+5. Listo, ahora las plantillas que ves son la versión de desarrollo
+
+## ¿Cómo pruebo el modo desarrollo?
+
+* Anda a—por ejm— plantilla home.html, párate al final de ella y escribes:
+  ```
+  <h1>Hola mundo - soy la home de desarrollo</h1>
+  ```
+* Guardas
+* Ahora puedes ir a la siguiente URL de desarrollo (que es una dirección oculta): `http://TIENDA.bootic.net/preview/dev` y mira al final de la página (debería ver el «Hola mundo...») - donde TIENDA es el nombre de tu tienda Bootic.
+
+_Voila!_ — Ahora tienes un ambiente de desarrollo para tu tienda.
+
+
+## Ojo, pestaña y ceja
+
+La herramienta es poderosa. Sugerimos respaldar toda la tienda antes de hacer nada. Si sabes cómo contáctanos.
+
+
+[1]:https://auth.bootic.net/addons "Sección componentes"
+[2]:https://panel.bootic.io/admin/themes/public
