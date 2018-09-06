@@ -468,3 +468,12 @@ body[class^='es_general'] #sidebar {
   background: #eee;
   padding: 1em;
 }
+
+/* sep 2018 - home refresh */
+#start div {
+  text-align:center;
+}
+#start h2 {
+  font-size:18px !important;
+  margin-bottom: 50px !important;
+}
