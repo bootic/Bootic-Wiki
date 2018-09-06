@@ -25,7 +25,7 @@
 
   <div class="span4">
     <i class="icon-gears icon-4x"></i>
-    <h2><a href="#">Componentes </a> </h2>
+    <h2><a href="/es/componentes">Componentes </a> </h2>
     
     <i class="icon-play-sign icon-4x"></i>
     <h2><a href="#">Videos</a></h2>
