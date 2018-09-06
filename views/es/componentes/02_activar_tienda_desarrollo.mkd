@@ -9,23 +9,47 @@ Bootic dispone de un componente llamado _Plantilla de desarrollo_.
 
 ¿Qué hace este componente?: le saca una _copia_ a tu diseño actual para que trabajes líbremente en él de manera «privada»; esto último va entre comillas porque la URL es pública pero _nadie se tiene que enterar_ ¿verdad?
 
+<div class="captura">
+  <div class="c-contenido">
+    <img src="/img/componentes/plantilla_de_desarrollo.png">
+  </div>
+  <div class="c-pie"><strong>Figura 1</strong>: Componente Plantilla de
+  desarrollo </div>
+</div>
+
 ## Pasos para activar el componente
 
-1. Anda la sección [ Componentes ][1].
-2. Estando ahí busca el de nombre «Plantilla de desarrollo»
+1. Anda la sección [ Componentes ][1]. 
+2. Estando ahí busca el de nombre «Plantilla de desarrollo» — Figura 1
 3. Clic en «Ver más» - Activar por $0 USD / Mes
 3. Anda a la sección Diseño / [ Editor de plantillas ][2]
-4. Deberías ver un nuevo botón «Copiar a Desarrollo» / Dale clic. Esta acción copiara tu actual tienda pública a una de tipo desarrollo - en otras palabras le sacará una copia a tu tienda actual. 
-5. Listo, ahora las plantillas que ves son la versión de desarrollo
+4. Deberías ver un nuevo botón «Copiar a Desarrollo» / Dale clic. Esta acción copiara tu actual tienda pública a una de tipo desarrollo - en otras palabras le sacará una copia a tu tienda actual.
+5. Listo, ahora las plantillas que ves son la versión de desarrollo.
 
 ## ¿Cómo pruebo el modo desarrollo?
 
-* Anda a—por ejm— plantilla home.html, párate al final de ella y escribes:
-  ```
-  <h1>Hola mundo - soy la home de desarrollo</h1>
-  ```
-* Guardas
-* Ahora puedes ir a la siguiente URL de desarrollo (que es una dirección oculta): `http://TIENDA.bootic.net/preview/dev` y mira al final de la página (debería ver el «Hola mundo...») - donde TIENDA es el nombre de tu tienda Bootic.
+* Asegúrate de entrar al ambiente de desarrollo, para ello dale clic al botón «Editar plantilla de desararrollo» — Figura 2
+* Anda a—por ejm— plantilla <strong>home.html</strong>, párate al final de ella y escribes por ejemplo: `<h1>Hola mundo</h1>`.
+* Guardas.
+* Ahora puedes ir a la siguiente URL de desarrollo (que es una dirección oculta): `http://TIENDA.bootic.net/preview/dev` y mira al final de la página (debería ver el «Hola mundo...») —donde `TIENDA` es el nombre de tu tienda Bootic.
+
+<div class="captura">
+  <div class="c-contenido">
+    <img src="/img/componentes/editar_plantilla_desarrollo.png">
+  </div>
+  <div class="c-pie"><strong>Figura 2 </strong>: Botón para cambiar a ambiente de desarrollo</div>
+</div>
+
+<div class="note info">
+  <p>Si la tienda tiene un dominio propio entonces la vista preliminar del
+  ambiente de desarrollo será <code>www.acme.com/preview/dev</code></p>
+</div>
+
+## Prueba de edición de una plantilla en ambiente de desarrollo 
+
+<div class="video">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/KmtW-y5dvBw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div>
 
 _Voila!_ — Ahora tienes un ambiente de desarrollo para tu tienda.
 

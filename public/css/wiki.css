@@ -477,3 +477,15 @@ body[class^='es_general'] #sidebar {
   font-size:18px !important;
   margin-bottom: 50px !important;
 }
+
+.video {
+  border:1px solid #333;
+  padding:30px;
+  margin:0 auto;
+  margin:10px 0;
+}
+
+iframe[src*="//youtube.com/"], iframe[src*="//www.youtube.com/"] {
+   display: block;
+   margin: 0 auto;
+}
