@@ -8,11 +8,6 @@
 
 Bootic cuenta con algunos temas prediseñados que puedes usar en tu tienda Bootic. Todas ellos pueden ser modificados a través el [editor de plantillas](/es/diseno) de tu tienda.
 
-<div class="note tip">
-    <h5>Tienda por defecto</h5>
-      <p>Las tiendas nuevas vienen por defecto con el tema <strong>OXYGEN</strong>, pero puedes elegir uno distinto en la sección Diseño de tu panel de Administración.</p>
-</div>
-
 <hr />
 
 <ul class="media_items">
