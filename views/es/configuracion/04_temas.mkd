@@ -17,6 +17,23 @@ Bootic cuenta con algunos temas prediseñados que puedes usar en tu tienda Booti
 
 <ul class="media_items">
   <li class="media_item clearfix">
+    <a href="http://nordico.bootic.net" class="thumbnail" target="_blank" title="Ver tienda de ejemplo">
+      <img src="/img/themes/gallery/nordico/preview.png" alt="Oxygen" />
+    </a>
+    <div class="info">
+      <h3>Nordico</h3>
+      <p>Un tema que busca darle sofisticación y orden a tu tienda</p>
+      <ul>
+        <li>HTML y CSS de elaboración propia</li>
+        <li>Optimizado múltiples dispositivos</li>
+        <li>Carrito clásico</li>
+      </ul>
+      <p class="buttons">
+        <a href="http://nordico.bootic.net" class="preview_link" target="_blank">Ver tienda de ejemplo</a>
+      </p>
+    </div>
+  </li><!-- /oxygen -->
+  <li class="media_item clearfix">
     <a href="http://oxygen.bootic.net" class="thumbnail" target="_blank" title="Ver tienda de ejemplo">
       <img src="/img/themes/gallery/oxygen/preview.png" alt="Oxygen" />
     </a>
