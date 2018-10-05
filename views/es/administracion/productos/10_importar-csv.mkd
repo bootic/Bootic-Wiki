@@ -46,6 +46,19 @@ Para actualizar stock (cantidad) de una o más variantes de productos, es necesa
   <li><code>stock</code>. Requerido. Nueva cantidad de stock, sin puntuación</li>
 </ul>
 
+## Actualizar precios y stock de variantes
+
+<img src="/img/admin/csv/sheet-prices-and-stocks.png" />
+
+Para actualizar stock (cantidad) y precios de una o más variantes de productos, es necesario un archivo con las siguientes columnas:
+
+<ul>
+  <li><code>id</code>. Requerido. ID Bootic o Código SKU de variante usado en la tienda Bootic</li>
+  <li><code>price</code>. Requerido. Precio de variante, sin puntos.</li>
+  <li><code>price_comparison</code>. Opcional. Precio de comparación de variante, sin puntos.</li>
+  <li><code>stock</code>. Requerido. Nueva cantidad de stock, sin puntuación</li>
+</ul>
+
 ## Importar o actualizar productos completos
 
 <img src="/img/admin/csv/sheet-full-import.png" />
