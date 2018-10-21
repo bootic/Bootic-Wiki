@@ -1,0 +1,62 @@
+---
+:title: Google Merchant feed
+:description: Feed para google merchant
+:keywords: feed, google, shopping, archivo, alimentador, publicidad, adwords
+---
+
+# Google Merchant feed
+
+Si nunca habías oído hablar de [ Google Merchant ][1] es demasiado probable que lo
+hayas visto en acción. ¿Cómo?—sí—<strong>ya lo conoces</strong>.
+
+¿Has buscado un término en Google y además de los resultados éste te ofrezca
+_comprar_ la palabra buscada (suponiendo que ingresaste el nombre de un objeto).
+¿Sí? — pues bien, ese anuncio, con foto, precio y marca que ves es generado por
+Google Merchant — _Figura 1_
+
+¿Ahora te interesa saber más?, abajo los _sucios_ detalles:
+
+<div class="captura">
+  <div class="c-contenido">
+    <img src="/img/tutoriales/google_merchant_en_accion.png">
+  </div>
+  <div class="c-pie"><strong>Figura 1</strong>: Resultados de una búsqueda con
+  Google Merchant en acción</div>
+</div>
+
+Para obtener esa publicidad el anunciante debió:
+
+1. <strong>Crear una cuenta en Google Merchant Center</strong>: pone a
+   disponibilidad de Google la información de tu producto ([video][video_1])
+2. <strong>Subir feed de tus productos</strong>: Contiene toda la información
+   sobre lo que está vendiendo, como la marca, el precio y la disponibilidad de
+   un producto ([video][video_2]).
+3. <strong>Crear una campaña</strong>: Comienza anunciar tus productos (usando
+   Adwords) ([video][video_3])
+
+## Entonces, Google Merchant es:
+
+Google Merchant es en palabras muy simples **una herramienta que te ayuda a
+construir un inventario con tus productos**. Este inventario será usado para tus
+campañas publicitarias. La creación y administración de la herramienta Google
+Merchant es _completamente gratuita_, menos—como ya lo habrás adivinado—crear la
+campaña, el cual funciona de manera idéntica a las campañas AdWords, es decir,
+pagas por clic.
+
+Crear este _inventario_ puede ser una tarea tediosa, Google te ofrece subir tus
+productos de diferentes formas al Merchant Center, incluso usando una planilla
+de cálculo (Excel) podrías hacerlo, pero en la práctica esto te puede consumir
+mucho tiempo. 
+
+## Bootic al rescate
+
+Es por eso que Bootic te quiere hacer la vida más simple y deja a disposición un
+archivo feed, especialmente confeccionado para Google Merchant el cual puedes
+encontrar en: `https://TIENDA.bootic.net/feeds/products.rss`. Si tu
+tienda Bootic tiene un dominio propio entonces el archivo está disponible en:
+`https://www.acme.com/feeds/products.rss`.
+
+[1]: https://merchants.google.com/ "Ir a la Google Merchant Center"
+[video_1]: https://youtu.be/apXuW7Qex7k
+[video_2]: https://youtu.be/dq2VlBbqTL4
+[video_3]: https://youtu.be/FLZdoeCv5o4
