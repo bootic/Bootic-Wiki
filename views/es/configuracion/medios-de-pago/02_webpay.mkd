@@ -64,7 +64,7 @@ boleta de garantía de **CLP$1.500.000**.
 * Extracto Sociedad (fotocopia).
 
 <div class="note info">
-  <p><strong>Producto</strong>: Cuando contrates Webpay plus la opción es: «Kit Webpay Plus con autorización y captura simultánea».</p>
+  <p><strong>Producto</strong>: Cuando contrates Webpay plus la opción es: «Webservices Webpay Plus con Autorización y Captura Simultánea».</p>
   <p><img src="/img/admin/wp_tipo_de_producto.png" /></p>
 </div>
 
