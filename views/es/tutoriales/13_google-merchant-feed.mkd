@@ -24,15 +24,20 @@ Google Merchant — _Figura 1_
   Google Merchant en acción</div>
 </div>
 
-Para obtener esa publicidad el anunciante debió:
+Para obtener esa publicidad el anunciante (o mejor dicho esos 5 anunciantes) debió:
 
 1. <strong>Crear una cuenta en Google Merchant Center</strong>: pone a
-   disponibilidad de Google la información de tu producto ([video][video_1])
+   disponibilidad de Google la información de tus productos ([video][video_1]) — 
+   este paso requiere que Google comprueba que eres en dueño de la tienda.
 2. <strong>Subir feed de tus productos</strong>: Contiene toda la información
-   sobre lo que está vendiendo, como la marca, el precio y la disponibilidad de
+   sobre lo que se está vendiendo, como la marca, el precio y la disponibilidad de
    un producto ([video][video_2]).
-3. <strong>Crear una campaña</strong>: Comienza anunciar tus productos (usando
-   Adwords) ([video][video_3])
+3. <strong>Crear una campaña</strong>: Crea una campaña para anunciar tus
+   productos (usando Adwords) ([video][video_3])
+
+Los tres pasos anteriores son un muy resumido proceso para llegar a publicitar
+tus productos en los resultados de búsqueda de Google&dagger;. Recomendamos revisar con
+atención los videos mencionados.
 
 ## Entonces, Google Merchant es:
 
@@ -56,7 +61,10 @@ encontrar en: `https://TIENDA.bootic.net/feeds/products.rss`. Si tu
 tienda Bootic tiene un dominio propio entonces el archivo está disponible en:
 `https://www.acme.com/feeds/products.rss`.
 
+&dagger;: Esta forma de publicidad es lo que Google llama: [ Google Shopping ][2].
+
 [1]: https://merchants.google.com/ "Ir a la Google Merchant Center"
+[2]: https://www.google.com/shopping?gl=us
 [video_1]: https://youtu.be/apXuW7Qex7k
 [video_2]: https://youtu.be/dq2VlBbqTL4
 [video_3]: https://youtu.be/FLZdoeCv5o4
