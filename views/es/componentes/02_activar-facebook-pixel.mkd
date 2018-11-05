@@ -1,6 +1,6 @@
 ---
-:title: Pixel de Facebook
-:description: "Como activar el pixel del Facebook"
+:title: Píxel de Facebook
+:description: "Cómo activar el píxel del Facebook"
 :keywords: pixel, facebook, componente
 ---
 # Cómo activar el píxel de Facebook
