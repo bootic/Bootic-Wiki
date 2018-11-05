@@ -1,0 +1,40 @@
+---
+:title: Pixel de Facebook
+:description: "Como activar el pixel del Facebook"
+:keywords: pixel, facebook, componente
+---
+# Cómo activar el píxel de Facebook
+
+¿Qué es?, según el mismo Facebook:
+
+> El píxel de Facebook es un fragmento de código JavaScript que te permite
+> realizar un seguimiento de la actividad de los visitantes de tu sitio web.
+> Funciona cargando una pequeña biblioteca de funciones que puedes usar cuando un
+> visitante del sitio realiza una acción (denominada evento) que quieres rastrear
+> (denominada conversión)
+
+Los pasos para activar el componente Facebook Pixel (inglés) o píxel del
+Facebook son los siguiente:
+
+## Pasos
+
+1. El primer paso es [obtener el número o ID del Pixel][fc], es un número muy
+   extenso - del tipo: <code>304710170553521</code>
+2. Luego anda a <a
+   href="https://auth.bootic.net/addons/facebook_pixel">componentes</a> y busca
+   el de Facebook Pixel
+3. Ingresa el ID y listo — Figura 1
+
+<div class="captura">
+  <div class="c-contenido">
+    <img src="/img/componentes/facebook_pixel_setup.png">
+  </div>
+  <div class="c-pie"><strong>Figura 1</strong>: Configurando el pixel de
+  Facebook</div>
+</div>
+
+Para verificar la correcta _instalación_ anda a la consola de administración que
+te proporciona Facebook.
+
+
+[fc]: https://www.facebook.com/ads/manager/pixel/facebook_pixel
