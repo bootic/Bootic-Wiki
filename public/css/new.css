@@ -1,0 +1,251 @@
+#search-bar .container {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 20px;
+}
+
+.side_menu li {
+  float: left;
+  list-style: circle inside;
+  margin-right: 20px;
+}
+
+
+/* grid-list
+-------------------------------------------------*/
+
+.grid-list > div {
+  /*min-height: 300px;*/
+  float: left;
+  margin-bottom: 30px;
+  position: relative;
+  border-radius: 3px;
+  box-shadow: 0 1px 5px 0px rgba(0,0,0,0.2);
+}
+
+.grid-list .item-1 {
+  margin-left: 0 !important
+}
+
+.grid-list-4 > div {
+  width: 23.5%;
+  margin-left: 2%;
+}
+
+.grid-list-4 > div:nth-child(4n-3) {
+  clear: left;
+  margin-left: 0
+}
+
+.grid-list-3 > div {
+  width: 31.333%;
+  margin-left: 3%;
+}
+
+.grid-list-3 > div:nth-child(3n+1) {
+  margin-left: 0;
+  clear: left;
+}
+
+@media (max-width: 800px) {
+
+  .grid-list-4 > div {
+    width: 31.333%;
+    margin-left: 3%
+  }
+
+  .grid-list-4 > div:nth-child(4n-3) {
+    clear: none;
+    margin-left: 3%
+  }
+
+  .grid-list-4 > div:nth-child(3n+1) {
+    margin-left: 0;
+    clear: left;
+  }
+
+  .grid-list-3 > div {
+    width: 48%;
+    margin-left: 4%;
+  }
+
+  .grid-list-3 > div:nth-child(3n+1) {
+    clear: none;
+    margin-left: 4%
+  }
+
+  .grid-list-3 > div:nth-child(2n+1) {
+    margin-left: 0;
+    clear: left;
+  }
+
+}
+
+@media (max-width: 600px) {
+  .grid-list-4 > div {
+    width: 48%;
+    margin-left: 4%
+  }
+
+  .grid-list-4 > div:nth-child(3n+1) {
+    clear: none;
+    margin-left: 4%
+  }
+
+  .grid-list-4 > div:nth-child(2n+1) {
+    margin-left: 0;
+    clear: left
+  }
+
+  .grid-list-3 > div {
+    width: 100%;
+    margin-left: 0%;
+    clear: none
+  }
+
+  .grid-list-3 > div:nth-child(3n+1) {
+    margin-left: 0
+  }
+
+}
+
+@media (max-width: 460px) {
+  .grid-list-4 > div {
+    width: 100%;
+    margin-left: 0%;
+    clear: none
+  }
+
+  .grid-list-4 > div:nth-child(3n+1) {
+    margin-left: 0
+  }
+
+  .grid-list-4 img {
+    width: 100%;
+  }
+}
+
+
+.video {
+  overflow: hidden; /* for cover image */
+}
+
+.video h3 {
+  font-weight: 500;
+  letter-spacing: -0.05rem;
+  font-size: 16px;
+  color: white;
+  position: absolute;
+  bottom: 10px;
+  left: 12px;
+  margin: 0;
+}
+
+.video a, .video .icons {
+  color: #fff;
+}
+
+.video img {
+  display: block;
+}
+
+.video .watch-video  {
+}
+
+.video.watched {
+  background-color: #fffef4;
+}
+
+.video .ion-android-star,
+.video.watched .ion-android-star-outline {
+  display: none;
+}
+
+.video .ion-android-star-outline,
+.video.watched .ion-android-star {
+  display: inline;
+  font-size: 20px;
+  position: absolute;
+  z-index: 1;
+}
+
+.video.watched .ion-android-star {
+  color: yellow;
+}
+
+.table-view .watch-video {
+  margin: -5px 0 0 -30px;
+}
+
+.grid-view .watch-video i {
+  left: 10px;
+  top: 5px;
+}
+
+.video .icons {
+  margin: 0;
+  position: absolute;
+  top: 0;
+  right: 2px;
+}
+
+.video .icons li {
+  font-size: 14px;
+  list-style: none;
+  margin: 10px 10px 0;
+  display: inline-block;
+}
+
+.item-price {
+  background: url(/images/coin4.png) left 3px no-repeat;
+  padding-left: 19px;
+}
+
+.video-image * {
+  -webkit-transition: all 0.3s ease-in-out;
+          transition: all 0.3s ease-in-out;
+}
+
+.video-image .cover {
+  background: rgba(0,0,0,0.3);
+  position: absolute;
+  text-align: center;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  will-change: background;
+}
+
+.video-image .cover big {
+  font-size: 48px;
+  position: absolute;
+  top: 35%;
+  margin-left: -15px;
+/*  transform: translateX(-50%) translateY(-50%); */
+  opacity: 0;
+  will-change: opacity;
+  -webkit-transform: scale3d(1.5, 1.5, 1);
+          transform: scale3d(1.5, 1.5, 1);
+}
+
+.video-image:hover .cover {
+  background: rgba(255,255,255,0.3);
+}
+
+.video-image:hover big {
+  opacity: 1;
+  -webkit-transform: scale3d(1, 1, 1);
+          transform: scale3d(1, 1, 1);
+}
+
+.video-image img {
+  display: block;
+  width: 100%;
+  -webkit-transform: scale3d(1, 1, 1);
+          transform: scale3d(1, 1, 1);
+}
+
+.video-image:hover img {
+  -webkit-transform: scale3d(1.1, 1.1, 1);
+          transform: scale3d(1.1, 1.1, 1);
+}

@@ -1,6 +1,5 @@
 class Page
 
-
   class << self
 
     def pages

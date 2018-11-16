@@ -28,7 +28,7 @@
     <h2><a href="/es/componentes">Componentes </a> </h2>
     
     <i class="icon-play-sign icon-4x"></i>
-    <h2><a href="#">Videos</a></h2>
+    <h2><a href="/es/videos">Videos</a></h2>
   </div>
 </div>
 </div>

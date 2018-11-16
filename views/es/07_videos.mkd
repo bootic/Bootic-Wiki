@@ -1,0 +1,80 @@
+---
+:title: "Videos"
+:description: "Video tutoriales para aprender a hacer todo"
+:keywords: videos, ayuda, tutoriales, explicacion
+:sitemap_priority: 1.0
+---
+
+<div class="clearfix grid-list grid-list-3 total-items-7">
+  <div class="video item-1">
+    <a href="http://localhost:5000/videos/f9efce22dc" class="video-image">
+      <img src="https://source.unsplash.com/282x260/?product,tecnologia-audio-y-video" />
+      <div class="cover"><big><i class="ion-android-search"></i></big></div>
+    </a>
+
+    <h3>
+      <a href="http://localhost:5000/videos/f9efce22dc">Guitar Amplifier
+      </a>
+    </h3>
+  </div>
+
+  <div class="video item-2">
+    <a href="http://localhost:5000/videos/f9efce22dc" class="video-image">
+      <img src="https://source.unsplash.com/282x260/?product,tecnologia-audio-y-video" />
+      <div class="cover"><big><i class="ion-android-search"></i></big></div>
+    </a>
+
+    <h3>
+      <a href="http://localhost:5000/videos/f9efce22dc">Guitar Amplifier
+      </a>
+    </h3>
+  </div>
+
+  <div class="video item-3">
+    <a href="http://localhost:5000/videos/f9efce22dc" class="video-image">
+      <img src="https://source.unsplash.com/282x260/?product,tecnologia-audio-y-video" />
+      <div class="cover"><big><i class="ion-android-search"></i></big></div>
+    </a>
+
+    <h3>
+      <a href="http://localhost:5000/videos/f9efce22dc">Guitar Amplifier
+      </a>
+    </h3>
+  </div>
+
+  <div class="video item-4">
+    <a href="http://localhost:5000/videos/f9efce22dc" class="video-image">
+      <img src="https://source.unsplash.com/282x260/?product,tecnologia-audio-y-video" />
+      <div class="cover"><big><i class="ion-android-search"></i></big></div>
+    </a>
+
+    <h3>
+      <a href="http://localhost:5000/videos/f9efce22dc">Guitar Amplifier
+      </a>
+    </h3>
+  </div>
+
+  <div class="video item-5">
+    <a href="http://localhost:5000/videos/f9efce22dc" class="video-image">
+      <img src="https://source.unsplash.com/282x260/?product,tecnologia-audio-y-video" />
+      <div class="cover"><big><i class="ion-android-search"></i></big></div>
+    </a>
+
+    <h3>
+      <a href="http://localhost:5000/videos/f9efce22dc">Guitar Amplifier
+      </a>
+    </h3>
+  </div>
+
+  <div class="video item-6">
+    <a href="http://localhost:5000/videos/f9efce22dc" class="video-image">
+      <img src="https://source.unsplash.com/282x260/?product,tecnologia-audio-y-video" />
+      <div class="cover"><big><i class="ion-android-search"></i></big></div>
+    </a>
+
+    <h3>
+      <a href="http://localhost:5000/videos/f9efce22dc">Guitar Amplifier
+      </a>
+    </h3>
+  </div>
+</div>
