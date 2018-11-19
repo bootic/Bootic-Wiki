@@ -1,13 +1,29 @@
-#search-bar .container {
-  border-bottom: 1px solid #ccc;
-  padding-bottom: 20px;
+#nav .navbar {
+  border: none;
 }
 
+#search-bar {
+  background: #ad94ff;
+  border-top: 2px solid #333;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 40px;
+}
+
+#search-bar input {
+  margin-bottom: 0
+}
+
+#search-bar .container {
+  /*padding-bottom: 20px;*/
+}
+
+/*
 .side_menu li {
   float: left;
   list-style: circle inside;
   margin-right: 20px;
 }
+*/
 
 
 /* grid-list

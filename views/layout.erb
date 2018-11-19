@@ -35,7 +35,7 @@
       </a>
 
       <a id="logo" title="Portada" href="/">
-        <img src="https://assets.btcdn.co/themes/6062/logo-mini.png?1491014021" alt="Bootic" />
+        <img src="/img/logo-bootic-ayuda.png" alt="Bootic" />
       </a>
 
       <div id="mobile-menu" class="dropdown">
@@ -86,17 +86,23 @@
             </a>
           </h2>
           <p><%= current_section.description %></p>
+
         <% else %>
+
+          <!-- 
           <h2><a href="/">Documentación Bootic</a></h2>
           <p>Toda la información que necesitas para empezar a vender en línea.</p>
+          -->
+
         <% end %>
+
       </div>
 
       <!-- lunr search -->
-      <form id="search_form">
+      <form id="search_form" style="margin-bottom: 0">
         <div class="b">
           <input type="search" placeholder="Busca una pregunta, palabra o tema" id="search" autocomplete="off" tabindex="1" />
-          <button type="submit" class="btn btn-success">Buscar</button>
+          <button type="submit" class="primary button hidden">Buscar</button>
         </div>
 
         <div id="search_box" style="display: none">
@@ -108,10 +114,10 @@
     </div><!-- /container -->
   </section>
 
-  <div id="main" class="container">
+  <div id="main" class="container row">
 
     <% if !is_index? && current_section %>
-    <div id="sidebar" class="span3">
+    <div id="sidebar" class="span-3">
       <a class="toggle-menu visible-phone" href="#" onclick="$(this).next().toggleClass('hidden-phone')">
         Ver menú
       </a>
@@ -128,7 +134,7 @@
     </div><!-- /sidebar -->
     <% end %>
 
-    <div id="content" class="<%= is_index? ? '' : 'span9' %>">
+    <div id="content" class="<%= is_index? ? '' : 'span-9' %>">
 
       <div id="content_wrapper">
         <%= @content %>
