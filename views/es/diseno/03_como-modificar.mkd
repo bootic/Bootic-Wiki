@@ -1,11 +1,8 @@
 ---
-:title: "Diseño de plantillas"
-:description: "Cómo modificar el diseño de una tienda Bootic"
+:title: "Cómo modificar una plantilla Bootic"
+:description: "Documentación técnica que explica cómo modificar el diseño de una tienda Bootic"
 :keywords: diseño, plantillas, customización, personalización
 :sitemap_priority: 1.0
-:group:
-  :name: Diseño
-  :label: ¿Cómo modifico el diseño?
 ---
 
 # Cómo modificar el diseño de una tienda

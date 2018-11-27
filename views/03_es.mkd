@@ -1,36 +1,19 @@
 ---
-:title: Documentación Bootic
+:title: Portada
 :description: Todo lo que necesitas saber para empezar a vender en línea.
 :keywords: Bootic, documentacion, e-commerce, faq
 ---
 
-<div class="row">
-  <div class="span-3">
-    <h4>Categorías</h4>
 
-    <ul>
-      <li><a href="/es/administracion">Administración de tu tienda</a></li>
-      <li><a href="/es/configuracion">Medios de pago, dominio y SEO</a></li>
-      <li><a href="/es/diseno">Edición de plantillas</a></li>
-      <li><a href="/es/tutoriales">Tutoriales, consejos, mejoras</a></li>
-      <li><a href="/es/componentes">Componentes</a></li>
-      <li><a href="/es/videos">Videos</a></li>
-    </ul>
+<h2>Artículos más vistos</h2>
 
-  </div>
-
-  <div class="span-9">
-    <h2>Artículos más vistos</h2>
-
-    <h3><a href="/es/configuracion/dominio-propio">Cómo configuro mi dominio propio</a></h3>
-    <h3><a href="/es/configuracion/medios-de-pago/webpay">Cómo activo y configuro Webpay</a></h3>
-    <h3><a href="/es/configuracion/opciones-de-envio">Cómo funcionan las opciones de envío</a></h3>
-    <h3><a href="/es/administracion/promociones">Cómo funcionan las promociones en Bootic</a></h3>
-    <h3><a href="/es/configuracion/temas">Temas y plantillas de diseño</a></h3>
-    <h3><a href="/es/administracion/pedidos/correo-origen-pedido">Correo origen pedido</a></h3>
-    <h3><a href="/es/administracion/productos/importar-csv">Cómo importar productos desde otra plataforma</a></h3>
-    <h3><a href="/es/administracion/pedidos/exportar-a-excel">Cómo exportar mis pedidos a una planilla Excel</a></h3>
-    <h3><a href="/es/administracion/productos/cambiar-precios-csv">Cómo cambiar precios de forma masiva</a></h3>
-    <h3><a href="/es/administracion/cuenta/cambiar_tcredito">Como cambiar la tarjeta de crédito</a></h3>
-  </div>
-</div>
+<h3><a href="/es/configuracion/dominio-propio">Cómo configuro mi dominio propio</a></h3>
+<h3><a href="/es/configuracion/medios-de-pago/webpay">Cómo activo y configuro Webpay</a></h3>
+<h3><a href="/es/configuracion/opciones-de-envio">Cómo configurar las opciones de envío</a></h3>
+<h3><a href="/es/administracion/promociones">Las promociones y todas sus opciones</a></h3>
+<h3><a href="/es/configuracion/temas">Diseño y plantillas Bootic</a></h3>
+<!--<h3><a href="/es/administracion/pedidos/correo-origen-pedido">Correo origen pedido</a></h3>-->
+<h3><a href="/es/administracion/productos/importar-csv">Cómo importar productos desde otra plataforma</a></h3>
+<!--<h3><a href="/es/administracion/pedidos/exportar-a-excel">Cómo exportar mis pedidos a una planilla Excel</a></h3>-->
+<h3><a href="/es/administracion/productos/cambiar-precios-csv">Cómo cambiar precios de forma masiva</a></h3>
+<h3><a href="/es/administracion/cuenta/cambiar_tcredito">Como cambiar mis datos de pago</a></h3>

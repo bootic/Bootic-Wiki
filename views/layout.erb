@@ -11,7 +11,7 @@
   <meta name="keywords" content="<%= @page.keywords if @page %>" />
   <meta name="author" content="El equipo Bootic">
 
-  <title><%= @page ? @page.title : 'Home' %> | Bootic Docs</title>
+  <title><%= @page ? @page.title : 'Inicio' %> | Documentación Bootic</title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="https://assets.btcdn.co/themes/1551/favicon.ico">
@@ -116,25 +116,27 @@
 
   <div class="container row">
 
-    <% if !is_index? && current_section %>
     <div id="sidebar" class="span-3">
-      <a class="toggle-menu visible-phone" href="#" onclick="$(this).next().toggleClass('hidden-phone')">
-        Ver menú
-      </a>
+      <h4>
+        Índice
+        <small class="toggle-menu visible-phone"><a href="#" onclick="$('.side_menu').toggleClass('hidden-phone')">
+          (Mostrar)
+        </a></small>
+      </h4>
+
 
       <ul class="hidden-phone side_menu clearfix">
-        <!--<li class="page depth_2">
-          <a href="<%= current_section.url %>">Introducción</a>
-        </li>-->
-        <% current_section.each do |page| %>
+        <li class="page depth_1">
+          <a href="/es">Inicio</a>
+        </li>
+        <% Page.find('/es').each do |page| %>
           <%= build_menu page %>
         <% end %>
       </ul>
 
     </div><!-- /sidebar -->
-    <% end %>
 
-    <div id="content" class="<%= is_index? ? '' : 'span-9' %>">
+    <div id="content" class="span-9">
 
       <div id="content_wrapper">
         <%= @content %>

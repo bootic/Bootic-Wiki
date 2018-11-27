@@ -85,12 +85,18 @@ class Page
 
   def content
     if body.strip.blank?
-      "# #{title}\n\n" + @children.sort.collect do |c|
-        "## [#{c.title}](#{c.url})\n\n#{c.description}"
+      "# #{title}\n\n#{intro}" + @children.sort.collect do |c|
+      # "# #{title}\n\n" + @children.sort.collect do |c|
+        "### [#{c.title}](#{c.url})\n\n#{c.description}"
       end.join("\n\n")
     else
       body
     end
+  end
+
+  def intro
+    # @intro.present? ? "#{@intro}\n\n" : ""
+    ""
   end
 
   def <<(child)
@@ -160,10 +166,11 @@ class Page
     if content
       @info = YAML.load(content)
       @title = @info[:title]
-      @description = @info[:description]
+      @description = @info[:description] || "Artículo sobre #{@title}"
       @body.gsub!(EXPR, '')
       @keywords = @info[:keywords]
       @sitemap_priority = @info[:sitemap_priority]
+      @intro = @info[:intro]
     else
       @info = {}
       @title = File.basename(subdir)

@@ -1,0 +1,8 @@
+---
+:title: "Dominio propio y SEO"
+:description: "SEO, posicionamiento, pagerank"
+:keywords: google, seo, posicionamiento, pagerank 
+:sitemap_priority: 1.0
+:intro: "El SEO es la sigla de _Search Engine Optimization_ en español de traduce como «Posicionamiento en Buscadores» o también «Posicionamiento Web». Es el proceso de mejorar la visibilidad de un sitio web en los resultados de los diferentes
+buscadores."
+---

@@ -1,0 +1,5 @@
+---
+:title: Diseño y plantillas Bootic
+:description: "Temas de diseño disponibles para vestir tu tienda Bootic."
+:keywords: diseño, plantillas, estilos, css, html
+---

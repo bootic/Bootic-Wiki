@@ -1,8 +1,7 @@
 module Helpers
 
   def web_host
-    # 'http://bootic.bootic.net'
-    'https://www.bootic.net'
+    'https://www.bootic.io'
   end
 
   # returns true if we're showing a language index (/es or /en)
@@ -48,7 +47,7 @@ module Helpers
   end
 
   def partial(page, options={})
-    erb :"_#{page}", options.merge!(:layout => false)
+    erb :"_#{page}", options.merge!(layout: false)
   end
 
   def menu(path = '/')
@@ -61,7 +60,7 @@ module Helpers
 
   def page_class
     return 'not_found' unless @page
-    @page.url.split('/').reject{|e| e == ''}.join('_')
+    @page.url.split('/').reject { |e| e == '' }.join('_')
   end
 
   # section to build menu from.
@@ -89,7 +88,7 @@ module Helpers
   end
 
   def load_page(url, json = false)
-    if @page = Page.find('/'+url)
+    if @page = Page.find('/' + url)
       mkd @page
     else
       render_404
@@ -98,9 +97,9 @@ module Helpers
 
   def recursive_xml(xml, page, level = 1.0)
     xml.url do
-        xml.loc url(page.url)
-        xml.changefreq "weekly"
-        xml.priority(page.sitemap_priority || level)
+      xml.loc url(page.url)
+      xml.changefreq "weekly"
+      xml.priority(page.sitemap_priority || level)
     end
 
     page.each do |child|
@@ -114,8 +113,8 @@ module Helpers
     str = %(<li class="page #{klass} depth_#{depth}">)
     str << %(<a href="#{page.url}" title="#{page.description}">#{page.title}</a>)
     if page.size > 0
-      page.each do |child|
-        str << %(<ul>)
+      page.each_with_index do |child, i|
+        str << %(<ul class="depth_#{depth+1} number_#{i}">)
         str << build_menu(child, depth + 1)
         str << %(</ul>)
       end
@@ -136,7 +135,8 @@ module Helpers
 
   def current_url
     return '' unless @page
-    "http://#{request.env['HTTP_HOST']}#{@page.url}"
+    schema = development? ? 'http' : 'https'
+    "#{schema}://#{request.env['HTTP_HOST']}#{@page.url}"
   end
 
   def development?
