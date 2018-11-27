@@ -101,7 +101,7 @@
       <!-- lunr search -->
       <form id="search_form" style="margin-bottom: 0">
         <div class="b">
-          <input type="search" placeholder="Busca una pregunta, palabra o tema" id="search" autocomplete="off" tabindex="1" />
+          <input type="search" placeholder="Escribe una palabra o tema para buscar (Ej: Activar Webpay, o como configurar un dominio propio)" id="search" autocomplete="off" tabindex="1" />
           <button type="submit" class="primary button hidden">Buscar</button>
         </div>
 
@@ -114,7 +114,7 @@
     </div><!-- /container -->
   </section>
 
-  <div id="main" class="container row">
+  <div class="container row">
 
     <% if !is_index? && current_section %>
     <div id="sidebar" class="span-3">
@@ -123,9 +123,9 @@
       </a>
 
       <ul class="hidden-phone side_menu clearfix">
-        <li class="page depth_2">
+        <!--<li class="page depth_2">
           <a href="<%= current_section.url %>">Introducción</a>
-        </li>
+        </li>-->
         <% current_section.each do |page| %>
           <%= build_menu page %>
         <% end %>
@@ -141,19 +141,19 @@
       </div>
 
       <% unless !@page || ['/es', '/en', '/'].include?(@page.url) %>
-        <div class="more-at-the-bottom text-center" style="margin: 50px 0">
+        <!--<div class="more-at-the-bottom text-center" style="margin: 50px 0">
           ¿Tienes dudas sobre este artículo? <a href="https://www.bootic.io/forms/contacto" title="formulario de contacto">¡Escríbenos!</a>
-        </div>
+        </div>-->
       <% end %>
+
     </div><!-- /content -->
 
   </div><!-- /main container -->
 
-
   <section class="section medium dark text-center">
     <div class="container">
-    <h3 class="title">失去了什么？</h3>
-    <p class="text">Si tienes dudas con respecto a algo, no hay problema. Estamos acá para ayudarte (o en el botoncito de abajo a la derecha).</p>
+    <h2 class="title">¿Sigues con dudas?</h2>
+    <p class="text">No hay problema. Estamos acá para ayudarte (o en el botoncito de abajo a la derecha).</p>
     <a href="https://www.bootic.io/forms/contacto" class="button">Escríbenos</a>
   </div>
   </section>

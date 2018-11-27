@@ -3,18 +3,49 @@
 }
 
 #search-bar {
-  background: #ad94ff;
+  /*background: #ad94ff;*/
+  background: #f8f6ff;
   border-top: 2px solid #333;
-  border-bottom: 1px solid #eee;
-  margin-bottom: 40px;
+  border-bottom: 1px solid #e8e1ff;
 }
 
 #search-bar input {
-  margin-bottom: 0
+  margin-bottom: 0;
 }
 
-#search-bar .container {
-  /*padding-bottom: 20px;*/
+#search-bar input:focus {
+  border-color: #ad94ff;
+}
+
+#search_box {
+  background: #d5c9ff;
+}
+
+#search_box .container {
+  padding: 0;
+}
+
+#search_box ul {
+  margin-bottom: 0;
+}
+
+#search_box li {
+  margin: 0;
+  padding: 5px 15px;
+  list-style: none;
+}
+
+#search_box li:hover {
+  background-color: #fff;
+}
+
+#search_box .result_desc {
+  margin-bottom: 0;
+}
+
+
+#content {
+  padding: 50px 0 ;
 }
 
 /*

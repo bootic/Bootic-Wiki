@@ -5,30 +5,32 @@
 ---
 
 <div class="row">
+  <div class="span-3">
+    <h4>Categorías</h4>
 
-<div id="start">
-  <div class="span4">
-    <i class="icon-tasks icon-4x"></i>
-    <h2> <a href="/es/administracion"> Administración de tu tienda </a> </h2>
+    <ul>
+      <li><a href="/es/administracion">Administración de tu tienda</a></li>
+      <li><a href="/es/configuracion">Medios de pago, dominio y SEO</a></li>
+      <li><a href="/es/diseno">Edición de plantillas</a></li>
+      <li><a href="/es/tutoriales">Tutoriales, consejos, mejoras</a></li>
+      <li><a href="/es/componentes">Componentes</a></li>
+      <li><a href="/es/videos">Videos</a></li>
+    </ul>
 
-    <i class="icon-wrench icon-4x"></i>
-    <h2> <a href="/es/configuracion"> Medios de pago, dominio y SEO </a> </h2>
-  </div>
-  <div class="span4">
-
-    <i class="icon-edit icon-4x"></i>
-    <h2> <a href="/es/diseno">Edición de plantillas</a></h2>
-
-    <i class="icon-coffee icon-4x"></i>
-    <h2> <a href="/es/tutoriales">Tutoriales, consejos, mejoras</a> </h2>
   </div>
 
-  <div class="span4">
-    <i class="icon-gears icon-4x"></i>
-    <h2><a href="/es/componentes">Componentes </a> </h2>
-    
-    <i class="icon-play-sign icon-4x"></i>
-    <h2><a href="/es/videos">Videos</a></h2>
+  <div class="span-9">
+    <h2>Artículos más vistos</h2>
+
+    <h3><a href="/es/configuracion/dominio-propio">Cómo configuro mi dominio propio</a></h3>
+    <h3><a href="/es/configuracion/medios-de-pago/webpay">Cómo activo y configuro Webpay</a></h3>
+    <h3><a href="/es/configuracion/opciones-de-envio">Cómo funcionan las opciones de envío</a></h3>
+    <h3><a href="/es/administracion/promociones">Cómo funcionan las promociones en Bootic</a></h3>
+    <h3><a href="/es/configuracion/temas">Temas y plantillas de diseño</a></h3>
+    <h3><a href="/es/administracion/pedidos/correo-origen-pedido">Correo origen pedido</a></h3>
+    <h3><a href="/es/administracion/productos/importar-csv">Cómo importar productos desde otra plataforma</a></h3>
+    <h3><a href="/es/administracion/pedidos/exportar-a-excel">Cómo exportar mis pedidos a una planilla Excel</a></h3>
+    <h3><a href="/es/administracion/productos/cambiar-precios-csv">Cómo cambiar precios de forma masiva</a></h3>
+    <h3><a href="/es/administracion/cuenta/cambiar_tcredito">Como cambiar la tarjeta de crédito</a></h3>
   </div>
-</div>
 </div>
