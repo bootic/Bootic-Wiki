@@ -146,7 +146,7 @@ class Page
   end
 
   def headings
-    @headings ||= body.scan(/#+\s*(.+)/).flatten.map{|e| e.gsub(/<\/?[^>]*>/, "")}
+    @headings ||= body.scan(/#+\s*(.+)/).flatten.map { |e| e.gsub(/<\/?[^>]*>/, "")}
   end
 
   def in_menus?

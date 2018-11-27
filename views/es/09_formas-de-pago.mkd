@@ -15,6 +15,8 @@ Bootic te da la opción de ofrecer varios medios de pago a tus clientes (de mome
 	<div class="c-pie"><strong>Figura 1</strong>: Selector de medios de pago. Verde significa «activo», rojo significa «desactivado»</div>
 </div>
 
+<hr />
+
 ## Medios de pago disponibles:
 
 1. [Webpay (Chile)][webpay]
