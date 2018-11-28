@@ -1,3 +1,11 @@
+a {
+  color: #6950c5;
+}
+
+a:hover {
+  color: #ea434a
+}
+
 #nav .navbar {
   border: none;
 }
@@ -72,7 +80,12 @@
   list-style: none;
 }
 
+#sidebar li.page-videos {
+  display: none;
+}
+
 #content h3 {
+  margin-top: 10px;
   margin-bottom: 10px;
 }
 
