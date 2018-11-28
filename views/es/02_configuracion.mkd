@@ -1,5 +1,0 @@
----
-:title: "Configuración avanzada"
-:description: "Cómo configurar sistemas de pago, envío y usar tu dominio."
-:keywords: 
----

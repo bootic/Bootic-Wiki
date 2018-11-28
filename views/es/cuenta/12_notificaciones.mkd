@@ -1,25 +1,26 @@
 ---
-:title: Notificaciones y destinatarios
+:title: Notificaciones y usuarios
 :description: Cómo agregar o eliminar nuevos destinatarios para las notificaciones de tu tienda.
 :keywords: usuarios, administrador, editor, supervisor, vendedor, bodeguero, diseñador, admin
 ---
+
 # Notificaciones y destinatarios
 
 Bootic envía correos para notificar cuando los siguientes eventos ocurren en tu tienda:
 
-## Un nuevo pedido fue generado por un cliente (estado pendiente)
+### Un nuevo pedido fue generado por un cliente (estado pendiente)
 
 Este correo se envía una vez que un cliente llenó todos los campos asociados a una compra, y luego de hacer click sobre el botón "Ir al pago". El correo se envía a el o los destinatarios que hayan sido definidos en la sección Notificaciones y Destinatarios del panel de Preferencias. Por defecto es el primer usuario registrado en una tienda.
 
-## Un pedido fue existosamente pagado a través de tarjeta de crédito (Webpay)
+### Un pedido fue existosamente pagado a través de tarjeta de crédito (Webpay)
 
 Este correo se envía una vez que un cliente realizó el pago para un pedido usando tarjeta de crédito (por ahora sólo Webpay). Al igual que en el caso anterior, el correo se envía a el o los destinatarios que hayan sido definidos en la sección Notificaciones y Destinatarios del panel de Preferencias.
 
-## El stock de un producto está bajo el nível mínimo definido para las alertas.
+### El stock de un producto está bajo el nível mínimo definido para las alertas.
 
 Opcional. Este email se envía luego de que un pedido se concrete y el nivel de stock de un producto quede por debajo del umbral mínimo definido para las alertas. Esta opción se desactiva en la sección Notificaciones y Destinatarios del panel de Preferencias.
 
-## Un cliente envió un formulario de contacto
+### Un cliente envió un formulario de contacto
 
 Este correo se envía para notificarte cuando un usuario envió un formulario de contacto, y contiene todos los campos que hayan sido llenados a la hora de enviar el formulario. A diferencia de los casos anteriores, **los destinatarios de un formulario se definen en su página de edición**, es decir, puedes definir una o más casillas distintas a las que recibirán las notificaciones de nuevas compras.
 

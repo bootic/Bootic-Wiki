@@ -1,0 +1,6 @@
+---
+:title: Contenido
+:description: "Secciones de apoyo a la tienda: Noticias, Páginas, Galerías, Menus"
+:keywords: contenido, noticias, galeria, menus
+:intro: "Para **apoyar** la administración, visualización, promoción y venta de productos Bootic te proporciona las siguientes herramientas:"
+---

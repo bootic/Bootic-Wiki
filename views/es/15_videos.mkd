@@ -1,0 +1,117 @@
+---
+:title: "Videos"
+:description: "Video tutoriales para aprender a hacer todo"
+:keywords: videos, ayuda, tutoriales, explicacion
+:sitemap_priority: 1.0
+---
+
+<div class="clearfix grid-list grid-list-3 total-items-7">
+  <div class="video item-1">
+    <a href="http://localhost:5000/videos/f9efce22dc" class="video-image">
+      <img src="https://source.unsplash.com/282x260/?product,tecnologia-audio-y-video" />
+      <div class="cover"><big><i class="ion-android-search"></i></big></div>
+    </a>
+
+    <h3>
+      <a href="http://localhost:5000/videos/f9efce22dc">Guitar Amplifier
+      </a>
+    </h3>
+  </div>
+
+  <div class="video item-2">
+    <a href="http://localhost:5000/videos/f9efce22dc" class="video-image">
+      <img src="https://source.unsplash.com/282x260/?product,tecnologia-audio-y-video" />
+      <div class="cover"><big><i class="ion-android-search"></i></big></div>
+    </a>
+
+    <h3>
+      <a href="http://localhost:5000/videos/f9efce22dc">Guitar Amplifier
+      </a>
+    </h3>
+  </div>
+
+  <div class="video item-3">
+    <a href="http://localhost:5000/videos/f9efce22dc" class="video-image">
+      <img src="https://source.unsplash.com/282x260/?product,tecnologia-audio-y-video" />
+      <div class="cover"><big><i class="ion-android-search"></i></big></div>
+    </a>
+
+    <h3>
+      <a href="http://localhost:5000/videos/f9efce22dc">Guitar Amplifier
+      </a>
+    </h3>
+  </div>
+
+  <div class="video item-4">
+    <a href="http://localhost:5000/videos/f9efce22dc" class="video-image">
+      <img src="https://source.unsplash.com/282x260/?product,tecnologia-audio-y-video" />
+      <div class="cover"><big><i class="ion-android-search"></i></big></div>
+    </a>
+
+    <h3>
+      <a href="http://localhost:5000/videos/f9efce22dc">Guitar Amplifier
+      </a>
+    </h3>
+  </div>
+
+  <div class="video item-5">
+    <a href="http://localhost:5000/videos/f9efce22dc" class="video-image">
+      <img src="https://source.unsplash.com/282x260/?product,tecnologia-audio-y-video" />
+      <div class="cover"><big><i class="ion-android-search"></i></big></div>
+    </a>
+
+    <h3>
+      <a href="http://localhost:5000/videos/f9efce22dc">Guitar Amplifier
+      </a>
+    </h3>
+  </div>
+
+  <div class="video item-6">
+    <a href="http://localhost:5000/videos/f9efce22dc" class="video-image">
+      <img src="https://source.unsplash.com/282x260/?product,tecnologia-audio-y-video" />
+      <div class="cover"><big><i class="ion-android-search"></i></big></div>
+    </a>
+
+    <h3>
+      <a href="http://localhost:5000/videos/f9efce22dc">Guitar Amplifier
+      </a>
+    </h3>
+  </div>
+</div>
+
+<div id="video-modal" class="over">
+  <a class="close" href="#close" title="Close">Close</a>
+  <div class="content"></div>
+</div>
+
+<link rel="stylesheet" href="https://cdn.plyr.io/3.2.4/plyr.css">
+<link rel="stylesheet" href="/css/over.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script>
+<script src="/js/vendor/over.js"></script>
+<script src="https://cdn.plyr.io/3.2.4/plyr.js"></script>
+<script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
+
+<script>
+  var player;
+
+  function showModal(html, cb) {
+    $('#video-modal .content').html(html);
+    player = new Plyr('#video-player');
+    $('#video-modal').over().on('hidden', cb);
+  }
+
+  function showVideo(url) {
+    var html = '<video id="video-player" poster="' + url + '-frame.png" playsinline controls>';
+    html += '<source src="' + url + '.mp4" type="video/mp4">';
+    html += '<source src="' + url + '.webm" type="video/webm"></video>';
+
+    showModal(html, function() {
+      player.stop()
+    })
+  }
+
+  $('body').on('click', '.video a', function(e) {
+    e.preventDefault();
+    showVideo('http://r.btcdn.co/media/bootic-welcome');
+  })
+</script>

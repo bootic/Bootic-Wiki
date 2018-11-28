@@ -1,9 +1,13 @@
-/* Search using Lunr.js
+/* 
+
+Search using Lunr.js
 USAGE: WikiSearch.search('foo', function (results) {...})
+
 -----------------------------------------------------------------*/
+
 (function ($) {
   var Search = function (url, $container) {
-    if(!url.match(document.location.host) && !url.match(/\?callback=/)) {// remote host. Add jsonp callback
+    if (!url.match(document.location.host) && !url.match(/\?callback=/)) {// remote host. Add jsonp callback
       url += '?callback=?'
     }
 
@@ -19,7 +23,7 @@ USAGE: WikiSearch.search('foo', function (results) {...})
         loaded = false;
 
     var load = function (callback) {
-      if(loaded){ callback(); return }
+      if (loaded) { callback(); return }
 
       $.getJSON(url, function (json) {
 

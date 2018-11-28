@@ -1,10 +1,13 @@
 class Page
 
-
   class << self
 
     def pages
       (@pages ||= {})
+    end
+
+    def slugs
+      (@slugs ||= {})
     end
 
     def groups
@@ -13,6 +16,7 @@ class Page
 
     def add(page)
       pages[page.url] = page
+      slugs[page.slug] = page
       if group = page.info[:group]
         (groups[group[:name]] ||= []) << page
       end
@@ -21,6 +25,10 @@ class Page
 
     def find(url)
       pages[url]
+    end
+
+    def find_by_slug(slug)
+      slugs[slug]
     end
 
     def root
@@ -84,14 +92,24 @@ class Page
     Page.add(self)
   end
 
+  def slug
+    @url.split('/').last
+  end
+
   def content
     if body.strip.blank?
-      "# #{title}\n\n" + @children.sort.collect do |c|
-        "## [#{c.title}](#{c.url})\n\n#{c.description}"
+      "# #{title}\n\n#{intro}" + @children.sort.collect do |c|
+      # "# #{title}\n\n" + @children.sort.collect do |c|
+        "### [#{c.title}](#{c.url})\n\n#{c.description}"
       end.join("\n\n")
     else
       body
     end
+  end
+
+  def intro
+    # @intro.present? ? "#{@intro}\n\n" : ""
+    ""
   end
 
   def <<(child)
@@ -141,7 +159,7 @@ class Page
   end
 
   def headings
-    @headings ||= body.scan(/#+\s*(.+)/).flatten.map{|e| e.gsub(/<\/?[^>]*>/, "")}
+    @headings ||= body.scan(/#+\s*(.+)/).flatten.map { |e| e.gsub(/<\/?[^>]*>/, "")}
   end
 
   def in_menus?
@@ -161,10 +179,11 @@ class Page
     if content
       @info = YAML.load(content)
       @title = @info[:title]
-      @description = @info[:description]
+      @description = @info[:description] || "Artículo sobre #{@title}"
       @body.gsub!(EXPR, '')
       @keywords = @info[:keywords]
       @sitemap_priority = @info[:sitemap_priority]
+      @intro = @info[:intro]
     else
       @info = {}
       @title = File.basename(subdir)
