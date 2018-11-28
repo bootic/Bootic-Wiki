@@ -90,6 +90,8 @@ module Helpers
   def load_page(url, json = false)
     if @page = Page.find('/' + url)
       mkd @page
+    elsif @page = Page.find_by_slug(url.split('/').last)
+      redirect to(@page.url), 301
     else
       render_404
     end
@@ -110,7 +112,7 @@ module Helpers
   def build_menu(page, depth = 1)
     return '' unless page.in_menus?
     klass = match_path(page)
-    str = %(<li class="page #{klass} depth_#{depth}">)
+    str = %(<li class="page page-#{page.slug} #{klass} depth_#{depth}">)
     str << %(<a href="#{page.url}" title="#{page.description}">#{page.title}</a>)
     if page.size > 0
       page.each_with_index do |child, i|

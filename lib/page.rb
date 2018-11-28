@@ -6,12 +6,17 @@ class Page
       (@pages ||= {})
     end
 
+    def slugs
+      (@slugs ||= {})
+    end
+
     def groups
       (@groups ||= {})
     end
 
     def add(page)
       pages[page.url] = page
+      slugs[page.slug] = page
       if group = page.info[:group]
         (groups[group[:name]] ||= []) << page
       end
@@ -20,6 +25,10 @@ class Page
 
     def find(url)
       pages[url]
+    end
+
+    def find_by_slug(slug)
+      slugs[slug]
     end
 
     def root
@@ -81,6 +90,10 @@ class Page
     load_info
     parse_position_and_url
     Page.add(self)
+  end
+
+  def slug
+    @url.split('/').last
   end
 
   def content
