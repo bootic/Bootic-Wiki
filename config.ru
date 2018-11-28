@@ -9,7 +9,8 @@ require File.dirname(__FILE__) + '/lib/redirects'
 
 use Redirects, {
   static: {
-    '/es/configuracion/formas-de-envio' => '/es/configuracion/opciones-de-envio'
+    '/es/configuracion/formas-de-envio' => '/es/configuracion/opciones-de-envio',
+    '/es/configuracion/medios-de-pago' => '/es/formas-de-pago'
   },
   regex: {
     /^\/es\/diseno\/(.*)/ => '/es/diseno'
