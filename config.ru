@@ -10,10 +10,17 @@ require File.dirname(__FILE__) + '/lib/redirects'
 use Redirects, {
   static: {
     '/es/configuracion/formas-de-envio' => '/es/configuracion/opciones-de-envio',
-    '/es/configuracion/medios-de-pago' => '/es/formas-de-pago'
+    '/es/configuracion/medios-de-pago' => '/es/formas-de-pago',
+    '/es/configuracion/servicios' => '/es/componentes-e-integraciones',
+    '/es/configuracion/seo' => '/es/dominio-y-seo',
+    '/es/tutoriales/comentar-el-codigo-fuente' => '/es/cuenta/desactivar-compras',
+    '/es/tutoriales/favoritos' => '/es/pedidos/acceso-rapido',
+    '/es/administracion' => '/es',
+    '/es/tutoriales' => '/es',
+    '/es/componentes' => '/es/componentes-e-integraciones'
   },
   regex: {
-    /^\/es\/diseno\/(.*)/ => '/es/diseno'
+    # /^\/es\/diseno\/(.*)/ => '/es/diseno'
   }
 }
 
