@@ -1,34 +1,145 @@
+a {
+  color: #6950c5;
+}
+
+a:hover {
+  color: #ea434a
+}
+
+#nav .navbar {
+  border: none;
+}
+
+#search-bar {
+  /*background: #ad94ff;*/
+  background: #f8f6ff;
+  border-top: 2px solid #333;
+  border-bottom: 1px solid #e8e1ff;
+}
+
+#search-bar input {
+  margin-bottom: 0;
+}
+
+#search-bar input:focus {
+  border-color: #ad94ff;
+}
+
+#search_box {
+  background: #d5c9ff;
+}
+
+#search_box .container {
+  padding: 0;
+}
+
+#search_box ul {
+  margin-bottom: 0;
+}
+
+#search_box li {
+  margin: 0;
+  padding: 5px 15px;
+  list-style: none;
+}
+
+#search_box li:hover {
+  background-color: #fff;
+}
+
+#search_box .result_desc {
+  margin-bottom: 0;
+}
+
+#content {
+  padding: 50px 0 ;
+}
+
+#sidebar {
+  padding: 50px 0;
+}
+
+#sidebar ul.depth_2 {
+  display: none;
+}
+
+#sidebar .current ul.depth_2,
+#sidebar .in_path ul.depth_2 {
+  display: block;
+  border-left: 1px solid #ccc;
+  padding: 3px 0 3px 12px;
+  margin: 0;
+}
+
+#sidebar .current ul.number_0,
+#sidebar .in_path ul.number_0 {
+  margin-top: 15px
+}
+
+#sidebar li {
+  list-style: none;
+}
+
+#sidebar li.page-videos {
+  display: none;
+}
+
+#content h3 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/*
+.side_menu li {
+  float: left;
+  list-style: circle inside;
+  margin-right: 20px;
+}
+*/
+
+#content ol {
+  margin-left: 15px;
+}
+
+#content ol li {
+  list-style-position: outside;
+}
+
 .captura {
-  border: 1px solid #999;
+  border: 1px solid #ccc;
   margin: 20px 0 40px;
   text-align: center;
+}
+
+.captura img {
+  display: block;
 }
 
 .c-pie {
   font-size: 1em;
   color: #666;
   font-style: italic;
-  border-top: 1px solid #999;
-  background: #f2f2f2;
+  border-top: 1px solid #ccc;
+  background: #f6f6f6;
   padding: 10px;
 }
 
 .note {
-    position:relative;
-    margin:30px 0;
-    padding:20px 20px 20px 40px;
+  margin: 30px 0;
+  padding: 20px 20px 1px 30px;
 }
+
 .note strong {
-    font-weight:bold;
+  font-weight:bold;
 }
-.note p, .note li {
-}
+
 .note a {
-    text-decoration:underline;
+  text-decoration:underline;
 }
+
 .note h5 {
-    font-size:20px;
-    font-weight:bold ;
+  font-size:20px;
+  font-weight:bold;
 }
 
 .warning {
