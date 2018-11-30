@@ -2,6 +2,10 @@ a {
   color: #6950c5;
 }
 
+#sidebar a {
+  font-weight: 400;
+}
+
 a:hover {
   color: #ea434a
 }
