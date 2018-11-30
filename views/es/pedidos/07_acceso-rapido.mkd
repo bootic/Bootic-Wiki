@@ -1,10 +1,10 @@
 ---
-:title: Favoritos
+:title: Acceso rápido a pedidos por estado, usando favoritos
 :description: "Usando los favoritos de tu navegador web"
 :keywords: favoritos, fav, bookmarks, chrome, tutorial
 ---
 
-# Favoritos
+# Acceso rápido a pedidos por estado, usando favoritos
 
 Tu navegador _de cabecera_ (y todos los navegadores) tienen una opción de **Favoritos** (también llamados
 «Marcadores»). Los favoritos son enlaces que puedes guardar y así tener un acceso más rápido a las páginas que

@@ -1,6 +1,6 @@
 ---
 :title: "Modo desarrollo"
-:description: "Editar la tienda en modo desarrollo"
+:description: "Editar el diseño la tienda en modo desarrollo"
 :keywords: plantilla, desarrollo, tienda, development, mode, produccion, vista, previa
 :sitemap_priority: 1.0
 ---
@@ -8,8 +8,8 @@
 # Tienda en _modo desarrollo_
 
 En Bootic es posible habilitar una _copia exacta_ de tu tienda para que puedas
-editarla sin temor a cometer un error o si quieres probar algo nuevo o bien—de
-plano— **trabajar** en el rediseño de la misma - <strong>Figura 1</strong>.
+editarla sin temor a cometer un error o si quieres probar algo nuevo o bien, de
+plano, trabajar en el rediseño de la misma - <strong>Figura 1</strong>.
 
 Es lo que llamamos Tienda en Modo Desarrollo, a continuación te contamos cómo
 «activar» este modo.
@@ -61,7 +61,6 @@ Es lo que llamamos Tienda en Modo Desarrollo, a continuación te contamos cómo
 <div class="video">
   <iframe width="560" height="315" src="https://www.youtube.com/embed/KmtW-y5dvBw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 </div>
-
 
 ## Publicar cambios en producción
 
