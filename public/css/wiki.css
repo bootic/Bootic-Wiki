@@ -1,0 +1,47 @@
+.captura {
+  border: 1px solid #999;
+  margin: 20px 0 40px;
+  text-align: center;
+}
+
+.c-pie {
+  font-size: 1em;
+  color: #666;
+  font-style: italic;
+  border-top: 1px solid #999;
+  background: #f2f2f2;
+  padding: 10px;
+}
+
+.note {
+    position:relative;
+    margin:30px 0;
+    padding:20px 20px 20px 40px;
+}
+.note strong {
+    font-weight:bold;
+}
+.note p, .note li {
+}
+.note a {
+    text-decoration:underline;
+}
+.note h5 {
+    font-size:20px;
+    font-weight:bold ;
+}
+
+.warning {
+  border-left: 5px solid red;
+  background-color: #eb1c1c1a;
+}
+
+.info {
+  border-left: 5px solid #2b89e2;
+  background-color: #cfe8ff;
+}
+
+.note {
+  border-left: 5px solid #c89309c7;;
+  background-color: #ffd66e4f;
+}
