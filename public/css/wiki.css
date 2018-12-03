@@ -2,12 +2,12 @@ a {
   color: #6950c5;
 }
 
-#sidebar a {
-  font-weight: 400;
-}
-
 a:hover {
   color: #ea434a
+}
+
+#sidebar a {
+  font-weight: 400;
 }
 
 #nav .navbar {
@@ -101,11 +101,12 @@ a:hover {
 }
 */
 
-#content ol {
+#content ol,
+#content ul {
   margin-left: 15px;
 }
 
-#content ol li {
+#content li {
   list-style-position: outside;
 }
 
