@@ -165,3 +165,22 @@ a:hover {
   border-left: 5px solid #c89309c7;;
   background-color: #ffd66e4f;
 }
+
+.media_items {
+}
+
+.media_item {
+  margin-bottom: 40px;
+  list-style-type: none;
+}
+
+.media_items .thumbnail {
+  display: block;
+  float: left;
+}
+
+.media_items .info {
+  margin-left: 280px;
+  background-color: transparent;
+  border-left: none;
+}
