@@ -110,11 +110,31 @@ a:hover {
   list-style-position: outside;
 }
 
-.captura {
-  border: 1px solid #ccc;
+.captura { 
+  background: white;
+  border:1px solid #ddd;
   margin: 20px 0 40px;
+  margin: 20px 0;
+  padding: 5px; 
   text-align: center;
 }
+
+.captura .c-contenido {
+  text-align:center;
+}
+
+.captura .c-contenido img {
+  margin:0 auto;
+}
+
+.captura .c-pie {
+  background-color:#eee;
+  color:#333;
+  font-family:normal Georgia, "time new roman";
+  font-style:italic 
+  padding:10px;
+}
+
 
 .captura img {
   display: block;
