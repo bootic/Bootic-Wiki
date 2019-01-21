@@ -16,7 +16,29 @@ Pero esto **genera un problema**: cuando se visita la tienda sin las `www` se ve
 
 ## Alternativas de solución
 
-Te presentamos 3 alternativas de solución:
+Te presentamos 4 alternativas de solución:
+
+### Redirección desde cPanel 
+
+Dentro de cPanel, en la sección Dominios anda a «Redirige» (inglés «Redirects»).
+
+<div class="captura">
+  <div class="c-contenido">
+    <img src="/img/admin/cpanel_domain_redirect.png">
+  </div>
+  <div class="c-pie"><strong>Figura 1</strong>: cPanel: Redirige dominio</div>
+</div>
+
+
+Estando en esta sección (Figura. 1) pon la siguiente información:
+
+* <strong>Tipo</strong>:  Permanente 301
+* En <strong>https?://(www)?</strong>: Selecciona el dominio.
+* En el campo que inicia con / déjalo _vacío_.
+* En <stong>redirige a</stong> pon: <code>https://www.acme.com</code>
+* En <strong>Redirección de www</strong>: dale click a "Redireccionar con o sin www"
+
+Añadir
 
 ### Redireccionamiento Apache
 
