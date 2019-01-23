@@ -204,3 +204,9 @@ a:hover {
   background-color: transparent;
   border-left: none;
 }
+
+.msg-tpl {
+  background-color: #00adff0d;
+  border: 3px dotted #15a9ec;
+  padding:10px;
+}
