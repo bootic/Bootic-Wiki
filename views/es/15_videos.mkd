@@ -5,17 +5,9 @@
 :sitemap_priority: 1.0
 ---
 
-<div class="clearfix grid-list grid-list-3 total-items-7">
-  <div class="video item-1">
-    <a href="http://localhost:5000/videos/f9efce22dc" class="video-image">
-      <img src="https://source.unsplash.com/282x260/?product,tecnologia-audio-y-video" />
-      <div class="cover"><big><i class="ion-android-search"></i></big></div>
-    </a>
-
-    <h3>
-      <a href="http://localhost:5000/videos/f9efce22dc">Guitar Amplifier
-      </a>
-    </h3>
+<div class="clearfix grid-list grid-list-3 total-items-7 videos">
+  <div class="item-1">
+    <a href="/video/video-1" data-video-uri="M7lc1UVf-VE">video - 1</a>
   </div>
 
   <div class="video item-2">
@@ -79,39 +71,45 @@
   </div>
 </div>
 
-<div id="video-modal" class="over">
-  <a class="close" href="#close" title="Close">Close</a>
-  <div class="content"></div>
-</div>
+<link href="/js/vendor/tingle.min.css" rel="stylesheet" media="all" type="text/css" />
+<script type="text/javascript" src="/js/vendor/tingle.min.js"></script>
+<script type="text/javascript" src="/js/vendor/page.js"></script>
 
-<link rel="stylesheet" href="https://cdn.plyr.io/3.2.4/plyr.css">
-<link rel="stylesheet" href="/css/over.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script>
-<script src="/js/vendor/over.js"></script>
-<script src="https://cdn.plyr.io/3.2.4/plyr.js"></script>
-<script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
+<script type="text/javascript">
 
-<script>
-  var player;
+var tag = document.createElement('script');
+tag.src = "https://www.youtube.com/iframe_api";
+var firstScriptTag = document.getElementsByTagName('script')[0];
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
-  function showModal(html, cb) {
-    $('#video-modal .content').html(html);
-    player = new Plyr('#video-player');
-    $('#video-modal').over().on('hidden', cb);
+function showVideo(id) {
+  console.log(id);
+  const els = Array.from(document.querySelectorAll(`.videos a[href="/video/${id}"]`));
+  if ( els.length ) {
+    const el = els[0];
+    const laModal = new tingle.modal({
+      footer: false,
+      onClose: function(){
+        laModal.destroy();
+      },
+      beforeOpen: function() {
+        new YT.Player('player',{
+          height: '400',
+          width: '100%',
+          playerVars: { 'autoplay': 1, 'controls': 0 },
+          videoId: el.dataset.videoUri,
+        });
+      }
+    });
+    laModal.setContent('<div id="player"></div>');
+    laModal.open();
   }
+}
 
-  function showVideo(url) {
-    var html = '<video id="video-player" poster="' + url + '-frame.png" playsinline controls>';
-    html += '<source src="' + url + '.mp4" type="video/mp4">';
-    html += '<source src="' + url + '.webm" type="video/webm"></video>';
+page('/video/:slug', function(req){
+  showVideo(req.params.slug)
+});
 
-    showModal(html, function() {
-      player.stop()
-    })
-  }
+page();
 
-  $('body').on('click', '.video a', function(e) {
-    e.preventDefault();
-    showVideo('http://r.btcdn.co/media/bootic-welcome');
-  })
 </script>

@@ -210,3 +210,11 @@ a:hover {
   border: 3px dotted #15a9ec;
   padding:10px;
 }
+
+.tingle-modal-box {
+  background: #000 !important;
+}
+
+.tingle-modal-box__content {
+  padding: 0 !important;
+}
