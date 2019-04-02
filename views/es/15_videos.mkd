@@ -36,7 +36,7 @@
 
   <div class="video--item">
     <a class="video--link" href="/es/videos/ocultar-boton-agregar-al-carro" data-video-uri="4G0cvdmM3gQ">
-      <div class="video--label">Ocultar botón «Agragar al carro»</div>
+      <div class="video--label">Ocultar botón «Agregar al carro»</div>
       <%= partial 'partials/play' %>
     </a>
       <div class="video--meta">0:54</div>
@@ -56,18 +56,18 @@ var firstScriptTag = document.getElementsByTagName('script')[0];
 firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
 function showVideo(id) {
-  console.log(id);
   const els = Array.from(document.querySelectorAll(`.video--grid a[href="/es/videos/${id}"]`));
   if ( els.length ) {
     const el = els[0];
     const laModal = new tingle.modal({
       footer: false,
       onClose: function(){
+        window.history.pushState(null, 'Title', '/es/videos');
         laModal.destroy();
       },
       beforeOpen: function() {
         new YT.Player('player',{
-          height: '520',
+          height: '500',
           width: '100%',
           playerVars: { 'autoplay': 1, 'controls': 1 },
           videoId: el.dataset.videoUri,
