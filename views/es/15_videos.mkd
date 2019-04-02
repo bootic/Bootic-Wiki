@@ -5,113 +5,84 @@
 :sitemap_priority: 1.0
 ---
 
-<div class="clearfix grid-list grid-list-3 total-items-7">
-  <div class="video item-1">
-    <a href="http://localhost:5000/videos/f9efce22dc" class="video-image">
-      <img src="https://source.unsplash.com/282x260/?product,tecnologia-audio-y-video" />
-      <div class="cover"><big><i class="ion-android-search"></i></big></div>
-    </a>
+# Video tutoriales
 
-    <h3>
-      <a href="http://localhost:5000/videos/f9efce22dc">Guitar Amplifier
-      </a>
-    </h3>
+
+<div class="video--grid clearfix grid-list grid-list-3 total-items-7">
+
+  <div class="video--item">
+    <a class="video--link" href="/es/videos/como-crear-una-tienda" data-video-uri="CM2cM4WjX6Q">
+      <div class="video--label">Cómo crear una tienda</div>
+      <%= partial 'partials/play' %>
+    </a>
+      <div class="video--meta">2:15</div>
   </div>
 
-  <div class="video item-2">
-    <a href="http://localhost:5000/videos/f9efce22dc" class="video-image">
-      <img src="https://source.unsplash.com/282x260/?product,tecnologia-audio-y-video" />
-      <div class="cover"><big><i class="ion-android-search"></i></big></div>
+  <div class="video--item">
+    <a class="video--link" href="/es/videos/crear-opciones-de-envio" data-video-uri="fqVNinCTOUM">
+      <div class="video--label">Crear opciones de envío</div>
+      <%= partial 'partials/play' %>
     </a>
-
-    <h3>
-      <a href="http://localhost:5000/videos/f9efce22dc">Guitar Amplifier
-      </a>
-    </h3>
+      <div class="video--meta">1:27</div>
   </div>
 
-  <div class="video item-3">
-    <a href="http://localhost:5000/videos/f9efce22dc" class="video-image">
-      <img src="https://source.unsplash.com/282x260/?product,tecnologia-audio-y-video" />
-      <div class="cover"><big><i class="ion-android-search"></i></big></div>
+  <div class="video--item">
+    <a class="video--link" href="/es/videos/canal-mayoristas" data-video-uri="ISQ5DBtVOOM">
+      <div class="video--label">Canal mayoristas</div>
+      <%= partial 'partials/play' %>
     </a>
-
-    <h3>
-      <a href="http://localhost:5000/videos/f9efce22dc">Guitar Amplifier
-      </a>
-    </h3>
+      <div class="video--meta">7:21</div>
   </div>
 
-  <div class="video item-4">
-    <a href="http://localhost:5000/videos/f9efce22dc" class="video-image">
-      <img src="https://source.unsplash.com/282x260/?product,tecnologia-audio-y-video" />
-      <div class="cover"><big><i class="ion-android-search"></i></big></div>
+  <div class="video--item">
+    <a class="video--link" href="/es/videos/ocultar-boton-agregar-al-carro" data-video-uri="4G0cvdmM3gQ">
+      <div class="video--label">Ocultar botón «Agragar al carro»</div>
+      <%= partial 'partials/play' %>
     </a>
-
-    <h3>
-      <a href="http://localhost:5000/videos/f9efce22dc">Guitar Amplifier
-      </a>
-    </h3>
+      <div class="video--meta">0:54</div>
   </div>
 
-  <div class="video item-5">
-    <a href="http://localhost:5000/videos/f9efce22dc" class="video-image">
-      <img src="https://source.unsplash.com/282x260/?product,tecnologia-audio-y-video" />
-      <div class="cover"><big><i class="ion-android-search"></i></big></div>
-    </a>
-
-    <h3>
-      <a href="http://localhost:5000/videos/f9efce22dc">Guitar Amplifier
-      </a>
-    </h3>
-  </div>
-
-  <div class="video item-6">
-    <a href="http://localhost:5000/videos/f9efce22dc" class="video-image">
-      <img src="https://source.unsplash.com/282x260/?product,tecnologia-audio-y-video" />
-      <div class="cover"><big><i class="ion-android-search"></i></big></div>
-    </a>
-
-    <h3>
-      <a href="http://localhost:5000/videos/f9efce22dc">Guitar Amplifier
-      </a>
-    </h3>
-  </div>
 </div>
 
-<div id="video-modal" class="over">
-  <a class="close" href="#close" title="Close">Close</a>
-  <div class="content"></div>
-</div>
+<link href="/js/vendor/tingle.min.css" rel="stylesheet" media="all" type="text/css" />
+<script type="text/javascript" src="/js/vendor/tingle.min.js"></script>
+<script type="text/javascript" src="/js/vendor/page.js"></script>
 
-<link rel="stylesheet" href="https://cdn.plyr.io/3.2.4/plyr.css">
-<link rel="stylesheet" href="/css/over.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script>
-<script src="/js/vendor/over.js"></script>
-<script src="https://cdn.plyr.io/3.2.4/plyr.js"></script>
-<script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
+<script type="text/javascript">
 
-<script>
-  var player;
+var tag = document.createElement('script');
+tag.src = "https://www.youtube.com/iframe_api";
+var firstScriptTag = document.getElementsByTagName('script')[0];
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
-  function showModal(html, cb) {
-    $('#video-modal .content').html(html);
-    player = new Plyr('#video-player');
-    $('#video-modal').over().on('hidden', cb);
+function showVideo(id) {
+  console.log(id);
+  const els = Array.from(document.querySelectorAll(`.video--grid a[href="/es/videos/${id}"]`));
+  if ( els.length ) {
+    const el = els[0];
+    const laModal = new tingle.modal({
+      footer: false,
+      onClose: function(){
+        laModal.destroy();
+      },
+      beforeOpen: function() {
+        new YT.Player('player',{
+          height: '520',
+          width: '100%',
+          playerVars: { 'autoplay': 1, 'controls': 1 },
+          videoId: el.dataset.videoUri,
+        });
+      }
+    });
+    laModal.setContent('<div id="player"></div>');
+    laModal.open();
   }
+}
 
-  function showVideo(url) {
-    var html = '<video id="video-player" poster="' + url + '-frame.png" playsinline controls>';
-    html += '<source src="' + url + '.mp4" type="video/mp4">';
-    html += '<source src="' + url + '.webm" type="video/webm"></video>';
+page('/es/videos/:slug', function(req){
+  showVideo(req.params.slug)
+});
 
-    showModal(html, function() {
-      player.stop()
-    })
-  }
+page();
 
-  $('body').on('click', '.video a', function(e) {
-    e.preventDefault();
-    showVideo('http://r.btcdn.co/media/bootic-welcome');
-  })
 </script>

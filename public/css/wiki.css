@@ -210,3 +210,67 @@ a:hover {
   border: 3px dotted #15a9ec;
   padding:10px;
 }
+
+/* video tutorial */
+
+.video--grid {
+
+}
+
+.video--item {
+  background-color:#9e83f3;
+  display: flex;
+  flex-direction: column;
+  align-content:space-around;
+}
+
+.video--link {
+  display: block;
+  color:white;
+  height:210px;
+  text-decoration: none;
+}
+
+.video--link:hover {
+  color: white;
+}
+.video--label {
+  padding:1rem;
+  font-size:2.333rem;
+  line-height:1.2;
+  font-weight:400;
+  text-align: center;
+}
+
+.video--meta {
+  align-self: flex-end;
+  padding-right: 1rem;
+  color:white;
+  font-weight: bold;
+
+}
+
+.tingle-modal-box {
+  background: #000 !important;
+}
+
+.tingle-modal-box__content {
+  padding: 0 !important;
+}
+
+
+
+.h-c-video__play {
+    left: 55%;
+    height: 90px;
+    margin: -30px -42px 0;
+    position: absolute;
+    top: 50%;
+    width: 84px;
+    z-index: 15
+}
+
+.h-c-icon--color-white {
+    fill: #fff;
+}
+
