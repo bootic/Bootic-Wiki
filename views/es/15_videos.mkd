@@ -62,8 +62,8 @@ function showVideo(id) {
     const laModal = new tingle.modal({
       footer: false,
       onClose: function(){
-        window.history.pushState(null, 'Title', '/es/videos');
         laModal.destroy();
+        page.redirect('/es/videos');
       },
       beforeOpen: function() {
         new YT.Player('player',{
