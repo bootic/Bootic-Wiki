@@ -19,6 +19,14 @@
   </div>
 
   <div class="video--item">
+    <a class="video--link" href="/es/videos/introduccion-a-bootic" data-video-uri="1PzoDNwRP3U">
+      <div class="video--label">Breve introducción al manejo de una tienda</div>
+      <%= partial 'partials/play' %>
+    </a>
+      <div class="video--meta">3:57</div>
+  </div>
+
+  <div class="video--item">
     <a class="video--link" href="/es/videos/crear-opciones-de-envio" data-video-uri="fqVNinCTOUM">
       <div class="video--label">Crear opciones de envío</div>
       <%= partial 'partials/play' %>
