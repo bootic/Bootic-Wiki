@@ -85,7 +85,6 @@ function arrow (how_much) {
   $row.addClass('hover')
 }
 
-
 /* jQuery behaviours
 ------------------------------------------*/
 // Search results view

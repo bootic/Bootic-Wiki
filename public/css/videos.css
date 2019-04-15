@@ -35,6 +35,16 @@
   clear: left;
 }
 
+.grid-list-2 > div {
+  width: 48%;
+  margin-left: 4%;
+}
+
+.grid-list-2 > div:nth-child(2n+1) {
+  margin-left: 0;
+  clear: left;
+}
+
 @media (max-width: 800px) {
 
   .grid-list-4 > div {
@@ -95,6 +105,16 @@
     margin-left: 0
   }
 
+  .grid-list-2 > div {
+    width: 100%;
+    margin-left: 0%;
+    clear: none
+  }
+
+  .grid-list-2 > div:nth-child(2n+1) {
+    margin-left: 0
+  }
+
 }
 
 @media (max-width: 460px) {
@@ -113,9 +133,10 @@
   }
 }
 
+/*
 
 .video {
-  overflow: hidden; /* for cover image */
+  overflow: hidden;
 }
 
 .video h3 {
@@ -170,6 +191,8 @@
   top: 5px;
 }
 
+
+
 .video .icons {
   margin: 0;
   position: absolute;
@@ -182,11 +205,6 @@
   list-style: none;
   margin: 10px 10px 0;
   display: inline-block;
-}
-
-.item-price {
-  background: url(/images/coin4.png) left 3px no-repeat;
-  padding-left: 19px;
 }
 
 .video-image * {
@@ -210,7 +228,6 @@
   position: absolute;
   top: 35%;
   margin-left: -15px;
-/*  transform: translateX(-50%) translateY(-50%); */
   opacity: 0;
   will-change: opacity;
   -webkit-transform: scale3d(1.5, 1.5, 1);
@@ -238,3 +255,97 @@
   -webkit-transform: scale3d(1.1, 1.1, 1);
           transform: scale3d(1.1, 1.1, 1);
 }
+*/
+
+
+/* video tutorial */
+
+.video--grid {
+
+}
+
+.video--item {
+  /*background-color:#9e83f3;*/
+  display: flex;
+  flex-direction: column;
+  align-content:space-around;
+}
+
+.video--link {
+  display: block;
+  color: white;
+  height: 210px;
+  text-decoration: none;
+}
+
+.video--link img {
+  height: 100%;
+  width: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.video--label {
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  /*background: rgba(158, 131, 243, 0.8);*/
+  background: rgb(0,0,0, 0.7);
+  position: absolute;
+  transition: background-color 0.5s;
+}
+
+.video--label h3 {
+  font-size:2.333rem;
+  margin-top: 30px;
+  line-height:1.2;
+  font-weight:400;
+  position: absolute;
+  left: 20px;
+  right: 20px;
+  bottom: 35px;
+}
+
+.video--meta {
+  align-self: flex-end;
+  padding-right: 1rem;
+  color:white;
+  font-weight: bold;
+  display: none;
+}
+
+.tingle-modal-box {
+  background: #000 !important;
+}
+
+.tingle-modal-box__content {
+  padding: 0 !important;
+}
+
+.h-c-video__play {
+    left: 55%;
+    height: 90px;
+    margin: -30px -42px 0;
+    position: absolute;
+    top: 35%;
+    width: 84px;
+    z-index: 15
+}
+
+.h-c-icon--color-white {
+  fill: #fff;
+}
+
+.video--link:hover .video--label { 
+  background-color: rgba(0,0,0,0.9);
+}
+
+.video--link:hover h3 {
+  color: rgb(158, 131, 243);
+  text-decoration: underline;
+}
+
+.video--link:hover .h-c-icon--color-white {
+  fill: rgb(158, 131, 243);
+}
+

@@ -83,6 +83,10 @@ class App < Sinatra::Base
     redirect '/cheatsheet/index.html'
   end
 
+  get '/es/videos/:video_id' do
+    load_page 'es/videos'
+  end
+
   get '/*' do
     load_page params[:splat].first
   end

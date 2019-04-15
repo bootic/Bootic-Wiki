@@ -1,51 +1,57 @@
 ---
-:title: "Videos"
+:title: "Video Tutoriales"
 :description: "Video tutoriales para aprender a hacer todo"
 :keywords: videos, ayuda, tutoriales, explicacion
 :sitemap_priority: 1.0
 ---
 
-# Video tutoriales
+# Video Tutoriales
 
+Aquí te mostramos cómo sacarle el jugo a tu tienda Bootic, usando todas las herramientas a tu disposición para vender más y mejor.
 
-<div class="video--grid clearfix grid-list grid-list-3 total-items-7">
+<div class="video--grid clearfix grid-list grid-list-2 total-items-7">
 
   <div class="video--item">
     <a class="video--link" href="/es/videos/como-crear-una-tienda" data-video-uri="CM2cM4WjX6Q">
-      <div class="video--label">Cómo crear una tienda</div>
+      <div class="video--label"><h3>Cómo crear una tienda</h3></div>
       <%= partial 'partials/play' %>
+      <img src="http://i3.ytimg.com/vi/CM2cM4WjX6Q/maxresdefault.jpg" alt="Video en Youtube" />
     </a>
       <div class="video--meta">2:15</div>
   </div>
 
   <div class="video--item">
     <a class="video--link" href="/es/videos/introduccion-a-bootic" data-video-uri="1PzoDNwRP3U">
-      <div class="video--label">Breve introducción al manejo de una tienda</div>
+      <div class="video--label"><h3>Breve introducción al manejo de una tienda</h3></div>
       <%= partial 'partials/play' %>
+      <img src="http://i3.ytimg.com/vi/1PzoDNwRP3U/hqdefault.jpg" alt="Video en Youtube" />
     </a>
       <div class="video--meta">3:57</div>
   </div>
 
   <div class="video--item">
     <a class="video--link" href="/es/videos/crear-opciones-de-envio" data-video-uri="fqVNinCTOUM">
-      <div class="video--label">Crear opciones de envío</div>
+      <div class="video--label"><h3>Crear opciones de envío</h3></div>
       <%= partial 'partials/play' %>
+      <img src="http://i3.ytimg.com/vi/fqVNinCTOUM/maxresdefault.jpg" alt="Video en Youtube" />
     </a>
       <div class="video--meta">1:27</div>
   </div>
 
   <div class="video--item">
     <a class="video--link" href="/es/videos/canal-mayoristas" data-video-uri="ISQ5DBtVOOM">
-      <div class="video--label">Canal mayoristas</div>
+      <div class="video--label"><h3>Canal mayoristas</h3></div>
       <%= partial 'partials/play' %>
+      <img src="http://i3.ytimg.com/vi/ISQ5DBtVOOM/maxresdefault.jpg" alt="Video en Youtube" />
     </a>
       <div class="video--meta">7:21</div>
   </div>
 
   <div class="video--item">
     <a class="video--link" href="/es/videos/ocultar-boton-agregar-al-carro" data-video-uri="4G0cvdmM3gQ">
-      <div class="video--label">Ocultar botón «Agregar al carro»</div>
+      <div class="video--label"><h3>Ocultar botón «Agregar al carro»</h3></div>
       <%= partial 'partials/play' %>
+      <img src="http://i3.ytimg.com/vi/4G0cvdmM3gQ/maxresdefault.jpg" alt="Video en Youtube" />
     </a>
       <div class="video--meta">0:54</div>
   </div>
@@ -55,14 +61,9 @@
 <link href="/js/vendor/tingle.min.css" rel="stylesheet" media="all" type="text/css" />
 <script type="text/javascript" src="/js/vendor/tingle.min.js"></script>
 <script type="text/javascript" src="/js/vendor/page.js"></script>
+<script type="text/javascript" src="https://www.youtube.com/iframe_api"></script>
 
 <script type="text/javascript">
-
-var tag = document.createElement('script');
-tag.src = "https://www.youtube.com/iframe_api";
-var firstScriptTag = document.getElementsByTagName('script')[0];
-firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
 function showVideo(id) {
   const els = Array.from(document.querySelectorAll(`.video--grid a[href="/es/videos/${id}"]`));
   if ( els.length ) {
@@ -91,6 +92,8 @@ page('/es/videos/:slug', function(req){
   showVideo(req.params.slug)
 });
 
-page();
+function onYouTubeIframeAPIReady() {
+  page();  
+}
 
 </script>
