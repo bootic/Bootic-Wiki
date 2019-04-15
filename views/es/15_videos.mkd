@@ -1,5 +1,5 @@
 ---
-:title: "Video Tutoriales"
+:title: Videos
 :description: "Video tutoriales para aprender a hacer todo"
 :keywords: videos, ayuda, tutoriales, explicacion
 :sitemap_priority: 1.0
