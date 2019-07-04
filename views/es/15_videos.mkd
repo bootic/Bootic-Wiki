@@ -15,7 +15,7 @@ Aquí te mostramos cómo sacarle el jugo a tu tienda Bootic, usando todas las he
     <a class="video--link" href="/es/videos/como-crear-una-tienda" data-video-uri="CM2cM4WjX6Q">
       <div class="video--label"><h3>Cómo crear una tienda</h3></div>
       <%= partial 'partials/play' %>
-      <img src="http://i3.ytimg.com/vi/CM2cM4WjX6Q/maxresdefault.jpg" alt="Video en Youtube" />
+      <img src="https://i3.ytimg.com/vi/CM2cM4WjX6Q/maxresdefault.jpg" alt="Video en Youtube" />
     </a>
       <div class="video--meta">2:15</div>
   </div>
@@ -24,7 +24,7 @@ Aquí te mostramos cómo sacarle el jugo a tu tienda Bootic, usando todas las he
     <a class="video--link" href="/es/videos/introduccion-a-bootic" data-video-uri="1PzoDNwRP3U">
       <div class="video--label"><h3>Breve introducción al manejo de una tienda</h3></div>
       <%= partial 'partials/play' %>
-      <img src="http://i3.ytimg.com/vi/1PzoDNwRP3U/hqdefault.jpg" alt="Video en Youtube" />
+      <img src="https://i3.ytimg.com/vi/1PzoDNwRP3U/hqdefault.jpg" alt="Video en Youtube" />
     </a>
       <div class="video--meta">3:57</div>
   </div>
@@ -33,7 +33,7 @@ Aquí te mostramos cómo sacarle el jugo a tu tienda Bootic, usando todas las he
     <a class="video--link" href="/es/videos/crear-opciones-de-envio" data-video-uri="fqVNinCTOUM">
       <div class="video--label"><h3>Crear opciones de envío</h3></div>
       <%= partial 'partials/play' %>
-      <img src="http://i3.ytimg.com/vi/fqVNinCTOUM/maxresdefault.jpg" alt="Video en Youtube" />
+      <img src="https://i3.ytimg.com/vi/fqVNinCTOUM/maxresdefault.jpg" alt="Video en Youtube" />
     </a>
       <div class="video--meta">1:27</div>
   </div>
@@ -42,7 +42,7 @@ Aquí te mostramos cómo sacarle el jugo a tu tienda Bootic, usando todas las he
     <a class="video--link" href="/es/videos/canal-mayoristas" data-video-uri="ISQ5DBtVOOM">
       <div class="video--label"><h3>Canal mayoristas</h3></div>
       <%= partial 'partials/play' %>
-      <img src="http://i3.ytimg.com/vi/ISQ5DBtVOOM/maxresdefault.jpg" alt="Video en Youtube" />
+      <img src="https://i3.ytimg.com/vi/ISQ5DBtVOOM/maxresdefault.jpg" alt="Video en Youtube" />
     </a>
       <div class="video--meta">7:21</div>
   </div>
@@ -51,7 +51,7 @@ Aquí te mostramos cómo sacarle el jugo a tu tienda Bootic, usando todas las he
     <a class="video--link" href="/es/videos/ocultar-boton-agregar-al-carro" data-video-uri="4G0cvdmM3gQ">
       <div class="video--label"><h3>Ocultar botón «Agregar al carro»</h3></div>
       <%= partial 'partials/play' %>
-      <img src="http://i3.ytimg.com/vi/4G0cvdmM3gQ/maxresdefault.jpg" alt="Video en Youtube" />
+      <img src="https://i3.ytimg.com/vi/4G0cvdmM3gQ/maxresdefault.jpg" alt="Video en Youtube" />
     </a>
       <div class="video--meta">0:54</div>
   </div>
@@ -93,7 +93,7 @@ page('/es/videos/:slug', function(req){
 });
 
 function onYouTubeIframeAPIReady() {
-  page();  
+  page();
 }
 
 </script>
