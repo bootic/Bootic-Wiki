@@ -59,6 +59,12 @@ a:hover {
   padding: 50px 0 ;
 }
 
+#content p, 
+#content ol, 
+#content ul {
+  font-size: 1.7rem;
+}
+
 #sidebar {
   padding: 50px 0;
 }
@@ -104,7 +110,7 @@ a:hover {
 
 #content li, #content p {
   list-style-position: outside;
-  line-height: 1.5;
+  line-height: 1.9;
 }
 
 #content h2 {
@@ -211,4 +217,14 @@ a:hover {
   background-color: #00adff0d;
   border: 3px dotted #15a9ec;
   padding:10px;
+}
+
+code {
+  padding: 0.2rem 0.6rem;
+  background: #e4ffe7;
+  border: none;
+}
+
+code, pre {
+  color: #50764c
 }
