@@ -99,11 +99,17 @@ a:hover {
 
 #content ol,
 #content ul {
-  margin-left: 15px;
+  margin-left: 4rem;
 }
 
-#content li {
+#content li, #content p {
   list-style-position: outside;
+  line-height: 1.5;
+}
+
+#content h2 {
+  margin-top: 6rem;
+  font-size: 3rem;
 }
 
 .captura { 
