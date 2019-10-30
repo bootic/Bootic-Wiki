@@ -33,8 +33,10 @@ es preciso realizar **dos acciones** en la tienda:
 
 ## El modelo ahora
 
-El modelo anterior cambia. Si se quiere realizar un cambio de precios (evento
-CyberDay) solo se debe cambiar el **precio oferta**.
+El modelo anterior cambia. Si se quiere realizar un cambio de precio (por
+ejemplo para un evento CyberDay) solo se debe cambiar el **precio oferta**. El
+precio normal queda inalterable. Es decir, solo es necesaria una acción y no dos
+como lo era en el modelo anterior.
 
 <div class="captura">
   <div class="c-contenido">
