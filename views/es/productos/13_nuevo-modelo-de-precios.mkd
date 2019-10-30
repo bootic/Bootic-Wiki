@@ -1,0 +1,86 @@
+---
+:title: Nuevo modelo de precios
+:description: Cambio en el modelo de precios
+:keywords: precio, precio oferta, precio comparacion, liquidación, precio normal
+---
+
+# Nuevo modelo de precios
+
+**Resumen**: A contar de hoy (30 de Oct 2019), el modelo de precios cambia en
+Bootic. Se reemplaza el «precios de comparación» por «precio normal». Y el
+«precio» cambia de nombre a «precio oferta». ¿Por qué?: Simplifica la gestión y
+mejora la comprensión del mismo.
+
+## Antes del cambio
+
+El **precio** es el costo final del producto, y el **precio de comparación** es
+el precio con el cual se compara, usado para efectos de _marketing_ para
+**comunicar** que el costo original del producto bajó y representa una
+oportunidad de compra.
+
+<div class="captura">
+  <div class="c-contenido">
+    <img src="/img/admin/precio_antes.png">
+  </div>
+  <div class="c-pie"><strong>Figura 1</strong>: Modelo anterior</div>
+</div>
+
+En este modelo para hacer un cambio de precios y usar el precio de comparación
+es preciso realizar **dos acciones** en la tienda:
+
+1. Actualizar el precio
+2. Actualizar el precio de comparación
+
+## El modelo ahora
+
+El modelo anterior cambia. Si se quiere realizar un cambio de precios (evento
+CyberDay) solo se debe cambiar el **precio oferta**.
+
+<div class="captura">
+  <div class="c-contenido">
+    <img src="/img/admin/precio_ahora.png">
+  </div>
+  <div class="c-pie"><strong>Figura 2</strong>: Modelo actual</div>
+</div>
+
+## Ejemplo
+
+**Inicialmente** el producto tiene un costo de $100.000, pero se quiere ofrecer
+al público a $89.000 (Animación 1):
+
+<div class="captura">
+  <div class="c-contenido">
+    <img src="/img/admin/precios_oferta.gif">
+  </div>
+  <div class="c-pie"><strong>Animación 1</strong>: Se configura una oferta </div>
+</div>
+
+Es un evento Cyberday, se quiere rebajar más aún el producto, se deja en
+$79.000 (Animación 2):
+
+<div class="captura">
+  <div class="c-contenido">
+    <img src="/img/admin/precios_cyber.gif">
+  </div>
+  <div class="c-pie"><strong>Animación 2</strong>: Precio Cyberday</div>
+</div>
+
+
+Se acabaron las ofertas todo ha vuelto a la normalidad, volvemos al precio
+inicial del producto (Animación 3):
+
+<div class="captura">
+  <div class="c-contenido">
+    <img src="/img/admin/precios_normal.gif">
+  </div>
+  <div class="c-pie"><strong>Animación 3</strong>: Se vuelve al precio normal</div>
+</div>
+
+
+## CSV
+
+La conversión al nuevo modelo en un archivo CSV de productos es el siguiente:
+
+
+* `price` _ahora es_ `regular_price`: El precio normal
+* `price_comparison` _ahora es_ `sale_price`: El precio oferta
