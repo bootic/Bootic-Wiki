@@ -7,9 +7,10 @@
 # Nuevo modelo de precios
 
 **Resumen**: A contar de hoy (30 de Oct 2019), el modelo de precios cambia en
-Bootic. Se reemplaza el «precios de comparación» por «precio normal». Y el
-«precio» cambia de nombre a «precio oferta». ¿Por qué?: Simplifica la gestión y
-mejora la comprensión del mismo.
+Bootic. El «precios de comparación» ahora es «precio normal» (obligatorio de
+ingresar). Y el «precio» ahora es «precio oferta» ( opcional de ingresar). 
+
+¿Por qué el cambio?: Simplifica la gestión y mejora la comprensión del mismo.
 
 ## Antes del cambio
 
@@ -81,8 +82,8 @@ inicial del producto (Animación 3):
 
 ## CSV
 
-La conversión al nuevo modelo en un archivo CSV de productos es el siguiente:
+En el CSV de productos que bajas desde el panel de control ahora verás las
+siguientes columnas:
 
-
-* `price` _ahora es_ `regular_price`: El precio normal
-* `price_comparison` _ahora es_ `sale_price`: El precio oferta
+* `regular_price`: El precio normal, obligatorio.
+* `sale_price`: El precio oferta, opcional.
