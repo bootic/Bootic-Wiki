@@ -7,7 +7,7 @@
 # Nuevo modelo de precios
 
 **Resumen**: A contar de hoy (30 de Oct 2019), el modelo de precios cambia en
-Bootic. El «precios de comparación» ahora es «precio normal» (obligatorio de
+Bootic. El «precio de comparación» ahora es «precio normal» (obligatorio de
 ingresar). Y el «precio» ahora es «precio oferta» ( opcional de ingresar). 
 
 ¿Por qué el cambio?: Simplifica la gestión y mejora la comprensión del mismo.
@@ -82,7 +82,7 @@ inicial del producto (Animación 3):
 
 ## CSV
 
-En el CSV de productos que bajas desde el panel de control ahora verás las
+En el CSV de productos que bajas desde el panel de administración ahora verás las
 siguientes columnas:
 
 * `regular_price`: El precio normal, obligatorio.
