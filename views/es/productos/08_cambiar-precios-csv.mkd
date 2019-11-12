@@ -6,6 +6,13 @@
 
 # Cambiar precios masivamente vía archivo CSV
 
+<div class="note warning"> 
+En el presente artículo verás el <strong>precio</strong> y el <strong>precio de
+comparación</strong>, esto cambió a <em>precio normal</em> y <em>precio oferta</em> respectivamente - 
+revisa los <a href="/es/productos/nuevo-modelo-de-precios" title="nuevo modelo de precios">detalles acá</a>.
+</div>
+
+
 En la sección **Productos** de tu panel de administración Bootic es posible
 descargar un archivo en formato CSV (separado por coma). El cual puedes abrir
 con tu editor de hoja de cálculo MS-Excel o similar, al terminar dicha
