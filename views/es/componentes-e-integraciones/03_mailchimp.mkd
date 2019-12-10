@@ -1,0 +1,87 @@
+---
+:title: "Mailchimp"
+:description: "Integra tu tienda con otras aplicaciones mediante Webhooks"
+:keywords: webhook, http, POST, inspector, data, integraciones
+---
+
+Mailchimp
+=========
+
+Es un servicio de <a href="https://www.mailchimp.com">email marketing</a> muy popular. Es un servicio de pago,
+pero tiene un <a href="https://mailchimp.com/pricing/">plan de entrada gratuito</a> (2.000 contactos) lo
+suficientemente _generoso_ que lo hacen un muy atractivo.
+
+<div style="text-align:center;padding:2.5rem 0">
+  <a href="https://www.mailchimp.com">
+    <img src="/img/logo-mailchimp.jpg" alt="logo mailchimp">
+  </a>
+</div>
+
+## Automática
+
+Bootic se integra con mailchimp de forma automática cuando:
+
+1. El **comprador** completa el checkout y responde «Sí» a «me gustaría recibir noticias y promociones»
+
+2. El **visitante** de tu tienda completa y envía el formulario de contacto y también responde
+   positivamente a la pregunta de recibir noticias y promociones.
+
+En ambos eventos el correo que ingrese al comprador o el visitante será enviado a tu cuenta integrada con tu
+tienda Mailchimp.
+
+
+## Manual
+
+Además de lo anterior es posible agregar manualmente un correo a tu cuenta Mailchimp. En la sección Clientes
+de tu tienda puedes hacer click en cualquiera y agregarlo - Figura 1:
+
+<div class="captura">
+  <div class="c-contenido">
+    <img src="/img/componentes/mailchimp_agregar_manual.png">
+  </div>
+  <div class="c-pie"><strong>Figura 1</strong>: Agregando manualmente un contacto a Mailchimp</div>
+</div>
+
+
+## Como se configura
+
+Para configurar la integración es preciso **generar** (de no tenerla) una API
+Token. Para conseguirla debes ir a:
+
+1. Menú superior Cuenta (Account) 
+2. Extras > API Keys
+3. Crear una clave (Create a key)
+4. Crear una clave (Create a key)
+
+A continuación la _secuencia de pasos_ que debes dar en Mailchimp - Figura 2.
+
+<div class="captura">
+  <div class="c-contenido">
+    <img style="margin-bottom:40px" src="/img/componentes/mailchimp_1.png">
+    <img style="margin-bottom:40px" src="/img/componentes/mailchimp_2.png">
+    <img style="margin-bottom:40px" src="/img/componentes/mailchimp_3.png">
+    <img style="margin-bottom:40px" src="/img/componentes/mailchimp_4.png">
+  </div>
+  <div class="c-pie"><strong>Figura 2</strong>: Secuencias de pasos para obtener la API Key</div>
+</div>
+
+Una vez generada la API Token la copias al portapapeles.
+
+### Activa y configura el componente
+
+Ahora como último paso solo debes [activar el componente](https://auth.bootic.net/addons/mailchimp_sync)
+(requiere usuario y contraseña)— Figura 3.
+
+<div class="captura">
+  <div class="c-contenido">
+    <a href="https://auth.bootic.net/addons/mailchimp_sync" title="activar componente">
+      <img src="/img/componentes/componente_mailchimp.png">
+    </a>
+  </div>
+  <div class="c-pie"><strong>Figura 3</strong>: Componente Mailchimp</div>
+</div>
+
+No olvides activar el "Sincronizar nuevos registros".
+
+Clic en "Activar por $0 al mes" y listo.
+
