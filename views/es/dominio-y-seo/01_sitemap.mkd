@@ -55,7 +55,7 @@ contenido, indéxeme por favor»?.
 
 ## Google Sitemap
 
-Google pone a disposición de los administradores de sitios (webmasters) una herramienta que ayuda a indexar (o agregar a su índice) su contenido, esta utilidad es conocida como Google Sitemap. El Sitemap es un archivo de formato XML que contiene la lista de todos los enlaces internos que tiene el sitio, es una suerte de directorio de enlaces.
+Google pone a disposición de los administradores de sitios (programadores) una herramienta que ayuda a indexar (o agregar a su índice) su contenido, esta utilidad es conocida como Google Sitemap. El Sitemap es un archivo de formato XML que contiene la lista de todos los enlaces internos que tiene el sitio, es una suerte de directorio de enlaces.
 
 ## ¿Cómo funciona?
 
@@ -73,31 +73,30 @@ dirección donde reside este archivo es:
 
 Generar el archivo sitemap es la _mitad del trabajo_, la otra parte **la debes hacer tu**. A continuación podrás encontrar los pasos a seguir para registrar y dejar operativo tu sitemap.
 
-1. ### Ingresar a Google Webmaster y añadir un nuevo sitio
+1. ### Ingresar a Google Search Console y añadir un nuevo sitio
 
-    Usando tu cuenta [usuario]@gmail.com debes ingresar a [Google Webmaster][ggt] y activar el servicio. Una vez autentificado verás un botón muy destacado que dice «AÑADIR UN SITIO» (si tu idioma por defecto es el Español, «ADD A SITE» si fuera en Inglés) 
-    <div class="captura"><div class="c-contenido"><a title="Ingresar a en Google Webmaster y añadir un nuevo sitio" href="/img/posicionamiento/sitemap-1.png" rel="fancybox"><img src="/img/posicionamiento/sitemap-th-1.png" /></a></div><div class="c-pie">Figura 1: Añadir sitio a Google Webmaster</div></div>
+    Usando tu cuenta [usuario]@gmail.com debes ingresar a [Google Search Console](ggt) y Añadir propiedad a Google Search Console. 
 
-2. ### Agregar Sitio
+    <div class="captura"><div class="c-contenido"><a title="Ingresar a Google Search Console y añadir un nuevo sitio" href="/img/posicionamiento/sitemap-1.png" rel="fancybox"><img src="/img/posicionamiento/sitemap-seo-1.png" /></a></div><div class="c-pie">Figura 1: Añadir propiedad a Google Search Console.</div></div>
+
+2. ### Agregar nuestro Sito
     Digita la URL de la tienda Bootic, por ejemplo: <code>mitienda.bootic.net</code>
-    <div class="captura"><div class="c-contenido"><a title="Agregar Sitio" href="/img/posicionamiento/sitemap-2.png" rel="fancybox"><img src="/img/posicionamiento/sitemap-th-2.png" /></a></div><div class="c-pie">Figura 2: Digitar la URL del sitio que se quiere agregar</div></div>
+    <div class="captura"><div class="c-contenido"><a title="Agregar Sitio" href="/img/posicionamiento/sitemap-2.png" rel="fancybox"><img src="/img/posicionamiento/sitemap-seo-2.png" /></a></div><div class="c-pie">Figura 2: Digitar la URL del sitio que se quiere agregar</div></div>
 
 3. ### Verificar propiedad del sitio
-Revisa nuestra sección sobre [cómo verificar tu sitio en Google](/es/configuracion/servicios/google-apps#verificacion) antes de continuar con ésta guía.
+    
+    Copiaremos la metaetiqueta y la pegaremos el código de nuestra tienda para que google nos pueda verificar.   
+    <div class="captura"><div class="c-contenido"><a title="Enviar el archivo sitemap" href="/img/posicionamiento/sitemap-7.png" rel="fancybox"><img src="/img/posicionamiento/sitemap-seo-3.png" /></a></div><div class="c-pie">Figura 3: Copiar nuestra metaetiqueta</div></div>
 
-4. ### Enviar el archivo sitemap
-	Luego de verificar el sitio recibirás el mensaje «Verificación correcta», ahora que Google Webmaster sabe que tu eres el dueño del sitio puedes enviar el sitemap, al final del panel de la página recién verificada dale click a «Enviar sitemap»
-    <div class="captura"><div class="c-contenido"><a title="Enviar el archivo sitemap" href="/img/posicionamiento/sitemap-7.png" rel="fancybox"><img src="/img/posicionamiento/sitemap-th-7.png" /></a></div><div class="c-pie">Figura 7: Enviar sitemap a Google Webmaster</div></div>
+5. ### Añadir metaetiqueta
+	Añadimos nuestra metaetiqueta en layout.html de nuestra tienda
+    <div class="captura"><div class="c-contenido"><a title="Añadir Sitemap" href="/img/posicionamiento/sitemap-8.png" rel="fancybox"><img src="/img/posicionamiento/sitemap-seo-4.png" /></a></div><div class="c-pie"></div>Figura 4: Añadimos metaetiqueta de Google</div>
 
-5. ### Añadir Sitemap
-	Agrega el sitemap dando click en el enlace correspondiente
-    <div class="captura"><div class="c-contenido"><a title="Añadir Sitemap" href="/img/posicionamiento/sitemap-8.png" rel="fancybox"><img src="/img/posicionamiento/sitemap-th-8.png" /></a></div><div class="c-pie">Figura 8: Añadir Sitemap</div></div>
-
-6. ### Agregar el archivo XML
+6. ### Agregar sitemap
 	Finalmente, digita la URL de la tienda: `sitemap.xml`, esta se agregará al final de tu sitio verificado. Dale click a «Enviar sitemap», y listo. Ahora Google indexará tu sitio periódicamente.
-    <div class="captura"><div class="c-contenido"><img src="/img/posicionamiento/sitemap-9.png" /></div><div class="c-pie">Figura 9: Digital nombre del archivo sitemap</div></div>
+    <div class="captura"><div class="c-contenido"><img src="/img/posicionamiento/sitemap-seo-5.png" /></div><div class="c-pie">Figura 5: Agregar sitemap</div></div>
 
-Recuerda que puedes volver a tu panel de control Google Webmaster cada vez que desees hacer algún cambio en la configuración, además podrás monitorear el comportamiento del sitio, como ser, qué palabras claves ingresan, entre otra información.
+Además de todo esto podrás monitorear el comportamiento del sitio, como ser, qué palabras claves ingresan, entre otra información.
 
 ## Google sitemap no es la solución final al SEO
 
@@ -106,5 +105,5 @@ No obstante lo anterior _debes saber_ que generar el sitemap de tu sitio para Go
 
 [bot]: http://es.wikipedia.org/wiki/Googlebot "Entrada en wikipedia de Googlebot"
 [seo]: http://es.wikipedia.org/wiki/Posicionamiento_en_buscadores "SEO en wikipedia"   
-[ggt]: http://www.google.com/webmasters/tools "Google Webmaster Tools"
+[ggt]: https://search.google.com/search-console/about?hl=es "Google Webmaster Tools"
 [layout]: /es/diseno/plantillas/layout "Qué es la plantilla layout"

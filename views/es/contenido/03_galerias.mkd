@@ -69,4 +69,4 @@ Repite los pasos anteriores _para agregar más fotos_ a la galería.
 ## Paso 3: Mostrar galería
 
 Mostrar una galería requiere de conocimiento en HTML y CSS. Si esto no es
-problema revisa el [Ejemplo 2](/es/diseno/recetas/galeria-de-productos#toc_4) de la _Receta_ de «Galería o Slideshow de Productos».
+problema revisa el [Ejemplo 2](https://dev.bootic.io/#galeria-o-slideshow-de-productos) de la _Receta_ de «Galería o Slideshow de Productos».

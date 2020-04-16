@@ -29,7 +29,7 @@ A continuación te mostramos tres requerimientos de ejemplo:
 2. Se quiere publicar los **resultados del concurso** "Yo compré en Zapatos en TocosTacos", se necesita una imagen que sea enlazada a una noticia.
 3. Se quiere mostrar una imagen con la _flamante_ **nueva cuenta Twitter** recién abierta. 
 
-**Importante**: El formato de la imagen para el banner puede ser GIF, JPG ó PNG y el _peso_ no superior a 1MB. Con una imagen que _pese_ 250KB ¡es más que suficiente!.
+**Importante**: El formato de la imagen para el banner puede ser GIF, JPG ó PNG y el _peso_ no superior a 1MB. Con una imagen que _pese_ 250KB ¡es más que suficiente!, existen [programas](https://www.iloveimg.com/es/comprimir-imagen/comprimir-png) online que te pueden ayudar a bajar el peso de tu imagen.
 
 ### Requerimiento 1: Banner Otoño-Invierno
 
