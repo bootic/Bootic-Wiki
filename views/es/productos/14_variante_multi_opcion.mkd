@@ -1,0 +1,36 @@
+---
+:title: variantes multiopción
+:description: Qué son las variantes multiopción y para qué sirven
+:keywords: multi-opción, variantes, multiopción
+---
+# ¿Qué son las variantes multiopción?
+
+Son opciones que le podemos agregar a las [variantes](/es/administracion/productos/variantes) de tu producto, por ejemplos si tenemos una polera con tallas y colores distintos y solo tuviéramos una única opción de variantes tendríamos un resultado así.
+
+<div class="captura">
+  <div class="c-contenido">
+      <img src="/img/admin/no-multi-opcion.png" />
+      <img src="/img/admin/no-multi-opcion-vista.png" />
+  </div>
+  <div class="c-pie">Variantes sin multiopción</div>
+</div>
+
+Pero si activamos el componente de [multiopción](https://auth.bootic.net/addons/supervariants) podemos conseguir mejores resultados, ya que lograremos definir una columna con la opción de talla y otra columna con la opción de color, de esa manera Bootic le mostrará al usuario los productos de una mejor manera, como lo vemos en la siguiente imagen, donde en comparación con la otra, aquí el cliente primero elige el color y luego la talla.
+
+
+<div class="captura">
+  <div class="c-contenido">
+      <img src="/img/admin/multi-opcion.png" />
+      <img src="/img/admin/multi-opcion-vista.png" />
+  </div>
+  <div class="c-pie">Variantes con multiopción</div>
+</div>
+
+### ¿Como crear una opción?
+
+<div class="captura">
+  <div class="c-contenido">
+      <img src="/img/admin/create_multioption.gif" />
+  </div>
+  <div class="c-pie">Creando una opción</div>
+</div>
