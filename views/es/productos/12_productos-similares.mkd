@@ -43,9 +43,7 @@ consecuencia son **Producto similares**.
 
 ## Cómo muestro productos similares
 
-Para mostrar un bloque de productos similares  en
-la página de destalle de un producto cualquiera debes agregar lo siguiente a la
-plantilla **product.html**: 
+Esta es una funcionalidad que ya viene programada en todas nuestras plantillas, pero si estás desarrollando una nueva plantilla propia tuya desde cero debes agregar lo siguiente a tu código **product.html**: 
 
 <pre>:::html
 <!-- product.html -->
@@ -60,7 +58,7 @@ plantilla **product.html**:
 </pre>
 
 **Nota**: Para el ejemplo anterior se muestran tres productos similares. Además
-se usa el bloque de codigo reutilizable [product_item](/es/diseno/recetas/product-item).
+se usa el bloque de codigo reutilizable [product_item](https://dev.bootic.io/#code-loop-objects-in-39-template-39-code).
 
 ## Orden de aparición
 

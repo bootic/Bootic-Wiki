@@ -34,3 +34,5 @@ Pero si activamos el componente de [multiopción](https://auth.bootic.net/addons
   </div>
   <div class="c-pie">Creando una opción</div>
 </div>
+
+Tambíen puedes reordenar el orden de tus opciones.

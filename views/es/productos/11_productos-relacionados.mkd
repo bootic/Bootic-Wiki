@@ -43,8 +43,7 @@ común: «utensilio», en consecuencia son **Producto relacionados**.
 
 ## Cómo muestro productos relacionados
 
-Para mostrar un bloque de productos relacionados (Figura 1) en la página de destalle de un
-producto cualquiera debes agregar lo siguiente a la plantilla **product.html**: 
+Esta es una funcionalidad que ya viene programada en todas nuestras plantillas, pero si estás desarrollando una nueva plantilla propia tuya desde cero debes agregar lo siguiente a tu código **product.html**: 
 
 <pre>:::html
 <!-- product.html -->
@@ -78,7 +77,7 @@ A continuación te mostramos una página detalle de un producto, con sus similar
 ## Sugiere productos relacionados en el carro de compra
 
 El siguiente trozo de código sugerirá productos relacionados **justo después** que el comprador agrega un producto
-al carro (Figura 2). Un excelente momento para _incentivar_ otra compra.
+al carro (Figura 2). Un excelente momento para _incentivar_ otra compra. Esta es una funcionalidad que ya viene programada en todas nuestras plantillas, pero si estás desarrollando una nueva plantilla propia tuya desde cero debes agregar lo siguiente a tu código.
 
 <pre>:::HTML
 <!-- cart.html -->

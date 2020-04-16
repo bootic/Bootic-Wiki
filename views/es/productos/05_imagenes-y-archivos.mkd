@@ -54,3 +54,8 @@ Esa imagen será usada como imagen principal del producto en las listas, resulta
 El tamaño de cada imagen como lo ven tus visitantes depende de las plantillas HTML de tu tienda.
 
 Para saber cómo ajustar el tamaño en las plantillas, lee la [documentación sobre tamaños de imágenes](/es/diseno/imagenes#products).
+
+
+## Cómo subir un PDF
+
+Tenemos una sección para explicar como compartir el PDF de tu producto [link](/es/administracion/productos/subir-pdf).
