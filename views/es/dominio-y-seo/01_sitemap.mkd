@@ -68,39 +68,90 @@ Desde febrero de 2012 todas las tiendas Bootic generan un sitemap automáticamen
 dirección donde reside este archivo es:
 
      http://[nombre_de_tu_tienda].bootic.net/sitemap.xml
-              
+
 ## Registrar el Sitemap en Google
 
-Generar el archivo sitemap es la _mitad del trabajo_, la otra parte **la debes hacer tu**. A continuación podrás encontrar los pasos a seguir para registrar y dejar operativo tu sitemap.
+Generar el archivo sitemap es la _mitad del trabajo_, la otra parte **la debes hacer tu**.
+A continuación podrás encontrar los pasos a seguir para registrar y dejar operativo tu
+sitemap.
 
-1. ### Ingresar a Google Search Console y añadir un nuevo sitio
+#### 1. Ingresar a Google Search Console y añadir un nuevo sitio
 
-    Usando tu cuenta [usuario]@gmail.com debes ingresar a [Google Search Console](ggt) y Añadir propiedad a Google Search Console. 
+Usando tu cuenta [usuario]@gmail.com debes ingresar a [Google Search Console][ggt] y Añadir propiedad a Google Search Console. 
 
-    <div class="captura"><div class="c-contenido"><a title="Ingresar a Google Search Console y añadir un nuevo sitio" href="/img/posicionamiento/sitemap-1.png" rel="fancybox"><img src="/img/posicionamiento/sitemap-seo-1.png" /></a></div><div class="c-pie">Figura 1: Añadir propiedad a Google Search Console.</div></div>
+<div class="captura">
+  <div class="c-contenido">
+    <a title="Ingresar a Google Search Console y añadir un nuevo sitio" href="/img/posicionamiento/sitemap-1.png" rel="fancybox">
+      <img src="/img/posicionamiento/sitemap-seo-1.png" />
+    </a>
+  </div>
+  <div class="c-pie">Figura 1: Añadir propiedad a Google Search Console.</div>
+</div>
 
-2. ### Agregar nuestro Sito
-    Digita la URL de la tienda Bootic, por ejemplo: <code>mitienda.bootic.net</code>
-    <div class="captura"><div class="c-contenido"><a title="Agregar Sitio" href="/img/posicionamiento/sitemap-2.png" rel="fancybox"><img src="/img/posicionamiento/sitemap-seo-2.png" /></a></div><div class="c-pie">Figura 2: Digitar la URL del sitio que se quiere agregar</div></div>
+#### 2. Agregar nuestro Sito
 
-3. ### Verificar propiedad del sitio
+Digita la URL de la tienda Bootic, por ejemplo: <code>mitienda.bootic.net</code> 
+
+<div class="captura">
+  <div class="c-contenido">
+  <a title="Agregar Sitio" href="/img/posicionamiento/sitemap-2.png" rel="fancybox">
+    <img src="/img/posicionamiento/sitemap-seo-2.png" />
+  </a>
+  </div>
+  <div class="c-pie">Figura 2: Digitar la URL del sitio que se quiere agregar</div>
+</div>
+
+#### 3. Verificar propiedad del sitio
     
-    Copiaremos la metaetiqueta y la pegaremos el código de nuestra tienda para que google nos pueda verificar.   
-    <div class="captura"><div class="c-contenido"><a title="Enviar el archivo sitemap" href="/img/posicionamiento/sitemap-7.png" rel="fancybox"><img src="/img/posicionamiento/sitemap-seo-3.png" /></a></div><div class="c-pie">Figura 3: Copiar nuestra metaetiqueta</div></div>
+Copiaremos la meta etiqueta y la pegaremos el código de nuestra tienda para que google nos pueda verificar.
 
-5. ### Añadir metaetiqueta
-	Añadimos nuestra metaetiqueta en layout.html de nuestra tienda
-    <div class="captura"><div class="c-contenido"><a title="Añadir Sitemap" href="/img/posicionamiento/sitemap-8.png" rel="fancybox"><img src="/img/posicionamiento/sitemap-seo-4.png" /></a></div><div class="c-pie"></div>Figura 4: Añadimos metaetiqueta de Google</div>
+<div class="captura">
+  <div class="c-contenido">
+    <a title="Enviar el archivo sitemap" href="/img/posicionamiento/sitemap-7.png" rel="fancybox">
+      <img src="/img/posicionamiento/sitemap-seo-3.png" />
+    </a>
+  </div>
+  <div class="c-pie">Figura 3: Copiar nuestra meta etiqueta</div>
+</div>
 
-6. ### Agregar sitemap
-	Finalmente, digita la URL de la tienda: `sitemap.xml`, esta se agregará al final de tu sitio verificado. Dale click a «Enviar sitemap», y listo. Ahora Google indexará tu sitio periódicamente.
-    <div class="captura"><div class="c-contenido"><img src="/img/posicionamiento/sitemap-seo-5.png" /></div><div class="c-pie">Figura 5: Agregar sitemap</div></div>
+#### 4. Añadir meta etiqueta (`meta tag`)
 
-Además de todo esto podrás monitorear el comportamiento del sitio, como ser, qué palabras claves ingresan, entre otra información.
+Añadimos nuestra meta etiqueta en `layout.html` de nuestra tienda: 
+  
+<div class="captura">
+  <div class="c-contenido">
+    <a title="Añadir Sitemap" href="/img/posicionamiento/sitemap-8.png" rel="fancybox">
+      <img src="/img/posicionamiento/sitemap-seo-4.png" />
+    </a>
+  </div>
+  <div class="c-pie">
+    <div>Figura 4: Añadimos meta etiqueta de Google</div>
+  </div>
+</div>
+
+#### 5. Agregar sitemap
+
+Finalmente, digita la URL de la tienda: `sitemap.xml`, esta se agregará al final de tu
+sitio verificado. Dale click a «Enviar sitemap», y listo. Ahora Google indexará tu sitio
+periódicamente. 
+  
+<div class="captura">
+  <div class="c-contenido">
+    <img src="/img/posicionamiento/sitemap-seo-5.png" />
+  </div>
+  <div class="c-pie">Figura 5: Agregar sitemap</div>
+</div>
+
+Además de todo esto podrás monitorear el comportamiento del sitio, como ser, qué palabras
+claves ingresan, entre otra información.
 
 ## Google sitemap no es la solución final al SEO
 
-No obstante lo anterior _debes saber_ que generar el sitemap de tu sitio para Google **NO ASEGURA** que tu sitio aparezca primero en los resultados de búsqueda, **sí ayuda a mejorar tu ranking**. Aparecer primero depende de muchas razones más (edad del sitio, actividad, cantidad de enlaces desde otro sitios web, etc), todo aquello forma parte del llamado SEO (Search Engine Optimization), o [Posicionamiento en buscadores][seo].
+No obstante lo anterior _debes saber_ que generar el sitemap de tu sitio para Google **NO
+ASEGURA** que tu sitio aparezca primero en los resultados de búsqueda, **sí ayuda a
+mejorar tu ranking**. Aparecer primero depende de muchas razones más (edad del sitio,
+actividad, cantidad de enlaces desde otro sitios web, etc), todo aquello forma parte del
+llamado SEO (Search Engine Optimization), o [Posicionamiento en buscadores][seo].
 
 
 [bot]: http://es.wikipedia.org/wiki/Googlebot "Entrada en wikipedia de Googlebot"
