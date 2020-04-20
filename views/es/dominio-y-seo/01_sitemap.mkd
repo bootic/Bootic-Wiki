@@ -81,7 +81,7 @@ Usando tu cuenta [usuario]@gmail.com debes ingresar a [Google Search Console][gg
 
 <div class="captura">
   <div class="c-contenido">
-    <a title="Ingresar a Google Search Console y añadir un nuevo sitio" href="/img/posicionamiento/sitemap-1.png" rel="fancybox">
+    <a title="Ingresar a Google Search Console y añadir un nuevo sitio" href="/img/posicionamiento/sitemap-seo-1.png" rel="fancybox">
       <img src="/img/posicionamiento/sitemap-seo-1.png" />
     </a>
   </div>
@@ -94,7 +94,7 @@ Digita la URL de la tienda Bootic, por ejemplo: <code>mitienda.bootic.net</code>
 
 <div class="captura">
   <div class="c-contenido">
-  <a title="Agregar Sitio" href="/img/posicionamiento/sitemap-2.png" rel="fancybox">
+  <a title="Agregar Sitio" href="/img/posicionamiento/sitemap-seo-2.png" rel="fancybox">
     <img src="/img/posicionamiento/sitemap-seo-2.png" />
   </a>
   </div>
@@ -107,7 +107,7 @@ Copiaremos la meta etiqueta y la pegaremos el código de nuestra tienda para que
 
 <div class="captura">
   <div class="c-contenido">
-    <a title="Enviar el archivo sitemap" href="/img/posicionamiento/sitemap-7.png" rel="fancybox">
+    <a title="Enviar el archivo sitemap" href="/img/posicionamiento/sitemap-seo-3.png" rel="fancybox">
       <img src="/img/posicionamiento/sitemap-seo-3.png" />
     </a>
   </div>
@@ -120,7 +120,7 @@ Añadimos nuestra meta etiqueta en `layout.html` de nuestra tienda:
   
 <div class="captura">
   <div class="c-contenido">
-    <a title="Añadir Sitemap" href="/img/posicionamiento/sitemap-8.png" rel="fancybox">
+    <a title="Añadir Sitemap" href="/img/posicionamiento/sitemap-seo-4.png" rel="fancybox">
       <img src="/img/posicionamiento/sitemap-seo-4.png" />
     </a>
   </div>
