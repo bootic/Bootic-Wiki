@@ -228,3 +228,27 @@ code {
 code, pre {
   color: #50764c
 }
+
+.label-order {
+  color: white;
+  padding: 5px;
+}
+
+.label-pending {
+  background-color: #ffcc00;
+}
+
+.label-invalid {
+  background-color: #d74815;
+}
+
+.label-closed {
+  background-color: #aecf47;
+}
+
+.label-shipped {
+  background-color: #4a85af;
+}
+.label-delivered {
+  background-color: #004a5f;
+}
