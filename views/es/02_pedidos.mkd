@@ -22,7 +22,7 @@ acceder a ellos debes ir a la sección Pedidos — <strong>Figura 1</strong>.
       * <strong>Todas</strong>: listará todos los Pedidos.
       * <strong class="label-order label-pending">Pendientes</strong>  a la espera del pago. 
       * <strong class="label-order label-invalid">Anulados</strong> nulo, el pedido ya no es válido.
-      * <strong class="label-order label-closed">Confirmados</strong> se recibió el pago, evento que dispara la <strong>baja de stock</strong> de el o los productos incluiídos en el pedido.
+      * <strong class="label-order label-closed">Confirmados</strong> se recibió el pago, evento que dispara la <strong>baja de stock</strong> de el o los productos incluidos en el pedido.
       * <strong class="label-order label-shipped">Despachados</strong> el pedido se envió al cliente. 
       * <strong class="label-order label-delivered">Entregados</strong> el pedido se entregó al cliente.
 
