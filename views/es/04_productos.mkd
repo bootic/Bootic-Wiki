@@ -46,9 +46,8 @@ campos:
    recomienda_ hacer solo cuando se necesita explicitar atributos que ayuden a dar mayor información
    sobre el mismo — [más información](/es/administracion/productos/tipos-y-atributos).
 4. **Marca o proveedor**: Nombre del fabricante o quien proveyó el producto. 
-5. **Precio**: Valor monetario.
-6. **Precio de comparación**: Qué valor monetario tenía antes (estrategia de marketing). No es
-   necesario ingresarlo.
+5. **Precio**: Valor monetario original.
+6. **Precio de oferta**:  Valor monetario que remplazará el precio original, debe ser de menor valor que el original, no es necesario ingresarlo.
 7. **Peso**: Expresado en gramos. Valor necesario para las [zonas y costos de
    envío](/es/configuracion/formas-de-envio).
 

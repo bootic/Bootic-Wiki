@@ -84,3 +84,4 @@ Cuando un producto **con solo una variante** y disponibilidad **En stock** mostr
   <div class="c-pie">Producto con una variante sin stock</div>
 </div>
 
+También te podría interesar: [variantes multiopción](/es/administracion/variante_multi_opcion/).

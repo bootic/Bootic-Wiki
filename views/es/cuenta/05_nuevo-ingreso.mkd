@@ -1,5 +1,5 @@
 ---
-:title: "Nuevo forma de ingresar a tu tienda"
+:title: "Nueva forma de ingresar a tu tienda"
 :description: "Nueva forma de ingresar"
 :keywords: login, ingreso, tienda, panel, admin,  
 ---
