@@ -56,6 +56,15 @@ Aquí te mostramos cómo sacarle el jugo a tu tienda Bootic, usando todas las he
       <div class="video--meta">0:54</div>
   </div>
 
+  <div class="video--item">
+    <a class="video--link" href="/es/videos/promocion-despacho-gratis" data-video-uri="ZOTeMEL-j_w">
+      <div class="video--label"><h3>Promoción despacho gratis sobre $50.000</h3></div>
+      <%= partial 'partials/play' %>
+      <img src="https://i3.ytimg.com/vi/4G0cvdmM3gQ/maxresdefault.jpg" alt="Video en Youtube" />
+    </a>
+      <div class="video--meta">0:23</div>
+  </div>
+
 </div>
 
 <link href="/js/vendor/tingle.min.css" rel="stylesheet" media="all" type="text/css" />
