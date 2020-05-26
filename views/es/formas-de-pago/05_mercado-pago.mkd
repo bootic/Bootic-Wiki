@@ -103,4 +103,4 @@ Presiona «Guardar» y el medio de pago estará listo para operar en tu tienda.
 
 [costos]:https://www.mercadopago.cl/ayuda/costos-comision-recibir-pagos_2002
 [mercadolibre]:http://www.mercadolibre.cl/ "Mercado Libre"
-[mpurl]:https://www.mercadopago.cl/recibir-pagos-online#herramienta-todo-resuelto "Recibir pagos"
+[mpurl]:https://www.mercadopago.cl/como-cobrar/cobros-online "Recibir pagos"
