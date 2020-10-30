@@ -7,7 +7,7 @@
 # ¿Cómo empiezo a operar con Bootic y CorreosChile?
 
 
-Si ya eres cliente de CorreosChile y cuentas con un código, solo debes completar este formulario solicitando tus credenciales de integración aquí. Una vez listas, serán enviadas al correo que indicaste. Luego se te entregará un token para configurar la integración con Bootic. 
+Si ya eres cliente de CorreosChile y cuentas con un código, solo debes completar este [ formulario solicitando tus credenciales ][1] de integración. Una vez listas, serán enviadas al correo que indicaste. Luego se te entregará un token para configurar la integración con Bootic. 
 
 Cuando tengas el token en tus manos, deben enviarlo a soporte@bootic.net y solicitar la activación del componente Bootic Envíos.
 
@@ -23,6 +23,8 @@ Para utilizar las integraciones de CorreosChile deben ser su clientes, para esto
 
 Una vez entregados los documentos, el número de cuenta estará listo dentro de los próximos 5 días hábiles.
 
-Una vez creado el código de cliente, se pueden solicitar las credenciales de integración a través del sitio web de CorreosChile aquí para luego enviarlas al equipo de Soporte Bootic. 
+Una vez creado el código de cliente, se pueden solicitar las credenciales de integración a través del sitio web de CorreosChile [ aquí ][1] para luego enviarlas al equipo de Soporte Bootic. 
 
 ¡Listo, pronto tendrás lista esta integración!
+
+[1]: https://www.correos.cl/web/correos-chile-empresas/integracion-ecommerce
