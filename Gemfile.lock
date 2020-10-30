@@ -12,7 +12,7 @@ GEM
     http_accept_language (1.0.2)
     multi_json (1.0.3)
     puma (3.11.4)
-    rack (1.6.5)
+    rack (1.6.13)
     rack-contrib (1.1.0)
       rack (>= 0.9.1)
     rack-protection (1.2.0)
